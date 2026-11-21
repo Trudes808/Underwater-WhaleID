@@ -188,7 +188,8 @@ def _frame_features(path, feature: str, fps: float, device: str | None, batch: i
                 o = model.forward_features(((x - mean) / std).to(dt))
             F.append(torch.cat([o["x_norm_clstoken"].float(), o["x_norm_patchtokens"].float().mean(1)], 1).cpu().numpy())
             buf.clear()
-    for fr in uv.iter_frames(path, fps=fps, size=DECODE_SIZE):
+    # decoded in a clean child process (threaded HEVC decoding deadlocks next to torchvision, see uwid.video)
+    for fr in uv.iter_frames_isolated(path, fps=fps, size=DECODE_SIZE):
         T.append(fr.t)
         if feature == "color":
             F.append(color_features(fr.image[: DECODE_SIZE[1] - BOTTOM_CROP])[None])

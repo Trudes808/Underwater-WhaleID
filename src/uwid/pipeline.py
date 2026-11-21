@@ -523,6 +523,21 @@ def _detector_dir(cache: Path, rec: Recording) -> Path:
     return cache / "det" / rec.key
 
 
+def video_size(path: Path) -> tuple[int, int]:
+    vs = [st for st in video.probe(path)["streams"] if st["type"] == "video"]
+    return (int(vs[0].get("width") or 1920), int(vs[0].get("height") or 1080)) if vs else (1920, 1080)
+
+
+def detector_frame_size(cache: Path, rec: Recording) -> tuple[int, int]:
+    """Size of the frames the detector saw (boxes are in these pixels): 4K footage is scaled to 1920 wide."""
+    f = _detector_dir(cache, rec) / "meta.json"
+    if f.exists():
+        m = json.loads(f.read_text())
+        if m.get("decode_size"):
+            return tuple(m["decode_size"])
+    return video_size(rec.path)
+
+
 def load_boxes(cache: Path, rec: Recording) -> tuple[pd.DataFrame, np.ndarray]:
     d = _detector_dir(cache, rec)
     parts = sorted(d.glob("part_*.parquet"))
@@ -541,12 +556,16 @@ def run_detector(rec: Recording, frames: np.ndarray, cache: Path, cfg: ScanConfi
     d.mkdir(parents=True, exist_ok=True)
     queries = [cfg.whale_query] + [q for q in cfg.fish_queries if q != cfg.whale_query] + [cfg.bubble_query]
     meta_f = d / "meta.json"
-    meta = {"model": "owlv2-base-patch16-ensemble", "queries": queries, "patch_scores": True, "min_score": 0.03}
+    vw, vh = video_size(rec.path)
+    dsize = (1920, int(round(1920 * vh / vw / 2)) * 2) if vw > 1920 else None
+    meta = {"model": "owlv2-base-patch16-ensemble", "queries": queries, "patch_scores": True, "min_score": 0.03,
+            "decode_size": list(dsize) if dsize else [vw, vh]}
     if detector_factory is not None:
         meta["model"] = "injected"
     if meta_f.exists():
         old = json.loads(meta_f.read_text())
-        if old.get("queries") != queries or old.get("model") != meta["model"]:
+        if (old.get("queries") != queries or old.get("model") != meta["model"]
+                or old.get("decode_size", meta["decode_size"]) != meta["decode_size"]):
             raise RuntimeError(f"{d}: cached with other settings {old}; remove it to re-run")
     meta_f.write_text(json.dumps(meta, indent=1))
     _, done = load_boxes(cache, rec)
@@ -572,7 +591,9 @@ def run_detector(rec: Recording, frames: np.ndarray, cache: Path, cfg: ScanConfi
             def worker():
                 t_d = time.time()
                 try:
-                    for fr in video.iter_frames_at(rec.path, todo):
+                    frames_it = (video.iter_frames_at(rec.path, todo, size=dsize) if detector_factory is not None
+                                 else video.iter_frames_isolated(rec.path, indices=todo, size=dsize))
+                    for fr in frames_it:
                         if stop.is_set():
                             break
                         q.put((fr.index, fr.image))
@@ -1094,8 +1115,7 @@ def scan_deployment(dep: Deployment, cfg: ScanConfig, cut: bool, mode: str, log,
         log(f"  {rec.path.name}: {len(w)} windows, {int(w.scanned.sum())} to scan ({len(want)} frames)")
         processed = run_detector(rec, want, cache, cfg, log, detector_factory, timings) if len(want) else np.zeros(0)
         boxes, _ = load_boxes(cache, rec)
-        vs = [st for st in video.probe(rec.path)["streams"] if st["type"] == "video"]
-        size = (vs[0].get("width") or 1920, vs[0].get("height") or 1080) if vs else (1920, 1080)
+        size = detector_frame_size(cache, rec)
         fs = frame_scores(boxes, processed, cfg, size[0], size[1])
         w, keep = apply_detections(w, fs, processed, cfg, tab.duration)
         w.to_csv(run_dir / "windows" / f"{rec.key}.csv", index=False)

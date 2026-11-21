@@ -624,6 +624,50 @@ def iter_frames_at(path: str | os.PathLike, indices: Sequence[int], fmt: str = "
                 return      # end of stream
 
 
+def _decode_child(q, kind: str, path: str, arg, fmt: str, size):
+    try:
+        if kind == "at":
+            it = iter_frames_at(path, arg, fmt=fmt, size=size)
+        else:
+            it = iter_frames(path, fps=arg.get("fps"), start=arg.get("start", 0.0), end=arg.get("end"), fmt=fmt,
+                             size=size)
+        for fr in it:
+            q.put((fr.index, fr.t, fr.image, fr.key))
+    except Exception as exc:          # reported to the parent
+        q.put(("error", repr(exc)))
+    finally:
+        q.put(None)
+
+
+def iter_frames_isolated(path: str | os.PathLike, indices: Sequence[int] | None = None, fps: float | None = None,
+                         start: float = 0.0, end: float | None = None, fmt: str = "rgb24",
+                         size: tuple[int, int] | None = None, prefetch: int = 8) -> Iterator[Frame]:
+    """:func:`iter_frames_at` (``indices`` given) or :func:`iter_frames`, decoded with all threads in a spawned
+    process that never imports torch. Used by model code: with torchvision loaded, this process may only decode
+    with one thread (see :func:`_open`), too slow for 4K footage."""
+    import multiprocessing as mp
+    ctx = mp.get_context("spawn")
+    q = ctx.Queue(maxsize=prefetch)
+    if indices is not None:
+        kind, arg = "at", [int(i) for i in indices]
+    else:
+        kind, arg = "seq", {"fps": fps, "start": start, "end": end}
+    p = ctx.Process(target=_decode_child, args=(q, kind, str(path), arg, fmt, size), daemon=True)
+    p.start()
+    try:
+        while True:
+            item = q.get()
+            if item is None:
+                break
+            if item[0] == "error":
+                raise RuntimeError(f"decoding {path} failed: {item[1]}")
+            yield Frame(int(item[0]), float(item[1]), item[2], bool(item[3]))
+    finally:
+        if p.is_alive():
+            p.terminate()
+        p.join(timeout=5)
+
+
 def torch_loaded() -> bool:
     """True when torchvision is imported in this process (see :func:`_open`)."""
     import sys
