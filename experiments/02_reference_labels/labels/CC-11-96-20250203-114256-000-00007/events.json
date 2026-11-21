@@ -1,0 +1,148 @@
+{
+ "video": "CC-11-96-20250203-114256-000-00007.m4v",
+ "fps": 29.96310849136583,
+ "frames_decoded": 53346,
+ "labels": "AI by-eye labels (WP3 part 2), test video: scoring only",
+ "rule": "as for the dev clip: event frame = first frame whose centre (960, 540) shows the other side of the surface (exit: sky / horizon / the back in air, even through droplets or a water sheet; entry: the water column including froth); crossing = frames in between (foam / tearing surface film). Frames where the lens is just under the surface and the centre shows the brown total reflection of the back below the sky window count as underwater. Revised 2026-11-20 (boundary cases): the half-out phase of an exit (circular waterline rim across the dome, brownish band at the centre) is crossing; the sky through a rippled Snell window with the brown reflection around it stays underwater.",
+ "windows": [
+  {
+   "name": "random_1",
+   "start_s": 113.988,
+   "end_s": 293.988,
+   "seed": 1007,
+   "how": "every 15th frame (2 per second) looked at as thumbnail grids",
+   "events": "none: underwater throughout (calf passes overhead f3880-f4300, swims around the tagged whale f6700-f8800)"
+  },
+  {
+   "name": "random_2",
+   "start_s": 1305.886,
+   "end_s": 1485.886,
+   "seed": 1007,
+   "how": "every 15th frame looked at as thumbnail grids; around each of the six surfacings every 2nd frame over ~6 s and every single frame over the exit and entry transitions (f39899-f39929, f39980-f39990, f40377-f40409, f40475-f40487, f41519-f41546, f41597-f41612, f42417-f42439, f42507-f42519, f43924-f43939, f43999-f44013, f44345-f44367, f44437-f44449)"
+  }
+ ],
+ "events": [
+  {
+   "type": "exit",
+   "frame": 39916,
+   "time_s": 1332.172,
+   "crossing_first": 39904,
+   "crossing_last": 39915,
+   "window": "random_2",
+   "note": "f39904-f39909 under the surface (drop rings on the surface seen from below, brown reflection of the back at the centre); f39910-f39915 lens at the surface, sky tearing through the film; f39916 first frame with sky at the centre above the wet back; f39922-f39926 water sheets wash over the lens in air (kept air); crossing_first moved from f39910 to f39904 under the 2026-11-20 half-out rule (smooth circular waterline rim across the dome with the brown band at the centre = crossing); start of the half-out phase uncertain by about 3 frames"
+  },
+  {
+   "type": "entry",
+   "frame": 39987,
+   "time_s": 1334.541,
+   "crossing_first": 39983,
+   "crossing_last": 39986,
+   "window": "random_2",
+   "note": "f39982 last frame with sky at the centre (splash rising); f39983-f39986 whitewater / water sheet over the lens; f39987 first frame of under-water froth with blue water column"
+  },
+  {
+   "type": "exit",
+   "frame": 40388,
+   "time_s": 1347.924,
+   "crossing_first": 40375,
+   "crossing_last": 40387,
+   "window": "random_2",
+   "note": "f40382-f40384 under the surface; f40385-f40387 surface film tearing; f40388 sky at the centre above the wet back; crossing_first moved from f40385 to f40375 under the 2026-11-20 half-out rule (smooth circular waterline rim across the dome with the brown band at the centre = crossing); start of the half-out phase uncertain by about 3 frames"
+  },
+  {
+   "type": "entry",
+   "frame": 40478,
+   "time_s": 1350.928,
+   "crossing_first": 40477,
+   "crossing_last": 40477,
+   "window": "random_2",
+   "note": "f40476 sky and horizon behind splash; f40477 whitewater over the centre; f40478 first under-water froth (motion-blurred bubble streaks)"
+  },
+  {
+   "type": "exit",
+   "frame": 41527,
+   "time_s": 1385.938,
+   "crossing_first": 41517,
+   "crossing_last": 41526,
+   "window": "random_2",
+   "note": "f41525 under the surface (blue water lower left); f41526 film tearing; f41527 sky at the centre; f41532-f41543 water sheets in air; crossing_first moved from f41526 to f41517 under the 2026-11-20 half-out rule (smooth circular waterline rim across the dome with the brown band at the centre = crossing); start of the half-out phase uncertain by about 3 frames"
+  },
+  {
+   "type": "entry",
+   "frame": 41602,
+   "time_s": 1388.441,
+   "crossing_first": null,
+   "crossing_last": null,
+   "window": "random_2",
+   "note": "f41601 horizon and sea still visible behind a splash sheet; f41602 first frame of under-water froth (no frame in between)"
+  },
+  {
+   "type": "exit",
+   "frame": 42425,
+   "time_s": 1415.908,
+   "crossing_first": 42414,
+   "crossing_last": 42424,
+   "window": "random_2",
+   "note": "f42421 last frame with blue water column lower left; f42422-f42424 lens at the surface; f42425 sky at the centre above the wet back; crossing_first moved from f42422 to f42414 under the 2026-11-20 half-out rule (smooth circular waterline rim across the dome with the brown band at the centre = crossing); start of the half-out phase uncertain by about 3 frames"
+  },
+  {
+   "type": "entry",
+   "frame": 42518,
+   "time_s": 1419.012,
+   "crossing_first": 42511,
+   "crossing_last": 42517,
+   "window": "random_2",
+   "note": "f42509-f42510 air with splash; f42511-f42517 whitewater / water sheets with sky patches, centre not recognisable (f42517 may already be under water); f42518 under-water froth with blue water. Uncertain by about 3 frames"
+  },
+  {
+   "type": "exit",
+   "frame": 43931,
+   "time_s": 1466.17,
+   "crossing_first": 43924,
+   "crossing_last": 43930,
+   "window": "random_2",
+   "note": "f43929 under the surface (Snell window, blue water lower left); f43930 lens at the surface; f43931 sky at the centre, yellow tag part at the left edge; crossing_first moved from f43930 to f43924 under the 2026-11-20 half-out rule (smooth circular waterline rim across the dome with the brown band at the centre = crossing); start of the half-out phase uncertain by about 3 frames"
+  },
+  {
+   "type": "entry",
+   "frame": 44006,
+   "time_s": 1468.673,
+   "crossing_first": 44003,
+   "crossing_last": 44005,
+   "window": "random_2",
+   "note": "f44002 air with splash; f44003-f44005 water sheet / dark blur; f44006 first under-water froth. Uncertain by about 2 frames"
+  },
+  {
+   "type": "exit",
+   "frame": 44357,
+   "time_s": 1480.387,
+   "crossing_first": 44346,
+   "crossing_last": 44356,
+   "window": "random_2",
+   "note": "f44352 last frame with the surface seen from below with blue water; f44353-f44356 film tearing; f44357 sky at the centre above the wet back; crossing_first moved from f44353 to f44346 under the 2026-11-20 half-out rule (smooth circular waterline rim across the dome with the brown band at the centre = crossing); start of the half-out phase uncertain by about 3 frames"
+  },
+  {
+   "type": "entry",
+   "frame": 44442,
+   "time_s": 1483.224,
+   "crossing_first": 44441,
+   "crossing_last": 44441,
+   "window": "random_2",
+   "note": "f44440 air with splash; f44441 whitewater with a sky window above; f44442 first under-water froth"
+  }
+ ],
+ "surfacings_in_window_2": "six breaths of the tagged whale in 128 s (1332-1483 s), each 2.4-3.1 s in air",
+ "outside_windows_seen_in_sample": [
+  {
+   "type": "surfacing",
+   "exit_frame_approx": 10234,
+   "entry_frame_approx": 10310,
+   "time_s": [
+    341.553,
+    344.09
+   ],
+   "note": "found because sample f10328 (344.7 s) shows entry froth; looked at every 8th frame f10150-f10518 and every frame f10222-f10241 and f10306-f10329: exit about f10234 (sky at the centre, blue water gone), entry about f10310 (froth). Not part of the scored windows; boundaries not stepped with the full rule"
+  }
+ ],
+ "recording_start": "the first sampled frame (f103, 3.4 s) is already under water with the back at the bottom: this file has no drone drop or deck scene (frames before f103 not looked at)"
+}

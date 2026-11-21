@@ -1,0 +1,46 @@
+{
+ "m4v_stride5": {
+  "decode_s": 7.842048645019531,
+  "gpu_s": 35.438825607299805,
+  "wall_s": 43.289602756500244,
+  "frames_classified": 719,
+  "frames_decoded": 3591,
+  "peak_gpu_gb": 1.074016768,
+  "video_s": 120.0,
+  "gpu_h_per_video_h": 0.36074668963750206,
+  "classified_fps": 16.6090690192817
+ },
+ "m4v_stride1": {
+  "decode_s": 6.2873640060424805,
+  "gpu_s": 159.06024169921875,
+  "wall_s": 165.35687136650085,
+  "frames_classified": 3594,
+  "frames_decoded": 3594,
+  "peak_gpu_gb": 1.07545856,
+  "video_s": 120.0,
+  "gpu_h_per_video_h": 1.3779739280541738,
+  "classified_fps": 21.73480890330934
+ },
+ "mov_stride5": {
+  "decode_s": 1.9792842864990234,
+  "gpu_s": 31.90021252632141,
+  "wall_s": 33.88361215591431,
+  "frames_classified": 719,
+  "frames_decoded": 3591,
+  "peak_gpu_gb": 1.07545856,
+  "video_s": 120.0,
+  "gpu_h_per_video_h": 0.2823634346326192,
+  "classified_fps": 21.219697495401185
+ },
+ "mov_stride1": {
+  "decode_s": 6.160984039306641,
+  "gpu_s": 159.1725857257843,
+  "wall_s": 165.3424572944641,
+  "frames_classified": 3594,
+  "frames_decoded": 3594,
+  "peak_gpu_gb": 1.07545856,
+  "video_s": 120.0,
+  "gpu_h_per_video_h": 1.377853810787201,
+  "classified_fps": 21.736703680406304
+ }
+}

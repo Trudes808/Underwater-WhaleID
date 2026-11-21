@@ -1,0 +1,947 @@
+{
+ "stems": [
+  "CC-11-96-20250203-101236-000-00004",
+  "CC-11-96-20250203-104242-000-00005",
+  "CC-11-96-20250203-111250-000-00006",
+  "CC-11-96-20250203-114256-000-00007",
+  "CC-11-96-20250203-121302-000-00008",
+  "CC-11-96-20250203-124310-000-00009",
+  "CC-11-96-20250203-131316-000-00010"
+ ],
+ "runs": {
+  "5": [
+   {
+    "iou_band": {
+     "water": 0.8339916318443297,
+     "whale": 0.6525725552077352,
+     "back": 0.4545467353051397,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.03762272827219625,
+     "air": 0.5134370950390343,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.8148607777761413,
+     "whale": 0.6082041862871708,
+     "back": 0.4739639653803981,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.043119392943460004,
+     "air": 0.5109727303871677,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.961164457183805,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9497654063617036,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.00041930931663615846,
+     "whale_as_back": 0.010394810861764884,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.15935546810410398,
+     "whale_as_water": 0.020022768047193336,
+     "water_as_whale": 0.013938530691391058,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.00021823701275215264
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     178,
+     342,
+     813935,
+     0,
+     0,
+     0,
+     1172,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     60,
+     240,
+     330,
+     390,
+     450
+    ]
+   },
+   {
+    "iou_band": {
+     "water": 0.799455897802036,
+     "whale": 0.19821431804329329,
+     "back": 0.2802854491970782,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.02649203546063254,
+     "air": 0.0,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.7793526812079591,
+     "whale": 0.22438973100924958,
+     "back": 0.34191445446517255,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.03064026490925156,
+     "air": 0.0,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9998495163024006,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9942463776362687,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.02296270231368015,
+     "whale_as_back": 3.9910600255427844e-05,
+     "bubbles_as_whale": 0.779585262345679,
+     "surface_as_whale": 0.0,
+     "whale_as_water": 0.003565346956151554,
+     "water_as_whale": 0.02756095511744404,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.0012603800511753534
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     1028,
+     18729,
+     794482,
+     0,
+     1388,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     1290,
+     1350,
+     1485,
+     1500,
+     1545
+    ]
+   },
+   {
+    "iou_band": {
+     "water": 0.8016612274510433,
+     "whale": 0.42835009867624496,
+     "back": 0.5307928713938751,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.03182421921835415,
+     "air": 0.599145681262347,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.783311723060863,
+     "whale": 0.4030041248605537,
+     "back": 0.4846080153833384,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.03696161560848727,
+     "air": 0.5871754037757234,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.936782515227517,
+      "instances": 2,
+      "found_25pct": 1
+     },
+     "hazy": {
+      "pixel_recall": 0.9130037814321851,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.11298547007394312,
+     "whale_as_back": 0.021896665754424376,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.0,
+     "whale_as_water": 0.04548668126254333,
+     "water_as_whale": 0.03328067467900069,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.13097285891712757
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     106825,
+     92154,
+     560486,
+     0,
+     101,
+     0,
+     56061,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     2250,
+     2340,
+     2565,
+     2700,
+     2820
+    ]
+   }
+  ],
+  "10": [
+   {
+    "iou_band": {
+     "water": 0.8072699169925006,
+     "whale": 0.6788067180105781,
+     "back": 0.48006393818779663,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.042645515544589556,
+     "air": 0.4531171020136619,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.7898815169338689,
+     "whale": 0.6261674971773425,
+     "back": 0.5024660330055647,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.04892463458423456,
+     "air": 0.4526982912244314,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9878108204944465,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9444902825986871,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.0006142513673529689,
+     "whale_as_back": 0.001554612905187618,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.35384768014815304,
+     "whale_as_water": 0.01939180046220276,
+     "water_as_whale": 0.013193650440875154,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.008125037547800648
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     6627,
+     501,
+     808499,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     60,
+     240,
+     330,
+     390,
+     450,
+     570,
+     585,
+     630,
+     720,
+     810
+    ]
+   },
+   {
+    "iou_band": {
+     "water": 0.6684368438694455,
+     "whale": 0.1502274302101414,
+     "back": 0.2746912636654156,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.017432476002176737,
+     "air": 0.0,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.6527554592221442,
+     "whale": 0.17426409310806645,
+     "back": 0.3356330133298477,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.020372374039455264,
+     "air": 0.0,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9999820852740953,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9968690672639708,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.06573838286373551,
+     "whale_as_back": 2.2806057288815908e-05,
+     "bubbles_as_whale": 0.8253867669753087,
+     "surface_as_whale": 0.0,
+     "whale_as_water": 0.0006509228851182874,
+     "water_as_whale": 0.05410124487219593,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.0036879603053846916
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     3008,
+     53618,
+     749782,
+     0,
+     9219,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     900,
+     1065,
+     1110,
+     1290,
+     1350,
+     1485,
+     1500,
+     1545,
+     1665,
+     1890
+    ]
+   },
+   {
+    "iou_band": {
+     "water": 0.7913841151347938,
+     "whale": 0.7370764786060507,
+     "back": 0.37416408815357416,
+     "fish": 0.0,
+     "bubbles": 8.13603841365545e-05,
+     "surface": 0.03625965764949334,
+     "air": 0.5469681693258502,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.7767013304037116,
+     "whale": 0.6713557531013291,
+     "back": 0.430909043590259,
+     "fish": 0.0,
+     "bubbles": 8.133058766402672e-05,
+     "surface": 0.041205514488447496,
+     "air": 0.5442123487285903,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9792834109638122,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.8773439965237724,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.02147427684468513,
+     "whale_as_back": 0.0019470671410326582,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.0,
+     "whale_as_water": 0.09365972602323178,
+     "water_as_whale": 0.012415249614465147,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.022706457731291388
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     18520,
+     17515,
+     778192,
+     0,
+     0,
+     3,
+     1397,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     1995,
+     2070,
+     2100,
+     2175,
+     2190,
+     2250,
+     2340,
+     2565,
+     2700,
+     2820
+    ]
+   }
+  ],
+  "20": [
+   {
+    "iou_band": {
+     "water": 0.6107657208555954,
+     "whale": 0.6347405959744524,
+     "back": 0.3197968190168658,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.09218316128877019,
+     "air": 0.31625290811595547,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.6018282217048895,
+     "whale": 0.6009130261947574,
+     "back": 0.3817695677072854,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.10625460920867714,
+     "air": 0.3189278310120138,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9875098530992475,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9885561240061455,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.00153869354496602,
+     "whale_as_back": 0.0004209618074560603,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.053019279738086574,
+     "whale_as_water": 0.006962499239798091,
+     "water_as_whale": 0.023388005151461395,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.030730959127150032
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     25065,
+     1255,
+     789304,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     60,
+     240,
+     330,
+     390,
+     450,
+     570,
+     585,
+     630,
+     720,
+     810,
+     900,
+     1065,
+     1110,
+     1290,
+     1350,
+     1485,
+     1500,
+     1545,
+     1665,
+     1890
+    ]
+   },
+   {
+    "iou_band": {
+     "water": 0.5426954180459859,
+     "whale": 0.43799208571992043,
+     "back": 0.19665566830499787,
+     "fish": 0.0,
+     "bubbles": 0.25206569024437947,
+     "surface": 0.02344728210552642,
+     "air": 0.0,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.5373926424687804,
+     "whale": 0.4478334263582776,
+     "back": 0.26348025621114823,
+     "fish": 0.0,
+     "bubbles": 0.24308814794052078,
+     "surface": 0.027392675070595767,
+     "air": 0.0,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9980472948763884,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.8309671361988071,
+      "instances": 6,
+      "found_25pct": 5
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.026021698644110604,
+     "whale_as_back": 0.0023737304628109225,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.0,
+     "whale_as_water": 0.013240816760931704,
+     "water_as_whale": 0.042561678100800374,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.02905494791123884
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     23698,
+     21224,
+     769551,
+     0,
+     1154,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     585,
+     630,
+     720,
+     810,
+     900,
+     1065,
+     1110,
+     1290,
+     1350,
+     1485,
+     1500,
+     1545,
+     1665,
+     1890,
+     1950,
+     1995,
+     2070,
+     2100,
+     2175,
+     2190
+    ]
+   },
+   {
+    "iou_band": {
+     "water": 0.4111347827934307,
+     "whale": 0.7620113842559221,
+     "back": 0.5299067535708071,
+     "fish": 0.0,
+     "bubbles": 0.03240610990308985,
+     "surface": 0.04518032737599163,
+     "air": 0.24304405873751048,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.4081650514299076,
+     "whale": 0.6886331609782078,
+     "back": 0.5358860425909184,
+     "fish": 0.0,
+     "bubbles": 0.03152265308787048,
+     "surface": 0.05228757039775488,
+     "air": 0.2456005335902063,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9968685059118596,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9243713562978175,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.023166226718831034,
+     "whale_as_back": 0.0001719956820531533,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.0,
+     "whale_as_water": 0.05524387277260841,
+     "water_as_whale": 0.01392623177505581,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.008044118205993671
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     6561,
+     18895,
+     767638,
+     0,
+     21276,
+     0,
+     1257,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     1065,
+     1110,
+     1290,
+     1350,
+     1485,
+     1500,
+     1545,
+     1665,
+     1890,
+     1950,
+     1995,
+     2070,
+     2100,
+     2175,
+     2190,
+     2250,
+     2340,
+     2565,
+     2700,
+     2820
+    ]
+   }
+  ],
+  "31": [
+   {
+    "iou_band": {
+     "water": 0.5059226910542357,
+     "whale": 0.7151266851210814,
+     "back": 0.2117885439122036,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.09751803272321631,
+     "air": 0.28279069693178854,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "iou": {
+     "water": 0.49987999000388456,
+     "whale": 0.6710499617441951,
+     "back": 0.2805160084689048,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.11182645104951246,
+     "air": 0.28543238854690867,
+     "seafloor": null,
+     "gear": 0.0
+    },
+    "whale_recall_by_grade": {
+     "clear": {
+      "pixel_recall": 0.9923145825868864,
+      "instances": 2,
+      "found_25pct": 2
+     },
+     "hazy": {
+      "pixel_recall": 0.9291977259677311,
+      "instances": 6,
+      "found_25pct": 6
+     }
+    },
+    "confusions": {
+     "back_as_whale": 0.002005818836306302,
+     "whale_as_back": 0.0008998890105211944,
+     "bubbles_as_whale": 0.0,
+     "surface_as_whale": 0.08341049637884851,
+     "whale_as_water": 0.041100316243994406,
+     "water_as_whale": 0.01743021715448992,
+     "faint_whale_as_water": 0.0,
+     "back_as_water": 0.00541178749600001
+    },
+    "frames": 14,
+    "seafloor_row": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "fish": {
+     "instances": 39,
+     "found": 0,
+     "pred_components": 0,
+     "pred_components_on_fish": 0
+    },
+    "back_row": [
+     4414,
+     1636,
+     809395,
+     0,
+     48,
+     0,
+     134,
+     0,
+     0,
+     0
+    ],
+    "dev_frames": [
+     60,
+     240,
+     330,
+     390,
+     450,
+     570,
+     585,
+     630,
+     720,
+     810,
+     900,
+     1065,
+     1110,
+     1290,
+     1350,
+     1485,
+     1500,
+     1545,
+     1665,
+     1890,
+     1950,
+     1995,
+     2070,
+     2100,
+     2175,
+     2190,
+     2250,
+     2340,
+     2565,
+     2700,
+     2820
+    ]
+   }
+  ]
+ }
+}

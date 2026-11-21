@@ -1,0 +1,121 @@
+frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note
+421,14.079,underwater,clear,1,0,back,none,none,,"dark fluke of another whale sticking up just beyond the back horizon, bottom centre (~1050-1390 px); followed f300-f480 (fluke rises and sinks behind the back)",0.2,0.05,no,low,dark fluke beyond the back's horizon
+866,28.925,underwater,clear,1,0,back,none,none,,"hazy whale (probably the calf) rising close to the back, lower right; followed f840-f990",0.2,0.05,no,low,hazy whale rising near the back
+1311,43.771,underwater,clear,1,0,back,none,none,,"whale head/body cut by the top edge, upper left; back as a faint band",0.2,0.05,yes,low,head and body cut at the top edge
+1756,58.617,underwater,clear,1,0,back,none,none,,"whale seen from below with pectoral flipper, upper centre-right (clear)",0.3,0.05,yes,ok,"from below with flipper, silhouette"
+2201,73.463,underwater,clear,1,0,back,none,none,,"whale from below/behind: fluke and body with both flippers (clear, large)",0.4,0.05,no,ok,"fluke and body with flippers from below, clear silhouette"
+2646,88.309,underwater,clear,1,0,back,none,none,,"whale upper left, cut by top edge, flipper visible",0.2,0.05,yes,low,"cut at the top edge, flipper visible"
+3091,103.155,underwater,clear,0,0,back,none,none,,empty blue; back as a dark band at the bottom,,,,,
+3536,118.001,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+3981,132.847,underwater,clear,1,0,back,none,none,,"whale just under the surface, top centre-left (seen from below with flipper); camera shallow",0.2,0.05,yes,low,hazy whale just under the surface
+4425,147.660,air,clear,0,0,back,none,none,yellow-green tag part at the left edge,"surfacing: sky, sea and horizon; the wet back (brown) fills the lower half; outside the event windows, not stepped through",,,,,
+4870,162.506,underwater,clear,0,0,back,none,none,,just under the surface (wave facets top); small white mark on the back,,,,,
+5315,177.352,underwater,clear,0,0,back,none,none,,"just under the surface; dark dashes near the surface checked f5305-f5320 at full size: wave facets, not fish",,,,,
+5760,192.198,underwater,clear,0,0,back,none,none,,"empty blue; back clear at the bottom (white mark on it ~1130,930)",,,,,
+6205,207.045,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+6650,221.891,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+7095,236.737,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+7540,251.583,underwater,clear,0,0,back,none,none,,empty blue; view tilted (sun glow top right); back faint band,,,,,
+7985,266.429,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+8430,281.275,underwater,clear,0,0,back,none,none,,empty blue; back faint band at the very bottom,,,,,
+8875,296.121,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+9320,310.967,underwater,clear,0,0,back,none,none,,"empty blue; back faint band (a pale knobby whale head tip showed over the back at lower left f9243-f9303 in the window, gone here)",,,,,
+9765,325.813,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+10210,340.659,underwater,clear,0,0,back,none,none,"unsure: 1 dark speck top (~1340,50), ~6 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+10655,355.505,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+11100,370.352,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+11545,385.198,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+11989,400.010,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+12434,414.856,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+12879,429.703,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+13324,444.549,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+13769,459.395,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+14214,474.241,underwater,clear,1,0,back,none,none,,"pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",0.1,0.05,no,low,head only at the back's horizon
+14659,489.087,underwater,clear,1,0,back,none,none,,"same: whale head with tubercles over the back at lower left (~330-500,920-1060), larger",0.1,0.05,no,low,head only at the back's horizon
+15104,503.933,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+15549,518.779,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+15994,533.625,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+16439,548.471,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+16884,563.317,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+17329,578.163,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+17774,593.010,underwater,clear,1,0,back,none,none,,"hazy whale (head or tail stock) hanging from the top edge, upper left",0.1,0.05,yes,low,hazy part at the top edge
+18219,607.856,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+18664,622.702,underwater,clear,0,0,back,none,none,"unsure: 1 dark speck top right (~1620,100), ~8 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+19109,637.548,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+19553,652.361,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+19998,667.207,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+20443,682.053,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+20888,696.899,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+21333,711.745,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+21778,726.591,underwater,clear,0,0,back,none,none,"unsure: 1 dark speck (~1400,215), ~8 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+22223,741.437,underwater,clear,0,0,back,none,none,"unsure: 1 dark speck (~440,460), ~6 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+22668,756.283,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+23113,771.129,underwater,clear,0,0,back,none,none,"unsure: 1 faint speck (~1200,125), ~5 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+23558,785.975,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+24003,800.821,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+24448,815.668,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+24893,830.514,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+25338,845.360,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+25783,860.206,underwater,clear,0,0,back,none,none,"unsure: 1 dark speck (~1030,260), ~8 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+26228,875.052,underwater,clear,0,0,back,none,none,"unsure: 1 dark speck (~1380,285), ~8 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+26673,889.898,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+27118,904.744,underwater,clear,1,0,back,none,none,,"whale upper centre seen from below, both flippers (one pale), hazy-clear",0.3,0.05,yes,ok,"from below with both flippers, hazy-clear"
+27562,919.557,underwater,clear,1,0,back,none,none,,"very near whale: fluke and tail stock from below, centre, reaching the bottom edge (white marks on the peduncle)",0.3,0.05,no,ok,"fluke and tail stock from below, dim"
+28007,934.403,underwater,clear,0,0,back,none,few,"unsure: 5 fainter spindles 35-70 px lower in the group without a visible tail (~1387-1462,429-451; 1404-1471,553-567; 1476-1511,722-740; 1600-1671,807-824; 1711-1778,833-851)","5 jack-like fish with body and forked tail seen at full size (70-100 px), right half, plus up to 5 fainter ones (in other); followed f27960-f28060: they swim as a loose group; boxes in fish_calls.json",,,,,
+28452,949.249,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+28897,964.095,underwater,clear,0,0,back,none,none,"small dark object with a pale spot on the back edge (~490,1020, ~40 px): fixed on the back (barnacle / remora / tag part?)","fixed in frame f28850-f29342, so part of back; not fish",,,,,
+29342,978.941,underwater,clear,0,0,back,none,none,"same small dark object on the back edge (~480,1020): fixed on the back","plus a darker patch on the back to its left; part of back, not fish",,,,,
+29787,993.787,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+30232,1008.633,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+30677,1023.479,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+31122,1038.326,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+31567,1053.172,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+32012,1068.018,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+32457,1082.864,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+32902,1097.710,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+33347,1112.556,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+33792,1127.402,underwater,clear,0,1,back,none,none,,"dark bump with a pale edge exactly at the back horizon (~950-1050,900-1000), no movement relative to the back over f33700-f33890: may be the tagged whale's own part (blowhole area / fin) or a whale beyond; faint by the horizon rule",,,,,
+34237,1142.248,underwater,clear,1,0,back,none,none,,"hazy whale lower centre, head up, rising toward the camera",0.2,0.05,no,low,hazy whale rising
+34682,1157.094,underwater,clear,1,0,back,none,none,,"hazy whale centre-right, whole body with fluke",0.2,0.05,no,low,"hazy whole whale, small"
+35126,1171.907,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+35571,1186.753,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+36016,1201.599,underwater,clear,0,0,back,none,none,"white blob on the back (~720,1000): bubble or skin mark",part of back; empty blue,,,,,
+36461,1216.445,underwater,clear,0,0,back,none,none,"unsure: 1 dark round speck (~1210,280), ~8 px",speck without visible tail: particle or very distant fish; fish none by the strict rule,,,,,
+36906,1231.291,underwater,clear,0,0,back,none,none,,"near the surface, sun disc top right washes ~15% (not glare)",,,,,
+37351,1246.137,underwater,clear,0,0,back,none,none,,"just under the surface; pale flecks below the surface are light facets (checked f37320-f37383), not fish",,,,,
+37796,1260.984,underwater,clear,0,0,back,none,none,,just under the surface; bubble froth over the right ~40% (borderline clear/bubbles),,,,,
+38241,1275.830,underwater,clear,0,0,back,none,none,,just under the surface; back clear at the bottom,,,,,
+38686,1290.676,underwater,clear,0,0,back,none,none,"unsure: 1 pale spindle fleck (~1430,440), 25-30 px, no tail seen, drifts slowly f38680-f38698",small fish far off or foam fleck; fish none by the strict rule,,,,,
+39131,1305.522,underwater,clear,1,0,back,none,none,,"near whale head with tubercles and jaw at the right edge (clear), just under the surface; window 2",0.2,0.05,yes,low,clear head with tubercles and jaw but only a small part at the right edge; close call ok
+39576,1320.368,air,clear,0,0,none,none,none,,"surfaced: sky, clouds, sea; water drops on the lens; between exit f39558 and entry f39638",,,,,
+40021,1335.214,underwater,clear,0,1,back,none,none,,"just under the surface; pale green shape at the left edge (~100-200,300-450): could be a whale flipper near the lens; unsure",,,,,
+40466,1350.060,underwater,clear,0,0,back,none,none,,just under the surface after entry f40158; back faint band,,,,,
+40911,1364.906,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+41356,1379.752,underwater,clear,0,0,back,none,none,,"empty blue (deep blue, darker)",,,,,
+41801,1394.598,underwater,clear,1,0,back,none,none,,"near whale head (rostrum with tubercles, ventral grooves) top right, cut by top edge",0.3,0.10,yes,ok,"near head with tubercles and grooves, cut at top"
+42246,1409.444,underwater,clear,0,1,back,none,none,,dim whale-like shape with pale patches lower left (same place as f42690); faint,,,,,
+42690,1424.257,underwater,clear,0,1,back,none,none,,"hazy whale-like shape lower left (dark tapered head with white tubercle spots, pale knobby flipper below); stays near the same place f42234-f43089 relative to the camera, so it may be the tagged whale's own flipper; faint, not counted",,,,,
+43135,1439.103,underwater,clear,0,1,back,none,none,,same lower-left whale-like shape as f42690 (fixed relative to the camera); faint,,,,,
+43580,1453.949,underwater,clear,1,0,back,none,none,,"whale (tail stock with flukes) at the top edge, small",0.1,0.05,yes,low,"tail stock at the top edge, small"
+44025,1468.795,underwater,clear,1,0,back,none,none,,"whale silhouette from below, fluke and both flippers, right half (clear); followed f43524-f44169 swimming around above",0.5,0.10,no,ok,"fluke and both flippers, large but a silhouette; near hq"
+44470,1483.642,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+44915,1498.488,underwater,clear,1,0,back,none,none,,"whale at the top with flippers, seen from below, sun glow beside it",0.3,0.05,yes,ok,"from below with flippers at the top, beside the sun glow"
+45360,1513.334,underwater,clear,0,1,back,none,none,,"faint rounded shape at the top (~1250-1350,0-100): probably the same whale, faint",,,,,
+45805,1528.180,underwater,clear,0,0,back,none,none,,just under the surface; white mark on the back,,,,,
+46250,1543.026,underwater,clear,0,0,back,none,none,,just under the surface,,,,,
+46695,1557.872,underwater,clear,0,0,back,none,none,,just under the surface,,,,,
+47140,1572.718,air,clear,0,0,back,none,none,,"surfaced: sky, cloud, horizon; water sheet over the left; brown at the bottom probably the back in air (unsure); outside the event windows",,,,,
+47585,1587.564,underwater,clear,0,0,back,none,none,,empty blue near the surface,,,,,
+48030,1602.410,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+48475,1617.256,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+48920,1632.102,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+49365,1646.948,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+49810,1661.795,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+50254,1676.607,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+50699,1691.453,underwater,clear,0,0,back,none,none,,empty blue; back faint band,,,,,
+51144,1706.299,underwater,clear,1,0,back,none,none,,"near whale at the right edge (head/flipper), just under the surface",0.1,0.05,yes,low,part at the right edge
+51589,1721.146,underwater,clear,1,0,back,none,none,,hazy whale head top left near the surface,0.1,0.05,yes,low,hazy head at the left edge
+52034,1735.992,underwater,clear,0,1,back,none,none,,"dark vertical band at the left edge (~0-60,250-600): could be a whale cut by the edge; faint",,,,,
+52479,1750.838,underwater,clear,0,0,back,none,none,,back clear at the bottom,,,,,
+52924,1765.684,underwater,clear,0,0,back,none,none,,empty blue,,,,,
+53369,1780.530,underwater,clear,1,0,back,none,none,,"near whale (head with tubercles?) at the top right, cut by top edge",0.2,0.05,yes,low,head cut at the top

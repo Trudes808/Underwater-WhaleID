@@ -1,0 +1,84 @@
+[
+ {
+  "frame": 17088,
+  "boxes": [
+   [
+    770,
+    12,
+    828,
+    80
+   ],
+   [
+    905,
+    5,
+    950,
+    112
+   ],
+   [
+    630,
+    186,
+    700,
+    224
+   ],
+   [
+    1305,
+    0,
+    1332,
+    70
+   ]
+  ],
+  "count": 4,
+  "note": "jack-like spindle fish 60-100 px, body and tail visible at full size on three, the fourth cut by the top edge; loose group near the surface. A faint blurred shape at x1710 y90 not counted."
+ },
+ {
+  "frame": 19311,
+  "boxes": [
+   [
+    1122,
+    20,
+    1208,
+    56
+   ],
+   [
+    1430,
+    72,
+    1488,
+    124
+   ],
+   [
+    1328,
+    155,
+    1392,
+    197
+   ]
+  ],
+  "count": 4,
+  "note": "first box holds two overlapping fish (~70 px); two more ~55 px spindles with tapered tails; same kind as f17088. 2-3 fainter spindles 30-50 px near the top (x417-447, x638-688, y13-26; x1050-1080 y375-420) not counted. Borderline for the 55 px ones."
+ },
+ {
+  "frame": 20200,
+  "boxes": [
+   [
+    1660,
+    350,
+    1860,
+    510
+   ]
+  ],
+  "count": 1,
+  "note": "one large hazy fish ~200 px, body with a pale lateral stripe and an eye at the head end (lower right), tail faint at the upper left: borderline, could be checked. Two 30-40 px spindles upper centre not counted."
+ },
+ {
+  "frame": 33093,
+  "boxes": [
+   [
+    300,
+    104,
+    356,
+    126
+   ]
+  ],
+  "count": 1,
+  "note": "one dark fish ~50 px seen side-on, deep body with a small tail notch at the left: borderline (size near the 40 px limit)."
+ }
+]

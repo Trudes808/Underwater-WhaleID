@@ -1,0 +1,80 @@
+[
+ {
+  "frame": 5381,
+  "boxes": [[0, 300, 112, 409], [195, 230, 250, 310], [320, 203, 352, 242], [450, 288, 482, 327], [563, 138, 594, 177], [627, 0, 648, 42], [268, 383, 297, 412]],
+  "count": 7,
+  "note": "jack-like fish, body + forked tail at full size or in f5351-f5401 (same fish), 30-150 px; 6 fainter spindles not counted"
+ },
+ {
+  "frame": 5826,
+  "boxes": [[139, 0, 197, 73]],
+  "count": 1,
+  "note": "jack-like fish cut by the top edge, forked tail seen in f5806-f5816; about 13 small spindles (20-45 px) not counted"
+ },
+ {
+  "frame": 6270,
+  "boxes": [[0, 50, 72, 148], [308, 28, 348, 66], [100, 340, 192, 418]],
+  "count": 3,
+  "note": "jack-like fish, tails seen in f6280 (left one: forked tail, head; lower one: tail and mouth); top-right spindles not counted"
+ },
+ {
+  "frame": 8049,
+  "boxes": [[368, 206, 420, 334], [490, 254, 500, 301], [382, 441, 400, 497], [964, 123, 982, 179], [1072, 166, 1086, 212], [1086, 55, 1115, 117], [1146, 103, 1169, 156], [1191, 11, 1247, 69]],
+  "count": 8,
+  "note": "jack-like fish; large one with forked tail in f8039/f8059, the upper-right group of 5 swims together with tails seen in f8069; smaller spindles not counted"
+ },
+ {
+  "frame": 8493,
+  "boxes": [[150, 700, 310, 820]],
+  "count": 1,
+  "note": "large fish lower left, forked tail at the left end and pale eye at the right end"
+ },
+ {
+  "frame": 8938,
+  "boxes": [[1487, 465, 1750, 540], [825, 835, 1050, 900], [1219, 850, 1337, 900], [1319, 769, 1412, 800], [781, 212, 831, 387]],
+  "count": 5,
+  "note": "larger fish (100-250 px) near the whales; top one with dorsal fin and forked tail, lower ones with tails in f8928; vertical one (781-831) least clear"
+ },
+ {
+  "frame": 12494,
+  "boxes": [[60, 305, 175, 375], [885, 360, 995, 435]],
+  "count": 2,
+  "note": "left: fish with forked tail and head (clear in f12484); right: deep-bodied fish with a small tail at the upper left"
+ },
+ {
+  "frame": 15606,
+  "boxes": [[400, 745, 535, 860]],
+  "count": 1,
+  "note": "jack-like fish with forked tail, eye and fins swimming against the whale's throat / flipper (f15576-f15616); not a remora"
+ },
+ {
+  "frame": 16050,
+  "boxes": [[575, 45, 700, 215]],
+  "count": 1,
+  "note": "jack-like fish with tail, clear at full size"
+ },
+ {
+  "frame": 16939,
+  "boxes": [[1650, 78, 1748, 130]],
+  "count": 1,
+  "note": "deep-bodied fish seen turning; tail stub here, full fish with tail in f16934"
+ },
+ {
+  "frame": 17384,
+  "boxes": [[1470, 30, 1595, 235], [210, 685, 270, 715]],
+  "count": 2,
+  "note": "large slender fish with forked tail (f17354-f17399), about 220 px; small fish with tail lower left, 60 px"
+ },
+ {
+  "frame": 22718,
+  "boxes": [[350, 830, 410, 910]],
+  "count": 1,
+  "note": "fish seen end-on while turning; the same fish shows body, eye and tail in f22698-f22708"
+ },
+ {
+  "frame": 39611,
+  "boxes": [[420, 25, 518, 57]],
+  "count": 1,
+  "note": "fish with forked tail, about 95 px"
+ }
+]

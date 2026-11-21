@@ -1,0 +1,192 @@
+frame,time_s,clock_est,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note
+0,0.000,11:29:36.6,air,clear,0,0,none,none,none,,lens just above the surface; splash and water film on the lens; horizon with land-like dark band,,,,,
+15,0.500,11:29:37.1,air,clear,0,0,none,none,none,,heavy splash and water sheet on the lens; frame centre still shows the above-water scene (entry crossing is f21-f23),,,,,
+30,1.001,11:29:37.6,underwater,bubbles,0,0,back,none,none,,entry froth,,,,,
+45,1.501,11:29:38.1,underwater,clear,0,0,back,none,none,,bubble streaks under half the frame,,,,,
+60,2.002,11:29:38.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+75,2.502,11:29:39.1,underwater,bubbles,0,0,back,none,none,,about half the frame is bubble cloud (borderline bubbles/clear),,,,,
+90,3.003,11:29:39.6,underwater,bubbles,0,0,back,none,none,,about half the frame is bubble cloud (borderline),,,,,
+105,3.503,11:29:40.1,underwater,bubbles,0,0,back,none,none,,,,,,,
+120,4.003,11:29:40.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+135,4.504,11:29:41.1,underwater,bubbles,0,0,back,none,none,,,,,,,
+150,5.004,11:29:41.6,underwater,clear,2,1,back,none,none,,,0.2,0.05,no,low,dark hazy shapes among bubbles
+165,5.505,11:29:42.1,underwater,clear,2,1,back,none,none,,,0.4,0.05,no,ok,hazy silhouette behind bubble streaks
+180,6.005,11:29:42.6,underwater,clear,3,1,back,none,none,,"faint = bright whitewater blob top-left (a whale at the surface, clear from f225)",0.4,0.05,no,ok,hazy dark silhouette
+195,6.506,11:29:43.1,underwater,clear,3,1,back,none,none,,,0.2,0.05,no,low,"pale whale mid-distance, clear shape but small"
+210,7.006,11:29:43.6,underwater,clear,3,1,back,none,none,,,0.2,0.05,no,low,"pale whale mid-distance, small"
+225,7.506,11:29:44.1,underwater,clear,3,1,back,none,none,,,0.2,0.05,no,low,"pale whale mid-distance, small"
+240,8.007,11:29:44.6,underwater,clear,2,1,back,none,none,,"top-left whale at the surface; pale floating patch near centre checked over f225-f262: foam, not a fish",0.3,0.05,no,ok,"pale whale, soft outline"
+255,8.507,11:29:45.1,underwater,clear,2,1,back,none,none,,,0.3,0.05,no,ok,"pale whale, soft outline"
+270,9.008,11:29:45.6,underwater,clear,2,1,back,none,none,,,0.3,0.05,no,ok,"pale whale, soft outline"
+285,9.508,11:29:46.1,underwater,clear,2,1,back,none,none,,,0.3,0.05,yes,ok,"near whale cut at left, dark; pale whale same size"
+300,10.009,11:29:46.6,underwater,clear,2,1,back,none,none,,,0.4,0.05,no,ok,pale belly in haze
+315,10.509,11:29:47.1,underwater,clear,2,0,back,none,none,,,0.4,0.05,no,ok,pale belly in haze
+330,11.009,11:29:47.6,underwater,clear,2,0,back,none,none,,,0.4,0.05,no,ok,pale whale with bubble wake; dark whale cut at left
+345,11.510,11:29:48.1,underwater,clear,2,0,back,none,none,,large exhalation bubble ball rising from the tagged whale's blowhole bump (bottom right),0.4,0.05,yes,ok,"dark side view, little skin detail"
+360,12.010,11:29:48.6,underwater,bubbles,0,0,back,none,none,,camera just under the surface,,,,,
+375,12.511,11:29:49.1,underwater,bubbles,0,0,back,none,none,,,,,,,
+390,13.011,11:29:49.6,underwater,bubbles,0,0,back,none,none,,surface underside fills the top right,,,,,
+405,13.512,11:29:50.1,underwater,bubbles,0,0,back,none,none,,lens still under water; splash above the surface seen through it,,,,,
+420,14.012,11:29:50.6,crossing,bubbles,0,0,none,none,none,,lens in the surface foam / draining water sheet (crossing f417-f436),,,,,
+435,14.512,11:29:51.1,crossing,clear,0,0,none,none,none,,"draining water sheet on the lens, sunlit",,,,,
+450,15.013,11:29:51.6,air,clear,0,0,back,none,none,"tag antenna (thin rod, upper left)",sun in view; droplets on lens,,,,,
+465,15.513,11:29:52.1,air,clear,0,0,back,none,none,tag antenna with dark tip (upper left),whitewater around the back,,,,,
+480,16.014,11:29:52.6,air,clear,0,0,back,none,none,tag antenna (upper left),water streaming over the tag housing at left,,,,,
+495,16.514,11:29:53.1,underwater,bubbles,0,0,none,none,none,,entry froth (entry at f492),,,,,
+510,17.015,11:29:53.6,underwater,bubbles,0,0,none,none,none,,,,,,,
+525,17.515,11:29:54.1,underwater,bubbles,0,0,none,none,none,,,,,,,
+540,18.015,11:29:54.6,underwater,clear,2,1,back,none,none,,,0.4,0.05,no,ok,"whole whale with fluke, dark in haze"
+555,18.516,11:29:55.1,underwater,clear,2,1,back,none,none,,,0.4,0.10,no,ok,fluke underside visible but mid-distance haze; near hq
+570,19.016,11:29:55.6,underwater,clear,3,0,back,none,none,,one whale partly behind a bubble cloud (bubbles about a third of the frame),0.4,0.05,no,ok,fluke underside visible; bubbles below
+585,19.517,11:29:56.1,underwater,bubbles,1,1,back,none,none,,whales behind bubbles,0.3,0.05,no,low,mostly hidden by bubbles
+600,20.017,11:29:56.6,underwater,bubbles,0,1,back,none,none,,whale shape behind bubbles,,,,,
+615,20.518,11:29:57.1,underwater,bubbles,1,1,back,none,none,,,0.3,0.05,no,low,behind bubble curtain
+630,21.018,11:29:57.6,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,"whales from below, dark against surface light"
+645,21.518,11:29:58.1,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,"whales from below, dark against surface light"
+660,22.019,11:29:58.6,underwater,clear,4,1,back,none,none,,,0.5,0.10,no,ok,large but hazy dark silhouette from below; near hq
+675,22.519,11:29:59.1,underwater,clear,4,1,back,none,none,,,0.5,0.10,no,ok,"large, sharp outline but dark silhouette, fluke edge-on; near hq"
+690,23.020,11:29:59.6,underwater,clear,4,0,back,none,none,,,0.5,0.10,no,ok,"large, sharp outline but dark silhouette; near hq"
+705,23.520,11:30:00.1,underwater,clear,4,1,back,none,none,,,0.5,0.10,no,hq,"tail stock and fluke overhead, sharp; underside in shadow; close call"
+720,24.021,11:30:00.6,underwater,clear,5,0,back,none,none,,,0.5,0.10,yes,hq,fluke trailing edge sharp overhead; underside in shadow
+735,24.521,11:30:01.1,underwater,clear,3,1,back,none,none,,,0.5,0.10,yes,hq,fluke trailing edge sharp overhead; underside in shadow
+750,25.021,11:30:01.6,underwater,clear,4,1,back,none,none,,,0.6,0.15,yes,hq,"fluke span over half the frame, serrated edge sharp"
+765,25.522,11:30:02.1,underwater,clear,4,0,back,none,none,,,0.5,0.15,no,hq,"fluke and tail stock overhead, edge sharp"
+780,26.022,11:30:02.6,underwater,clear,4,1,back,none,none,,,0.5,0.15,no,hq,"fluke and tail stock overhead, edge sharp"
+795,26.523,11:30:03.1,underwater,clear,4,1,back,none,none,,,0.6,0.15,no,hq,"whole fluke and body, near"
+810,27.023,11:30:03.6,underwater,clear,5,0,back,none,none,"thin pale arc low in the frame (probably the tag antenna seen through water; also faintly in other frames, not labelled each time)",,0.6,0.15,no,hq,"whole fluke and body, near"
+825,27.524,11:30:04.1,underwater,clear,5,0,back,none,none,,,0.7,0.20,no,hq,"near whale, fluke edge and body detail"
+840,28.024,11:30:04.6,underwater,clear,5,0,back,none,none,,,0.7,0.20,yes,hq,"near whale, fluke cut at left"
+855,28.525,11:30:05.1,underwater,clear,5,0,back,none,none,,,0.7,0.15,yes,hq,"near whale side view, fluke cut at left"
+870,29.025,11:30:05.6,underwater,clear,4,1,back,none,none,"thin pale arc low in the frame (probably the tag antenna seen through water; also faintly in other frames, not labelled each time)",,0.7,0.15,yes,hq,"near whale, fluke underside pigment visible"
+885,29.525,11:30:06.1,underwater,clear,4,1,back,none,none,,,0.6,0.15,no,hq,"near whale, fluke underside and body detail"
+900,30.026,11:30:06.6,underwater,clear,5,0,back,none,none,"thin pale arc low in the frame (probably the tag antenna seen through water; also faintly in other frames, not labelled each time)",,0.6,0.15,yes,hq,"near whale cut at top, fluke underside detail"
+915,30.526,11:30:07.1,underwater,clear,5,0,back,none,none,,,0.4,0.05,yes,ok,"largest whale mostly out of frame at top, dark"
+930,31.027,11:30:07.6,underwater,clear,5,0,back,none,none,,,0.3,0.05,no,ok,hazy whale toward the sun
+945,31.527,11:30:08.1,underwater,clear,5,0,back,none,none,,,0.3,0.05,no,ok,hazy whale toward the sun
+960,32.028,11:30:08.6,underwater,clear,5,0,back,none,none,,,0.3,0.05,no,ok,hazy whale toward the sun
+975,32.528,11:30:09.1,underwater,clear,5,0,back,none,none,,,0.3,0.05,no,ok,backlit silhouette
+990,33.028,11:30:09.6,underwater,clear,4,0,back,none,none,,,0.3,0.05,no,ok,backlit silhouette
+1005,33.529,11:30:10.1,underwater,clear,4,0,back,none,none,,,0.3,0.05,no,ok,backlit silhouette
+1020,34.029,11:30:10.6,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,ok,backlit silhouette
+1035,34.530,11:30:11.1,underwater,clear,4,1,back,none,none,,,0.4,0.05,no,ok,backlit silhouette against the sun
+1050,35.030,11:30:11.6,underwater,clear,4,0,back,none,none,,,0.4,0.05,yes,ok,backlit silhouette against the sun
+1065,35.531,11:30:12.1,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,backlit silhouette
+1080,36.031,11:30:12.6,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,backlit silhouette
+1095,36.531,11:30:13.1,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,backlit silhouette
+1110,37.032,11:30:13.6,underwater,clear,5,0,back,none,none,,,0.4,0.05,no,ok,backlit silhouette
+1125,37.532,11:30:14.1,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,backlit silhouette
+1140,38.033,11:30:14.6,underwater,clear,3,0,back,none,none,,,0.4,0.05,no,ok,backlit silhouette
+1155,38.533,11:30:15.1,underwater,clear,3,0,back,none,none,,,0.3,0.05,no,ok,"dark silhouette, fluke clear"
+1170,39.034,11:30:15.6,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,ok,"dark silhouette, fluke clear"
+1185,39.534,11:30:16.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,ok,"dark silhouette, fluke clear"
+1200,40.034,11:30:16.6,underwater,clear,3,1,back,none,none,,bubble stream from the blowhole bump (bottom right),0.3,0.05,no,ok,"dark silhouette, fluke clear"
+1215,40.535,11:30:17.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,ok,"dark silhouette, fluke clear"
+1230,41.035,11:30:17.6,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,ok,dark fluke sinking toward the back's horizon
+1245,41.536,11:30:18.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,ok,"dark, partly out of frame at top; others hazy"
+1260,42.036,11:30:18.6,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,ok,"dark, partly out of frame at top; others hazy"
+1275,42.537,11:30:19.1,underwater,clear,3,1,back,none,none,,,0.2,0.05,no,low,"hazy, mostly out of frame"
+1290,43.037,11:30:19.6,underwater,clear,4,0,back,none,none,,,0.2,0.05,no,low,"hazy whales, small"
+1305,43.537,11:30:20.1,underwater,clear,4,0,back,none,none,,,0.2,0.05,no,low,hazy whale under the bubble column
+1320,44.038,11:30:20.6,underwater,clear,4,0,back,none,none,,bubble column from another whale,0.3,0.05,no,low,hazy whale under the bubble column; close call ok
+1335,44.538,11:30:21.1,underwater,clear,4,0,back,none,none,,,0.3,0.05,no,ok,hazy but recognisable whale under the bubble column
+1350,45.039,11:30:21.6,underwater,clear,5,0,back,none,none,,,0.3,0.05,no,ok,"hazy, flippers spread"
+1365,45.539,11:30:22.1,underwater,clear,3,2,back,none,none,,,0.3,0.05,no,ok,"hazy, flippers spread"
+1380,46.040,11:30:22.6,underwater,clear,3,2,back,none,none,,,0.3,0.05,no,ok,hazy whale low; dark whale cut at top
+1395,46.540,11:30:23.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,ok,hazy whale low; dark whale cut at top
+1410,47.040,11:30:23.6,underwater,clear,4,0,back,none,none,,,0.3,0.05,no,ok,hazy whale low; dark whale cut at top
+1425,47.541,11:30:24.1,underwater,clear,3,1,back,none,none,,,0.4,0.10,yes,ok,"underside overhead against the sun, dark, cut at top"
+1440,48.041,11:30:24.6,underwater,clear,3,2,back,none,none,,,0.4,0.10,yes,ok,"underside overhead against the sun, dark, cut at top"
+1455,48.542,11:30:25.1,underwater,clear,3,2,back,none,none,,,0.3,0.05,yes,ok,"dark, cut at top; hazy whale low"
+1470,49.042,11:30:25.6,underwater,clear,3,1,back,none,none,,,0.4,0.10,yes,ok,"underside overhead against the sun, dark, cut at top"
+1485,49.543,11:30:26.1,underwater,clear,3,1,back,none,none,unsure: small dark shapes upper left,"small dark shapes upper left, judged not fish by the user 2026-11-20",0.4,0.10,yes,ok,"underside overhead against the sun, dark, cut at top"
+1500,50.043,11:30:26.6,underwater,clear,3,2,back,none,none,unsure: small dark shapes upper left,"small dark shapes upper left, judged not fish by the user 2026-11-20",0.4,0.10,yes,ok,"underside overhead against the sun, dark, cut at top"
+1515,50.543,11:30:27.1,underwater,clear,3,1,back,none,none,unsure: small dark shapes upper left,"small dark shapes upper left, judged not fish by the user 2026-11-20",0.3,0.05,no,ok,dim whale behind a bubble trail
+1530,51.044,11:30:27.6,underwater,clear,2,2,back,none,none,,,0.4,0.05,no,ok,"side view with dorsal fin and pale flipper, mid-distance"
+1545,51.544,11:30:28.1,underwater,clear,2,3,back,none,none,,,0.4,0.05,no,ok,"side view with dorsal fin and pale flipper, mid-distance"
+1560,52.045,11:30:28.6,underwater,clear,3,2,back,none,none,,bubble burst at right (about a quarter of the frame),0.4,0.05,no,ok,"side view, mid-distance; bubble burst beside"
+1575,52.545,11:30:29.1,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1590,53.046,11:30:29.6,underwater,clear,3,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1605,53.546,11:30:30.1,underwater,clear,3,2,back,none,none,,,0.4,0.05,yes,ok,"side view, dark, mid-distance"
+1620,54.046,11:30:30.6,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1635,54.547,11:30:31.1,underwater,clear,4,0,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1650,55.047,11:30:31.6,underwater,clear,4,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1665,55.548,11:30:32.1,underwater,clear,4,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1680,56.048,11:30:32.6,underwater,clear,4,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1695,56.549,11:30:33.1,underwater,clear,3,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1710,57.049,11:30:33.6,underwater,clear,3,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1725,57.549,11:30:34.1,underwater,clear,3,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1740,58.050,11:30:34.6,underwater,clear,3,1,back,none,none,,,0.4,0.05,yes,ok,"side view, dark, mid-distance"
+1755,58.550,11:30:35.1,underwater,clear,3,1,back,none,none,,exhalation bubble ball from the blowhole bump,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1770,59.051,11:30:35.6,underwater,clear,3,1,back,none,none,,bubble column at the left edge,0.4,0.05,no,ok,"side view, dark; bubble column at the left edge"
+1785,59.551,11:30:36.1,underwater,clear,3,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1800,60.052,11:30:36.6,underwater,clear,3,2,back,none,none,,"checked at full size; dark specks under the surface are wave facets, not fish",0.4,0.05,no,ok,"side view, dark, mid-distance"
+1815,60.552,11:30:37.1,underwater,clear,3,1,back,none,none,,,0.4,0.05,no,ok,"side view, dark, mid-distance"
+1830,61.052,11:30:37.6,underwater,clear,3,1,back,none,none,,,0.4,0.05,yes,ok,"side view, dark, mid-distance"
+1845,61.553,11:30:38.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,ok,"side view, dark; whale cut at right"
+1860,62.053,11:30:38.6,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,ok,"side view, dark; whale cut at right"
+1875,62.554,11:30:39.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,ok,dark silhouettes cut at both edges
+1890,63.054,11:30:39.6,underwater,clear,3,0,back,none,none,,sun disc in view (small),0.3,0.05,yes,ok,dark silhouettes toward the sun
+1905,63.555,11:30:40.1,underwater,clear,3,0,back,none,none,,exhalation bubble cloud from the blowhole bump (about a third of the frame),0.3,0.05,yes,ok,dark whale cut at right; exhalation cloud
+1920,64.055,11:30:40.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+1935,64.555,11:30:41.1,underwater,bubbles,0,1,back,none,none,,,,,,,
+1950,65.056,11:30:41.6,underwater,bubbles,1,1,back,none,none,,bubbles about half the frame,0.4,0.10,yes,ok,near dark whale at right edge; bubbles over half the frame
+1965,65.556,11:30:42.1,underwater,bubbles,1,0,back,none,none,,,0.3,0.05,yes,low,mostly hidden by bubbles
+1980,66.057,11:30:42.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+1995,66.557,11:30:43.1,underwater,bubbles,0,0,back,none,none,,,,,,,
+2010,67.058,11:30:43.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+2025,67.558,11:30:44.1,underwater,bubbles,0,1,back,none,none,,,,,,,
+2040,68.058,11:30:44.6,underwater,bubbles,0,1,back,none,none,,,,,,,
+2055,68.559,11:30:45.1,underwater,bubbles,0,1,back,none,none,,large dark curved shape: possibly a very near whale,,,,,
+2070,69.059,11:30:45.6,underwater,bubbles,0,3,back,none,none,,bubbles about half the frame (borderline); large dark region at the right behind bubbles may be a very near whale (counted faint),,,,,
+2085,69.560,11:30:46.1,underwater,bubbles,3,0,back,none,none,,bubbles about half the frame (borderline),0.3,0.05,no,low,hazy whales behind bubbles
+2100,70.060,11:30:46.6,underwater,clear,5,0,back,none,none,,includes the near whale right next to the back (bottom right),0.5,0.15,yes,ok,"near whale beside the back, skin visible but cut and partly in bubbles; close call"
+2115,70.561,11:30:47.1,underwater,clear,4,0,back,none,none,,,0.5,0.10,yes,ok,"near flank beside the back, skin detail but only a cut part; close call"
+2130,71.061,11:30:47.6,underwater,clear,4,0,back,none,none,,,0.4,0.10,yes,ok,"near flank beside the back, cut by the edge"
+2145,71.561,11:30:48.1,underwater,clear,3,0,back,none,none,,,0.5,0.10,yes,ok,"near whale low beside the back, partly in bubbles"
+2160,72.062,11:30:48.6,underwater,clear,3,0,back,none,none,,,0.5,0.10,yes,ok,"near whale low beside the back with fluke, in bubbles"
+2175,72.562,11:30:49.1,underwater,clear,4,0,back,none,none,,"huge dark pectoral fin across the top right: owner uncertain (the tagged whale's own flipper or the near whale's), not counted",0.6,0.20,yes,ok,huge dark fin (probably this whale's) across the top; fluke and body low; dark
+2190,73.063,11:30:49.6,underwater,clear,4,0,back,none,none,,"long pectoral fin with knobs across the frame: owner uncertain (see f2175), not counted",0.6,0.20,yes,hq,near whale with its knobbed fin sharp (fin owner probably this whale); close call
+2205,73.563,11:30:50.1,underwater,clear,4,1,back,none,none,,,0.4,0.10,yes,ok,"near rear body and fluke beside the back, cut"
+2220,74.064,11:30:50.6,underwater,clear,3,1,back,none,none,,,0.4,0.10,yes,ok,"near rear body beside the back, cut"
+2235,74.564,11:30:51.1,underwater,clear,4,1,back,none,none,,,0.5,0.10,yes,ok,"near whale beside the back, partly in bubbles, cut"
+2250,75.064,11:30:51.6,underwater,clear,3,2,back,none,none,,,0.3,0.05,yes,low,hazy whales
+2265,75.565,11:30:52.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2280,76.065,11:30:52.6,underwater,clear,4,2,back,none,none,,,0.3,0.05,no,low,hazy whales
+2295,76.566,11:30:53.1,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,low,hazy whales; pale flipper low
+2310,77.066,11:30:53.6,underwater,clear,4,2,back,none,none,,,0.3,0.05,no,low,hazy whales
+2325,77.567,11:30:54.1,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2340,78.067,11:30:54.6,underwater,clear,4,2,back,none,none,"thin pale arc low in the frame (probably the tag antenna seen through water; also faintly in other frames, not labelled each time)",checked at full size,0.3,0.05,no,low,hazy whales
+2355,78.568,11:30:55.1,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2370,79.068,11:30:55.6,underwater,clear,4,2,back,none,none,,,0.3,0.05,no,ok,"dark whale low near the back, flipper visible"
+2385,79.568,11:30:56.1,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,ok,"dark whale low near the back, flipper visible"
+2400,80.069,11:30:56.6,underwater,clear,4,2,back,none,none,,,0.3,0.05,yes,low,hazy whales
+2415,80.569,11:30:57.1,underwater,clear,3,2,back,none,none,,,0.3,0.05,yes,low,hazy whales
+2430,81.070,11:30:57.6,underwater,clear,3,2,back,none,none,,,0.3,0.05,yes,low,hazy whales
+2445,81.570,11:30:58.1,underwater,clear,3,2,back,none,none,,"silver blobs are exhalation bubbles (checked at full size), not fish",0.3,0.05,yes,low,hazy whales
+2460,82.071,11:30:58.6,underwater,clear,4,2,back,none,none,,,0.3,0.05,no,low,hazy whales
+2475,82.571,11:30:59.1,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2490,83.071,11:30:59.6,underwater,clear,4,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2505,83.572,11:31:00.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2520,84.072,11:31:00.6,underwater,clear,3,1,back,none,none,,,0.3,0.05,no,low,hazy whales
+2535,84.573,11:31:01.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,low,hazy whales
+2550,85.073,11:31:01.6,underwater,clear,3,2,back,none,none,,,0.3,0.05,yes,low,dark whale mostly out of frame at right; others hazy
+2565,85.574,11:31:02.1,underwater,clear,3,2,back,none,none,,,0.3,0.05,yes,low,dark whale mostly out of frame at right; others hazy
+2580,86.074,11:31:02.6,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,low,dark whale mostly out of frame at right; others hazy
+2595,86.574,11:31:03.1,underwater,clear,3,1,back,none,none,,,0.3,0.05,yes,low,dark whale mostly out of frame at right; others hazy
+2610,87.075,11:31:03.6,underwater,clear,1,1,back,none,none,,exhalation bubble ball from the blowhole bump,0.4,0.10,yes,ok,"near whale's side at the right edge, dark, mostly out of frame"
+2625,87.575,11:31:04.1,underwater,bubbles,1,0,back,none,none,,,0.3,0.05,yes,low,dark whale at right edge behind bubbles
+2640,88.076,11:31:04.6,underwater,bubbles,1,0,back,none,none,,,0.2,0.05,yes,low,mostly hidden by bubbles
+2655,88.576,11:31:05.1,underwater,bubbles,0,1,back,none,none,,,,,,,
+2670,89.077,11:31:05.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+2685,89.577,11:31:06.1,underwater,bubbles,0,0,back,none,none,,,,,,,
+2700,90.077,11:31:06.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+2715,90.578,11:31:07.1,underwater,bubbles,0,0,back,none,none,,,,,,,
+2730,91.078,11:31:07.6,underwater,bubbles,0,1,back,none,none,,pale elongated shape behind bubbles (white flipper?),,,,,
+2745,91.579,11:31:08.1,underwater,bubbles,0,1,back,none,none,,,,,,,
+2760,92.079,11:31:08.6,underwater,bubbles,0,0,back,none,none,,,,,,,
+2775,92.580,11:31:09.1,underwater,bubbles,0,0,back,none,none,,greyish: just under the surface,,,,,
+2790,93.080,11:31:09.6,underwater,bubbles,0,0,back,none,none,,foam just under the surface (crossing starts f2796),,,,,
+2805,93.580,11:31:10.1,crossing,clear,0,0,none,none,none,,draining water sheet; sun visible through it (exit at f2806),,,,,
+2820,94.081,11:31:10.6,air,clear,0,0,back,none,none,white object on the back near the bottom (tag part?),sun in view; droplets on lens,,,,,
+2835,94.581,11:31:11.1,air,clear,0,0,back,none,none,,sun in view,,,,,
+2850,95.082,11:31:11.6,air,clear,0,0,none,none,none,land on the horizon (left),sea surface and whitewater at the bottom; back not identifiable,,,,,

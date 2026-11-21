@@ -1,0 +1,51 @@
+{
+ "video": "2025-12-20 CG.m4v",
+ "fps": 29.974222168934716,
+ "frames_decoded": 2857,
+ "labels": "AI by-eye labels (WP3), every frame stepped through around each transition",
+ "rule": "event frame = first frame whose frame centre (960,540) shows the scene on the other side of the surface: for an exit the above-water scene (sky, horizon, the back in air, even through droplets); for an entry the water column (including underwater bubble froth). crossing_first..crossing_last = frames in between where the lens is in surface foam or covered by a water sheet and neither side is recognisable at the centre.",
+ "uncertainty_frames": {
+  "event": 1,
+  "crossing_first": 3
+ },
+ "clip_start_state": "air",
+ "clip_end_state": "air",
+ "events": [
+  {
+   "type": "entry",
+   "frame": 24,
+   "time_s": 0.801,
+   "crossing_first": 21,
+   "crossing_last": 23,
+   "crossing_first_time_s": 0.701,
+   "note": "lens in air with splash f0-f20; f21-f23 opaque water sheet; f24 first frame whose centre shows the water column"
+  },
+  {
+   "type": "exit",
+   "frame": 437,
+   "time_s": 14.579,
+   "crossing_first": 417,
+   "crossing_last": 436,
+   "crossing_first_time_s": 13.912,
+   "note": "f416 last frame with the underwater view at the centre (foam just under the surface); f417-f436 surface foam then a draining water sheet; f437 first frame with sky at the centre (through droplets)"
+  },
+  {
+   "type": "entry",
+   "frame": 492,
+   "time_s": 16.414,
+   "crossing_first": 491,
+   "crossing_last": 491,
+   "crossing_first_time_s": 16.381,
+   "note": "f490 last air frame; f491 waterline/sheet across the lens; f492 first frame with underwater froth at the centre"
+  },
+  {
+   "type": "exit",
+   "frame": 2806,
+   "time_s": 93.614,
+   "crossing_first": 2796,
+   "crossing_last": 2805,
+   "crossing_first_time_s": 93.28,
+   "note": "f2795 last frame of foam just under the surface; f2796-f2805 draining water sheet, sun visible through it; f2806 first frame with sky at the centre"
+  }
+ ]
+}

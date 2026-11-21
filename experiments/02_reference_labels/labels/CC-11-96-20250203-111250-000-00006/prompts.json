@@ -1,0 +1,372 @@
+{
+ "meta": {
+  "video": "CC-11-96-20250203-111250-000-00006.m4v",
+  "coords": "full-resolution pixels",
+  "frames": "underwater_cache/reference/<stem>/sample",
+  "author": "WP3 AI by-eye prompts, SAM 2.1 hiera-large"
+ },
+ "013991": [
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "note": "calf: long flipper and body",
+   "box": [
+    230,
+    600,
+    1330,
+    1040
+   ],
+   "p": [
+    [
+     700,
+     880
+    ],
+    [
+     1150,
+     990
+    ],
+    [
+     900,
+     760
+    ],
+    [
+     400,
+     720
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    1075,
+    381,
+    1104,
+    488
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 12,
+   "box": [
+    1276,
+    566,
+    1378,
+    636
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 13,
+   "box": [
+    1586,
+    589,
+    1764,
+    731
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 14,
+   "box": [
+    1377,
+    639,
+    1458,
+    656
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 15,
+   "box": [
+    1185,
+    735,
+    1251,
+    754
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 16,
+   "box": [
+    1288,
+    755,
+    1410,
+    856
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 17,
+   "box": [
+    1244,
+    803,
+    1288,
+    843
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 18,
+   "box": [
+    1612,
+    952,
+    1657,
+    985
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 19,
+   "box": [
+    1547,
+    962,
+    1604,
+    997
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ],
+   "n": [
+    [
+     1150,
+     1000
+    ]
+   ]
+  }
+ ],
+ "041576": [
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "note": "calf's fluke and tail just behind the mother's hump (moves relative to the back)",
+   "box": [
+    960,
+    720,
+    1350,
+    935
+   ],
+   "p": [
+    [
+     1100,
+     850
+    ],
+    [
+     1250,
+     890
+    ],
+    [
+     1050,
+     980
+    ]
+   ],
+   "n": [
+    [
+     1100,
+     965
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    380,
+    220,
+    480,
+    390
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 12,
+   "box": [
+    915,
+    602,
+    977,
+    691
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 13,
+   "box": [
+    1591,
+    620,
+    1658,
+    662
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 14,
+   "box": [
+    1336,
+    737,
+    1391,
+    771
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 15,
+   "box": [
+    1412,
+    960,
+    1478,
+    982
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "back",
+   "note": "the mother's knobbed hump and back",
+   "box": [
+    800,
+    990,
+    1320,
+    1080
+   ],
+   "p": [
+    [
+     1000,
+     1040
+    ],
+    [
+     1200,
+     1050
+    ]
+   ],
+   "n": [
+    [
+     1060,
+     960
+    ]
+   ]
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ]
+  },
+  {
+   "c": "back",
+   "note": "the mother's knobbed hump (hand polygon: SAM gave it to the whale)",
+   "poly": [
+    [
+     860,
+     1005
+    ],
+    [
+     900,
+     962
+    ],
+    [
+     950,
+     936
+    ],
+    [
+     1000,
+     926
+    ],
+    [
+     1060,
+     924
+    ],
+    [
+     1110,
+     934
+    ],
+    [
+     1180,
+     950
+    ],
+    [
+     1270,
+     984
+    ],
+    [
+     1310,
+     1005
+    ],
+    [
+     1310,
+     1080
+    ],
+    [
+     860,
+     1080
+    ]
+   ]
+  }
+ ]
+}

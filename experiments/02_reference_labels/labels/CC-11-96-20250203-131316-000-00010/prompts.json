@@ -1,0 +1,19 @@
+{
+ "meta": {
+  "video": "CC-11-96-20250203-131316-000-00010.m4v",
+  "coords": "full-resolution pixels",
+  "frames": "underwater_cache/reference/<stem>/sample",
+  "author": "WP3 AI by-eye prompts, SAM 2.1 hiera-large"
+ },
+ "048280": [
+  {
+   "c": "air",
+   "rect": [
+    0,
+    0,
+    1920,
+    1080
+   ]
+  }
+ ]
+}

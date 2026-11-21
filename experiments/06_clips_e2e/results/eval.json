@@ -1,0 +1,315 @@
+{
+ "index_mapping": {
+  "00004": {
+   "frames": [
+    2269,
+    26719,
+    52058
+   ],
+   "m4v": [
+    "03Feb25 10:13:53.800",
+    "03Feb25 10:27:29.500",
+    "03Feb25 10:41:34.900"
+   ],
+   "mov": [
+    "03Feb25 10:13:53.800",
+    "03Feb25 10:27:29.500",
+    "03Feb25 10:41:34.900"
+   ],
+   "same": true
+  },
+  "00005": {
+   "frames": [
+    2416,
+    26869,
+    52211
+   ],
+   "m4v": [
+    "03Feb25 10:44:04.600",
+    "03Feb25 10:57:40.500",
+    "03Feb25 11:11:46.000"
+   ],
+   "mov": [
+    "03Feb25 10:44:04.600",
+    "03Feb25 10:57:40.500",
+    "03Feb25 11:11:46.000"
+   ],
+   "same": true
+  },
+  "00006": {
+   "frames": [
+    2423,
+    26894,
+    52254
+   ],
+   "m4v": [
+    "03Feb25 11:14:11.900",
+    "03Feb25 11:27:48.400",
+    "03Feb25 11:41:54.400"
+   ],
+   "mov": [
+    "03Feb25 11:14:11.900",
+    "03Feb25 11:27:48.400",
+    "03Feb25 11:41:54.400"
+   ],
+   "same": true
+  },
+  "00007": {
+   "frames": [
+    2326,
+    26776,
+    52116
+   ],
+   "m4v": [
+    "03Feb25 11:44:15.700",
+    "03Feb25 11:57:51.400",
+    "03Feb25 12:11:56.800"
+   ],
+   "mov": [
+    "03Feb25 11:44:15.700",
+    "03Feb25 11:57:51.400",
+    "03Feb25 12:11:56.800"
+   ],
+   "same": true
+  },
+  "00008": {
+   "frames": [
+    2646,
+    27118,
+    52479
+   ],
+   "m4v": [
+    "03Feb25 12:14:32.400",
+    "03Feb25 12:28:08.800",
+    "03Feb25 12:42:14.900"
+   ],
+   "mov": [
+    "03Feb25 12:14:32.400",
+    "03Feb25 12:28:08.800",
+    "03Feb25 12:42:14.900"
+   ],
+   "same": true
+  },
+  "00009": {
+   "frames": [
+    2426,
+    26885,
+    52232
+   ],
+   "m4v": [
+    "03Feb25 12:44:32.000",
+    "03Feb25 12:58:08.100",
+    "03Feb25 13:12:13.700"
+   ],
+   "mov": [
+    "03Feb25 12:44:32.000",
+    "03Feb25 12:58:08.100",
+    "03Feb25 13:12:13.700"
+   ],
+   "same": true
+  },
+  "00010": {
+   "frames": [
+    2449,
+    26922,
+    52285
+   ],
+   "m4v": [
+    "03Feb25 13:14:38.800",
+    "03Feb25 13:28:15.300",
+    "03Feb25 13:42:21.500"
+   ],
+   "mov": [
+    "03Feb25 13:14:38.800",
+    "03Feb25 13:28:15.300",
+    "03Feb25 13:42:21.500"
+   ],
+   "same": true
+  }
+ },
+ "runs": {},
+ "dev": {
+  "strict": {
+   "label": "strict",
+   "minutes": 1.5885872333333333,
+   "kept_min": 1.4166666666666667,
+   "keep": [
+    [
+     3.0,
+     88.0
+    ]
+   ],
+   "drop": [
+    [
+     0.0,
+     1.0,
+     "surfaced"
+    ],
+    [
+     1.0,
+     3.0,
+     "small (fish or far whale)"
+    ],
+    [
+     88.0,
+     89.0,
+     "underwater with no whale"
+    ],
+    [
+     89.0,
+     90.0,
+     "small (fish or far whale)"
+    ],
+    [
+     90.0,
+     91.0,
+     "underwater with no whale"
+    ],
+    [
+     91.0,
+     92.0,
+     "small (fish or far whale)"
+    ],
+    [
+     92.0,
+     94.0,
+     "underwater with no whale"
+    ],
+    [
+     94.0,
+     95.0,
+     "surfaced"
+    ],
+    [
+     95.0,
+     95.32,
+     "unreadable"
+    ]
+   ],
+   "clear_whale_frames": [
+    144,
+    145
+   ],
+   "whale_free_frames": [
+    20,
+    37
+   ],
+   "whale_free_by_state": {
+    "air": {
+     "sum": 3,
+     "count": 8
+    },
+    "crossing": {
+     "sum": 2,
+     "count": 3
+    },
+    "underwater": {
+     "sum": 15,
+     "count": 26
+    }
+   },
+   "water_vs_label_state": {
+    "air": {
+     "crossing": 1,
+     "surfaced": 6,
+     "underwater": 0,
+     "unknown": 1
+    },
+    "crossing": {
+     "crossing": 1,
+     "surfaced": 2,
+     "underwater": 0,
+     "unknown": 0
+    },
+    "underwater": {
+     "crossing": 8,
+     "surfaced": 4,
+     "underwater": 168,
+     "unknown": 0
+    }
+   },
+   "windows_whale": 67,
+   "windows_scanned": 89,
+   "windows": 96
+  },
+  "sensitive": {
+   "label": "sensitive",
+   "minutes": 1.5885872333333333,
+   "kept_min": 1.5166666666666666,
+   "keep": [
+    [
+     3.0,
+     94.0
+    ]
+   ],
+   "drop": [
+    [
+     0.0,
+     1.0,
+     "surfaced"
+    ],
+    [
+     1.0,
+     3.0,
+     "small (fish or far whale)"
+    ],
+    [
+     94.0,
+     95.0,
+     "surfaced"
+    ],
+    [
+     95.0,
+     95.32,
+     "unreadable"
+    ]
+   ],
+   "clear_whale_frames": [
+    145,
+    145
+   ],
+   "whale_free_frames": [
+    28,
+    37
+   ],
+   "whale_free_by_state": {
+    "air": {
+     "sum": 3,
+     "count": 8
+    },
+    "crossing": {
+     "sum": 3,
+     "count": 3
+    },
+    "underwater": {
+     "sum": 22,
+     "count": 26
+    }
+   },
+   "water_vs_label_state": {
+    "air": {
+     "crossing": 1,
+     "surfaced": 6,
+     "underwater": 0,
+     "unknown": 1
+    },
+    "crossing": {
+     "crossing": 1,
+     "surfaced": 2,
+     "underwater": 0,
+     "unknown": 0
+    },
+    "underwater": {
+     "crossing": 8,
+     "surfaced": 4,
+     "underwater": 168,
+     "unknown": 0
+    }
+   },
+   "windows_whale": 77,
+   "windows_scanned": 89,
+   "windows": 96
+  }
+ },
+ "m4v_crosscheck": {}
+}

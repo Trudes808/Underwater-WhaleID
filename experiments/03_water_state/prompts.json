@@ -1,0 +1,19 @@
+{
+ "note": "CLIP ViT-L/14 zero-shot prompts for the water state (WP4). Written before looking at any score; not tuned.",
+ "air": [
+  "a photo taken above the water, showing the sky and the horizon",
+  "a photo of the sea surface and the sky seen from just above the water",
+  "a photo of a whale's back above the water surface",
+  "a photo of a boat deck",
+  "an aerial photo of the ocean taken from a drone",
+  "a photo with water droplets on the lens, taken above the sea"
+ ],
+ "underwater": [
+  "an underwater photo",
+  "a photo taken underwater in the blue ocean",
+  "an underwater photo of whales",
+  "an underwater photo of the sea surface seen from below",
+  "an underwater photo full of bubbles",
+  "a dark underwater photo of deep water"
+ ]
+}

@@ -1,0 +1,20 @@
+[
+ {
+  "clip": "CC-11-96-20250203-101236-000-00004_003000-003363_copy.mp4",
+  "mode": "copy",
+  "frames_in_clip": 363,
+  "index_says": 363,
+  "hidden_in_clip": 0,
+  "clip_first_t": 0.032,
+  "clip_duration_s": 12.1111,
+  "src_start_s": "100.0889",
+  "wanted_start_s": "100.3",
+  "clock_clip_first": "03Xxx25 10:14:18.200",
+  "clock_src_first": "03Xxx25 10:14:18.200",
+  "clock_clip_last": "03Xxx25 10:14:30.300",
+  "clock_src_last": "03Xxx25 10:14:30.300",
+  "ncc_first_vs_src_first": 1.0,
+  "ncc_first_vs_src_previous": 0.99916,
+  "ncc_last_vs_src_last": 1.0
+ }
+]

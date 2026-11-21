@@ -1,0 +1,81 @@
+{
+ "video": "CC-11-96-20250203-101236-000-00004.m4v",
+ "fps": 29.95054497741022,
+ "frames_decoded": 53345,
+ "labels": "AI by-eye labels (WP3 part 2), test video: scoring only",
+ "rule": "as for the dev clip: event frame = first frame whose centre shows the other side of the surface; crossing = frames in between (foam / water sheet). Drone-drop moments: release = first frame where the tag has visibly separated from the drone's release mechanism; hit = first frame of the impact jolt / splash; settled = first frame after the entry from which the view stays steady with no entry bubbles.",
+ "windows": [
+  {
+   "name": "drone_drop",
+   "start_s": 0.0,
+   "end_s": 181.4,
+   "replaces": "random window 1 (seed 1004 gave 1.41-181.41 s, which already contains the drop)",
+   "how": "every 15th frame 1.4-181.4 s looked at as a grid; every frame 2720-2759 and 2786-2805 stepped through; every 10th frame 2700-3190"
+  },
+  {
+   "name": "random_2",
+   "start_s": 208.386,
+   "end_s": 388.386,
+   "seed": 1004,
+   "how": "every 15th frame (2 per second) looked at as grids",
+   "events": "none: underwater throughout"
+  }
+ ],
+ "drone_drop": {
+  "on_drone": {
+   "first_frame": 0,
+   "last_frame": 2722,
+   "note": "tag hangs under the drone, camera looking down-and-out past the drone's landing gear and release; sea and horizon far below; drone parts fill the top third of the frame"
+  },
+  "release": {
+   "frame": 2723,
+   "time_s": 90.917,
+   "note": "release mechanism opens at f2722, tag clear of the drone parts from f2723; drone parts leave the top of the frame by f2727"
+  },
+  "falling": {
+   "first_frame": 2723,
+   "last_frame": 2746,
+   "time_s": [
+    90.917,
+    91.684
+   ],
+   "note": "sky and horizon, view drifts slowly; about 0.8 s of fall"
+  },
+  "hit": {
+   "frame": 2747,
+   "time_s": 91.718,
+   "note": "impact jolt: a splash sheet across the lens at f2747, then the view tilts and stays fixed relative to a dark curved surface at the bottom of the frame (the whale's back), with whitewater and the whale's blow / spray in view at lens height (f2748-f2790)"
+  },
+  "hit_or_miss": "hit. Evidence in the picture: after f2747 the view is fixed to a dark rounded body at the bottom edge and moves with it, a blow / spray rises in front (f2752-f2790), then the camera is carried under water in one smooth dive (f2791-f2800) and from then on the textured back stays fixed at the bottom of every frame, with the whale surfacing again later (f14272: back in air with a blow). A miss would show the tag bobbing at the waterline with no fixed body in view and no carried dive; a floating tag would show the sky/water line slopping across the lens.",
+  "entry_after_hit": {
+   "frame": 2796,
+   "time_s": 93.354,
+   "crossing_first": 2791,
+   "crossing_last": 2795
+  },
+  "settled": {
+   "frame": 2830,
+   "time_s": 94.489,
+   "note": "entry froth gone, steady blue view with the back at the bottom (judged on every 10th frame; about +-10 frames)"
+  }
+ },
+ "events": [
+  {
+   "type": "entry",
+   "frame": 2796,
+   "time_s": 93.354,
+   "crossing_first": 2791,
+   "crossing_last": 2795,
+   "window": "drone_drop",
+   "note": "f2790 last frame with sky at the centre (foam rising over the lens); f2791-f2795 water sheet / foam; f2796 first frame with the water column at the centre"
+  }
+ ],
+ "outside_windows_seen_in_sample": [
+  {
+   "type": "air frame",
+   "frame": 14272,
+   "time_s": 476.52,
+   "note": "sampled frame in air (a surfacing near 476 s); not stepped through"
+  }
+ ]
+}

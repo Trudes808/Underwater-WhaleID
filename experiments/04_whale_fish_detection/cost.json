@@ -1,0 +1,33 @@
+{
+ "owlv2-base (17 prompts, batch 4, fp16)": {
+  "s_per_frame": 0.13550710678100586,
+  "frames_per_s": 7.379686746733573,
+  "peak_gb": 0.707399168
+ },
+ "owlv2-base (1 prompt, batch 4, fp16)": {
+  "s_per_frame": 0.12729600071907043,
+  "frames_per_s": 7.855706340742787,
+  "peak_gb": 1.015013888
+ },
+ "sam2.1-hiera-large (3 boxes, fp32)": {
+  "s_per_frame": 0.2706211407979329,
+  "frames_per_s": 3.695202810288494,
+  "peak_gb": 1.421798912
+ },
+ "llmdet-large (2 prompts, batch 1, fp16)": {
+  "s_per_frame": 0.5075411001841227,
+  "frames_per_s": 1.9702837851697648,
+  "peak_gb": 3.99362304
+ },
+ "mask2former-swin-large-ade (540 px short side, fp16)": {
+  "s_per_frame": 0.11436009407043457,
+  "frames_per_s": 8.74430900156569,
+  "peak_gb": 2.028647424
+ },
+ "mask2former-swin-large-coco (540 px short side, fp16)": {
+  "s_per_frame": 0.07270510991414388,
+  "frames_per_s": 13.754191434149286,
+  "peak_gb": 2.010020352
+ },
+ "gpu": "NVIDIA RTX 4000 Ada Generation"
+}

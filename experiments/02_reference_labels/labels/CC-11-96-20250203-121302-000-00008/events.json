@@ -1,0 +1,87 @@
+{
+ "video": "CC-11-96-20250203-121302-000-00008.m4v",
+ "fps": 29.974783568061344,
+ "frames_decoded": 53393,
+ "labels": "AI by-eye labels (WP3 part 2), test video: scoring only",
+ "rule": "as for the dev clip: event frame = first frame whose centre (960, 540) shows the other side of the surface (exit: sky / horizon / the back in air, even through droplets or a water film; entry: the water column, including froth); crossing = frames in between (foam / water sheet / lens rising through the thin water layer over the back). time_s = frame / fps.",
+ "windows": [
+  {
+   "name": "random_1",
+   "start_s": 267.816,
+   "end_s": 447.816,
+   "seed": 1008,
+   "how": "every 15th frame (2 per second, f8028-f13413) looked at as thumbnail grids; bottom-left of f9243-f9393 cropped",
+   "events": "none: underwater throughout (open blue water, back as a faint band at the bottom; a pale knobby whale head tip shows over the back at lower left f9243-f9303)"
+  },
+  {
+   "name": "random_2",
+   "start_s": 1301.909,
+   "end_s": 1481.909,
+   "seed": 1008,
+   "how": "every 15th frame (f39024-f44409) looked at as thumbnail grids; every frame f39490-f39689 and f40020-f40187 stepped through (480 px strips, full frames for f39552-f39557)"
+  }
+ ],
+ "events": [
+  {
+   "type": "exit",
+   "frame": 39558,
+   "time_s": 1319.709,
+   "crossing_first": 39538,
+   "crossing_last": 39557,
+   "window": "random_2",
+   "note": "the camera rides just under the surface from about f39490 (Snell window with surface texture, the back's brown reflection around it: underwater). From f39538 the half-out phase (boundary rule 2026-11-20): smooth circular waterline rim across the dome, crisp clouds, brownish band at the centre, a teal water region still at the left, ripple rings; f39554-f39557 the lens rises through the last water layer (streaks). f39558 first frame with the above-water scene at the centre (foam line / sky / wet back through a water film). Exit frame uncertain by about 3 frames, crossing start by about 3 frames. f39565-f39571 a wave washes over the lens with sky visible through it: air (boundary rule). Droplets only from f39572."
+  },
+  {
+   "type": "entry",
+   "frame": 39638,
+   "time_s": 1322.378,
+   "crossing_first": 39635,
+   "crossing_last": 39637,
+   "window": "random_2",
+   "note": "f39634 last frame with sky / horizon at the centre (splash rising on the left); f39635-f39637 foam / water sheet over the lens; f39638 first frame with underwater froth and water column at the centre. Air phase f39558-f39634 about 2.5 s."
+  },
+  {
+   "type": "exit",
+   "frame": 40077,
+   "time_s": 1337.024,
+   "crossing_first": 40048,
+   "crossing_last": 40076,
+   "window": "random_2",
+   "note": "same pattern as the first exit: just under the surface f40020-f40047 (Snell window with surface texture, brown reflection: underwater); from f40048 the half-out phase (smooth circular rim, clouds, brownish band at the centre, teal water region at the lower left up to f40074); f40075-f40076 lens rising through the last water layer; f40077 foam line and sky at the centre. f40078-f40092 water washes over the lens with sky visible through it: air (boundary rule); droplets only from f40093. A splash rises ahead on the water at f40116-f40124 (blow or another animal? unsure). Uncertain by about 2 frames."
+  },
+  {
+   "type": "entry",
+   "frame": 40158,
+   "time_s": 1339.726,
+   "crossing_first": 40157,
+   "crossing_last": 40157,
+   "window": "random_2",
+   "note": "f40156 last frame with the above-water scene at the centre (wave / back with whitewater, sky top right); f40157 a water sheet over the whole lens; f40158 first frame with the water column (teal, bubble jet) at the centre. Air phase f40077-f40156 about 2.6 s. After the entry a pale knobby pectoral flipper with a dark body above it is at the left (f40164-f40187): another whale or the tagged whale's own flipper, unsure."
+  }
+ ],
+ "outside_windows_seen_in_sample": [
+  {
+   "type": "air frame",
+   "frame": 4425,
+   "time_s": 147.624,
+   "note": "sampled frame in air (surfacing near 148 s; wet back in the lower half, yellow-green tag part at the left edge); not stepped through"
+  },
+  {
+   "type": "air frame",
+   "frame": 39576,
+   "time_s": 1320.309,
+   "note": "inside random_2 (between exit f39558 and entry f39638)"
+  },
+  {
+   "type": "air frame",
+   "frame": 47140,
+   "time_s": 1572.655,
+   "note": "sampled frame in air (surfacing near 1573 s, water sheet over the left of the lens); not stepped through"
+  },
+  {
+   "type": "near surface",
+   "frames": [3981, 4870, 5315, 36906, 37351, 37796, 38241, 45805, 46250, 46695, 51144, 51589, 52034],
+   "note": "sampled frames just under the surface around the other surfacings (about 133-180 s, 1231-1335 s, 1528-1590 s, 1706-1736 s); a fourth surfacing near 1700-1740 s is possible but no air frame was sampled there"
+  }
+ ]
+}

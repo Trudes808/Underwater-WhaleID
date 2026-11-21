@@ -1,0 +1,122 @@
+{
+ "video": "CC-11-96-20250203-124310-000-00009.m4v",
+ "fps": 29.974783974174187,
+ "frames_decoded": 53364,
+ "labels": "AI by-eye labels (WP3 part 2), test video: scoring only",
+ "rule": "as for the dev clip: event frame = first frame whose centre (960, 540) shows the other side of the surface; crossing = frames in between. Applied here: sky seen through the surface from just below (Snell's window, brown reflection of the back around it) is still the underwater side; a draining water sheet over the lens with distorted sky is crossing; entry froth (beige streaked bubbles) counts as the water side, a water sheet with sky still visible is crossing. Revised 2026-11-20 to the agreed boundary cases: Snell's window just under the surface = underwater; half-out phase (waterline rim / brown band at the centre) = crossing; after that, waves or sheets washing over the lens with sky visible = air (exit frames moved 6-11 frames earlier); entry froth = water side (bubbles).",
+ "windows": [
+  {
+   "name": "random_1",
+   "start_s": 90.417,
+   "end_s": 270.417,
+   "seed": 1009,
+   "how": "every 15th frame (2 per second) looked at as thumbnail grids; every frame stepped through (centre marked) at f4000-4060, f4105-4150, f4280-4340, f4405-4470"
+  },
+  {
+   "name": "random_2",
+   "start_s": 523.162,
+   "end_s": 703.162,
+   "seed": 1009,
+   "how": "every 15th frame looked at as thumbnail grids; every frame stepped through at f19320-19370, f19425-19475, f20160-20225, f20285-20330"
+  }
+ ],
+ "events": [
+  {
+   "type": "exit",
+   "frame": 4038,
+   "time_s": 134.713,
+   "crossing_first": 4032,
+   "crossing_last": 4037,
+   "window": "random_1",
+   "note": "f4031 last frame with the underwater side at the centre; f4032-4037 half-out phase (waterline rim / brown band at the centre); f4038 sky at the centre through a draining water sheet (air with water washing over the lens, boundary rule 2026-11-20); clear sky and clouds from f4045"
+  },
+  {
+   "type": "entry",
+   "frame": 4125,
+   "time_s": 137.616,
+   "crossing_first": 4123,
+   "crossing_last": 4124,
+   "window": "random_1",
+   "note": "f4116-4122 blow / whitewater in front, f4122 last frame with sky at the centre; f4123-4124 water sheet over the lens; f4125-4132 entry froth, water column visible from f4133"
+  },
+  {
+   "type": "exit",
+   "frame": 4322,
+   "time_s": 144.188,
+   "crossing_first": 4317,
+   "crossing_last": 4321,
+   "window": "random_1",
+   "note": "f4316 last Snell's-window frame; f4317-4321 half-out (rim crossing the centre, brown band below); f4322 sky through a water sheet; clouds and horizon f4330-4332, waves washing over the lens f4333-4340 (air)"
+  },
+  {
+   "type": "entry",
+   "frame": 4409,
+   "time_s": 147.09,
+   "crossing_first": 4407,
+   "crossing_last": 4408,
+   "window": "random_1",
+   "note": "f4406 last air frame (splash); f4407-4408 splash / water sheet; froth f4409-4434, clear water from about f4450"
+  },
+  {
+   "type": "exit",
+   "frame": 19354,
+   "time_s": 645.676,
+   "crossing_first": 19348,
+   "crossing_last": 19353,
+   "window": "random_2",
+   "note": "f19347 last Snell's-window frame; f19348-19353 half-out (rim at / just below the centre, clouds above it); f19354 sky through water sheets (air, washing) ; sharp sky with droplets from f19360"
+  },
+  {
+   "type": "entry",
+   "frame": 19434,
+   "time_s": 648.345,
+   "crossing_first": 19433,
+   "crossing_last": 19433,
+   "window": "random_2",
+   "note": "f19432 last air frame (whitewater below the centre); f19433 water sheet; froth f19434-19439, water column from f19440"
+  },
+  {
+   "type": "exit",
+   "frame": 20200,
+   "time_s": 673.9,
+   "crossing_first": 20196,
+   "crossing_last": 20199,
+   "window": "random_2",
+   "note": "f20195 last Snell's-window frame; f20196-20199 half-out (rim at the centre); f20200 sky through a water sheet (air, washing); clouds through droplets f20211, clear f20213"
+  },
+  {
+   "type": "entry",
+   "frame": 20291,
+   "time_s": 676.936,
+   "crossing_first": 20290,
+   "crossing_last": 20290,
+   "window": "random_2",
+   "note": "f20289 last air frame (whitewater); f20290 foam over the lens; froth f20291-20295, water column from f20296"
+  }
+ ],
+ "outside_windows_seen": [
+  {
+   "type": "exit",
+   "frame": 32124,
+   "time_s": 1071.701,
+   "crossing_first": 32122,
+   "crossing_last": 32123,
+   "note": "stepped through every frame f32080-32271 because sample f32221 showed froth; f32121 last Snell's-window frame, f32122-32123 half-out, f32124 sky through draining water sheets, sky with droplets from f32140; less carefully judged than the window events (+-4 frames)"
+  },
+  {
+   "type": "entry",
+   "frame": 32221,
+   "time_s": 1074.937,
+   "crossing_first": 32220,
+   "crossing_last": 32220,
+   "note": "f32205-32219 whitewater rising in front, f32220 splash over the lens, f32221-32231 entry froth (the sampled frame), water column from about f32234"
+  },
+  {
+   "type": "air frame",
+   "frame": 20214,
+   "time_s": 674.367,
+   "note": "sampled frame in air, inside window random_2 (between exit f20211 and entry f20291)"
+  }
+ ],
+ "summary": "two breaths in each window, about 7 s (window 1) and 25 s (window 2) apart: air f4038-4124 (2.9 s) and f4322-4408 (2.9 s); air f19354-19433 (2.6 s) and f20200-20290 (3.0 s); one more surfacing outside the windows at about 1072-1075 s. Between breaths the camera stays just under the surface (sky through the surface, the brown reflection of the back)."
+}

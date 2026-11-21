@@ -1,0 +1,425 @@
+{
+ "meta": {
+  "video": "CC-11-96-20250203-101236-000-00004.m4v",
+  "coords": "full-resolution pixels",
+  "frames": "underwater_cache/reference/<stem>/sample",
+  "author": "WP3 AI by-eye prompts, SAM 2.1 hiera-large"
+ },
+ "002714": [
+  {
+   "c": "air",
+   "rect": [
+    0,
+    0,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "gear",
+   "note": "drone frame, arms, landing gear and release above the tag",
+   "box": [
+    130,
+    0,
+    1700,
+    830
+   ],
+   "p": [
+    [
+     1400,
+     600
+    ],
+    [
+     400,
+     450
+    ],
+    [
+     900,
+     80
+    ],
+    [
+     1500,
+     100
+    ]
+   ],
+   "n": [
+    [
+     900,
+     500
+    ],
+    [
+     1100,
+     700
+    ]
+   ]
+  },
+  {
+   "c": "gear",
+   "note": "drone leg lower left",
+   "box": [
+    0,
+    700,
+    120,
+    920
+   ],
+   "p": [
+    [
+     50,
+     820
+    ]
+   ]
+  }
+ ],
+ "008049": [
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "note": "near whale silhouette above with both flippers (probably the calf)",
+   "box": [
+    580,
+    0,
+    1560,
+    850
+   ],
+   "p": [
+    [
+     1150,
+     500
+    ],
+    [
+     800,
+     420
+    ],
+    [
+     1350,
+     780
+    ],
+    [
+     1350,
+     150
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    368,
+    206,
+    420,
+    334
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 12,
+   "box": [
+    490,
+    254,
+    500,
+    301
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 13,
+   "box": [
+    382,
+    441,
+    400,
+    497
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 14,
+   "box": [
+    964,
+    123,
+    982,
+    179
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 15,
+   "box": [
+    1072,
+    166,
+    1086,
+    212
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 16,
+   "box": [
+    1086,
+    55,
+    1115,
+    117
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 17,
+   "box": [
+    1146,
+    103,
+    1169,
+    156
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 18,
+   "box": [
+    1191,
+    11,
+    1247,
+    69
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ]
+  }
+ ],
+ "008938": [
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "note": "whale top left, cut by the edge",
+   "box": [
+    0,
+    0,
+    480,
+    330
+   ],
+   "p": [
+    [
+     150,
+     150
+    ],
+    [
+     380,
+     250
+    ]
+   ]
+  },
+  {
+   "c": "whale",
+   "id": 2,
+   "grade": "hazy",
+   "note": "whale lower right, cut by the edge",
+   "box": [
+    1450,
+    570,
+    1920,
+    1050
+   ],
+   "p": [
+    [
+     1650,
+     900
+    ],
+    [
+     1850,
+     700
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    1487,
+    465,
+    1750,
+    540
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 12,
+   "box": [
+    825,
+    835,
+    1050,
+    900
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 13,
+   "box": [
+    1219,
+    850,
+    1337,
+    900
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 14,
+   "box": [
+    1319,
+    769,
+    1412,
+    800
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 15,
+   "box": [
+    781,
+    212,
+    831,
+    387
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ]
+  }
+ ],
+ "015606": [
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "clear",
+   "note": "very near whale: throat grooves and flipper",
+   "box": [
+    250,
+    0,
+    900,
+    1040
+   ],
+   "p": [
+    [
+     400,
+     400
+    ],
+    [
+     500,
+     900
+    ],
+    [
+     700,
+     980
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    400,
+    745,
+    535,
+    860
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ],
+   "n": [
+    [
+     450,
+     1000
+    ]
+   ]
+  }
+ ]
+}

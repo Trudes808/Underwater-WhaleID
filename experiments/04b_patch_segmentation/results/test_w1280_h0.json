@@ -1,0 +1,6815 @@
+{
+ "dev_thresholds": {
+  "frame": 1.0,
+  "win_max": 282.0,
+  "win_kth2": 66.0,
+  "win_kth3": 58.0,
+  "win_meanmap": 1.0
+ },
+ "unknown_thr": 0.296875,
+ "videos": {
+  "CC-11-96-20250203-101236-000-00004": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 0.9709353146853146,
+     "n_whale": 26,
+     "n_free": 88,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 24.0,
+      "tp": 25.0,
+      "fp": 8.0,
+      "n_pos": 26.0,
+      "n_neg": 88.0,
+      "recall": 0.9615384615384616,
+      "far": 0.09090909090909091
+     },
+     "sweep": {
+      "1": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 40,
+       "n_neg": 88
+      },
+      "4": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 29,
+       "n_neg": 88
+      },
+      "8": {
+       "hits": 25,
+       "n_pos": 26,
+       "false_alarms": 18,
+       "n_neg": 88
+      },
+      "16": {
+       "hits": 25,
+       "n_pos": 26,
+       "false_alarms": 10,
+       "n_neg": 88
+      },
+      "32": {
+       "hits": 24,
+       "n_pos": 26,
+       "false_alarms": 7,
+       "n_neg": 88
+      },
+      "64": {
+       "hits": 22,
+       "n_pos": 26,
+       "false_alarms": 3,
+       "n_neg": 88
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 26,
+      "n_pos": 26,
+      "false_alarms": 40,
+      "n_neg": 88,
+      "fire_other": 6,
+      "n_other": 6,
+      "recall": 1.0,
+      "far": 0.45454545454545453
+     }
+    },
+    "win_max": {
+     "auc": 0.9484265734265734,
+     "n_whale": 26,
+     "n_free": 88,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 69.0,
+      "tp": 23.0,
+      "fp": 8.0,
+      "n_pos": 26.0,
+      "n_neg": 88.0,
+      "recall": 0.8846153846153846,
+      "far": 0.09090909090909091
+     },
+     "sweep": {
+      "1": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 70,
+       "n_neg": 88
+      },
+      "4": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 52,
+       "n_neg": 88
+      },
+      "8": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 38,
+       "n_neg": 88
+      },
+      "16": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 28,
+       "n_neg": 88
+      },
+      "32": {
+       "hits": 24,
+       "n_pos": 26,
+       "false_alarms": 20,
+       "n_neg": 88
+      },
+      "64": {
+       "hits": 23,
+       "n_pos": 26,
+       "false_alarms": 9,
+       "n_neg": 88
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 8,
+      "n_pos": 26,
+      "false_alarms": 0,
+      "n_neg": 88,
+      "fire_other": 0,
+      "n_other": 6,
+      "recall": 0.3076923076923077,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 0.9619755244755245,
+     "n_whale": 26,
+     "n_free": 88,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 59.0,
+      "tp": 24.0,
+      "fp": 8.0,
+      "n_pos": 26.0,
+      "n_neg": 88.0,
+      "recall": 0.9230769230769231,
+      "far": 0.09090909090909091
+     },
+     "sweep": {
+      "1": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 60,
+       "n_neg": 88
+      },
+      "4": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 46,
+       "n_neg": 88
+      },
+      "8": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 33,
+       "n_neg": 88
+      },
+      "16": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 21,
+       "n_neg": 88
+      },
+      "32": {
+       "hits": 24,
+       "n_pos": 26,
+       "false_alarms": 11,
+       "n_neg": 88
+      },
+      "64": {
+       "hits": 23,
+       "n_pos": 26,
+       "false_alarms": 6,
+       "n_neg": 88
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 23,
+      "n_pos": 26,
+      "false_alarms": 6,
+      "n_neg": 88,
+      "fire_other": 3,
+      "n_other": 6,
+      "recall": 0.8846153846153846,
+      "far": 0.06818181818181818
+     }
+    },
+    "win_kth3": {
+     "auc": 0.9635052447552448,
+     "n_whale": 26,
+     "n_free": 88,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 41.0,
+      "tp": 24.0,
+      "fp": 8.0,
+      "n_pos": 26.0,
+      "n_neg": 88.0,
+      "recall": 0.9230769230769231,
+      "far": 0.09090909090909091
+     },
+     "sweep": {
+      "1": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 56,
+       "n_neg": 88
+      },
+      "4": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 39,
+       "n_neg": 88
+      },
+      "8": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 27,
+       "n_neg": 88
+      },
+      "16": {
+       "hits": 25,
+       "n_pos": 26,
+       "false_alarms": 16,
+       "n_neg": 88
+      },
+      "32": {
+       "hits": 24,
+       "n_pos": 26,
+       "false_alarms": 9,
+       "n_neg": 88
+      },
+      "64": {
+       "hits": 22,
+       "n_pos": 26,
+       "false_alarms": 4,
+       "n_neg": 88
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 23,
+      "n_pos": 26,
+      "false_alarms": 6,
+      "n_neg": 88,
+      "fire_other": 3,
+      "n_other": 6,
+      "recall": 0.8846153846153846,
+      "far": 0.06818181818181818
+     }
+    },
+    "win_meanmap": {
+     "auc": 0.9757430069930071,
+     "n_whale": 26,
+     "n_free": 88,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 21.0,
+      "tp": 25.0,
+      "fp": 8.0,
+      "n_pos": 26.0,
+      "n_neg": 88.0,
+      "recall": 0.9615384615384616,
+      "far": 0.09090909090909091
+     },
+     "sweep": {
+      "1": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 41,
+       "n_neg": 88
+      },
+      "4": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 27,
+       "n_neg": 88
+      },
+      "8": {
+       "hits": 26,
+       "n_pos": 26,
+       "false_alarms": 15,
+       "n_neg": 88
+      },
+      "16": {
+       "hits": 25,
+       "n_pos": 26,
+       "false_alarms": 8,
+       "n_neg": 88
+      },
+      "32": {
+       "hits": 24,
+       "n_pos": 26,
+       "false_alarms": 5,
+       "n_neg": 88
+      },
+      "64": {
+       "hits": 21,
+       "n_pos": 26,
+       "false_alarms": 3,
+       "n_neg": 88
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 26,
+      "n_pos": 26,
+      "false_alarms": 41,
+      "n_neg": 88,
+      "fire_other": 6,
+      "n_other": 6,
+      "recall": 1.0,
+      "far": 0.4659090909090909
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 112,
+    "mean_back_share_with": 0.1048611111111111,
+    "mean_back_share_without": null,
+    "frames_with_back_share_gt5pct": 108,
+    "auc_back_share": null
+   },
+   "fish": {
+    "fish_frames": 13,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 107
+   },
+   "shares_underwater_mean": {
+    "water": 0.28181299603174603,
+    "whale": 0.027137896825396825,
+    "back": 0.1048611111111111,
+    "fish": 0.0,
+    "bubbles": 0.02136656746031746,
+    "surface": 0.031163194444444448,
+    "air": 0.5336582341269841,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 21,
+     "water": 0.012680521310320535,
+     "whale": 0.2476224022543149,
+     "back": 0.12398731947868968,
+     "fish": 0.0,
+     "bubbles": 0.004579077139837971,
+     "surface": 0.0003522367030644593,
+     "air": 0.6107784431137725,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.15287072912997535
+    }
+   },
+   "masks": {
+    "frames": [
+     2714,
+     8049,
+     8938,
+     15606
+    ],
+    "single": {
+     "frames": 4,
+     "iou": {
+      "water": 0.8681665516361483,
+      "whale": 0.77873661672641,
+      "back": 0.5623666924880886,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.7765355176727178,
+      "seafloor": null,
+      "gear": 0.0
+     },
+     "iou_band": {
+      "water": 0.8945226272368456,
+      "whale": 0.8320390735483909,
+      "back": 0.5702613413797334,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.8101409165086226,
+      "seafloor": null,
+      "gear": 0.0
+     },
+     "pixel_acc": 0.8543786168981482,
+     "whale_recall_by_grade": {
+      "clear": {
+       "pixel_recall": 0.995440387643298,
+       "instances": 1,
+       "found_25pct": 1
+      },
+      "hazy": {
+       "pixel_recall": 0.9142536760816672,
+       "instances": 3,
+       "found_25pct": 3
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0004291645286187433,
+      "whale_as_back": 0.00044356577903621047,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.056224003439675735,
+      "water_as_whale": 0.02043205760309345,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.01070578905630452
+     },
+     "fish": {
+      "instances": 14,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       4610125,
+       106905,
+       162252,
+       0,
+       230,
+       352707,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       41322,
+       693229,
+       326,
+       0,
+       0,
+       76,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       2295,
+       92,
+       211983,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       34349,
+       4909,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       679,
+       0,
+       0,
+       997,
+       0,
+       1571221,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       42659,
+       0,
+       0,
+       7568,
+       0,
+       450476,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.9432290228082613
+    },
+    "window": {
+     "frames": 4,
+     "iou": {
+      "water": 0.8434350823963843,
+      "whale": 0.7512224134874385,
+      "back": 0.5554099798252917,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.7628308943538972,
+      "seafloor": null,
+      "gear": 0.0
+     },
+     "iou_band": {
+      "water": 0.8730265999176369,
+      "whale": 0.8375960302196342,
+      "back": 0.5585699469872654,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.7956227104045498,
+      "seafloor": null,
+      "gear": 0.0
+     },
+     "pixel_acc": 0.837940055941358,
+     "whale_recall_by_grade": {
+      "clear": {
+       "pixel_recall": 0.9976172594289809,
+       "instances": 1,
+       "found_25pct": 1
+      },
+      "hazy": {
+       "pixel_recall": 0.8359504919073311,
+       "instances": 3,
+       "found_25pct": 3
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.00041983486495311847,
+      "whale_as_back": 0.000642217937745679,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.10570880042669395,
+      "water_as_whale": 0.023170857336055697,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.006871297289732705
+     },
+     "fish": {
+      "instances": 14,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       4507867,
+       121235,
+       168311,
+       0,
+       0,
+       434806,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       77691,
+       656790,
+       472,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       1473,
+       90,
+       212807,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       33269,
+       5989,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       151,
+       0,
+       0,
+       0,
+       0,
+       1572746,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       11877,
+       0,
+       0,
+       0,
+       0,
+       488826,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.8936489816355604
+    },
+    "single_unknown": {
+     "frames": 4,
+     "iou": {
+      "water": 0.8681713286858149,
+      "whale": 0.7945510587290527,
+      "back": 0.5623666924880886,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.75519429382456,
+      "seafloor": null,
+      "gear": 0.0
+     },
+     "iou_band": {
+      "water": 0.8945226272368456,
+      "whale": 0.8566940052844945,
+      "back": 0.5702613413797334,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.8032697525432656,
+      "seafloor": null,
+      "gear": 0.0
+     },
+     "pixel_acc": 0.805723861882716,
+     "whale_recall_by_grade": {
+      "clear": {
+       "pixel_recall": 0.9175648010125694,
+       "instances": 1,
+       "found_25pct": 1
+      },
+      "hazy": {
+       "pixel_recall": 0.9142536760816672,
+       "instances": 3,
+       "found_25pct": 3
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0004291645286187433,
+      "whale_as_back": 0.00044356577903621047,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.056224003439675735,
+      "water_as_whale": 0.020415047611730318,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.01070578905630452
+     },
+     "fish": {
+      "instances": 14,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       4610054,
+       106816,
+       162252,
+       0,
+       230,
+       352707,
+       0,
+       0,
+       0,
+       160
+      ],
+      [
+       41322,
+       672802,
+       326,
+       0,
+       0,
+       76,
+       0,
+       0,
+       0,
+       20427
+      ],
+      [
+       2295,
+       92,
+       211983,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       34238,
+       4909,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       111
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1188157,
+       0,
+       0,
+       384740
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       416,
+       0,
+       0,
+       500287
+      ]
+     ],
+     "whale_pixel_recall": 0.9154354087948481
+    }
+   }
+  },
+  "CC-11-96-20250203-104242-000-00005": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 0.9759472115793955,
+     "n_whale": 27,
+     "n_free": 87,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 53.0,
+      "tp": 24.0,
+      "fp": 7.0,
+      "n_pos": 27.0,
+      "n_neg": 87.0,
+      "recall": 0.8888888888888888,
+      "far": 0.08045977011494253
+     },
+     "sweep": {
+      "1": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 59,
+       "n_neg": 87
+      },
+      "4": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 38,
+       "n_neg": 87
+      },
+      "8": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 31,
+       "n_neg": 87
+      },
+      "16": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 20,
+       "n_neg": 87
+      },
+      "32": {
+       "hits": 26,
+       "n_pos": 27,
+       "false_alarms": 13,
+       "n_neg": 87
+      },
+      "64": {
+       "hits": 24,
+       "n_pos": 27,
+       "false_alarms": 6,
+       "n_neg": 87
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 27,
+      "n_pos": 27,
+      "false_alarms": 59,
+      "n_neg": 87,
+      "fire_other": 5,
+      "n_other": 6,
+      "recall": 1.0,
+      "far": 0.6781609195402298
+     }
+    },
+    "win_max": {
+     "auc": 0.9706257982120051,
+     "n_whale": 27,
+     "n_free": 87,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 76.0,
+      "tp": 25.0,
+      "fp": 8.0,
+      "n_pos": 27.0,
+      "n_neg": 87.0,
+      "recall": 0.9259259259259259,
+      "far": 0.09195402298850575
+     },
+     "sweep": {
+      "1": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 70,
+       "n_neg": 87
+      },
+      "4": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 54,
+       "n_neg": 87
+      },
+      "8": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 45,
+       "n_neg": 87
+      },
+      "16": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 36,
+       "n_neg": 87
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 26,
+       "n_neg": 87
+      },
+      "64": {
+       "hits": 26,
+       "n_pos": 27,
+       "false_alarms": 12,
+       "n_neg": 87
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 8,
+      "n_pos": 27,
+      "false_alarms": 0,
+      "n_neg": 87,
+      "fire_other": 0,
+      "n_other": 6,
+      "recall": 0.2962962962962963,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 0.9767986377181779,
+     "n_whale": 27,
+     "n_free": 87,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 67.0,
+      "tp": 26.0,
+      "fp": 8.0,
+      "n_pos": 27.0,
+      "n_neg": 87.0,
+      "recall": 0.9629629629629629,
+      "far": 0.09195402298850575
+     },
+     "sweep": {
+      "1": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 67,
+       "n_neg": 87
+      },
+      "4": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 49,
+       "n_neg": 87
+      },
+      "8": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 40,
+       "n_neg": 87
+      },
+      "16": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 29,
+       "n_neg": 87
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 22,
+       "n_neg": 87
+      },
+      "64": {
+       "hits": 26,
+       "n_pos": 27,
+       "false_alarms": 8,
+       "n_neg": 87
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 26,
+      "n_pos": 27,
+      "false_alarms": 8,
+      "n_neg": 87,
+      "fire_other": 0,
+      "n_other": 6,
+      "recall": 0.9629629629629629,
+      "far": 0.09195402298850575
+     }
+    },
+    "win_kth3": {
+     "auc": 0.9804171988080035,
+     "n_whale": 27,
+     "n_free": 87,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 52.0,
+      "tp": 26.0,
+      "fp": 8.0,
+      "n_pos": 27.0,
+      "n_neg": 87.0,
+      "recall": 0.9629629629629629,
+      "far": 0.09195402298850575
+     },
+     "sweep": {
+      "1": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 63,
+       "n_neg": 87
+      },
+      "4": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 42,
+       "n_neg": 87
+      },
+      "8": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 36,
+       "n_neg": 87
+      },
+      "16": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 26,
+       "n_neg": 87
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 14,
+       "n_neg": 87
+      },
+      "64": {
+       "hits": 25,
+       "n_pos": 27,
+       "false_alarms": 6,
+       "n_neg": 87
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 25,
+      "n_pos": 27,
+      "false_alarms": 7,
+      "n_neg": 87,
+      "fire_other": 1,
+      "n_other": 6,
+      "recall": 0.9259259259259259,
+      "far": 0.08045977011494253
+     }
+    },
+    "win_meanmap": {
+     "auc": 0.9959557258407833,
+     "n_whale": 27,
+     "n_free": 87,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 28.0,
+      "tp": 27.0,
+      "fp": 8.0,
+      "n_pos": 27.0,
+      "n_neg": 87.0,
+      "recall": 1.0,
+      "far": 0.09195402298850575
+     },
+     "sweep": {
+      "1": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 51,
+       "n_neg": 87
+      },
+      "4": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 31,
+       "n_neg": 87
+      },
+      "8": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 24,
+       "n_neg": 87
+      },
+      "16": {
+       "hits": 27,
+       "n_pos": 27,
+       "false_alarms": 16,
+       "n_neg": 87
+      },
+      "32": {
+       "hits": 26,
+       "n_pos": 27,
+       "false_alarms": 7,
+       "n_neg": 87
+      },
+      "64": {
+       "hits": 24,
+       "n_pos": 27,
+       "false_alarms": 0,
+       "n_neg": 87
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 27,
+      "n_pos": 27,
+      "false_alarms": 51,
+      "n_neg": 87,
+      "fire_other": 5,
+      "n_other": 6,
+      "recall": 1.0,
+      "far": 0.5862068965517241
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 115,
+    "mean_back_share_with": 0.10294685990338165,
+    "mean_back_share_without": 0.0,
+    "frames_with_back_share_gt5pct": 114,
+    "auc_back_share": 1.0
+   },
+   "fish": {
+    "fish_frames": 4,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 116
+   },
+   "shares_underwater_mean": {
+    "water": 0.17673611111111112,
+    "whale": 0.03288793103448276,
+    "back": 0.1020593869731801,
+    "fish": 0.0,
+    "bubbles": 0.03786159003831417,
+    "surface": 0.029712643678160917,
+    "air": 0.6207423371647509,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 14,
+     "water": 0.0069828338667442535,
+     "whale": 0.038405586267093395,
+     "back": 0.08408495781204539,
+     "fish": 0.0,
+     "bubbles": 0.06750072737852779,
+     "surface": 0.0,
+     "air": 0.8030258946755892,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.20715740471341287
+    }
+   },
+   "masks": {
+    "frames": [
+     10419,
+     17088
+    ],
+    "single": {
+     "frames": 2,
+     "iou": {
+      "water": 0.7702232673754236,
+      "whale": 0.6108590612772582,
+      "back": 0.3901331229758399,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": 0.3179019347744276,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.7919144219132179,
+      "whale": 0.6302801156632253,
+      "back": 0.3266362418298431,
+      "fish": null,
+      "bubbles": null,
+      "surface": 0.2988605836583943,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.7955109471450618,
+     "whale_recall_by_grade": {
+      "hazy": {
+       "pixel_recall": 0.9938460680112701,
+       "instances": 1,
+       "found_25pct": 1
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.00014403627209078044,
+      "whale_as_back": 0.0,
+      "bubbles_as_whale": null,
+      "surface_as_whale": 0.0,
+      "whale_as_water": 0.00615393198872988,
+      "water_as_whale": 0.03049445635531656,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0025613406645708346
+     },
+     "fish": {
+      "instances": 4,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       2842653,
+       112351,
+       248512,
+       0,
+       31767,
+       253713,
+       195313,
+       0,
+       0,
+       0
+      ],
+      [
+       1103,
+       178132,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       409,
+       23,
+       159250,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       3018,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       1848,
+       0,
+       0,
+       0,
+       0,
+       119108,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.9938460680112701
+    },
+    "window": {
+     "frames": 2,
+     "iou": {
+      "water": 0.7665101409810472,
+      "whale": 0.4901129125210015,
+      "back": 0.3864671943011593,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": 0.3159836151225731,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.791048333302778,
+      "whale": 0.49635266400413236,
+      "back": 0.32615597760203197,
+      "fish": null,
+      "bubbles": null,
+      "surface": 0.2970515477702748,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.7913141396604938,
+     "whale_recall_by_grade": {
+      "hazy": {
+       "pixel_recall": 0.8967779730521382,
+       "instances": 1,
+       "found_25pct": 1
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": 0.0006974084302731052,
+      "bubbles_as_whale": null,
+      "surface_as_whale": 0.0,
+      "whale_as_water": 0.10252461851758864,
+      "water_as_whale": 0.04036523538063718,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0024924537518317656
+     },
+     "fish": {
+      "instances": 4,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       2840764,
+       148718,
+       252347,
+       0,
+       34076,
+       261836,
+       146568,
+       0,
+       0,
+       0
+      ],
+      [
+       18376,
+       160734,
+       125,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       398,
+       0,
+       159284,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       3018,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       120956,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.8967779730521382
+    },
+    "single_unknown": {
+     "frames": 2,
+     "iou": {
+      "water": 0.7702110745235237,
+      "whale": 0.6108590612772582,
+      "back": 0.3901331229758399,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": 0.3179019347744276,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.7919050948785535,
+      "whale": 0.6302801156632253,
+      "back": 0.3266362418298431,
+      "fish": null,
+      "bubbles": null,
+      "surface": 0.2988605836583943,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.7955000964506173,
+     "whale_recall_by_grade": {
+      "hazy": {
+       "pixel_recall": 0.9938460680112701,
+       "instances": 1,
+       "found_25pct": 1
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.00014403627209078044,
+      "whale_as_back": 0.0,
+      "bubbles_as_whale": null,
+      "surface_as_whale": 0.0,
+      "whale_as_water": 0.00615393198872988,
+      "water_as_whale": 0.03049445635531656,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0025613406645708346
+     },
+     "fish": {
+      "instances": 4,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       2842608,
+       112351,
+       248512,
+       0,
+       31767,
+       253713,
+       195313,
+       0,
+       0,
+       45
+      ],
+      [
+       1103,
+       178132,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       409,
+       23,
+       159250,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       3018,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       1848,
+       0,
+       0,
+       0,
+       0,
+       119108,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.9938460680112701
+    }
+   }
+  },
+  "CC-11-96-20250203-111250-000-00006": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 0.9934895833333333,
+     "n_whale": 64,
+     "n_free": 42,
+     "n_faint_only": 14,
+     "op_far10": {
+      "threshold": 9.0,
+      "tp": 64.0,
+      "fp": 4.0,
+      "n_pos": 64.0,
+      "n_neg": 42.0,
+      "recall": 1.0,
+      "far": 0.09523809523809523
+     },
+     "sweep": {
+      "1": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 18,
+       "n_neg": 42
+      },
+      "4": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 8,
+       "n_neg": 42
+      },
+      "8": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 5,
+       "n_neg": 42
+      },
+      "16": {
+       "hits": 62,
+       "n_pos": 64,
+       "false_alarms": 3,
+       "n_neg": 42
+      },
+      "32": {
+       "hits": 60,
+       "n_pos": 64,
+       "false_alarms": 3,
+       "n_neg": 42
+      },
+      "64": {
+       "hits": 52,
+       "n_pos": 64,
+       "false_alarms": 0,
+       "n_neg": 42
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 64,
+      "n_pos": 64,
+      "false_alarms": 18,
+      "n_neg": 42,
+      "fire_other": 13,
+      "n_other": 14,
+      "recall": 1.0,
+      "far": 0.42857142857142855
+     }
+    },
+    "win_max": {
+     "auc": 0.9748883928571429,
+     "n_whale": 64,
+     "n_free": 42,
+     "n_faint_only": 14,
+     "op_far10": {
+      "threshold": 40.0,
+      "tp": 61.0,
+      "fp": 4.0,
+      "n_pos": 64.0,
+      "n_neg": 42.0,
+      "recall": 0.953125,
+      "far": 0.09523809523809523
+     },
+     "sweep": {
+      "1": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 32,
+       "n_neg": 42
+      },
+      "4": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 15,
+       "n_neg": 42
+      },
+      "8": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 9,
+       "n_neg": 42
+      },
+      "16": {
+       "hits": 62,
+       "n_pos": 64,
+       "false_alarms": 8,
+       "n_neg": 42
+      },
+      "32": {
+       "hits": 61,
+       "n_pos": 64,
+       "false_alarms": 6,
+       "n_neg": 42
+      },
+      "64": {
+       "hits": 56,
+       "n_pos": 64,
+       "false_alarms": 2,
+       "n_neg": 42
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 14,
+      "n_pos": 64,
+      "false_alarms": 0,
+      "n_neg": 42,
+      "fire_other": 0,
+      "n_other": 14,
+      "recall": 0.21875,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 0.9800967261904762,
+     "n_whale": 64,
+     "n_free": 42,
+     "n_faint_only": 14,
+     "op_far10": {
+      "threshold": 27.0,
+      "tp": 62.0,
+      "fp": 4.0,
+      "n_pos": 64.0,
+      "n_neg": 42.0,
+      "recall": 0.96875,
+      "far": 0.09523809523809523
+     },
+     "sweep": {
+      "1": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 26,
+       "n_neg": 42
+      },
+      "4": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 14,
+       "n_neg": 42
+      },
+      "8": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 8,
+       "n_neg": 42
+      },
+      "16": {
+       "hits": 62,
+       "n_pos": 64,
+       "false_alarms": 6,
+       "n_neg": 42
+      },
+      "32": {
+       "hits": 61,
+       "n_pos": 64,
+       "false_alarms": 4,
+       "n_neg": 42
+      },
+      "64": {
+       "hits": 54,
+       "n_pos": 64,
+       "false_alarms": 1,
+       "n_neg": 42
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 54,
+      "n_pos": 64,
+      "false_alarms": 1,
+      "n_neg": 42,
+      "fire_other": 3,
+      "n_other": 14,
+      "recall": 0.84375,
+      "far": 0.023809523809523808
+     }
+    },
+    "win_kth3": {
+     "auc": 0.9938616071428572,
+     "n_whale": 64,
+     "n_free": 42,
+     "n_faint_only": 14,
+     "op_far10": {
+      "threshold": 22.0,
+      "tp": 62.0,
+      "fp": 4.0,
+      "n_pos": 64.0,
+      "n_neg": 42.0,
+      "recall": 0.96875,
+      "far": 0.09523809523809523
+     },
+     "sweep": {
+      "1": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 21,
+       "n_neg": 42
+      },
+      "4": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 11,
+       "n_neg": 42
+      },
+      "8": {
+       "hits": 64,
+       "n_pos": 64,
+       "false_alarms": 7,
+       "n_neg": 42
+      },
+      "16": {
+       "hits": 62,
+       "n_pos": 64,
+       "false_alarms": 5,
+       "n_neg": 42
+      },
+      "32": {
+       "hits": 61,
+       "n_pos": 64,
+       "false_alarms": 3,
+       "n_neg": 42
+      },
+      "64": {
+       "hits": 54,
+       "n_pos": 64,
+       "false_alarms": 0,
+       "n_neg": 42
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 54,
+      "n_pos": 64,
+      "false_alarms": 0,
+      "n_neg": 42,
+      "fire_other": 4,
+      "n_other": 14,
+      "recall": 0.84375,
+      "far": 0.0
+     }
+    },
+    "win_meanmap": {
+     "auc": 0.9832589285714286,
+     "n_whale": 64,
+     "n_free": 42,
+     "n_faint_only": 14,
+     "op_far10": {
+      "threshold": 11.0,
+      "tp": 62.0,
+      "fp": 4.0,
+      "n_pos": 64.0,
+      "n_neg": 42.0,
+      "recall": 0.96875,
+      "far": 0.09523809523809523
+     },
+     "sweep": {
+      "1": {
+       "hits": 63,
+       "n_pos": 64,
+       "false_alarms": 13,
+       "n_neg": 42
+      },
+      "4": {
+       "hits": 62,
+       "n_pos": 64,
+       "false_alarms": 6,
+       "n_neg": 42
+      },
+      "8": {
+       "hits": 62,
+       "n_pos": 64,
+       "false_alarms": 5,
+       "n_neg": 42
+      },
+      "16": {
+       "hits": 61,
+       "n_pos": 64,
+       "false_alarms": 3,
+       "n_neg": 42
+      },
+      "32": {
+       "hits": 59,
+       "n_pos": 64,
+       "false_alarms": 1,
+       "n_neg": 42
+      },
+      "64": {
+       "hits": 54,
+       "n_pos": 64,
+       "false_alarms": 0,
+       "n_neg": 42
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 63,
+      "n_pos": 64,
+      "false_alarms": 13,
+      "n_neg": 42,
+      "fire_other": 11,
+      "n_other": 14,
+      "recall": 0.984375,
+      "far": 0.30952380952380953
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 117,
+    "mean_back_share_with": 0.1068138651471985,
+    "mean_back_share_without": 0.03916666666666667,
+    "frames_with_back_share_gt5pct": 112,
+    "auc_back_share": 0.9829059829059829
+   },
+   "fish": {
+    "fish_frames": 25,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 95
+   },
+   "shares_underwater_mean": {
+    "water": 0.5117066854990584,
+    "whale": 0.03964924670433144,
+    "back": 0.10624058380414313,
+    "fish": 0.0,
+    "bubbles": 0.022500000000000006,
+    "surface": 0.07494114877589454,
+    "air": 0.2449623352165725,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 27,
+     "water": 0.007318123116659492,
+     "whale": 0.5245372363323288,
+     "back": 0.2591476538958244,
+     "fish": 0.0,
+     "bubbles": 0.023461041756349547,
+     "surface": 0.0023676280671545416,
+     "air": 0.18316831683168316,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.42315970727507535
+    }
+   },
+   "masks": {
+    "frames": [
+     13991,
+     41576
+    ],
+    "single": {
+     "frames": 2,
+     "iou": {
+      "water": 0.20789599570071254,
+      "whale": 0.629202162858216,
+      "back": 0.21363552357052676,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.2017160018575448,
+      "whale": 0.7368549172346641,
+      "back": 0.16997183722347856,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.2635935088734568,
+     "whale_recall_by_grade": {
+      "hazy": {
+       "pixel_recall": 0.8696185948404426,
+       "instances": 2,
+       "found_25pct": 2
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0041720220572992244,
+      "whale_as_back": 0.0002883815205121656,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.013166676279384016,
+      "water_as_whale": 0.010155681049110478,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0009121439529002032
+     },
+     "fish": {
+      "instances": 14,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       795745,
+       38670,
+       705210,
+       0,
+       172205,
+       162059,
+       1933832,
+       0,
+       0,
+       0
+      ],
+      [
+       1598,
+       105543,
+       35,
+       0,
+       12728,
+       0,
+       1463,
+       0,
+       0,
+       0
+      ],
+      [
+       176,
+       805,
+       191887,
+       0,
+       0,
+       0,
+       84,
+       0,
+       0,
+       0
+      ],
+      [
+       18116,
+       6899,
+       1,
+       0,
+       7,
+       0,
+       137,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.8696185948404426
+    },
+    "window": {
+     "frames": 2,
+     "iou": {
+      "water": 0.312200072648816,
+      "whale": 0.5146996615905245,
+      "back": 0.24875455399895685,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.3118738696514234,
+      "whale": 0.5347932852944729,
+      "back": 0.20286486098972084,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.36156611689814816,
+     "whale_recall_by_grade": {
+      "hazy": {
+       "pixel_recall": 0.9223347367900665,
+       "instances": 2,
+       "found_25pct": 2
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.01046892491396824,
+      "whale_as_back": 0.0,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.07759934743381644,
+      "water_as_whale": 0.024713207716636803,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.001663626186823666
+     },
+     "fish": {
+      "instances": 14,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       1197252,
+       94101,
+       571941,
+       0,
+       31669,
+       173012,
+       1739746,
+       0,
+       0,
+       0
+      ],
+      [
+       9418,
+       111941,
+       0,
+       0,
+       0,
+       0,
+       8,
+       0,
+       0,
+       0
+      ],
+      [
+       321,
+       2020,
+       190294,
+       0,
+       0,
+       0,
+       317,
+       0,
+       0,
+       0
+      ],
+      [
+       17427,
+       0,
+       94,
+       0,
+       0,
+       0,
+       7639,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.9223347367900665
+    },
+    "single_unknown": {
+     "frames": 2,
+     "iou": {
+      "water": 0.20773737940321532,
+      "whale": 0.34542825294489804,
+      "back": 0.21362157058572687,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.20169840522246132,
+      "whale": 0.29575219084712756,
+      "back": 0.16997183722347856,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.2517286361882716,
+     "whale_recall_by_grade": {
+      "hazy": {
+       "pixel_recall": 0.4723606911269126,
+       "instances": 2,
+       "found_25pct": 2
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.004161656785107177,
+      "whale_as_back": 0.0002883815205121656,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.013166676279384016,
+      "water_as_whale": 0.009689785569898635,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0009121439529002032
+     },
+     "fish": {
+      "instances": 14,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       794776,
+       36896,
+       705161,
+       0,
+       168342,
+       162059,
+       1933659,
+       0,
+       0,
+       6828
+      ],
+      [
+       1598,
+       57329,
+       35,
+       0,
+       48,
+       0,
+       1004,
+       0,
+       0,
+       61353
+      ],
+      [
+       176,
+       803,
+       191864,
+       0,
+       0,
+       0,
+       84,
+       0,
+       0,
+       25
+      ],
+      [
+       16374,
+       6899,
+       1,
+       0,
+       7,
+       0,
+       136,
+       0,
+       0,
+       1743
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.4723606911269126
+    }
+   }
+  },
+  "CC-11-96-20250203-114256-000-00007": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 1.0,
+     "n_whale": 36,
+     "n_free": 81,
+     "n_faint_only": 3,
+     "op_far10": {
+      "threshold": 2.0,
+      "tp": 36.0,
+      "fp": 5.0,
+      "n_pos": 36.0,
+      "n_neg": 81.0,
+      "recall": 1.0,
+      "far": 0.06172839506172839
+     },
+     "sweep": {
+      "1": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 12,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 2,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 34,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 30,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 36,
+      "n_pos": 36,
+      "false_alarms": 12,
+      "n_neg": 81,
+      "fire_other": 3,
+      "n_other": 3,
+      "recall": 1.0,
+      "far": 0.14814814814814814
+     }
+    },
+    "win_max": {
+     "auc": 1.0,
+     "n_whale": 36,
+     "n_free": 81,
+     "n_faint_only": 3,
+     "op_far10": {
+      "threshold": 4.0,
+      "tp": 36.0,
+      "fp": 8.0,
+      "n_pos": 36.0,
+      "n_neg": 81.0,
+      "recall": 1.0,
+      "far": 0.09876543209876543
+     },
+     "sweep": {
+      "1": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 23,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 8,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 4,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 35,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 33,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 9,
+      "n_pos": 36,
+      "false_alarms": 0,
+      "n_neg": 81,
+      "fire_other": 0,
+      "n_other": 3,
+      "recall": 0.25,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 1.0,
+     "n_whale": 36,
+     "n_free": 81,
+     "n_faint_only": 3,
+     "op_far10": {
+      "threshold": 3.0,
+      "tp": 36.0,
+      "fp": 6.0,
+      "n_pos": 36.0,
+      "n_neg": 81.0,
+      "recall": 1.0,
+      "far": 0.07407407407407407
+     },
+     "sweep": {
+      "1": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 18,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 5,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 35,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 32,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 32,
+      "n_pos": 36,
+      "false_alarms": 0,
+      "n_neg": 81,
+      "fire_other": 2,
+      "n_other": 3,
+      "recall": 0.8888888888888888,
+      "far": 0.0
+     }
+    },
+    "win_kth3": {
+     "auc": 1.0,
+     "n_whale": 36,
+     "n_free": 81,
+     "n_faint_only": 3,
+     "op_far10": {
+      "threshold": 2.0,
+      "tp": 36.0,
+      "fp": 8.0,
+      "n_pos": 36.0,
+      "n_neg": 81.0,
+      "recall": 1.0,
+      "far": 0.09876543209876543
+     },
+     "sweep": {
+      "1": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 14,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 2,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 34,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 32,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 33,
+      "n_pos": 36,
+      "false_alarms": 0,
+      "n_neg": 81,
+      "fire_other": 2,
+      "n_other": 3,
+      "recall": 0.9166666666666666,
+      "far": 0.0
+     }
+    },
+    "win_meanmap": {
+     "auc": 1.0,
+     "n_whale": 36,
+     "n_free": 81,
+     "n_faint_only": 3,
+     "op_far10": {
+      "threshold": 1.0,
+      "tp": 36.0,
+      "fp": 8.0,
+      "n_pos": 36.0,
+      "n_neg": 81.0,
+      "recall": 1.0,
+      "far": 0.09876543209876543
+     },
+     "sweep": {
+      "1": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 8,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 2,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 1,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 36,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 34,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 31,
+       "n_pos": 36,
+       "false_alarms": 0,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 36,
+      "n_pos": 36,
+      "false_alarms": 8,
+      "n_neg": 81,
+      "fire_other": 3,
+      "n_other": 3,
+      "recall": 1.0,
+      "far": 0.09876543209876543
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 119,
+    "mean_back_share_with": 0.09835901027077495,
+    "mean_back_share_without": 0.1025,
+    "frames_with_back_share_gt5pct": 113,
+    "auc_back_share": 0.25630252100840334
+   },
+   "fish": {
+    "fish_frames": 0,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 120
+   },
+   "shares_underwater_mean": {
+    "water": 0.2175439814814815,
+    "whale": 0.020877314814814814,
+    "back": 0.09839351851851852,
+    "fish": 0.0,
+    "bubbles": 0.02047453703703704,
+    "surface": 0.04492824074074074,
+    "air": 0.5977824074074074,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 14,
+     "water": 0.017241379310344827,
+     "whale": 0.5316091954022989,
+     "back": 0.4444444444444444,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.0,
+     "air": 0.006704980842911878,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.0
+    }
+   },
+   "masks": {
+    "frames": [
+     4549
+    ],
+    "single": {
+     "frames": 1,
+     "iou": {
+      "water": 0.0008416812024696581,
+      "whale": null,
+      "back": 0.17067178693401244,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.00011662944913699235,
+      "whale": null,
+      "back": 0.09370576435411226,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.027353395061728396,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": null,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": 0.0,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.004901251537292917
+     },
+     "fish": {
+      "instances": 0,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       1699,
+       0,
+       267087,
+       0,
+       158331,
+       0,
+       1591191,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       271,
+       0,
+       55021,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    },
+    "window": {
+     "frames": 1,
+     "iou": {
+      "water": 0.0006287310779938672,
+      "whale": null,
+      "back": 0.156411640993577,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.00010959146513734626,
+      "whale": null,
+      "back": 0.08432475145008736,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.02715277777777778,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": null,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": 0.0,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0007776893583158504
+     },
+     "fish": {
+      "instances": 0,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       1269,
+       0,
+       296568,
+       0,
+       150320,
+       0,
+       1570151,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       43,
+       0,
+       55035,
+       0,
+       214,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    },
+    "single_unknown": {
+     "frames": 1,
+     "iou": {
+      "water": 0.0008416812024696581,
+      "whale": null,
+      "back": 0.17067178693401244,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.00011662944913699235,
+      "whale": null,
+      "back": 0.09370576435411226,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.027353395061728396,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": null,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": 0.0,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.004901251537292917
+     },
+     "fish": {
+      "instances": 0,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       1699,
+       0,
+       267087,
+       0,
+       158331,
+       0,
+       1591191,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       271,
+       0,
+       55021,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    }
+   }
+  },
+  "CC-11-96-20250203-121302-000-00008": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 0.9955044955044956,
+     "n_whale": 22,
+     "n_free": 91,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 4.0,
+      "tp": 22.0,
+      "fp": 9.0,
+      "n_pos": 22.0,
+      "n_neg": 91.0,
+      "recall": 1.0,
+      "far": 0.0989010989010989
+     },
+     "sweep": {
+      "1": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 18,
+       "n_neg": 91
+      },
+      "4": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 9,
+       "n_neg": 91
+      },
+      "8": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "16": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "32": {
+       "hits": 20,
+       "n_pos": 22,
+       "false_alarms": 2,
+       "n_neg": 91
+      },
+      "64": {
+       "hits": 17,
+       "n_pos": 22,
+       "false_alarms": 0,
+       "n_neg": 91
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 22,
+      "n_pos": 22,
+      "false_alarms": 18,
+      "n_neg": 91,
+      "fire_other": 6,
+      "n_other": 7,
+      "recall": 1.0,
+      "far": 0.1978021978021978
+     }
+    },
+    "win_max": {
+     "auc": 0.9897602397602396,
+     "n_whale": 22,
+     "n_free": 91,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 10.0,
+      "tp": 22.0,
+      "fp": 6.0,
+      "n_pos": 22.0,
+      "n_neg": 91.0,
+      "recall": 1.0,
+      "far": 0.06593406593406594
+     },
+     "sweep": {
+      "1": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 27,
+       "n_neg": 91
+      },
+      "4": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 14,
+       "n_neg": 91
+      },
+      "8": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 6,
+       "n_neg": 91
+      },
+      "16": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 4,
+       "n_neg": 91
+      },
+      "32": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 4,
+       "n_neg": 91
+      },
+      "64": {
+       "hits": 18,
+       "n_pos": 22,
+       "false_alarms": 2,
+       "n_neg": 91
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 2,
+      "n_pos": 22,
+      "false_alarms": 0,
+      "n_neg": 91,
+      "fire_other": 0,
+      "n_other": 7,
+      "recall": 0.09090909090909091,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 0.996003996003996,
+     "n_whale": 22,
+     "n_free": 91,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 7.0,
+      "tp": 22.0,
+      "fp": 8.0,
+      "n_pos": 22.0,
+      "n_neg": 91.0,
+      "recall": 1.0,
+      "far": 0.08791208791208792
+     },
+     "sweep": {
+      "1": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 20,
+       "n_neg": 91
+      },
+      "4": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 13,
+       "n_neg": 91
+      },
+      "8": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 4,
+       "n_neg": 91
+      },
+      "16": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "32": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "64": {
+       "hits": 17,
+       "n_pos": 22,
+       "false_alarms": 0,
+       "n_neg": 91
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 17,
+      "n_pos": 22,
+      "false_alarms": 0,
+      "n_neg": 91,
+      "fire_other": 2,
+      "n_other": 7,
+      "recall": 0.7727272727272727,
+      "far": 0.0
+     }
+    },
+    "win_kth3": {
+     "auc": 0.9957542457542458,
+     "n_whale": 22,
+     "n_free": 91,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 5.0,
+      "tp": 22.0,
+      "fp": 6.0,
+      "n_pos": 22.0,
+      "n_neg": 91.0,
+      "recall": 1.0,
+      "far": 0.06593406593406594
+     },
+     "sweep": {
+      "1": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 15,
+       "n_neg": 91
+      },
+      "4": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 10,
+       "n_neg": 91
+      },
+      "8": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 4,
+       "n_neg": 91
+      },
+      "16": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "32": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "64": {
+       "hits": 17,
+       "n_pos": 22,
+       "false_alarms": 0,
+       "n_neg": 91
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 18,
+      "n_pos": 22,
+      "false_alarms": 0,
+      "n_neg": 91,
+      "fire_other": 0,
+      "n_other": 7,
+      "recall": 0.8181818181818182,
+      "far": 0.0
+     }
+    },
+    "win_meanmap": {
+     "auc": 0.9965034965034966,
+     "n_whale": 22,
+     "n_free": 91,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 4.0,
+      "tp": 22.0,
+      "fp": 7.0,
+      "n_pos": 22.0,
+      "n_neg": 91.0,
+      "recall": 1.0,
+      "far": 0.07692307692307693
+     },
+     "sweep": {
+      "1": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 12,
+       "n_neg": 91
+      },
+      "4": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 7,
+       "n_neg": 91
+      },
+      "8": {
+       "hits": 22,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "16": {
+       "hits": 21,
+       "n_pos": 22,
+       "false_alarms": 3,
+       "n_neg": 91
+      },
+      "32": {
+       "hits": 19,
+       "n_pos": 22,
+       "false_alarms": 2,
+       "n_neg": 91
+      },
+      "64": {
+       "hits": 16,
+       "n_pos": 22,
+       "false_alarms": 0,
+       "n_neg": 91
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 22,
+      "n_pos": 22,
+      "false_alarms": 12,
+      "n_neg": 91,
+      "fire_other": 5,
+      "n_other": 7,
+      "recall": 1.0,
+      "far": 0.13186813186813187
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 117,
+    "mean_back_share_with": 0.08360873694207029,
+    "mean_back_share_without": null,
+    "frames_with_back_share_gt5pct": 102,
+    "auc_back_share": null
+   },
+   "fish": {
+    "fish_frames": 1,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 119
+   },
+   "shares_underwater_mean": {
+    "water": 0.18592355175688507,
+    "whale": 0.010804843304843303,
+    "back": 0.08360873694207029,
+    "fish": 0.0,
+    "bubbles": 0.03254273504273504,
+    "surface": 0.05770417853751187,
+    "air": 0.6294159544159544,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 16,
+     "water": 0.0040577096483318306,
+     "whale": 0.10414788097385032,
+     "back": 0.1145175834084761,
+     "fish": 0.0,
+     "bubbles": 0.0018034265103697023,
+     "surface": 0.0,
+     "air": 0.7754733994589721,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.12759242560865644
+    }
+   },
+   "masks": {
+    "frames": [
+     14659,
+     28007
+    ],
+    "single": {
+     "frames": 2,
+     "iou": {
+      "water": 0.558442163110714,
+      "whale": 0.6288265803533128,
+      "back": 0.39781630968698983,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.5645292533903744,
+      "whale": 0.9997859818084537,
+      "back": 0.3053279538358542,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.5710954378858024,
+     "whale_recall_by_grade": {
+      "clear": {
+       "pixel_recall": 0.9599928558671191,
+       "instances": 1,
+       "found_25pct": 1
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": 0.027564446032029528,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.0,
+      "water_as_whale": 0.0010695309762784409,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.004953194583295465
+     },
+     "fish": {
+      "instances": 5,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       2242907,
+       4292,
+       164546,
+       0,
+       87914,
+       369,
+       1512946,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       16125,
+       463,
+       0,
+       143,
+       0,
+       66,
+       0,
+       0,
+       0
+      ],
+      [
+       545,
+       0,
+       109415,
+       0,
+       70,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       2845,
+       4554,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.9599928558671191
+    },
+    "window": {
+     "frames": 2,
+     "iou": {
+      "water": 0.5776294595837622,
+      "whale": 0.48511877673614273,
+      "back": 0.38450680982693664,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.5836183861888967,
+      "whale": 0.5253303345515884,
+      "back": 0.289274568355823,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.5899081307870371,
+     "whale_recall_by_grade": {
+      "clear": {
+       "pixel_recall": 0.9519557063761386,
+       "instances": 1,
+       "found_25pct": 1
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": 0.04155503959040305,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.0,
+      "water_as_whale": 0.003329201734175203,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.0047168953921657725
+     },
+     "fish": {
+      "instances": 5,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       2320966,
+       13360,
+       174081,
+       0,
+       75894,
+       0,
+       1428673,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       15990,
+       698,
+       0,
+       109,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       519,
+       0,
+       109511,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       4595,
+       2804,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.9519557063761386
+    },
+    "single_unknown": {
+     "frames": 2,
+     "iou": {
+      "water": 0.558442163110714,
+      "whale": 0.026263297872340427,
+      "back": 0.39781630968698983,
+      "fish": 0.0,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.5645292533903744,
+      "whale": 0.0,
+      "back": 0.3053279538358542,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.5673596643518518,
+     "whale_recall_by_grade": {
+      "clear": {
+       "pixel_recall": 0.037625766505923676,
+       "instances": 1,
+       "found_25pct": 0
+      }
+     },
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": 0.027564446032029528,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": 0.0,
+      "water_as_whale": 0.0006768047836841206,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.004953194583295465
+     },
+     "fish": {
+      "instances": 5,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       2242907,
+       2716,
+       164546,
+       0,
+       87015,
+       369,
+       1512730,
+       0,
+       0,
+       2691
+      ],
+      [
+       0,
+       632,
+       463,
+       0,
+       51,
+       0,
+       51,
+       0,
+       0,
+       15600
+      ],
+      [
+       545,
+       0,
+       109415,
+       0,
+       70,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       2845,
+       4551,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       3
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.037625766505923676
+    }
+   }
+  },
+  "CC-11-96-20250203-124310-000-00009": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 0.9564160119715674,
+     "n_whale": 33,
+     "n_free": 81,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 13.0,
+      "tp": 31.0,
+      "fp": 8.0,
+      "n_pos": 33.0,
+      "n_neg": 81.0,
+      "recall": 0.9393939393939394,
+      "far": 0.09876543209876543
+     },
+     "sweep": {
+      "1": {
+       "hits": 32,
+       "n_pos": 33,
+       "false_alarms": 37,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 32,
+       "n_pos": 33,
+       "false_alarms": 19,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 31,
+       "n_pos": 33,
+       "false_alarms": 14,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 30,
+       "n_pos": 33,
+       "false_alarms": 6,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 33,
+       "false_alarms": 4,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 20,
+       "n_pos": 33,
+       "false_alarms": 1,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 32,
+      "n_pos": 33,
+      "false_alarms": 37,
+      "n_neg": 81,
+      "fire_other": 2,
+      "n_other": 6,
+      "recall": 0.9696969696969697,
+      "far": 0.4567901234567901
+     }
+    },
+    "win_max": {
+     "auc": 0.9425738870183316,
+     "n_whale": 33,
+     "n_free": 81,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 50.0,
+      "tp": 27.0,
+      "fp": 8.0,
+      "n_pos": 33.0,
+      "n_neg": 81.0,
+      "recall": 0.8181818181818182,
+      "far": 0.09876543209876543
+     },
+     "sweep": {
+      "1": {
+       "hits": 33,
+       "n_pos": 33,
+       "false_alarms": 58,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 33,
+       "n_pos": 33,
+       "false_alarms": 35,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 33,
+       "n_pos": 33,
+       "false_alarms": 31,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 30,
+       "n_pos": 33,
+       "false_alarms": 20,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 33,
+       "false_alarms": 14,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 24,
+       "n_pos": 33,
+       "false_alarms": 4,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 2,
+      "n_pos": 33,
+      "false_alarms": 0,
+      "n_neg": 81,
+      "fire_other": 0,
+      "n_other": 6,
+      "recall": 0.06060606060606061,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 0.958660680882903,
+     "n_whale": 33,
+     "n_free": 81,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 29.0,
+      "tp": 28.0,
+      "fp": 6.0,
+      "n_pos": 33.0,
+      "n_neg": 81.0,
+      "recall": 0.8484848484848485,
+      "far": 0.07407407407407407
+     },
+     "sweep": {
+      "1": {
+       "hits": 33,
+       "n_pos": 33,
+       "false_alarms": 49,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 33,
+       "n_pos": 33,
+       "false_alarms": 29,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 31,
+       "n_pos": 33,
+       "false_alarms": 22,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 29,
+       "n_pos": 33,
+       "false_alarms": 12,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 33,
+       "false_alarms": 6,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 23,
+       "n_pos": 33,
+       "false_alarms": 1,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 22,
+      "n_pos": 33,
+      "false_alarms": 1,
+      "n_neg": 81,
+      "fire_other": 1,
+      "n_other": 6,
+      "recall": 0.6666666666666666,
+      "far": 0.012345679012345678
+     }
+    },
+    "win_kth3": {
+     "auc": 0.9633370744481855,
+     "n_whale": 33,
+     "n_free": 81,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 14.0,
+      "tp": 30.0,
+      "fp": 7.0,
+      "n_pos": 33.0,
+      "n_neg": 81.0,
+      "recall": 0.9090909090909091,
+      "far": 0.08641975308641975
+     },
+     "sweep": {
+      "1": {
+       "hits": 33,
+       "n_pos": 33,
+       "false_alarms": 43,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 32,
+       "n_pos": 33,
+       "false_alarms": 23,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 30,
+       "n_pos": 33,
+       "false_alarms": 15,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 29,
+       "n_pos": 33,
+       "false_alarms": 6,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 33,
+       "false_alarms": 2,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 21,
+       "n_pos": 33,
+       "false_alarms": 1,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 24,
+      "n_pos": 33,
+      "false_alarms": 2,
+      "n_neg": 81,
+      "fire_other": 1,
+      "n_other": 6,
+      "recall": 0.7272727272727273,
+      "far": 0.024691358024691357
+     }
+    },
+    "win_meanmap": {
+     "auc": 0.9504302282080059,
+     "n_whale": 33,
+     "n_free": 81,
+     "n_faint_only": 6,
+     "op_far10": {
+      "threshold": 6.0,
+      "tp": 31.0,
+      "fp": 8.0,
+      "n_pos": 33.0,
+      "n_neg": 81.0,
+      "recall": 0.9393939393939394,
+      "far": 0.09876543209876543
+     },
+     "sweep": {
+      "1": {
+       "hits": 31,
+       "n_pos": 33,
+       "false_alarms": 29,
+       "n_neg": 81
+      },
+      "4": {
+       "hits": 31,
+       "n_pos": 33,
+       "false_alarms": 13,
+       "n_neg": 81
+      },
+      "8": {
+       "hits": 30,
+       "n_pos": 33,
+       "false_alarms": 5,
+       "n_neg": 81
+      },
+      "16": {
+       "hits": 29,
+       "n_pos": 33,
+       "false_alarms": 2,
+       "n_neg": 81
+      },
+      "32": {
+       "hits": 27,
+       "n_pos": 33,
+       "false_alarms": 2,
+       "n_neg": 81
+      },
+      "64": {
+       "hits": 20,
+       "n_pos": 33,
+       "false_alarms": 0,
+       "n_neg": 81
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 31,
+      "n_pos": 33,
+      "false_alarms": 29,
+      "n_neg": 81,
+      "fire_other": 2,
+      "n_other": 6,
+      "recall": 0.9393939393939394,
+      "far": 0.35802469135802467
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 118,
+    "mean_back_share_with": 0.10228342749529191,
+    "mean_back_share_without": 0.12416666666666666,
+    "frames_with_back_share_gt5pct": 106,
+    "auc_back_share": 0.16101694915254236
+   },
+   "fish": {
+    "fish_frames": 2,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 118
+   },
+   "shares_underwater_mean": {
+    "water": 0.1839705882352941,
+    "whale": 0.023291316526610643,
+    "back": 0.10246732026143793,
+    "fish": 0.0,
+    "bubbles": 0.0367857142857143,
+    "surface": 0.047436974789915966,
+    "air": 0.6060480859010271,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 14,
+     "water": 0.004591836734693878,
+     "whale": 0.2586734693877551,
+     "back": 0.5903061224489796,
+     "fish": 0.0,
+     "bubbles": 0.0,
+     "surface": 0.0,
+     "air": 0.14642857142857144,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.1336734693877551
+    }
+   },
+   "masks": {
+    "frames": [
+     32221,
+     40226
+    ],
+    "single": {
+     "frames": 2,
+     "iou": {
+      "water": 0.29345958465953453,
+      "whale": null,
+      "back": 0.13882419472497173,
+      "fish": 0.0,
+      "bubbles": 0.0,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.2934549777731831,
+      "whale": null,
+      "back": 0.09775519490368573,
+      "fish": 0.0,
+      "bubbles": 0.0,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.16011115933641976,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": null,
+      "bubbles_as_whale": 0.0,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": 0.05962225537575019,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.003937527760771179
+     },
+     "fish": {
+      "instances": 2,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       581040,
+       117933,
+       261689,
+       0,
+       2236,
+       12577,
+       1002528,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       328,
+       0,
+       82973,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       1635,
+       10661,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       252694,
+       0,
+       0,
+       0,
+       1820906,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    },
+    "window": {
+     "frames": 2,
+     "iou": {
+      "water": 0.37914684559819006,
+      "whale": null,
+      "back": 0.2350091643319103,
+      "fish": 0.0,
+      "bubbles": 0.00920090663580247,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.3811778783981977,
+      "whale": null,
+      "back": 0.17855658678487324,
+      "fish": 0.0,
+      "bubbles": 0.00920090663580247,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.20652391975308643,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": null,
+      "bubbles_as_whale": 0.0,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": 0.0705848272222034,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.004117597627879617
+     },
+     "fish": {
+      "instances": 2,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       754459,
+       139617,
+       269698,
+       0,
+       0,
+       19616,
+       794613,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       343,
+       0,
+       82958,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       11540,
+       545,
+       0,
+       0,
+       0,
+       0,
+       211,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       19079,
+       0,
+       2054521,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    },
+    "single_unknown": {
+     "frames": 2,
+     "iou": {
+      "water": 0.2934613632437925,
+      "whale": null,
+      "back": 0.14671671983194584,
+      "fish": 0.0,
+      "bubbles": 0.0,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": 0.2934549777731831,
+      "whale": null,
+      "back": 0.10393648446134905,
+      "fish": 0.0,
+      "bubbles": 0.0,
+      "surface": null,
+      "air": null,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.16011115933641976,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": 0.0,
+      "whale_as_back": null,
+      "bubbles_as_whale": 0.0,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": 0.05962225537575019,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": 0.003937527760771179
+     },
+     "fish": {
+      "instances": 2,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       581040,
+       117933,
+       261689,
+       0,
+       2236,
+       12577,
+       1002528,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       328,
+       0,
+       82973,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       1623,
+       7921,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       2752
+      ],
+      [
+       0,
+       0,
+       220542,
+       0,
+       0,
+       0,
+       740406,
+       0,
+       0,
+       1112652
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    }
+   }
+  },
+  "CC-11-96-20250203-131316-000-00010": {
+   "n_labelled": 120,
+   "presence": {
+    "frame": {
+     "auc": 0.9896153846153847,
+     "n_whale": 13,
+     "n_free": 100,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 21.0,
+      "tp": 13.0,
+      "fp": 9.0,
+      "n_pos": 13.0,
+      "n_neg": 100.0,
+      "recall": 1.0,
+      "far": 0.09
+     },
+     "sweep": {
+      "1": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 66,
+       "n_neg": 100
+      },
+      "4": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 36,
+       "n_neg": 100
+      },
+      "8": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 21,
+       "n_neg": 100
+      },
+      "16": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 13,
+       "n_neg": 100
+      },
+      "32": {
+       "hits": 11,
+       "n_pos": 13,
+       "false_alarms": 5,
+       "n_neg": 100
+      },
+      "64": {
+       "hits": 10,
+       "n_pos": 13,
+       "false_alarms": 0,
+       "n_neg": 100
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 13,
+      "n_pos": 13,
+      "false_alarms": 66,
+      "n_neg": 100,
+      "fire_other": 6,
+      "n_other": 7,
+      "recall": 1.0,
+      "far": 0.66
+     }
+    },
+    "win_max": {
+     "auc": 0.971923076923077,
+     "n_whale": 13,
+     "n_free": 100,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 47.0,
+      "tp": 12.0,
+      "fp": 10.0,
+      "n_pos": 13.0,
+      "n_neg": 100.0,
+      "recall": 0.9230769230769231,
+      "far": 0.1
+     },
+     "sweep": {
+      "1": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 85,
+       "n_neg": 100
+      },
+      "4": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 68,
+       "n_neg": 100
+      },
+      "8": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 52,
+       "n_neg": 100
+      },
+      "16": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 41,
+       "n_neg": 100
+      },
+      "32": {
+       "hits": 12,
+       "n_pos": 13,
+       "false_alarms": 20,
+       "n_neg": 100
+      },
+      "64": {
+       "hits": 11,
+       "n_pos": 13,
+       "false_alarms": 4,
+       "n_neg": 100
+      }
+     },
+     "at_fixed": {
+      "threshold": 282.0,
+      "hits": 2,
+      "n_pos": 13,
+      "false_alarms": 0,
+      "n_neg": 100,
+      "fire_other": 0,
+      "n_other": 7,
+      "recall": 0.15384615384615385,
+      "far": 0.0
+     }
+    },
+    "win_kth2": {
+     "auc": 0.9880769230769231,
+     "n_whale": 13,
+     "n_free": 100,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 31.0,
+      "tp": 12.0,
+      "fp": 10.0,
+      "n_pos": 13.0,
+      "n_neg": 100.0,
+      "recall": 0.9230769230769231,
+      "far": 0.1
+     },
+     "sweep": {
+      "1": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 76,
+       "n_neg": 100
+      },
+      "4": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 53,
+       "n_neg": 100
+      },
+      "8": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 37,
+       "n_neg": 100
+      },
+      "16": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 22,
+       "n_neg": 100
+      },
+      "32": {
+       "hits": 12,
+       "n_pos": 13,
+       "false_alarms": 8,
+       "n_neg": 100
+      },
+      "64": {
+       "hits": 11,
+       "n_pos": 13,
+       "false_alarms": 2,
+       "n_neg": 100
+      }
+     },
+     "at_fixed": {
+      "threshold": 66.0,
+      "hits": 11,
+      "n_pos": 13,
+      "false_alarms": 2,
+      "n_neg": 100,
+      "fire_other": 1,
+      "n_other": 7,
+      "recall": 0.8461538461538461,
+      "far": 0.02
+     }
+    },
+    "win_kth3": {
+     "auc": 0.9903846153846154,
+     "n_whale": 13,
+     "n_free": 100,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 21.0,
+      "tp": 13.0,
+      "fp": 9.0,
+      "n_pos": 13.0,
+      "n_neg": 100.0,
+      "recall": 1.0,
+      "far": 0.09
+     },
+     "sweep": {
+      "1": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 68,
+       "n_neg": 100
+      },
+      "4": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 44,
+       "n_neg": 100
+      },
+      "8": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 30,
+       "n_neg": 100
+      },
+      "16": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 15,
+       "n_neg": 100
+      },
+      "32": {
+       "hits": 11,
+       "n_pos": 13,
+       "false_alarms": 3,
+       "n_neg": 100
+      },
+      "64": {
+       "hits": 10,
+       "n_pos": 13,
+       "false_alarms": 1,
+       "n_neg": 100
+      }
+     },
+     "at_fixed": {
+      "threshold": 58.0,
+      "hits": 10,
+      "n_pos": 13,
+      "false_alarms": 1,
+      "n_neg": 100,
+      "fire_other": 1,
+      "n_other": 7,
+      "recall": 0.7692307692307693,
+      "far": 0.01
+     }
+    },
+    "win_meanmap": {
+     "auc": 0.9888461538461538,
+     "n_whale": 13,
+     "n_free": 100,
+     "n_faint_only": 7,
+     "op_far10": {
+      "threshold": 11.0,
+      "tp": 13.0,
+      "fp": 9.0,
+      "n_pos": 13.0,
+      "n_neg": 100.0,
+      "recall": 1.0,
+      "far": 0.09
+     },
+     "sweep": {
+      "1": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 47,
+       "n_neg": 100
+      },
+      "4": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 31,
+       "n_neg": 100
+      },
+      "8": {
+       "hits": 13,
+       "n_pos": 13,
+       "false_alarms": 16,
+       "n_neg": 100
+      },
+      "16": {
+       "hits": 12,
+       "n_pos": 13,
+       "false_alarms": 7,
+       "n_neg": 100
+      },
+      "32": {
+       "hits": 11,
+       "n_pos": 13,
+       "false_alarms": 1,
+       "n_neg": 100
+      },
+      "64": {
+       "hits": 10,
+       "n_pos": 13,
+       "false_alarms": 1,
+       "n_neg": 100
+      }
+     },
+     "at_fixed": {
+      "threshold": 1.0,
+      "hits": 13,
+      "n_pos": 13,
+      "false_alarms": 47,
+      "n_neg": 100,
+      "fire_other": 5,
+      "n_other": 7,
+      "recall": 1.0,
+      "far": 0.47
+     }
+    }
+   },
+   "back": {
+    "frames_with_back": 118,
+    "mean_back_share_with": 0.10269774011299435,
+    "mean_back_share_without": 0.06027777777777778,
+    "frames_with_back_share_gt5pct": 116,
+    "auc_back_share": 0.9661016949152542
+   },
+   "fish": {
+    "fish_frames": 0,
+    "fish_frames_with_fish_patch": 0,
+    "nofish_frames_with_fish_patch": 0,
+    "nofish_frames": 120
+   },
+   "shares_underwater_mean": {
+    "water": 0.08162464985994394,
+    "whale": 0.029591503267973853,
+    "back": 0.10234126984126984,
+    "fish": 0.0,
+    "bubbles": 0.05195144724556489,
+    "surface": 0.14194911297852472,
+    "air": 0.5925420168067227,
+    "seafloor": 0.0,
+    "gear": 0.0
+   },
+   "seafloor_labels": {
+    "none": 120
+   },
+   "m2f_seafloor_called": {
+    "none": {
+     "frames": 120,
+     "frames_with_m2f_seafloor": 12,
+     "water": 0.0,
+     "whale": 0.181203007518797,
+     "back": 0.5819548872180451,
+     "fish": 0.0,
+     "bubbles": 0.0015037593984962407,
+     "surface": 0.04887218045112782,
+     "air": 0.18646616541353384,
+     "seafloor": 0.0,
+     "gear": 0.0,
+     "unknown": 0.03383458646616541
+    }
+   },
+   "masks": {
+    "frames": [
+     48280
+    ],
+    "single": {
+     "frames": 1,
+     "iou": {
+      "water": null,
+      "whale": null,
+      "back": null,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.9991478587962963,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": null,
+      "whale": null,
+      "back": null,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.9991478587962963,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.9991478587962963,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": null,
+      "whale_as_back": null,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": null,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": null
+     },
+     "fish": {
+      "instances": 0,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       1767,
+       0,
+       2071833,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    },
+    "window": {
+     "frames": 1,
+     "iou": {
+      "water": null,
+      "whale": null,
+      "back": null,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.9916502700617283,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": null,
+      "whale": null,
+      "back": null,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.9916502700617283,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.9916502700617283,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": null,
+      "whale_as_back": null,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": null,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": null
+     },
+     "fish": {
+      "instances": 0,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       14759,
+       0,
+       2555,
+       0,
+       2056286,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    },
+    "single_unknown": {
+     "frames": 1,
+     "iou": {
+      "water": null,
+      "whale": null,
+      "back": null,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.9948095100308642,
+      "seafloor": null,
+      "gear": null
+     },
+     "iou_band": {
+      "water": null,
+      "whale": null,
+      "back": null,
+      "fish": null,
+      "bubbles": null,
+      "surface": null,
+      "air": 0.9948095100308642,
+      "seafloor": null,
+      "gear": null
+     },
+     "pixel_acc": 0.9948095100308642,
+     "whale_recall_by_grade": {},
+     "confusions": {
+      "back_as_whale": null,
+      "whale_as_back": null,
+      "bubbles_as_whale": null,
+      "surface_as_whale": null,
+      "whale_as_water": null,
+      "water_as_whale": null,
+      "faint_whale_as_water": 0.0,
+      "back_as_water": null
+     },
+     "fish": {
+      "instances": 0,
+      "found": 0,
+      "pred_components": 0,
+      "pred_components_on_fish": 0
+     },
+     "conf": [
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       1767,
+       0,
+       2062837,
+       0,
+       0,
+       8996
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     ],
+     "whale_pixel_recall": 0.0
+    }
+   }
+  }
+ },
+ "pooled_presence": {
+  "frame": {
+   "auc": 0.9813090418353576,
+   "n_whale": 221,
+   "n_free": 570,
+   "n_faint_only": 49,
+   "at_dev_thr": {
+    "threshold": 1.0,
+    "hits": 220,
+    "n_pos": 221,
+    "false_alarms": 250,
+    "n_neg": 570,
+    "fire_other": 41,
+    "n_other": 49,
+    "recall": 0.995475113122172,
+    "far": 0.43859649122807015
+   },
+   "op_far10": {
+    "threshold": 15.0,
+    "tp": 214.0,
+    "fp": 57.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.9683257918552036,
+    "far": 0.1
+   },
+   "op_far2": {
+    "threshold": 63.0,
+    "tp": 176.0,
+    "fp": 10.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.7963800904977375,
+    "far": 0.017543859649122806
+   },
+   "sweep": {
+    "1": {
+     "hits": 220,
+     "n_pos": 221,
+     "false_alarms": 250,
+     "n_neg": 570
+    },
+    "4": {
+     "hits": 220,
+     "n_pos": 221,
+     "false_alarms": 141,
+     "n_neg": 570
+    },
+    "8": {
+     "hits": 217,
+     "n_pos": 221,
+     "false_alarms": 93,
+     "n_neg": 570
+    },
+    "16": {
+     "hits": 214,
+     "n_pos": 221,
+     "false_alarms": 56,
+     "n_neg": 570
+    },
+    "32": {
+     "hits": 202,
+     "n_pos": 221,
+     "false_alarms": 34,
+     "n_neg": 570
+    },
+    "64": {
+     "hits": 175,
+     "n_pos": 221,
+     "false_alarms": 10,
+     "n_neg": 570
+    }
+   }
+  },
+  "win_max": {
+   "auc": 0.969036278479003,
+   "n_whale": 221,
+   "n_free": 570,
+   "n_faint_only": 49,
+   "at_dev_thr": {
+    "threshold": 282.0,
+    "hits": 45,
+    "n_pos": 221,
+    "false_alarms": 0,
+    "n_neg": 570,
+    "fire_other": 0,
+    "n_other": 49,
+    "recall": 0.20361990950226244,
+    "far": 0.0
+   },
+   "op_far10": {
+    "threshold": 45.0,
+    "tp": 204.0,
+    "fp": 57.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.9230769230769231,
+    "far": 0.1
+   },
+   "op_far2": {
+    "threshold": 106.0,
+    "tp": 154.0,
+    "fp": 11.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.6968325791855203,
+    "far": 0.01929824561403509
+   },
+   "sweep": {
+    "1": {
+     "hits": 221,
+     "n_pos": 221,
+     "false_alarms": 365,
+     "n_neg": 570
+    },
+    "4": {
+     "hits": 221,
+     "n_pos": 221,
+     "false_alarms": 246,
+     "n_neg": 570
+    },
+    "8": {
+     "hits": 221,
+     "n_pos": 221,
+     "false_alarms": 185,
+     "n_neg": 570
+    },
+    "16": {
+     "hits": 216,
+     "n_pos": 221,
+     "false_alarms": 138,
+     "n_neg": 570
+    },
+    "32": {
+     "hits": 207,
+     "n_pos": 221,
+     "false_alarms": 90,
+     "n_neg": 570
+    },
+    "64": {
+     "hits": 191,
+     "n_pos": 221,
+     "false_alarms": 33,
+     "n_neg": 570
+    }
+   }
+  },
+  "win_kth2": {
+   "auc": 0.9775978407557355,
+   "n_whale": 221,
+   "n_free": 570,
+   "n_faint_only": 49,
+   "at_dev_thr": {
+    "threshold": 66.0,
+    "hits": 185,
+    "n_pos": 221,
+    "false_alarms": 18,
+    "n_neg": 570,
+    "fire_other": 12,
+    "n_other": 49,
+    "recall": 0.8371040723981901,
+    "far": 0.031578947368421054
+   },
+   "op_far10": {
+    "threshold": 32.0,
+    "tp": 207.0,
+    "fp": 54.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.9366515837104072,
+    "far": 0.09473684210526316
+   },
+   "op_far2": {
+    "threshold": 80.0,
+    "tp": 167.0,
+    "fp": 11.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.755656108597285,
+    "far": 0.01929824561403509
+   },
+   "sweep": {
+    "1": {
+     "hits": 221,
+     "n_pos": 221,
+     "false_alarms": 316,
+     "n_neg": 570
+    },
+    "4": {
+     "hits": 221,
+     "n_pos": 221,
+     "false_alarms": 209,
+     "n_neg": 570
+    },
+    "8": {
+     "hits": 219,
+     "n_pos": 221,
+     "false_alarms": 145,
+     "n_neg": 570
+    },
+    "16": {
+     "hits": 215,
+     "n_pos": 221,
+     "false_alarms": 94,
+     "n_neg": 570
+    },
+    "32": {
+     "hits": 207,
+     "n_pos": 221,
+     "false_alarms": 54,
+     "n_neg": 570
+    },
+    "64": {
+     "hits": 186,
+     "n_pos": 221,
+     "false_alarms": 18,
+     "n_neg": 570
+    }
+   }
+  },
+  "win_kth3": {
+   "auc": 0.9806700007938398,
+   "n_whale": 221,
+   "n_free": 570,
+   "n_faint_only": 49,
+   "at_dev_thr": {
+    "threshold": 58.0,
+    "hits": 187,
+    "n_pos": 221,
+    "false_alarms": 16,
+    "n_neg": 570,
+    "fire_other": 12,
+    "n_other": 49,
+    "recall": 0.8461538461538461,
+    "far": 0.028070175438596492
+   },
+   "op_far10": {
+    "threshold": 20.0,
+    "tp": 212.0,
+    "fp": 57.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.9592760180995475,
+    "far": 0.1
+   },
+   "op_far2": {
+    "threshold": 69.0,
+    "tp": 175.0,
+    "fp": 11.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.7918552036199095,
+    "far": 0.01929824561403509
+   },
+   "sweep": {
+    "1": {
+     "hits": 221,
+     "n_pos": 221,
+     "false_alarms": 280,
+     "n_neg": 570
+    },
+    "4": {
+     "hits": 220,
+     "n_pos": 221,
+     "false_alarms": 171,
+     "n_neg": 570
+    },
+    "8": {
+     "hits": 217,
+     "n_pos": 221,
+     "false_alarms": 120,
+     "n_neg": 570
+    },
+    "16": {
+     "hits": 213,
+     "n_pos": 221,
+     "false_alarms": 72,
+     "n_neg": 570
+    },
+    "32": {
+     "hits": 205,
+     "n_pos": 221,
+     "false_alarms": 34,
+     "n_neg": 570
+    },
+    "64": {
+     "hits": 181,
+     "n_pos": 221,
+     "false_alarms": 12,
+     "n_neg": 570
+    }
+   }
+  },
+  "win_meanmap": {
+   "auc": 0.9806144320076209,
+   "n_whale": 221,
+   "n_free": 570,
+   "n_faint_only": 49,
+   "at_dev_thr": {
+    "threshold": 1.0,
+    "hits": 218,
+    "n_pos": 221,
+    "false_alarms": 201,
+    "n_neg": 570,
+    "fire_other": 37,
+    "n_other": 49,
+    "recall": 0.9864253393665159,
+    "far": 0.3526315789473684
+   },
+   "op_far10": {
+    "threshold": 10.0,
+    "tp": 215.0,
+    "fp": 57.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.9728506787330317,
+    "far": 0.1
+   },
+   "op_far2": {
+    "threshold": 42.0,
+    "tp": 198.0,
+    "fp": 11.0,
+    "n_pos": 221.0,
+    "n_neg": 570.0,
+    "recall": 0.8959276018099548,
+    "far": 0.01929824561403509
+   },
+   "sweep": {
+    "1": {
+     "hits": 218,
+     "n_pos": 221,
+     "false_alarms": 201,
+     "n_neg": 570
+    },
+    "4": {
+     "hits": 217,
+     "n_pos": 221,
+     "false_alarms": 117,
+     "n_neg": 570
+    },
+    "8": {
+     "hits": 216,
+     "n_pos": 221,
+     "false_alarms": 69,
+     "n_neg": 570
+    },
+    "16": {
+     "hits": 211,
+     "n_pos": 221,
+     "false_alarms": 39,
+     "n_neg": 570
+    },
+    "32": {
+     "hits": 200,
+     "n_pos": 221,
+     "false_alarms": 18,
+     "n_neg": 570
+    },
+    "64": {
+     "hits": 176,
+     "n_pos": 221,
+     "false_alarms": 4,
+     "n_neg": 570
+    }
+   }
+  }
+ },
+ "pooled_masks": {
+  "single": {
+   "frames": 14,
+   "iou": {
+    "water": 0.5313035901258298,
+    "whale": 0.6603534816170408,
+    "back": 0.28158601076554607,
+    "fish": 0.0,
+    "bubbles": 0.0,
+    "surface": 0.13198191160354455,
+    "air": 0.29970567085236494,
+    "seafloor": null,
+    "gear": 0.0
+   },
+   "iou_band": {
+    "water": 0.5384488172730758,
+    "whale": 0.6996751994888385,
+    "back": 0.21299266470759776,
+    "fish": 0.0,
+    "bubbles": 0.0,
+    "surface": 0.11676338704544797,
+    "air": 0.29687851182614333,
+    "seafloor": null,
+    "gear": 0.0
+   },
+   "pixel_acc": 0.5731884162808641,
+   "whale_recall_by_grade": {
+    "clear": {
+     "pixel_recall": 0.9933070584020065,
+     "instances": 2,
+     "found_25pct": 2
+    },
+    "hazy": {
+     "pixel_recall": 0.925696926745744,
+     "instances": 6,
+     "found_25pct": 6
+    }
+   },
+   "confusions": {
+    "back_as_whale": 0.001127966582763935,
+    "whale_as_back": 0.0007830079669160129,
+    "bubbles_as_whale": 0.0,
+    "surface_as_whale": 0.0,
+    "whale_as_water": 0.041832960834397616,
+    "water_as_whale": 0.018335079779452937,
+    "faint_whale_as_water": 0.0,
+    "back_as_water": 0.004933627748958776
+   },
+   "fish": {
+    "instances": 39,
+    "found": 0,
+    "pred_components": 0,
+    "pred_components_on_fish": 0
+   },
+   "conf": [
+    [
+     11074169,
+     380151,
+     1809296,
+     0,
+     452683,
+     781425,
+     6235810,
+     0,
+     0,
+     0
+    ],
+    [
+     44023,
+     993029,
+     824,
+     0,
+     12871,
+     76,
+     1529,
+     0,
+     0,
+     0
+    ],
+    [
+     4024,
+     920,
+     810529,
+     0,
+     70,
+     0,
+     84,
+     0,
+     0,
+     0
+    ],
+    [
+     59963,
+     27023,
+     1,
+     0,
+     7,
+     0,
+     137,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     252694,
+     0,
+     0,
+     0,
+     1820906,
+     0,
+     0,
+     0
+    ],
+    [
+     1848,
+     0,
+     0,
+     0,
+     0,
+     119108,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     679,
+     0,
+     0,
+     2764,
+     0,
+     3643054,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     42659,
+     0,
+     0,
+     7568,
+     0,
+     450476,
+     0,
+     0,
+     0
+    ]
+   ],
+   "whale_pixel_recall": 0.9436281776439822
+  },
+  "window": {
+   "frames": 14,
+   "iou": {
+    "water": 0.5557859818529727,
+    "whale": 0.5935585007838108,
+    "back": 0.31578054688989565,
+    "fish": 0.0,
+    "bubbles": 0.008055523537252626,
+    "surface": 0.11973162440879566,
+    "air": 0.30553142551169116,
+    "seafloor": null,
+    "gear": 0.0
+   },
+   "iou_band": {
+    "water": 0.5654560517747133,
+    "whale": 0.6329335559254107,
+    "back": 0.24712274875463022,
+    "fish": 0.0,
+    "bubbles": 0.008065194536516575,
+    "surface": 0.10524987692060503,
+    "air": 0.30303127971111876,
+    "seafloor": null,
+    "gear": 0.0
+   },
+   "pixel_acc": 0.5906562775573192,
+   "whale_recall_by_grade": {
+    "clear": {
+     "pixel_recall": 0.9948692225008957,
+     "instances": 2,
+     "found_25pct": 2
+    },
+    "hazy": {
+     "pixel_recall": 0.8636085002043319,
+     "instances": 6,
+     "found_25pct": 6
+    }
+   },
+   "confusions": {
+    "back_as_whale": 0.002586966836556416,
+    "whale_as_back": 0.0012305768412090251,
+    "bubbles_as_whale": 0.0,
+    "surface_as_whale": 0.0,
+    "whale_as_water": 0.1002373730462811,
+    "water_as_whale": 0.024936945144035744,
+    "faint_whale_as_water": 0.0,
+    "back_as_water": 0.003797078811760768
+   },
+   "fish": {
+    "instances": 39,
+    "found": 0,
+    "pred_components": 0,
+    "pred_components_on_fish": 0
+   },
+   "conf": [
+    [
+     11622577,
+     517031,
+     1732946,
+     0,
+     291959,
+     889270,
+     5679751,
+     0,
+     0,
+     0
+    ],
+    [
+     105485,
+     945455,
+     1295,
+     0,
+     109,
+     0,
+     8,
+     0,
+     0,
+     0
+    ],
+    [
+     3097,
+     2110,
+     809889,
+     0,
+     214,
+     0,
+     317,
+     0,
+     0,
+     0
+    ],
+    [
+     69849,
+     9338,
+     94,
+     0,
+     0,
+     0,
+     7850,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     19079,
+     0,
+     2054521,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     120956,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     151,
+     14759,
+     0,
+     2555,
+     0,
+     3629032,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     11877,
+     0,
+     0,
+     0,
+     0,
+     488826,
+     0,
+     0,
+     0
+    ]
+   ],
+   "whale_pixel_recall": 0.898420870583227
+  },
+  "single_unknown": {
+   "frames": 14,
+   "iou": {
+    "water": 0.5312990741993137,
+    "whale": 0.6249871068624498,
+    "back": 0.28476365845337764,
+    "fish": 0.0,
+    "bubbles": 0.0,
+    "surface": 0.13198191160354455,
+    "air": 0.3060042742786037,
+    "seafloor": null,
+    "gear": 0.0
+   },
+   "iou_band": {
+    "water": 0.5384439679929515,
+    "whale": 0.6670333462338449,
+    "back": 0.21604799192639168,
+    "fish": 0.0,
+    "bubbles": 0.0,
+    "surface": 0.11676338704544797,
+    "air": 0.30877359108506613,
+    "seafloor": null,
+    "gear": 0.0
+   },
+   "pixel_acc": 0.5567469618055556,
+   "whale_recall_by_grade": {
+    "clear": {
+     "pixel_recall": 0.8646076675026872,
+     "instances": 2,
+     "found_25pct": 1
+    },
+    "hazy": {
+     "pixel_recall": 0.8633446793542079,
+     "instances": 6,
+     "found_25pct": 6
+    }
+   },
+   "confusions": {
+    "back_as_whale": 0.0011255144814970568,
+    "whale_as_back": 0.0007830079669160129,
+    "bubbles_as_whale": 0.0,
+    "surface_as_whale": 0.0,
+    "whale_as_water": 0.041832960834397616,
+    "water_as_whale": 0.018169213217582685,
+    "faint_whale_as_water": 0.0,
+    "back_as_water": 0.004933627748958776
+   },
+   "fish": {
+    "instances": 39,
+    "found": 0,
+    "pred_components": 0,
+    "pred_components_on_fish": 0
+   },
+   "conf": [
+    [
+     11073084,
+     376712,
+     1809247,
+     0,
+     447921,
+     781425,
+     6235421,
+     0,
+     0,
+     9724
+    ],
+    [
+     44023,
+     908895,
+     824,
+     0,
+     99,
+     76,
+     1055,
+     0,
+     0,
+     97380
+    ],
+    [
+     4024,
+     918,
+     810506,
+     0,
+     70,
+     0,
+     84,
+     0,
+     0,
+     25
+    ],
+    [
+     58098,
+     24280,
+     1,
+     0,
+     7,
+     0,
+     136,
+     0,
+     0,
+     4609
+    ],
+    [
+     0,
+     0,
+     220542,
+     0,
+     0,
+     0,
+     740406,
+     0,
+     0,
+     1112652
+    ],
+    [
+     1848,
+     0,
+     0,
+     0,
+     0,
+     119108,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     1767,
+     0,
+     3250994,
+     0,
+     0,
+     393736
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     416,
+     0,
+     0,
+     500287
+    ]
+   ],
+   "whale_pixel_recall": 0.863679643313264
+  }
+ }
+}

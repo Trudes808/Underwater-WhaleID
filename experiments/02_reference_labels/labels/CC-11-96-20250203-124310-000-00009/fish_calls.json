@@ -1,0 +1,34 @@
+[
+ {
+  "frame": 26885,
+  "boxes": [
+   [
+    878,
+    722,
+    968,
+    772
+   ]
+  ],
+  "count": 1,
+  "note": "jack-like fish ~45 px body: body and fins visible, tail motion-blurred in this frame (borderline); clear forked tail in f26869, followed f26869-f26905"
+ },
+ {
+  "frame": 40226,
+  "boxes": [
+   [
+    1555,
+    440,
+    1840,
+    585
+   ],
+   [
+    465,
+    625,
+    610,
+    685
+   ]
+  ],
+  "count": 2,
+  "note": "near fish ~280 px, mackerel / tuna-like, eye, open mouth and forked tail visible; second fish ~140 px with eye and forked tail"
+ }
+]

@@ -1,0 +1,186 @@
+{
+ "video": "CC-11-96-20250203-104242-000-00005.m4v",
+ "fps": 29.949647912282696,
+ "frames_decoded": 53352,
+ "labels": "AI by-eye labels (WP3 part 2), test video: scoring only",
+ "rule": "as for the dev clip: event frame = first frame whose centre (960, 540) shows the other side of the surface; crossing = frames in between. Exits pass through a phase where the dome is half out of the water (sharp circular waterline rim, centre in a brownish band below the sky): crossing_first = first frame where the rim is sharp (judgement, it forms gradually), event = first frame with sky at the centre. Entries: crossing = foam / water sheet over the lens; event = first frame with under-water bubble froth or dark water at the centre.",
+ "windows": [
+  {
+   "name": "random_1",
+   "start_s": 131.665,
+   "end_s": 311.665,
+   "seed": 1005,
+   "how": "every 15th frame (2 per second) looked at as thumbnail grids (192 px), f6658-f6763 at 960 px",
+   "events": "none: underwater throughout (open blue water, back band at the bottom; one fish crossing near the top at 222-226 s; no other whale in view)"
+  },
+  {
+   "name": "random_2",
+   "start_s": 1490.193,
+   "end_s": 1670.193,
+   "seed": 1005,
+   "how": "every 15th frame (2 per second) looked at as thumbnail grids; every frame 46760-46910, 47040-47210, 47490-47660, 48140-48290, 48530-48710, 49150-49320 decoded in order to the scratchpad and stepped through as strips (640 px, centre marked)"
+  }
+ ],
+ "events": [
+  {
+   "type": "exit",
+   "frame": 46807,
+   "time_s": 1562.856,
+   "crossing_first": 46788,
+   "crossing_last": 46806,
+   "window": "random_2",
+   "note": "surfacing 1. Dome half out from about f46788 (sharp circular waterline rim, centre in the brownish band below the sky); water film with droplets over the lens f46797-f46806; f46806 centre on the band edge; f46807 sky at the centre (through a thin film). Splash over the lens f46814-f46818 with sky visible (kept air). Event +-1 frame; crossing start about +-5 frames (the rim forms gradually)."
+  },
+  {
+   "type": "entry",
+   "frame": 46875,
+   "time_s": 1565.127,
+   "crossing_first": 46871,
+   "crossing_last": 46874,
+   "window": "random_2",
+   "note": "f46870 last frame with sky / horizon at the centre; f46871-f46874 white foam and streaking water over the lens; f46875 beige bubble froth under water with dark water at the left; the sampled frame f46876 is the next frame (underwater, bubbles). +-1 frame."
+  },
+  {
+   "type": "exit",
+   "frame": 47098,
+   "time_s": 1572.573,
+   "crossing_first": 47076,
+   "crossing_last": 47097,
+   "window": "random_2",
+   "note": "surfacing 2. Rim becomes sharp about f47076 (f47058-f47075 the surface underside is still wavy); centre in the brownish band until f47097 (centre at the band edge); f47098 sky at the centre. Water sheets / splash f47104-f47115 with sky visible (kept air). Event +-1; crossing start about +-5."
+  },
+  {
+   "type": "entry",
+   "frame": 47196,
+   "time_s": 1575.845,
+   "crossing_first": 47185,
+   "crossing_last": 47195,
+   "window": "random_2",
+   "note": "f47184 last frame with sky at the centre (foam at the left); f47185-f47192 whitewater over the lens, f47193-f47195 uniform grey-brown (lens in foam); f47196 bubbles and dark water at and near the centre. +-2 frames (froth vs foam boundary)."
+  },
+  {
+   "type": "exit",
+   "frame": 47532,
+   "time_s": 1587.064,
+   "crossing_first": 47506,
+   "crossing_last": 47531,
+   "window": "random_2",
+   "note": "surfacing 3. Rim sharp from about f47506; centre in the brownish band until f47531 (on the band edge); f47532 sky at the centre. Then f47537-f47547 whitewater washing over the lens (centre not recognisable for about 11 frames, sky visible at the edges): kept as air inside the surfacing; if counted as crossing, the exit would be f47548. Event +-1."
+  },
+  {
+   "type": "entry",
+   "frame": 47635,
+   "time_s": 1590.503,
+   "crossing_first": 47626,
+   "crossing_last": 47634,
+   "window": "random_2",
+   "note": "f47625 last frame with sky at the centre (splash approaching); f47626-f47634 bright splash then beige foam over the lens; f47635 bubble froth next to dark water at the centre; f47636 dark water with bubbles. +-1 frame."
+  },
+  {
+   "type": "exit",
+   "frame": 48186,
+   "time_s": 1608.9,
+   "crossing_first": 48153,
+   "crossing_last": 48185,
+   "window": "random_2",
+   "note": "surfacing 4. Rim sharp from about f48153; centre in the brownish band (with water rings on the dome f48176-f48185) until f48185; f48186 sky at the centre through a water film. Water sheets f48190-f48200 with sky visible (kept air). Event +-1; crossing start about +-5."
+  },
+  {
+   "type": "entry",
+   "frame": 48262,
+   "time_s": 1611.438,
+   "crossing_first": 48258,
+   "crossing_last": 48261,
+   "window": "random_2",
+   "note": "f48257 last frame with sky at the centre; f48258 splash at the centre, f48259-f48261 foam; f48262 bubble froth with dark water at the lower left. +-1 frame."
+  },
+  {
+   "type": "exit",
+   "frame": 48588,
+   "time_s": 1622.323,
+   "crossing_first": 48558,
+   "crossing_last": 48587,
+   "window": "random_2",
+   "note": "surfacing 5. Rim sharp from about f48558 (f48530-f48556 wavy surface underside); centre in the brownish band until f48587 (rim edge); f48588 sky just above the band at the centre. +-1; crossing start about +-5."
+  },
+  {
+   "type": "entry",
+   "frame": 48686,
+   "time_s": 1625.595,
+   "crossing_first": 48674,
+   "crossing_last": 48685,
+   "window": "random_2",
+   "note": "f48672 last clear air frame; f48673 water sheet (sky still visible through it at the centre, kept air); f48674-f48675 foam; f48676-f48685 half-submerged view (waterline rim across the dome, centre in the brownish band at the waterline); f48686 dark water below the band at the centre. +-1 frame; crossing start +-1."
+  },
+  {
+   "type": "exit",
+   "frame": 49204,
+   "time_s": 1642.891,
+   "crossing_first": 49174,
+   "crossing_last": 49203,
+   "window": "random_2",
+   "note": "surfacing 6. Rim sharp from about f49174; centre in the brownish band (water film from f49192) until f49203; f49204 sky at the centre through a water sheet. Water sheets f49206-f49222 with sky visible (kept air). Event +-1; crossing start about +-5."
+  },
+  {
+   "type": "entry",
+   "frame": 49296,
+   "time_s": 1645.963,
+   "crossing_first": 49286,
+   "crossing_last": 49295,
+   "window": "random_2",
+   "note": "f49285 last frame with sky at the centre (whitewater below); f49286 water sheet / whitewater at the centre, f49287-f49295 beige foam streaks over the lens; f49296 bubble froth with dark water patches; f49298 dark water at the centre. +-2 frames."
+  }
+ ],
+ "surface_intervals_in_windows": [
+  {
+   "air_s": [
+    1562.856,
+    1565.094
+   ],
+   "note": "surfacing 1"
+  },
+  {
+   "air_s": [
+    1572.573,
+    1575.812
+   ],
+   "note": "surfacing 2"
+  },
+  {
+   "air_s": [
+    1587.064,
+    1590.469
+   ],
+   "note": "surfacing 3 (whitewater over the lens f47537-f47547)"
+  },
+  {
+   "air_s": [
+    1608.9,
+    1611.405
+   ],
+   "note": "surfacing 4"
+  },
+  {
+   "air_s": [
+    1622.323,
+    1625.562
+   ],
+   "note": "surfacing 5"
+  },
+  {
+   "air_s": [
+    1642.891,
+    1645.929
+   ],
+   "note": "surfacing 6"
+  }
+ ],
+ "outside_windows_seen_in_sample": [
+  {
+   "type": "air frames",
+   "frame": 11752,
+   "time_s": 392.392,
+   "note": "sampled frames f11752 and f12197 (392-407 s) in air; every 10th frame f12100-f12300 shows a half-out crossing at f12100, air f12120-f12200 and underwater by f12220, so at least one surfacing near 392-408 s (maybe two); not stepped through"
+  }
+ ]
+}

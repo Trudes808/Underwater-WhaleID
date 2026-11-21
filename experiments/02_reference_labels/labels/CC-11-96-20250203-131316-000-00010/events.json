@@ -1,0 +1,70 @@
+{
+ "video": "CC-11-96-20250203-131316-000-00010.m4v",
+ "fps": 29.974783644256544,
+ "frames_decoded": 53395,
+ "labels": "AI by-eye labels (WP3 part 2), test video: scoring only",
+ "rule": "as for the dev clip and the agreed boundary cases: event frame = first frame whose centre (960, 540) shows the other side of the surface; crossing = frames in between. Snell's window just under the surface (sky through the surface, brown reflection of the back) = underwater; half-out phase (circular waterline rim on the dome, centre in the brownish water-film band) = crossing; after that, water sheets / waves over the lens with sky visible = air. Entries: crossing = water sheet / dark surface band over the lens; event = first frame with entry froth or water at the centre.",
+ "windows": [
+  {
+   "name": "random_1",
+   "start_s": 152.114,
+   "end_s": 332.114,
+   "seed": 1010,
+   "how": "every 15th frame (2 per second) looked at as thumbnail grids (192 px); every frame f9340-f9475 and f9750-f9910 decoded in order and stepped through on centre-marked strips (320 px)"
+  },
+  {
+   "name": "random_2",
+   "start_s": 858.002,
+   "end_s": 1038.002,
+   "seed": 1010,
+   "how": "every 15th frame (2 per second) looked at as thumbnail grids (192 px)",
+   "events": "none: underwater throughout (calf rises from beyond the back 931-972 s and returns at 1035 s)"
+  }
+ ],
+ "events": [
+  {
+   "type": "exit",
+   "frame": 9382,
+   "time_s": 312.996,
+   "crossing_first": 9372,
+   "crossing_last": 9381,
+   "window": "random_1",
+   "note": "surfacing 1. Snell's window with the back's brown reflection up to f9371 (underwater); f9372-f9381 water film with drop rings / rim, centre in the brownish band; f9382 first frame with sky at the centre (distorted horizon below). Water sheets over the lens f9386-f9395 with sky visible (kept air); yellow-green tag parts at the frame edges f9386-f9390. Uncertainty: event +-2 frames, crossing start +-3 frames."
+  },
+  {
+   "type": "entry",
+   "frame": 9452,
+   "time_s": 315.332,
+   "crossing_first": 9447,
+   "crossing_last": 9451,
+   "window": "random_1",
+   "note": "f9446 last frame with sky at the centre; f9447-f9448 water sheet / wave over the lens, f9449-f9451 dark brownish surface band at the centre; f9452 entry froth at the centre; froth over most of the frame until about f9470, then blue water at the lower left. +-1 frame."
+  },
+  {
+   "type": "exit",
+   "frame": 9780,
+   "time_s": 326.274,
+   "crossing_first": 9770,
+   "crossing_last": 9779,
+   "window": "random_1",
+   "note": "surfacing 2. Just under the surface since about 316 s (Snell's window, brown reflection of the back, f9750-f9769); sharp circular waterline rim with the centre in the brownish band f9770-f9779; f9780 sky at the centre. Heavy water sheets over the lens f9786-f9808 with sun / sky visible through (kept air). Uncertainty: event +-1 frame; where the rim phase starts (Snell's window vs half-out) is a judgement of about +-5 frames."
+  },
+  {
+   "type": "entry",
+   "frame": 9867,
+   "time_s": 329.177,
+   "crossing_first": 9861,
+   "crossing_last": 9866,
+   "window": "random_1",
+   "note": "f9860 last frame with sky at the centre; f9861-f9863 water sheet, f9864-f9866 dark surface band / splash; f9867 froth and water at the centre. Froth over most of the frame to about f9900. A clear fish (~200 px with tail) passes through the froth at f9902-f9903. +-2 frames."
+  }
+ ],
+ "surface_intervals_in_windows": [
+  {"air_s": [312.996, 315.299], "note": "about 2.3 s in air"},
+  {"air_s": [326.274, 329.143], "note": "about 2.9 s in air"}
+ ],
+ "outside_windows_seen_in_sample": [
+  {"type": "entry froth", "frame": 10459, "time_s": 348.967, "note": "sampled frame full of entry froth: a third surfacing just before 349 s; not stepped through"},
+  {"type": "air frame", "frame": 48280, "time_s": 1610.693, "note": "sampled frame in air (surfacing near 1611 s; sampled frames 1566-1626 s are just under the surface); not stepped through"}
+ ]
+}

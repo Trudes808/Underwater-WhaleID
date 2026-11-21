@@ -1,0 +1,11 @@
+# Data locations for uwid (see CLAUDE.md). Each can be overridden by an environment variable:
+#   UWID_FOOTAGE_DIR, UWID_CACHE_DIR, UWID_SHEETS_DIR
+# and this file itself by UWID_PATHS_CONFIG.
+
+[paths]
+# read only: never written, moved, renamed or deleted
+footage_dir = "/home/sat3737/NOAA_whales/underwater_video"
+# derived data (inventory, clips, clock glyphs, features ...), one sub folder per topic
+cache_dir = "/home/sat3737/NOAA_whales/underwater_cache"
+# images for people to look at (contact sheets, overlays, plots)
+sheets_dir = "/home/sat3737/NOAA_whales/review_sheets/underwater"

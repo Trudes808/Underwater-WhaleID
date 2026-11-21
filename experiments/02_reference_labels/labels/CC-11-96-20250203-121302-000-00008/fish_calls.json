@@ -1,0 +1,8 @@
+[
+ {
+  "frame": 28007,
+  "boxes": [[1293, 131, 1391, 162], [1476, 282, 1573, 318], [1622, 340, 1716, 376], [1311, 411, 1387, 438], [1778, 620, 1836, 647]],
+  "count": 5,
+  "note": "jack-like fish with body, dorsal fin and forked tail visible at full size, 60-100 px; loose group swimming across f27960-f28060. Up to 5 fainter spindles (35-70 px, no tail seen) lower in the group are not counted: listed as unsure in frames.csv other."
+ }
+]

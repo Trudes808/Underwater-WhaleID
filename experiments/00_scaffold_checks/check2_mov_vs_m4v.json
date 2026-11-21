@@ -1,0 +1,79 @@
+{
+ "moments": [
+  {
+   "t_mov": 299.99975555555557,
+   "mov_index": 8992,
+   "mov_clock": "03Xxx25 10:17:38.100",
+   "m4v_index": 8992,
+   "t_m4v": 300.267277,
+   "m4v_clock": "03Xxx25 10:17:38.100",
+   "index_difference": 0,
+   "psnr_db_after_level_map": 49.98,
+   "psnr_db_raw": 29.76,
+   "level_map_gain_offset": [
+    0.8478,
+    16.37
+   ],
+   "ncc": 0.9995,
+   "shift_px": [
+    0.001,
+    -0.021
+   ],
+   "shift_response": 0.762,
+   "laplacian_var_mov": 88.8,
+   "laplacian_var_m4v": 64.53,
+   "mean_mov": 61.09,
+   "mean_m4v": 68.15
+  },
+  {
+   "t_mov": 899.9992888888889,
+   "mov_index": 26976,
+   "mov_clock": "03Xxx25 10:27:38.100",
+   "m4v_index": 26976,
+   "t_m4v": 900.735053,
+   "m4v_clock": "03Xxx25 10:27:38.100",
+   "index_difference": 0,
+   "psnr_db_after_level_map": 50.22,
+   "psnr_db_raw": 34.11,
+   "level_map_gain_offset": [
+    0.8223,
+    18.13
+   ],
+   "ncc": 0.9991,
+   "shift_px": [
+    0.023,
+    0.015
+   ],
+   "shift_response": 0.417,
+   "laplacian_var_mov": 89.86,
+   "laplacian_var_m4v": 66.77,
+   "mean_mov": 83.53,
+   "mean_m4v": 86.79
+  },
+  {
+   "t_mov": 1499.998811111111,
+   "mov_index": 44960,
+   "mov_clock": "03Xxx25 10:37:38.100",
+   "m4v_index": 44960,
+   "t_m4v": 1501.202829,
+   "m4v_clock": "03Xxx25 10:37:38.100",
+   "index_difference": 0,
+   "psnr_db_after_level_map": 49.97,
+   "psnr_db_raw": 33.09,
+   "level_map_gain_offset": [
+    0.8272,
+    17.73
+   ],
+   "ncc": 0.9992,
+   "shift_px": [
+    -0.038,
+    0.028
+   ],
+   "shift_response": 0.399,
+   "laplacian_var_mov": 90.25,
+   "laplacian_var_m4v": 65.86,
+   "mean_mov": 80.69,
+   "mean_m4v": 84.47
+  }
+ ]
+}

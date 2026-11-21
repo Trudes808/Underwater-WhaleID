@@ -1,0 +1,34 @@
+{
+ "meta": {
+  "video": "CC-11-96-20250203-114256-000-00007.m4v",
+  "coords": "full-resolution pixels",
+  "frames": "underwater_cache/reference/<stem>/sample",
+  "author": "WP3 AI by-eye prompts, SAM 2.1 hiera-large"
+ },
+ "004549": [
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ]
+  }
+ ]
+}

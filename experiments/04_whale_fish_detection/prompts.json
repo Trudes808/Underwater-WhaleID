@@ -1,0 +1,112 @@
+{
+ "_doc": "Written-down prompt sets (WP5a). Chosen BEFORE looking at results; wording is compared on the development video only. OWLv2 scores each query on its own, so one pass over 'owl_all' gives every single-prompt result. LLMDet queries in one pass compete, so each LLMDet set is its own run.",
+ "groups": {
+  "whale": [
+   "whale",
+   "humpback whale",
+   "a whale underwater",
+   "whale tail",
+   "whale fin"
+  ],
+  "fish": [
+   "fish",
+   "school of fish",
+   "small fish"
+  ],
+  "seafloor": [
+   "seafloor",
+   "sand",
+   "rock"
+  ],
+  "back": [
+   "whale skin",
+   "whale back"
+  ],
+  "distractor": [
+   "air bubbles",
+   "sea surface",
+   "dolphin",
+   "shark"
+  ]
+ },
+ "owl_all": [
+  "whale",
+  "humpback whale",
+  "a whale underwater",
+  "whale tail",
+  "whale fin",
+  "fish",
+  "school of fish",
+  "small fish",
+  "seafloor",
+  "sand",
+  "rock",
+  "whale skin",
+  "whale back",
+  "air bubbles",
+  "sea surface",
+  "dolphin",
+  "shark"
+ ],
+ "owl_fish": [
+  "fish",
+  "school of fish",
+  "small fish",
+  "whale",
+  "air bubbles"
+ ],
+ "llmdet_A": [
+  "whale",
+  "fish"
+ ],
+ "llmdet_B": [
+  "humpback whale",
+  "fish",
+  "air bubbles"
+ ],
+ "llmdet_C": [
+  "whale",
+  "whale tail",
+  "fish",
+  "school of fish",
+  "air bubbles",
+  "seafloor"
+ ],
+ "llmdet_fish": [
+  "fish",
+  "school of fish",
+  "whale",
+  "air bubbles"
+ ],
+ "sam3_all": [
+  "whale",
+  "humpback whale",
+  "fish",
+  "school of fish",
+  "seafloor",
+  "sand",
+  "air bubbles",
+  "whale back"
+ ],
+ "yoloe_all": [
+  "whale",
+  "humpback whale",
+  "fish",
+  "school of fish",
+  "seafloor",
+  "air bubbles",
+  "whale back"
+ ],
+ "yoloe_whale": [
+  "whale"
+ ],
+ "yoloe_whale_fish": [
+  "whale",
+  "fish"
+ ],
+ "sam3_test": [
+  "whale",
+  "fish",
+  "seafloor"
+ ]
+}

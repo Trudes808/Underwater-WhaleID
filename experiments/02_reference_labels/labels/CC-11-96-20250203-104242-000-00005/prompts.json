@@ -1,0 +1,176 @@
+{
+ "meta": {
+  "video": "CC-11-96-20250203-104242-000-00005.m4v",
+  "coords": "full-resolution pixels",
+  "frames": "underwater_cache/reference/<stem>/sample",
+  "author": "WP3 AI by-eye prompts, SAM 2.1 hiera-large"
+ },
+ "010419": [
+  {
+   "c": "surface",
+   "note": "sun glare window",
+   "poly": [
+    [
+     430,
+     160
+    ],
+    [
+     560,
+     110
+    ],
+    [
+     720,
+     130
+    ],
+    [
+     800,
+     240
+    ],
+    [
+     780,
+     420
+    ],
+    [
+     650,
+     520
+    ],
+    [
+     520,
+     500
+    ],
+    [
+     440,
+     380
+    ]
+   ]
+  },
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "note": "very near fluke and tail stock against the sun",
+   "box": [
+    630,
+    410,
+    1710,
+    1050
+   ],
+   "p": [
+    [
+     1250,
+     800
+    ],
+    [
+     900,
+     700
+    ],
+    [
+     1500,
+     560
+    ],
+    [
+     1300,
+     980
+    ]
+   ]
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ]
+  }
+ ],
+ "017088": [
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    770,
+    12,
+    828,
+    80
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 12,
+   "box": [
+    905,
+    5,
+    950,
+    112
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 13,
+   "box": [
+    630,
+    186,
+    700,
+    224
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "fish",
+   "id": 14,
+   "box": [
+    1305,
+    0,
+    1332,
+    70
+   ],
+   "clip": true,
+   "note": "box from fish_calls.json"
+  },
+  {
+   "c": "back",
+   "note": "thin band of the tagged whale's back at the bottom edge",
+   "box": [
+    0,
+    1015,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     960,
+     1065
+    ],
+    [
+     300,
+     1068
+    ],
+    [
+     1600,
+     1066
+    ]
+   ]
+  }
+ ]
+}

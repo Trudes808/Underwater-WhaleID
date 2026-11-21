@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uwid"
+version = "0.1.0"
+description = "Underwater whale video from camera tags: reading, inventory, burned-in clock, contact sheets, clip cutting."
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "av",
+    "imageio-ffmpeg",
+    "opencv-python-headless",
+    "pillow",
+]
+
+[project.scripts]
+uwid = "uwid.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+uwid = ["data/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
