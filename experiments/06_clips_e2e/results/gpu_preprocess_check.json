@@ -1,0 +1,8 @@
+{
+ "n_frames": 120,
+ "cpu_s_per_frame": 0.11963802178700765,
+ "gpu_s_per_frame": 0.04581739703814189,
+ "max_abs_diff": 0.031084951013326645,
+ "mean_abs_diff": 0.0017549300566315651,
+ "decisions_at_0.25_differ": 0
+}

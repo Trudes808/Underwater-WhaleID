@@ -1,0 +1,250 @@
+{
+ "seed": 20261120,
+ "pool_no_whale": 10953,
+ "pool_small": 564,
+ "counts": {
+  "no whale": {
+   "none": 146,
+   "small whale": 2,
+   "fish": 1,
+   "faint whale": 1
+  },
+  "small": {
+   "small whale": 20,
+   "fish": 9,
+   "other (ray-like shape)": 1
+  }
+ },
+ "found": [
+  {
+   "id": 71,
+   "set": "no whale",
+   "key": "CC-11-96-20250203-121302-000-00008.mov",
+   "k": 1127,
+   "clock": "12:31:51.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.22388571500778198
+  },
+  {
+   "id": 73,
+   "set": "no whale",
+   "key": "CC-11-96-20250203-121302-000-00008.mov",
+   "k": 1416,
+   "clock": "12:36:40.1",
+   "call": "faint whale",
+   "whale_score": 0.0,
+   "small_score": 0.0
+  },
+  {
+   "id": 79,
+   "set": "no whale",
+   "key": "CC-11-96-20250203-124310-000-00009.mov",
+   "k": 534,
+   "clock": "12:52:05.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.1751144677400589
+  },
+  {
+   "id": 153,
+   "set": "small",
+   "key": "CC-11-96-20250203-104242-000-00005.mov",
+   "k": 735,
+   "clock": "10:54:59.1",
+   "call": "small whale",
+   "whale_score": 0.03488088399171829,
+   "small_score": 0.6935767531394958
+  },
+  {
+   "id": 155,
+   "set": "small",
+   "key": "CC-11-96-20250203-111250-000-00006.mov",
+   "k": 74,
+   "clock": "11:14:05.1",
+   "call": "small whale",
+   "whale_score": 0.1796744465827942,
+   "small_score": 0.4467662274837494
+  },
+  {
+   "id": 156,
+   "set": "small",
+   "key": "CC-11-96-20250203-111250-000-00006.mov",
+   "k": 1086,
+   "clock": "11:30:57.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.4527778625488281
+  },
+  {
+   "id": 158,
+   "set": "small",
+   "key": "CC-11-96-20250203-111250-000-00006.mov",
+   "k": 1116,
+   "clock": "11:31:27.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.33350321650505066
+  },
+  {
+   "id": 160,
+   "set": "small",
+   "key": "CC-11-96-20250203-114256-000-00007.mov",
+   "k": 1288,
+   "clock": "12:04:26.2",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.5454673171043396
+  },
+  {
+   "id": 163,
+   "set": "small",
+   "key": "CC-11-96-20250203-121302-000-00008.mov",
+   "k": 1130,
+   "clock": "12:31:54.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.5878839492797852
+  },
+  {
+   "id": 164,
+   "set": "small",
+   "key": "CC-11-96-20250203-121302-000-00008.mov",
+   "k": 1452,
+   "clock": "12:37:16.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.6717936396598816
+  },
+  {
+   "id": 165,
+   "set": "small",
+   "key": "CC-11-96-20250203-121302-000-00008.mov",
+   "k": 1511,
+   "clock": "12:38:15.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.6706082820892334
+  },
+  {
+   "id": 166,
+   "set": "small",
+   "key": "CC-11-96-20250203-124310-000-00009.mov",
+   "k": 23,
+   "clock": "12:43:34.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.6486889719963074
+  },
+  {
+   "id": 167,
+   "set": "small",
+   "key": "CC-11-96-20250203-124310-000-00009.mov",
+   "k": 224,
+   "clock": "12:46:55.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.6566582322120667
+  },
+  {
+   "id": 168,
+   "set": "small",
+   "key": "CC-11-96-20250203-124310-000-00009.mov",
+   "k": 328,
+   "clock": "12:48:39.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.36274343729019165
+  },
+  {
+   "id": 169,
+   "set": "small",
+   "key": "CC-11-96-20250203-124310-000-00009.mov",
+   "k": 895,
+   "clock": "12:58:06.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.5748721957206726
+  },
+  {
+   "id": 170,
+   "set": "small",
+   "key": "CC-11-96-20250203-124310-000-00009.mov",
+   "k": 1011,
+   "clock": "13:00:02.1",
+   "call": "small whale",
+   "whale_score": 0.0918697863817215,
+   "small_score": 0.31499800086021423
+  },
+  {
+   "id": 173,
+   "set": "small",
+   "key": "CC-11-96-20250203-131316-000-00010.mov",
+   "k": 807,
+   "clock": "13:26:44.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.8065480589866638
+  },
+  {
+   "id": 174,
+   "set": "small",
+   "key": "CC-11-96-20250203-131316-000-00010.mov",
+   "k": 1189,
+   "clock": "13:33:06.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.42250463366508484
+  },
+  {
+   "id": 175,
+   "set": "small",
+   "key": "CC-11-96-20250203-131316-000-00010.mov",
+   "k": 1202,
+   "clock": "13:33:19.1",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.5289136171340942
+  },
+  {
+   "id": 176,
+   "set": "small",
+   "key": "CC-11-96-20250203-131316-000-00010.mov",
+   "k": 1213,
+   "clock": "13:33:30.1",
+   "call": "small whale",
+   "whale_score": 0.07382971793413162,
+   "small_score": 0.3392801284790039
+  },
+  {
+   "id": 177,
+   "set": "small",
+   "key": "CC-11-96-20250203-131316-000-00010.mov",
+   "k": 1214,
+   "clock": "13:33:31.1",
+   "call": "small whale",
+   "whale_score": 0.07356304675340652,
+   "small_score": 0.41727152466773987
+  },
+  {
+   "id": 178,
+   "set": "small",
+   "key": "CC-11-96-20250203-134322-000-00011.mov",
+   "k": 1049,
+   "clock": "14:00:53.2",
+   "call": "small whale",
+   "whale_score": 0.0,
+   "small_score": 0.41187945008277893
+  },
+  {
+   "id": 179,
+   "set": "small",
+   "key": "CC-11-96-20250203-141328-000-00012.mov",
+   "k": 1498,
+   "clock": "14:38:28.2",
+   "call": "small whale",
+   "whale_score": 0.08897849172353745,
+   "small_score": 0.3172147274017334
+  }
+ ]
+}

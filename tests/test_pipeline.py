@@ -253,3 +253,20 @@ def test_scan_end_to_end_without_sensor_log(data_dirs):
     assert s2["kept_s"] == pytest.approx(6.0)
     summary = json.loads((out_root / "clip" / "strict" / "summary.json").read_text())
     assert summary["label"] == "strict"
+
+
+def test_near_surface_whole_frame_boxes_do_not_count(data_dirs):
+    """With a sensor log, a box over most of the frame shallower than 1 m (the tagged whale's back mirrored in the
+    surface) is ignored; deeper it counts."""
+    src = make_video(data_dirs["footage"] / "v.mp4", n=40 * 10, fps=10, gop=10)
+    sensors, vclock = _sensor_windows()
+    out = {}
+    for depth in (0.3, 5.0):
+        sensors.depth_t = np.array([0.0, 40.0])
+        sensors.depth_m = np.array([depth, depth])
+        w = pl.build_windows(pl.Recording(src, "mp4"), pl.ScanConfig(), sensors, vclock, None, None)
+        frames = np.unique(w.loc[w.scanned, ["frame_0", "frame_1"]].to_numpy().ravel())
+        fs = pd.DataFrame({"frame": frames, "whale": 0.0, "whale_part": 0.0, "small": 0.0, "fish": 0.0})
+        fs.loc[fs.frame == int(w.frame_0[12]), "whale"] = 0.8      # only a whole-frame box in this frame
+        out[depth] = pl.apply_detections(w, fs, frames, pl.ScanConfig(), 40.0)[1]
+    assert out[0.3] == [] and out[5.0] == [(10.0, 15.0)]

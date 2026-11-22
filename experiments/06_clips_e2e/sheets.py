@@ -57,7 +57,9 @@ def grab(dep, rows: pd.DataFrame, which: str = "best", draw_boxes: bool = True, 
         boxes, _ = pl.load_boxes(SCAN / dep / "cache", pl.Recording(src, src.suffix[1:]))
         with video.VideoReader(src) as r:
             for i, row in g.iterrows():
-                if which == "best" and np.isfinite(row.get("whale_1", np.nan)) and row.get("whale_1", 0) > row.get(
+                if which == "best" and "best_frame" in row and np.isfinite(row.get("cover", np.nan)):
+                    f_idx = int(row.best_frame)
+                elif which == "best" and np.isfinite(row.get("whale_1", np.nan)) and row.get("whale_1", 0) > row.get(
                         "whale_0", 0):
                     f_idx = int(row.frame_1)
                 elif which == "best":
@@ -184,7 +186,7 @@ def cmd_dropcheck(a):
         sample["call"] = sample.id.map(lambda i: calls.get(str(i), "?"))
         tab = sample.groupby(["set", "call"]).size().unstack(fill_value=0)
         print(tab)
-        found = sample[sample.call.isin(["large whale", "small whale"])]
+        found = sample[sample.call.isin(["large whale", "small whale", "faint whale"])]
         res = {"seed": SEED, "pool_no_whale": int(len(pool)), "pool_small": int(len(small)),
                "counts": {s: g.call.value_counts().to_dict() for s, g in sample.groupby("set")},
                "found": found[["id", "set", "key", "k", "clock", "call", "whale_score", "small_score"]].to_dict("records")}
@@ -266,7 +268,7 @@ def cmd_lost(a):
         return
     items = []
     for p, g in lost.groupby("piece"):
-        src = next((paths.footage_dir() / DEP / "Video").glob(f"*-{p}.mov"))
+        src = next((paths.footage_dir() / DEP / "Video").glob(f"CC-*-{p}.mov"))
         with video.VideoReader(src) as r:
             for i, row in g.iterrows():
                 fr = r.frame_by_index(int(row.frame))
@@ -329,6 +331,16 @@ def cmd_clips(a):
     print(json.dumps(res, indent=1, default=str))
 
 
+def cmd_whole(a):
+    """Every whale window whose whale box covers more than 60 % of the frame (the near-whale rule), by depth."""
+    w = windows(a.dep, a.label)
+    big = w[w.whale & (w.cover > 0.6)].sort_values("depth_m")
+    cap = lambda i, fr: (f"{big.loc[i, 'key'][-9:-4]} {big.loc[i, 'clock']} d {big.loc[i, 'depth_m']:.1f} m",
+                         f"cover {big.loc[i, 'cover']:.2f} score {big.loc[i, 'top_score']:.2f} water {big.loc[i, 'water']}")
+    print(write_sheets(grab(a.dep, big), f"scan_wholeframe_{a.label.replace('+', '_')}", 4, 480, 24,
+                       f"whale windows with a box over 60 % of the frame [{a.label}], shallowest first", cap))
+
+
 def cmd_kept(a):
     w = windows(a.dep, LABEL)
     k = w[w.whale]
@@ -347,11 +359,11 @@ def cmd_kept(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["timelines", "dropcheck", "hq", "lost", "clips", "kept"])
+    ap.add_argument("cmd", choices=["timelines", "dropcheck", "hq", "lost", "clips", "kept", "whole"])
     ap.add_argument("--tally", action="store_true")
     ap.add_argument("--label", default="sensitive")
     ap.add_argument("--dep", default=DEP)
     ap.add_argument("-n", type=int, default=36)
     a = ap.parse_args()
-    {"timelines": cmd_timelines, "dropcheck": cmd_dropcheck, "hq": cmd_hq, "lost": cmd_lost, "clips": cmd_clips,
+    {"whole": cmd_whole, "timelines": cmd_timelines, "dropcheck": cmd_dropcheck, "hq": cmd_hq, "lost": cmd_lost, "clips": cmd_clips,
      "kept": cmd_kept}[a.cmd](a)

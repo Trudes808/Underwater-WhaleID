@@ -96,6 +96,10 @@ Decided by the user, 2026-11-20:
 - Two stages (user, 2026-11-20): "using the cheap model to help us slice up the footage to find the areas with
   activity and then only using sam3 to get high quality masks and high quality individual tracking through the clip".
   WP8 (`experiments/07_tracks_demo/`) makes the first example videos with outline overlays.
+- Tracking across blocked views (user, 2026-11-21): "detect the bubble curtain or above water moments and cut those
+  out in the trackers eyes to try and see if the tracker better survives a small discontinuity rather than a blocked
+  field of view". WP8b (`experiments/07_tracks_demo/gap/`) tests it: a gap-tolerance curve on clean clips, then the
+  bubble curtain and breaths three ways (straight through, blocked frames cut, memory frozen).
 - The fish calls on sheets `reference_fish_candidates_01` and `_08` (2025-02-03) are all fish (user).
 - Second deployment, `TestSubset 2025-1-2 CATS -85` (tag CC-09-85, copy started 23:16): early recordings above water
   on the boat, some middle ones with seafloor, some late ones with a few other whales.

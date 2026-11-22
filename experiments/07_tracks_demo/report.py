@@ -15,6 +15,16 @@ import pandas as pd
 HERE = Path(__file__).resolve().parent
 
 
+def to_md(d: pd.DataFrame, index: bool = False) -> str:
+    if index:
+        d = d.reset_index()
+    cols = [str(c) for c in d.columns]
+    lines = ["| " + " | ".join(cols) + " |", "|" + "---|" * len(cols)]
+    for _, r in d.iterrows():
+        lines.append("| " + " | ".join("" if (isinstance(v, float) and np.isnan(v)) else (f"{v:.3g}" if isinstance(v, float) else str(v)) for v in r) + " |")
+    return "\n".join(lines)
+
+
 def main():
     rows, ov_rows = [], []
     for p in sorted((HERE / "results").glob("*_*.json")):
@@ -38,15 +48,16 @@ def main():
             x.update(clip=r["clip"], method=r["method"])
             ov_rows.append(x)
     d = pd.DataFrame(rows)
-    print(d.to_markdown(index=False))
+    print(to_md(d))
     if ov_rows:
         ov = pd.DataFrame(ov_rows)
         cols = [c for c in ["clip", "method", "frame", "t", "what", "ref_id", "grade", "track", "iou", "note"] if c in ov]
         print()
-        print(ov[cols].to_markdown(index=False))
+        print(to_md(ov[cols]))
         w = ov[ov.what == "whale"]
         print()
-        print(w.groupby(["method", "grade"]).iou.agg(["count", "median", lambda s: int((s >= 0.5).sum())]).to_markdown())
+        g = w.groupby(["method", "grade"]).iou
+        print(to_md(pd.DataFrame(dict(n=g.size(), median_iou=g.median(), iou_ge_05=g.apply(lambda s: int((s >= 0.5).sum())))), index=True))
 
 
 if __name__ == "__main__":

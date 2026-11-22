@@ -1,0 +1,38 @@
+{
+ "clip": "04",
+ "video": "CC-11-96-20250203-101236-000-00004.mov",
+ "t0": 650.0,
+ "t1": 668.0,
+ "method": "owl_sam3",
+ "kind": "b: very near whale head-down, touching the back",
+ "stage1_run": "650-724 s",
+ "n_frames": 537,
+ "seconds_video": 17.92,
+ "seconds_total": 143.2,
+ "seconds_model": 140.3,
+ "gpu_s_per_video_s": 7.99,
+ "gpu_peak_gb": 1.54,
+ "n_started": 1,
+ "roles": {
+  "0": "back",
+  "1": "whale"
+ },
+ "n_whale_tracks": 1,
+ "tracks": [
+  {
+   "number": 1,
+   "obj": 1,
+   "first_s": 650.08,
+   "last_s": 667.96,
+   "frames_seen": 537,
+   "gaps_s": "",
+   "small_frames": 0,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  }
+ ],
+ "overlap": null,
+ "mp4": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_04_very_near_whale_on_back.mp4",
+ "mb": 3.8,
+ "sheet": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_04_very_near_whale_on_back.jpg"
+}

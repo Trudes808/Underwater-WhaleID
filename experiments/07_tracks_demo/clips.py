@@ -40,14 +40,26 @@ def main():
     ap.add_argument("--method", default="owl_sam3", choices=list(tracks.METHODS))
     ap.add_argument("--max-frames", type=int, default=None)
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--budget-s", type=float, default=None,
+                    help="start another stretch only while less than this many seconds have passed (keeps one "
+                         "GPU-locked command short); items are clip:method or clip (with --method)")
     a = ap.parse_args()
     if a.cmd == "list":
         for k, c in CLIPS.items():
             print(k, Path(c[0]).name, c[1], c[2], c[3], "|", c[4], "| stage-1 run", c[5])
         return
-    for k in a.clips or list(CLIPS):
+    import time
+    t_start = time.time()
+    for item in a.clips or list(CLIPS):
+        k, _, m = item.partition(":")
+        m = m or a.method
         v, t0, t1 = CLIPS[k][:3]
-        tracks.run_tracks(v, t0, t1, method=a.method, max_frames=a.max_frames, force=a.force)
+        if tracks.is_done(v, t0, t1, m) and not a.force:
+            continue
+        if a.budget_s is not None and time.time() - t_start > a.budget_s:
+            print(f"budget reached before {item}")
+            break
+        tracks.run_tracks(v, t0, t1, method=m, max_frames=a.max_frames, force=a.force)
 
 
 if __name__ == "__main__":

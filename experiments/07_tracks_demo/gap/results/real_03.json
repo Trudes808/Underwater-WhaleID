@@ -1,0 +1,56 @@
+{
+ "case": "03",
+ "what": "breath, 00005, sensor exit 371.6 s",
+ "blocked_s": [
+  [
+   371.43,
+   375.6
+  ]
+ ],
+ "variants": {
+  "a": {
+   "whale_ids": 2,
+   "gaps": [
+    {
+     "gap_s": 4.2,
+     "blocked_s": 4.2,
+     "ids_before": [
+      1
+     ],
+     "ids_after": [
+      1
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [],
+     "gone": []
+    }
+   ],
+   "blocked_frames_with_outline": "21/126",
+   "gpu_s_per_video_s": 7.21
+  },
+  "b": {
+   "whale_ids": 2,
+   "gaps": [
+    {
+     "gap_s": 4.2,
+     "blocked_s": 4.2,
+     "ids_before": [
+      1
+     ],
+     "ids_after": [
+      1
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [],
+     "gone": []
+    }
+   ],
+   "blocked_frames_with_outline": "0/126",
+   "gpu_s_per_video_s": 5.88
+  }
+ }
+}

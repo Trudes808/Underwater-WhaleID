@@ -1,0 +1,26 @@
+{
+ "clip": "07",
+ "video": "CC-11-96-20250203-111250-000-00006.mov",
+ "t0": 822.0,
+ "t1": 840.0,
+ "method": "owl_sam3",
+ "kind": "e + d: hazy calf near the back, dives out of view, fish",
+ "stage1_run": "821-868 s",
+ "n_frames": 533,
+ "seconds_video": 17.78,
+ "seconds_total": 136.9,
+ "seconds_model": 134.3,
+ "gpu_s_per_video_s": 7.7,
+ "gpu_peak_gb": 1.54,
+ "n_started": 1,
+ "roles": {
+  "0": "back",
+  "1": "small"
+ },
+ "n_whale_tracks": 0,
+ "tracks": [],
+ "overlap": null,
+ "mp4": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_07_hazy_calf_near_back.mp4",
+ "mb": 2.8,
+ "sheet": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_07_hazy_calf_near_back.jpg"
+}

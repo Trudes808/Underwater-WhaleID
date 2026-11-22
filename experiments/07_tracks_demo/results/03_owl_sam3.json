@@ -1,0 +1,38 @@
+{
+ "clip": "03",
+ "video": "CC-11-96-20250203-114256-000-00007.mov",
+ "t0": 1212.5,
+ "t1": 1230.0,
+ "method": "owl_sam3",
+ "kind": "b: one large whale passing in good light",
+ "stage1_run": "1214-1230 s",
+ "n_frames": 522,
+ "seconds_video": 17.42,
+ "seconds_total": 128.9,
+ "seconds_model": 126.4,
+ "gpu_s_per_video_s": 7.4,
+ "gpu_peak_gb": 1.53,
+ "n_started": 1,
+ "roles": {
+  "0": "back",
+  "1": "whale"
+ },
+ "n_whale_tracks": 1,
+ "tracks": [
+  {
+   "number": 1,
+   "obj": 1,
+   "first_s": 1213.58,
+   "last_s": 1229.96,
+   "frames_seen": 492,
+   "gaps_s": "",
+   "small_frames": 9,
+   "dup_hidden": 0,
+   "back_share": 0.002
+  }
+ ],
+ "overlap": null,
+ "mp4": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_03_single_whale_passing.mp4",
+ "mb": 2.9,
+ "sheet": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_03_single_whale_passing.jpg"
+}

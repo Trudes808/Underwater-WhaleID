@@ -631,7 +631,10 @@ def _decode_child(q, kind: str, path: str, arg, fmt: str, size):
         else:
             it = iter_frames(path, fps=arg.get("fps"), start=arg.get("start", 0.0), end=arg.get("end"), fmt=fmt,
                              size=size)
+        parent = os.getppid()
         for fr in it:
+            if os.getppid() != parent:    # the parent died (killed): stop instead of decoding on as an orphan
+                return
             q.put((fr.index, fr.t, fr.image, fr.key))
     except Exception as exc:          # reported to the parent
         q.put(("error", repr(exc)))

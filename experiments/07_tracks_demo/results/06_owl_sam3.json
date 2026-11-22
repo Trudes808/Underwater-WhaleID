@@ -1,0 +1,38 @@
+{
+ "clip": "06",
+ "video": "CC-11-96-20250203-104242-000-00005.mov",
+ "t0": 736.0,
+ "t1": 754.0,
+ "method": "owl_sam3",
+ "kind": "e: far hazy whale coming closer",
+ "stage1_run": "735-760 s",
+ "n_frames": 535,
+ "seconds_video": 17.85,
+ "seconds_total": 141.5,
+ "seconds_model": 138.7,
+ "gpu_s_per_video_s": 7.93,
+ "gpu_peak_gb": 1.54,
+ "n_started": 1,
+ "roles": {
+  "0": "back",
+  "1": "whale"
+ },
+ "n_whale_tracks": 1,
+ "tracks": [
+  {
+   "number": 1,
+   "obj": 1,
+   "first_s": 736.15,
+   "last_s": 753.97,
+   "frames_seen": 535,
+   "gaps_s": "",
+   "small_frames": 0,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  }
+ ],
+ "overlap": null,
+ "mp4": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_06_far_hazy_whale_approaching.mp4",
+ "mb": 2.6,
+ "sheet": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_06_far_hazy_whale_approaching.jpg"
+}

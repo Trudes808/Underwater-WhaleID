@@ -1,0 +1,132 @@
+{
+ "case": "01",
+ "what": "dev clip bubble curtain (demo clip 02)",
+ "blocked_s": [
+  [
+   63.79,
+   64.92
+  ],
+  [
+   65.46,
+   68.43
+  ]
+ ],
+ "variants": {
+  "a": {
+   "whale_ids": 12,
+   "gaps": [
+    {
+     "gap_s": 4.67,
+     "blocked_s": 4.17,
+     "ids_before": [
+      1,
+      2,
+      3
+     ],
+     "ids_after": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      10
+     ],
+     "same_number": [
+      2,
+      3
+     ],
+     "new_after": [
+      6,
+      7,
+      8,
+      10
+     ],
+     "gone": [
+      1
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "49/125",
+   "gpu_s_per_video_s": 15.56
+  },
+  "b": {
+   "whale_ids": 10,
+   "gaps": [
+    {
+     "gap_s": 4.67,
+     "blocked_s": 4.17,
+     "ids_before": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "ids_after": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "same_number": [
+      2,
+      3,
+      4
+     ],
+     "new_after": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "gone": [
+      1
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "0/125",
+   "gpu_s_per_video_s": 10.3
+  },
+  "c": {
+   "whale_ids": 11,
+   "gaps": [
+    {
+     "gap_s": 4.67,
+     "blocked_s": 4.17,
+     "ids_before": [
+      1,
+      2,
+      3
+     ],
+     "ids_after": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9
+     ],
+     "same_number": [
+      2,
+      3
+     ],
+     "new_after": [
+      4,
+      5,
+      6,
+      7,
+      9
+     ],
+     "gone": [
+      1
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "55/125",
+   "gpu_s_per_video_s": 12.55
+  }
+ }
+}

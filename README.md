@@ -45,8 +45,9 @@ uwid scan DIR [--preset sensitive|strict] [--cut] [--mode copy] [--clock-offset 
   the picture model `uwid.waterstate` when there is no log), and, only on windows on the whale and under water, the
   OWLv2 "whale" score of two frames (+0.25 s, +0.75 s). Presets: `sensitive` keeps a window when either frame has a
   large whale box >= 0.25, `strict` when both do. A box shorter than `--min-whale-px` (300 px of 1920) is `small`
-  (fish or far whale) and keeps nothing; a box covering most of the frame counts when its score is >= 0.6 (very near
-  whales). Whale windows are padded by 2 s and stretches closer than 5 s (after padding) merged. Every other second
+  (fish or far whale) and keeps nothing; a box covering most of the frame counts when its score is >= 0.6 and, with a sensor log, the
+  tag is at least 1 m deep (very near whales; just under the surface such a box is the tagged whale's back mirrored in
+  the surface). Whale windows are padded by 2 s and stretches closer than 5 s (after padding) merged. Every other second
   gets one reason: tag in air, drone flight, tag floating, surfaced, underwater with no whale, small (fish or far
   whale), unreadable. A quality tier `hq_whale` (large share of the frame, detector score, brightness, contrast,
   sharpness, no bubbles, shallow depth; first guess, see `experiments/06_clips_e2e/tables.md`) is written per window

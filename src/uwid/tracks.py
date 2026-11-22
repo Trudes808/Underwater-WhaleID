@@ -12,8 +12,14 @@ keeps its identity:
 - whale tracks start from stage 1's boxes: on the first stage-1 frame of the stretch and again on every later
   stage-1 frame where a whale box is not covered by an existing track (``start="owl"``), or from SAM 3's own text
   detector (``start="text"``, :class:`Sam3VideoModel`);
-- a track that lies mostly inside the back is dropped, a track whose outline is fish-sized on a frame is drawn as
-  ``small`` on that frame.
+- a track that lies mostly inside the back is dropped; a track that stays fish-sized (``SMALL_TRACK``) is drawn thin
+  grey as ``sN small`` with no whale number; a whale track that is fish-sized on a frame is drawn ``N small`` there;
+  where one whale outline lies inside an older one the younger is not drawn (:func:`load_tracks`).
+
+Usage (e.g. on ``uwid scan`` intervals)::
+
+    d = run_tracks(video, t0, t1, method="owl_sam3")          # GPU (take the lock); skips finished stretches
+    tr = load_tracks(d); track_summary(tr); render_tracks(tr, "x.mp4", "x.jpg")   # CPU
 
 Output (:func:`run_tracks`): ``underwater_cache/tracks/<stem>/<t0>-<t1>_<method>/`` with ``masks.npz`` (per object
 and frame a bit-packed mask at ``STORE_SIZE``), ``tracks.parquet`` (one row per object and frame: frame index, time,
@@ -132,10 +138,17 @@ METHOD_LABEL = {"owl_sam3": "OWLv2 boxes -> SAM 3 tracker", "owl_sam2": "OWLv2 b
 KEEP_HISTORY = 24      # frames of tracker memory kept (SAM 2 / 3 read 6 memory frames and up to 16 object pointers)
 START_MIN_SIZE = 0.10  # a stage-1 box starts a track only if its longest side >= this share of the frame width
 SMALL_SIZE = 0.10      # a track is drawn as "small" on frames where its outline's longest side < this share
+SMALL_TRACK = 0.15     # a track whose outline stays below this share (90th percentile over its frames) is fish-sized:
+                       # drawn grey, labelled "small", no whale number
 
 
 def tracks_dir(video, t0: float, t1: float, method: str) -> Path:
     return paths.cache_dir("tracks") / stem_of(video) / f"{t0:07.2f}-{t1:07.2f}_{method}"
+
+
+def is_done(video, t0: float, t1: float, method: str) -> bool:
+    p = tracks_dir(video, t0, t1, method) / "meta.json"
+    return p.exists() and bool(json.loads(p.read_text()).get("done"))
 
 
 def _scale_box(b, sx, sy):
@@ -195,29 +208,64 @@ class _Writer:
         (out / "meta.json").write_text(json.dumps(meta, indent=1))
 
 
+_LOADED: dict = {}
+
+
+def _load_model(method: str, dev: str, dtype):
+    """Processor and model of a method, loaded once per process (many short runs in one GPU job)."""
+    import importlib
+    key = (method, dev, str(dtype))
+    if key not in _LOADED:
+        model_cls, proc_cls, ckpt, _ = METHODS[method]
+        tf = importlib.import_module("transformers")
+        proc = getattr(tf, proc_cls).from_pretrained(ckpt)
+        model = getattr(tf, model_cls).from_pretrained(ckpt, torch_dtype=dtype).to(dev).eval()
+        _LOADED.clear()
+        _LOADED[key] = (proc, model)
+    return _LOADED[key]
+
+
+def _in_ranges(f: int, ranges) -> bool:
+    return any(a <= f < b for a, b in ranges or ())
+
+
 def run_tracks(video, t0: float, t1: float, method: str = "owl_sam3", prompt: str = "whale", force: bool = False,
-               max_frames: int | None = None, log=print) -> Path:
+               max_frames: int | None = None, hide: Sequence[tuple[int, int]] = (),
+               gate: Sequence[tuple[int, int]] = (), frames: tuple[int, int] | None = None,
+               name: str | None = None, log=print) -> Path:
     """Track every other whale (and the back) from ``t0`` to ``t1`` s. Returns the output folder (see module doc).
-    Resumable in the sense that a finished stretch is not run again (``meta.json`` with ``done``)."""
-    out = tracks_dir(video, t0, t1, method)
+    A finished stretch is not run again (``meta.json`` with ``done``).
+
+    Blocked views (WP8b), as absolute frame-index ranges [a, b):
+
+    - ``hide``: these frames are not shown to the tracker at all; it meets a jump (its own frame counter stays
+      consecutive, so the last frames before the gap are its most recent memory). No masks are stored for them.
+    - ``gate``: these frames are shown and get masks, but nothing from them enters the tracker's memory (their memory
+      entries and object pointers are deleted after each step).
+    - In both, no new track starts inside the ranges.
+
+    ``frames`` = (first, end) frame indices instead of ``t0``/``t1`` (first is still moved to a stage-1 frame);
+    ``name`` = output folder name under ``tracks/<stem>/``."""
+    out = tracks_dir(video, t0, t1, method) if name is None else tracks_dir(video, 0, 0, method).with_name(name)
     if max_frames is not None:          # short trial runs never stand in for the full stretch
         out = out.with_name(out.name + f"_first{max_frames}")
     if (out / "meta.json").exists() and json.loads((out / "meta.json").read_text()).get("done") and not force:
         log(f"{out.name}: done already")
         return out
-    import importlib
     from . import video as uv
     torch, dev = _gpu_cap()
+    dev = os.environ.get("UWID_DEVICE", dev)       # "cpu" for a slow check without the GPU
     model_cls, proc_cls, ckpt, start = METHODS[method]
-    tf = importlib.import_module("transformers")
-    dtype = torch.bfloat16
-    proc = getattr(tf, proc_cls).from_pretrained(ckpt)
-    model = getattr(tf, model_cls).from_pretrained(ckpt, torch_dtype=dtype).to(dev).eval()
-    torch.cuda.reset_peak_memory_stats()
+    if start != "owl" and (hide or gate):
+        raise ValueError("hide / gate are implemented for the box-started trackers only")
+    dtype = torch.bfloat16 if dev == "cuda" else torch.float32
+    proc, model = _load_model(method, dev, dtype)
+    if dev == "cuda":
+        torch.cuda.reset_peak_memory_stats()
 
     s1_boxes, s1_frames, s1_fps = stage1_boxes(video) if start == "owl" else (None, np.zeros(0, int), None)
     tab = uv.frame_table(video)
-    i0, i1 = tab.index_at(t0), tab.index_at(t1)
+    i0, i1 = (tab.index_at(t0), tab.index_at(t1)) if frames is None else (int(frames[0]), int(frames[1]))
     i0 = int(np.ceil(i0 / STAGE1_STRIDE) * STAGE1_STRIDE)   # start on a stage-1 frame (same for every method)
     n = i1 - i0 if max_frames is None else min(max_frames, i1 - i0)
     wr = _Writer(n)
@@ -233,59 +281,69 @@ def run_tracks(video, t0: float, t1: float, method: str = "owl_sam3", prompt: st
     events = []
     t_model = 0.0
     t_start = time.time()
+    k = -1                                   # the tracker's own frame counter
+    n_fed = 0
     with torch.inference_mode():
         for i, fr in enumerate(uv.iter_frames(video, start=float(tab.times[i0]) - 1e-3, end=float(tab.times[i0 + n - 1]) + 1e-3)):
             if i >= n:
                 break
+            hidden = _in_ranges(fr.index, hide)
+            gated = _in_ranges(fr.index, gate)
+            if hidden:
+                continue
+            k = i if not hide else k + 1     # hidden frames: consecutive counter; otherwise the real offset
+            n_fed += 1
             img = fr.image
             tm = time.time()
             inputs = proc(images=img, device=dev, return_tensors="pt")
             pix = inputs.pixel_values[0].to(dtype)
             if start == "owl":
-                if i == 0:
-                    proc.add_inputs_to_inference_session(sess, frame_idx=i, obj_ids=[BACK_ID], input_boxes=[[list(BACK_BOX)]],
-                                                         original_size=(H, W))
-                if fr.index in s1_set:
-                    new = []
+                # every object prompted on this frame goes in ONE call: the session keeps only the last call's list
+                # of objects with new inputs
+                new = [(BACK_ID, [float(v) for v in BACK_BOX])] if n_fed == 1 else []
+                if fr.index in s1_set and not gated:
                     back = prev.get(BACK_ID)
-                    whales = {k: v for k, v in prev.items() if k != BACK_ID}
-                    for _, b in s1_by_frame.get(fr.index, pd.DataFrame()).sort_values("score", ascending=False).iterrows():
+                    whales = {kk: v for kk, v in prev.items() if kk != BACK_ID}
+                    for _, b in s1_by_frame.get(fr.index, s1_boxes.iloc[0:0]).sort_values("score", ascending=False).iterrows():
                         box = [b.x0, b.y0, b.x1, b.y1]
                         if max(b.x1 - b.x0, b.y1 - b.y0) < START_MIN_SIZE * W:
                             continue
                         if box_covered(_scale_box(box, sx, sy), whales, back):
                             continue
                         # also not covered by a box already started on this frame
-                        if any(_box_iou(box, nb) > 0.3 for _, nb in new):
+                        if any(_box_iou(box, nb) > 0.3 for kk, nb in new if kk != BACK_ID):
                             continue
                         new.append((next_id, box))
                         events.append(dict(i=i, frame=fr.index, t=fr.t, obj=next_id, event="start", score=float(b.score),
                                            box=[round(float(v), 1) for v in box]))
                         next_id += 1
-                    if new:
-                        proc.add_inputs_to_inference_session(sess, frame_idx=i, obj_ids=[k for k, _ in new],
-                                                             input_boxes=[[nb for _, nb in new]], original_size=(H, W))
+                if new:
+                    proc.add_inputs_to_inference_session(sess, frame_idx=k, obj_ids=[kk for kk, _ in new],
+                                                         input_boxes=[[nb for _, nb in new]], original_size=(H, W))
                 if sess.get_obj_num() == 0:
                     t_model += time.time() - tm
                     continue
-                o = model(inference_session=sess, frame_idx=i, frame=pix)
+                o = model(inference_session=sess, frame_idx=k, frame=pix)
                 ms = proc.post_process_masks([o.pred_masks], original_sizes=[[sh, sw]], binarize=False)[0][:, 0] > 0
                 ms = ms.cpu().numpy()
                 sc = o.object_score_logits.float().view(-1).cpu().numpy()
                 ids = list(o.object_ids)
+                if gated:                    # nothing from a blocked frame stays in memory
+                    for d in sess.output_dict_per_obj.values():
+                        d["non_cond_frame_outputs"].pop(k, None)
             else:
-                o = model(inference_session=sess, frame_idx=i, frame=pix)
+                o = model(inference_session=sess, frame_idx=k, frame=pix)
                 pp = proc.postprocess_outputs(sess, o, original_sizes=[[sh, sw]])
-                ids = [int(k) for k in pp["object_ids"].tolist()]
+                ids = [int(x) for x in pp["object_ids"].tolist()]
                 ms = pp["masks"].cpu().numpy().astype(bool)
                 sc = pp["scores"].float().cpu().numpy()
-                ids = [k + 1 for k in ids]       # SAM 3 ids start at 0; 0 is the back here
+                ids = [x + 1 for x in ids]       # SAM 3 ids start at 0; 0 is the back here
             t_model += time.time() - tm
             prev = {}
-            for k, m, s in zip(ids, ms, sc):
-                wr.add(i, fr.index, fr.t, int(k), m, s)
-                prev[int(k)] = m
-            _prune(sess, i)
+            for kk, m, s_ in zip(ids, ms, sc):
+                wr.add(i, fr.index, fr.t, int(kk), m, s_)
+                prev[int(kk)] = m
+            _prune(sess, k)
             if i % 60 == 0:
                 log(f"  {method} frame {i}/{n} objs {len(ids)} gpu peak {torch.cuda.max_memory_allocated() / 1e9:.2f} GB "
                     f"{(i + 1) / max(time.time() - t_start, 1e-6):.2f} fr/s")
@@ -293,13 +351,15 @@ def run_tracks(video, t0: float, t1: float, method: str = "owl_sam3", prompt: st
     meta = dict(video=str(video), t0=t0, t1=t1, method=method, label=METHOD_LABEL[method], prompt=prompt, ckpt=ckpt,
                 frames=[int(i0), int(i0 + n)], n_frames=n, fps=float(1 / tab.frame_step), store_size=list(STORE_SIZE),
                 back_box=list(BACK_BOX), start_min_size=START_MIN_SIZE, events=events,
+                hide=[list(map(int, r)) for r in hide], gate=[list(map(int, r)) for r in gate], n_fed=n_fed,
                 seconds_total=round(elapsed, 1), seconds_model=round(t_model, 1),
                 gpu_peak_gb=round(torch.cuda.max_memory_allocated() / 1e9, 2),
-                gpu_name=torch.cuda.get_device_name(0), done=True)
+                gpu_name=torch.cuda.get_device_name(0) if torch.cuda.is_available() else "cpu", done=True)
     wr.save(out, meta)
-    log(f"{out.name}: {n} frames in {elapsed:.0f} s ({n / elapsed:.2f} fr/s), peak {meta['gpu_peak_gb']} GB")
-    del model, sess
-    torch.cuda.empty_cache()
+    log(f"{out.name}: {n} frames ({n_fed} shown) in {elapsed:.0f} s, peak {meta['gpu_peak_gb']} GB")
+    del sess
+    if dev == "cuda":
+        torch.cuda.empty_cache()
     return out
 
 
@@ -331,7 +391,8 @@ def _prune(sess, i: int, keep: int = KEEP_HISTORY):
 @dataclass
 class Tracks:
     """A finished stretch, cleaned for display: ``roles`` per raw object id ('whale', 'back', 'on_back' = dropped
-    because it lies mostly on the back, 'flicker' = present on < 3 frames), ``number`` = display number of each whale
+    because it lies mostly on the back, 'flicker' = present on < 3 frames, 'small' = fish-sized throughout, 'duplicate'
+    = hidden as a copy of an older track on nearly all its frames), ``number`` = display number of each whale
     (1.. in order of first appearance), ``hidden`` = set of (i, obj) frames where a whale outline duplicates an older
     track and is not drawn."""
     dir: Path
@@ -341,6 +402,7 @@ class Tracks:
     back: np.ndarray | None                   # packed back masks (n, h, w/8) or None
     roles: dict[int, str] = field(default_factory=dict)
     number: dict[int, int] = field(default_factory=dict)
+    small_number: dict[int, int] = field(default_factory=dict)   # fish-sized tracks: s1, s2, .. (first seen order)
     hidden: set = field(default_factory=set)
     back_share: dict[int, float] = field(default_factory=dict)
 
@@ -353,8 +415,15 @@ class Tracks:
         src = self.back if obj == BACK_ID else self.packed[obj]
         return np.unpackbits(src[i], axis=1)[:, :w].astype(bool)
 
+    def is_small(self, obj: int, i: int) -> bool:
+        m = self.mask(obj, i)
+        ys, xs = np.nonzero(m.any(1))[0], np.nonzero(m.any(0))[0]
+        if not len(ys):
+            return True
+        return max(xs[-1] - xs[0] + 1, ys[-1] - ys[0] + 1) / m.shape[1] < SMALL_SIZE
+
     def visible(self, obj: int, i: int) -> bool:
-        if self.roles.get(obj) not in ("whale", "back") or (i, obj) in self.hidden:
+        if self.roles.get(obj) not in ("whale", "back", "small") or (i, obj) in self.hidden:
             return False
         src = self.back if obj == BACK_ID else self.packed.get(obj)
         return src is not None and bool(src[i].any())
@@ -398,7 +467,9 @@ def load_tracks(run_dir: str | os.PathLike, back_from: str | os.PathLike | None 
             if tr.back_share[k] >= on_back:
                 tr.roles[k] = "on_back"
                 continue
-        tr.roles[k] = "whale"
+        tb = tab[(tab.obj == k) & (tab.area > 0)]
+        size = np.maximum(tb.x1 - tb.x0, tb.y1 - tb.y0) / W
+        tr.roles[k] = "whale" if len(size) and np.percentile(size, 90) >= SMALL_TRACK else "small"
     whales = sorted([k for k, r in tr.roles.items() if r == "whale"], key=lambda k: (first[k], k))
     tr.number = {k: j + 1 for j, k in enumerate(whales)}
     # per-frame duplicates: younger track hidden where it sits inside an older one (or the older inside it)
@@ -420,16 +491,19 @@ def load_tracks(run_dir: str | os.PathLike, back_from: str | os.PathLike | None 
             tr.roles[k] = "duplicate"
     whales = [k for k in whales if tr.roles[k] == "whale"]
     tr.number = {k: j + 1 for j, k in enumerate(whales)}
+    smalls = sorted([k for k, r in tr.roles.items() if r == "small"], key=lambda k: (first[k], k))
+    tr.small_number = {k: j + 1 for j, k in enumerate(smalls)}
     return tr
 
 
 def track_summary(tr: Tracks, min_gap: int = 5) -> pd.DataFrame:
     """One row per displayed whale: first / last time seen, frames seen, gaps (runs of >= ``min_gap`` frames unseen
-    between first and last), frames drawn as small, frames hidden as duplicate."""
+    between first and last), frames drawn as small, frames hidden as duplicate. Times are the frames' times in the
+    recording."""
     fps = tr.meta["fps"]
-    t0 = tr.meta["t0"]
+    tt = tr.table.groupby("i").t.first()
+    ts = lambda i: float(tt.get(i, tr.meta["t0"] + i / fps))  # noqa: E731
     rows = []
-    w = int(tr.meta["store_size"][0])
     for k, num in sorted(tr.number.items(), key=lambda x: x[1]):
         vis = np.array([tr.visible(k, i) for i in range(tr.n)])
         idx = np.nonzero(vis)[0]
@@ -437,17 +511,20 @@ def track_summary(tr: Tracks, min_gap: int = 5) -> pd.DataFrame:
             rows.append(dict(number=num, obj=k, frames_seen=0))
             continue
         gaps = []
-        j = idx[0]
         for a, b in zip(idx[:-1], idx[1:]):
             if b - a - 1 >= min_gap:
-                gaps.append(f"{t0 + (a + 1) / fps:.1f}-{t0 + b / fps:.1f}")
-        tb = tr.table[(tr.table.obj == k) & (tr.table.area > 0)]
-        size = np.maximum(tb.x1 - tb.x0, tb.y1 - tb.y0) / W
-        rows.append(dict(number=num, obj=k, first_s=round(t0 + idx[0] / fps, 2), last_s=round(t0 + idx[-1] / fps, 2),
-                         frames_seen=int(len(idx)), gaps_s=";".join(gaps), small_frames=int((size < SMALL_SIZE).sum()),
+                gaps.append(f"{ts(a + 1):.1f}-{ts(b):.1f}")
+        small = sum(tr.is_small(k, i) for i in idx)
+        rows.append(dict(number=num, obj=k, first_s=round(ts(idx[0]), 2), last_s=round(ts(idx[-1]), 2),
+                         frames_seen=int(len(idx)), gaps_s=";".join(gaps), small_frames=int(small),
                          dup_hidden=int(sum(1 for (i, o) in tr.hidden if o == k)),
                          back_share=round(tr.back_share.get(k, np.nan), 3)))
     return pd.DataFrame(rows)
+
+
+def _t_of(tr: Tracks, i: int) -> float:
+    t = tr.table.loc[tr.table.i == i, "t"]
+    return round(float(t.iloc[0]), 2) if len(t) else round(tr.meta["t0"] + i / tr.meta["fps"], 2)
 
 
 def reference_overlap(tr: Tracks, ref_masks: str | os.PathLike) -> pd.DataFrame:
@@ -483,17 +560,17 @@ def reference_overlap(tr: Tracks, ref_masks: str | os.PathLike) -> pd.DataFrame:
             match = {a: (tracks_on[b], R[a, b]) for a, b in zip(ra, cb) if R[a, b] > 0}
         for a, (iid, v) in enumerate(wh):
             k, iou = match.get(a, (None, 0.0))
-            rows.append(dict(frame=f, t=round(tr.meta["t0"] + i / tr.meta["fps"], 2), what="whale", ref_id=iid,
+            rows.append(dict(frame=f, t=_t_of(tr, i), what="whale", ref_id=iid,
                              grade=v.get("grade", ""), note=v.get("note", ""), track=tr.number.get(k) if k else None,
                              iou=round(float(iou), 3), ref_px=int((inst == iid).sum())))
         matched = {m[0] for m in match.values()}
         for k in tracks_on:
             if k not in matched:
-                rows.append(dict(frame=f, t=round(tr.meta["t0"] + i / tr.meta["fps"], 2), what="unmatched track",
+                rows.append(dict(frame=f, t=_t_of(tr, i), what="unmatched track",
                                  track=tr.number[k], iou=np.nan, ref_px=0))
         if tr.back is not None and (cls == 2).sum() > 1000:
             b, g = tr.mask(BACK_ID, i), cls == 2
-            rows.append(dict(frame=f, t=round(tr.meta["t0"] + i / tr.meta["fps"], 2), what="back",
+            rows.append(dict(frame=f, t=_t_of(tr, i), what="back",
                              iou=round(float((b & g).sum() / max((b | g).sum(), 1)), 3), ref_px=int(g.sum())))
     return pd.DataFrame(rows)
 
@@ -541,6 +618,13 @@ def draw_frame(img: np.ndarray, tr: Tracks, i: int, header: str, lost: dict[int,
         big = max(cs, key=cv2.contourArea)
         top = big[big[:, 0, 1].argmin(), 0]
         labels.append(("back", (int(top[0]), int(top[1])), BACK_COLOUR, 0.5))
+    for k, r in tr.roles.items():
+        if r == "small" and tr.visible(k, i):
+            cs = _contours(tr.mask(k, i), 5)
+            cv2.polylines(out, cs, True, SMALL_COLOUR, 1, cv2.LINE_AA)
+            big = max(cs, key=cv2.contourArea)
+            top = big[big[:, 0, 1].argmin(), 0]
+            labels.append((f"s{tr.small_number.get(k, 0)} small", (int(top[0]), int(top[1])), SMALL_COLOUR, 0.4))
     in_view = []
     for k, num in sorted(tr.number.items(), key=lambda x: x[1]):
         if not tr.visible(k, i):
@@ -559,7 +643,7 @@ def draw_frame(img: np.ndarray, tr: Tracks, i: int, header: str, lost: dict[int,
         big = max(cs, key=cv2.contourArea)
         top = big[big[:, 0, 1].argmin(), 0]
         labels.append((f"{num} small" if small else f"{num}", (int(top[0]), int(top[1])), col, 0.5 if small else 0.7))
-        in_view.append(num)
+        in_view.append((num, small))
     for text, anchor, col, sc in labels:
         _label(out, text, anchor, col, scale=sc)
     # header: two lines on a dark band
@@ -569,10 +653,14 @@ def draw_frame(img: np.ndarray, tr: Tracks, i: int, header: str, lost: dict[int,
     x = 8
     cv2.putText(out, "in view:", (x, 37), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
     x += 70
-    for num in in_view:
-        col = PALETTE[(num - 1) % len(PALETTE)]
+    for num, small in in_view:
+        col = SMALL_COLOUR if small else PALETTE[(num - 1) % len(PALETTE)]
         cv2.putText(out, f"{num}", (x, 37), cv2.FONT_HERSHEY_SIMPLEX, 0.55, col, 2, cv2.LINE_AA)
         x += 14 + 12 * len(str(num))
+    for k, sn in sorted(tr.small_number.items(), key=lambda x: x[1]):
+        if tr.visible(k, i):
+            cv2.putText(out, f"s{sn}", (x, 37), cv2.FONT_HERSHEY_SIMPLEX, 0.45, SMALL_COLOUR, 1, cv2.LINE_AA)
+            x += 14 + 10 * len(str(sn))
     if lost:
         x += 16
         txt = "lost: " + "  ".join(f"{n} (since {t:.1f} s)" for n, t in sorted(lost.items()))
@@ -593,6 +681,10 @@ def render_tracks(tr: Tracks, out_mp4: str | os.PathLike, out_sheet: str | os.Pa
     tab = uv.frame_table(vid)
     fps_num = meta["fps"]
     glyphs = timecode.load_glyphs()
+    import datetime as _dt
+    import re
+    m = re.search(r"-(20\d{2})(\d{2})(\d{2})-", Path(vid).name)
+    date_hint = _dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3))) if m else None
     out_mp4 = Path(out_mp4)
     out_mp4.parent.mkdir(parents=True, exist_ok=True)
     cmd = [_ffmpeg(), "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{sw}x{sh}",
@@ -602,11 +694,12 @@ def render_tracks(tr: Tracks, out_mp4: str | os.PathLike, out_sheet: str | os.Pa
     sheet_at = set(np.linspace(0, tr.n - 1, n_sheet).round().astype(int).tolist())
     sheet = []
     last_seen: dict[int, float] = {}
+    last_small: dict[int, bool] = {}
     name = Path(vid).name
     for i, fr in enumerate(uv.iter_frames(vid, start=float(tab.times[f0]) - 1e-3, end=float(tab.times[f1 - 1]) + 1e-3)):
         if i >= tr.n:
             break
-        rd = timecode.read_clock(fr.image, glyphs)
+        rd = timecode.read_clock(fr.image, glyphs, date_hint=date_hint)
         clock = rd.text if rd is not None else "--"
         img = cv2.resize(fr.image, (sw, sh), interpolation=cv2.INTER_AREA)
         t = fr.t
@@ -614,8 +707,9 @@ def render_tracks(tr: Tracks, out_mp4: str | os.PathLike, out_sheet: str | os.Pa
         for k, num in tr.number.items():
             if tr.visible(k, i):
                 last_seen[num] = t
-            elif num in last_seen:
-                lost[num] = last_seen[num]
+                last_small[num] = tr.is_small(k, i)
+            elif num in last_seen and not last_small.get(num):
+                lost[num] = last_seen[num]        # only tracks last seen large are listed as lost
         header = f"{name}   t = {t:7.2f} s   clock {clock}   {meta['label']}"
         out = draw_frame(img, tr, i, header, lost)
         pr.stdin.write(out.tobytes())

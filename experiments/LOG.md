@@ -7,6 +7,89 @@ Newest entry first. One entry per finished piece of work:
 
 Rules of evidence are in `CLAUDE.md` (split by video, AI by-eye labels are named as such, one run is one run).
 
+## 2026-11-21 07:40  07_tracks_demo (WP8): stage 2 = OWLv2 boxes start SAM 3 tracker tracks on stage-1 stretches; 7 outline videos (+2 SAM 2.1 re-renders): clean single-whale clips, one id for the calf through 20 s, failures shown in the bubble-curtain and hazy-calf clips; ~10 GPU s per video s
+Chain: stage 1 = WP5a's cached OWLv2 run ("whale", every 15th frame, window = both frames >= 0.25); its runs of
+whale windows >= 8 s were listed (`stretches.py`) and 7 stretches of 12-20 s picked from them (dev clip 24-36 s and
+61-76 s; 2025-02-03 `.mov` pieces 00004, 00005, 00006 x2, 00007). Stage 2 (`src/uwid/tracks.py`): every frame, the
+back = object 0 from a fixed bottom-25 % box; a stage-1 whale box (>= 0.10 of the width) starts a track unless a
+track already explains it; cleaning (lies on the back, duplicates, fish-sized tracks drawn grey `sN small`). No
+fitting; rules set once before the runs except the fish-sized-track rule (0.15 of the width, 90th pct), added after
+clip 05. Truth: WP3 reference masks (AI by-eye labels) on 12 frames inside the stretches (40 whale instances); identity
+and errors judged by eye by me on dense sheets (one viewing, no identity truth).
+- Starting tracks, clips 01 + 05: (ii) OWLv2 boxes + SAM 3 tracker: 16/17 dev reference whales matched, median IoU
+  0.80, calf 0.95, 13 GPU s/s; (i) SAM 3 video with text "whale": 16/17, 0.71, calf 0.98, ignores most fish, but
+  thin masks hug the frame edges, a flipper becomes its own whale, 9-15 GPU s/s; (iii) OWLv2 + SAM 2.1 video:
+  13/17, 0.75, calf 0.43, and on clip 05 the calf returning from behind the back is split and gets a NEW id; 8 GPU
+  s/s. Chosen: (ii) (starts where stage 1 saw whales, no edge strips, kept the calf's id where SAM 2.1 lost it);
+  its weakness is stage 1's fish-as-whale boxes.
+- Per clip (ii): 03 one whale passing, 04 very near whale on the back, 06 far hazy whale approaching: 1 id each,
+  nothing clearly wrong. 01 competitive group: 6 ids, 0 swaps, a corner fluke lost after 0.4 s, 2 two-whale joins
+  (25.6-26.0 s, 29.8-30.4 s). 05 calf: id 1 for all 20 s incl. behind the back's hump (old id kept); 8 of 10
+  tracks start on fish, 2 of them numbered as whales. 02 bubble curtain: 12 ids for ~6-7 whales, outlines on bubbles
+  64-66 s, 2 ids re-attach after the curtain, the rest new; back IoU drops to 0.56-0.86. 07 hazy calf: FAILS: the
+  one track starts on a fish and moves onto the calf (1 swap), the calf never gets a whale id (drawn grey small) and
+  the back's outline swallows it at 824-826 s.
+- Reference overlap by grade (clips 01, 02, 05, unmatched = 0): clear 13 median 0.90, hazy 21 0.77, faint 6 0.29.
+  Back IoU 0.93-0.98 (dev, 4 frames), 0.56-0.86 in bubbles (7), 0.70 (test, 1).
+- Cost (shared RTX 4000 Ada, every frame, model load not counted): 7.4-15.6 GPU s per video s (mean 10.1 over 118 s),
+  1.5-3.1 GB peak (tracker history pruned to 24 frames). A 30-min 2025-02-03 piece: stage-1 whale windows 13-55 %
+  (mean 24.8 %) -> about 1.2 GPU h (0.5-4.2), i.e. ~2.5 GPU h per video h, 8x stage 1; only windows with a whale box
+  >= 0.3 of the width (8.9 %) -> 0.45 GPU h per piece.
+Caveats: one viewing by eye; 12 reference frames, 5 of them in bubbles, only 1 on the test deployment inside a
+stretch; the dev clip is the development video; transformers here lacks `kernels`, so SAM 3 video's hole filling is
+off. Outputs: videos + sheets `/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_0{1..7}_*.mp4/.jpg`,
+`demo_tracks_01_*_SAM2.1_same_start.mp4`, `demo_tracks_05_*_SAM2.1_same_start.mp4`; tracks
+`underwater_cache/tracks/<stem>/<t0>-<t1>_<method>/`; code `src/uwid/tracks.py`, `tests/test_tracks.py`,
+`experiments/07_tracks_demo/` (`stretches.py`, `clips.py`, `render.py`, `judge.py`, `report.py`, `jobs/run_all.sh`,
+`tables.md`, `results/`).
+
+## 2026-11-21 04:30  06_clips_e2e (WP7): `uwid scan` keeps 66.7 of 267 min of the 2025-02-03 deployment (25 %); every labelled large / ok / hq whale frame kept (103/103 size >= 0.3, 93/93 ok+hq), 199/221 clear-whale frames, 32/570 whale-free; no large whale in 150 dropped windows checked by eye
+New command `uwid scan DIR` (`src/uwid/pipeline.py`, tests `tests/test_pipeline.py`): sensors first (tag state and
+lens out of water from `tagdata`, attaching drop and release handled), sensor time = burned-in clock - 2.03 s with an
+offset check against the picture's exits / entries, OWLv2 "whale" on 2 frames per 1 s window only on on-whale
+underwater windows, presets `sensitive` (either frame) / `strict` (both), size limit 300 px (user's decision: smaller
+= fish or far whale, reason `small`), whole-frame boxes kept at score >= 0.6 below 1 m depth, pad 2 s / merge < 5 s,
+one drop reason per second, quality tier `hq_whale` per window and clip, clips via `uwid.clips`. Nothing fitted on test
+video; the 1 m depth limit and the near-whale rule came from test failures (not clean). Truth: WP3 / WP3b AI by-eye labels.
+- 2025-02-03 `.mov` 00004-00012 (9 x 29.7 min): sensitive keeps 66.7 min in 154 stretches (strict 58.2); dropped:
+  no whale 183.3, small 9.4, tag floating 4.3, surfaced 1.8, drone flight 1.5, tag in air 0.1 min. Labelled 00004-00010
+  (221 clear-whale / 570 whale-free frames): sensitive 199/221 and 32/570, strict 190/221 and 12/570; by WP3b size
+  >= 0.3 103/103 both, 0.2 76/78 (strict 72/78), 0.1 20/40 (15/40); quality hq 11/11, ok 82/82, low 106/128 (97/128).
+  The 22 lost frames (sensitive): 17 dropped as small, 5 as no whale; by eye none large, 3 borderline 240-300 px.
+- Size limit 200 / 300 / 450 px: sensitive 213 / 199 / 152 of 221 frames, 75.1 / 66.7 / 48.6 min kept.
+- Dropped-window check (AI by-eye, seed 20261120): 150 of 10,953 "no whale" windows: 146 empty, 1 fish, 2 small
+  whales, 1 faint whale part, 0 large; 30 of 564 "small" windows: 20 small / far / cut whales, 9 fish, 1 ray-like.
+- Options (once, not clean): near-whale rule adds nothing to the keep once the surface-mirror windows are excluded
+  (before the 1 m limit it added 1.1 min, 20 of 22 shallow whole-frame windows were the tagged whale's mirrored back);
+  fish veto: -1 whale frame, -7 whale-free (sensitive), -1.2 min. Fish score written, never used to keep.
+- Clock offset check: 156/156 depth events paired, picture - depth +0.04 s (ok, implied 2.07 s); deliberately wrong
+  offsets 1.53 / 3.03 / 12.03 s all flagged and all recover 2.07 s.
+- 00012: release + rise and the 25-min float dropped as "tag floating"; but whales seen next to the floating tag are
+  dropped too (2 of 18 float frames looked at). Dev clip (no log, picture water state): 145/145 whale frames kept,
+  1.52 of 1.59 min; 4/180 underwater frames called surfaced.
+- hq_whale (first guess, boxes not masks, scales from the dev clip): 717 windows / 11.9 min, hq stretches 23.0 min,
+  95 of 154 clips; best 40 at 0.1-4.1 m depth; windows of WP3b's 11 `hq` frames all hq_whale, 25/82 ok, 1/128 low.
+- Clips (sensitive, copy): 154 clips, 0.75 GB vs 2.16 GB source, 3 decoded: frame counts, lengths, first / last frames
+  (NCC 1.0) and clock text match the index.
+- Cost: detector 23 frames/s with the OWLv2 processor on the GPU (3.4 with it on the CPU; 120 frames: max score change 0.03, 0 decisions
+  changed) = ~0.08 GPU-h per video-h; picture water ~0.04 GPU-h; whole chain ~9 min wall per video hour without the
+  queue; the shared GPU lock queue dominated real time. Sensors first scanned 96.8 % of windows here (on-whale pieces).
+- Broke and fixed: threaded HEVC decoding deadlocks next to torchvision (one thread in-process, child process for
+  model stages); the near-whale rule counted the surface mirror of the tagged whale (1 m depth limit).
+- Second deployment `TestSubset 2025-1-2 CATS -85` (tag CC-09-85, 9 files, 141 min of 4K, nothing fitted): the
+  burned-in clock has another format (DD/MM/YY, ms) and is not read; the camera splits sessions into 4 GB files, so
+  the log's camera-time pieces did not match file numbers and mapped deck video onto whale time (fixed: camera time
+  only when it agrees with the file name within 3 s; all files now map by name); `-HRA` names not parsed by
+  `uwid.names`. Sensors: 49.4 min deck, 0.6 floating, 90.8 on the whale (no drone flight). Offset check by file name:
+  per-file -0.73 to +0.73 s, pooled -0.38 s over 34 events -> flagged (the names' whole-second start times). Detector
+  run still queued for the shared GPU at 05:45 (`jobs/run_cats85.sh`, log `underwater_cache/scan/logs/run_cats85.log`).
+- Outputs: `experiments/06_clips_e2e/` (`tables.md`, `evaluate.py`, `sheets.py`, `hq_scales.py`, `offset_demo.py`,
+  `release_sheet.py`, `gpu_preprocess_check.py`, `jobs/`, `results/*.json`), cache `underwater_cache/scan/<deployment>/`
+  (per preset: `windows/*.csv`, `intervals.json`, `dropped.csv`, `summary.json`; `offset_check.json`, `cache/`),
+  clips `underwater_cache/clips/2025-2-3 Mini-mother 11-96/`, sheets `review_sheets/underwater/scan_*.jpg`
+  (timeline_00004 / 00012 / dev, dropcheck_01..30, dropcheck_found_01..04, lost_sensitive_01..04, hq_top / border /
+  rejected_01..04, wholeframe_sensitive_01..03, release_00012, clips_01..02).
+
 ## 2026-11-20 23:45  02_reference_labels (WP3b part A): size and quality of the largest other whale on all 366 whale frames: on the test deployment 118/221 whale frames have the whale at <= 0.2 of the frame width, 11/221 are `hq`
 AI by-eye labels by Claude (first proposal; the user's eye defines "high quality"). Added to every `frames.csv`
 (existing columns unchanged): `whale_size` (longest extent of the largest other whale / frame width, 0.1 steps),

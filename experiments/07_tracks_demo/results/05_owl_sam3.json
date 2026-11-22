@@ -1,0 +1,123 @@
+{
+ "clip": "05",
+ "video": "CC-11-96-20250203-111250-000-00006.mov",
+ "t0": 456.0,
+ "t1": 476.0,
+ "method": "owl_sam3",
+ "kind": "c + d: calf close with fish, goes behind the back and returns",
+ "stage1_run": "409-485 s",
+ "n_frames": 587,
+ "seconds_video": 19.59,
+ "seconds_total": 243.3,
+ "seconds_model": 237.5,
+ "gpu_s_per_video_s": 12.42,
+ "gpu_peak_gb": 2.47,
+ "n_started": 10,
+ "roles": {
+  "0": "back",
+  "1": "whale",
+  "2": "small",
+  "3": "whale",
+  "4": "small",
+  "5": "small",
+  "6": "whale",
+  "7": "small",
+  "8": "small",
+  "9": "whale",
+  "10": "small"
+ },
+ "n_whale_tracks": 4,
+ "tracks": [
+  {
+   "number": 1,
+   "obj": 1,
+   "first_s": 456.41,
+   "last_s": 475.96,
+   "frames_seen": 587,
+   "gaps_s": "",
+   "small_frames": 0,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  },
+  {
+   "number": 2,
+   "obj": 3,
+   "first_s": 457.91,
+   "last_s": 474.86,
+   "frames_seen": 58,
+   "gaps_s": "459.5-459.7;459.7-460.6;460.7-462.0;462.2-474.8",
+   "small_frames": 7,
+   "dup_hidden": 415,
+   "back_share": 0.0
+  },
+  {
+   "number": 3,
+   "obj": 6,
+   "first_s": 465.41,
+   "last_s": 474.29,
+   "frames_seen": 186,
+   "gaps_s": "467.3-470.0",
+   "small_frames": 139,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  },
+  {
+   "number": 4,
+   "obj": 9,
+   "first_s": 468.42,
+   "last_s": 474.92,
+   "frames_seen": 102,
+   "gaps_s": "468.7-469.9;470.1-470.8;473.4-474.4",
+   "small_frames": 79,
+   "dup_hidden": 10,
+   "back_share": 0.0
+  }
+ ],
+ "overlap": [
+  {
+   "frame": 13991,
+   "t": 466.78,
+   "what": "whale",
+   "ref_id": 1.0,
+   "grade": "hazy",
+   "note": "calf: long flipper and body",
+   "track": 1.0,
+   "iou": 0.946,
+   "ref_px": 42374
+  },
+  {
+   "frame": 13991,
+   "t": 466.78,
+   "what": "unmatched track",
+   "ref_id": NaN,
+   "grade": NaN,
+   "note": NaN,
+   "track": 3.0,
+   "iou": NaN,
+   "ref_px": 0
+  },
+  {
+   "frame": 13991,
+   "t": 466.78,
+   "what": "back",
+   "ref_id": NaN,
+   "grade": NaN,
+   "note": NaN,
+   "track": NaN,
+   "iou": 0.696,
+   "ref_px": 26687
+  }
+ ],
+ "overlap_summary": {
+  "n_ref_whales": 1,
+  "matched": 1,
+  "median_iou_all": 0.946,
+  "median_iou_matched": 0.946,
+  "back_iou": [
+   0.696
+  ]
+ },
+ "mp4": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_05_calf_fish_behind_back.mp4",
+ "mb": 4.7,
+ "sheet": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_05_calf_fish_behind_back.jpg"
+}

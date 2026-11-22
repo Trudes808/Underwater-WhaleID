@@ -127,10 +127,7526 @@
    "same": true
   }
  },
- "runs": {},
+ "runs": {
+  "sensitive": {
+   "label": "sensitive",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 59.558794444444445,
+     "n_clips": 132,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.4666666666666666,
+      "underwater with no whale": 136.6977214814815,
+      "small (fish or far whale)": 8.55,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 10.416666666666666,
+     "hq_stretch_min": 20.238588703703705,
+     "whale_windows": 2667
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 66.74212777777778,
+     "n_clips": 154,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 1.7833333333333334,
+      "underwater with no whale": 183.2977214814815,
+      "small (fish or far whale)": 9.416666666666666,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.95,
+     "hq_stretch_min": 23.038588703703702,
+     "whale_windows": 2985
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 199,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 32,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 15,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 29,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 30,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      25,
+      26
+     ],
+     "whale_free": [
+      2,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      26,
+      27
+     ],
+     "whale_free": [
+      4,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      59,
+      64
+     ],
+     "whale_free": [
+      11,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      35,
+      36
+     ],
+     "whale_free": [
+      3,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      20,
+      22
+     ],
+     "whale_free": [
+      6,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      21,
+      33
+     ],
+     "whale_free": [
+      1,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      13,
+      13
+     ],
+     "whale_free": [
+      5,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     20,
+     40
+    ],
+    "0.2": [
+     76,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     106,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.087,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.031,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.091,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.187,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.111,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.047,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.039,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 17,
+    "underwater with no whale": 5
+   },
+   "kept_whale_free_by_why": {
+    "padding": 25,
+    "whale": 7
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 7.416666666666667,
+     "clips": 14,
+     "hq_min": 1.4666666666666666,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.13,
+      "underwater with no whale": 19.72,
+      "small (fish or far whale)": 0.9,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 7.423596296296296,
+     "clips": 18,
+     "hq_min": 1.35,
+     "hq_clips": 11,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 21.12,
+      "small (fish or far whale)": 0.97,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 18.638588703703704,
+     "clips": 29,
+     "hq_min": 3.1666666666666665,
+     "hq_clips": 21,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 8.72,
+      "small (fish or far whale)": 2.1,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 9.873575370370371,
+     "clips": 17,
+     "hq_min": 2.466666666666667,
+     "hq_clips": 14,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 19.48,
+      "small (fish or far whale)": 0.17,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 6.273034074074076,
+     "clips": 24,
+     "hq_min": 1.0333333333333334,
+     "hq_clips": 12,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.92,
+      "small (fish or far whale)": 1.23,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 5.783333333333333,
+     "clips": 15,
+     "hq_min": 0.4,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.64,
+      "small (fish or far whale)": 1.98,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 4.15,
+     "clips": 15,
+     "hq_min": 0.5333333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 24.11,
+      "small (fish or far whale)": 1.2,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.95,
+     "clips": 11,
+     "hq_min": 1.0666666666666667,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 25.08,
+      "small (fish or far whale)": 0.45,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 3.2333333333333334,
+     "clips": 11,
+     "hq_min": 0.4666666666666667,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.13,
+      "underwater with no whale": 21.52,
+      "small (fish or far whale)": 0.42,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.898585319519043,
+    "water_picture_wall_s": 0.016089677810668945
+   }
+  },
+  "sensitive+fishveto": {
+   "label": "sensitive+fishveto",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 58.35879444444445,
+     "n_clips": 128,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.5,
+      "underwater with no whale": 139.01438814814816,
+      "small (fish or far whale)": 7.4,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.983333333333333,
+     "hq_stretch_min": 18.90525537037037,
+     "whale_windows": 2641
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 65.45879444444445,
+     "n_clips": 149,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 1.8166666666666667,
+      "underwater with no whale": 185.73105481481483,
+      "small (fish or far whale)": 8.233333333333333,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.5,
+     "hq_stretch_min": 21.621922037037038,
+     "whale_windows": 2958
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 198,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 25,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 14,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 22,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 30,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      25,
+      26
+     ],
+     "whale_free": [
+      2,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      26,
+      27
+     ],
+     "whale_free": [
+      3,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      59,
+      64
+     ],
+     "whale_free": [
+      7,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      35,
+      36
+     ],
+     "whale_free": [
+      3,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      20,
+      22
+     ],
+     "whale_free": [
+      4,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      20,
+      33
+     ],
+     "whale_free": [
+      1,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      13,
+      13
+     ],
+     "whale_free": [
+      5,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     20,
+     40
+    ],
+    "0.2": [
+     75,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     105,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.087,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.031,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.091,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.187,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.073,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.047,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29553,
+     "t_mov": 985.98,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale top right (body and fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 17,
+    "underwater with no whale": 6
+   },
+   "kept_whale_free_by_why": {
+    "padding": 21,
+    "whale": 4
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 7.416666666666667,
+     "clips": 14,
+     "hq_min": 1.4666666666666666,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.13,
+      "underwater with no whale": 20.02,
+      "small (fish or far whale)": 0.6,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 7.340262962962963,
+     "clips": 17,
+     "hq_min": 1.35,
+     "hq_clips": 11,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 21.33,
+      "small (fish or far whale)": 0.83,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 18.021922037037037,
+     "clips": 27,
+     "hq_min": 2.8833333333333333,
+     "hq_clips": 19,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 9.95,
+      "small (fish or far whale)": 1.48,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 9.656908703703705,
+     "clips": 17,
+     "hq_min": 2.4,
+     "hq_clips": 14,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 19.67,
+      "small (fish or far whale)": 0.17,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 6.023034074074076,
+     "clips": 23,
+     "hq_min": 0.95,
+     "hq_clips": 11,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.23,
+      "small (fish or far whale)": 1.17,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 5.75,
+     "clips": 15,
+     "hq_min": 0.4,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.69,
+      "small (fish or far whale)": 1.97,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 4.15,
+     "clips": 15,
+     "hq_min": 0.5333333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 24.12,
+      "small (fish or far whale)": 1.18,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.8666666666666667,
+     "clips": 10,
+     "hq_min": 1.05,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 25.15,
+      "small (fish or far whale)": 0.47,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 3.2333333333333334,
+     "clips": 11,
+     "hq_min": 0.4666666666666667,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.13,
+      "underwater with no whale": 21.57,
+      "small (fish or far whale)": 0.37,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.5119104385375977,
+    "water_picture_wall_s": 0.012111902236938477
+   }
+  },
+  "sensitive+nonear": {
+   "label": "sensitive+nonear",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 59.558794444444445,
+     "n_clips": 132,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.4666666666666666,
+      "underwater with no whale": 136.6977214814815,
+      "small (fish or far whale)": 8.55,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 10.116666666666667,
+     "hq_stretch_min": 20.25525537037037,
+     "whale_windows": 2651
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 66.74212777777778,
+     "n_clips": 154,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 1.7833333333333334,
+      "underwater with no whale": 183.2977214814815,
+      "small (fish or far whale)": 9.416666666666666,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.6,
+     "hq_stretch_min": 23.05525537037037,
+     "whale_windows": 2966
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 199,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 32,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 15,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 29,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 30,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      25,
+      26
+     ],
+     "whale_free": [
+      2,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      26,
+      27
+     ],
+     "whale_free": [
+      4,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      59,
+      64
+     ],
+     "whale_free": [
+      11,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      35,
+      36
+     ],
+     "whale_free": [
+      3,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      20,
+      22
+     ],
+     "whale_free": [
+      6,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      21,
+      33
+     ],
+     "whale_free": [
+      1,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      13,
+      13
+     ],
+     "whale_free": [
+      5,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     20,
+     40
+    ],
+    "0.2": [
+     76,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     106,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.087,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.031,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.091,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.187,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.111,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.047,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.039,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 17,
+    "underwater with no whale": 5
+   },
+   "kept_whale_free_by_why": {
+    "padding": 25,
+    "whale": 7
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 7.416666666666667,
+     "clips": 14,
+     "hq_min": 1.4333333333333333,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.13,
+      "underwater with no whale": 19.72,
+      "small (fish or far whale)": 0.9,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 7.423596296296296,
+     "clips": 18,
+     "hq_min": 1.3166666666666667,
+     "hq_clips": 11,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 21.12,
+      "small (fish or far whale)": 0.97,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 18.638588703703704,
+     "clips": 29,
+     "hq_min": 3.1333333333333333,
+     "hq_clips": 21,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 8.72,
+      "small (fish or far whale)": 2.1,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 9.873575370370371,
+     "clips": 17,
+     "hq_min": 2.283333333333333,
+     "hq_clips": 14,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 19.48,
+      "small (fish or far whale)": 0.17,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 6.273034074074076,
+     "clips": 24,
+     "hq_min": 1.0166666666666666,
+     "hq_clips": 12,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.92,
+      "small (fish or far whale)": 1.23,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 5.783333333333333,
+     "clips": 15,
+     "hq_min": 0.4,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.64,
+      "small (fish or far whale)": 1.98,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 4.15,
+     "clips": 15,
+     "hq_min": 0.5333333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 24.11,
+      "small (fish or far whale)": 1.2,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.95,
+     "clips": 11,
+     "hq_min": 1.0166666666666666,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 25.08,
+      "small (fish or far whale)": 0.45,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 3.2333333333333334,
+     "clips": 11,
+     "hq_min": 0.4666666666666667,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.13,
+      "underwater with no whale": 21.52,
+      "small (fish or far whale)": 0.42,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.8953473567962646,
+    "water_picture_wall_s": 0.014219045639038086
+   }
+  },
+  "sensitive+px200": {
+   "label": "sensitive+px200",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 67.12546111111111,
+     "n_clips": 135,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.4166666666666667,
+      "underwater with no whale": 134.1977214814815,
+      "small (fish or far whale)": 3.533333333333333,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 10.416666666666666,
+     "hq_stretch_min": 20.238588703703705,
+     "whale_windows": 3171
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 75.10879444444444,
+     "n_clips": 158,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 1.7333333333333334,
+      "underwater with no whale": 180.51438814814816,
+      "small (fish or far whale)": 3.8833333333333333,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.95,
+     "hq_stretch_min": 23.038588703703702,
+     "whale_windows": 3535
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 213,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 38,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 21,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 35,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 34,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      26,
+      26
+     ],
+     "whale_free": [
+      4,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      27,
+      27
+     ],
+     "whale_free": [
+      4,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      63,
+      64
+     ],
+     "whale_free": [
+      13,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      36,
+      36
+     ],
+     "whale_free": [
+      3,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      22,
+      22
+     ],
+     "whale_free": [
+      6,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      26,
+      33
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      13,
+      13
+     ],
+     "whale_free": [
+      6,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     32,
+     40
+    ],
+    "0.2": [
+     78,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     120,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.137,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.047,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.039,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 4,
+    "underwater with no whale": 4
+   },
+   "kept_whale_free_by_why": {
+    "padding": 28,
+    "whale": 10
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 8.3,
+     "clips": 17,
+     "hq_min": 1.4666666666666666,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.13,
+      "underwater with no whale": 19.37,
+      "small (fish or far whale)": 0.37,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 8.406929629629628,
+     "clips": 19,
+     "hq_min": 1.35,
+     "hq_clips": 11,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 20.8,
+      "small (fish or far whale)": 0.33,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 20.488588703703705,
+     "clips": 28,
+     "hq_min": 3.1666666666666665,
+     "hq_clips": 19,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 8.17,
+      "small (fish or far whale)": 0.8,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 10.240242037037039,
+     "clips": 16,
+     "hq_min": 2.466666666666667,
+     "hq_clips": 13,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 19.23,
+      "small (fish or far whale)": 0.05,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 7.373034074074075,
+     "clips": 23,
+     "hq_min": 1.0333333333333334,
+     "hq_clips": 12,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.25,
+      "underwater with no whale": 21.52,
+      "small (fish or far whale)": 0.55,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 7.266666666666667,
+     "clips": 15,
+     "hq_min": 0.4,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.37,
+      "small (fish or far whale)": 0.77,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 5.05,
+     "clips": 17,
+     "hq_min": 0.5333333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 23.74,
+      "small (fish or far whale)": 0.67,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 4.433333333333334,
+     "clips": 12,
+     "hq_min": 1.0666666666666667,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.18,
+      "underwater with no whale": 24.93,
+      "small (fish or far whale)": 0.12,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 3.55,
+     "clips": 11,
+     "hq_min": 0.4666666666666667,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.13,
+      "underwater with no whale": 21.38,
+      "small (fish or far whale)": 0.23,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.7894330024719238,
+    "water_picture_wall_s": 0.016728639602661133
+   }
+  },
+  "sensitive+px450": {
+   "label": "sensitive+px450",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 42.85879444444445,
+     "n_clips": 137,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.6,
+      "underwater with no whale": 139.91438814814816,
+      "small (fish or far whale)": 21.9,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 10.416666666666666,
+     "hq_stretch_min": 20.238588703703705,
+     "whale_windows": 1750
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 48.64212777777778,
+     "n_clips": 158,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 1.9833333333333334,
+      "underwater with no whale": 187.01438814814816,
+      "small (fish or far whale)": 23.6,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.95,
+     "hq_stretch_min": 23.038588703703702,
+     "whale_windows": 2001
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 152,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 21,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 5,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 18,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 22,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      21,
+      26
+     ],
+     "whale_free": [
+      0,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      22,
+      27
+     ],
+     "whale_free": [
+      2,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      46,
+      64
+     ],
+     "whale_free": [
+      8,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      30,
+      36
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      15,
+      22
+     ],
+     "whale_free": [
+      4,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      8,
+      33
+     ],
+     "whale_free": [
+      1,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      10,
+      13
+     ],
+     "whale_free": [
+      4,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     10,
+     40
+    ],
+    "0.2": [
+     42,
+     78
+    ],
+    ">=0.3": [
+     100,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     61,
+     128
+    ],
+    "ok": [
+     80,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.071,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.073,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6715,
+     "t_mov": 224.03,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.108,
+     "other_whales": 1,
+     "note": "about 12 small spindles and 2 faint large ones at the top, no tail seen in f6695-f6735 (re-checked 2026-11-20: not counted); whale head with tubercles lower left (clear)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 17384,
+     "t_mov": 579.98,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "fluke and tail stock lower right; 2 fish with forked tails (large one top right, f17354-f17399; small one lower left)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 48502,
+     "t_mov": 1618.17,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.054,
+     "other_whales": 1,
+     "note": "hazy whale fluke and tail rising behind the back's horizon, lower right; 1 tiny speck",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 9529,
+     "t_mov": 317.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (rostrum with knobs) rising above the back's horizon, lower centre; grows and rises over f9440-f9620 (checked)",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 18866,
+     "t_mov": 629.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.035,
+     "other_whales": 1,
+     "note": "whale (calf) diagonal at the lower left with pale ventral marks",
+     "whale_size": 0.3,
+     "quality": "ok"
+    },
+    {
+     "piece": "00005",
+     "frame": 19311,
+     "t_mov": 644.27,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.047,
+     "other_whales": 1,
+     "note": "whale head rising at the back's horizon, lower centre; 4 fish 55-80 px upper right (2 overlapping)",
+     "whale_size": 0.3,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 45987,
+     "t_mov": 1534.26,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head lower right on the back's horizon; sun disc",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 6872,
+     "t_mov": 229.27,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (tubercles) cut by the left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.031,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 12211,
+     "t_mov": 407.4,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top right",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 20665,
+     "t_mov": 689.45,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, cut by the top edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 21555,
+     "t_mov": 719.14,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.034,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22889,
+     "t_mov": 763.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 24224,
+     "t_mov": 808.18,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.044,
+     "other_whales": 1,
+     "note": "fluke rising just behind the knobbed hump: the calf (moves: whole calf above it 1 s earlier, gone 1 s later)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 25559,
+     "t_mov": 852.72,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with flippers, mid right",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 32678,
+     "t_mov": 1090.24,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.073,
+     "other_whales": 1,
+     "note": "whale tail top right; fish: 2 fish 45-50 px with tails",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 42021,
+     "t_mov": 1401.95,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with flippers, bottom centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 42911,
+     "t_mov": 1431.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "large dark angular whale part (head-on or fluke) rising beyond the back, bottom right; fish: 2 fish 70-110 px with tails",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 49585,
+     "t_mov": 1654.3,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "fluke behind the hump",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 50030,
+     "t_mov": 1669.15,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with flippers, bottom centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52699,
+     "t_mov": 1758.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.068,
+     "other_whales": 1,
+     "note": "hazy tail top centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 7216,
+     "t_mov": 240.75,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (probably the calf) centre-right, body vertical with fluke up, sharp silhouette; back band with hump at the bottom",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18774,
+     "t_mov": 626.36,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.032,
+     "other_whales": 1,
+     "note": "hazy whale tail stock and fluke lower left, rising behind the back's horizon (checked at full size); faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 44114,
+     "t_mov": 1471.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.099,
+     "other_whales": 1,
+     "note": "whale at the surface upper left (dark body with knobbly pectoral edge); small white specks mid frame are bubbles / particles 3.5 s after an entry (followed f44099-f44144: appear and vanish, not fish); back textured at the bottom",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 46337,
+     "t_mov": 1545.94,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head cut by the right edge, upper right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 46781,
+     "t_mov": 1560.75,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (calf?) above, belly view with both pectoral fins and fluke, upper right, sharp silhouette; bottom edge dark (back barely visible)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 421,
+     "t_mov": 14.05,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.075,
+     "other_whales": 1,
+     "note": "dark fluke of another whale sticking up just beyond the back horizon, bottom centre (~1050-1390 px); followed f300-f480 (fluke rises and sinks behind the back)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 3981,
+     "t_mov": 132.82,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.065,
+     "other_whales": 1,
+     "note": "whale just under the surface, top centre-left (seen from below with flipper); camera shallow",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 17774,
+     "t_mov": 592.99,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head or tail stock) hanging from the top edge, upper left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 34237,
+     "t_mov": 1142.25,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.062,
+     "other_whales": 1,
+     "note": "hazy whale lower centre, head up, rising toward the camera",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 43580,
+     "t_mov": 1453.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (tail stock with flukes) at the top edge, small",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.091,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1092,
+     "t_mov": 36.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette with fluke, upper centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5539,
+     "t_mov": 184.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.031,
+     "other_whales": 1,
+     "note": "near whale cut by the top edge upper right (belly / flipper); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6873,
+     "t_mov": 229.3,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale with fluke, clear silhouette; back faint band",
+     "whale_size": 0.3,
+     "quality": "ok"
+    },
+    {
+     "piece": "00009",
+     "frame": 7318,
+     "t_mov": 244.15,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale with both flippers spread; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 7762,
+     "t_mov": 258.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale with fluke spread, clear; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9541,
+     "t_mov": 318.32,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the right edge, top; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.187,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.111,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 18880,
+     "t_mov": 629.89,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "hazy whale with fluke, centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.047,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 25995,
+     "t_mov": 867.27,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "near whale head / jaw cut by the lower right edge; back band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29553,
+     "t_mov": 985.98,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale top right (body and fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.039,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 30442,
+     "t_mov": 1015.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.122,
+     "other_whales": 1,
+     "note": "near whale cut by the top right edge; surface above; back band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 33555,
+     "t_mov": 1119.49,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale centre right (hazy, fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 34000,
+     "t_mov": 1134.34,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 34444,
+     "t_mov": 1149.15,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale centre with fluke; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 1560,
+     "t_mov": 52.05,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale beyond the back's horizon, bottom right (x 1300-1680, y 920-1030): dorsal fin and body/tail; moves and sinks behind the horizon over f1530-f1590, so another whale (calf most likely)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 28257,
+     "t_mov": 942.74,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head rising from the back's horizon (x 1160-1300, y 800-1000); barely moves within +-1 s, but in window 2 the shape appears at the horizon at 931 s, grows and becomes the whole calf by 948 s (borderline: could be called faint)",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 36711,
+     "t_mov": 1224.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.035,
+     "other_whales": 1,
+     "note": "whale head (rostrum) rising beyond the back's horizon, lower left (x 580-870, y 700-1060); grown and moved since f36266; the whole calf is in open water at f37156",
+     "whale_size": 0.2,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 62,
+    "underwater with no whale": 7
+   },
+   "kept_whale_free_by_why": {
+    "padding": 14,
+    "whale": 7
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 5.5,
+     "clips": 14,
+     "hq_min": 1.4666666666666666,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 20.35,
+      "small (fish or far whale)": 2.17,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 5.740262962962962,
+     "clips": 22,
+     "hq_min": 1.35,
+     "hq_clips": 13,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 21.48,
+      "small (fish or far whale)": 2.23,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 13.571922037037037,
+     "clips": 32,
+     "hq_min": 3.1666666666666665,
+     "hq_clips": 22,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 9.45,
+      "small (fish or far whale)": 6.43,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 8.006908703703706,
+     "clips": 23,
+     "hq_min": 2.466666666666667,
+     "hq_clips": 17,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.2,
+      "underwater with no whale": 19.88,
+      "small (fish or far whale)": 1.58,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 4.256367407407409,
+     "clips": 20,
+     "hq_min": 1.0333333333333334,
+     "hq_clips": 12,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.45,
+      "small (fish or far whale)": 2.72,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 2.3666666666666667,
+     "clips": 12,
+     "hq_min": 0.4,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.02,
+      "small (fish or far whale)": 5.02,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 3.4166666666666665,
+     "clips": 14,
+     "hq_min": 0.5333333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.25,
+      "underwater with no whale": 24.27,
+      "small (fish or far whale)": 1.75,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.15,
+     "clips": 12,
+     "hq_min": 1.0666666666666667,
+     "hq_clips": 9,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.23,
+      "underwater with no whale": 25.32,
+      "small (fish or far whale)": 0.97,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 2.6333333333333333,
+     "clips": 9,
+     "hq_min": 0.4666666666666667,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.78,
+      "small (fish or far whale)": 0.73,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.973008394241333,
+    "water_picture_wall_s": 0.017789363861083984
+   }
+  },
+  "strict": {
+   "label": "strict",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 52.125461111111115,
+     "n_clips": 118,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.9,
+      "underwater with no whale": 141.71438814814817,
+      "small (fish or far whale)": 10.533333333333333,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.6,
+     "hq_stretch_min": 17.388588703703704,
+     "whale_windows": 2368
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 58.24212777777778,
+     "n_clips": 135,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 2.3333333333333335,
+      "underwater with no whale": 189.01438814814816,
+      "small (fish or far whale)": 11.65,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.05,
+     "hq_stretch_min": 19.838588703703703,
+     "whale_windows": 2652
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 190,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 12,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 11,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 11,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 28,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      24,
+      26
+     ],
+     "whale_free": [
+      0,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      26,
+      27
+     ],
+     "whale_free": [
+      1,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      57,
+      64
+     ],
+     "whale_free": [
+      7,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      34,
+      36
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      19,
+      22
+     ],
+     "whale_free": [
+      2,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      18,
+      33
+     ],
+     "whale_free": [
+      0,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      12,
+      13
+     ],
+     "whale_free": [
+      0,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     15,
+     40
+    ],
+    "0.2": [
+     72,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     97,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.077,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.058,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 20665,
+     "t_mov": 689.45,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, cut by the top edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 21555,
+     "t_mov": 719.14,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 51671,
+     "t_mov": 1723.9,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.176,
+     "other_whales": 1,
+     "note": "whale part (rounded rostrum / pectoral tip) cut by the top left edge at the surface; surface top (dapples checked at full size, no fish); back textured at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 3981,
+     "t_mov": 132.82,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.036,
+     "other_whales": 1,
+     "note": "whale just under the surface, top centre-left (seen from below with flipper); camera shallow",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.054,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1092,
+     "t_mov": 36.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette with fluke, upper centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.093,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 18880,
+     "t_mov": 629.89,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "hazy whale with fluke, centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.042,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29553,
+     "t_mov": 985.98,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale top right (body and fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 28257,
+     "t_mov": 942.74,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head rising from the back's horizon (x 1160-1300, y 800-1000); barely moves within +-1 s, but in window 2 the shape appears at the horizon at 931 s, grows and becomes the whole calf by 948 s (borderline: could be called faint)",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 24,
+    "underwater with no whale": 7
+   },
+   "kept_whale_free_by_why": {
+    "padding": 11,
+    "whale": 1
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 6.45,
+     "clips": 13,
+     "hq_min": 1.45,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 20.37,
+      "small (fish or far whale)": 1.2,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 6.5235962962962954,
+     "clips": 15,
+     "hq_min": 1.2166666666666666,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 21.72,
+      "small (fish or far whale)": 1.17,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 16.471922037037036,
+     "clips": 30,
+     "hq_min": 2.8333333333333335,
+     "hq_clips": 20,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 9.9,
+      "small (fish or far whale)": 3.03,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 8.973575370370373,
+     "clips": 16,
+     "hq_min": 2.35,
+     "hq_clips": 13,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 20.18,
+      "small (fish or far whale)": 0.25,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 5.273034074074076,
+     "clips": 20,
+     "hq_min": 0.9333333333333333,
+     "hq_clips": 9,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 22.75,
+      "small (fish or far whale)": 1.37,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 5.083333333333333,
+     "clips": 14,
+     "hq_min": 0.38333333333333336,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.09,
+      "small (fish or far whale)": 2.23,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 3.35,
+     "clips": 10,
+     "hq_min": 0.43333333333333335,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.35,
+      "underwater with no whale": 24.71,
+      "small (fish or far whale)": 1.28,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.3333333333333335,
+     "clips": 9,
+     "hq_min": 1.0,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 25.45,
+      "small (fish or far whale)": 0.6,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 2.783333333333333,
+     "clips": 8,
+     "hq_min": 0.45,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.85,
+      "small (fish or far whale)": 0.52,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.6560013294219971,
+    "water_picture_wall_s": 0.012506723403930664
+   }
+  },
+  "strict+fishveto": {
+   "label": "strict+fishveto",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 51.59212777777778,
+     "n_clips": 115,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.9,
+      "underwater with no whale": 143.66438814814816,
+      "small (fish or far whale)": 9.116666666666667,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.366666666666667,
+     "hq_stretch_min": 16.67192203703704,
+     "whale_windows": 2356
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 57.70879444444445,
+     "n_clips": 132,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 2.3333333333333335,
+      "underwater with no whale": 191.03105481481484,
+      "small (fish or far whale)": 10.166666666666666,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 10.816666666666666,
+     "hq_stretch_min": 19.121922037037038,
+     "whale_windows": 2640
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 190,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 8,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 11,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 7,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 28,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      24,
+      26
+     ],
+     "whale_free": [
+      0,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      26,
+      27
+     ],
+     "whale_free": [
+      1,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      57,
+      64
+     ],
+     "whale_free": [
+      4,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      34,
+      36
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      19,
+      22
+     ],
+     "whale_free": [
+      1,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      18,
+      33
+     ],
+     "whale_free": [
+      0,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      12,
+      13
+     ],
+     "whale_free": [
+      0,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     15,
+     40
+    ],
+    "0.2": [
+     72,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     97,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.077,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "underwater with no whale",
+     "whale_score": 0.058,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 20665,
+     "t_mov": 689.45,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, cut by the top edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 21555,
+     "t_mov": 719.14,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 51671,
+     "t_mov": 1723.9,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.045,
+     "other_whales": 1,
+     "note": "whale part (rounded rostrum / pectoral tip) cut by the top left edge at the surface; surface top (dapples checked at full size, no fish); back textured at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 3981,
+     "t_mov": 132.82,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale just under the surface, top centre-left (seen from below with flipper); camera shallow",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.054,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1092,
+     "t_mov": 36.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette with fluke, upper centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 18880,
+     "t_mov": 629.89,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "hazy whale with fluke, centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.042,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29553,
+     "t_mov": 985.98,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale top right (body and fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 28257,
+     "t_mov": 942.74,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head rising from the back's horizon (x 1160-1300, y 800-1000); barely moves within +-1 s, but in window 2 the shape appears at the horizon at 931 s, grows and becomes the whole calf by 948 s (borderline: could be called faint)",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 23,
+    "underwater with no whale": 8
+   },
+   "kept_whale_free_by_why": {
+    "padding": 8
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 6.45,
+     "clips": 13,
+     "hq_min": 1.45,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 20.72,
+      "small (fish or far whale)": 0.85,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 6.5235962962962954,
+     "clips": 15,
+     "hq_min": 1.2166666666666666,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 21.92,
+      "small (fish or far whale)": 0.97,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 16.05525537037037,
+     "clips": 28,
+     "hq_min": 2.683333333333333,
+     "hq_clips": 18,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 11.07,
+      "small (fish or far whale)": 2.28,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 8.973575370370373,
+     "clips": 16,
+     "hq_min": 2.3333333333333335,
+     "hq_clips": 13,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 20.18,
+      "small (fish or far whale)": 0.25,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 5.1563674074074095,
+     "clips": 19,
+     "hq_min": 0.8666666666666667,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 22.93,
+      "small (fish or far whale)": 1.3,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 5.083333333333333,
+     "clips": 14,
+     "hq_min": 0.38333333333333336,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.12,
+      "small (fish or far whale)": 2.2,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 3.35,
+     "clips": 10,
+     "hq_min": 0.43333333333333335,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.35,
+      "underwater with no whale": 24.72,
+      "small (fish or far whale)": 1.27,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.3333333333333335,
+     "clips": 9,
+     "hq_min": 1.0,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 25.45,
+      "small (fish or far whale)": 0.6,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 2.783333333333333,
+     "clips": 8,
+     "hq_min": 0.45,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.92,
+      "small (fish or far whale)": 0.45,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.811051607131958,
+    "water_picture_wall_s": 0.013810157775878906
+   }
+  },
+  "strict+nonear": {
+   "label": "strict+nonear",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 52.125461111111115,
+     "n_clips": 118,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.9,
+      "underwater with no whale": 141.71438814814817,
+      "small (fish or far whale)": 10.533333333333333,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.116666666666667,
+     "hq_stretch_min": 17.288588703703702,
+     "whale_windows": 2335
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 58.24212777777778,
+     "n_clips": 135,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 2.3333333333333335,
+      "underwater with no whale": 189.01438814814816,
+      "small (fish or far whale)": 11.65,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 10.5,
+     "hq_stretch_min": 19.738588703703705,
+     "whale_windows": 2615
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 190,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 12,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 11,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 11,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 28,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      24,
+      26
+     ],
+     "whale_free": [
+      0,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      26,
+      27
+     ],
+     "whale_free": [
+      1,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      57,
+      64
+     ],
+     "whale_free": [
+      7,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      34,
+      36
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      19,
+      22
+     ],
+     "whale_free": [
+      2,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      18,
+      33
+     ],
+     "whale_free": [
+      0,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      12,
+      13
+     ],
+     "whale_free": [
+      0,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     15,
+     40
+    ],
+    "0.2": [
+     72,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     97,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.077,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.058,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 20665,
+     "t_mov": 689.45,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, cut by the top edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 21555,
+     "t_mov": 719.14,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 51671,
+     "t_mov": 1723.9,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.176,
+     "other_whales": 1,
+     "note": "whale part (rounded rostrum / pectoral tip) cut by the top left edge at the surface; surface top (dapples checked at full size, no fish); back textured at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 3981,
+     "t_mov": 132.82,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.036,
+     "other_whales": 1,
+     "note": "whale just under the surface, top centre-left (seen from below with flipper); camera shallow",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.054,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1092,
+     "t_mov": 36.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette with fluke, upper centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.093,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 18880,
+     "t_mov": 629.89,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.03,
+     "other_whales": 1,
+     "note": "hazy whale with fluke, centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.042,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29553,
+     "t_mov": 985.98,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale top right (body and fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 28257,
+     "t_mov": 942.74,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head rising from the back's horizon (x 1160-1300, y 800-1000); barely moves within +-1 s, but in window 2 the shape appears at the horizon at 931 s, grows and becomes the whole calf by 948 s (borderline: could be called faint)",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 24,
+    "underwater with no whale": 7
+   },
+   "kept_whale_free_by_why": {
+    "padding": 11,
+    "whale": 1
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 6.45,
+     "clips": 13,
+     "hq_min": 1.4166666666666667,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 20.37,
+      "small (fish or far whale)": 1.2,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 6.5235962962962954,
+     "clips": 15,
+     "hq_min": 1.1833333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 21.72,
+      "small (fish or far whale)": 1.17,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 16.471922037037036,
+     "clips": 30,
+     "hq_min": 2.7,
+     "hq_clips": 20,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 9.9,
+      "small (fish or far whale)": 3.03,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 8.973575370370373,
+     "clips": 16,
+     "hq_min": 2.0833333333333335,
+     "hq_clips": 13,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 20.18,
+      "small (fish or far whale)": 0.25,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 5.273034074074076,
+     "clips": 20,
+     "hq_min": 0.9166666666666666,
+     "hq_clips": 9,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 22.75,
+      "small (fish or far whale)": 1.37,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 5.083333333333333,
+     "clips": 14,
+     "hq_min": 0.38333333333333336,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.09,
+      "small (fish or far whale)": 2.23,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 3.35,
+     "clips": 10,
+     "hq_min": 0.43333333333333335,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.35,
+      "underwater with no whale": 24.71,
+      "small (fish or far whale)": 1.28,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.3333333333333335,
+     "clips": 9,
+     "hq_min": 0.9333333333333333,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 25.45,
+      "small (fish or far whale)": 0.6,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 2.783333333333333,
+     "clips": 8,
+     "hq_min": 0.45,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.85,
+      "small (fish or far whale)": 0.52,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.7294738292694092,
+    "water_picture_wall_s": 0.01591205596923828
+   }
+  },
+  "strict+nonear+px0": {
+   "label": "strict+nonear+px0",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 67.24212777777778,
+     "n_clips": 116,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.9,
+      "underwater with no whale": 137.13105481481483,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.316666666666666,
+     "hq_stretch_min": 17.67192203703704,
+     "whale_windows": 3192
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 75.05879444444444,
+     "n_clips": 135,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 2.316666666666667,
+      "underwater with no whale": 183.86438814814815,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 10.716666666666667,
+     "hq_stretch_min": 20.138588703703704,
+     "whale_windows": 3558
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 215,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 32,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 27,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 31,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 36,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      25,
+      26
+     ],
+     "whale_free": [
+      6,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      27,
+      27
+     ],
+     "whale_free": [
+      3,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      64,
+      64
+     ],
+     "whale_free": [
+      13,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      36,
+      36
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      22,
+      22
+     ],
+     "whale_free": [
+      4,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      28,
+      33
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      13,
+      13
+     ],
+     "whale_free": [
+      2,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     34,
+     40
+    ],
+    "0.2": [
+     78,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     122,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "underwater with no whale",
+     "whale_score": 0.224,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.041,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.111,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.074,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.115,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "underwater with no whale",
+     "whale_score": 0.19,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "underwater with no whale": 6
+   },
+   "kept_whale_free_by_why": {
+    "padding": 26,
+    "whale": 6
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 8.366666666666667,
+     "clips": 15,
+     "hq_min": 1.4166666666666667,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 19.65,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 8.00692962962963,
+     "clips": 18,
+     "hq_min": 1.2,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 21.4,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 21.00525537037037,
+     "clips": 20,
+     "hq_min": 2.85,
+     "hq_clips": 16,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 8.4,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 9.756908703703706,
+     "clips": 16,
+     "hq_min": 2.1,
+     "hq_clips": 12,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 19.65,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 7.473034074074076,
+     "clips": 22,
+     "hq_min": 0.9333333333333333,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 21.92,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 7.683333333333334,
+     "clips": 14,
+     "hq_min": 0.38333333333333336,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.72,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 4.95,
+     "clips": 11,
+     "hq_min": 0.43333333333333335,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.35,
+      "underwater with no whale": 24.39,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 4.216666666666667,
+     "clips": 10,
+     "hq_min": 0.95,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 25.18,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 3.6,
+     "clips": 9,
+     "hq_min": 0.45,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.55,
+      "small (fish or far whale)": 0.0,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.46532320976257324,
+    "water_picture_wall_s": 0.010775566101074219
+   }
+  },
+  "strict+px200": {
+   "label": "strict+px200",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 59.95879444444445,
+     "n_clips": 114,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.9,
+      "underwater with no whale": 139.66438814814816,
+      "small (fish or far whale)": 4.75,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.666666666666666,
+     "hq_stretch_min": 17.571922037037037,
+     "whale_windows": 2873
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 66.99212777777778,
+     "n_clips": 132,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 2.316666666666667,
+      "underwater with no whale": 186.6977214814815,
+      "small (fish or far whale)": 5.233333333333333,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 11.133333333333333,
+     "hq_stretch_min": 20.038588703703702,
+     "whale_windows": 3207
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 210,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 14,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 18,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 13,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 32,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      25,
+      26
+     ],
+     "whale_free": [
+      1,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      27,
+      27
+     ],
+     "whale_free": [
+      1,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      63,
+      64
+     ],
+     "whale_free": [
+      7,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      36,
+      36
+     ],
+     "whale_free": [
+      2,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      21,
+      22
+     ],
+     "whale_free": [
+      2,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      25,
+      33
+     ],
+     "whale_free": [
+      1,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      13,
+      13
+     ],
+     "whale_free": [
+      0,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     29,
+     40
+    ],
+    "0.2": [
+     78,
+     78
+    ],
+    ">=0.3": [
+     103,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     117,
+     128
+    ],
+    "ok": [
+     82,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.199,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.111,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.042,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 7,
+    "underwater with no whale": 4
+   },
+   "kept_whale_free_by_why": {
+    "padding": 12,
+    "whale": 2
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 7.35,
+     "clips": 12,
+     "hq_min": 1.45,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.15,
+      "underwater with no whale": 20.12,
+      "small (fish or far whale)": 0.55,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 7.140262962962963,
+     "clips": 15,
+     "hq_min": 1.2333333333333334,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 21.57,
+      "small (fish or far whale)": 0.7,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 18.538588703703702,
+     "clips": 25,
+     "hq_min": 2.85,
+     "hq_clips": 18,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 9.55,
+      "small (fish or far whale)": 1.32,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 9.573575370370373,
+     "clips": 16,
+     "hq_min": 2.3666666666666667,
+     "hq_clips": 12,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 19.78,
+      "small (fish or far whale)": 0.05,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 6.606367407407409,
+     "clips": 21,
+     "hq_min": 0.95,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 22.2,
+      "small (fish or far whale)": 0.58,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 6.633333333333334,
+     "clips": 14,
+     "hq_min": 0.38333333333333336,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 21.91,
+      "small (fish or far whale)": 0.87,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 4.116666666666666,
+     "clips": 11,
+     "hq_min": 0.43333333333333335,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.35,
+      "underwater with no whale": 24.54,
+      "small (fish or far whale)": 0.68,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 3.816666666666667,
+     "clips": 9,
+     "hq_min": 1.0166666666666666,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 25.37,
+      "small (fish or far whale)": 0.22,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 3.216666666666667,
+     "clips": 9,
+     "hq_min": 0.45,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.67,
+      "small (fish or far whale)": 0.27,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.5234320163726807,
+    "water_picture_wall_s": 0.011178255081176758
+   }
+  },
+  "strict+px450": {
+   "label": "strict+px450",
+   "pieces": {},
+   "deployment": {
+    "labelled 00004-00010": {
+     "recordings": 7,
+     "minutes": 207.79176833333335,
+     "kept_min": 35.908794444444446,
+     "n_clips": 118,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 0.0,
+      "surfaced": 1.9833333333333334,
+      "underwater with no whale": 143.4477214814815,
+      "small (fish or far whale)": 24.933333333333334,
+      "unreadable": 0.0019190740740744636
+     },
+     "windows": 12472,
+     "windows_scanned": 12249,
+     "hq_min": 9.383333333333333,
+     "hq_stretch_min": 16.871922037037038,
+     "whale_windows": 1484
+    },
+    "all pieces": {
+     "recordings": 9,
+     "minutes": 267.1472596296296,
+     "kept_min": 41.02546111111111,
+     "n_clips": 134,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 1.5166666666666666,
+      "tag floating": 4.285252407407408,
+      "surfaced": 2.4166666666666665,
+      "underwater with no whale": 190.91438814814816,
+      "small (fish or far whale)": 26.883333333333333,
+      "unreadable": 0.005491296296296847
+     },
+     "windows": 16035,
+     "windows_scanned": 15519,
+     "hq_min": 10.833333333333334,
+     "hq_stretch_min": 19.321922037037037,
+     "whale_windows": 1713
+    }
+   },
+   "frames": {
+    "clear_whale": {
+     "kept": 145,
+     "n": 221
+    },
+    "whale_free": {
+     "kept": 7,
+     "n": 570
+    },
+    "faint_only": {
+     "kept": 3,
+     "n": 49
+    },
+    "whale_free_underwater": {
+     "kept": 6,
+     "n": 553
+    },
+    "fish_frames": {
+     "kept": 21,
+     "n": 45
+    }
+   },
+   "frames_per_piece": {
+    "00004": {
+     "clear_whale": [
+      21,
+      26
+     ],
+     "whale_free": [
+      0,
+      88
+     ]
+    },
+    "00005": {
+     "clear_whale": [
+      19,
+      27
+     ],
+     "whale_free": [
+      1,
+      87
+     ]
+    },
+    "00006": {
+     "clear_whale": [
+      46,
+      64
+     ],
+     "whale_free": [
+      4,
+      42
+     ]
+    },
+    "00007": {
+     "clear_whale": [
+      28,
+      36
+     ],
+     "whale_free": [
+      1,
+      81
+     ]
+    },
+    "00008": {
+     "clear_whale": [
+      14,
+      22
+     ],
+     "whale_free": [
+      1,
+      91
+     ]
+    },
+    "00009": {
+     "clear_whale": [
+      8,
+      33
+     ],
+     "whale_free": [
+      0,
+      81
+     ]
+    },
+    "00010": {
+     "clear_whale": [
+      9,
+      13
+     ],
+     "whale_free": [
+      0,
+      100
+     ]
+    }
+   },
+   "clear_whale_by_size": {
+    "0.1": [
+     9,
+     40
+    ],
+    "0.2": [
+     37,
+     78
+    ],
+    ">=0.3": [
+     99,
+     103
+    ]
+   },
+   "clear_whale_by_quality": {
+    "hq": [
+     11,
+     11
+    ],
+    "low": [
+     54,
+     128
+    ],
+    "ok": [
+     80,
+     82
+    ]
+   },
+   "lost_whale_frames": [
+    {
+     "piece": "00004",
+     "frame": 5381,
+     "t_mov": 179.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "7 jack-like fish with forked tails upper left (tails also seen in f5351-f5401); fainter spindles not counted; whale head (tubercles) cut by left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6270,
+     "t_mov": 209.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.058,
+     "other_whales": 1,
+     "note": "3 jack-like fish upper left (tails seen in f6280); spindles top right not counted; whale lower left hazy",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 6715,
+     "t_mov": 224.03,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.077,
+     "other_whales": 1,
+     "note": "about 12 small spindles and 2 faint large ones at the top, no tail seen in f6695-f6735 (re-checked 2026-11-20: not counted); whale head with tubercles lower left (clear)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 17384,
+     "t_mov": 579.98,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "fluke and tail stock lower right; 2 fish with forked tails (large one top right, f17354-f17399; small one lower left)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00004",
+     "frame": 48502,
+     "t_mov": 1618.17,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.04,
+     "other_whales": 1,
+     "note": "hazy whale fluke and tail rising behind the back's horizon, lower right; 1 tiny speck",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 9529,
+     "t_mov": 317.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (rostrum with knobs) rising above the back's horizon, lower centre; grows and rises over f9440-f9620 (checked)",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 10863,
+     "t_mov": 362.42,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.074,
+     "other_whales": 1,
+     "note": "just under the surface (surface underside across the top); whale head-on with both flippers at the back's horizon, bottom centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 17532,
+     "t_mov": 584.92,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (tubercles) rising at the back's horizon, lower centre-right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 18866,
+     "t_mov": 629.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (calf) diagonal at the lower left with pale ventral marks",
+     "whale_size": 0.3,
+     "quality": "ok"
+    },
+    {
+     "piece": "00005",
+     "frame": 19311,
+     "t_mov": 644.27,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.034,
+     "other_whales": 1,
+     "note": "whale head rising at the back's horizon, lower centre; 4 fish 55-80 px upper right (2 overlapping)",
+     "whale_size": 0.3,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 45542,
+     "t_mov": 1519.42,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.222,
+     "other_whales": 1,
+     "note": "whale head (calf) rising above the back's horizon, lower centre-right; moves up in window 2",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 45987,
+     "t_mov": 1534.26,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head lower right on the back's horizon; sun disc",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00005",
+     "frame": 47320,
+     "t_mov": 1578.74,
+     "why": "underwater with no whale",
+     "whale_score": 0.045,
+     "other_whales": 1,
+     "note": "just under the surface; near whale (calf) body cut by the right edge, lower right (moves over f47220-f47340)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 3758,
+     "t_mov": 125.38,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "dark whale part (flipper/head) cut by the top right corner; 1 faint speck centre not counted",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 6872,
+     "t_mov": 229.27,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (tubercles) cut by the left edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 10876,
+     "t_mov": 362.86,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 11321,
+     "t_mov": 377.7,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale part at the top left edge; fish: 1 fish ~55 px, tail just visible",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 12211,
+     "t_mov": 407.4,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top right",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 20665,
+     "t_mov": 689.45,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, cut by the top edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 21555,
+     "t_mov": 719.14,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head from below, top left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22444,
+     "t_mov": 748.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 22889,
+     "t_mov": 763.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head top right",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 24224,
+     "t_mov": 808.18,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "fluke rising just behind the knobbed hump: the calf (moves: whole calf above it 1 s earlier, gone 1 s later)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 25559,
+     "t_mov": 852.72,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with flippers, mid right",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 32678,
+     "t_mov": 1090.24,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tail top right; fish: 2 fish 45-50 px with tails",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 42021,
+     "t_mov": 1401.95,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with flippers, bottom centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 42911,
+     "t_mov": 1431.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "large dark angular whale part (head-on or fluke) rising beyond the back, bottom right; fish: 2 fish 70-110 px with tails",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 49585,
+     "t_mov": 1654.3,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "fluke behind the hump",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 50030,
+     "t_mov": 1669.15,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with flippers, bottom centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52254,
+     "t_mov": 1743.35,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail at the top right",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00006",
+     "frame": 52699,
+     "t_mov": 1758.19,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.034,
+     "other_whales": 1,
+     "note": "hazy tail top centre",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 7216,
+     "t_mov": 240.75,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (probably the calf) centre-right, body vertical with fluke up, sharp silhouette; back band with hump at the bottom",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18330,
+     "t_mov": 611.54,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 18774,
+     "t_mov": 626.36,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale tail stock and fluke lower left, rising behind the back's horizon (checked at full size); faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 44114,
+     "t_mov": 1471.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.09,
+     "other_whales": 1,
+     "note": "whale at the surface upper left (dark body with knobbly pectoral edge); small white specks mid frame are bubbles / particles 3.5 s after an entry (followed f44099-f44144: appear and vanish, not fish); back textured at the bottom",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 46337,
+     "t_mov": 1545.94,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head cut by the right edge, upper right; faint band at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 46781,
+     "t_mov": 1560.75,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (calf?) above, belly view with both pectoral fins and fluke, upper right, sharp silhouette; bottom edge dark (back barely visible)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 49893,
+     "t_mov": 1664.58,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale centre with fluke raised, hazy; faint band at the bottom",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00007",
+     "frame": 51671,
+     "t_mov": 1723.9,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.176,
+     "other_whales": 1,
+     "note": "whale part (rounded rostrum / pectoral tip) cut by the top left edge at the surface; surface top (dapples checked at full size, no fish); back textured at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 421,
+     "t_mov": 14.05,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.064,
+     "other_whales": 1,
+     "note": "dark fluke of another whale sticking up just beyond the back horizon, bottom centre (~1050-1390 px); followed f300-f480 (fluke rises and sinks behind the back)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 866,
+     "t_mov": 28.89,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (probably the calf) rising close to the back, lower right; followed f840-f990",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 3981,
+     "t_mov": 132.82,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.036,
+     "other_whales": 1,
+     "note": "whale just under the surface, top centre-left (seen from below with flipper); camera shallow",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 14214,
+     "t_mov": 474.22,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "pale head of another whale with tubercles rising over the back horizon, lower left-centre (~520-650,900-1040); followed f14100-f14790: the calf rises head-first past the camera",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 17774,
+     "t_mov": 592.99,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale (head or tail stock) hanging from the top edge, upper left",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 34237,
+     "t_mov": 1142.25,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.053,
+     "other_whales": 1,
+     "note": "hazy whale lower centre, head up, rising toward the camera",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 43580,
+     "t_mov": 1453.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale (tail stock with flukes) at the top edge, small",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00008",
+     "frame": 51589,
+     "t_mov": 1721.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.054,
+     "other_whales": 1,
+     "note": "hazy whale head top left near the surface",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 203,
+     "t_mov": 6.77,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right, fluke up (clear); back = faint dark band at the bottom edge",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 647,
+     "t_mov": 21.59,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette upper right below the sun glow; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1092,
+     "t_mov": 36.43,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale silhouette with fluke, upper centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 1537,
+     "t_mov": 51.28,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part (rounded end, hazy) cut by the top edge right of centre; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5539,
+     "t_mov": 184.8,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.031,
+     "other_whales": 1,
+     "note": "near whale cut by the top edge upper right (belly / flipper); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 5984,
+     "t_mov": 199.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top edge (head end down); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6428,
+     "t_mov": 214.46,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale tip cut by the top edge (hazy); back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 6873,
+     "t_mov": 229.3,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale with fluke, clear silhouette; back faint band",
+     "whale_size": 0.3,
+     "quality": "ok"
+    },
+    {
+     "piece": "00009",
+     "frame": 7318,
+     "t_mov": 244.15,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale with both flippers spread; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 7762,
+     "t_mov": 258.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale with fluke spread, clear; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9541,
+     "t_mov": 318.32,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the right edge, top; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 9986,
+     "t_mov": 333.16,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale cut by the top right edge; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 10431,
+     "t_mov": 348.01,
+     "why": "underwater with no whale",
+     "whale_score": 0.093,
+     "other_whales": 1,
+     "note": "near the surface; whale head (tubercles, white scars) cut by the right edge",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 14433,
+     "t_mov": 481.53,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale cut by the top left corner; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 16212,
+     "t_mov": 540.88,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke visible); back with dorsal hump at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 18880,
+     "t_mov": 629.89,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale with fluke, centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 21103,
+     "t_mov": 704.06,
+     "why": "underwater with no whale",
+     "whale_score": 0.042,
+     "other_whales": 1,
+     "note": "pectoral flipper tip (knobbed edge) cut by the top left corner: counted as one whale; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 25995,
+     "t_mov": 867.27,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "near whale head / jaw cut by the lower right edge; back band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 26885,
+     "t_mov": 896.96,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "small far whale centre right (fluke and flippers, ~130 px, followed f26869-f26905); 1 jack-like fish ~100 px left of it; back with dorsal hump and a row of knobs at the bottom",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29553,
+     "t_mov": 985.98,
+     "why": "underwater with no whale",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale top right (body and fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 29997,
+     "t_mov": 1000.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale part cut by the top right edge, near the surface; back faint band",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 30442,
+     "t_mov": 1015.64,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.053,
+     "other_whales": 1,
+     "note": "near whale cut by the top right edge; surface above; back band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 33555,
+     "t_mov": 1119.49,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale centre right (hazy, fluke); back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 34000,
+     "t_mov": 1134.34,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "hazy whale centre; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00009",
+     "frame": 34444,
+     "t_mov": 1149.15,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale centre with fluke; back faint band",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 1560,
+     "t_mov": 52.05,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale beyond the back's horizon, bottom right (x 1300-1680, y 920-1030): dorsal fin and body/tail; moves and sinks behind the horizon over f1530-f1590, so another whale (calf most likely)",
+     "whale_size": 0.2,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 9124,
+     "t_mov": 304.4,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "calf near the surface upper left (body and fluke, hazy, x 450-800, y 250-700), sun starburst at centre with small bubbles",
+     "whale_size": 0.3,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 28257,
+     "t_mov": 942.74,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head rising from the back's horizon (x 1160-1300, y 800-1000); barely moves within +-1 s, but in window 2 the shape appears at the horizon at 931 s, grows and becomes the whole calf by 948 s (borderline: could be called faint)",
+     "whale_size": 0.1,
+     "quality": "low"
+    },
+    {
+     "piece": "00010",
+     "frame": 36711,
+     "t_mov": 1224.79,
+     "why": "small (fish or far whale)",
+     "whale_score": 0.0,
+     "other_whales": 1,
+     "note": "whale head (rostrum) rising beyond the back's horizon, lower left (x 580-870, y 700-1060); grown and moved since f36266; the whole calf is in open water at f37156",
+     "whale_size": 0.2,
+     "quality": "low"
+    }
+   ],
+   "lost_by_reason": {
+    "small (fish or far whale)": 68,
+    "underwater with no whale": 8
+   },
+   "kept_whale_free_by_why": {
+    "padding": 6,
+    "whale": 1
+   },
+   "per_recording": {
+    "00004": {
+     "min": 29.685252407407408,
+     "kept_min": 4.916666666666667,
+     "clips": 12,
+     "hq_min": 1.4166666666666667,
+     "hq_clips": 7,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 1.52,
+      "tag floating": 0.0,
+      "surfaced": 0.17,
+      "underwater with no whale": 20.47,
+      "small (fish or far whale)": 2.62,
+      "unreadable": 0.0
+     }
+    },
+    "00005": {
+     "min": 29.69026296296296,
+     "kept_min": 4.790262962962962,
+     "clips": 16,
+     "hq_min": 1.1666666666666667,
+     "hq_clips": 10,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 21.93,
+      "small (fish or far whale)": 2.67,
+      "unreadable": 0.0
+     }
+    },
+    "00006": {
+     "min": 29.688588703703704,
+     "kept_min": 11.588588703703703,
+     "clips": 33,
+     "hq_min": 2.783333333333333,
+     "hq_clips": 20,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 10.3,
+      "small (fish or far whale)": 7.52,
+      "unreadable": 0.0
+     }
+    },
+    "00007": {
+     "min": 29.673575370370372,
+     "kept_min": 6.840242037037039,
+     "clips": 21,
+     "hq_min": 2.3,
+     "hq_clips": 14,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.32,
+      "underwater with no whale": 20.53,
+      "small (fish or far whale)": 1.98,
+      "unreadable": 0.0
+     }
+    },
+    "00008": {
+     "min": 29.689700740740744,
+     "kept_min": 3.406367407407409,
+     "clips": 17,
+     "hq_min": 0.9,
+     "hq_clips": 8,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.3,
+      "underwater with no whale": 23.08,
+      "small (fish or far whale)": 2.9,
+      "unreadable": 0.0
+     }
+    },
+    "00009": {
+     "min": 29.673575370370372,
+     "kept_min": 1.8666666666666667,
+     "clips": 9,
+     "hq_min": 0.38333333333333336,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.27,
+      "underwater with no whale": 22.32,
+      "small (fish or far whale)": 5.22,
+      "unreadable": 0.0
+     }
+    },
+    "00010": {
+     "min": 29.690812777777783,
+     "kept_min": 2.5,
+     "clips": 10,
+     "hq_min": 0.43333333333333335,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.35,
+      "underwater with no whale": 24.81,
+      "small (fish or far whale)": 2.03,
+      "unreadable": 0.0
+     }
+    },
+    "00011": {
+     "min": 29.67023888888889,
+     "kept_min": 2.783333333333333,
+     "clips": 9,
+     "hq_min": 1.0,
+     "hq_clips": 6,
+     "dropped_min": {
+      "tag in air": 0.0,
+      "drone flight": 0.0,
+      "tag floating": 0.0,
+      "surfaced": 0.28,
+      "underwater with no whale": 25.53,
+      "small (fish or far whale)": 1.07,
+      "unreadable": 0.0
+     }
+    },
+    "00012": {
+     "min": 29.685252407407408,
+     "kept_min": 2.3333333333333335,
+     "clips": 7,
+     "hq_min": 0.45,
+     "hq_clips": 5,
+     "dropped_min": {
+      "tag in air": 0.1,
+      "drone flight": 0.0,
+      "tag floating": 4.29,
+      "surfaced": 0.15,
+      "underwater with no whale": 21.93,
+      "small (fish or far whale)": 0.88,
+      "unreadable": 0.0
+     }
+    }
+   },
+   "offset_check": {
+    "n_depth_events": 156,
+    "n_picture_events": 161,
+    "best_shift_s": -0.0999999999995751,
+    "n_matched_at_shift": 154,
+    "n_pairs": 156,
+    "median_picture_minus_depth_s": 0.04201929792179726,
+    "mad_s": 0.10870881607206684,
+    "median_exit_s": -0.03756057788086764,
+    "n_exit": 78,
+    "median_entry_s": 0.07339452971427818,
+    "n_entry": 78,
+    "verdict": "ok",
+    "offset_in_use_s": 2.03,
+    "implied_offset_s": 2.072019297921797
+   },
+   "timings": {
+    "sensors_s": 0.47623324394226074,
+    "water_picture_wall_s": 0.011262893676757812
+   }
+  }
+ },
  "dev": {
   "strict": {
    "label": "strict",
+   "minutes": 1.5885872333333333,
+   "kept_min": 1.4166666666666667,
+   "keep": [
+    [
+     3.0,
+     88.0
+    ]
+   ],
+   "drop": [
+    [
+     0.0,
+     1.0,
+     "surfaced"
+    ],
+    [
+     1.0,
+     3.0,
+     "small (fish or far whale)"
+    ],
+    [
+     88.0,
+     89.0,
+     "underwater with no whale"
+    ],
+    [
+     89.0,
+     90.0,
+     "small (fish or far whale)"
+    ],
+    [
+     90.0,
+     91.0,
+     "underwater with no whale"
+    ],
+    [
+     91.0,
+     92.0,
+     "small (fish or far whale)"
+    ],
+    [
+     92.0,
+     94.0,
+     "underwater with no whale"
+    ],
+    [
+     94.0,
+     95.0,
+     "surfaced"
+    ],
+    [
+     95.0,
+     95.32,
+     "unreadable"
+    ]
+   ],
+   "clear_whale_frames": [
+    144,
+    145
+   ],
+   "whale_free_frames": [
+    20,
+    37
+   ],
+   "whale_free_by_state": {
+    "air": {
+     "sum": 3,
+     "count": 8
+    },
+    "crossing": {
+     "sum": 2,
+     "count": 3
+    },
+    "underwater": {
+     "sum": 15,
+     "count": 26
+    }
+   },
+   "water_vs_label_state": {
+    "air": {
+     "crossing": 1,
+     "surfaced": 6,
+     "underwater": 0,
+     "unknown": 1
+    },
+    "crossing": {
+     "crossing": 1,
+     "surfaced": 2,
+     "underwater": 0,
+     "unknown": 0
+    },
+    "underwater": {
+     "crossing": 8,
+     "surfaced": 4,
+     "underwater": 168,
+     "unknown": 0
+    }
+   },
+   "windows_whale": 67,
+   "windows_scanned": 89,
+   "windows": 96
+  },
+  "strict+nonear": {
+   "label": "strict+nonear",
    "minutes": 1.5885872333333333,
    "kept_min": 1.4166666666666667,
    "keep": [
@@ -309,7 +7825,92 @@
    "windows_whale": 77,
    "windows_scanned": 89,
    "windows": 96
+  },
+  "sensitive+nonear": {
+   "label": "sensitive+nonear",
+   "minutes": 1.5885872333333333,
+   "kept_min": 1.5166666666666666,
+   "keep": [
+    [
+     3.0,
+     94.0
+    ]
+   ],
+   "drop": [
+    [
+     0.0,
+     1.0,
+     "surfaced"
+    ],
+    [
+     1.0,
+     3.0,
+     "small (fish or far whale)"
+    ],
+    [
+     94.0,
+     95.0,
+     "surfaced"
+    ],
+    [
+     95.0,
+     95.32,
+     "unreadable"
+    ]
+   ],
+   "clear_whale_frames": [
+    145,
+    145
+   ],
+   "whale_free_frames": [
+    28,
+    37
+   ],
+   "whale_free_by_state": {
+    "air": {
+     "sum": 3,
+     "count": 8
+    },
+    "crossing": {
+     "sum": 3,
+     "count": 3
+    },
+    "underwater": {
+     "sum": 22,
+     "count": 26
+    }
+   },
+   "water_vs_label_state": {
+    "air": {
+     "crossing": 1,
+     "surfaced": 6,
+     "underwater": 0,
+     "unknown": 1
+    },
+    "crossing": {
+     "crossing": 1,
+     "surfaced": 2,
+     "underwater": 0,
+     "unknown": 0
+    },
+    "underwater": {
+     "crossing": 8,
+     "surfaced": 4,
+     "underwater": 168,
+     "unknown": 0
+    }
+   },
+   "windows_whale": 77,
+   "windows_scanned": 89,
+   "windows": 96
   }
  },
- "m4v_crosscheck": {}
+ "m4v_crosscheck": {
+  "strict+nonear+px0": {
+   "labelled_windows_compared": 822,
+   "agree": 802,
+   "fires_m4v_only": 5,
+   "fires_mov_only": 15
+  }
+ }
 }

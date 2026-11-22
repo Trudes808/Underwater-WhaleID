@@ -1,0 +1,88 @@
+{
+ "verified": [
+  {
+   "clip": "CC-11-96-20250203-101236-000-00004_045750-046100_copy.mp4",
+   "index_start_s": 1526.3556,
+   "index_end_s": 1538.0326,
+   "wanted": [
+    1527.0,
+    1538.0
+   ],
+   "source_start_t": 1526.3555555555556,
+   "clip_frames": 350,
+   "index_frames": 350,
+   "clip_duration_s": 11.677033333333332,
+   "index_duration_s": 11.676999999999907,
+   "ncc_first": 1.0,
+   "ncc_last": 1.0,
+   "clock_first": [
+    "03Xxx25 10:38:04.500",
+    "03Xxx25 10:38:04.500"
+   ],
+   "clock_last": [
+    "03Xxx25 10:38:16.100",
+    "03Xxx25 10:38:16.100"
+   ]
+  },
+  {
+   "clip": "CC-11-96-20250203-104242-000-00005_017580-020053_copy.mp4",
+   "index_start_s": 586.5209,
+   "index_end_s": 669.0275,
+   "wanted": [
+    587.0,
+    669.0
+   ],
+   "source_start_t": 586.5208888888889,
+   "clip_frames": 2473,
+   "index_frames": 2473,
+   "clip_duration_s": 82.50661111111111,
+   "index_duration_s": 82.50660000000005,
+   "ncc_first": 1.0,
+   "ncc_last": 1.0,
+   "clock_first": [
+    "03Xxx25 10:52:30.600",
+    "03Xxx25 10:52:30.600"
+   ],
+   "clock_last": [
+    "03Xxx25 10:53:53.000",
+    "03Xxx25 10:53:53.000"
+   ]
+  },
+  {
+   "clip": "CC-11-96-20250203-111250-000-00006_052440-053392_copy.mp4",
+   "index_start_s": 1749.5538,
+   "index_end_s": 1781.3153,
+   "wanted": [
+    1750.0,
+    1781.3153
+   ],
+   "source_start_t": 1749.5537666666667,
+   "clip_frames": 952,
+   "index_frames": 952,
+   "clip_duration_s": 31.761555555555553,
+   "index_duration_s": 31.76150000000007,
+   "ncc_first": 1.0,
+   "ncc_last": 1.0,
+   "clock_first": [
+    "03Xxx25 11:42:00.600",
+    "03Xxx25 11:42:00.600"
+   ],
+   "clock_last": [
+    "03Xxx25 11:42:32.400",
+    "03Xxx25 11:42:32.400"
+   ]
+  }
+ ],
+ "n_clips": 154,
+ "clip_bytes": 754290218,
+ "source_bytes": 2161596101,
+ "clip_seconds": 4089.3934000000017,
+ "tiers": {
+  "hq_whale": 95,
+  "whale": 59
+ },
+ "sheets": [
+  "/home/sat3737/NOAA_whales/review_sheets/underwater/scan_clips_01.jpg",
+  "/home/sat3737/NOAA_whales/review_sheets/underwater/scan_clips_02.jpg"
+ ]
+}

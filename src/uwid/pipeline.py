@@ -13,9 +13,14 @@
 2. **Whale detector** (OWLv2, prompt "whale", :mod:`uwid.detect`) runs only on windows that are on the whale and
    under water (or crossing), on two frames per 1 s window (at +0.25 s and +0.75 s). Boxes in the burned-in clock
    and boxes covering more than 60 % of the frame are dropped (WP5a operating point, fixed on the dev clip).
-3. **Keep rule**, preset ``strict`` (both frames have a "whale" box >= 0.25) or ``sensitive`` (either frame does).
-   Whale windows are padded by 2 s on each side, then stretches less than 5 s apart (after padding) are merged.
-   Nothing is dropped for being short. Every other window gets one reason from :data:`REASONS`.
+3. **Keep rule**, preset ``strict`` (both frames have a large "whale" box >= 0.25) or ``sensitive`` (either frame
+   does). A box shorter than ``min_whale_px`` (300 px of a 1920 px frame) is ``small`` (fish or far whale, user
+   2026-11-20) and keeps nothing. A box over 60 % of the frame counts when its score is >= 0.6 and, with a sensor
+   log, the tag is >= 1 m deep (shallower it is the tagged whale's back mirrored in the surface). Whale windows are
+   padded by 2 s on each side, then stretches less than 5 s apart (after padding) are merged. Nothing is dropped for
+   being short. Every other window gets one reason from :data:`REASONS`. Each window and each kept stretch also gets
+   the quality tier ``hq_whale`` (:func:`hq_parts`: share of the frame covered by the whale box, detector score,
+   brightness, contrast and sharpness in the box, no bubbles, shallow depth; first guess, for the user to judge).
 4. Writes, under ``<cache>/scan/<deployment or video name>/<run label>/``: ``windows/<stem>.csv`` (one row per
    second), ``intervals.json`` (format ``uwid-intervals/1``), ``dropped.csv`` (stretches with reasons),
    ``summary.json``; ``offset_check.json`` next to it. With ``cut=True`` the keep intervals are cut by
@@ -25,11 +30,10 @@ Re-running reuses the clock fits, picture water states and detector boxes cached
 detector cache keeps every box with the scores of all prompts at its patch, so the options below re-score without
 running the model again). Source footage is only read.
 
-Options (off by default, each reported once in experiments/06_clips_e2e as NOT a clean test, because the idea came
-from failures seen on the test pieces): ``near_whale_score`` keeps a box covering most of the frame when its score
-is at least this (0.6 = above every whole-frame box on the dev clip, max 0.58); ``fish_veto`` counts a "whale" box
-only when its whale score beats the best fish-prompt score of the same box. The fish score of each window is written
-as information and never changes the keep decision.
+Options, each reported once in experiments/06_clips_e2e as NOT a clean test: ``fish_veto`` (off by default) counts
+a "whale" box only when its whale score beats the best fish-prompt score of the same box; ``near_whale_score``
+(default 0.6, None = WP5a's plain 60 % filter). The fish score of each window is written as information and never
+changes the keep decision.
 """
 
 from __future__ import annotations
@@ -68,6 +72,8 @@ class ScanConfig:
     bubble_query: str = "air bubbles"    # for the quality tier only
     whole_frame: float = 0.6             # boxes covering more than this share of the frame are dropped ...
     near_whale_score: float | None = 0.6  # ... unless their score is at least this (None = always dropped)
+    near_whale_min_depth_m: float = 1.0  # ... and (with a sensor log) the tag is at least this deep: just under the
+    #                                      surface the tagged whale's own back, mirrored in the surface, fills the frame
     min_whale_px: float = 300.0          # whale boxes shorter than this (longest side, 1920 px frame) are 'small'
     hq_threshold: float = 0.6            # hq_whale: quality score at least this (first guess) ...
     hq_min_cover: float = 0.10           # ... and the whale box covers at least this share of the frame
@@ -582,7 +588,7 @@ def run_detector(rec: Recording, frames: np.ndarray, cache: Path, cfg: ScanConfi
                 runner = _HELD["runner"]
             else:
                 from . import detect
-                runner = detect.OwlRunner(queries, patch_scores=True, batch=cfg.detector_batch)
+                runner = detect.OwlRunner(queries, patch_scores=True, batch=cfg.detector_batch, gpu_preprocess=True)
                 _HELD.update(runner=runner, runner_queries=queries)
             q: queue.Queue = queue.Queue(maxsize=16)
             stop = threading.Event()
@@ -712,7 +718,9 @@ def add_box_quality(df: pd.DataFrame, image: np.ndarray, whale_query: str = "wha
     return df
 
 
-FRAME_COLUMNS = ["whale", "small", "fish", "cover", "top_score", "whale_px", "bright", "contrast", "sharp", "bubbles"]
+QUALITY_COLUMNS = ["cover", "top_score", "whale_px", "bright", "contrast", "sharp"]
+FRAME_COLUMNS = (["whale", "whale_part", "small", "fish", "bubbles"] + QUALITY_COLUMNS
+                 + [c + "_part" for c in QUALITY_COLUMNS])
 
 
 def frame_scores(boxes: pd.DataFrame, frames: np.ndarray, cfg: ScanConfig, width: int, height: int) -> pd.DataFrame:
@@ -756,11 +764,14 @@ def frame_scores(boxes: pd.DataFrame, frames: np.ndarray, cfg: ScanConfig, width
     out["small"] = out.frame.map(small.groupby("frame").score.max()).fillna(0.0).astype(float)
     out["fish"] = out.frame.map(f.groupby("frame").score.max()).fillna(0.0).astype(float)
     out["bubbles"] = out.frame.map(bub.groupby("frame").area.max()).fillna(0.0).astype(float)
-    top = large[large.score >= cfg.threshold].sort_values("area").groupby("frame").tail(1).set_index("frame")
-    for c, src in (("cover", "area"), ("top_score", "score"), ("whale_px", "px"), ("bright", "q_bright"),
-                   ("contrast", "q_contrast"), ("sharp", "q_sharp")):
-        if src in top.columns:
-            out[c] = out.frame.map(top[src]).astype(float)
+    part = large[~whole[large.index]]
+    out["whale_part"] = out.frame.map(part.groupby("frame").score.max()).fillna(0.0).astype(float)
+    for suffix, boxes_ in (("", large), ("_part", part)):
+        top = boxes_[boxes_.score >= cfg.threshold].sort_values("area").groupby("frame").tail(1).set_index("frame")
+        for c, src in (("cover", "area"), ("top_score", "score"), ("whale_px", "px"), ("bright", "q_bright"),
+                       ("contrast", "q_contrast"), ("sharp", "q_sharp")):
+            if src in top.columns:
+                out[c + suffix] = out.frame.map(top[src]).astype(float)
     return out
 
 
@@ -919,11 +930,22 @@ def apply_detections(w: pd.DataFrame, fs: pd.DataFrame, processed: np.ndarray, c
         ok = np.array([(i >= 0) and (int(i) in proc) for i in idx]) & w.scanned.to_numpy()
         for col in FRAME_COLUMNS:
             v = pd.Series(idx).map(score[col]).to_numpy(dtype=float) if col in score.columns else np.full(len(idx), np.nan)
-            if col in ("whale", "small", "fish", "bubbles"):
+            if col in ("whale", "whale_part", "small", "fish", "bubbles"):
                 v = np.nan_to_num(v, nan=0.0)
             per[col].append(np.where(ok, v, np.nan))
         w[f"whale_{j}"] = per["whale"][-1]
         dec.append(ok)
+    # with a sensor log: just under the surface (depth < near_whale_min_depth_m) a box over most of the frame is the
+    # tagged whale's back mirrored in the surface, so those windows use the boxes that do not fill the frame
+    shallow = (w["depth_m"].to_numpy(dtype=float) < cfg.near_whale_min_depth_m) if "depth_m" in w.columns else \
+        np.zeros(len(w), bool)
+    shallow = np.nan_to_num(shallow, nan=0).astype(bool)
+    for j in range(len(fcols)):
+        per["whale"][j] = np.where(shallow, per["whale_part"][j], per["whale"][j])
+        for c in QUALITY_COLUMNS:
+            per[c][j] = np.where(shallow, per[c + "_part"][j], per[c][j])
+        w[f"whale_{j}"] = per["whale"][j]
+    w["shallow_rule"] = shallow
     S = np.stack(per["whale"], 1)
     SM = np.stack(per["small"], 1)
     decoded = np.stack(dec, 1).any(1)
@@ -947,6 +969,7 @@ def apply_detections(w: pd.DataFrame, fs: pd.DataFrame, processed: np.ndarray, c
     w["small"] = decoded & ~w.whale.to_numpy() & (np.nan_to_num(small, nan=-1) >= cfg.threshold)
     for col in ("cover", "top_score", "whale_px", "bright", "contrast", "sharp", "bubbles"):
         w[col] = np.stack(per[col], 1)[rows, best]
+    w["best_frame"] = np.stack([w[c].to_numpy() for c in fcols], 1)[rows, best]   # the frame the quality is from
     for col in ("cover", "top_score", "whale_px", "bright", "contrast", "sharp"):
         w.loc[~w.whale, col] = np.nan
     parts = hq_parts(w)
@@ -1061,7 +1084,18 @@ def scan_deployment(dep: Deployment, cfg: ScanConfig, cut: bool, mode: str, log,
             fits[rec.key]["seconds"] = time.time() - ts
             cf.write_text(json.dumps(fits[rec.key], indent=1))
             timings["clock_s"] = timings.get("clock_s", 0.0) + fits[rec.key]["seconds"]
-        if sensors is None or cfg.picture_check:
+    def on_whale(rec) -> bool:
+        """With a log, the picture model is only needed (offset check) where the tag is on a whale."""
+        vc = _video_clock(rec, sensors, fits[rec.key], 2.03 if cfg.clock_offset_s == "auto" else
+                          float(cfg.clock_offset_s))
+        if vc is None:
+            return True
+        a, b = float(vc.to_sensor(0.0)), float(vc.to_sensor(video.frame_table(rec.path).duration))
+        seg = sensors.segments
+        return bool(((seg.state == "whale") & (seg.t1 > a) & (seg.t0 < b)).any())
+
+    for rec in dep.recordings:          # GPU stage after every clock fit (CPU), so one GPU hold covers several
+        if sensors is None or (cfg.picture_check and on_whale(rec)):
             ts = time.time()
             water[rec.key], pic_events[rec.key] = picture_water(rec, cache, cfg, log, water_fn, timings)
             timings["water_picture_wall_s"] = timings.get("water_picture_wall_s", 0.0) + time.time() - ts

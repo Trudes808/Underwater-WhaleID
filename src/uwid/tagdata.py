@@ -565,11 +565,15 @@ def video_clock(deployment: str, video_name: str) -> VideoClock:
             r = r.iloc[0]
             return VideoClock(float(r.clock_at_pts0_t) - CLOCK_MINUS_SENSOR_S, float(r.clock_rate) - 1.0, "burned clock")
     _, seq = video_start_from_name(video_name, meta["utc_offset_h"])
+    by_name = clock_from_name(video_name, meta["first_utc"], meta["utc_offset_h"])
     ff = first_frames_from_camera_time(load(deployment))
     r = ff[ff.piece == seq]
-    if len(r) and ext == "mov":
+    # the log's pieces follow the camera's recording sessions; a camera that also splits files by size (tag CC-09-85:
+    # 4 GB 4K files, two per 30-min session) numbers its files differently, so the camera-time match is only used
+    # when it agrees with the file name's start time
+    if len(r) and ext == "mov" and abs(float(r.first_frame_t.iloc[0]) - by_name.t0) <= 3.0:
         return VideoClock(float(r.first_frame_t.iloc[0]), 0.0, "camera time")
-    return clock_from_name(video_name, meta["first_utc"], meta["utc_offset_h"])
+    return by_name
 
 
 def clock_from_name(name: str, first_utc: str | np.datetime64, utc_offset_h: float = -10.0, offset_s: float = 0.0,

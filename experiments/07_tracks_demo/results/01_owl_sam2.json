@@ -1,0 +1,320 @@
+{
+ "clip": "01",
+ "video": "2025-12-20 CG.m4v",
+ "t0": 24.0,
+ "t1": 36.0,
+ "method": "owl_sam2",
+ "kind": "a: competitive group, several whales crossing",
+ "stage1_run": "18-66 s",
+ "n_frames": 359,
+ "seconds_video": 11.98,
+ "seconds_total": 96.4,
+ "seconds_model": 93.0,
+ "gpu_s_per_video_s": 8.05,
+ "gpu_peak_gb": 1.44,
+ "n_started": 6,
+ "roles": {
+  "0": "back",
+  "1": "whale",
+  "2": "whale",
+  "3": "whale",
+  "4": "small",
+  "5": "small",
+  "6": "whale"
+ },
+ "n_whale_tracks": 4,
+ "tracks": [
+  {
+   "number": 1,
+   "obj": 1,
+   "first_s": 24.02,
+   "last_s": 35.96,
+   "frames_seen": 359,
+   "gaps_s": "",
+   "small_frames": 1,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  },
+  {
+   "number": 2,
+   "obj": 2,
+   "first_s": 24.02,
+   "last_s": 35.1,
+   "frames_seen": 333,
+   "gaps_s": "",
+   "small_frames": 59,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  },
+  {
+   "number": 3,
+   "obj": 3,
+   "first_s": 24.02,
+   "last_s": 35.96,
+   "frames_seen": 359,
+   "gaps_s": "",
+   "small_frames": 0,
+   "dup_hidden": 0,
+   "back_share": 0.0
+  },
+  {
+   "number": 4,
+   "obj": 6,
+   "first_s": 27.12,
+   "last_s": 35.96,
+   "frames_seen": 261,
+   "gaps_s": "",
+   "small_frames": 15,
+   "dup_hidden": 8,
+   "back_share": 0.0
+  }
+ ],
+ "overlap": [
+  {
+   "frame": 720,
+   "t": 24.02,
+   "what": "whale",
+   "ref_id": 1.0,
+   "grade": "clear",
+   "note": "fluke whale centre",
+   "track": 2.0,
+   "iou": 0.972,
+   "ref_px": 63137
+  },
+  {
+   "frame": 720,
+   "t": 24.02,
+   "what": "whale",
+   "ref_id": 2.0,
+   "grade": "hazy",
+   "note": "left",
+   "track": 1.0,
+   "iou": 0.966,
+   "ref_px": 27996
+  },
+  {
+   "frame": 720,
+   "t": 24.02,
+   "what": "whale",
+   "ref_id": 3.0,
+   "grade": "hazy",
+   "note": "right with bubbles, cut by the edge",
+   "track": 3.0,
+   "iou": 0.603,
+   "ref_px": 16821
+  },
+  {
+   "frame": 720,
+   "t": 24.02,
+   "what": "whale",
+   "ref_id": 4.0,
+   "grade": "hazy",
+   "note": "top left, cut by the edge",
+   "track": NaN,
+   "iou": 0.0,
+   "ref_px": 4836
+  },
+  {
+   "frame": 720,
+   "t": 24.02,
+   "what": "back",
+   "ref_id": NaN,
+   "grade": NaN,
+   "note": NaN,
+   "track": NaN,
+   "iou": 0.967,
+   "ref_px": 44870
+  },
+  {
+   "frame": 810,
+   "t": 27.02,
+   "what": "whale",
+   "ref_id": 1.0,
+   "grade": "clear",
+   "note": "near fluke whale",
+   "track": 2.0,
+   "iou": 0.91,
+   "ref_px": 133998
+  },
+  {
+   "frame": 810,
+   "t": 27.02,
+   "what": "whale",
+   "ref_id": 2.0,
+   "grade": "faint",
+   "note": "pale elongated shape along the fluke's left blade: a calf behind the fluke or a white flipper (uncertain; hand polygon)",
+   "track": 1.0,
+   "iou": 0.022,
+   "ref_px": 5559
+  },
+  {
+   "frame": 810,
+   "t": 27.02,
+   "what": "whale",
+   "ref_id": 3.0,
+   "grade": "hazy",
+   "note": "right, with white flipper, cut by the edge",
+   "track": 3.0,
+   "iou": 0.376,
+   "ref_px": 20379
+  },
+  {
+   "frame": 810,
+   "t": 27.02,
+   "what": "back",
+   "ref_id": NaN,
+   "grade": NaN,
+   "note": NaN,
+   "track": NaN,
+   "iou": 0.98,
+   "ref_px": 48244
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "whale",
+   "ref_id": 1.0,
+   "grade": "clear",
+   "note": "near whale with long white flipper",
+   "track": 2.0,
+   "iou": 0.746,
+   "ref_px": 88888
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "whale",
+   "ref_id": 6.0,
+   "grade": "hazy",
+   "note": "far whale's fluke behind the white flipper",
+   "track": NaN,
+   "iou": 0.0,
+   "ref_px": 5424
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "whale",
+   "ref_id": 3.0,
+   "grade": "clear",
+   "note": "calf under the near whale",
+   "track": 1.0,
+   "iou": 0.932,
+   "ref_px": 16951
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "whale",
+   "ref_id": 2.0,
+   "grade": "clear",
+   "note": "left, spotted",
+   "track": NaN,
+   "iou": 0.0,
+   "ref_px": 26693
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "whale",
+   "ref_id": 4.0,
+   "grade": "hazy",
+   "note": "right, cut by the edge",
+   "track": 3.0,
+   "iou": 0.971,
+   "ref_px": 25426
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "whale",
+   "ref_id": 5.0,
+   "grade": "hazy",
+   "note": "far, lower right",
+   "track": 4.0,
+   "iou": 0.592,
+   "ref_px": 7059
+  },
+  {
+   "frame": 900,
+   "t": 30.03,
+   "what": "back",
+   "ref_id": NaN,
+   "grade": NaN,
+   "note": NaN,
+   "track": NaN,
+   "iou": 0.989,
+   "ref_px": 28849
+  },
+  {
+   "frame": 1065,
+   "t": 35.53,
+   "what": "whale",
+   "ref_id": 2.0,
+   "grade": "hazy",
+   "note": "pale, near the surface, top centre-left",
+   "track": 1.0,
+   "iou": 0.809,
+   "ref_px": 10543
+  },
+  {
+   "frame": 1065,
+   "t": 35.53,
+   "what": "whale",
+   "ref_id": 1.0,
+   "grade": "clear",
+   "note": "fluke whale right",
+   "track": 3.0,
+   "iou": 0.979,
+   "ref_px": 45528
+  },
+  {
+   "frame": 1065,
+   "t": 35.53,
+   "what": "whale",
+   "ref_id": 3.0,
+   "grade": "hazy",
+   "note": "far, below centre",
+   "track": NaN,
+   "iou": 0.0,
+   "ref_px": 7524
+  },
+  {
+   "frame": 1065,
+   "t": 35.53,
+   "what": "whale",
+   "ref_id": 4.0,
+   "grade": "faint",
+   "note": "far, lower right",
+   "track": 4.0,
+   "iou": 0.835,
+   "ref_px": 6027
+  },
+  {
+   "frame": 1065,
+   "t": 35.53,
+   "what": "back",
+   "ref_id": NaN,
+   "grade": NaN,
+   "note": NaN,
+   "track": NaN,
+   "iou": 0.98,
+   "ref_px": 36725
+  }
+ ],
+ "overlap_summary": {
+  "n_ref_whales": 17,
+  "matched": 13,
+  "median_iou_all": 0.746,
+  "median_iou_matched": 0.835,
+  "back_iou": [
+   0.967,
+   0.98,
+   0.989,
+   0.98
+  ]
+ },
+ "mp4": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_01_comp_group_crossing_SAM2.1_same_start.mp4",
+ "mb": 5.7,
+ "sheet": "/home/sat3737/NOAA_whales/review_sheets/underwater/demo_tracks_01_comp_group_crossing_SAM2.1_same_start.jpg"
+}

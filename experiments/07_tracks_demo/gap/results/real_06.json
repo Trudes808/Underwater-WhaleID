@@ -1,0 +1,11 @@
+{
+ "case": "06",
+ "what": "breath, 00007, sensor exit 1465.8 s",
+ "blocked_s": [
+  [
+   1465.57,
+   1469.77
+  ]
+ ],
+ "variants": {}
+}

@@ -158,13 +158,17 @@ class OwlRunner:
     """OWLv2 boxes for a list of text queries; keeps boxes with score >= ``min_score`` after per-query NMS."""
 
     def __init__(self, queries: Sequence[str], model_id: str = "google/owlv2-base-patch16-ensemble",
-                 min_score: float = 0.03, batch: int = 4, name: str = "owlv2-base", patch_scores: bool = False):
+                 min_score: float = 0.03, batch: int = 4, name: str = "owlv2-base", patch_scores: bool = False,
+                 gpu_preprocess: bool = False):
         from transformers import Owlv2ForObjectDetection, Owlv2Processor
         self.torch, self.dev = _torch_setup()
         self.queries, self.min_score, self.batch, self.name = list(queries), min_score, batch, name
         # patch_scores: every box also carries the score of every query at its patch (columns score__<query>),
         # so a "whale" box can be compared with the "fish" score of the same box (WP7 fish rule)
         self.patch_scores = patch_scores
+        # gpu_preprocess: the processor's own torch ops (pad, anti-aliased resize, normalise) run on the GPU instead of
+        # the CPU (same operations; ~0.2 s per 1080p frame saved on a loaded CPU)
+        self.pre_device = self.dev if gpu_preprocess else None
         self.proc = Owlv2Processor.from_pretrained(model_id)
         self.model = Owlv2ForObjectDetection.from_pretrained(model_id, torch_dtype=self.torch.float16).to(self.dev).eval()
         tok = self.proc(text=[self.queries], return_tensors="pt")
@@ -176,7 +180,8 @@ class OwlRunner:
         out_all = []
         for i in range(0, len(images), self.batch):
             ims = images[i:i + self.batch]
-            pix = self.proc(images=list(ims), return_tensors="pt")["pixel_values"].to(self.dev, torch.float16)
+            kw = {"device": self.pre_device} if self.pre_device else {}
+            pix = self.proc(images=list(ims), return_tensors="pt", **kw)["pixel_values"].to(self.dev, torch.float16)
             n = len(ims)
             with torch.no_grad():
                 out = self.model(input_ids=self.input_ids.repeat(n, 1), attention_mask=self.attn.repeat(n, 1),

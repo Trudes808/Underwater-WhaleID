@@ -108,8 +108,18 @@ def evaluate_label(label: str) -> dict:
     res["frames_per_piece"] = {p: {"clear_whale": [int(g[g.whale].kept.sum()), int(g.whale.sum())],
                                    "whale_free": [int(g[g.whale_free].kept.sum()), int(g.whale_free.sum())]}
                                for p, g in lab.groupby("piece")}
+    # WP3b size / quality labels of the largest other whale (AI by-eye, 0.1 steps of the frame width)
+    if "whale_size" in lab.columns:
+        wl = lab[lab.whale].copy()
+        wl["size_bin"] = pd.cut(pd.to_numeric(wl.whale_size, errors="coerce"), [0, 0.15, 0.25, 1.01],
+                                labels=["0.1", "0.2", ">=0.3"])
+        res["clear_whale_by_size"] = {str(k): [int(g.kept.sum()), int(len(g))] for k, g in wl.groupby("size_bin",
+                                                                                                    observed=False)}
+        res["clear_whale_by_quality"] = {str(k): [int(g.kept.sum()), int(len(g))] for k, g in wl.groupby("quality")}
     lost = lab[lab.whale & ~lab.kept]
-    res["lost_whale_frames"] = lost[["piece", "frame", "t_mov", "why", "whale_score", "other_whales", "note"]] \
+    cols = ["piece", "frame", "t_mov", "why", "whale_score", "other_whales", "note"] + \
+        [c for c in ("whale_size", "quality") if c in lost.columns]
+    res["lost_whale_frames"] = lost[cols] \
         .assign(t_mov=lambda x: x.t_mov.round(2), whale_score=lambda x: x.whale_score.round(3)).to_dict("records")
     res["lost_by_reason"] = lost.why.value_counts().to_dict()
     res["kept_whale_free_by_why"] = lab[lab.whale_free & lab.kept].why.value_counts().to_dict()
@@ -123,9 +133,12 @@ def evaluate_label(label: str) -> dict:
             "n_clips": sum(r["n_clips"] for r in recs),
             "dropped_min": {k: sum(r["dropped_s"][k] for r in recs) / 60 for k in REASONS},
             "windows": sum(r["windows"] for r in recs), "windows_scanned": sum(r["windows_scanned"] for r in recs),
+            "hq_min": sum(r.get("hq_windows", 0) for r in recs) / 60,
+            "hq_stretch_min": sum(r.get("hq_stretch_s", 0) for r in recs) / 60,
             "whale_windows": sum(r["whale_windows"] for r in recs)}
     res["per_recording"] = {r["recording"][-5:]: {"min": r["seconds"] / 60, "kept_min": r["kept_s"] / 60,
-                                                   "clips": r["n_clips"],
+                                                   "clips": r["n_clips"], "hq_min": r.get("hq_windows", 0) / 60,
+                                                   "hq_clips": r.get("n_hq_clips", 0),
                                                    "dropped_min": {k: round(v / 60, 2) for k, v in r["dropped_s"].items()}}
                             for r in summ["recordings"]}
     res["offset_check"] = summ.get("offset_check")
@@ -163,7 +176,7 @@ def m4v_crosscheck() -> dict:
     """WP5a's cached .m4v window decisions (strict rule) against this run's .mov decisions, on the windows of the
     same labelled frames that the scan scanned."""
     out = {}
-    for label in ("strict",):
+    for label in ("strict+nonear+px0",):   # the WP5a settings: no size limit, whole-frame boxes dropped
         d = SCAN / DEP / label
         if not (d / "windows").exists():
             continue
@@ -204,6 +217,7 @@ def main():
                       if (lb / "intervals.json").exists()}
     res["m4v_crosscheck"] = m4v_crosscheck()
     (OUT / "eval.json").write_text(json.dumps(res, indent=1, default=str))
+    (OUT / "tables_auto.md").write_text(markdown(res))
     for lb, r in res["runs"].items():
         if not r:
             continue
@@ -214,6 +228,7 @@ def main():
               f"{fr['whale_free']['kept']}/{fr['whale_free']['n']}, faint-only kept {fr['faint_only']['kept']}/"
               f"{fr['faint_only']['n']}")
         print(f"  lost by reason {r['lost_by_reason']}; kept whale-free by why {r['kept_whale_free_by_why']}")
+        print(f"  clear whale kept by size {r.get('clear_whale_by_size')} by quality {r.get('clear_whale_by_quality')}")
         for name, dd in (("00004-00010", dl), ("all", da)):
             print(f"  {name}: kept {dd['kept_min']:.1f} of {dd['minutes']:.1f} min in {dd['n_clips']} stretches; "
                   + ", ".join(f"{k} {v:.1f}" for k, v in dd["dropped_min"].items()))
@@ -222,6 +237,49 @@ def main():
               f"whale-free {r['whale_free_frames']}; drops {r['drop']}")
     print("\nindex mapping:", {p: v["same"] for p, v in res["index_mapping"].items()})
     print("m4v crosscheck:", res["m4v_crosscheck"])
+
+
+
+
+def markdown(res: dict) -> str:
+    """Tables for tables.md from eval.json."""
+    L = []
+    runs = res["runs"]
+    L.append("| run | clear-whale frames kept | whale-free frames kept | faint-only kept | fish frames kept | "
+             "kept min (00004-00010) | kept min (all 9) | hq_whale windows min (all 9) |")
+    L.append("|---|---|---|---|---|---|---|---|")
+    for lb, r in runs.items():
+        if not r:
+            continue
+        f = r["frames"]
+        dl, da = r["deployment"]["labelled 00004-00010"], r["deployment"]["all pieces"]
+        L.append(f"| {lb} | {f['clear_whale']['kept']}/{f['clear_whale']['n']} | {f['whale_free']['kept']}/"
+                 f"{f['whale_free']['n']} | {f['faint_only']['kept']}/{f['faint_only']['n']} | "
+                 f"{f['fish_frames']['kept']}/{f['fish_frames']['n']} | {dl['kept_min']:.1f} of {dl['minutes']:.1f} | "
+                 f"{da['kept_min']:.1f} of {da['minutes']:.1f} | {da.get('hq_min', float('nan')):.1f} |")
+    L.append("")
+    L.append("Minutes dropped by reason (all 9 recordings):")
+    L.append("")
+    L.append("| run | " + " | ".join(REASONS) + " |")
+    L.append("|---|" + "---|" * len(REASONS))
+    for lb, r in runs.items():
+        if r:
+            d = r["deployment"]["all pieces"]["dropped_min"]
+            L.append(f"| {lb} | " + " | ".join(f"{d[k]:.1f}" for k in REASONS) + " |")
+    L.append("")
+    for lb in ("sensitive", "strict"):
+        r = runs.get(lb)
+        if not r:
+            continue
+        L.append(f"Per recording, {lb}:")
+        L.append("")
+        L.append("| piece | min | kept min | stretches | hq_whale min (windows) | " + " | ".join(REASONS) + " |")
+        L.append("|---|---|---|---|---|" + "---|" * len(REASONS))
+        for p, x in r["per_recording"].items():
+            L.append(f"| {p} | {x['min']:.1f} | {x['kept_min']:.1f} | {x['clips']} | {x.get('hq_min', 0):.1f} | "
+                     + " | ".join(f"{x['dropped_min'][k]:.1f}" for k in REASONS) + " |")
+        L.append("")
+    return "\n".join(L)
 
 
 if __name__ == "__main__":
