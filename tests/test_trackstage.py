@@ -110,3 +110,9 @@ def test_frame_store_gives_the_decoded_frames(tmp_path):
     meta["complete"] = False
     (d / "index.json").write_text(json.dumps(meta))
     assert T.stored(tmp_path / "store", v, f0, f1) is None          # incomplete store: decode as before
+
+
+def test_scan_key_for_names_with_spaces():
+    # WP19: the scan stores "2025-12-20 CG.m4v" as "2025-12-20_CG.m4v"; names without spaces are unchanged
+    assert T.scan_key("2025-12-20 CG.m4v") == "2025-12-20_CG.m4v"
+    assert T.scan_key("CC-11-96-20250203-104242-000-00005.mov") == "CC-11-96-20250203-104242-000-00005.mov"

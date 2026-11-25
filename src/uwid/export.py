@@ -54,6 +54,11 @@ WINDOW_COLS = [
 BOX_COLS = ("whale_box_x0", "whale_box_y0", "whale_box_x1", "whale_box_y1")
 
 
+def _safe(name: str) -> str:
+    """Path component without spaces (the dev clip's file name has one); the ``recording`` fields keep the name."""
+    return name.replace(" ", "_")
+
+
 def out_root() -> Path:
     return paths.cache_dir("export") / "web_v1"
 
@@ -428,7 +433,7 @@ def export(deps: Iterable[str] | None = None, root: Path | None = None, force: b
             if w is not None:
                 wc = windows_csv(w, _det_size(dep, Path(src).name))
                 (ddir / "windows").mkdir(parents=True, exist_ok=True)
-                wc.to_csv(ddir / "windows" / f"{stem}.csv", index=False)
+                wc.to_csv(ddir / "windows" / f"{_safe(stem)}.csv", index=False)
                 c0 = w.loc[w.t0 == 0, "clock"] if "clock" in w else []
                 first_clock = (str(c0.iloc[0]) or None) if len(c0) and isinstance(c0.iloc[0], str) else None
             other = [p.name for p in Path(src).parent.glob(stem + ".*") if p.suffix.lower() != Path(src).suffix.lower()]
@@ -436,7 +441,7 @@ def export(deps: Iterable[str] | None = None, root: Path | None = None, force: b
             recs.append(dict(info, recording=stem, first_frame_clock=first_clock,
                              clock_fit=dict(ok=cl.get("ok"), kind=cl.get("kind"), rms_s=cl.get("rms_s")) if cl else None,
                              other_forms=sorted(other),
-                             windows=f"{did}/windows/{stem}.csv" if w is not None else None))
+                             windows=f"{did}/windows/{_safe(stem)}.csv" if w is not None else None))
         write_json(ddir / "stretches.json", dict(format=FORMAT, version=VERSION, kind="stretches", deployment=dep,
                                                  preset=PRESET, scan_created=iv.get("created"),
                                                  recordings=stretches(iv)))
@@ -451,9 +456,9 @@ def export(deps: Iterable[str] | None = None, root: Path | None = None, force: b
                 rec = Path(tr.meta["video"]).stem
                 a, b = _span_of(d)
                 stem = f"{a:07.2f}-{b:07.2f}"
-                jrel = f"{did}/tracks/{group}/{rec}/{stem}.json"
-                crel = f"{did}/clips/{group}/{rec}/{stem}.mp4"
-                prel = f"{did}/clips/{group}/{rec}/{stem}.jpg"
+                jrel = f"{did}/tracks/{group}/{_safe(rec)}/{stem}.json"
+                crel = f"{did}/clips/{group}/{_safe(rec)}/{stem}.mp4"
+                prel = f"{did}/clips/{group}/{_safe(rec)}/{stem}.jpg"
                 doc = track_json(tr, group, dep, rec, (a, b), crel, prel, note=note)
                 mp4, jpg = root / crel, root / prel
                 if clips and (force or not mp4.exists() or not jpg.exists()):

@@ -7,6 +7,45 @@ Newest entry first. One entry per finished piece of work:
 
 Rules of evidence are in `CLAUDE.md` (split by video, AI by-eye labels are named as such, one run is one run).
 
+## 2026-11-24 22:00  12_export (WP19 final run): dev clip tracked (10 spans, 46 -> 45 numbers in 45.5 s, 16 lasting >= 3 s, 1 link, 82 candidates "not lone"); bundle with all three deployments: 162 tracked spans + clips, 173 MB; checker 0 problems, 162 / 162 clips frame-exact, IoU min 0.979 / median 0.992
+- Dev clip: `uwid tracks 2025-12-20_CG` (default settings as of WP18, nothing tuned), one locked piece 21:44-21:52,
+  416 GPU s. Fault found first: trackstage looked for the dev clip's scan files under its real name (with a space)
+  while the scan stores them with `_`, so no start boxes would have been found; fixed with `trackstage.scan_key`
+  (windows table and detector cache lookup only; test `test_scan_key_for_names_with_spaces`). Old dev run
+  `0024.00-0036.00_online` moved aside as `*_pre_wp19`. No sensor log: blocked frames by the air-share rule (100
+  frames). The own-back template was not built for any dev span ("fewer than 5 frames in the block"). Endings:
+  appearance drift 12, shape jump 4, area jump 4, swallowed another track 2, re-found 1; starts refused 14
+  (surface / bubbles 11, box classifier other 2, fish 1). With many whales in view the purity rule ends numbers
+  early and the link rule never finds a lone break: many short numbers (median life 1.07 s, 21 of 45 under 1 s).
+- Export changes: group `hq` = what `uwid tracks <deployment>` runs (on the two test deployments exactly the 135
+  WP13 spans, checked folder by folder; the dev clip adds 10); `extra` from `tracks/extra_stretches.csv` with its
+  `note` in the index and the track file; `links[].others_numbers`; spaces in path components replaced by `_` (dev
+  clip); dev clip windows table found. Format document: clock facts (2025-02-03 burned-in clock = sensor time + 2.03
+  s; dev clip about two hours later than the field notes, open), caution on the 2025-02-03 `.m4v` copies (dropped
+  frames, drift up to 1.5 s, washed-out levels: every time refers to the `.mov`). README command block: `uwid
+  tracks` and `uwid export` with their options.
+- Final export (JSON / CSV rewritten with the WP18 clean-up; existing clips kept, 10 new): 3 deployments, 19
+  recordings, 162 spans (hq 145, extra 17), 208 whale numbers; 173 MB (clips 128 MB, track JSON 34 MB).
+- Checker: (i) `/usr/bin/python3 -I`: 0 problems; (ii) 162 / 162 clips decode to the JSON frame count and
+  1280 x 720; 20 picks seed 20261124 (other picks than the first run: the span list changed): IoU min 0.9793 (a
+  small outline, 8,180 px), median 0.9921. Picture `review_sheets/underwater/export_check_02.jpg` (3 dev-clip tiles
+  first). 91 tests pass. Tables: `experiments/12_export/tables.md` (final run section).
+
+**Reviewer's note (main thread, 22:02).** Heading time matches the clock (entry 22:00, `date` 22:01). My own run of
+the tests: 91 passed. My own walk of the final bundle with `/usr/bin/python3 -I`: 3 deployments, 162 spans (hq 118 +
+17 + 10, extra 16 + 1), 208 numbers (144 + 19 + 45), every track, clip and poster path exists, 19 windows files; the
+17 extra spans carry their notes. Dev clip from the track files: 45 numbers, median life 1.07 s, 16 lasting >= 3 s
+(22 under 1 s by first-to-last time; the entry's 21 counts outlined time). The GPU piece ran 21:44-21:52 under the
+lock with `timeout 900`. `export_check_02.jpg` (12 frames drawn from the bundle alone, 3 from the dev clip): outlines
+on whales in all 12; on the first dev tile a pale whale in mid-frame has no outline, so in crowded frames not every
+whale is outlined (AI by-eye). Bundle 173 MB, cache 13 GB, nothing of ours running.
+Two things the dev-clip run showed that were not known before: `uwid tracks` could not find the scan files of a
+recording whose name has a space (fixed, `trackstage.scan_key`, with a test: the dev clip was the only such name, so
+no earlier result is affected); and without a sensor log the own-back template is never built, so on the dev clip the
+default of WP18 has no effect. The second is a limit, not fixed: it is written into `HANDOFF_WEB.md`.
+`HANDOFF_WEB.md` (repo root) is mine; I corrected its polygon figure to the final run's (IoU 0.98 or better) and its
+counts to the final bundle.
+
 ## 2026-11-24 21:42  12_export (WP19): web export bundle `uwid-web-export` v1: 3 deployments, 19 recordings, 152 tracked spans with outlines as polygons + 152 plain H.264 clips (frame j = track frame j, 152 / 152 checked), 154 MB; polygons vs masks IoU min 0.986, median 0.994
 - New `src/uwid/export.py` + `uwid export [deployment ...] [--force] [--no-clips] [--out]` (cli: own subparser
   only); test `tests/test_export.py` (synthetic video + hand-made run: fields, polygons in 0..1 rasterise back at IoU

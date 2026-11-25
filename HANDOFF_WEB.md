@@ -29,7 +29,7 @@ one day, recorded in pieces of about 30 minutes.
 |---|---|---|---|
 | `2025-02-03_CC-11-96` | tag on a mother with a calf (the user: "a calf swimming close in front of the mom who is tagged with the camera") | 9 recordings, 4.45 h, 1080p | test deployment; 2025-02-03 is also a photo day in the web app |
 | `2025-01-02_CC-09-85` | 9 of this tag's recordings, on a whale in a group; boat footage at the start, the whale scraping along the seafloor in the middle | 2.35 h, 4K | test deployment; 2025-01-02 is also a labelled photo day; recordings 00013-00016 and 00018-00022 are not on disk |
-| `2025-12-20_CG` | a 95 s exported highlight of a large competitive group, many whales per frame | 1 file, 1080p, no sensor log | the development clip: the only footage any setting was tuned on; photos of that day are not on disk |
+| `2025-12-20_CG` | a 95 s exported highlight of a large competitive group, many whales per frame | 1 file, 1080p, no sensor log | the development clip: the only footage any setting was tuned on; photos of that day are not on disk; its file name has a space (`2025-12-20 CG.m4v`), paths in the bundle use `_` |
 
 ## How the results are produced
 
@@ -79,7 +79,8 @@ All picture-side checks are an AI agent's by-eye labels unless a line says the u
 | seafloor, sand, dark | low | fitted on one recording; `seafloor_share` is high in open water on 2025-01-02. Do not present these as findings |
 | a tracked outline is on a whale | good | in a random sample of 24 numbers every outline was on a whale or part of one |
 | a number stays on one animal | good in what was checked | no number moved between animals in the sample; all 8 joins checked were right |
-| numbers in crowded scenes | short | with several whales in view the purity rule ends numbers early; expect many short numbers on the dev clip |
+| numbers in crowded scenes | short, and not every whale is outlined | with several whales in view the purity rule ends numbers early and no joins are made: the dev clip has 45 numbers in 45.5 s of tracked video, half of them under 1.1 s; some whales in a crowded frame have no outline at all |
+| the tagged whale's back on the dev clip | as before the 2026-11-24 change | the own-back template needs a sensor log to know when the tag is on the whale under water; the dev clip has none, so the back there is the tracker's whole back object |
 | shapes right after a breath | doubtful | the user found one "pale animal" after a breath to be "just bubbles"; one exported number sits on the sea surface (2025-02-03, 00005, 379.7-380.7 s, number 2) |
 | the calf stretch | user-reviewed | the user on the video with the current rules: "looks quite good"; number 2 there "is a calf but it is quite far in distance" |
 
@@ -90,7 +91,7 @@ outlines.
 
 - **The source recordings do not play in most browsers.** They are HEVC (2025-02-03 tagged `hev1`, 2025-01-02
   4K `hvc1`). The bundle's clips are H.264 at 1280 x 720 and play everywhere, but they exist only for tracked
-  spans (152 in the first run; see `index.json` for the current count).
+  spans (162 at hand-over: 145 `hq` and 17 `extra`; `index.json` has the current list).
 - **Whole-recording playback needs a proxy that nobody has made.** 6.8 hours of source video is a real cost in CPU
   and disk; ask the user before making it. There is no system ffmpeg on this machine; this repo's `.venv` has it
   through `imageio-ffmpeg` (you may run that interpreter, not install into it).
@@ -130,7 +131,7 @@ These come from this repo's `CLAUDE.md` and from the user. They apply to anythin
 | depth at full rate, motion, light | the tag's log under `underwater_video/<deployment>/Data/` | `windows.csv` has depth once per second, which is enough for a timeline |
 | which photos were taken while the tagged whale surfaced | counts only, in `experiments/11_photo_link/tables.md` | the tag clock and camera clock differ by about 3 minutes (camera ahead; offsets -173.3 s and -170.2 s). The cache for this holds photo keys with a person's name: do not display or copy them. Linking video to the photo pages is a decision for the user, and which whale carries the tag on 2025-02-03 is still open |
 | 3D meshes | `review_sheets/underwater/mesh3d_*`, state under "Parked" in `PLAN.md` | paused by the user on 2026-11-24; not for the page unless the user asks |
-| raw masks and per-frame tables | `underwater_cache/tracks/` (npz, parquet) | the bundle's polygons agree with the masks to IoU 0.986 or better on 20 random checks |
+| raw masks and per-frame tables | `underwater_cache/tracks/` (npz, parquet) | the bundle's polygons agree with the masks to IoU 0.98 or better on 20 random checks (median 0.992) |
 
 ## Ideas for the page
 
@@ -169,6 +170,7 @@ high-quality spans went is in `experiments/07_tracks_demo/tables.md`, section D9
 
 ## State of this repo at hand-over
 
-No job is running. The tracker's defaults are final as of 2026-11-24 (own-back template on, far specks dropped from
+Bundle at hand-over: 3 deployments, 19 recordings, 162 tracked spans with 208 numbers, 173 MB, made 2026-11-24
+21:57; both parts of the checker pass. No job is running. The tracker's defaults are final as of 2026-11-24 (own-back template on, far specks dropped from
 outlines). 3D work is paused. Detection questions that remain open are listed in `PLAN.md`. The user commits this
 repo; agents do not.

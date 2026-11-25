@@ -64,7 +64,9 @@ web_v1/
     clips/<group>/<recording>/<t0>-<t1>.check.json  frame count of the clip as decoded after writing
 ```
 
-`<recording>` = recording file name without extension (e.g. `CC-11-96-20250203-104242-000-00005`); `<t0>-<t1>` =
+`<recording>` = recording file name without extension (e.g. `CC-11-96-20250203-104242-000-00005`), with spaces
+replaced by `_` in paths (the dev clip `2025-12-20 CG` -> `2025-12-20_CG`; the `recording` fields keep the real name);
+`<t0>-<t1>` =
 the span asked for, in seconds with 2 decimals and leading zeros (`0332.00-0348.00`). All paths inside the JSON files
 are relative to the bundle folder.
 
