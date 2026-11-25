@@ -51,6 +51,28 @@
    ],
    "blocked_frames_with_outline": "0/126",
    "gpu_s_per_video_s": 5.88
+  },
+  "c": {
+   "whale_ids": 2,
+   "gaps": [
+    {
+     "gap_s": 4.2,
+     "blocked_s": 4.2,
+     "ids_before": [
+      1
+     ],
+     "ids_after": [
+      1
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [],
+     "gone": []
+    }
+   ],
+   "blocked_frames_with_outline": "55/126",
+   "gpu_s_per_video_s": 7.49
   }
  }
 }

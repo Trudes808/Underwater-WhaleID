@@ -1,0 +1,22 @@
+{
+ "wp13": {
+  "spans": 135,
+  "before_links": [
+   157,
+   157
+  ],
+  "after_links": [
+   149,
+   149
+  ],
+  "spans_differing": []
+ },
+ "stretches": {
+  "total_wp17": 16,
+  "total_now": 16,
+  "differing": []
+ },
+ "dev_online": {
+  "numbers": 5
+ }
+}

@@ -1,0 +1,15 @@
+run,scene,whale_numbers_without,whale_numbers_with,links
+demo05,lone,9,8,2
+demo07,lone,2,3,0
+R04a,lone,6,4,2
+R04b,lone,6,4,2
+R05a,lone,4,1,5
+R05b,lone,3,1,4
+R06a,lone,2,1,1
+R06b,lone,2,1,1
+demo01,multi,6,6,0
+demo02,multi,23,24,0
+R01a,multi,23,24,0
+R01b,multi,21,22,0
+R02a,multi,19,19,0
+R02b,multi,16,16,0

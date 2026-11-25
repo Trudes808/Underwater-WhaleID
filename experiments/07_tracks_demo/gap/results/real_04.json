@@ -7,5 +7,94 @@
    584.62
   ]
  ],
- "variants": {}
+ "variants": {
+  "a": {
+   "whale_ids": 3,
+   "gaps": [
+    {
+     "gap_s": 3.17,
+     "blocked_s": 3.17,
+     "ids_before": [
+      1,
+      2,
+      3
+     ],
+     "ids_after": [
+      1,
+      2
+     ],
+     "same_number": [
+      1,
+      2
+     ],
+     "new_after": [],
+     "gone": [
+      3
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "33/95",
+   "gpu_s_per_video_s": 8.3
+  },
+  "b": {
+   "whale_ids": 4,
+   "gaps": [
+    {
+     "gap_s": 3.17,
+     "blocked_s": 3.17,
+     "ids_before": [
+      1,
+      2,
+      3
+     ],
+     "ids_after": [
+      1,
+      4
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [
+      4
+     ],
+     "gone": [
+      2,
+      3
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "0/95",
+   "gpu_s_per_video_s": 7.37
+  },
+  "c": {
+   "whale_ids": 4,
+   "gaps": [
+    {
+     "gap_s": 3.17,
+     "blocked_s": 3.17,
+     "ids_before": [
+      1,
+      2,
+      3
+     ],
+     "ids_after": [
+      1,
+      4
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [
+      4
+     ],
+     "gone": [
+      2,
+      3
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "59/95",
+   "gpu_s_per_video_s": 9.01
+  }
+ }
 }

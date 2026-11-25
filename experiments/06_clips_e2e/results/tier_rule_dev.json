@@ -1,0 +1,273 @@
+{
+ "grid": [
+  {
+   "min_px": 300,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 109,
+   "hq_ok": 109,
+   "low_called_ok": 35,
+   "low": 36
+  },
+  {
+   "min_px": 300,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 101,
+   "hq_ok": 109,
+   "low_called_ok": 31,
+   "low": 36
+  },
+  {
+   "min_px": 300,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 94,
+   "hq_ok": 109,
+   "low_called_ok": 20,
+   "low": 36
+  },
+  {
+   "min_px": 300,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 92,
+   "hq_ok": 109,
+   "low_called_ok": 14,
+   "low": 36
+  },
+  {
+   "min_px": 400,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 109,
+   "hq_ok": 109,
+   "low_called_ok": 32,
+   "low": 36
+  },
+  {
+   "min_px": 400,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 101,
+   "hq_ok": 109,
+   "low_called_ok": 28,
+   "low": 36
+  },
+  {
+   "min_px": 400,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 94,
+   "hq_ok": 109,
+   "low_called_ok": 17,
+   "low": 36
+  },
+  {
+   "min_px": 400,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 92,
+   "hq_ok": 109,
+   "low_called_ok": 13,
+   "low": 36
+  },
+  {
+   "min_px": 450,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 107,
+   "hq_ok": 109,
+   "low_called_ok": 32,
+   "low": 36
+  },
+  {
+   "min_px": 450,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 99,
+   "hq_ok": 109,
+   "low_called_ok": 28,
+   "low": 36
+  },
+  {
+   "min_px": 450,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 92,
+   "hq_ok": 109,
+   "low_called_ok": 17,
+   "low": 36
+  },
+  {
+   "min_px": 450,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 90,
+   "hq_ok": 109,
+   "low_called_ok": 13,
+   "low": 36
+  },
+  {
+   "min_px": 500,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 107,
+   "hq_ok": 109,
+   "low_called_ok": 32,
+   "low": 36
+  },
+  {
+   "min_px": 500,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 99,
+   "hq_ok": 109,
+   "low_called_ok": 28,
+   "low": 36
+  },
+  {
+   "min_px": 500,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 92,
+   "hq_ok": 109,
+   "low_called_ok": 17,
+   "low": 36
+  },
+  {
+   "min_px": 500,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 90,
+   "hq_ok": 109,
+   "low_called_ok": 13,
+   "low": 36
+  },
+  {
+   "min_px": 550,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 102,
+   "hq_ok": 109,
+   "low_called_ok": 27,
+   "low": 36
+  },
+  {
+   "min_px": 550,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 94,
+   "hq_ok": 109,
+   "low_called_ok": 23,
+   "low": 36
+  },
+  {
+   "min_px": 550,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 87,
+   "hq_ok": 109,
+   "low_called_ok": 12,
+   "low": 36
+  },
+  {
+   "min_px": 550,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 85,
+   "hq_ok": 109,
+   "low_called_ok": 8,
+   "low": 36
+  },
+  {
+   "min_px": 600,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 95,
+   "hq_ok": 109,
+   "low_called_ok": 22,
+   "low": 36
+  },
+  {
+   "min_px": 600,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 87,
+   "hq_ok": 109,
+   "low_called_ok": 20,
+   "low": 36
+  },
+  {
+   "min_px": 600,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 80,
+   "hq_ok": 109,
+   "low_called_ok": 9,
+   "low": 36
+  },
+  {
+   "min_px": 600,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 78,
+   "hq_ok": 109,
+   "low_called_ok": 7,
+   "low": 36
+  },
+  {
+   "min_px": 650,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 87,
+   "hq_ok": 109,
+   "low_called_ok": 17,
+   "low": 36
+  },
+  {
+   "min_px": 650,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 79,
+   "hq_ok": 109,
+   "low_called_ok": 15,
+   "low": 36
+  },
+  {
+   "min_px": 650,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 72,
+   "hq_ok": 109,
+   "low_called_ok": 4,
+   "low": 36
+  },
+  {
+   "min_px": 650,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 70,
+   "hq_ok": 109,
+   "low_called_ok": 2,
+   "low": 36
+  },
+  {
+   "min_px": 700,
+   "min_score": 0.25,
+   "hq_ok_kept_ok": 65,
+   "hq_ok": 109,
+   "low_called_ok": 15,
+   "low": 36
+  },
+  {
+   "min_px": 700,
+   "min_score": 0.3,
+   "hq_ok_kept_ok": 59,
+   "hq_ok": 109,
+   "low_called_ok": 13,
+   "low": 36
+  },
+  {
+   "min_px": 700,
+   "min_score": 0.4,
+   "hq_ok_kept_ok": 52,
+   "hq_ok": 109,
+   "low_called_ok": 4,
+   "low": 36
+  },
+  {
+   "min_px": 700,
+   "min_score": 0.5,
+   "hq_ok_kept_ok": 50,
+   "hq_ok": 109,
+   "low_called_ok": 2,
+   "low": 36
+  }
+ ],
+ "chosen": {
+  "min_px": 400.0,
+  "min_score": 0.25,
+  "hq_ok_kept_ok": 109.0,
+  "hq_ok": 109.0,
+  "low_called_ok": 32.0,
+  "low": 36.0
+ },
+ "grades": {
+  "ok": 94,
+  "low": 36,
+  "hq": 15
+ }
+}

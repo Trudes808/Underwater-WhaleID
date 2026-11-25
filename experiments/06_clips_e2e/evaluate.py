@@ -1,6 +1,11 @@
 """WP7 measures from the `uwid scan` outputs (nothing is fitted or tuned here).
 
     .venv/bin/python experiments/06_clips_e2e/evaluate.py            # all run labels found under the scan folder
+    .venv/bin/python experiments/06_clips_e2e/evaluate.py --dep d2   # the second deployment (tag CC-09-85)
+
+The second deployment is scored against WP3b's labels (AI by-eye: `labels/<video stem>/frames.csv`, 20-60 frames
+per recording, `seafloor_spans.csv`, `blocked_spans.csv`), only when every recording has its
+`underwater_cache/reference/<stem>/DONE`. Writes `results/eval_d2.json` and prints its tables.
 
 Truth: WP3's AI by-eye frame labels (120 frames per 30-min piece for 2025-02-03 00004-00010; 191 frames of the dev
 clip). Each labelled frame is placed on the `.mov` timeline: the label files index the `.m4v` conversions, whose
@@ -94,9 +99,11 @@ def evaluate_label(label: str) -> dict:
         tab = video.frame_table(VD / f"{st}.mov")
         win = pd.read_csv(d / "windows" / f"{st}.mov.csv")
         lab = frames_vs_keep(labels, tab.times, ivs[st]["keep"], win).assign(piece=p)
+        lab = label_window_columns(lab, win)
         allf.append(lab)
     lab = pd.concat(allf, ignore_index=True)
     lab["faint_only"] = ~lab.whale & lab.faint
+    res["activity_tiers"] = activity_and_tiers(lab)
 
     def share(m):
         return {"kept": int(lab[m].kept.sum()), "n": int(m.sum())}
@@ -131,10 +138,14 @@ def evaluate_label(label: str) -> dict:
         res["deployment"][scope] = {
             "recordings": len(recs), "minutes": tot / 60, "kept_min": sum(r["kept_s"] for r in recs) / 60,
             "n_clips": sum(r["n_clips"] for r in recs),
-            "dropped_min": {k: sum(r["dropped_s"][k] for r in recs) / 60 for k in REASONS},
+            "dropped_min": {k: sum(r["dropped_s"].get(k, 0) for r in recs) / 60 for k in REASONS},
             "windows": sum(r["windows"] for r in recs), "windows_scanned": sum(r["windows_scanned"] for r in recs),
             "hq_min": sum(r.get("hq_windows", 0) for r in recs) / 60,
             "hq_stretch_min": sum(r.get("hq_stretch_s", 0) for r in recs) / 60,
+            "tier_window_min": {t: sum(r.get("tier_window_s", {}).get(t, 0) for r in recs) / 60 for t in TIER_ORDER[:5]},
+            "clip_min_by_tier": {t: sum(r.get("clip_s_by_tier", {}).get(t, 0) for r in recs) / 60
+                                 for t in TIER_ORDER[:5]},
+            "n_clips_by_tier": {t: sum(r.get("n_clips_by_tier", {}).get(t, 0) for r in recs) for t in TIER_ORDER[:5]},
             "whale_windows": sum(r["whale_windows"] for r in recs)}
     res["per_recording"] = {r["recording"][-5:]: {"min": r["seconds"] / 60, "kept_min": r["kept_s"] / 60,
                                                    "clips": r["n_clips"], "hq_min": r.get("hq_windows", 0) / 60,
@@ -144,6 +155,61 @@ def evaluate_label(label: str) -> dict:
     res["offset_check"] = summ.get("offset_check")
     res["timings"] = summ.get("timings_this_run")
     return res
+
+
+GRADES = ["hq", "ok", "low", "whale-free"]
+TIER_ORDER = ["hq", "ok", "low", "small", "fish", "none"]
+
+
+def label_window_columns(lab: pd.DataFrame, win: pd.DataFrame) -> pd.DataFrame:
+    """Add the window's tier, activity, water and detector columns to labelled frames (by ``t_mov``)."""
+    W = win.set_index("k")
+    kk = np.floor(lab.t_mov).astype(int).clip(upper=W.index.max())
+    lab = lab.copy()
+    for c in ("tier", "active", "whale", "small", "fish", "hq_whale", "silhouette", "dark", "sand", "whale_px", "fish_score", "small_score",
+              "whale_score", "water", "water_picture", "bubbles", "tag_state", "why", "kept"):
+        if c in W.columns:
+            lab["w_" + c] = kk.map(W[c]).to_numpy()
+    lab["tier"] = lab.get("w_tier", pd.Series("none", index=lab.index)).fillna("none")
+    q = lab["quality"].astype(object).fillna("").astype(str) if "quality" in lab.columns else pd.Series("", index=lab.index)
+    lab["grade"] = np.where(lab.whale & q.isin(["hq", "ok", "low"]), q,
+                            np.where(lab.whale, "low", np.where(lab.whale_free, "whale-free", "faint only")))
+    return lab
+
+
+def activity_and_tiers(lab: pd.DataFrame) -> dict:
+    """The user's measures since 2026-11-22: activity kept (costly error: activity dropped), empty kept (cheap),
+    labelled grade against the tool's tier, and the advanced_ok error (a low or whale-free frame in an hq window)."""
+    # a whale seen from the drone through the surface (frames labelled air) is not activity the scan can keep
+    # (orchestrator's review of WP9: 5 of the 15 "lost" CC-09-85 frames were the drone's approach)
+    act = ((lab.whale | lab.faint) & lab.state.ne("air")) | lab.fish_present
+    empty = lab.whale_free & ~lab.fish_present & (lab.state == "underwater")
+    out = {"activity_frames": [int(lab[act].kept.sum()), int(act.sum())],
+           "activity_lost": lab[act & ~lab.kept][["piece", "frame", "t_mov", "why", "grade", "fish"]
+                                                 ].assign(t_mov=lambda x: x.t_mov.round(1)).to_dict("records"),
+           "empty_underwater_frames_kept": [int(lab[empty].kept.sum()), int(empty.sum())],
+           "fish_frames_kept": [int(lab[lab.fish_present].kept.sum()), int(lab.fish_present.sum())]}
+    tab = pd.crosstab(lab.grade, lab.tier).reindex(index=GRADES + ["faint only"], columns=TIER_ORDER, fill_value=0)
+    out["grade_vs_tier"] = tab.astype(int).to_dict("index")
+    good = lab.grade.isin(["hq", "ok"])
+    out["hq_ok_frames_in_tier_ok_or_better"] = [int((good & lab.tier.isin(["hq", "ok"])).sum()), int(good.sum())]
+    okp = lab.tier.isin(["hq", "ok"])
+    out["tool_ok_or_better_frames_graded_low_or_free"] = [
+        int((okp & lab.grade.isin(["low", "whale-free", "faint only"])).sum()), int(okp.sum())]
+    hq = lab.tier == "hq"
+    out["advanced_ok_frames_graded_low_or_free"] = [int((hq & ~lab.grade.isin(["hq", "ok"])).sum()), int(hq.sum())]
+    out["hq_frames_in_tier_hq"] = [int(((lab.grade == "hq") & hq).sum()), int((lab.grade == "hq").sum())]
+    for c in ("dark", "sand"):
+        if "w_" + c in lab.columns and "view" in lab.columns:
+            flag = lab["w_" + c].astype(str).str.lower().eq("true")
+            out[f"{c}_label_vs_flag"] = pd.crosstab(lab.view.astype(str).eq(c).map({True: f"view {c}", False: "other"}),
+                                                    flag.map({True: "flag", False: "no flag"})).astype(int).to_dict("index")
+    if "silhouette" in lab.columns and "w_silhouette" in lab.columns:
+        m = lab.silhouette.astype(str).isin(["yes", "no"])
+        flag = lab.loc[m, "w_silhouette"].fillna(False).astype(bool).map({True: "flag", False: "no flag"})
+        out["silhouette_label_vs_flag"] = pd.crosstab(lab.loc[m, "silhouette"].astype(str), flag).astype(int).to_dict(
+            "index")
+    return out
 
 
 def evaluate_dev(label: str) -> dict:
@@ -206,6 +272,101 @@ def m4v_crosscheck() -> dict:
     return out
 
 
+D2 = "TestSubset 2025-1-2 CATS -85"
+
+
+def d2_labels_ready() -> tuple[bool, list]:
+    vd = paths.footage_dir() / D2 / "Video"
+    stems = sorted(p.stem for p in vd.glob("*.mov"))
+    missing = [s for s in stems if not (paths.cache_dir("reference") / s / "DONE").exists()
+               or not (LABELS / s / "frames.csv").exists()]
+    return not missing, stems
+
+
+def evaluate_d2(label: str = "sensitive") -> dict:
+    """Second deployment against WP3b's AI by-eye labels: tag / water state per frame, activity kept, grade against
+    tier, and what the scan does over seafloor and blocked (sand / dark) spans."""
+    ok, stems = d2_labels_ready()
+    if not ok:
+        return {"not_ready": True}
+    d = SCAN / D2 / label
+    ivs = kept_intervals(d)
+    allf, spans_sf, spans_bl, wins = [], [], [], {}
+    for st in stems:
+        labels = ep.load_frame_labels(LABELS / st / "frames.csv")
+        win = pd.read_csv(d / "windows" / f"{st}.mov.csv")
+        wins[st] = win
+        tab = video.frame_table(paths.footage_dir() / D2 / "Video" / f"{st}.mov")
+        lab = frames_vs_keep(labels, tab.times, ivs[st]["keep"], win).assign(piece=st[-5:])
+        allf.append(label_window_columns(lab, win))
+        for name, lst in (("seafloor_spans.csv", spans_sf), ("blocked_spans.csv", spans_bl)):
+            f = LABELS / st / name
+            if f.exists():
+                lst.append(pd.read_csv(f))
+    lab = pd.concat(allf, ignore_index=True)
+    res = {"label": label, "n_frames": int(len(lab))}
+    # tag state / water: label state air on the boat recordings, underwater / air / crossing elsewhere
+    res["state_vs_scan"] = pd.crosstab(lab.state, lab.w_water.fillna("unknown")).astype(int).to_dict("index")
+    res["state_vs_tag_state"] = pd.crosstab(lab.state, lab.w_tag_state.fillna("unknown")).astype(int).to_dict("index")
+    res["activity_tiers"] = activity_and_tiers(lab)
+    res["whale_frames"] = {"clear_kept": [int(lab[lab.whale].kept.sum()), int(lab.whale.sum())],
+                           "by_grade": {g: [int(x.kept.sum()), int(len(x))] for g, x in lab[lab.whale].groupby("grade")}}
+    res["whale_free_underwater_kept_by_why"] = lab[lab.whale_free & ~lab.fish_present & (lab.state == "underwater")
+                                                   & lab.kept].why.value_counts().to_dict()
+    # labelled views
+    for v in ("sand", "dark", "bubbles"):
+        m = lab.view.astype(str).eq(v)
+        if m.any():
+            res[f"view_{v}"] = {"frames": int(m.sum()), "kept": int(lab[m].kept.sum()),
+                                "tier": lab[m].tier.value_counts().to_dict(),
+                                "water_picture": lab[m].w_water_picture.value_counts().to_dict()}
+    # spans: per second window inside each span kind
+    def span_stats(spans: pd.DataFrame, kind_col: str) -> dict:
+        out = {}
+        for (kind), g in spans.groupby(kind_col):
+            rows = []
+            for r in g.itertuples():
+                w = wins[r.recording]
+                rows.append(w[(w.t0 >= r.start_s) & (w.t1 <= r.end_s)])
+            w = pd.concat(rows) if rows else pd.DataFrame()
+            if w.empty:
+                continue
+            sc = w[w.scanned]
+            out[str(kind)] = {"windows": int(len(w)), "scanned": int(len(sc)),
+                              "whale_fires": int(sc.whale.sum()), "small_fires": int(sc.small.sum()),
+                              "fish_fires": int(sc.fish.sum()) if "fish" in sc else None,
+                              "kept": int(w.kept.sum()), "hq_whale": int(w.hq_whale.sum()),
+                              "tier": w.tier.value_counts().to_dict() if "tier" in w else None,
+                              "water_picture": w.water_picture.value_counts().to_dict(),
+                              "bubbles_ge_0.3_share": int((sc.bubbles.fillna(0) > 0).sum())}
+        return out
+    if spans_sf:
+        # the labeller's seafloor spans are a whale back with haze above it (user, 2026-11-23): void
+        res["seafloor_spans"] = "labels withdrawn 2026-11-23"
+    if spans_bl:
+        res["blocked_spans"] = span_stats(pd.concat(spans_bl), "kind")
+    summ = json.loads((d / "summary.json").read_text())
+    res["minutes"] = {"total": summ["seconds"] / 60, "kept": summ["kept_s"] / 60,
+                      "dropped": {k: v / 60 for k, v in summ["dropped_s"].items()},
+                      "tier_window_min": {k: v / 60 for k, v in summ.get("tier_window_s", {}).items()},
+                      "clip_min_by_tier": {k: v / 60 for k, v in summ.get("clip_s_by_tier", {}).items()},
+                      "n_clips_by_tier": summ.get("n_clips_by_tier")}
+    res["lost_activity"] = res["activity_tiers"]["activity_lost"]
+    return res
+
+
+def main_d2():
+    ok, stems = d2_labels_ready()
+    if not ok:
+        print("labels not finished; run again when every underwater_cache/reference/<stem>/DONE exists")
+        return
+    OUT.mkdir(exist_ok=True)
+    res = {lb: evaluate_d2(lb) for lb in ("sensitive", "strict", "sensitive+noclf+guard9", "sensitive+guard9",
+                                           "sensitive+noclf") if (SCAN / D2 / lb / "intervals.json").exists()}
+    (OUT / "eval_d2.json").write_text(json.dumps(res, indent=1, default=str))
+    print(json.dumps(res, indent=1, default=str)[:12000])
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     cache = paths.cache_dir("scan") / DEP
@@ -265,7 +426,7 @@ def markdown(res: dict) -> str:
     for lb, r in runs.items():
         if r:
             d = r["deployment"]["all pieces"]["dropped_min"]
-            L.append(f"| {lb} | " + " | ".join(f"{d[k]:.1f}" for k in REASONS) + " |")
+            L.append(f"| {lb} | " + " | ".join(f"{d.get(k, 0):.1f}" for k in REASONS) + " |")
     L.append("")
     for lb in ("sensitive", "strict"):
         r = runs.get(lb)
@@ -277,10 +438,13 @@ def markdown(res: dict) -> str:
         L.append("|---|---|---|---|---|" + "---|" * len(REASONS))
         for p, x in r["per_recording"].items():
             L.append(f"| {p} | {x['min']:.1f} | {x['kept_min']:.1f} | {x['clips']} | {x.get('hq_min', 0):.1f} | "
-                     + " | ".join(f"{x['dropped_min'][k]:.1f}" for k in REASONS) + " |")
+                     + " | ".join(f"{x['dropped_min'].get(k, 0):.1f}" for k in REASONS) + " |")
         L.append("")
     return "\n".join(L)
 
 
 if __name__ == "__main__":
-    main()
+    if "--dep" in sys.argv and sys.argv[sys.argv.index("--dep") + 1] == "d2":
+        main_d2()
+    else:
+        main()

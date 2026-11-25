@@ -1,0 +1,599 @@
+{
+ "baseline": {
+  "A|dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 12,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 3,
+   "other_300_800": 37,
+   "other_called_whale": 6
+  },
+  "B|dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 12,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 3,
+   "other_300_800": 37,
+   "other_called_whale": 3
+  },
+  "A|d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 4,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 19,
+   "other_called_whale": 3
+  },
+  "B|d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 5,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 19,
+   "other_called_whale": 3
+  },
+  "A|d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 4,
+   "whale_300_800": 10,
+   "whale_not_whale": 3,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 5
+  },
+  "B|d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 2,
+   "whale_300_800": 10,
+   "whale_not_whale": 3,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 5
+  }
+ },
+ "classifier": {
+  "geom+scores|test dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 13,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 2,
+   "other_300_800": 37,
+   "other_called_whale": 5
+  },
+  "geom+scores|test d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 3,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 19,
+   "other_called_whale": 6
+  },
+  "geom+scores|test d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 2,
+   "whale_300_800": 10,
+   "whale_not_whale": 0,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 2
+  },
+  "geom+scores|d1 -> d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 1,
+   "whale_300_800": 10,
+   "whale_not_whale": 0,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 3
+  },
+  "geom+scores|d2 -> d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 39,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 2,
+   "other_300_800": 19,
+   "other_called_whale": 3
+  },
+  "geom+scores+motion|test dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 14,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 3,
+   "other_300_800": 37,
+   "other_called_whale": 3
+  },
+  "geom+scores+motion|test d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 0,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 19,
+   "other_called_whale": 4
+  },
+  "geom+scores+motion|test d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 0,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "geom+scores+motion|d1 -> d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 0,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "geom+scores+motion|d2 -> d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 21,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 19,
+   "other_called_whale": 1
+  },
+  "tight|test dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 11,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 37,
+   "other_called_whale": 7
+  },
+  "tight|test d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 2,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 19,
+   "other_called_whale": 1
+  },
+  "tight|test d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 1,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "tight|d1 -> d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 1,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "tight|d2 -> d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 9,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 2,
+   "other_300_800": 19,
+   "other_called_whale": 0
+  },
+  "tight+ctx|test dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 7,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 37,
+   "other_called_whale": 8
+  },
+  "tight+ctx|test d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 0,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 19,
+   "other_called_whale": 3
+  },
+  "tight+ctx|test d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 1,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "tight+ctx|d1 -> d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 1,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "tight+ctx|d2 -> d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 13,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 2,
+   "other_300_800": 19,
+   "other_called_whale": 1
+  },
+  "tight+ctx+motion|test dev": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 66,
+   "whale_not_whale": 7,
+   "whale_ge800": 10,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 37,
+   "other_called_whale": 8
+  },
+  "tight+ctx+motion|test d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 0,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 19,
+   "other_called_whale": 3
+  },
+  "tight+ctx+motion|test d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 1,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 1,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "tight+ctx+motion|d1 -> d2": {
+   "fish_300_800": 4,
+   "fish_called_whale": 0,
+   "whale_300_800": 10,
+   "whale_not_whale": 1,
+   "whale_ge800": 11,
+   "whale_ge800_not_whale": 0,
+   "other_300_800": 11,
+   "other_called_whale": 1
+  },
+  "tight+ctx+motion|d2 -> d1": {
+   "fish_300_800": 0,
+   "fish_called_whale": 0,
+   "whale_300_800": 141,
+   "whale_not_whale": 13,
+   "whale_ge800": 27,
+   "whale_ge800_not_whale": 2,
+   "other_300_800": 19,
+   "other_called_whale": 1
+  }
+ },
+ "extra": {
+  "geom+scores|test d1": {
+   "fish": 0,
+   "fish_A": 0,
+   "fish_B": 0,
+   "fish_clf": 0,
+   "whale": 35,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 3,
+   "other": 0,
+   "other_clf_whale": 0
+  },
+  "geom+scores|test d2": {
+   "fish": 24,
+   "fish_A": 24,
+   "fish_B": 20,
+   "fish_clf": 11,
+   "whale": 18,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 4,
+   "other_clf_whale": 2
+  },
+  "geom+scores|d1 -> d2": {
+   "fish": 24,
+   "fish_A": 24,
+   "fish_B": 20,
+   "fish_clf": 6,
+   "whale": 18,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 4,
+   "other_clf_whale": 2
+  },
+  "geom+scores|d2 -> d1": {
+   "fish": 0,
+   "fish_A": 0,
+   "fish_B": 0,
+   "fish_clf": 0,
+   "whale": 35,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 20,
+   "other": 0,
+   "other_clf_whale": 0
+  },
+  "tight|test d1": {
+   "fish": 0,
+   "fish_A": 0,
+   "fish_B": 0,
+   "fish_clf": 0,
+   "whale": 35,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 0,
+   "other_clf_whale": 0
+  },
+  "tight|test d2": {
+   "fish": 24,
+   "fish_A": 24,
+   "fish_B": 20,
+   "fish_clf": 3,
+   "whale": 18,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 4,
+   "other_clf_whale": 0
+  },
+  "tight|d1 -> d2": {
+   "fish": 24,
+   "fish_A": 24,
+   "fish_B": 20,
+   "fish_clf": 2,
+   "whale": 18,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 4,
+   "other_clf_whale": 0
+  },
+  "tight|d2 -> d1": {
+   "fish": 0,
+   "fish_A": 0,
+   "fish_B": 0,
+   "fish_clf": 0,
+   "whale": 35,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 4,
+   "other": 0,
+   "other_clf_whale": 0
+  },
+  "tight+ctx|test d1": {
+   "fish": 0,
+   "fish_A": 0,
+   "fish_B": 0,
+   "fish_clf": 0,
+   "whale": 35,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 0,
+   "other_clf_whale": 0
+  },
+  "tight+ctx|test d2": {
+   "fish": 24,
+   "fish_A": 24,
+   "fish_B": 20,
+   "fish_clf": 2,
+   "whale": 18,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 4,
+   "other_clf_whale": 0
+  },
+  "tight+ctx|d1 -> d2": {
+   "fish": 24,
+   "fish_A": 24,
+   "fish_B": 20,
+   "fish_clf": 1,
+   "whale": 18,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 0,
+   "other": 4,
+   "other_clf_whale": 0
+  },
+  "tight+ctx|d2 -> d1": {
+   "fish": 0,
+   "fish_A": 0,
+   "fish_B": 0,
+   "fish_clf": 0,
+   "whale": 35,
+   "whale_lost_A": 0,
+   "whale_lost_B": 0,
+   "whale_lost_clf": 5,
+   "other": 0,
+   "other_clf_whale": 0
+  }
+ },
+ "veto": {
+  "reference|test dev|whale": [
+   61,
+   58,
+   76
+  ],
+  "reference|test dev|fish": [
+   0,
+   0,
+   0
+  ],
+  "reference|test dev|other": [
+   11,
+   4,
+   84
+  ],
+  "reference|test d1|whale": [
+   163,
+   163,
+   168
+  ],
+  "reference|test d1|fish": [
+   0,
+   0,
+   0
+  ],
+  "reference|test d1|other": [
+   7,
+   1,
+   42
+  ],
+  "reference|test d2|whale": [
+   18,
+   16,
+   21
+  ],
+  "reference|test d2|fish": [
+   4,
+   0,
+   4
+  ],
+  "reference|test d2|other": [
+   12,
+   4,
+   27
+  ],
+  "reference|d1 -> d2|whale": [
+   18,
+   17,
+   21
+  ],
+  "reference|d1 -> d2|fish": [
+   4,
+   0,
+   4
+  ],
+  "reference|d1 -> d2|other": [
+   12,
+   5,
+   27
+  ],
+  "reference|d2 -> d1|whale": [
+   163,
+   148,
+   168
+  ],
+  "reference|d2 -> d1|fish": [
+   0,
+   0,
+   0
+  ],
+  "reference|d2 -> d1|other": [
+   7,
+   2,
+   42
+  ],
+  "extra|test d1|whale": [
+   35,
+   35,
+   35
+  ],
+  "extra|test d1|fish": [
+   0,
+   0,
+   0
+  ],
+  "extra|test d1|other": [
+   0,
+   0,
+   0
+  ],
+  "extra|test d2|whale": [
+   18,
+   18,
+   18
+  ],
+  "extra|test d2|fish": [
+   24,
+   2,
+   24
+  ],
+  "extra|test d2|other": [
+   4,
+   0,
+   4
+  ],
+  "extra|d1 -> d2|whale": [
+   18,
+   18,
+   18
+  ],
+  "extra|d1 -> d2|fish": [
+   24,
+   1,
+   24
+  ],
+  "extra|d1 -> d2|other": [
+   4,
+   0,
+   4
+  ],
+  "extra|d2 -> d1|whale": [
+   35,
+   30,
+   35
+  ],
+  "extra|d2 -> d1|fish": [
+   0,
+   0,
+   0
+  ],
+  "extra|d2 -> d1|other": [
+   0,
+   0,
+   0
+  ]
+ }
+}

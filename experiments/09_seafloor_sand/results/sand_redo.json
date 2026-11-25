@@ -1,0 +1,735 @@
+{
+ "counts_00017": {
+  "sediment windows (confirmed episodes)": 77,
+  "not-sediment windows": 920,
+  "per episode": {
+   "S1": 9,
+   "S2": 31,
+   "S3": 25,
+   "S4": 12
+  }
+ },
+ "variant A": {
+  "thresholds": {
+   "all": 0.05,
+   "fold1": 0.05,
+   "fold2": 0.05,
+   "fold3": 0.05,
+   "fold4": 0.05
+  },
+  "S1 held out: found": [
+   4,
+   9
+  ],
+  "00017 none + visible (not sediment)": {
+   "fold1": [
+    91,
+    915
+   ],
+   "fold2": [
+    77,
+    915
+   ],
+   "fold3": [
+    107,
+    912
+   ],
+   "fold4": [
+    104,
+    920
+   ]
+  },
+  "00017   of which seafloor visible": {
+   "fold1": [
+    52,
+    84
+   ],
+   "fold2": [
+    49,
+    84
+   ],
+   "fold3": [
+    62,
+    81
+   ],
+   "fold4": [
+    64,
+    89
+   ]
+  },
+  "00017 AI-only sediment 736-765, 874-898 (not fitted)": {
+   "fold1": [
+    42,
+    53
+   ],
+   "fold2": [
+    29,
+    53
+   ],
+   "fold3": [
+    37,
+    53
+   ],
+   "fold4": [
+    34,
+    53
+   ]
+  },
+  "00017 unsure, not black": {
+   "fold1": [
+    114,
+    114
+   ],
+   "fold2": [
+    102,
+    104
+   ],
+   "fold3": [
+    107,
+    107
+   ],
+   "fold4": [
+    107,
+    108
+   ]
+  },
+  "S2 held out: found": [
+   19,
+   31
+  ],
+  "S3 held out: found": [
+   25,
+   25
+  ],
+  "S4 held out: found": [
+   11,
+   12
+  ],
+  "2025-01-02 00010 | all underwater": {
+   "new": [
+    17,
+    616
+   ],
+   "old sand model": [
+    0,
+    616
+   ]
+  },
+  "2025-01-02 00010 | deep (> 30 m)": {
+   "new": [
+    1,
+    95
+   ],
+   "old sand model": [
+    0,
+    95
+   ]
+  },
+  "2025-01-02 00010 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    4,
+    47
+   ],
+   "old sand model": [
+    0,
+    47
+   ]
+  },
+  "2025-01-02 00011 | all underwater": {
+   "new": [
+    67,
+    1499
+   ],
+   "old sand model": [
+    0,
+    1499
+   ]
+  },
+  "2025-01-02 00011 | deep (> 30 m)": {
+   "new": [
+    29,
+    519
+   ],
+   "old sand model": [
+    0,
+    519
+   ]
+  },
+  "2025-01-02 00011 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    9,
+    76
+   ],
+   "old sand model": [
+    0,
+    76
+   ]
+  },
+  "2025-01-02 00012 | all underwater": {
+   "new": [
+    2,
+    220
+   ],
+   "old sand model": [
+    0,
+    220
+   ]
+  },
+  "2025-01-02 00012 | deep (> 30 m)": {
+   "new": [
+    0,
+    0
+   ],
+   "old sand model": [
+    0,
+    0
+   ]
+  },
+  "2025-01-02 00012 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    10
+   ],
+   "old sand model": [
+    0,
+    10
+   ]
+  },
+  "2025-01-02 00023 | all underwater": {
+   "new": [
+    91,
+    1297
+   ],
+   "old sand model": [
+    0,
+    1297
+   ]
+  },
+  "2025-01-02 00023 | deep (> 30 m)": {
+   "new": [
+    34,
+    480
+   ],
+   "old sand model": [
+    0,
+    480
+   ]
+  },
+  "2025-01-02 00023 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    2,
+    126
+   ],
+   "old sand model": [
+    0,
+    126
+   ]
+  },
+  "2025-01-02 00023 | back with haze, 0-306 s (old 'visible')": {
+   "new": [
+    5,
+    291
+   ],
+   "old sand model": [
+    0,
+    291
+   ]
+  },
+  "2025-01-02 00024 | all underwater": {
+   "new": [
+    108,
+    386
+   ],
+   "old sand model": [
+    1,
+    386
+   ]
+  },
+  "2025-01-02 00024 | deep (> 30 m)": {
+   "new": [
+    0,
+    3
+   ],
+   "old sand model": [
+    0,
+    3
+   ]
+  },
+  "2025-01-02 00024 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    52
+   ],
+   "old sand model": [
+    0,
+    52
+   ]
+  },
+  "2025-02-03 00006 dense | all underwater": {
+   "new": [
+    1373,
+    1736
+   ],
+   "old sand model": [
+    0,
+    1736
+   ]
+  },
+  "2025-02-03 00006 dense | deep (> 30 m)": {
+   "new": [
+    908,
+    947
+   ],
+   "old sand model": [
+    0,
+    947
+   ]
+  },
+  "2025-02-03 00006 dense | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    56,
+    120
+   ],
+   "old sand model": [
+    0,
+    120
+   ]
+  },
+  "2025-02-03 labelled frames | all underwater": {
+   "new": [
+    739,
+    821
+   ],
+   "old sand model": [
+    0,
+    821
+   ]
+  },
+  "dev clip labelled frames | all underwater": {
+   "new": [
+    20,
+    91
+   ],
+   "old sand model": [
+    0,
+    91
+   ]
+  }
+ },
+ "variant B": {
+  "thresholds": {
+   "all": 0.15,
+   "fold1": 0.05,
+   "fold2": 0.05,
+   "fold3": 0.05,
+   "fold4": 0.1
+  },
+  "S1 held out: found": [
+   5,
+   9
+  ],
+  "00017 none + visible (not sediment)": {
+   "fold1": [
+    82,
+    915
+   ],
+   "fold2": [
+    78,
+    915
+   ],
+   "fold3": [
+    96,
+    912
+   ],
+   "fold4": [
+    70,
+    920
+   ]
+  },
+  "00017   of which seafloor visible": {
+   "fold1": [
+    56,
+    84
+   ],
+   "fold2": [
+    51,
+    84
+   ],
+   "fold3": [
+    66,
+    81
+   ],
+   "fold4": [
+    50,
+    89
+   ]
+  },
+  "00017 AI-only sediment 736-765, 874-898 (not fitted)": {
+   "fold1": [
+    41,
+    53
+   ],
+   "fold2": [
+    29,
+    53
+   ],
+   "fold3": [
+    35,
+    53
+   ],
+   "fold4": [
+    30,
+    53
+   ]
+  },
+  "00017 unsure, not black": {
+   "fold1": [
+    112,
+    114
+   ],
+   "fold2": [
+    101,
+    104
+   ],
+   "fold3": [
+    103,
+    107
+   ],
+   "fold4": [
+    106,
+    108
+   ]
+  },
+  "S2 held out: found": [
+   19,
+   31
+  ],
+  "S3 held out: found": [
+   25,
+   25
+  ],
+  "S4 held out: found": [
+   9,
+   12
+  ],
+  "2025-01-02 00010 | all underwater": {
+   "new": [
+    0,
+    616
+   ],
+   "old sand model": [
+    0,
+    616
+   ]
+  },
+  "2025-01-02 00010 | deep (> 30 m)": {
+   "new": [
+    0,
+    95
+   ],
+   "old sand model": [
+    0,
+    95
+   ]
+  },
+  "2025-01-02 00010 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    47
+   ],
+   "old sand model": [
+    0,
+    47
+   ]
+  },
+  "2025-01-02 00011 | all underwater": {
+   "new": [
+    1,
+    1499
+   ],
+   "old sand model": [
+    0,
+    1499
+   ]
+  },
+  "2025-01-02 00011 | deep (> 30 m)": {
+   "new": [
+    0,
+    519
+   ],
+   "old sand model": [
+    0,
+    519
+   ]
+  },
+  "2025-01-02 00011 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    76
+   ],
+   "old sand model": [
+    0,
+    76
+   ]
+  },
+  "2025-01-02 00012 | all underwater": {
+   "new": [
+    0,
+    220
+   ],
+   "old sand model": [
+    0,
+    220
+   ]
+  },
+  "2025-01-02 00012 | deep (> 30 m)": {
+   "new": [
+    0,
+    0
+   ],
+   "old sand model": [
+    0,
+    0
+   ]
+  },
+  "2025-01-02 00012 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    10
+   ],
+   "old sand model": [
+    0,
+    10
+   ]
+  },
+  "2025-01-02 00023 | all underwater": {
+   "new": [
+    3,
+    1297
+   ],
+   "old sand model": [
+    0,
+    1297
+   ]
+  },
+  "2025-01-02 00023 | deep (> 30 m)": {
+   "new": [
+    3,
+    480
+   ],
+   "old sand model": [
+    0,
+    480
+   ]
+  },
+  "2025-01-02 00023 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    126
+   ],
+   "old sand model": [
+    0,
+    126
+   ]
+  },
+  "2025-01-02 00023 | back with haze, 0-306 s (old 'visible')": {
+   "new": [
+    0,
+    291
+   ],
+   "old sand model": [
+    0,
+    291
+   ]
+  },
+  "2025-01-02 00024 | all underwater": {
+   "new": [
+    102,
+    386
+   ],
+   "old sand model": [
+    1,
+    386
+   ]
+  },
+  "2025-01-02 00024 | deep (> 30 m)": {
+   "new": [
+    0,
+    3
+   ],
+   "old sand model": [
+    0,
+    3
+   ]
+  },
+  "2025-01-02 00024 | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    0,
+    52
+   ],
+   "old sand model": [
+    0,
+    52
+   ]
+  },
+  "2025-02-03 00006 dense | all underwater": {
+   "new": [
+    333,
+    1736
+   ],
+   "old sand model": [
+    0,
+    1736
+   ]
+  },
+  "2025-02-03 00006 dense | deep (> 30 m)": {
+   "new": [
+    235,
+    947
+   ],
+   "old sand model": [
+    0,
+    947
+   ]
+  },
+  "2025-02-03 00006 dense | within 10 s after a lens-out (bubbles)": {
+   "new": [
+    5,
+    120
+   ],
+   "old sand model": [
+    0,
+    120
+   ]
+  },
+  "2025-02-03 labelled frames | all underwater": {
+   "new": [
+    508,
+    821
+   ],
+   "old sand model": [
+    0,
+    821
+   ]
+  },
+  "dev clip labelled frames | all underwater": {
+   "new": [
+    0,
+    91
+   ],
+   "old sand model": [
+    0,
+    91
+   ]
+  }
+ },
+ "old sand label (blocked_spans) vs new truth, 00017": {
+  "sediment windows labelled sand": [
+   42,
+   77
+  ],
+  "not-sediment windows labelled sand": [
+   45,
+   920
+  ]
+ },
+ "sensors_max_depth_m": 51.22418975830078,
+ "sensors": [
+  {
+   "group": "black / murk (unsure)",
+   "windows": 208,
+   "depth_m": 49.77,
+   "below_max_m": 1.45,
+   "depth_sd_21s": 0.27,
+   "roll_deg": 1.57,
+   "abs_roll_dev": 171.35,
+   "pitch_deg": -0.2,
+   "odba": 0.21,
+   "light": 0.0
+  },
+  {
+   "group": "breath (air)",
+   "windows": 14,
+   "depth_m": -0.12,
+   "below_max_m": 51.34,
+   "depth_sd_21s": 0.92,
+   "roll_deg": -166.49,
+   "abs_roll_dev": 9.46,
+   "pitch_deg": -1.1,
+   "odba": 0.47,
+   "light": 37177.0
+  },
+  {
+   "group": "none, swimming (0-292, 644-673)",
+   "windows": 307,
+   "depth_m": 10.39,
+   "below_max_m": 40.83,
+   "depth_sd_21s": 0.84,
+   "roll_deg": -123.52,
+   "abs_roll_dev": 46.26,
+   "pitch_deg": -0.61,
+   "odba": 0.12,
+   "light": 37177.0
+  },
+  {
+   "group": "resting, back with haze (842-1390)",
+   "windows": 524,
+   "depth_m": 47.46,
+   "below_max_m": 3.76,
+   "depth_sd_21s": 0.04,
+   "roll_deg": -174.63,
+   "abs_roll_dev": 4.87,
+   "pitch_deg": -5.16,
+   "odba": 0.02,
+   "light": 15791.75
+  },
+  {
+   "group": "seafloor visible (user-confirmed)",
+   "windows": 92,
+   "depth_m": 48.8,
+   "below_max_m": 2.42,
+   "depth_sd_21s": 0.43,
+   "roll_deg": -5.62,
+   "abs_roll_dev": 164.15,
+   "pitch_deg": -45.89,
+   "odba": 0.24,
+   "light": 3890.14
+  },
+  {
+   "group": "sediment (AI only)",
+   "windows": 53,
+   "depth_m": 48.93,
+   "below_max_m": 2.29,
+   "depth_sd_21s": 0.17,
+   "roll_deg": -45.71,
+   "abs_roll_dev": 124.07,
+   "pitch_deg": 2.11,
+   "odba": 0.08,
+   "light": 69.42
+  },
+  {
+   "group": "sediment (user-confirmed episodes)",
+   "windows": 77,
+   "depth_m": 49.1,
+   "below_max_m": 2.13,
+   "depth_sd_21s": 0.44,
+   "roll_deg": -3.66,
+   "abs_roll_dev": 166.11,
+   "pitch_deg": -55.0,
+   "odba": 0.25,
+   "light": 845.94
+  },
+  {
+   "group": "unsure, not black",
+   "windows": 115,
+   "depth_m": 49.09,
+   "below_max_m": 2.13,
+   "depth_sd_21s": 0.39,
+   "roll_deg": -8.81,
+   "abs_roll_dev": 160.96,
+   "pitch_deg": 11.36,
+   "odba": 0.26,
+   "light": 192.86
+  }
+ ]
+}

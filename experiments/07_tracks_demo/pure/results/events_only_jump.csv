@@ -1,0 +1,10 @@
+run,number,window,what,raw,fixed,reasons
+demo07,s1,822.3-824.9,fish -> calf (s1 small),1,False,
+demo01,3,25.5-26.5,"joins two whales, then settles on one",3,False,
+demo01,2,29.7-30.5,swallows the spotted whale,2,False,
+demo02,3,72.4-73.2,joins the huge fin and the near whale (fin probably its own),3,True,area jump; shape jump
+R02a,1,11.8-18.4,exhalation bubble cloud -> whale after the breath,1,False,
+R02a,4,11.8-21.1,stale outline on a wrong piece after the breath,4,True,area jump; shape jump
+R02a,6,11.8-21.1,stale outline on a wrong piece after the breath,6,False,area jump; shape jump
+R02b,1,11.8-18.4,exhalation bubble cloud -> whale after the breath,1,True,
+R02c,1,11.8-18.4,exhalation bubble cloud -> whale after the breath,1,False,area jump

@@ -1,0 +1,73 @@
+[
+ {
+  "frame": 16229,
+  "boxes": [
+   [
+    0,
+    660,
+    525,
+    860
+   ],
+   [
+    0,
+    770,
+    565,
+    885
+   ]
+  ],
+  "count": 2,
+  "note": "2 large jacks, eye, stripes, forked tail; boxes in 1920x1080 sample pixels (source is 4K)"
+ },
+ {
+  "frame": 18270,
+  "boxes": [
+   [
+    50,
+    735,
+    420,
+    955
+   ]
+  ],
+  "count": 1,
+  "note": "1 jack, eye and forked tail"
+ },
+ {
+  "frame": 20311,
+  "boxes": [
+   [
+    1010,
+    255,
+    1130,
+    325
+   ]
+  ],
+  "count": 1,
+  "note": "1 small jack ~120 px, forked tail and eye"
+ },
+ {
+  "frame": 29834,
+  "boxes": [
+   [
+    525,
+    505,
+    715,
+    620
+   ]
+  ],
+  "count": 1,
+  "note": "1 jack, forked tail; a ~60 px fish at x320 y720 not counted (unsure)"
+ },
+ {
+  "frame": 30515,
+  "boxes": [
+   [
+    0,
+    20,
+    600,
+    380
+   ]
+  ],
+  "count": 1,
+  "note": "1 large jack, forked tail, eye"
+ }
+]

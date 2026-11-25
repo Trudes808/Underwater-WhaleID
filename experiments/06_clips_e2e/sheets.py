@@ -4,7 +4,10 @@
     $PY $S timelines                 # scan_timeline_<piece>.jpg for 00004, 00012 and the dev clip
     $PY $S dropcheck                 # 150 random 'underwater with no whale' windows + 30 'small' ones, seed below
     $PY $S dropcheck --tally         # after the calls are written to results/dropcheck_calls.json
-    $PY $S hq                        # scan_hq_top / border / rejected
+    $PY $S hq [--dep NAME]           # scan_hq_top / border / rejected (scan_d2_* for CATS -85), decisions drawn
+    $PY $S bands [--dep NAME]        # scan_hq_band_050 / 040 / 030: 24 random windows per hq band below 0.6
+    $PY $S midsize                   # scan_midsize: kept windows resting on a 300-500 px box, both deployments
+    $PY $S d2_timelines | d2_clips | d2_dropcheck [--tally] | d2_spans     # second deployment (scan_d2_*)
     $PY $S lost                      # labelled clear-whale frames that fall outside the kept stretches
     $PY $S clips                     # first / middle / last frame of 12 kept clips + 3 clips verified by decoding
     $PY $S kept --dep NAME           # a sample of kept windows of any scanned deployment
@@ -38,8 +41,8 @@ def windows(dep=DEP, label=LABEL) -> pd.DataFrame:
     return pd.concat([pd.read_csv(f).assign(key=f.name[:-4]) for f in sorted(d.glob("*.csv"))], ignore_index=True)
 
 
-def source_of(dep, key) -> Path:
-    iv = json.loads((SCAN / dep / LABEL / "intervals.json").read_text())
+def source_of(dep, key, label=None) -> Path:
+    iv = json.loads((SCAN / dep / (label or LABEL) / "intervals.json").read_text())
     for v in iv["videos"]:
         p = Path(v["source"])
         if f"{p.stem.replace(' ', '_')}.{p.suffix[1:]}" == key:
@@ -47,23 +50,55 @@ def source_of(dep, key) -> Path:
     raise KeyError(key)
 
 
-def grab(dep, rows: pd.DataFrame, which: str = "best", draw_boxes: bool = True, cfg=None):
-    """One frame per window row: the frame with the largest whale box (``best``) or the window centre."""
+DECISION_COL = {"whale": (255, 50, 50), "small": (255, 165, 0), "fish": (40, 210, 255), "other": (170, 170, 170)}
+
+
+def draw_decisions(img: np.ndarray, objs: pd.DataFrame, det_w: int) -> np.ndarray:
+    """Draw the pipeline's decision per object (one box each): red whale, orange small, cyan fish (information)."""
     import cv2
+    sc = img.shape[1] / float(det_w)
+    th = max(2, int(round(img.shape[1] / 640)))
+    fs = img.shape[1] / 2000.0
+    for _, o in objs.iloc[::-1].iterrows():          # whales drawn last, on top
+        col = DECISION_COL[o.label]
+        x0, y0, x1, y1 = (int(round(v * sc)) for v in (o.x0, o.y0, o.x1, o.y1))
+        cv2.rectangle(img, (x0, y0), (x1, y1), col, th * (2 if o.label == "whale" else 1))
+        txt = f"{o.label} {o.score:.2f}" + (f" {o.px:.0f}px" if o.label != "fish" else "")
+        if bool(o.get("clf", False)):
+            txt += " (clf)"
+        big = 2.0 if o.label == "whale" else 1.4
+        # near the top edge (under the tile's time label) the text goes inside the box at its bottom
+        ty = y1 - 10 if y0 < img.shape[0] * 0.12 else y0 - 6
+        tx = min(max(x0 + 4, 4), img.shape[1] - int(fs * big * 20 * len(txt)))
+        cv2.putText(img, txt, (tx, ty), cv2.FONT_HERSHEY_SIMPLEX, fs * big, (0, 0, 0), th * 4)
+        cv2.putText(img, txt, (tx, ty), cv2.FONT_HERSHEY_SIMPLEX, fs * big, col, th + (1 if o.label == "whale" else 0))
+    return img
+
+
+def grab(dep, rows: pd.DataFrame, which: str = "best", draw_boxes: bool = True, cfg=None, label=None):
+    """One frame per window row: the frame with the largest whale box (``best``) or the window centre, with the
+    pipeline's decision drawn (one box per object, :func:`uwid.pipeline.decision_objects`)."""
     cfg = cfg or pl.ScanConfig()
     out = []
     for key, g in rows.groupby("key", sort=False):
-        src = source_of(dep, key)
-        boxes, _ = pl.load_boxes(SCAN / dep / "cache", pl.Recording(src, src.suffix[1:]))
+        src = source_of(dep, key, label)
+        rec = pl.Recording(src, src.suffix[1:])
+        boxes, _ = pl.load_boxes(SCAN / dep / "cache", rec)
+        boxes = pl.attach_box_classes(boxes, pl.load_picture_classes(SCAN / dep / "cache", rec)[0])
+        det_w, det_h = pl.detector_frame_size(SCAN / dep / "cache", rec)
         with video.VideoReader(src) as r:
             for i, row in g.iterrows():
-                if which == "best" and "best_frame" in row and np.isfinite(row.get("cover", np.nan)):
+                if "show_frame" in row and np.isfinite(row.get("show_frame", np.nan)):
+                    f_idx = int(row.show_frame)
+                elif which == "best" and "best_frame" in row and np.isfinite(row.get("cover", np.nan)):
                     f_idx = int(row.best_frame)
                 elif which == "best" and np.isfinite(row.get("whale_1", np.nan)) and row.get("whale_1", 0) > row.get(
                         "whale_0", 0):
                     f_idx = int(row.frame_1)
                 elif which == "best":
                     f_idx = int(row.frame_0)
+                elif isinstance(which, (int, np.integer)):
+                    f_idx = int(which)
                 else:
                     f_idx = r.table.index_at(row.t0 + 0.5)
                 fr = r.frame_by_index(f_idx)
@@ -71,13 +106,9 @@ def grab(dep, rows: pd.DataFrame, which: str = "best", draw_boxes: bool = True, 
                     continue
                 img = fr.image.copy()
                 if draw_boxes and len(boxes):
-                    b = boxes[(boxes.frame == f_idx) & (boxes["query"].isin([cfg.whale_query] + list(cfg.fish_queries)))
-                              & (boxes.score >= 0.2)]
-                    for _, bb in b.iterrows():
-                        col = (255, 60, 60) if bb["query"] == "whale" else (60, 200, 255)
-                        cv2.rectangle(img, (int(bb.x0), int(bb.y0)), (int(bb.x1), int(bb.y1)), col, 3)
-                        cv2.putText(img, f"{bb['query'][:5]} {bb.score:.2f}", (int(bb.x0) + 4, int(bb.y0) + 28),
-                                    cv2.FONT_HERSHEY_SIMPLEX, 0.9, col, 2)
+                    objs = pl.decision_objects(boxes[boxes.frame == f_idx], cfg, det_w, det_h,
+                                               shallow=bool(row.get("shallow_rule", False)))
+                    img = draw_decisions(img, objs, det_w)
                 out.append((i, fr, img))
     order = {i: k for k, i in enumerate(rows.index)}
     return sorted(out, key=lambda x: order[x[0]])
@@ -171,7 +202,7 @@ def cmd_timelines(a):
 def cmd_dropcheck(a):
     RES.mkdir(exist_ok=True)
     w = windows()
-    pool = w[(w.why == "underwater with no whale")]
+    pool = w[w.why.isin(["underwater with no whale", "nothing detected"])]
     small = w[(w.why == "small (fish or far whale)")]
     rng = np.random.default_rng(SEED)
     pick = pool.loc[np.sort(rng.choice(pool.index, size=min(150, len(pool)), replace=False))]
@@ -221,19 +252,12 @@ def hq_caption(w):
     return cap
 
 
-def cmd_hq(a):
-    w = windows()
-    w = w.rename(columns={"hq_score": "hq_score"})
-    large = w[w.whale & w.cover.notna()].copy()
-    top = large.sort_values("hq_score", ascending=False).head(40)
-    cfg = pl.ScanConfig()
-    border = large[(large.cover >= cfg.hq_min_cover)].iloc[
-        (large[(large.cover >= cfg.hq_min_cover)].hq_score - cfg.hq_threshold).abs().argsort()[:40]]
-    border = border.sort_values("hq_score", ascending=False)
-    rej = large[~large.hq_whale]
-    rng = np.random.default_rng(SEED)
-    rej = rej.loc[np.sort(rng.choice(rej.index, size=min(40, len(rej)), replace=False))]
+def prefix(dep) -> str:
+    """Sheet name prefix: ``scan_`` for the first deployment, ``scan_d2_`` for CATS -85."""
+    return "scan_d2_" if "CATS -85" in dep else "scan_"
 
+
+def hq_reason(cfg):
     def reason(r):
         if r.cover < cfg.hq_min_cover:
             return f"whale box {r.cover:.2f} of frame < {cfg.hq_min_cover}"
@@ -241,20 +265,106 @@ def cmd_hq(a):
                                          "hq_depth") if k in r and k != "hq_score" and np.isfinite(r[k])}
         low = min(parts, key=parts.get)
         return f"hq {r.hq_score:.2f} < {cfg.hq_threshold}; lowest part {low} {parts[low]:.2f}"
+    return reason
 
+
+def cmd_hq(a):
+    """Best 40, 40 nearest the threshold, 40 random rejects; same windows as before for the first deployment
+    (results/hq_sheet_windows.json is reused when it exists)."""
+    dep = a.dep
+    w = windows(dep)
+    cfg = pl.ScanConfig()
+    pre = prefix(dep)
+    large = w[w.whale & w.cover.notna()].copy()
+    saved = RES / ("hq_sheet_windows.json" if pre == "scan_" else "hq_sheet_windows_d2.json")
+    if saved.exists() and not a.redraw_new:
+        sv = json.loads(saved.read_text())
+        pick = lambda lst: w.set_index(["key", "k"]).loc[[(d["key"], d["k"]) for d in lst]].reset_index().set_index(
+            pd.Index([w.index[(w.key == d["key"]) & (w.k == d["k"])][0] for d in lst]))
+        top, border, rej = pick(sv["top"]), pick(sv["border"]), pick(sv["rejected"])
+    else:
+        top = large.sort_values("hq_score", ascending=False).head(40)
+        cov = large[(large.cover >= cfg.hq_min_cover)]
+        border = cov.iloc[(cov.hq_score - cfg.hq_threshold).abs().argsort()[:40]].sort_values("hq_score",
+                                                                                               ascending=False)
+        rej = large[~large.hq_whale]
+        rng = np.random.default_rng(SEED)
+        rej = rej.loc[np.sort(rng.choice(rej.index, size=min(40, len(rej)), replace=False))]
+        RES.mkdir(exist_ok=True)
+        saved.write_text(json.dumps({
+            "top": top[["key", "k", "clock", "hq_score", "cover", "depth_m"]].to_dict("records"),
+            "border": border[["key", "k", "clock", "hq_score", "cover", "depth_m"]].to_dict("records"),
+            "rejected": rej[["key", "k", "clock", "hq_score", "cover"]].to_dict("records")}, indent=1, default=str))
+    reason = hq_reason(cfg)
     outs = []
     cap = hq_caption(w)
-    outs += write_sheets(grab(DEP, top), "scan_hq_top", 3, 640, 12, "best 40 windows by hq score (sensitive)", cap)
-    outs += write_sheets(grab(DEP, border), "scan_hq_border", 3, 640, 12,
+    outs += write_sheets(grab(dep, top), pre + "hq_top", 3, 640, 12, "best 40 windows by hq score (sensitive); "
+                         "boxes = decision: red whale, orange small, cyan fish (info)", cap)
+    outs += write_sheets(grab(dep, border), pre + "hq_border", 3, 640, 12,
                          f"40 windows nearest the hq threshold {cfg.hq_threshold} (cover >= {cfg.hq_min_cover})", cap)
     cap_r = lambda i, fr: (cap(i, fr)[0], reason(rej.loc[i]))
-    outs += write_sheets(grab(DEP, rej), "scan_hq_rejected", 3, 640, 12,
+    outs += write_sheets(grab(dep, rej), pre + "hq_rejected", 3, 640, 12,
                          f"40 random large-whale windows that are not hq_whale (seed {SEED})", cap_r)
+    print("\n".join(outs))
+
+
+def cmd_bands(a):
+    """About 24 random windows per hq band below the threshold (cover >= hq_min_cover), seed SEED."""
+    dep = a.dep
+    w = windows(dep)
+    cfg = pl.ScanConfig()
+    cov = w[w.whale & w.cover.notna() & (w.cover >= cfg.hq_min_cover)]
+    rng = np.random.default_rng(SEED)
+    cap = hq_caption(w)
+    res = {}
+    outs = []
+    for lo in (0.5, 0.4, 0.3):
+        band = cov[(cov.hq_score >= lo) & (cov.hq_score < lo + 0.1)]
+        pk = band.loc[np.sort(rng.choice(band.index, size=min(a.n, len(band)), replace=False))] if len(band) else band
+        res[f"{lo:.1f}-{lo + 0.1:.1f}"] = {"pool": int(len(band)), "drawn": int(len(pk)),
+                                           "windows": pk[["key", "k", "clock", "hq_score"]].to_dict("records")}
+        if len(pk):
+            outs += write_sheets(grab(dep, pk.sort_values("hq_score", ascending=False)),
+                                 f"{prefix(dep)}hq_band_{int(lo * 100):03d}", 3, 640, 12,
+                                 f"hq {lo:.1f}-{lo + 0.1:.1f}: {len(pk)} of {len(band)} windows at random (seed {SEED})",
+                                 cap)
     RES.mkdir(exist_ok=True)
-    (RES / "hq_sheet_windows.json").write_text(json.dumps({
-        "top": top[["key", "k", "clock", "hq_score", "cover", "depth_m"]].to_dict("records"),
-        "border": border[["key", "k", "clock", "hq_score", "cover", "depth_m"]].to_dict("records"),
-        "rejected": rej[["key", "k", "clock", "hq_score", "cover"]].to_dict("records")}, indent=1, default=str))
+    (RES / f"hq_bands_{'d2' if 'CATS' in dep else 'd1'}.json").write_text(json.dumps(
+        {"seed": SEED, "bands": res}, indent=1, default=str))
+    print("\n".join(outs))
+
+
+def cmd_midsize(a):
+    """Kept whale windows that rest on a box of 300-500 px (the band where a near fish can pass as a whale)."""
+    deps = [d.strip() for d in a.deps.split(",")]
+    allw, counts = [], {}
+    for dep in deps:
+        w = windows(dep)
+        kept_whale = w[w.whale]
+        # the window's largest whale box (in its best frame) is the one the keep decision rests on
+        m = kept_whale[(kept_whale.whale_px >= 300) & (kept_whale.whale_px < 500)]
+        counts[dep] = {"whale_windows": int(len(kept_whale)), "rest_on_300_500px": int(len(m)),
+                       "hq_whale_among_them": int(m.hq_whale.sum())}
+        allw.append(m.assign(dep=dep))
+    pool = pd.concat(allw)
+    pool["uid"] = np.arange(len(pool))
+    pool = pool.set_index("uid", drop=False)
+    rng = np.random.default_rng(SEED)
+    pk = pool.loc[np.sort(rng.choice(pool.index, size=min(40, len(pool)), replace=False))]
+    items = []
+    for dep, g in pk.groupby("dep", sort=False):
+        items += grab(dep, g)
+    order = {i: k for k, i in enumerate(pk.index)}
+    items.sort(key=lambda x: order[x[0]])
+    cap = lambda i, fr: (f"{'d2 ' if 'CATS' in pk.loc[i, 'dep'] else ''}{pk.loc[i, 'key'][-9:-4]} {pk.loc[i, 'clock']}",
+                         f"box {pk.loc[i, 'whale_px']:.0f}px whale {pk.loc[i, 'top_score']:.2f} fish "
+                         f"{pk.loc[i, 'fish_score']:.2f} hq {pk.loc[i, 'hq_score']:.2f}")
+    outs = write_sheets(items, "scan_midsize", 3, 640, 12,
+                        f"kept windows resting on a 300-500 px whale box, 40 at random of {len(pool)} (seed {SEED})", cap)
+    RES.mkdir(exist_ok=True)
+    (RES / "midsize.json").write_text(json.dumps({"seed": SEED, "counts": counts, "drawn": pk[[
+        "dep", "key", "k", "clock", "whale_px", "top_score", "fish_score"]].to_dict("records")}, indent=1, default=str))
+    print(json.dumps(counts, indent=1))
     print("\n".join(outs))
 
 
@@ -357,13 +467,189 @@ def cmd_kept(a):
                        f"{a.dep}: random kept whale windows (seed {SEED})", cap))
 
 
+# ------------------------------------------------------------------------------------------- second deployment
+
+D2 = "TestSubset 2025-1-2 CATS -85"
+SEED_D2 = 20261122
+
+
+def _key(dep, piece):
+    return next(k for k in windows(dep).key.unique() if k.endswith(f"-{piece}.mov"))
+
+
+def cmd_d2_timelines(a):
+    outs = []
+    for piece, what in (("00005", "boat"), ("00017", "middle"), ("00023", "late")):
+        outs.append(timeline(D2, _key(D2, piece), OUTD / f"scan_d2_timeline_{piece}.jpg", f"CATS -85 {piece} ({what})"))
+    print("\n".join(outs))
+
+
+def cmd_d2_clips(a):
+    """First / middle / last frame of every kept stretch of the middle recordings and of 20 (seeded) of the late."""
+    iv = json.loads((SCAN / D2 / LABEL / "intervals.json").read_text())
+    rows = []
+    for v in iv["videos"]:
+        piece = Path(v["source"]).stem[-5:]
+        for j, k in enumerate(v["keep"]):
+            rows.append({"piece": piece, "src": v["source"], "j": j, **{x: k[x] for x in ("start", "end", "tier",
+                                                                                         "description")}})
+    df = pd.DataFrame(rows)
+    mid = df[df.piece.isin(["00010", "00011", "00012", "00017"])]
+    late = df[df.piece.isin(["00023", "00024"])]
+    rng = np.random.default_rng(SEED_D2)
+    late = late.loc[np.sort(rng.choice(late.index, size=min(20, len(late)), replace=False))] if len(late) else late
+    outs = []
+    for name, sel in (("scan_d2_clips_middle", mid), ("scan_d2_clips_late", late)):
+        items = []
+        for i, r in sel.iterrows():
+            with video.VideoReader(r.src) as rd:
+                for pos, t in (("first", r.start + 0.1), ("middle", (r.start + r.end) / 2), ("last", r.end - 0.2)):
+                    fr = rd.frame_at(t)
+                    if fr is not None:
+                        items.append(((i, pos), fr, fr.image))
+        cap = lambda i, fr: (f"{sel.loc[i[0], 'piece']} #{sel.loc[i[0], 'j']} {i[1]} t={fr.t:.0f}s",
+                             f"{sel.loc[i[0], 'tier']}: {sel.loc[i[0], 'description'][:95]}")
+        if items:
+            outs += write_sheets(items, name, 3, 640, 18, f"{name[8:]}: first / middle / last frame of kept stretches"
+                                 + (f" (20 at random, seed {SEED_D2})" if "late" in name else " (all)"), cap)
+    (RES / "d2_clips_sheet.json").write_text(json.dumps({"middle": mid.to_dict("records"),
+                                                         "late": late.to_dict("records")}, indent=1, default=str))
+    print("\n".join(outs))
+
+
+def cmd_d2_dropcheck(a):
+    """100 windows drawn at random (seed SEED_D2) from 'nothing detected', centre frame, 2 per row at 960 px."""
+    w = windows(D2)
+    pool = w[w.why == "nothing detected"]
+    rng = np.random.default_rng(SEED_D2)
+    pick = pool.loc[np.sort(rng.choice(pool.index, size=min(100, len(pool)), replace=False))].copy()
+    pick["id"] = np.arange(len(pick))
+    RES.mkdir(exist_ok=True)
+    cols = ["id", "key", "k", "t0", "clock", "whale_score", "small_score", "fish_score", "depth_m", "water_picture",
+            "bubbles"]
+    pick[cols].to_csv(RES / "dropcheck_d2_sample.csv", index=False)
+    calls_f = RES / "dropcheck_d2_calls.json"
+    if a.tally and calls_f.exists():
+        calls = json.loads(calls_f.read_text())
+        pick["call"] = pick.id.map(lambda i: calls.get(str(i), "?"))
+        print(pick.call.value_counts())
+        (RES / "dropcheck_d2_result.json").write_text(json.dumps(
+            {"seed": SEED_D2, "pool": int(len(pool)), "counts": pick.call.value_counts().to_dict(),
+             "calls": pick[["id", "key", "k", "clock", "call", "depth_m"]].to_dict("records")}, indent=1, default=str))
+        return
+    items = grab(D2, pick, which="centre")
+    cap = lambda i, fr: (f"#{pick.loc[i, 'id']} {pick.loc[i, 'key'][-9:-4]} {pick.loc[i, 'clock']}",
+                         f"d {pick.loc[i, 'depth_m']:.0f} m, whale {pick.loc[i, 'whale_score']:.2f} small "
+                         f"{pick.loc[i, 'small_score']:.2f} fish {pick.loc[i, 'fish_score']:.2f}")
+    print(write_sheets(items, "scan_d2_dropcheck", 2, 960, 6,
+                       f"'nothing detected' windows of CATS -85, 100 at random (seed {SEED_D2}), centre frame", cap))
+
+
+def cmd_d2_spans(a):
+    """A dozen windows inside the labeller's sand / dark spans and on the seafloor, with the decision drawn."""
+    lab = HERE.parents[1] / "experiments/02_reference_labels/labels"
+    w = windows(D2)
+    rng = np.random.default_rng(SEED_D2)
+    outs = []
+    for name, fname, col, kinds in (("scan_d2_sand", "blocked_spans.csv", "kind", ("sand",)),
+                                    ("scan_d2_seafloor", "seafloor_spans.csv", "seafloor", ("visible",))):
+        sp = pd.concat([pd.read_csv(f) for f in sorted(lab.glob(f"CC-09-85-*/{fname}"))])
+        sp = sp[sp[col].isin(kinds)]
+        sel = []
+        for r in sp.itertuples():
+            m = (w.key == f"{r.recording}.mov") & (w.t0 >= r.start_s) & (w.t1 <= r.end_s)
+            sel.append(w[m])
+        sel = pd.concat(sel)
+        # first the windows where something fired (to see what), then random others; 12 in all
+        fired = sel[sel.active.astype(bool)] if "active" in sel else sel.iloc[:0]
+        n_f = min(6, len(fired))
+        pick = pd.concat([fired.loc[np.sort(rng.choice(fired.index, n_f, replace=False))] if n_f else fired.iloc[:0],
+                          sel.drop(fired.index).pipe(lambda x: x.loc[np.sort(rng.choice(x.index, min(12 - n_f, len(x)),
+                                                                                       replace=False))])])
+        cap = lambda i, fr, pk=pick: (f"{pk.loc[i, 'key'][-9:-4]} {pk.loc[i, 'clock']} {pk.loc[i, 'why']}",
+                                      f"tier {pk.loc[i, 'tier']} water(pic) {pk.loc[i, 'water_picture']} whale "
+                                      f"{pk.loc[i, 'whale_score']:.2f} fish {pk.loc[i, 'fish_score']:.2f} bub "
+                                      f"{pk.loc[i, 'bubbles']:.2f}")
+        outs += write_sheets(grab(D2, pick, which="best"), name, 3, 640, 12,
+                             f"{name[8:]} spans (labeller): {len(sel)} windows, {int(sel.active.sum())} with something "
+                             f"detected; {n_f} of those + {len(pick) - n_f} others at random (seed {SEED_D2})", cap)
+    print("\n".join(outs))
+
+
+def cmd_veto_dropped(a):
+    """Windows that were active only through a large "whale" box the classifier calls other (no longer active since
+    WP11b): 60 at random over both deployments (seed SEED_D2), best frame of the window with the decision drawn."""
+    rows = []
+    for dep in (DEP, D2):
+        w = windows(dep)
+        if "vetoed_other_only" in w:
+            rows.append(w[w.vetoed_other_only.astype(bool)].assign(dep=dep))
+    pool = pd.concat(rows)
+    pool["uid"] = np.arange(len(pool))
+    pool = pool.set_index("uid", drop=False)
+    rng = np.random.default_rng(SEED_D2)
+    pk = pool.loc[np.sort(rng.choice(pool.index, size=min(60, len(pool)), replace=False))]
+    items = []
+    for dep, g in pk.groupby("dep", sort=False):
+        # the frame holding the vetoed box: the frame with the higher veto_other score in the frame_0 / frame_1 pair
+        g = g.copy()
+        show = []
+        for key, gg in g.groupby("key"):
+            src = source_of(dep, key)
+            cls = pl.load_picture_classes(SCAN / dep / "cache", pl.Recording(src, src.suffix[1:]))[0]
+            other = set(cls[cls.boxclf_class == "other"].frame.astype(int))
+            show += [(i, r.frame_1 if r.frame_1 in other and r.frame_0 not in other else r.frame_0)
+                     for i, r in gg.iterrows()]
+        g["show_frame"] = pd.Series(dict(show)).astype(float)
+        items += grab(dep, g, which="centre")
+    order = {i: k for k, i in enumerate(pk.index)}
+    items.sort(key=lambda x: order[x[0]])
+    cap = lambda i, fr: (f"#{i} {'d2 ' if 'CATS' in pk.loc[i, 'dep'] else ''}{pk.loc[i, 'key'][-9:-4]} {pk.loc[i, 'clock']}",
+                         f"vetoed 'other' {pk.loc[i, 'veto_other_score']:.2f}, depth {pk.loc[i, 'depth_m']:.1f} m")
+    counts = {d: int((pool.dep == d).sum()) for d in pool.dep.unique()}
+    RES.mkdir(exist_ok=True)
+    (RES / "veto_dropped_sample.json").write_text(json.dumps({"seed": SEED_D2, "pool": counts, "drawn": pk[[
+        "dep", "key", "k", "clock", "veto_other_score", "depth_m"]].to_dict("records")}, indent=1, default=str))
+    print(counts)
+    print(write_sheets(items, "scan_veto_dropped", 3, 640, 12,
+                       f"windows no longer active: only box vetoed to 'other' (60 of {len(pool)}, seed {SEED_D2}); "
+                       "centre frame", cap))
+
+
+def cmd_float(a):
+    """Windows of 'tag floating' time kept since WP9 (detector on floating time where the picture sees water):
+    2025-02-03 00012 (run under _float_check/) and CATS -85, best frame with the decision drawn."""
+    items, rows = [], []
+    for dep in ("_float_check/" + DEP, D2):
+        w = windows(dep)
+        k = w[(w.tag_state == "floating") & w.active.astype(bool)]
+        rows.append(k.assign(dep=dep))
+        if len(k):
+            items += [(f"{dep}|{i}", fr, im) for i, fr, im in grab(dep, k)]
+    allk = pd.concat(rows)
+    cap = lambda i, fr: (f"{'d2 ' if 'CATS' in i else ''}{allk[allk.dep == i.split('|')[0]].loc[int(i.split('|')[1]), 'key'][-9:-4]}"
+                         f" {allk[allk.dep == i.split('|')[0]].loc[int(i.split('|')[1]), 'clock']}",
+                         f"floating, water(pic) {allk[allk.dep == i.split('|')[0]].loc[int(i.split('|')[1]), 'water']}, "
+                         f"tier {allk[allk.dep == i.split('|')[0]].loc[int(i.split('|')[1]), 'tier']}")
+    print({d: int((allk.dep == d).sum()) for d in allk.dep.unique()})
+    if items:
+        print(write_sheets(items, "scan_d2_float", 3, 640, 12,
+                           "kept windows of 'tag floating' time (2025-02-03 00012 and CATS -85 00024), decision drawn", cap))
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["timelines", "dropcheck", "hq", "lost", "clips", "kept", "whole"])
+    ap.add_argument("cmd", choices=["timelines", "dropcheck", "hq", "lost", "clips", "kept", "whole", "bands",
+                                    "midsize", "d2_timelines", "d2_clips", "d2_dropcheck", "d2_spans", "float", "veto_dropped"])
+    ap.add_argument("--redraw-new", action="store_true", help="hq: draw new windows instead of the saved ones")
+    ap.add_argument("--deps", default=DEP + ",TestSubset 2025-1-2 CATS -85")
     ap.add_argument("--tally", action="store_true")
     ap.add_argument("--label", default="sensitive")
     ap.add_argument("--dep", default=DEP)
-    ap.add_argument("-n", type=int, default=36)
+    ap.add_argument("-n", type=int, default=24)
     a = ap.parse_args()
-    {"whole": cmd_whole, "timelines": cmd_timelines, "dropcheck": cmd_dropcheck, "hq": cmd_hq, "lost": cmd_lost, "clips": cmd_clips,
-     "kept": cmd_kept}[a.cmd](a)
+    {"whole": cmd_whole, "timelines": cmd_timelines, "dropcheck": cmd_dropcheck, "hq": cmd_hq, "lost": cmd_lost,
+     "clips": cmd_clips, "kept": cmd_kept, "bands": cmd_bands, "midsize": cmd_midsize,
+     "d2_timelines": cmd_d2_timelines, "d2_clips": cmd_d2_clips, "d2_dropcheck": cmd_d2_dropcheck,
+     "d2_spans": cmd_d2_spans, "float": cmd_float,
+     "veto_dropped": cmd_veto_dropped}[a.cmd](a)

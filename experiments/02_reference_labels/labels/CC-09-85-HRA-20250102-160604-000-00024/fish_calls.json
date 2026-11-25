@@ -1,0 +1,28 @@
+[
+ {
+  "frame": 4026,
+  "boxes": [
+   [
+    100,
+    330,
+    530,
+    530
+   ]
+  ],
+  "count": 1,
+  "note": "1 jack, forked tail and eye (box from the 480 px sheet, checked on the sheet)"
+ },
+ {
+  "frame": 7266,
+  "boxes": [
+   [
+    190,
+    420,
+    470,
+    520
+   ]
+  ],
+  "count": 1,
+  "note": "1 jack, forked tail"
+ }
+]

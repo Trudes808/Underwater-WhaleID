@@ -1,0 +1,2277 @@
+{
+ "sensitive": {
+  "label": "sensitive",
+  "n_frames": 420,
+  "state_vs_scan": {
+   "air": {
+    "air": 67,
+    "crossing": 1,
+    "surfaced": 3,
+    "underwater": 0
+   },
+   "crossing": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 2,
+    "underwater": 0
+   },
+   "underwater": {
+    "air": 12,
+    "crossing": 3,
+    "surfaced": 3,
+    "underwater": 320
+   },
+   "unusable": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 0,
+    "underwater": 9
+   }
+  },
+  "state_vs_tag_state": {
+   "air": {
+    "air": 67,
+    "floating": 0,
+    "whale": 4
+   },
+   "crossing": {
+    "air": 0,
+    "floating": 0,
+    "whale": 2
+   },
+   "underwater": {
+    "air": 12,
+    "floating": 5,
+    "whale": 321
+   },
+   "unusable": {
+    "air": 0,
+    "floating": 0,
+    "whale": 9
+   }
+  },
+  "activity_tiers": {
+   "activity_frames": [
+    38,
+    46
+   ],
+   "activity_lost": [
+    {
+     "piece": "00010",
+     "frame": 14071,
+     "t_mov": 469.0,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 25047,
+     "t_mov": 834.9,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 28125,
+     "t_mov": 937.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00017",
+     "frame": 33399,
+     "t_mov": 1113.3,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 7386,
+     "t_mov": 246.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 31875,
+     "t_mov": 1062.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 381,
+     "t_mov": 12.7,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 583,
+     "t_mov": 19.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    }
+   ],
+   "empty_underwater_frames_kept": [
+    20,
+    292
+   ],
+   "fish_frames_kept": [
+    7,
+    7
+   ],
+   "grade_vs_tier": {
+    "hq": {
+     "hq": 2,
+     "ok": 0,
+     "low": 0,
+     "small": 0,
+     "fish": 0,
+     "none": 0
+    },
+    "ok": {
+     "hq": 8,
+     "ok": 3,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 6
+    },
+    "low": {
+     "hq": 0,
+     "ok": 0,
+     "low": 2,
+     "small": 2,
+     "fish": 0,
+     "none": 7
+    },
+    "whale-free": {
+     "hq": 0,
+     "ok": 0,
+     "low": 0,
+     "small": 6,
+     "fish": 4,
+     "none": 364
+    },
+    "faint only": {
+     "hq": 0,
+     "ok": 1,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 13
+    }
+   },
+   "hq_ok_frames_in_tier_ok_or_better": [
+    13,
+    20
+   ],
+   "tool_ok_or_better_frames_graded_low_or_free": [
+    1,
+    14
+   ],
+   "advanced_ok_frames_graded_low_or_free": [
+    0,
+    10
+   ],
+   "hq_frames_in_tier_hq": [
+    2,
+    2
+   ],
+   "dark_label_vs_flag": {
+    "other": {
+     "flag": 0,
+     "no flag": 409
+    },
+    "view dark": {
+     "flag": 8,
+     "no flag": 3
+    }
+   },
+   "sand_label_vs_flag": {
+    "other": {
+     "flag": 4,
+     "no flag": 406
+    },
+    "view sand": {
+     "flag": 9,
+     "no flag": 1
+    }
+   },
+   "silhouette_label_vs_flag": {
+    "no": {
+     "flag": 5,
+     "no flag": 24
+    },
+    "yes": {
+     "flag": 0,
+     "no flag": 2
+    }
+   }
+  },
+  "whale_frames": {
+   "clear_kept": [
+    29,
+    31
+   ],
+   "by_grade": {
+    "hq": [
+     2,
+     2
+    ],
+    "low": [
+     9,
+     11
+    ],
+    "ok": [
+     18,
+     18
+    ]
+   }
+  },
+  "whale_free_underwater_kept_by_why": {
+   "padding": 16,
+   "small": 3,
+   "fish": 1
+  },
+  "view_sand": {
+   "frames": 10,
+   "kept": 2,
+   "tier": {
+    "none": 10
+   },
+   "water_picture": {
+    "underwater": 10
+   }
+  },
+  "view_dark": {
+   "frames": 11,
+   "kept": 1,
+   "tier": {
+    "none": 11
+   },
+   "water_picture": {
+    "underwater": 11
+   }
+  },
+  "view_bubbles": {
+   "frames": 4,
+   "kept": 0,
+   "tier": {
+    "none": 4
+   },
+   "water_picture": {
+    "crossing": 3,
+    "underwater": 1
+   }
+  },
+  "seafloor_spans": "labels withdrawn 2026-11-23",
+  "blocked_spans": {
+   "air": {
+    "windows": 257,
+    "scanned": 73,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 40,
+    "hq_whale": 0,
+    "tier": {
+     "none": 255,
+     "small": 2
+    },
+    "water_picture": {
+     "air": 172,
+     "crossing": 54,
+     "underwater": 31
+    },
+    "bubbles_ge_0.3_share": 2
+   },
+   "dark": {
+    "windows": 215,
+    "scanned": 215,
+    "whale_fires": 0,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 3,
+    "hq_whale": 0,
+    "tier": {
+     "none": 214,
+     "small": 1
+    },
+    "water_picture": {
+     "underwater": 215
+    },
+    "bubbles_ge_0.3_share": 0
+   },
+   "sand": {
+    "windows": 203,
+    "scanned": 203,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 28,
+    "hq_whale": 0,
+    "tier": {
+     "none": 201,
+     "small": 2
+    },
+    "water_picture": {
+     "underwater": 203
+    },
+    "bubbles_ge_0.3_share": 0
+   }
+  },
+  "minutes": {
+   "total": 140.85,
+   "kept": 17.616666666666667,
+   "dropped": {
+    "tag in air": 49.49166666666667,
+    "drone flight": 0.0,
+    "tag floating": 0.4166666666666667,
+    "surfaced": 1.4416666666666667,
+    "nothing detected": 71.88333333333334,
+    "unreadable": 0.0
+   },
+   "tier_window_min": {
+    "hq": 2.2,
+    "ok": 1.6666666666666667,
+    "low": 0.26666666666666666,
+    "small": 2.65,
+    "fish": 0.6833333333333333
+   },
+   "clip_min_by_tier": {
+    "hq": 8.9,
+    "ok": 3.65,
+    "low": 0.0,
+    "small": 5.066666666666666,
+    "fish": 0.0
+   },
+   "n_clips_by_tier": {
+    "hq": 8,
+    "ok": 9,
+    "low": 0,
+    "small": 10,
+    "fish": 0
+   }
+  },
+  "lost_activity": [
+   {
+    "piece": "00010",
+    "frame": 14071,
+    "t_mov": 469.0,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 25047,
+    "t_mov": 834.9,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 28125,
+    "t_mov": 937.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00017",
+    "frame": 33399,
+    "t_mov": 1113.3,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 7386,
+    "t_mov": 246.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 31875,
+    "t_mov": 1062.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 381,
+    "t_mov": 12.7,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 583,
+    "t_mov": 19.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   }
+  ]
+ },
+ "strict": {
+  "label": "strict",
+  "n_frames": 420,
+  "state_vs_scan": {
+   "air": {
+    "air": 67,
+    "crossing": 1,
+    "surfaced": 3,
+    "underwater": 0
+   },
+   "crossing": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 2,
+    "underwater": 0
+   },
+   "underwater": {
+    "air": 12,
+    "crossing": 3,
+    "surfaced": 3,
+    "underwater": 320
+   },
+   "unusable": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 0,
+    "underwater": 9
+   }
+  },
+  "state_vs_tag_state": {
+   "air": {
+    "air": 67,
+    "floating": 0,
+    "whale": 4
+   },
+   "crossing": {
+    "air": 0,
+    "floating": 0,
+    "whale": 2
+   },
+   "underwater": {
+    "air": 12,
+    "floating": 5,
+    "whale": 321
+   },
+   "unusable": {
+    "air": 0,
+    "floating": 0,
+    "whale": 9
+   }
+  },
+  "activity_tiers": {
+   "activity_frames": [
+    34,
+    46
+   ],
+   "activity_lost": [
+    {
+     "piece": "00010",
+     "frame": 11521,
+     "t_mov": 384.0,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00010",
+     "frame": 11886,
+     "t_mov": 396.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00010",
+     "frame": 14071,
+     "t_mov": 469.0,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 13504,
+     "t_mov": 450.1,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 25047,
+     "t_mov": 834.9,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 28125,
+     "t_mov": 937.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00017",
+     "frame": 33399,
+     "t_mov": 1113.3,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 7386,
+     "t_mov": 246.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 31875,
+     "t_mov": 1062.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 381,
+     "t_mov": 12.7,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 583,
+     "t_mov": 19.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 786,
+     "t_mov": 26.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    }
+   ],
+   "empty_underwater_frames_kept": [
+    10,
+    292
+   ],
+   "fish_frames_kept": [
+    7,
+    7
+   ],
+   "grade_vs_tier": {
+    "hq": {
+     "hq": 2,
+     "ok": 0,
+     "low": 0,
+     "small": 0,
+     "fish": 0,
+     "none": 0
+    },
+    "ok": {
+     "hq": 6,
+     "ok": 2,
+     "low": 0,
+     "small": 2,
+     "fish": 0,
+     "none": 8
+    },
+    "low": {
+     "hq": 0,
+     "ok": 0,
+     "low": 2,
+     "small": 2,
+     "fish": 0,
+     "none": 7
+    },
+    "whale-free": {
+     "hq": 0,
+     "ok": 0,
+     "low": 0,
+     "small": 6,
+     "fish": 4,
+     "none": 364
+    },
+    "faint only": {
+     "hq": 0,
+     "ok": 0,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 14
+    }
+   },
+   "hq_ok_frames_in_tier_ok_or_better": [
+    10,
+    20
+   ],
+   "tool_ok_or_better_frames_graded_low_or_free": [
+    0,
+    10
+   ],
+   "advanced_ok_frames_graded_low_or_free": [
+    0,
+    8
+   ],
+   "hq_frames_in_tier_hq": [
+    2,
+    2
+   ],
+   "dark_label_vs_flag": {
+    "other": {
+     "flag": 0,
+     "no flag": 409
+    },
+    "view dark": {
+     "flag": 8,
+     "no flag": 3
+    }
+   },
+   "sand_label_vs_flag": {
+    "other": {
+     "flag": 4,
+     "no flag": 406
+    },
+    "view sand": {
+     "flag": 9,
+     "no flag": 1
+    }
+   },
+   "silhouette_label_vs_flag": {
+    "no": {
+     "flag": 3,
+     "no flag": 26
+    },
+    "yes": {
+     "flag": 0,
+     "no flag": 2
+    }
+   }
+  },
+  "whale_frames": {
+   "clear_kept": [
+    26,
+    31
+   ],
+   "by_grade": {
+    "hq": [
+     2,
+     2
+    ],
+    "low": [
+     6,
+     11
+    ],
+    "ok": [
+     18,
+     18
+    ]
+   }
+  },
+  "whale_free_underwater_kept_by_why": {
+   "padding": 7,
+   "small": 2,
+   "fish": 1
+  },
+  "view_sand": {
+   "frames": 10,
+   "kept": 0,
+   "tier": {
+    "none": 10
+   },
+   "water_picture": {
+    "underwater": 10
+   }
+  },
+  "view_dark": {
+   "frames": 11,
+   "kept": 0,
+   "tier": {
+    "none": 11
+   },
+   "water_picture": {
+    "underwater": 11
+   }
+  },
+  "view_bubbles": {
+   "frames": 4,
+   "kept": 0,
+   "tier": {
+    "none": 4
+   },
+   "water_picture": {
+    "crossing": 3,
+    "underwater": 1
+   }
+  },
+  "seafloor_spans": "labels withdrawn 2026-11-23",
+  "blocked_spans": {
+   "air": {
+    "windows": 257,
+    "scanned": 73,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 25,
+    "hq_whale": 0,
+    "tier": {
+     "none": 255,
+     "small": 2
+    },
+    "water_picture": {
+     "air": 172,
+     "crossing": 54,
+     "underwater": 31
+    },
+    "bubbles_ge_0.3_share": 2
+   },
+   "dark": {
+    "windows": 215,
+    "scanned": 215,
+    "whale_fires": 0,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 0,
+    "hq_whale": 0,
+    "tier": {
+     "none": 214,
+     "small": 1
+    },
+    "water_picture": {
+     "underwater": 215
+    },
+    "bubbles_ge_0.3_share": 0
+   },
+   "sand": {
+    "windows": 203,
+    "scanned": 203,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 0,
+    "hq_whale": 0,
+    "tier": {
+     "none": 201,
+     "small": 2
+    },
+    "water_picture": {
+     "underwater": 203
+    },
+    "bubbles_ge_0.3_share": 0
+   }
+  },
+  "minutes": {
+   "total": 140.85,
+   "kept": 11.516666666666667,
+   "dropped": {
+    "tag in air": 49.49166666666667,
+    "drone flight": 0.0,
+    "tag floating": 0.55,
+    "surfaced": 1.575,
+    "nothing detected": 77.71666666666667,
+    "unreadable": 0.0
+   },
+   "tier_window_min": {
+    "hq": 1.9,
+    "ok": 1.2166666666666666,
+    "low": 0.2,
+    "small": 2.75,
+    "fish": 0.6833333333333333
+   },
+   "clip_min_by_tier": {
+    "hq": 6.633333333333334,
+    "ok": 1.55,
+    "low": 0.0,
+    "small": 3.25,
+    "fish": 0.08333333333333333
+   },
+   "n_clips_by_tier": {
+    "hq": 8,
+    "ok": 6,
+    "low": 0,
+    "small": 7,
+    "fish": 1
+   }
+  },
+  "lost_activity": [
+   {
+    "piece": "00010",
+    "frame": 11521,
+    "t_mov": 384.0,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00010",
+    "frame": 11886,
+    "t_mov": 396.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00010",
+    "frame": 14071,
+    "t_mov": 469.0,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 13504,
+    "t_mov": 450.1,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 25047,
+    "t_mov": 834.9,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 28125,
+    "t_mov": 937.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00017",
+    "frame": 33399,
+    "t_mov": 1113.3,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 7386,
+    "t_mov": 246.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 31875,
+    "t_mov": 1062.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 381,
+    "t_mov": 12.7,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 583,
+    "t_mov": 19.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 786,
+    "t_mov": 26.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   }
+  ]
+ },
+ "sensitive+noclf+guard9": {
+  "label": "sensitive+noclf+guard9",
+  "n_frames": 420,
+  "state_vs_scan": {
+   "air": {
+    "air": 67,
+    "crossing": 1,
+    "surfaced": 3,
+    "underwater": 0
+   },
+   "crossing": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 2,
+    "underwater": 0
+   },
+   "underwater": {
+    "air": 12,
+    "crossing": 3,
+    "surfaced": 3,
+    "underwater": 320
+   },
+   "unusable": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 0,
+    "underwater": 9
+   }
+  },
+  "state_vs_tag_state": {
+   "air": {
+    "air": 67,
+    "floating": 0,
+    "whale": 4
+   },
+   "crossing": {
+    "air": 0,
+    "floating": 0,
+    "whale": 2
+   },
+   "underwater": {
+    "air": 12,
+    "floating": 5,
+    "whale": 321
+   },
+   "unusable": {
+    "air": 0,
+    "floating": 0,
+    "whale": 9
+   }
+  },
+  "activity_tiers": {
+   "activity_frames": [
+    36,
+    46
+   ],
+   "activity_lost": [
+    {
+     "piece": "00010",
+     "frame": 11521,
+     "t_mov": 384.0,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00010",
+     "frame": 14071,
+     "t_mov": 469.0,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 25047,
+     "t_mov": 834.9,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 28125,
+     "t_mov": 937.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00017",
+     "frame": 33399,
+     "t_mov": 1113.3,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 7386,
+     "t_mov": 246.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 31875,
+     "t_mov": 1062.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 381,
+     "t_mov": 12.7,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 583,
+     "t_mov": 19.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 2203,
+     "t_mov": 73.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    }
+   ],
+   "empty_underwater_frames_kept": [
+    31,
+    292
+   ],
+   "fish_frames_kept": [
+    7,
+    7
+   ],
+   "grade_vs_tier": {
+    "hq": {
+     "hq": 2,
+     "ok": 0,
+     "low": 0,
+     "small": 0,
+     "fish": 0,
+     "none": 0
+    },
+    "ok": {
+     "hq": 8,
+     "ok": 3,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 6
+    },
+    "low": {
+     "hq": 0,
+     "ok": 1,
+     "low": 1,
+     "small": 2,
+     "fish": 0,
+     "none": 7
+    },
+    "whale-free": {
+     "hq": 1,
+     "ok": 10,
+     "low": 0,
+     "small": 4,
+     "fish": 1,
+     "none": 358
+    },
+    "faint only": {
+     "hq": 0,
+     "ok": 1,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 13
+    }
+   },
+   "hq_ok_frames_in_tier_ok_or_better": [
+    13,
+    20
+   ],
+   "tool_ok_or_better_frames_graded_low_or_free": [
+    13,
+    26
+   ],
+   "advanced_ok_frames_graded_low_or_free": [
+    1,
+    11
+   ],
+   "hq_frames_in_tier_hq": [
+    2,
+    2
+   ],
+   "dark_label_vs_flag": {
+    "other": {
+     "flag": 0,
+     "no flag": 409
+    },
+    "view dark": {
+     "flag": 8,
+     "no flag": 3
+    }
+   },
+   "sand_label_vs_flag": {
+    "other": {
+     "flag": 4,
+     "no flag": 406
+    },
+    "view sand": {
+     "flag": 9,
+     "no flag": 1
+    }
+   },
+   "silhouette_label_vs_flag": {
+    "no": {
+     "flag": 5,
+     "no flag": 24
+    },
+    "yes": {
+     "flag": 0,
+     "no flag": 2
+    }
+   }
+  },
+  "whale_frames": {
+   "clear_kept": [
+    27,
+    31
+   ],
+   "by_grade": {
+    "hq": [
+     2,
+     2
+    ],
+    "low": [
+     7,
+     11
+    ],
+    "ok": [
+     18,
+     18
+    ]
+   }
+  },
+  "whale_free_underwater_kept_by_why": {
+   "padding": 21,
+   "whale": 8,
+   "small": 1,
+   "fish": 1
+  },
+  "view_sand": {
+   "frames": 10,
+   "kept": 2,
+   "tier": {
+    "none": 9,
+    "ok": 1
+   },
+   "water_picture": {
+    "underwater": 10
+   }
+  },
+  "view_dark": {
+   "frames": 11,
+   "kept": 1,
+   "tier": {
+    "none": 11
+   },
+   "water_picture": {
+    "underwater": 11
+   }
+  },
+  "view_bubbles": {
+   "frames": 4,
+   "kept": 2,
+   "tier": {
+    "none": 4
+   },
+   "water_picture": {
+    "crossing": 3,
+    "underwater": 1
+   }
+  },
+  "seafloor_spans": "labels withdrawn 2026-11-23",
+  "blocked_spans": {
+   "air": {
+    "windows": 257,
+    "scanned": 73,
+    "whale_fires": 9,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 47,
+    "hq_whale": 8,
+    "tier": {
+     "none": 247,
+     "hq": 8,
+     "small": 1,
+     "low": 1
+    },
+    "water_picture": {
+     "air": 172,
+     "crossing": 54,
+     "underwater": 31
+    },
+    "bubbles_ge_0.3_share": 2
+   },
+   "dark": {
+    "windows": 215,
+    "scanned": 215,
+    "whale_fires": 0,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 3,
+    "hq_whale": 0,
+    "tier": {
+     "none": 214,
+     "small": 1
+    },
+    "water_picture": {
+     "underwater": 215
+    },
+    "bubbles_ge_0.3_share": 0
+   },
+   "sand": {
+    "windows": 203,
+    "scanned": 203,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 8,
+    "hq_whale": 0,
+    "tier": {
+     "none": 201,
+     "small": 2
+    },
+    "water_picture": {
+     "underwater": 203
+    },
+    "bubbles_ge_0.3_share": 0
+   }
+  },
+  "minutes": {
+   "total": 140.85,
+   "kept": 16.633333333333333,
+   "dropped": {
+    "tag in air": 49.49166666666667,
+    "drone flight": 0.0,
+    "tag floating": 0.4166666666666667,
+    "surfaced": 1.4416666666666667,
+    "nothing detected": 72.86666666666666,
+    "unreadable": 0.0
+   },
+   "tier_window_min": {
+    "hq": 2.9,
+    "ok": 2.8333333333333335,
+    "low": 0.75,
+    "small": 2.0833333333333335,
+    "fish": 0.08333333333333333
+   },
+   "clip_min_by_tier": {
+    "hq": 11.066666666666666,
+    "ok": 3.316666666666667,
+    "low": 0.35,
+    "small": 1.9,
+    "fish": 0.0
+   },
+   "n_clips_by_tier": {
+    "hq": 33,
+    "ok": 15,
+    "low": 2,
+    "small": 11,
+    "fish": 0
+   }
+  },
+  "lost_activity": [
+   {
+    "piece": "00010",
+    "frame": 11521,
+    "t_mov": 384.0,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00010",
+    "frame": 14071,
+    "t_mov": 469.0,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 25047,
+    "t_mov": 834.9,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 28125,
+    "t_mov": 937.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00017",
+    "frame": 33399,
+    "t_mov": 1113.3,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 7386,
+    "t_mov": 246.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 31875,
+    "t_mov": 1062.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 381,
+    "t_mov": 12.7,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 583,
+    "t_mov": 19.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 2203,
+    "t_mov": 73.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   }
+  ]
+ },
+ "sensitive+guard9": {
+  "label": "sensitive+guard9",
+  "n_frames": 420,
+  "state_vs_scan": {
+   "air": {
+    "air": 67,
+    "crossing": 1,
+    "surfaced": 3,
+    "underwater": 0
+   },
+   "crossing": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 2,
+    "underwater": 0
+   },
+   "underwater": {
+    "air": 12,
+    "crossing": 3,
+    "surfaced": 3,
+    "underwater": 320
+   },
+   "unusable": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 0,
+    "underwater": 9
+   }
+  },
+  "state_vs_tag_state": {
+   "air": {
+    "air": 67,
+    "floating": 0,
+    "whale": 4
+   },
+   "crossing": {
+    "air": 0,
+    "floating": 0,
+    "whale": 2
+   },
+   "underwater": {
+    "air": 12,
+    "floating": 5,
+    "whale": 321
+   },
+   "unusable": {
+    "air": 0,
+    "floating": 0,
+    "whale": 9
+   }
+  },
+  "activity_tiers": {
+   "activity_frames": [
+    36,
+    46
+   ],
+   "activity_lost": [
+    {
+     "piece": "00010",
+     "frame": 11521,
+     "t_mov": 384.0,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00010",
+     "frame": 14071,
+     "t_mov": 469.0,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 25047,
+     "t_mov": 834.9,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 28125,
+     "t_mov": 937.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00017",
+     "frame": 33399,
+     "t_mov": 1113.3,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 7386,
+     "t_mov": 246.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 31875,
+     "t_mov": 1062.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 381,
+     "t_mov": 12.7,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 583,
+     "t_mov": 19.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 2203,
+     "t_mov": 73.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    }
+   ],
+   "empty_underwater_frames_kept": [
+    10,
+    292
+   ],
+   "fish_frames_kept": [
+    7,
+    7
+   ],
+   "grade_vs_tier": {
+    "hq": {
+     "hq": 2,
+     "ok": 0,
+     "low": 0,
+     "small": 0,
+     "fish": 0,
+     "none": 0
+    },
+    "ok": {
+     "hq": 8,
+     "ok": 3,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 6
+    },
+    "low": {
+     "hq": 0,
+     "ok": 0,
+     "low": 2,
+     "small": 2,
+     "fish": 0,
+     "none": 7
+    },
+    "whale-free": {
+     "hq": 0,
+     "ok": 0,
+     "low": 0,
+     "small": 6,
+     "fish": 4,
+     "none": 364
+    },
+    "faint only": {
+     "hq": 0,
+     "ok": 1,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 13
+    }
+   },
+   "hq_ok_frames_in_tier_ok_or_better": [
+    13,
+    20
+   ],
+   "tool_ok_or_better_frames_graded_low_or_free": [
+    1,
+    14
+   ],
+   "advanced_ok_frames_graded_low_or_free": [
+    0,
+    10
+   ],
+   "hq_frames_in_tier_hq": [
+    2,
+    2
+   ],
+   "dark_label_vs_flag": {
+    "other": {
+     "flag": 0,
+     "no flag": 409
+    },
+    "view dark": {
+     "flag": 8,
+     "no flag": 3
+    }
+   },
+   "sand_label_vs_flag": {
+    "other": {
+     "flag": 4,
+     "no flag": 406
+    },
+    "view sand": {
+     "flag": 9,
+     "no flag": 1
+    }
+   },
+   "silhouette_label_vs_flag": {
+    "no": {
+     "flag": 5,
+     "no flag": 24
+    },
+    "yes": {
+     "flag": 0,
+     "no flag": 2
+    }
+   }
+  },
+  "whale_frames": {
+   "clear_kept": [
+    27,
+    31
+   ],
+   "by_grade": {
+    "hq": [
+     2,
+     2
+    ],
+    "low": [
+     7,
+     11
+    ],
+    "ok": [
+     18,
+     18
+    ]
+   }
+  },
+  "whale_free_underwater_kept_by_why": {
+   "padding": 6,
+   "small": 3,
+   "fish": 1
+  },
+  "view_sand": {
+   "frames": 10,
+   "kept": 1,
+   "tier": {
+    "none": 10
+   },
+   "water_picture": {
+    "underwater": 10
+   }
+  },
+  "view_dark": {
+   "frames": 11,
+   "kept": 1,
+   "tier": {
+    "none": 11
+   },
+   "water_picture": {
+    "underwater": 11
+   }
+  },
+  "view_bubbles": {
+   "frames": 4,
+   "kept": 0,
+   "tier": {
+    "none": 4
+   },
+   "water_picture": {
+    "crossing": 3,
+    "underwater": 1
+   }
+  },
+  "seafloor_spans": "labels withdrawn 2026-11-23",
+  "blocked_spans": {
+   "air": {
+    "windows": 257,
+    "scanned": 73,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 16,
+    "hq_whale": 0,
+    "tier": {
+     "none": 255,
+     "small": 2
+    },
+    "water_picture": {
+     "air": 172,
+     "crossing": 54,
+     "underwater": 31
+    },
+    "bubbles_ge_0.3_share": 2
+   },
+   "dark": {
+    "windows": 215,
+    "scanned": 215,
+    "whale_fires": 0,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 3,
+    "hq_whale": 0,
+    "tier": {
+     "none": 214,
+     "small": 1
+    },
+    "water_picture": {
+     "underwater": 215
+    },
+    "bubbles_ge_0.3_share": 0
+   },
+   "sand": {
+    "windows": 203,
+    "scanned": 203,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 8,
+    "hq_whale": 0,
+    "tier": {
+     "none": 201,
+     "small": 2
+    },
+    "water_picture": {
+     "underwater": 203
+    },
+    "bubbles_ge_0.3_share": 0
+   }
+  },
+  "minutes": {
+   "total": 140.85,
+   "kept": 13.0,
+   "dropped": {
+    "tag in air": 49.49166666666667,
+    "drone flight": 0.0,
+    "tag floating": 0.4166666666666667,
+    "surfaced": 1.6916666666666667,
+    "nothing detected": 76.25,
+    "unreadable": 0.0
+   },
+   "tier_window_min": {
+    "hq": 2.2,
+    "ok": 1.6666666666666667,
+    "low": 0.26666666666666666,
+    "small": 2.65,
+    "fish": 0.6833333333333333
+   },
+   "clip_min_by_tier": {
+    "hq": 5.033333333333333,
+    "ok": 2.783333333333333,
+    "low": 0.0,
+    "small": 5.083333333333333,
+    "fish": 0.1
+   },
+   "n_clips_by_tier": {
+    "hq": 10,
+    "ok": 10,
+    "low": 0,
+    "small": 25,
+    "fish": 1
+   }
+  },
+  "lost_activity": [
+   {
+    "piece": "00010",
+    "frame": 11521,
+    "t_mov": 384.0,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00010",
+    "frame": 14071,
+    "t_mov": 469.0,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 25047,
+    "t_mov": 834.9,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 28125,
+    "t_mov": 937.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00017",
+    "frame": 33399,
+    "t_mov": 1113.3,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 7386,
+    "t_mov": 246.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 31875,
+    "t_mov": 1062.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 381,
+    "t_mov": 12.7,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 583,
+    "t_mov": 19.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 2203,
+    "t_mov": 73.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   }
+  ]
+ },
+ "sensitive+noclf": {
+  "label": "sensitive+noclf",
+  "n_frames": 420,
+  "state_vs_scan": {
+   "air": {
+    "air": 67,
+    "crossing": 1,
+    "surfaced": 3,
+    "underwater": 0
+   },
+   "crossing": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 2,
+    "underwater": 0
+   },
+   "underwater": {
+    "air": 12,
+    "crossing": 3,
+    "surfaced": 3,
+    "underwater": 320
+   },
+   "unusable": {
+    "air": 0,
+    "crossing": 0,
+    "surfaced": 0,
+    "underwater": 9
+   }
+  },
+  "state_vs_tag_state": {
+   "air": {
+    "air": 67,
+    "floating": 0,
+    "whale": 4
+   },
+   "crossing": {
+    "air": 0,
+    "floating": 0,
+    "whale": 2
+   },
+   "underwater": {
+    "air": 12,
+    "floating": 5,
+    "whale": 321
+   },
+   "unusable": {
+    "air": 0,
+    "floating": 0,
+    "whale": 9
+   }
+  },
+  "activity_tiers": {
+   "activity_frames": [
+    39,
+    46
+   ],
+   "activity_lost": [
+    {
+     "piece": "00010",
+     "frame": 14071,
+     "t_mov": 469.0,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 25047,
+     "t_mov": 834.9,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00011",
+     "frame": 28125,
+     "t_mov": 937.5,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00017",
+     "frame": 33399,
+     "t_mov": 1113.3,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00023",
+     "frame": 7386,
+     "t_mov": 246.2,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 381,
+     "t_mov": 12.7,
+     "why": "nothing detected",
+     "grade": "faint only",
+     "fish": "none"
+    },
+    {
+     "piece": "00024",
+     "frame": 583,
+     "t_mov": 19.4,
+     "why": "nothing detected",
+     "grade": "low",
+     "fish": "none"
+    }
+   ],
+   "empty_underwater_frames_kept": [
+    47,
+    292
+   ],
+   "fish_frames_kept": [
+    7,
+    7
+   ],
+   "grade_vs_tier": {
+    "hq": {
+     "hq": 2,
+     "ok": 0,
+     "low": 0,
+     "small": 0,
+     "fish": 0,
+     "none": 0
+    },
+    "ok": {
+     "hq": 8,
+     "ok": 3,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 6
+    },
+    "low": {
+     "hq": 0,
+     "ok": 1,
+     "low": 1,
+     "small": 2,
+     "fish": 0,
+     "none": 7
+    },
+    "whale-free": {
+     "hq": 1,
+     "ok": 10,
+     "low": 0,
+     "small": 4,
+     "fish": 1,
+     "none": 358
+    },
+    "faint only": {
+     "hq": 0,
+     "ok": 1,
+     "low": 0,
+     "small": 1,
+     "fish": 0,
+     "none": 13
+    }
+   },
+   "hq_ok_frames_in_tier_ok_or_better": [
+    13,
+    20
+   ],
+   "tool_ok_or_better_frames_graded_low_or_free": [
+    13,
+    26
+   ],
+   "advanced_ok_frames_graded_low_or_free": [
+    1,
+    11
+   ],
+   "hq_frames_in_tier_hq": [
+    2,
+    2
+   ],
+   "dark_label_vs_flag": {
+    "other": {
+     "flag": 0,
+     "no flag": 409
+    },
+    "view dark": {
+     "flag": 8,
+     "no flag": 3
+    }
+   },
+   "sand_label_vs_flag": {
+    "other": {
+     "flag": 4,
+     "no flag": 406
+    },
+    "view sand": {
+     "flag": 9,
+     "no flag": 1
+    }
+   },
+   "silhouette_label_vs_flag": {
+    "no": {
+     "flag": 5,
+     "no flag": 24
+    },
+    "yes": {
+     "flag": 0,
+     "no flag": 2
+    }
+   }
+  },
+  "whale_frames": {
+   "clear_kept": [
+    29,
+    31
+   ],
+   "by_grade": {
+    "hq": [
+     2,
+     2
+    ],
+    "low": [
+     9,
+     11
+    ],
+    "ok": [
+     18,
+     18
+    ]
+   }
+  },
+  "whale_free_underwater_kept_by_why": {
+   "padding": 37,
+   "whale": 8,
+   "small": 1,
+   "fish": 1
+  },
+  "view_sand": {
+   "frames": 10,
+   "kept": 3,
+   "tier": {
+    "none": 9,
+    "ok": 1
+   },
+   "water_picture": {
+    "underwater": 10
+   }
+  },
+  "view_dark": {
+   "frames": 11,
+   "kept": 1,
+   "tier": {
+    "none": 11
+   },
+   "water_picture": {
+    "underwater": 11
+   }
+  },
+  "view_bubbles": {
+   "frames": 4,
+   "kept": 3,
+   "tier": {
+    "none": 4
+   },
+   "water_picture": {
+    "crossing": 3,
+    "underwater": 1
+   }
+  },
+  "seafloor_spans": "labels withdrawn 2026-11-23",
+  "blocked_spans": {
+   "air": {
+    "windows": 257,
+    "scanned": 73,
+    "whale_fires": 9,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 92,
+    "hq_whale": 8,
+    "tier": {
+     "none": 247,
+     "hq": 8,
+     "small": 1,
+     "low": 1
+    },
+    "water_picture": {
+     "air": 172,
+     "crossing": 54,
+     "underwater": 31
+    },
+    "bubbles_ge_0.3_share": 2
+   },
+   "dark": {
+    "windows": 215,
+    "scanned": 215,
+    "whale_fires": 0,
+    "small_fires": 1,
+    "fish_fires": 1,
+    "kept": 10,
+    "hq_whale": 0,
+    "tier": {
+     "none": 214,
+     "small": 1
+    },
+    "water_picture": {
+     "underwater": 215
+    },
+    "bubbles_ge_0.3_share": 0
+   },
+   "sand": {
+    "windows": 203,
+    "scanned": 203,
+    "whale_fires": 0,
+    "small_fires": 2,
+    "fish_fires": 1,
+    "kept": 38,
+    "hq_whale": 0,
+    "tier": {
+     "none": 201,
+     "small": 2
+    },
+    "water_picture": {
+     "underwater": 203
+    },
+    "bubbles_ge_0.3_share": 0
+   }
+  },
+  "minutes": {
+   "total": 140.85,
+   "kept": 23.1,
+   "dropped": {
+    "tag in air": 49.49166666666667,
+    "drone flight": 0.0,
+    "tag floating": 0.4166666666666667,
+    "surfaced": 0.8416666666666667,
+    "nothing detected": 67.0,
+    "unreadable": 0.0
+   },
+   "tier_window_min": {
+    "hq": 2.9,
+    "ok": 2.8333333333333335,
+    "low": 0.75,
+    "small": 2.0833333333333335,
+    "fish": 0.08333333333333333
+   },
+   "clip_min_by_tier": {
+    "hq": 20.15,
+    "ok": 1.9166666666666667,
+    "low": 0.5833333333333334,
+    "small": 0.45,
+    "fish": 0.0
+   },
+   "n_clips_by_tier": {
+    "hq": 23,
+    "ok": 8,
+    "low": 1,
+    "small": 3,
+    "fish": 0
+   }
+  },
+  "lost_activity": [
+   {
+    "piece": "00010",
+    "frame": 14071,
+    "t_mov": 469.0,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 25047,
+    "t_mov": 834.9,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00011",
+    "frame": 28125,
+    "t_mov": 937.5,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00017",
+    "frame": 33399,
+    "t_mov": 1113.3,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00023",
+    "frame": 7386,
+    "t_mov": 246.2,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 381,
+    "t_mov": 12.7,
+    "why": "nothing detected",
+    "grade": "faint only",
+    "fish": "none"
+   },
+   {
+    "piece": "00024",
+    "frame": 583,
+    "t_mov": 19.4,
+    "why": "nothing detected",
+    "grade": "low",
+    "fish": "none"
+   }
+  ]
+ }
+}

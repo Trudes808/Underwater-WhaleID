@@ -1,0 +1,2609 @@
+{
+"meta": {
+"what": "WP12 seafloor masks on user-confirmed bottom episodes of 2025-01-02 00017 (AI masks by the WP10 agent on frames the user confirmed as seafloor in background, back in foreground). Polygons by eye from 960 px grid views; the back by SAM 2.1 (box clipped + points). Edges of the bottom in haze and sediment clouds = unsure (ignored).",
+"frames": "underwater_cache/seafloor/wp12/frames (1920x1080 from the 4K .mov, key = shown-frame index = round(t*30))",
+"rule": "water on the bottom's side of the frame is unsure (the dark band between the back and the bottom cannot be placed)"
+},
+"009300": [
+{
+"c": "seafloor",
+"poly": [
+[
+1550,
+80
+],
+[
+1920,
+60
+],
+[
+1920,
+520
+],
+[
+1700,
+500
+],
+[
+1550,
+460
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1350,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+60
+],
+[
+1550,
+80
+],
+[
+1550,
+460
+],
+[
+1350,
+450
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+450,
+1920,
+1080
+],
+"p": [
+[
+900,
+850
+],
+[
+1500,
+700
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1700,
+250
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1350,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"009480": [
+{
+"c": "seafloor",
+"poly": [
+[
+1450,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+460
+],
+[
+1700,
+420
+],
+[
+1620,
+380
+],
+[
+1500,
+250
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1250,
+0
+],
+[
+1450,
+0
+],
+[
+1500,
+250
+],
+[
+1620,
+380
+],
+[
+1450,
+400
+],
+[
+1300,
+250
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+370,
+1920,
+1080
+],
+"p": [
+[
+1000,
+800
+],
+[
+1500,
+600
+],
+[
+400,
+900
+]
+],
+"n": [
+[
+300,
+200
+],
+[
+1800,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1250,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"009600": [
+{
+"c": "seafloor",
+"poly": [
+[
+1700,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+500
+],
+[
+1750,
+420
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1500,
+0
+],
+[
+1700,
+0
+],
+[
+1750,
+420
+],
+[
+1920,
+500
+],
+[
+1920,
+600
+],
+[
+1600,
+450
+],
+[
+1450,
+250
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+280,
+1920,
+1080
+],
+"p": [
+[
+900,
+700
+],
+[
+1300,
+450
+],
+[
+300,
+850
+]
+],
+"n": [
+[
+300,
+200
+],
+[
+1100,
+150
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1450,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"009720": [
+{
+"c": "seafloor",
+"poly": [
+[
+1800,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+450
+],
+[
+1820,
+400
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1600,
+0
+],
+[
+1800,
+0
+],
+[
+1820,
+400
+],
+[
+1920,
+450
+],
+[
+1920,
+520
+],
+[
+1650,
+420
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+360,
+1920,
+1080
+],
+"p": [
+[
+800,
+800
+],
+[
+1250,
+500
+],
+[
+300,
+900
+]
+],
+"n": [
+[
+300,
+200
+],
+[
+1000,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1600,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"012180": [
+{
+"c": "seafloor",
+"poly": [
+[
+1150,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+580
+],
+[
+1400,
+560
+],
+[
+1250,
+300
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+950,
+0
+],
+[
+1150,
+0
+],
+[
+1250,
+300
+],
+[
+1400,
+560
+],
+[
+1100,
+560
+],
+[
+1000,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+520,
+1920,
+1080
+],
+"p": [
+[
+800,
+850
+],
+[
+1500,
+800
+],
+[
+300,
+900
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1500,
+300
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+950,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"012270": [
+{
+"c": "seafloor",
+"poly": [
+[
+1150,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+560
+],
+[
+1300,
+560
+],
+[
+1200,
+300
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1000,
+0
+],
+[
+1150,
+0
+],
+[
+1200,
+300
+],
+[
+1300,
+560
+],
+[
+1050,
+560
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+520,
+1920,
+1080
+],
+"p": [
+[
+800,
+850
+],
+[
+1500,
+800
+],
+[
+300,
+900
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1500,
+300
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1000,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"012390": [
+{
+"c": "seafloor",
+"poly": [
+[
+1000,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+300
+],
+[
+1500,
+400
+],
+[
+1150,
+420
+],
+[
+1050,
+250
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+850,
+0
+],
+[
+1000,
+0
+],
+[
+1050,
+250
+],
+[
+1150,
+420
+],
+[
+1500,
+400
+],
+[
+1920,
+300
+],
+[
+1920,
+600
+],
+[
+900,
+480
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+450,
+1920,
+1080
+],
+"p": [
+[
+700,
+850
+],
+[
+1400,
+850
+],
+[
+300,
+900
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1300,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+850,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"012510": [
+{
+"c": "seafloor",
+"poly": [
+[
+1300,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+250
+],
+[
+1500,
+330
+],
+[
+1350,
+200
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1150,
+0
+],
+[
+1300,
+0
+],
+[
+1350,
+200
+],
+[
+1500,
+330
+],
+[
+1920,
+250
+],
+[
+1920,
+550
+],
+[
+1300,
+450
+],
+[
+1150,
+250
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+380,
+1920,
+1080
+],
+"p": [
+[
+600,
+900
+],
+[
+1300,
+800
+],
+[
+1700,
+800
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1500,
+100
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1150,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"012600": [
+{
+"c": "seafloor",
+"poly": [
+[
+850,
+0
+],
+[
+1700,
+0
+],
+[
+1600,
+150
+],
+[
+1000,
+180
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+700,
+0
+],
+[
+850,
+0
+],
+[
+1000,
+180
+],
+[
+1600,
+150
+],
+[
+1700,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+500
+],
+[
+1200,
+350
+],
+[
+800,
+250
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+200,
+1920,
+1080
+],
+"p": [
+[
+600,
+850
+],
+[
+1200,
+700
+],
+[
+1700,
+850
+]
+],
+"n": [
+[
+200,
+300
+],
+[
+400,
+100
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+700,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"013980": [
+{
+"c": "seafloor",
+"poly": [
+[
+0,
+0
+],
+[
+450,
+0
+],
+[
+520,
+200
+],
+[
+500,
+450
+],
+[
+400,
+650
+],
+[
+250,
+780
+],
+[
+0,
+800
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+450,
+0
+],
+[
+650,
+0
+],
+[
+650,
+400
+],
+[
+500,
+650
+],
+[
+400,
+650
+],
+[
+500,
+450
+],
+[
+520,
+200
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+520,
+1920,
+1080
+],
+"p": [
+[
+1000,
+800
+],
+[
+1500,
+800
+],
+[
+400,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1200,
+300
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+0,
+0,
+650,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"014100": [
+{
+"c": "seafloor",
+"poly": [
+[
+0,
+0
+],
+[
+420,
+0
+],
+[
+430,
+300
+],
+[
+380,
+600
+],
+[
+250,
+760
+],
+[
+0,
+790
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+420,
+0
+],
+[
+600,
+0
+],
+[
+560,
+500
+],
+[
+380,
+600
+],
+[
+430,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+500,
+1920,
+1080
+],
+"p": [
+[
+900,
+800
+],
+[
+1500,
+800
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+250,
+300
+],
+[
+1300,
+300
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+0,
+0,
+600,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"014220": [
+{
+"c": "seafloor",
+"poly": [
+[
+0,
+0
+],
+[
+600,
+0
+],
+[
+620,
+300
+],
+[
+560,
+600
+],
+[
+400,
+700
+],
+[
+0,
+760
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+600,
+0
+],
+[
+750,
+0
+],
+[
+700,
+500
+],
+[
+560,
+600
+],
+[
+620,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+460,
+1920,
+1080
+],
+"p": [
+[
+1000,
+750
+],
+[
+1500,
+750
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1200,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+0,
+0,
+750,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"014340": [
+{
+"c": "seafloor",
+"poly": [
+[
+0,
+0
+],
+[
+320,
+0
+],
+[
+330,
+400
+],
+[
+250,
+700
+],
+[
+0,
+780
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+320,
+0
+],
+[
+520,
+0
+],
+[
+500,
+500
+],
+[
+250,
+700
+],
+[
+330,
+400
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+520,
+1920,
+1080
+],
+"p": [
+[
+900,
+800
+],
+[
+1500,
+800
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1200,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+0,
+0,
+520,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"014460": [
+{
+"c": "seafloor",
+"poly": [
+[
+0,
+0
+],
+[
+520,
+0
+],
+[
+540,
+300
+],
+[
+450,
+600
+],
+[
+0,
+700
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+520,
+0
+],
+[
+700,
+0
+],
+[
+650,
+500
+],
+[
+450,
+600
+],
+[
+540,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "unsure",
+"rect": [
+650,
+250,
+850,
+420
+],
+"note": "another whale's flipper or a bright object: not painted"
+},
+{
+"c": "back",
+"box": [
+0,
+540,
+1920,
+1080
+],
+"p": [
+[
+900,
+800
+],
+[
+1500,
+800
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1200,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+0,
+0,
+700,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"014580": [
+{
+"c": "seafloor",
+"poly": [
+[
+0,
+0
+],
+[
+700,
+0
+],
+[
+750,
+150
+],
+[
+600,
+400
+],
+[
+300,
+560
+],
+[
+0,
+600
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+700,
+0
+],
+[
+950,
+0
+],
+[
+900,
+300
+],
+[
+600,
+450
+],
+[
+750,
+150
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "unsure",
+"rect": [
+1000,
+0,
+1250,
+120
+],
+"note": "another whale's flipper or a bright object: not painted"
+},
+{
+"c": "back",
+"box": [
+0,
+500,
+1920,
+1080
+],
+"p": [
+[
+900,
+750
+],
+[
+1500,
+850
+],
+[
+300,
+900
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1200,
+250
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+0,
+0,
+950,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015360": [
+{
+"c": "seafloor",
+"poly": [
+[
+620,
+0
+],
+[
+1450,
+0
+],
+[
+1400,
+200
+],
+[
+1000,
+300
+],
+[
+700,
+200
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1450,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+700
+],
+[
+900,
+550
+],
+[
+1000,
+300
+],
+[
+1400,
+200
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+420,
+1920,
+1080
+],
+"p": [
+[
+800,
+900
+],
+[
+1400,
+800
+],
+[
+1700,
+900
+]
+],
+"n": [
+[
+200,
+300
+],
+[
+500,
+100
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1300,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015420": [
+{
+"c": "seafloor",
+"poly": [
+[
+750,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+150
+],
+[
+1400,
+250
+],
+[
+1000,
+250
+],
+[
+800,
+150
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1400,
+250
+],
+[
+1920,
+150
+],
+[
+1920,
+700
+],
+[
+1100,
+500
+],
+[
+1000,
+250
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+300,
+1920,
+1080
+],
+"p": [
+[
+800,
+850
+],
+[
+1300,
+800
+],
+[
+1700,
+900
+]
+],
+"n": [
+[
+200,
+300
+],
+[
+500,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1000,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015480": [
+{
+"c": "seafloor",
+"poly": [
+[
+650,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+120
+],
+[
+1300,
+200
+],
+[
+900,
+250
+],
+[
+700,
+150
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+900,
+250
+],
+[
+1300,
+200
+],
+[
+1920,
+120
+],
+[
+1920,
+650
+],
+[
+1000,
+500
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+330,
+1920,
+1080
+],
+"p": [
+[
+800,
+850
+],
+[
+1300,
+800
+],
+[
+1700,
+900
+]
+],
+"n": [
+[
+200,
+300
+],
+[
+400,
+100
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+900,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015540": [
+{
+"c": "seafloor",
+"poly": [
+[
+850,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+250
+],
+[
+1500,
+300
+],
+[
+1100,
+250
+],
+[
+900,
+150
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1100,
+250
+],
+[
+1500,
+300
+],
+[
+1920,
+250
+],
+[
+1920,
+850
+],
+[
+1300,
+500
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+330,
+1920,
+1080
+],
+"p": [
+[
+700,
+850
+],
+[
+1000,
+600
+],
+[
+400,
+900
+]
+],
+"n": [
+[
+200,
+300
+],
+[
+1600,
+600
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1100,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015600": [
+{
+"c": "seafloor",
+"poly": [
+[
+1250,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+500
+],
+[
+1600,
+400
+],
+[
+1350,
+250
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1000,
+0
+],
+[
+1250,
+0
+],
+[
+1350,
+250
+],
+[
+1600,
+400
+],
+[
+1920,
+500
+],
+[
+1920,
+700
+],
+[
+1300,
+450
+],
+[
+950,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+460,
+1920,
+1080
+],
+"p": [
+[
+800,
+850
+],
+[
+1000,
+600
+],
+[
+1500,
+900
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1300,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1250,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015840": [
+{
+"c": "seafloor",
+"poly": [
+[
+1450,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+600
+],
+[
+1500,
+500
+],
+[
+1400,
+300
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1250,
+0
+],
+[
+1450,
+0
+],
+[
+1400,
+300
+],
+[
+1500,
+500
+],
+[
+1920,
+600
+],
+[
+1920,
+700
+],
+[
+1300,
+550
+],
+[
+1200,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+540,
+1920,
+1080
+],
+"p": [
+[
+900,
+850
+],
+[
+1400,
+800
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1700,
+300
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1300,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+],
+"015930": [
+{
+"c": "seafloor",
+"poly": [
+[
+1550,
+0
+],
+[
+1920,
+0
+],
+[
+1920,
+300
+],
+[
+1650,
+350
+],
+[
+1550,
+200
+]
+],
+"note": "bottom seen at the side while the whale scrapes along it (user-confirmed episode)"
+},
+{
+"c": "unsure",
+"poly": [
+[
+1350,
+0
+],
+[
+1550,
+0
+],
+[
+1550,
+200
+],
+[
+1650,
+350
+],
+[
+1920,
+300
+],
+[
+1920,
+700
+],
+[
+1450,
+600
+],
+[
+1350,
+300
+]
+],
+"note": "edge of the bottom in haze / sediment"
+},
+{
+"c": "back",
+"box": [
+0,
+500,
+1920,
+1080
+],
+"p": [
+[
+900,
+850
+],
+[
+1300,
+750
+],
+[
+300,
+950
+]
+],
+"n": [
+[
+300,
+300
+],
+[
+1800,
+200
+]
+],
+"clip": true
+},
+{
+"c": "unsure",
+"rect": [
+1700,
+1055,
+1920,
+1080
+],
+"note": "burned-in clock"
+},
+{
+"c": "unsure",
+"rect": [
+1450,
+0,
+1920,
+1080
+],
+"over": [
+"water"
+],
+"note": "gap on the bottom side between the back and the bottom: dark band that may be bottom, shadow or sediment"
+}
+]
+}

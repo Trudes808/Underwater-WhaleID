@@ -1,0 +1,22 @@
+{
+ "video": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+ "fps": 30.0,
+ "labels": "AI by-eye labels (WP3b part B), test video: scoring only. Times = video time from the first shown frame (uwid.video frame index / 30).",
+ "rule": "event frame = first frame whose centre shows the other side of the surface; crossing = frames in between (sheet of water / foam). Stepped at 0.2 s (every 6th frame) around each surfacing, 1 s elsewhere in the window, so event times are good to about 0.2 s.",
+ "windows": [
+  {"name": "sensor_check", "start_s": 400.0, "end_s": 580.0, "how": "1 s frames 405-528 s, 0.2 s frames 415.4-421.2, 441.4-450.2, 471.8-479.0, 510.8-517.2 s, 10 s frames 530-580 s (deep, no surface)", "why": "one window as a check of this tag's depth sensor (reduced plan, 2026-11-22)"}
+ ],
+ "events": [
+  {"type": "exit", "frame": 12504, "time_s": 416.8, "crossing_first": 12474, "crossing_last": 12498, "note": "blow; frames 417.0-417.8 s dark wet sheet over the lens (still at the surface)"},
+  {"type": "entry", "frame": 12594, "time_s": 419.8, "crossing_first": 12564, "crossing_last": 12588, "note": "brown / grey sheet 418.8-419.6 s (looks like sand)"},
+  {"type": "exit", "frame": 13314, "time_s": 443.8, "crossing_first": 13278, "crossing_last": 13308, "note": "first of two quick breaths"},
+  {"type": "entry", "frame": 13350, "time_s": 445.0, "crossing_first": 13338, "crossing_last": 13344, "note": "under for only about 2 s (445.0-447.0) just below the surface; the 1 s sensor table shows the whole of 443-448 s as surfaced"},
+  {"type": "exit", "frame": 13416, "time_s": 447.2, "crossing_first": 13404, "crossing_last": 13410, "note": "second breath"},
+  {"type": "entry", "frame": 13452, "time_s": 448.4, "crossing_first": 13440, "crossing_last": 13446, "note": "brown sheet 448.0-448.2 s"},
+  {"type": "exit", "frame": 14250, "time_s": 475.0, "crossing_first": 14190, "crossing_last": 14244, "note": "long approach: lens through the surface 472.0-474.8 s with froth"},
+  {"type": "entry", "frame": 14328, "time_s": 477.6, "crossing_first": 14322, "crossing_last": 14322, "note": "wave wash 475.4-476.0 s counted as air"},
+  {"type": "exit", "frame": 15366, "time_s": 512.2, "crossing_first": 15354, "crossing_last": 15360, "note": ""},
+  {"type": "entry", "frame": 15498, "time_s": 516.6, "crossing_first": 15450, "crossing_last": 15492, "note": "sheets and splash 515.0-516.4 s; then the dive to 15 m"}
+ ],
+ "sensor_comparison": "scan window table (depth_m, 1 s windows, file-name clock): surfaced 416-420, 442-449, 473-478, 512-516 s. By eye: 416.8-419.8, 443.8-445.0 + 447.2-448.4, 475.0-477.6, 512.2-516.6. All 4 surfacings agree to within about 1 s at both ends; the sensor does not split the double breath at 445-447 s (2 s under, just below the surface)."
+}

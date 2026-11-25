@@ -1,0 +1,6 @@
+row,set,recording,t0,t1,breath,whales_before,whales_after,notes
+0,breath,00004,608.0,637.1,618.0-622.1,1,1,"AI by-eye on plain 1 s frames, written before any tracker output was looked at. One whale near the surface 608-617 s; after the breath it is seen only at 623 s (left edge), nothing 624-637 s"
+1,breath,00005,1551.8,1579.5,1561.8-1564.5,1,1,"one whale silhouette under the sun 1552-1558 s; after: a faint pale shape bottom right 1566-1569 s and a whale at the bottom right 1576-1579 s (uncertain whether it is one animal); a second lens-out 1572-1575 s inside the stretch"
+2,breath,00006,899.0,927.0,909.0-912.0,1,1,"one whale (flukes up) 899-908 s; after: a dark body at the left edge at 912-913 s during the bubbles only, nothing 914-926 s"
+3,group,00004,286.0,306.0,,2+,,"two animals at once: one along the right / bottom 286-305 s and one in the top-left corner from 292 s (both visible e.g. 294-299 and 303-305 s); many fish"
+4,group,00005,607.0,627.0,,1 (cannot tell),,"one whale far below 607-626 s; a dark pointed shape at the left edge 612-621 s looks like the tagged whale's own flipper, not a second free animal (uncertain)"

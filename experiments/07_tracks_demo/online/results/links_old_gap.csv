@@ -1,0 +1,140 @@
+run,scene,g,why,frag,chains,whales,gap_s,lone,made,size_ratio,app_dist,same_uncut
+gap_B1_g0.5_f952,multi,0.5,_fragments,5.0,5.0,5.0,,,,,,
+gap_B1_g0.5_f1192,multi,0.5,_fragments,4.0,4.0,4.0,,,,,,
+gap_B1_g1_f945,multi,1.0,not lone,,,,1.03,False,False,1.07,0.234,False
+gap_B1_g1_f945,multi,1.0,not lone,,,,1.03,False,False,1.24,0.074,True
+gap_B1_g1_f945,multi,1.0,not lone,,,,1.03,False,False,2.13,0.18,False
+gap_B1_g1_f945,multi,1.0,not lone,,,,1.03,False,False,1.12,0.262,False
+gap_B1_g1_f945,multi,1.0,not lone,,,,1.03,False,False,2.17,0.196,False
+gap_B1_g1_f945,multi,1.0,_fragments,9.0,9.0,5.0,,,,,,
+gap_B1_g1_f1184,multi,1.0,not lone,,,,1.07,False,False,1.13,0.067,True
+gap_B1_g1_f1184,multi,1.0,not lone,,,,1.07,False,False,1.82,0.333,False
+gap_B1_g1_f1184,multi,1.0,not lone,,,,1.07,False,False,1.68,0.184,False
+gap_B1_g1_f1184,multi,1.0,not lone,,,,0.03,False,False,1.66,0.102,True
+gap_B1_g1_f1184,multi,1.0,not lone,,,,0.03,False,False,1.57,0.123,False
+gap_B1_g1_f1184,multi,1.0,not lone,,,,0.43,False,False,2.22,0.339,False
+gap_B1_g1_f1184,multi,1.0,not lone,,,,0.03,False,False,1.02,0.09,True
+gap_B1_g1_f1184,multi,1.0,_fragments,11.0,11.0,5.0,,,,,,
+gap_B1_g2_f930,multi,2.0,not lone,,,,2.37,False,False,3.29,0.262,False
+gap_B1_g2_f930,multi,2.0,not lone,,,,2.04,False,False,1.05,0.225,False
+gap_B1_g2_f930,multi,2.0,not lone,,,,2.04,False,False,1.2,0.111,True
+gap_B1_g2_f930,multi,2.0,not lone,,,,2.04,False,False,2.54,0.243,False
+gap_B1_g2_f930,multi,2.0,not lone,,,,2.04,False,False,1.12,0.301,False
+gap_B1_g2_f930,multi,2.0,not lone,,,,2.04,False,False,1.98,0.235,False
+gap_B1_g2_f930,multi,2.0,_fragments,9.0,9.0,5.0,,,,,,
+gap_B1_g2_f1169,multi,2.0,not lone,,,,0.03,False,False,1.05,0.479,False
+gap_B1_g2_f1169,multi,2.0,not lone,,,,3.44,False,False,1.89,0.34,False
+gap_B1_g2_f1169,multi,2.0,not lone,,,,2.07,False,False,1.27,0.101,True
+gap_B1_g2_f1169,multi,2.0,not lone,,,,2.07,False,False,1.32,0.362,False
+gap_B1_g2_f1169,multi,2.0,not lone,,,,2.07,False,False,1.55,0.213,False
+gap_B1_g2_f1169,multi,2.0,not lone,,,,0.33,False,False,2.1,0.221,False
+gap_B1_g2_f1169,multi,2.0,_fragments,10.0,10.0,6.0,,,,,,
+gap_B1_g4_f900,multi,4.0,not lone,,,,4.17,False,False,1.75,0.196,False
+gap_B1_g4_f900,multi,4.0,not lone,,,,4.04,False,False,1.36,0.34,False
+gap_B1_g4_f900,multi,4.0,not lone,,,,4.04,False,False,2.57,0.378,False
+gap_B1_g4_f900,multi,4.0,not lone,,,,4.04,False,False,1.8,0.118,True
+gap_B1_g4_f900,multi,4.0,not lone,,,,4.04,False,False,5.41,0.315,False
+gap_B1_g4_f900,multi,4.0,not lone,,,,0.03,False,False,1.03,0.011,True
+gap_B1_g4_f900,multi,4.0,_fragments,11.0,11.0,5.0,,,,,,
+gap_B1_g4_f1139,multi,4.0,not lone,,,,0.13,False,False,1.12,0.449,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,4.07,False,False,1.13,0.146,True
+gap_B1_g4_f1139,multi,4.0,not lone,,,,4.07,False,False,1.64,0.432,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,4.07,False,False,2.23,0.448,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,4.07,False,False,1.66,0.243,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,0.23,False,False,1.61,0.096,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,0.07,False,False,1.23,0.083,True
+gap_B1_g4_f1139,multi,4.0,not lone,,,,1.5,False,False,1.74,0.32,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,0.37,False,False,5.52,0.411,False
+gap_B1_g4_f1139,multi,4.0,not lone,,,,0.1,False,False,1.14,0.09,True
+gap_B1_g4_f1139,multi,4.0,_fragments,11.0,11.0,6.0,,,,,,
+gap_B1_g8_f840,multi,8.0,not lone,,,,0.13,False,False,1.05,0.013,True
+gap_B1_g8_f840,multi,8.0,not lone,,,,0.03,False,False,1.06,0.009,True
+gap_B1_g8_f840,multi,8.0,not lone,,,,0.03,False,False,2.44,0.019,False
+gap_B1_g8_f840,multi,8.0,not lone,,,,8.11,False,False,1.6,0.341,False
+gap_B1_g8_f840,multi,8.0,not lone,,,,8.04,False,False,1.4,0.15,True
+gap_B1_g8_f840,multi,8.0,not lone,,,,8.04,False,False,2.14,0.201,False
+gap_B1_g8_f840,multi,8.0,not lone,,,,8.04,False,False,1.97,0.351,False
+gap_B1_g8_f840,multi,8.0,not lone,,,,8.04,False,False,2.92,0.236,False
+gap_B1_g8_f840,multi,8.0,not lone,,,,8.04,False,False,2.09,0.309,False
+gap_B1_g8_f840,multi,8.0,not lone,,,,0.03,False,False,1.02,0.48,False
+gap_B1_g8_f840,multi,8.0,_fragments,13.0,13.0,6.0,,,,,,
+gap_B1_g8_f1079,multi,8.0,not lone,,,,8.07,False,False,1.37,0.11,True
+gap_B1_g8_f1079,multi,8.0,not lone,,,,8.07,False,False,2.19,0.334,False
+gap_B1_g8_f1079,multi,8.0,not lone,,,,8.07,False,False,1.14,0.429,False
+gap_B1_g8_f1079,multi,8.0,not lone,,,,8.07,False,False,1.17,0.342,False
+gap_B1_g8_f1079,multi,8.0,not lone,,,,0.03,False,False,1.02,0.143,True
+gap_B1_g8_f1079,multi,8.0,_fragments,9.0,9.0,5.0,,,,,,
+gap_B3_g0.5_f36512,lone,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B3_g0.5_f36686,lone,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B3_g1_f36504,lone,1.0,_fragments,1.0,1.0,1.0,,,,,,
+gap_B3_g1_f36678,lone,1.0,_fragments,1.0,1.0,1.0,,,,,,
+gap_B3_g2_f36489,lone,2.0,linked,,,,2.04,True,True,1.39,0.104,True
+gap_B3_g2_f36489,lone,2.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B3_g2_f36663,lone,2.0,linked,,,,2.04,True,True,1.3,0.167,True
+gap_B3_g2_f36663,lone,2.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B3_g4_f36459,lone,4.0,linked,,,,4.04,True,True,1.78,0.199,True
+gap_B3_g4_f36459,lone,4.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B3_g4_f36633,lone,4.0,linked,,,,4.04,True,True,1.87,0.27,True
+gap_B3_g4_f36633,lone,4.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B3_g8_f36405,lone,8.0,gap too long,,,,8.04,True,False,2.79,0.309,True
+gap_B3_g8_f36405,lone,8.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B3_g8_f36552,lone,8.0,gap too long,,,,8.04,True,False,3.07,0.34,True
+gap_B3_g8_f36552,lone,8.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B4_g0.5_f19656,lone,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B4_g0.5_f19836,lone,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B4_g1_f19649,lone,1.0,_fragments,1.0,1.0,1.0,,,,,,
+gap_B4_g1_f19828,lone,1.0,_fragments,1.0,1.0,1.0,,,,,,
+gap_B4_g2_f19634,lone,2.0,not lone,,,,0.03,False,False,1.01,,True
+gap_B4_g2_f19634,lone,2.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B4_g2_f19813,lone,2.0,not lone,,,,0.03,False,False,1.0,,True
+gap_B4_g2_f19813,lone,2.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B4_g4_f19604,lone,4.0,linked,,,,4.07,True,True,1.05,0.167,True
+gap_B4_g4_f19604,lone,4.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B4_g4_f19783,lone,4.0,linked,,,,4.1,True,True,1.01,0.155,True
+gap_B4_g4_f19783,lone,4.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B4_g8_f19545,lone,8.0,gap too long,,,,8.04,True,False,1.17,0.207,True
+gap_B4_g8_f19545,lone,8.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B4_g8_f19707,lone,8.0,not lone,,,,8.64,False,False,31.0,0.368,False
+gap_B4_g8_f19707,lone,8.0,gap too long,,,,8.04,True,False,1.01,0.183,True
+gap_B4_g8_f19707,lone,8.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B5_g0.5_f13868,calf + fish,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B5_g0.5_f14064,calf + fish,0.5,linked,,,,0.03,True,True,1.09,0.164,True
+gap_B5_g0.5_f14064,calf + fish,0.5,linked,,,,0.07,True,True,1.02,0.022,True
+gap_B5_g0.5_f14064,calf + fish,0.5,_fragments,4.0,2.0,2.0,,,,,,
+gap_B5_g1_f13861,calf + fish,1.0,_fragments,0.0,0.0,0.0,,,,,,
+gap_B5_g1_f14056,calf + fish,1.0,linked,,,,0.03,True,True,1.09,0.164,True
+gap_B5_g1_f14056,calf + fish,1.0,not lone,,,,0.07,False,False,1.02,0.022,True
+gap_B5_g1_f14056,calf + fish,1.0,linked,,,,1.1,True,True,1.03,0.15,True
+gap_B5_g1_f14056,calf + fish,1.0,_fragments,5.0,3.0,2.0,,,,,,
+gap_B5_g2_f13846,calf + fish,2.0,_fragments,0.0,0.0,0.0,,,,,,
+gap_B5_g2_f14041,calf + fish,2.0,not lone,,,,0.03,False,False,1.09,0.164,True
+gap_B5_g2_f14041,calf + fish,2.0,linked,,,,2.1,True,True,1.11,0.246,True
+gap_B5_g2_f14041,calf + fish,2.0,_fragments,3.0,2.0,1.0,,,,,,
+gap_B5_g4_f13816,calf + fish,4.0,_fragments,0.0,0.0,0.0,,,,,,
+gap_B5_g4_f14011,calf + fish,4.0,not lone,,,,4.1,False,False,1.27,0.284,True
+gap_B5_g4_f14011,calf + fish,4.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B5_g8_f13756,calf + fish,8.0,gap too long,,,,8.11,True,False,1.5,0.214,True
+gap_B5_g8_f13756,calf + fish,8.0,not lone,,,,0.03,False,False,1.15,0.145,True
+gap_B5_g8_f13756,calf + fish,8.0,checks contradict,,,,0.03,True,False,2.83,0.101,False
+gap_B5_g8_f13756,calf + fish,8.0,_fragments,4.0,4.0,2.0,,,,,,
+gap_B5_g8_f13951,calf + fish,8.0,gap too long,,,,8.11,True,False,1.11,0.264,True
+gap_B5_g8_f13951,calf + fish,8.0,_fragments,3.0,3.0,2.0,,,,,,
+gap_B6_g0.5_f22236,lone,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B6_g0.5_f22414,lone,0.5,_fragments,1.0,1.0,1.0,,,,,,
+gap_B6_g1_f22228,lone,1.0,linked,,,,0.03,True,True,1.02,,True
+gap_B6_g1_f22228,lone,1.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B6_g1_f22407,lone,1.0,linked,,,,1.03,True,True,1.22,0.11,True
+gap_B6_g1_f22407,lone,1.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B6_g2_f22213,lone,2.0,linked,,,,0.03,True,True,1.05,,True
+gap_B6_g2_f22213,lone,2.0,linked,,,,0.03,True,True,1.09,0.023,True
+gap_B6_g2_f22213,lone,2.0,_fragments,3.0,1.0,1.0,,,,,,
+gap_B6_g2_f22392,lone,2.0,linked,,,,2.04,True,True,1.34,0.112,True
+gap_B6_g2_f22392,lone,2.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B6_g4_f22183,lone,4.0,not lone,,,,4.1,False,False,2.04,0.244,True
+gap_B6_g4_f22183,lone,4.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B6_g4_f22362,lone,4.0,linked,,,,4.04,True,True,1.51,0.175,True
+gap_B6_g4_f22362,lone,4.0,_fragments,2.0,1.0,1.0,,,,,,
+gap_B6_g8_f22125,lone,8.0,gap too long,,,,8.04,True,False,1.98,0.163,True
+gap_B6_g8_f22125,lone,8.0,_fragments,2.0,2.0,1.0,,,,,,
+gap_B6_g8_f22285,lone,8.0,gap too long,,,,8.21,True,False,2.05,0.293,True
+gap_B6_g8_f22285,lone,8.0,_fragments,2.0,2.0,1.0,,,,,,

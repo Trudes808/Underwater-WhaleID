@@ -55,6 +55,66 @@ Still missing: seafloor footage; more fish and a whale-against-fish test on a se
 and 00013-00014 (deck, failed drops, floating); a second and third labelled deployment before any threshold is
 trusted.
 
+### Added 2026-11-22: the scan on a second tag (WP9, details in the LOG entry of 2026-11-22 22:45)
+
+| question | answer | evidence |
+|---|---|---|
+| does `uwid scan` run on a tag it was not built on? | Not at first (names, clock layout, time link, 4K sheets, the back boxed as a whale); it does now. | CC-09-85: clock read on 8,480 of 8,480 sampled frames; offset estimated per file, good to about 0.3 s per surfacing (0.1 s on CC-11-96); back filter found on this deployment, so not a clean test |
+| what is kept on the second tag | 16.6 of 140.8 min; boat recordings dropped whole (49.5 min in air). | frames with another whale 27/31 (hq + ok 20/20, low 7/11); fish 7/7; empty frames kept 31/292; 100 dropped windows by eye: 0 whales, 2 fish |
+| seafloor, sand, dark lens | The whale detector does not fire on them. | sand 0 whale boxes in 203 windows, dark 0 in 215; over the bottom 20 of 24 detections are real whales, 1 a jack |
+| seafloor (labels) | Withdrawn 2026-11-23: the user found the labelled "seafloor" to be a whale's back and haze. Real seafloor is in 00017 around the blackouts, a rough surface at the side of the frame while the whale scrapes along it. | user review of `seafloor_01..05.jpg`; my look at 33 frames (`seafloor_candidates_00017_01..02.jpg`); WP10's seafloor numbers are void, redo is WP12 |
+| seafloor (redo on user-confirmed frames, 2026-11-23) | Per pixel yes inside the one recording that has it; as a per-second label not yet; not testable on another day or bottom. | held-out episodes of 00017: 5,227,026 of 5,407,044 seafloor px found, IoU 0.89, back + seafloor as one class IoU 0.96; windows 59/59 on three episodes, 0/35 on the faint one; false calls 62-103 of 291 on 00023's back with haze; dev whale pixels called seafloor 2.9 % (old head 0.4 %). Scan unchanged |
+| the hq tier | Wrong at breaths: the tagged whale's blow, the surface and the mirrored back are boxed as a whale. | hq windows under 1 m: 71 of 174 on CC-09-85, 53 of 723 on 2025-02-03; a flat depth rule would cut real shallow whales (5 of 10 graded `ok` frames under 1 m are tiered hq) |
+| ok against low, silhouette flag | Weak rules. | box size: 36 of 128 low frames tiered ok or better; silhouette 13/34 found, 27/187 false |
+
+Keep rule since 2026-11-22 (user): anything detected is kept, tiers hq / ok / low / small / fish are labels, each kept
+stretch has a text description and its hq spans (`advanced_ok`). 2025-02-03 under this rule: 86.6 of 267 min kept
+(66.7 before), clear whale frames 219/221.
+
+### Added 2026-11-23: classifier veto and the 30 s clip guard in the scan (WP11b, LOG entry of 2026-11-23 03:13)
+
+| question | answer | evidence |
+|---|---|---|
+| does the box classifier fix the hq tier at breaths? | Yes on these two tags. | hq windows under 1 m 53 -> 27 (2025-02-03) and 71 -> 41 (CC-09-85); blow boxes it was not fitted on, in hq / ok windows: 26 -> 1 and 43 -> 0; the remaining shallow hq windows by eye (orchestrator): 26 of 27 real near whales, and all 41 inside the two near-whale passes at 16:01 and 16:07 |
+| what does the veto cost? | 59 and 71 windows no longer active; 3 of 60 looked at held a real whale (whale beside the floating tag in 00012, one fin at an edge); that footage is still kept, only the label is lost. | `scan_veto_dropped_01..05.jpg`; labelled whale frames kept 219 -> 220 of 221 and 27 -> 29 of 31 |
+| large fish | The 24 near jacks are now tier fish / small (were ok / hq 12). Not a clean test: the classifier was fitted on them. | one school, one recording (00023) |
+| the user's clip rule (30 s without activity, 2 s buffer) | Fewer, longer clips; more quiet water inside them. | 2025-02-03: 161 -> 100 clips, 86.5 -> 94.3 min, clips under 10 s 48 -> 19, 1,646 of 5,658 kept seconds without a detection; CC-09-85: 61 -> 27 clips, 16.6 -> 17.6 min, 609 quiet seconds |
+| dark lens, sand | Labels in the scan, no keep rule, left out of hq spans. Sand is fitted in one recording and unchecked by the user. | dark 208 windows on CC-09-85 (8 of 11 labelled, 0 false), 0 on 2025-02-03; sand 242 and 3 |
+
+The classifier was fitted on 1,054 labelled boxes that include both deployments' reference boxes, so the label
+scores in this table are in-sample for the classifier. A clean test needs a third deployment.
+
+### Added 2026-11-23: the tracking stage (WP11a, LOG entry of 2026-11-23 03:34 with the reviewer's note)
+
+| question | answer | evidence |
+|---|---|---|
+| do the purity guards work online? | Yes: `uwid tracks "<deployment>"` runs them on the scan's hq spans. | 8 held-out stretches (4 per tag, each with ONE other whale): 0 numbers moved, 98-100 % of whale frames outlined except one breath span (226 of 293) |
+| numbers on blow / surface / mirrored back | None started. | 2 breath spans on CC-09-85: 13 of 13 starts refused |
+| lone-whale links (user's easy cases) | Work on the stretches the rule was set on (after the breath in 00007, 4.4 s; calf with fish: number 1 for 3 s, then one number to the end). On held-out footage only short breaks were linked. | old lone gap runs 12 links, 12 right; held-out 3 links, 3 right, breaks 0.1-1.0 s |
+| a lone whale across a breath, held-out | Not yet. In the one whole encounter with a breath (00024, 75-164 s) the whale is one number up to the breath since the two fixes of 2026-11-23 (was two), and two new numbers after it (a fluke and a pale body, in view together, so the break is "not lone"). | fixes: a depth lens-out blocks a frame only where the scan's picture label agrees (blocked 117 -> 30 frames in 97-120 s); detector boxes on blocked frames no longer count as a second animal. Candidate 1 -> 3 passes size (1.39) and appearance (0.249). Whether it is the same whale is asked of the user; no rule changed on this one case. 00024 is no longer held-out for the blocked rule |
+| a lone whale across a breath, held-out test with frozen rules (WP11c, 2026-11-23) | Partly. Only 3 breath encounters were left to test on (all 2025-02-03): 2 links made (1 right, 1 probably right), 2 refused (1 rightly: the whale did not come back; 1 a miss: the whale came back cut by the frame edge), no wrong link, no number moved. | gaps 3.9-7.4 s; both refusals on appearance (0.358, 0.364 against 0.30). Both tags together hold 11 breaths with a good whale before and whale activity after, so the most to gain is about 11 number changes |
+| groups on held-out footage | One stretch with two whales (00004 286-306 s): no number moved between them; each whale gets a second number after a break of 0.5-0.7 s, because no link is made while two whales are in view. | 5 candidates, all refused as not lone; 10 starts refused (9 fish, 1 other); reviewer's sheet `demo_group_00004_286s_review.jpg`. One stretch is little |
+| does the scan's whale count tell lone from group? | No: it often puts two whale boxes on one near whale. | 0 of 11 breath stretches have at most one whale box in every second; in 00005 604-629 s the scan sees up to 3 whale objects where the tracker sees only the tagged whale's own body (open: own head and flipper, or an animal close below; asked of the user) |
+| cost | About 9 GPU s per video s, under 2.3 GB. | all hq spans after WP11b (675 s + 147 s): about 1.8 + 0.4 GPU h. Not run: needs the user's go-ahead |
+| the tracker on all hq spans (WP13, 2026-11-24) | Ran on all 135 spans (786 s tracked) in 2.25 GPU h: 149 whale numbers, 79 lasting 3 s or more, the longest 26 s; 8 links, all across breaks under 0.6 s. In the reviewer's look at 24 sampled numbers no number moves between animals; one number of 0.9 s sits on the sea surface. | CC-09-85 17 spans: 19 -> 18 numbers, 11 >= 3 s; 2025-02-03 118 spans: 138 -> 131, 68 >= 3 s; starts refused: surface 48, fish 11, other 2; own-back refusal never used. Most hq spans are short (median 4 s) with one whale, so this run does not test many-whale scenes or breaks across a breath. AI by-eye review; the user's look at `wp13_a_sample_01..04.jpg` is pending |
+
+Next (2026-11-23 20:45): running: WP13 the tracker on all hq spans of both deployments (rules frozen, about 2.2 GPU
+h in 15-minute pieces; `src/uwid/` is frozen for other agents until it is done); WP14 own back against a calf close
+in front of the tagged mother, and bubbles numbered after a breath (study in `experiments/`, no live change); WP15
+set-up and smoke test for the 3D mesh trial (the trial itself starts when WP13 is done); WP16 time-overlap check
+between the tag and the photos of 2025-02-03 and 2025-01-02. Still open with the user: more recordings of CC-09-85
+with the bottom in view (only 9 are on disk; 00013-00016 would also hold the tagged whale's photographed surfacings
+of 2025-01-02); on 2025-02-03 the tag shows on photos the catalogue files under A03 and under A01 (which is the
+tagged whale?); the comp-group clip's burned-in clock is about two hours off the notes' time for the tagged group.
+WP16 is done (LOG 21:25). Waiting behind WP14: the sand redo on the confirmed sediment frames.
+
+Next (2026-11-24 01:50): WP13 is done (LOG 01:42, reviewed 01:47). Started: WP15 phase 2, the 3D trial with the stand-in model on WP13's numbers (up to 4 frames per number lasting 3 s or more, at most 240 frames); WP17, the own-back change of WP14 behind a flag that is off by default, replayed on the calf stretch and the 17 candidate stretches. (WP15 phase 2 finished 03:55 and WP17 04:44, see their rows; no job of ours is running.)
+
+Next (2026-11-24 21:27), on the user's answers of this evening: WP18 makes the own-back switch the tracker's
+default and fixes far specks taken into a whale's outline; WP19 packs the results for the agent who will build the
+video-analysis page in the web app (export bundle + `HANDOFF_WEB.md`). The 3D work is paused. After WP19 this repo
+has no running work; the open questions below stay open. Not started (they wait for the user): making that flag the default, any change to the surface refusal or the link rules, the bottom-contact sensor label, a priority change for jobs that hold the GPU lock.
+
 ## What is on disk (checked 2026-11-20 19:00)
 
 | item | what it is |
@@ -103,6 +163,87 @@ Decided by the user, 2026-11-20:
 - The fish calls on sheets `reference_fish_candidates_01` and `_08` (2025-02-03) are all fish (user).
 - Second deployment, `TestSubset 2025-1-2 CATS -85` (tag CC-09-85, copy started 23:16): early recordings above water
   on the boat, some middle ones with seafloor, some late ones with a few other whales.
+- Quality grades (user, 2026-11-22, after looking at `reference_quality_examples_01..10.jpg`): "the high are best
+  the ok are fine and the low are not useful." The labeller's rule for hq / ok / low (in
+  `experiments/02_reference_labels/README.md`) is therefore the definition to score against.
+- What is kept and what the tiers are for (user, 2026-11-22, correcting my reading that low footage could be
+  dropped): "low footage is still good we want to keep all footage that has detected stuff in it / any activity. Low
+  just shouldnt be used in future when we try to do 3d and animal ID. Also sand is fine to keep the footage, it just
+  shouldnt be used for additional stuff. Really any activity region is worth keeping and labeling with a text
+  description. But just the high quality parts can maybe be used for more advanced stuff." So: keep every stretch
+  with anything detected (a whale of any size, fish, and seafloor or sand once detectors for them exist); the tier
+  (hq / ok / low / small / fish only) is a label, not a filter; every kept clip gets a text description; only the hq
+  parts are flagged for the later 3D and identification work. Dropped: tag in air, and water with nothing detected.
+- Silhouettes (user, 2026-11-22): large whales seen from below as dark shapes against the light keep the grade the
+  labeller gave them and get their own mark: "lets keep them as marked silhouettes, if its useful for things we can
+  use them, if not no worries." Column `silhouette` in the labels, a flag per window and clip in the scan.
+- Tracks (user, 2026-11-22): "new tracks are less of a problem then a track swapping to a new whale." Purity first:
+  a track number must never move to another animal; the same whale under several numbers is acceptable and is
+  joined later by appearance. WP8c (`experiments/07_tracks_demo/pure/`) changes the tracker's policy to end a track
+  rather than risk a swap.
+- Lone-whale links (user, 2026-11-23, after the `demo_pure` videos): "I do feel like we could figure out a way to
+  maintain track on some of the easy ones such as the calf with fish ... maybe some sort of size/depth could allow it
+  to stay cotninuous, and also the after breath seems feasible to stay linked as well. I understand new tracks in the
+  big multi whale scenes as its ambiguous if they changed places during the gap, but in shots where there really was
+  only 1 other whale in view it seems possible for us to keep that linkage reliably". So: purity guards stay for
+  multi-whale scenes; where only one other whale is in view around a break (breath, blocked view, a fish passing),
+  the fragments are linked into one displayed number. The calf counts as a whale and is tracked as one. Asked of the
+  tracking agent as part of WP11a (link layer above the guards, each link recorded with its evidence).
+- Clip boundaries (user, 2026-11-23): "I would expect real full clips to begin when a whale appears in scene and end
+  when there is no longer activity detected. We can even have a guard to prevent over segmenting the clips. That
+  guard can make sure that there is no activity for at least >30sec and then cut the clip with just 1-2sec on either
+  side of buffer to save the space". So a clip ends only after 30 s without activity, buffer 2 s each side (was:
+  2 s pad, merge under 5 s). From the cached windows: 2025-02-03 161 clips / 86.6 min -> about 93 / 99.9 min;
+  CC-09-85 61 / 16.6 min -> about 35 / 23.1 min. Asked of the scan agent in WP11b. The tracker demo videos the
+  user watched were fixed-length test stretches, not scan clips.
+- Seafloor (user, 2026-11-23, on the first seafloor sheets): "Seafloor_01 is a whale back, so is 02, 03 is just hazy
+  water ... 05 is also just a whale back. Seafloor can be found in a couple of the middle long videos from the Test
+  subset day. Largely after/before moments where whale screen blacks out from scratching along seafloor and kicking
+  up ab unch of sediment." The labeller's seafloor spans are withdrawn. Rule since then: the first sheet of a new
+  class goes to the user before anything is fitted on it.
+- Seafloor confirmed (user, 2026-11-23 midday, on `seafloor_candidates_best_01.jpg`): "yes all of those seafloor
+  candidates now show both the back of the whale in forground, and the seafloor in background. If it helps its not
+  an issue if they got a combined class where it was just back/seafloor. Best if separate but not as issue if they
+  are combined to just background." So: separate `seafloor` and `back` if the model can tell them apart, otherwise
+  one background class; neither counts as another animal. The sediment (sand) class has not been confirmed on a
+  sheet yet.
+- Answers of 2026-11-23 evening (user):
+  - Tracker run: "Yes go ahead and run the tracker." (all hq spans of both deployments, WP13.)
+  - Sediment: "Yes those are the sediment frames of dragging along seafloor." (`sand_candidates_best_01.jpg`, the
+    22 sediment frames of 00017.) The sand label may now be redone on them.
+  - 2025-02-03, 00005 at 604-629 s: "is a calf swimming clone in front of the mom who is tagged with the camera"
+    (my reading: "close in front"). So the tagged whale of this deployment is a mother with her calf, the scan was
+    right to call a whale there, and the tracker was wrong to refuse it as the tagged whale's own back. The calf is
+    a whale and gets a number.
+  - CC-09-85, 00024 after the breath (numbers 2 and 3 of the whole-encounter run): "the pale animal is just bubbles
+    there is no animals there after the breath, and the back ends low in frame it is especially tall in that clip."
+    So both numbers after the breath are false: bubbles get a whale number. The proposed rule "across a breath,
+    link to the single candidate that passes the checks" is dropped: it would have linked whale 1 to bubbles
+    (size 1.39, appearance 0.249, both passing).
+  - The three held-out breath demos "looks fine".
+  - New goals: "once the high quality tracker runs lets attempt a trial run of using those to create 3D meshs from
+    them with sam3" (my reading: SAM 3D Objects, the single-image 3D model released with SAM 3; WP15), and a thought
+    experiment on the comp group: "Given that footage and the assumption that he camera is on a whale, could we use
+    any of the information from the tracks in the video to potentially help with any of the animal clustering of
+    the photos of that day. It may or may not help in any way" (WP16: reasoning plus a time-overlap check on the two
+    tag days that have photos; nothing is built).
+- Answers of 2026-11-24 evening (user), after the own-back replay (WP17) and the 3D trial (WP15):
+  - The switch: "The video with the switch on looks quite good. Yes you may make the switch default." So
+    `own_back_template` becomes the default of the tracker (WP18).
+  - Number 2 on the calf sheet (the tall dark wedge at the left edge, 00005 612-621 s): "The yellow 2 dark wedge is
+    a calf but it is quite far in distance so its ok if thats hard to tell." So it is an animal, not the mother's
+    own flipper, and giving it a number is right.
+  - A fault to fix: "One very small issue is it looks like the last few seconds show something very small in
+    distance getting picked up as part of the 1 track?" (the calf video's last frames: number 1's outline also takes
+    in a far speck; WP18).
+  - 3D: "We can put a puase in the 3d work for now, go ahead and add where we are at in the notes we may pick it
+    up later." WP15 is parked; its state is under "Parked".
+  - Hand-over: "Once that last thing is ready please pack things up to be passed off to another agent who will be
+    working on the web app and will be creating a new page for the video analysis" (WP19: a data bundle the web
+    app can read without this repo's environment, and `HANDOFF_WEB.md`).
+- More blocked views (user, 2026-11-22): the second deployment has long stretches where stirred-up sand blocks the
+  view; whether another whale is in the background there is not known. The labels mark them
+  (`blocked_spans.csv`, kind `sand`).
 - The unit of decision is a short series of frames, about a 1 s window, not a single frame: "we should not focus on
   exact per frame we should leverage multiple frames as short series to determine action inside those say 1sec
   windows". Detectors may use several frames of a window (and its neighbours), and results are scored per window.
@@ -146,6 +287,11 @@ Split (revised 2026-11-20 after WP1): a claim about new footage needs a test on 
   fitted on pieces 00004-00006, checked on pieces 00007-00008 of the same deployment, and tested across deployments on
   `2025-12-20 CG.m4v` (by-eye labels) and on the public deployment (Zenodo 4902325) if it is fetched.
 
+- Trained parts (from 2026-11-22: the whale-against-fish box classifier and the seafloor / sand classes, WP10) need
+  training footage, so the three labelled sources (2025-12-20 clip, 2025-02-03, 2025-01-02) are used
+  leave-one-source-out: a number is only reported from a fold that did not see its own test source, and it says
+  which source it was trained on. Settings of the text-prompted detector stay as fixed on the 2025-12-20 clip.
+
 The 2025-12-20 clip is 95 s with whales almost throughout, so it cannot test the "drop" side. The sensor log shows
 what can: pieces 00001-00003 (deck, two failed drone drops, a float test) and 00012-00014 (the tag floating after
 release), which were not on disk on 2026-11-20.
@@ -163,16 +309,50 @@ release), which were not on disk on 2026-11-20.
 | WP5b | The same classes by semantic segmentation with little training: a small classifier on DINOv3 patch features trained on the development clip's masks, tested on the other deployment | WP0, WP3 |
 | WP6 | Fish, and whale against fish, on public data | WP5's model runners, data set from WP2 |
 | WP7 | End to end: `uwid clips <dir>` from states and whale presence to kept clips and a dropped list; run on everything on disk; time per hour of video | WP4, WP5 |
+| WP8, WP8b | Tracking demos on kept clips (OWLv2 boxes start SAM 3 tracker tracks, outline overlays); gap experiment (blocked frames cut out of the tracker's view). Done 2026-11-22 | WP7 |
+| WP8c | Tracker policy that ends a track rather than risk a swap (purity over continuity). Running 2026-11-22 | WP8b |
+| WP3b | Labels for 2025-02-03 (quality grades, silhouettes) and for the second tag CC-09-85 (seafloor, sand, blocked spans). Done 2026-11-22 | |
+| WP9 | `uwid scan` on the second tag; keep-anything rule, tiers, descriptions, decision-coloured sheets. Done 2026-11-22 | WP7, WP3b |
+| WP10 | Whale / fish / other box classifier (300-800 px band, blow at breaths) and seafloor / sand / dark per window. Classifier done 2026-11-22; seafloor and sand withdrawn 2026-11-23 | WP3b, WP9 |
+| WP11c | Held-out test of the lone-whale link across breaths (up to 8 encounters chosen by a written rule from the scan and sensors, both tags) and up to 2 group stretches; all rules frozen. Done 2026-11-23 13:35: 3 breath encounters and 2 group stretches existed, about 20 GPU min; no wrong link, no moved number | WP11a |
+| WP12 | Seafloor redo: dense search around blackouts and bottom contact, candidate sheets for the user first, new spans and masks, re-fit. Search done 2026-11-23 (clear seafloor in 00017 only, 94 s); candidate sheet confirmed by the user 2026-11-23 midday; step A done 13:03: per pixel it works inside 00017 (held-out episodes: 96.7 % of seafloor pixels, IoU 0.89; back + seafloor as one class IoU 0.96), as a 1 s window label it does not (faint episode 0/35; 21-35 % of 00023's back-with-haze windows called seafloor; one near whale's underside on 2025-02-03). Head saved as `head_v2_*`, NOT switched into the scan. Waits for bottom footage from a second recording and the user's word on the sediment sheet. Step B done 2026-11-23 23:21 (reviewed 23:22): sediment confirmed by the user that evening; a re-fitted picture `sand` head finds 58-59 of 77 held-out sediment windows but also calls 55-75 % of the confirmed seafloor windows, 102 of 386 windows of 00024 and 333 of 1,736 on 2025-02-03 (empty water): not usable, not switched in. Sensors mark the scraping episodes (rolled about 165 degrees, active, within 2.4 m of the recording's deepest point; a trial flag fires on 0 of 19,248 windows elsewhere): exploratory, one event; a sensor `bottom contact` label is the proposal | more recordings of CC-09-85 with bottom (00013-00016, 00018-00022 are not on disk); user confirmation of `sand_candidates_best_01.jpg` |
+| WP11b | Classifier veto, dark / sand labels and the user's 30 s clip guard in `uwid scan`; both deployments re-scored. Done 2026-11-23 | WP10 |
+| WP11a | Tracking stage: online purity policy, `uwid tracks` on hq spans, lone-whale link layer, held-out test, cost estimate. Done 2026-11-23 03:34; follow-ups on the 00024 encounter done 12:31 (blocked rule, stitched link, links.csv); whole-deployment runs need the user's go-ahead | WP8c, WP10 |
+| WP13 | `uwid tracks` on all hq spans of both deployments with the rules frozen as of WP11c; review pack (random track sample, every link made, numbers that start soon after a breath, starts refused as own back). User's go-ahead 2026-11-23 evening. Done 2026-11-24 01:42 (reviewed 01:47): 135 spans, 786 s tracked, 149 numbers (79 >= 3 s), 8 links, 2.25 GPU h; results in `experiments/07_tracks_demo/tables.md` D9; one new flag in `trackstage` (`frame_store`, off by default; compared on one 4K span only) | WP11c |
+| WP14 | Two errors named by the user 2026-11-23: a calf close in front of the tagged mother refused as own back (00005 604-629 s); bubbles numbered as animals after a breath (00024). Measure how often, test a per-recording own-back template, candidate sheets for the user before anything is fitted. Study only, no live change while WP13 runs | WP5b, WP11c. Done 2026-11-23 22:22 (reviewed 22:24): the calf was swallowed by the tracker's own SAM back object, not by the patch map; own back = SAM back object cut to a per-300-s template of where the back usually is frees it (0.998 / 0.999 inside own back -> 0.377 / 0.185) and flips nothing else in 21 stored runs; 17 more candidate stretches on a sheet for the user; bubbles: nothing separates the one confirmed case from real whales (paleness also flags white fins), no rule. Change not wired in: after WP13, behind a flag, replayed on WP13's refused starts | WP5b, WP11c |
+| WP15 | 3D mesh trial (opened by the user 2026-11-23): single-image 3D from hq tracked frames (image + outline), SAM 3D Objects if access and GPU memory allow, otherwise an open model. Set-up and smoke test on existing tracks now; the trial on WP13's tracks after | WP13. Set-up and smoke test done 2026-11-23 22:35 (reviewed 22:38): SAM 3D Objects not usable here yet (gated, no access on this account; stated need 32 GB against a 20 GB card); stand-in TripoSG (MIT) runs in 5.2 GB at about 32 s per frame; 10 frames: 4 read as a whale, 3 as a humpback (one animal seen from below), the rest are invented shapes, and mesh distance does not tell animals apart. Weights in `NOAA_whales/underwater_models/`. Phase 2 done 2026-11-24 03:55 (reviewed 03:58): only 28 frames of 13 of 79 numbers show a whole whale (3,191 of 4,158 judged frames are cut by the frame edge); whole views: 18 of 28 meshes read as a whale; whales cut by the frame (second arm, 45 numbers): 15 whole whale, 23 a part, 7 invented; the mesh follows the outline from the camera's side (IoU median 0.84 / 0.88), has no surface, and does not tell numbers apart (AUC 0.63). Open with the user: fit the rigged humpback to a track's outlines instead; repeat on SAM 3D Objects if access comes | WP13 |
+| WP17 | Own back in the tool = the tracker's back object cut to the per-300-s template of WP14, behind a flag that is off by default (scan box filter and tracker clean-up). Replay with the flag on: the calf stretch 00005 604-629 s, the 17 candidate stretches of WP14, and a count of every scan decision that changes on both deployments; sheets for the user. The flag becomes the default only after the user has seen them. Done 2026-11-24 04:44 (reviewed 04:47): flag `own_back_template` in `trackstage.run_span`, off by default, 86 tests; on WP13's 135 spans it changes nothing (0 of 1,618 start boxes, 0 roles); on the 17 stretches the calf gets a number for 19.8 s and 8 more numbers appear in 6 stretches (7 after links), among them two whole whales of 23 s and 15 s that were refused before and one dark wedge that may be the mother's own flipper; frame store against decoding identical on one 1080p stretch. Waiting for the user: the calf sheet and the wedge, then the default (answered 2026-11-24 evening: yes, see WP18) | WP13, WP14 |
+| WP18 | On the user's answers of 2026-11-24: `own_back_template` on by default in the tracker (the old behaviour stays reachable); an outline keeps its main piece and drops far small pieces (the speck in the calf video's last seconds), with counts of what that changes on every stored run; the calf video again. Done 2026-11-24 21:37 (reviewed 21:40): default on (`--no-own-back-template` for the old behaviour); the 135 stored runs carry the template, numbers identical (157 / 149); specks dropped on read from 837 of 27,331 object-frames of the two deployments (median 0.4 % of an outline), no number changes; `ownback_replay_calf_v2.mp4`; 90 tests | WP17 |
+| WP19 | Hand-over to the web-app agent: `uwid export` writes a bundle under `underwater_cache/export/` that needs no pandas / parquet / this repo's environment (recordings, per-second labels, kept stretches with descriptions, tracks with boxes and outlines, a browser-playable clip per tracked span); `HANDOFF_WEB.md` says what is there, how far to trust it and the rules. Started 2026-11-24 21:30 | WP18 |
+| WP16 | Thought experiment (user, 2026-11-23): what could tag video and tracks add to the photo sorting of the same day. Reasoning by the main thread, plus one check with data: do photo times line up with the tagged whale's surfacings on 2025-02-03 and 2025-01-02. Nothing is fitted or built |. Done 2026-11-23 21:25 (reviewed 21:28): camera about 3 min ahead of the tag, joined to under 1 s from the photographed tag-on; 02-03: 57 of 185 photos within 5 s of a tag surfacing (chance 12), all of the tagged group; 01-02: 22 photos, all of the whale the notes mark as tagged, but its video pieces 00013-00016 are not on disk; no photos of 2025-12-20 on disk | |
 
 WP0 to WP3 start together. WP4 and WP5 start when WP0 and WP3 are done. Test labels for new videos are made the same
 way as WP3 once the videos are on disk.
 
 ## Parked until phase 1 is answered
 
+(2026-11-23: the user opened two of these as trials: a 3D mesh trial, WP15, and a thought experiment on the link
+to the photos, WP16. Grouping tracks into individuals stays parked.)
+
 - Tracks and individuals: follow each whale through a clip, then group tracklets by markings. A clip gives free
   training signal: frames of one track are the same whale, two whales in one frame are different whales.
 - 3D: fit the rigged humpback from `Whale-Image-Data-Factory` to masks and landmarks and unwrap the skin onto the
   model, rather than reconstructing a moving animal from one moving camera with no fixed background.
+  **Paused by the user 2026-11-24** ("we may pick it up later"). Where it stands:
+  - Done: single-frame image-to-3D trial with the stand-in model TripoSG (MIT) on the tracker's numbers (WP15; LOG
+    2026-11-23 22:35 and 2026-11-24 03:55; `experiments/10_mesh3d/tables.md` S0-S5). Only 28 frames of 13 of 79
+    numbers show a whole whale; 18 of 28 meshes read as a whale; whales cut by the frame: 15 of 45 a whole whale, 23
+    a part; the mesh follows the outline from the camera's side, has no surface (no marks), differs between frames
+    of one whale 1-4 s apart, and does not tell numbers apart (AUC 0.63).
+  - Not done: the model the user named, SAM 3D Objects (`facebook/sam-3d-objects`: gated, needs the user's access
+    request; stated need 32 GB against the 20 GB card; the same 73 frames can be rerun: `picks.csv`,
+    `picks_partial.csv` under `underwater_cache/mesh3d/`).
+  - Proposed, not started, not yet answered by the user: fit the rigged humpback to a track's outlines over many
+    frames and paint the video onto it (keeps the real surface; uses the whole track).
+  - To pick it up: environment `underwater_cache/envs/triposg` (5.7 GB), weights
+    `NOAA_whales/underwater_models/TripoSG` (7.5 GB), code `experiments/10_mesh3d/` (`pick_frames.py` ->
+    `prep_inputs.py` -> `run_triposg.py` -> `trial_report.py`), meshes and renders `underwater_cache/mesh3d/`,
+    sheets `review_sheets/underwater/mesh3d_*`. About 32 s and 5-6 GB per mesh.
 - Link to the photo catalogue: the burned-in clock and the tag's GPS put a video frame in an encounter; marks shared
   by both views (fluke trailing edge and underside, dorsal fin and hump) carry the identity.
 

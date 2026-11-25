@@ -1,0 +1,6 @@
+set,deployment,recording,source,t0,t1,breath_t0,breath_t1,breath_s,multi_windows,run_t0,run_s,est_gpu_s
+breath,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-101236-000-00004.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-101236-000-00004.mov,608.0,637.1,618.0,622.1,4.1,1.0,,,351.0000000000002
+breath,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-104242-000-00005.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-104242-000-00005.mov,1551.8,1579.5,1561.8,1564.5,2.7,1.0,,,337.00000000000045
+breath,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-111250-000-00006.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-111250-000-00006.mov,899.0,927.0,909.0,912.0,3.0,2.0,,,340.0
+group,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-101236-000-00004.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-101236-000-00004.mov,286.0,306.0,,,,,291.0,29.0,260.0
+group,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-104242-000-00005.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-104242-000-00005.mov,607.0,627.0,,,,,612.0,8.0,260.0

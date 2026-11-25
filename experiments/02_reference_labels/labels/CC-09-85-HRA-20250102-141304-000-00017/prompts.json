@@ -1,0 +1,648 @@
+{
+ "meta": {
+  "what": "WP3b part B seafloor masks, CC-09-85 piece 00017 (whale at / resting on the bottom). Frames in <cache>/<stem>/maskframes (sample frames + extra frames 26550, 38640 saved at 1920x1080 from the 4K .mov). Seafloor drawn as a coarse band (the bottom is faint and fades into haze: visible band painted seafloor, the haze band above it unsure); back and whales painted over it.",
+  "seafloor_rule": "seafloor below the haze line, unsure band 100 px above it; sediment plumes and close textured surfaces seen while the whale is on the bottom = unsure"
+ },
+ "012549": [
+  {
+   "c": "unsure",
+   "poly": [
+    [
+     560,
+     0
+    ],
+    [
+     1920,
+     0
+    ],
+    [
+     1920,
+     1080
+    ],
+    [
+     900,
+     1080
+    ],
+    [
+     560,
+     560
+    ]
+   ],
+   "note": "dark sediment plume beyond the back (camera rolled)"
+  },
+  {
+   "c": "back",
+   "poly": [
+    [
+     0,
+     880
+    ],
+    [
+     200,
+     830
+    ],
+    [
+     400,
+     730
+    ],
+    [
+     520,
+     640
+    ],
+    [
+     600,
+     560
+    ],
+    [
+     900,
+     1080
+    ],
+    [
+     0,
+     1080
+    ]
+   ]
+  }
+ ],
+ "013939": [
+  {
+   "c": "unsure",
+   "poly": [
+    [
+     0,
+     60
+    ],
+    [
+     320,
+     60
+    ],
+    [
+     360,
+     500
+    ],
+    [
+     300,
+     760
+    ],
+    [
+     0,
+     800
+    ]
+   ],
+   "note": "mottled textured surface: bottom very close, or sediment"
+  },
+  {
+   "c": "back",
+   "box": [
+    250,
+    520,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1000,
+     850
+    ],
+    [
+     1500,
+     750
+    ],
+    [
+     600,
+     950
+    ]
+   ],
+   "n": [
+    [
+     150,
+     500
+    ]
+   ]
+  }
+ ],
+ "015329": [
+  {
+   "c": "unsure",
+   "poly": [
+    [
+     250,
+     0
+    ],
+    [
+     1920,
+     0
+    ],
+    [
+     1920,
+     1080
+    ],
+    [
+     720,
+     1080
+    ],
+    [
+     720,
+     520
+    ],
+    [
+     560,
+     450
+    ],
+    [
+     400,
+     280
+    ]
+   ],
+   "note": "textured surface seen sideways (bottom?) and sediment cloud; dark"
+  },
+  {
+   "c": "back",
+   "poly": [
+    [
+     0,
+     830
+    ],
+    [
+     300,
+     775
+    ],
+    [
+     450,
+     700
+    ],
+    [
+     560,
+     620
+    ],
+    [
+     720,
+     520
+    ],
+    [
+     720,
+     1080
+    ],
+    [
+     0,
+     1080
+    ]
+   ]
+  }
+ ],
+ "026449": [
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    380,
+    1920,
+    480
+   ]
+  },
+  {
+   "c": "seafloor",
+   "rect": [
+    0,
+    480,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "back",
+   "box": [
+    0,
+    570,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     960
+    ],
+    [
+     1700,
+     720
+    ],
+    [
+     200,
+     1040
+    ]
+   ],
+   "n": [
+    [
+     300,
+     560
+    ],
+    [
+     1000,
+     520
+    ]
+   ]
+  },
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "box": [
+    150,
+    0,
+    640,
+    140
+   ],
+   "note": "whale passing above, flippers spread"
+  },
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    1020,
+    1920,
+    1080
+   ],
+   "over": [
+    "seafloor"
+   ],
+   "note": "dark object at the bottom edge (tag part?) and anything below the back's edge"
+  }
+ ],
+ "026550": [
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    380,
+    1920,
+    480
+   ]
+  },
+  {
+   "c": "seafloor",
+   "rect": [
+    0,
+    480,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "back",
+   "box": [
+    0,
+    570,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     960
+    ],
+    [
+     1700,
+     720
+    ],
+    [
+     200,
+     1040
+    ]
+   ],
+   "n": [
+    [
+     300,
+     560
+    ],
+    [
+     1000,
+     520
+    ]
+   ]
+  },
+  {
+   "c": "unsure",
+   "box": [
+    280,
+    20,
+    520,
+    240
+   ],
+   "note": "whale above, hazy vertical body",
+   "clip": true
+  },
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    1020,
+    1920,
+    1080
+   ],
+   "over": [
+    "seafloor"
+   ],
+   "note": "dark object at the bottom edge (tag part?) and anything below the back's edge"
+  }
+ ],
+ "027144": [
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    380,
+    1920,
+    480
+   ]
+  },
+  {
+   "c": "seafloor",
+   "rect": [
+    0,
+    480,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "back",
+   "box": [
+    0,
+    570,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     960
+    ],
+    [
+     1700,
+     720
+    ],
+    [
+     200,
+     1040
+    ]
+   ],
+   "n": [
+    [
+     300,
+     560
+    ],
+    [
+     1000,
+     520
+    ]
+   ]
+  },
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    1020,
+    1920,
+    1080
+   ],
+   "over": [
+    "seafloor"
+   ],
+   "note": "dark object at the bottom edge (tag part?) and anything below the back's edge"
+  }
+ ],
+ "027839": [
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    380,
+    1920,
+    480
+   ]
+  },
+  {
+   "c": "seafloor",
+   "rect": [
+    0,
+    480,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "back",
+   "box": [
+    0,
+    570,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     960
+    ],
+    [
+     1700,
+     720
+    ],
+    [
+     200,
+     1040
+    ]
+   ],
+   "n": [
+    [
+     300,
+     560
+    ],
+    [
+     1000,
+     520
+    ]
+   ]
+  },
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    1020,
+    1920,
+    1080
+   ],
+   "over": [
+    "seafloor"
+   ],
+   "note": "dark object at the bottom edge (tag part?) and anything below the back's edge"
+  }
+ ],
+ "034094": [
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    380,
+    1920,
+    480
+   ]
+  },
+  {
+   "c": "seafloor",
+   "rect": [
+    0,
+    480,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "back",
+   "box": [
+    0,
+    570,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     960
+    ],
+    [
+     1700,
+     720
+    ],
+    [
+     200,
+     1040
+    ]
+   ],
+   "n": [
+    [
+     300,
+     560
+    ],
+    [
+     1000,
+     520
+    ]
+   ]
+  },
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    1020,
+    1920,
+    1080
+   ],
+   "over": [
+    "seafloor"
+   ],
+   "note": "dark object at the bottom edge (tag part?) and anything below the back's edge"
+  }
+ ],
+ "038640": [
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    380,
+    1920,
+    480
+   ]
+  },
+  {
+   "c": "seafloor",
+   "rect": [
+    0,
+    480,
+    1920,
+    1080
+   ]
+  },
+  {
+   "c": "back",
+   "box": [
+    0,
+    570,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     960
+    ],
+    [
+     1700,
+     720
+    ],
+    [
+     200,
+     1040
+    ]
+   ],
+   "n": [
+    [
+     300,
+     560
+    ],
+    [
+     1000,
+     520
+    ]
+   ]
+  },
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "box": [
+    120,
+    0,
+    1000,
+    330
+   ],
+   "note": "whale passing above with fluke"
+  },
+  {
+   "c": "unsure",
+   "rect": [
+    0,
+    1020,
+    1920,
+    1080
+   ],
+   "over": [
+    "seafloor"
+   ],
+   "note": "dark object at the bottom edge (tag part?) and anything below the back's edge"
+  }
+ ]
+}

@@ -99,22 +99,24 @@ def test_apply_detections_reasons_and_presets(data_dirs):
     fs = pd.DataFrame({"frame": list(sc), "whale": list(sc.values()), "small": 0.0, "fish": 0.1})
     out = {}
     for preset in ("strict", "sensitive"):
-        cfg = pl.ScanConfig(preset=preset)
+        cfg = pl.ScanConfig(preset=preset, guard_s=5.0)  # short guard: two stretches
         ww, keep = pl.apply_detections(w, fs, frames, cfg, 40.0)
         out[preset] = (ww, keep)
     ws, ks = out["strict"]
     assert ks == [(10.0, 15.0)]
-    assert ws.loc[12, "why"] == "whale" and ws.loc[10, "why"] == "padding" and ws.loc[25, "why"] == "underwater with no whale"
+    assert ws.loc[12, "why"] == "whale" and ws.loc[10, "why"] == "padding" and ws.loc[25, "why"] == "nothing detected"
     wv, kv = out["sensitive"]
     assert kv == [(10.0, 15.0), (23.0, 28.0)]
     reasons = dict(zip(wv.k, wv.why))
     assert reasons[2] == "tag in air" and reasons[7] == "drone flight" and reasons[20] == "surfaced"
-    assert reasons[35] == "tag floating" and reasons[16] == "underwater with no whale"
-    assert set(wv.why) <= set(pl.REASONS) | {"whale", "padding"}
-    assert "hq_score" in wv.columns and "tier" not in wv.columns
-    # fish score is information only: same keep decision with a high fish score
+    assert reasons[35] == "tag floating" and reasons[16] == "nothing detected"
+    assert set(wv.why) <= set(pl.REASONS) | set(pl.KEPT_WHY)
+    assert "hq_score" in wv.columns and set(wv.tier) <= set(pl.TIERS)
+    assert (wv.tier != "none").sum() == wv.whale.sum()
+    # fish is activity since 2026-11-22 (kept, labelled fish); with whale-only keeping it changes nothing
     fs2 = fs.assign(fish=0.99)
-    assert pl.apply_detections(w, fs2, frames, pl.ScanConfig(preset="sensitive"), 40.0)[1] == kv
+    assert pl.apply_detections(w, fs2, frames, pl.ScanConfig(preset="sensitive", keep_activity=False, guard_s=5.0), 40.0)[1] == kv
+    assert pl.apply_detections(w, fs2, frames, pl.ScanConfig(preset="sensitive"), 40.0)[1] == [(10.0, 32.0)]  # buffer stops at the flight window
     drops = pl.drop_stretches(wv, kv)
     assert drops[0] == {"start": 0.0, "end": 5.0, "reason": "tag in air"}
     assert {"start": 19.0, "end": 21.0, "reason": "surfaced"} in drops
@@ -181,8 +183,16 @@ def test_hq_parts_and_small_reason(data_dirs):
     fs = pd.DataFrame({"frame": frames, "whale": 0.0, "small": 0.0, "fish": 0.0})
     fs.loc[fs.frame == int(w.frame_0[14]), "small"] = 0.9
     ww, keep = pl.apply_detections(w, fs, frames, pl.ScanConfig(), 40.0)
-    assert keep == [] and ww.loc[14, "why"] == "small (fish or far whale)"
+    # a small (fish-sized) whale box is activity and kept since 2026-11-22, labelled small
+    assert keep == [(12.0, 17.0)] and ww.loc[14, "why"] == "small" and ww.loc[14, "tier"] == "small"
     assert not ww.hq_whale.any()
+    ww, keep = pl.apply_detections(w, fs, frames, pl.ScanConfig(keep_activity=False), 40.0)
+    assert keep == [] and ww.loc[14, "why"] == "nothing detected"
+    # a fish box >= 0.5 is activity too
+    fs2 = fs.assign(small=0.0)
+    fs2.loc[fs2.frame == int(w.frame_1[22]), "fish"] = 0.6
+    ww, keep = pl.apply_detections(w, fs2, frames, pl.ScanConfig(), 40.0)
+    assert keep == [(20.0, 25.0)] and ww.loc[22, "tier"] == "fish" and ww.loc[22, "why"] == "fish"
 
 
 class FakeDetector:
@@ -230,16 +240,18 @@ def test_scan_end_to_end_without_sensor_log(data_dirs):
     assert FakeDetector.calls == 26      # 13 underwater windows x 2 frames
     assert s["kept_s"] == pytest.approx(6.0)  # whale windows 5, 6 -> 3-9 s
     assert s["dropped_s"]["surfaced"] == pytest.approx(2.0)
-    assert s["dropped_s"]["underwater with no whale"] == pytest.approx(7.0)
+    assert s["dropped_s"]["nothing detected"] == pytest.approx(7.0)
     w = pd.read_csv(out_root / "clip" / "sensitive" / "windows" / "clip.mp4.csv")
     assert list(w.columns[:4]) == ["recording", "k", "t0", "t1"]
     assert w.loc[w.k == 5, "why"].item() == "whale" and w.loc[w.k == 0, "water_source"].item() == "picture"
     vids = clips.load_intervals(out_root / "clip" / "sensitive" / "intervals.json")
     assert [(k.start, k.end) for k in vids[0]["keep"]] == [(3.0, 9.0)]
-    assert {d.reason for d in vids[0]["drop"]} == {"surfaced", "underwater with no whale"}
+    assert {d.reason for d in vids[0]["drop"]} == {"surfaced", "nothing detected"}
     assert s["clips"]["n"] == 1 and s["clips"]["bytes"] > 0
     idx = pd.read_csv(clip_root / "clip" / "clips_index.csv")
-    assert idx.tier.iloc[0] in ("whale", "hq_whale")
+    assert idx.tier.iloc[0] in ("hq", "ok", "low")
+    assert idx.description.iloc[0].startswith("3 s to 8 s, 6 s. One whale in view")
+    assert (out_root / "clip" / "sensitive" / "clips.txt").exists()
     clip = idx.clip_file.iloc[0]
     got = [decode_index(f.image) for f in video.iter_frames(clip)]
     assert got[0] <= 30 and got[-1] == 89           # copy mode starts on the keyframe at or before 3.0 s

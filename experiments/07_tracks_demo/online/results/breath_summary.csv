@@ -1,0 +1,6 @@
+row,set,recording,t0,t1,blocked,numbers_purity,numbers_links,links_made,links_refused,endings,refused_starts
+0,breath,00004,608.0,637.1,"[(618.02, 622.52)]",2,1,1,0,"[(622.52, 1, 'blocked view 4.5 s'), (623.76, 2, 'appearance drift 0.12')]",4
+1,breath,00005,1551.8,1579.5,"[(1561.25, 1564.76), (1571.43, 1574.87)]",3,2,1,1,"[(1564.76, 1, 'blocked view 3.5 s'), (1570.83, 2, 're-found after 1.7 s')]",0
+2,breath,00006,899.0,927.0,"[(909.01, 911.98)]",2,2,0,1,"[(908.87, 1, 'appearance drift 0.11')]",1
+3,group,00004,286.0,306.0,[],5,5,0,5,"[(301.07, 's1', 'appearance drift 0.11'), (301.57, 3, 'appearance drift 0.10'), (301.8, 1, 'swallowed another track'), (301.97, 's2', 'appearance drift 0.10'), (304.74, 2, 'area jump')]",10
+4,group,00005,607.0,627.0,[],0,0,0,0,[],0

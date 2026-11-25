@@ -1,0 +1,10 @@
+{
+ "object_frames": 7942,
+ "with_2plus_pieces": 2526,
+ "changed": 1214,
+ "multi_all_kept": 1312,
+ "dropped_share_median": 0.0074,
+ "dropped_share_max": 0.2679,
+ "numbers": 33,
+ "numbers_touched": 26
+}

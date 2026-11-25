@@ -29,8 +29,11 @@ comes from the `imageio-ffmpeg` package in `.venv`.
 ## Shared machine limits
 
 - One 20 GB GPU, shared with another project that is rendering and training right now. Every GPU command runs as
-  `flock /var/tmp/sat3737-parts-cache/gpu_train.lock <command>`. Waiting for the lock is normal. Keep one locked
-  command under about 15 minutes: split longer jobs into resumable pieces that cache what they computed. Before a GPU
+  `flock /var/tmp/sat3737-parts-cache/gpu_train.lock timeout 900 <command>`. The `timeout 900` is required: on
+  2026-11-23 a job whose decode child had died slept on a pipe and held the lock for 1 h 43 min, blocking the other
+  project. Waiting for the lock is normal. Split longer jobs into resumable pieces that cache what they computed. A
+  parent that reads from a child process must notice the child's death, and a job writes a log line before its first
+  step. Start one copy of a job; check `ps` for a queued copy before starting another. Before a GPU
   job read `nvidia-smi --query-gpu=memory.used,memory.total --format=csv`: the job must fit in the free memory minus
   1.5 GB and never use more than 9 GB (half precision, small batches). On out-of-memory, wait and retry. Never take
   `ue_render.lock`.

@@ -1,0 +1,76 @@
+piece,t,call,best,note
+00017,294,seafloor,0,"rough mottled bottom upper right, whale rolled"
+00017,298,seafloor,0,"rough mottled bottom upper right, whale rolled"
+00017,304,seafloor,0,"rough mottled bottom upper right, whale rolled"
+00017,310,seafloor,0,"rough mottled bottom upper right, whale rolled"
+00017,314,seafloor,0,"rough mottled bottom upper right, whale rolled"
+00017,316,seafloor,1,"rough mottled bottom upper right, whale rolled"
+00017,318,seafloor,1,"rough mottled bottom upper right, whale rolled"
+00017,320,seafloor,1,"rough mottled bottom upper right, whale rolled"
+00017,322,seafloor,1,"rough mottled bottom upper right, whale rolled"
+00017,326,seafloor,0,"rough mottled bottom upper right, whale rolled"
+00017,405,seafloor,0,bottom as a wall on the right while scraping
+00017,407,seafloor,1,bottom as a wall on the right while scraping
+00017,409,seafloor,1,bottom as a wall on the right while scraping
+00017,411,seafloor,1,bottom as a wall on the right while scraping
+00017,413,seafloor,1,bottom as a wall on the right while scraping
+00017,415,seafloor,1,bottom as a wall on the right while scraping
+00017,417,seafloor,1,bottom as a wall on the right while scraping
+00017,419,seafloor,0,bottom as a wall on the right while scraping
+00017,421,seafloor,0,bottom as a wall on the right while scraping
+00017,466,seafloor,1,bottom as a wall on the left
+00017,468,seafloor,1,bottom as a wall on the left
+00017,470,seafloor,1,bottom as a wall on the left
+00017,472,seafloor,1,bottom as a wall on the left
+00017,474,seafloor,1,bottom as a wall on the left
+00017,476,seafloor,1,bottom as a wall on the left
+00017,478,seafloor,1,bottom as a wall on the left
+00017,480,seafloor,1,bottom as a wall on the left
+00017,482,seafloor,1,bottom as a wall on the left
+00017,484,seafloor,1,bottom as a wall on the left
+00017,486,seafloor,1,bottom as a wall on the left
+00017,512,seafloor,0,bottom upper right with sediment rising
+00017,514,seafloor,0,bottom upper right with sediment rising
+00017,516,seafloor,1,bottom upper right with sediment rising
+00017,518,seafloor,1,bottom upper right with sediment rising
+00017,520,seafloor,1,bottom upper right with sediment rising
+00017,528,seafloor,0,bottom upper right with sediment rising
+00017,530,seafloor,0,bottom upper right with sediment rising
+00017,328,sediment,0,"sediment cloud, no surface seen"
+00017,331,sediment,0,"sediment cloud, no surface seen"
+00017,333,sediment,0,"sediment cloud, no surface seen"
+00017,335,sediment,0,"sediment cloud, no surface seen"
+00017,424,sediment,0,"sediment cloud, no surface seen"
+00017,428,sediment,0,"sediment cloud, no surface seen"
+00017,432,sediment,0,"sediment cloud, no surface seen"
+00017,436,sediment,0,"sediment cloud, no surface seen"
+00017,438,sediment,0,"sediment cloud, no surface seen"
+00017,454,sediment,0,"sediment cloud, no surface seen"
+00017,522,sediment,0,"sediment cloud, no surface seen"
+00017,534,sediment,0,"sediment cloud, no surface seen"
+00017,540,sediment,0,"sediment cloud, no surface seen"
+00017,552,sediment,0,"sediment cloud, no surface seen"
+00017,556,sediment,0,"sediment cloud, no surface seen"
+00017,612,sediment,0,"sediment cloud, no surface seen"
+00017,614,sediment,0,"sediment cloud, no surface seen"
+00017,620,sediment,0,"sediment cloud, no surface seen"
+00017,742,sediment,0,"sediment cloud, no surface seen"
+00017,750,sediment,0,"sediment cloud, no surface seen"
+00017,760,sediment,0,"sediment cloud, no surface seen"
+00017,443,unsure,0,faint texture at the edge in haze
+00017,445,unsure,0,faint texture at the edge in haze
+00017,447,unsure,0,faint texture at the edge in haze
+00017,462,unsure,0,faint texture at the edge in haze
+00017,616,unsure,0,faint texture at the edge in haze
+00017,832,unsure,0,faint texture at the edge in haze
+00017,900,none,0,old 'visible' label: back with haze above
+00017,1030,none,0,old 'visible' label: back with haze above
+00017,1290,none,0,old 'visible' label: back with haze above
+00023,296,unsure,0,dark speckled band beyond the back: bottom far away or sediment
+00023,1184,unsure,0,dark speckled band beyond the back: bottom far away or sediment
+00023,1188,unsure,0,dark speckled band beyond the back: bottom far away or sediment
+00023,20,none,0,old 'visible' label: back with haze above
+00023,140,none,0,old 'visible' label: back with haze above
+00011,1270,none,0,deepest flat stretch (49 m): open water
+00010,480,none,0,deepest flat stretch (34 m): open water
+00012,130,none,0,flat at 5 m: open water

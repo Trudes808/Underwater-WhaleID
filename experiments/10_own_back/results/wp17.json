@@ -1,0 +1,1267 @@
+{
+ "offline": {
+  "spans": 135,
+  "start_boxes": 1618,
+  "dropped_by_back_today": 0,
+  "dropped_with_flag": 0,
+  "newly_pass": 0,
+  "roles_changed": 0,
+  "spans_without_template": 2,
+  "flag_off_cleanup_equals_wp13": 135
+ },
+ "stretches": [
+  {
+   "piece": "00005",
+   "src": "d1",
+   "t0": 607.0,
+   "t1": 627.0,
+   "kind": "calf",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 30,
+   "template_area": 0.0889,
+   "off_from": "stored run",
+   "numbers_off": 0,
+   "numbers_on": 2,
+   "on_back_off": 2,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 2
+  },
+  {
+   "piece": "00011",
+   "src": "d1",
+   "t0": 1053.0,
+   "t1": 1056.0,
+   "kind": "candidate",
+   "unclear": true,
+   "done": true,
+   "template": true,
+   "template_frames": 27,
+   "template_area": 0.1064,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00012",
+   "src": "d1",
+   "t0": 1553.0,
+   "t1": 1558.0,
+   "kind": "candidate",
+   "unclear": true,
+   "done": true,
+   "template": false,
+   "template_frames": 2,
+   "template_area": NaN,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 0,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00007",
+   "src": "d1",
+   "t0": 262.0,
+   "t1": 265.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 30,
+   "template_area": 0.1217,
+   "off_from": "run with the flag off",
+   "numbers_off": 0,
+   "numbers_on": 0,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00023",
+   "src": "d2",
+   "t0": 1017.0,
+   "t1": 1020.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 27,
+   "template_area": 0.3186,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00005",
+   "src": "d1",
+   "t0": 589.0,
+   "t1": 594.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 28,
+   "template_area": 0.0931,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 1,
+   "on_back_off": 1,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 1
+  },
+  {
+   "piece": "00005",
+   "src": "d1",
+   "t0": 1682.0,
+   "t1": 1687.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 26,
+   "template_area": 0.0953,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00006",
+   "src": "d1",
+   "t0": 1449.0,
+   "t1": 1454.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 30,
+   "template_area": 0.0983,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 0,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00008",
+   "src": "d1",
+   "t0": 965.0,
+   "t1": 971.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 30,
+   "template_area": 0.0792,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 1,
+   "on_back_off": 1,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 1
+  },
+  {
+   "piece": "00005",
+   "src": "d1",
+   "t0": 1520.0,
+   "t1": 1528.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 26,
+   "template_area": 0.0953,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00007",
+   "src": "d1",
+   "t0": 1335.0,
+   "t1": 1344.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 28,
+   "template_area": 0.0903,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00008",
+   "src": "d1",
+   "t0": 5.0,
+   "t1": 16.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 30,
+   "template_area": 0.0994,
+   "off_from": "run with the flag off",
+   "numbers_off": 0,
+   "numbers_on": 3,
+   "on_back_off": 3,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 1
+  },
+  {
+   "piece": "00012",
+   "src": "d1",
+   "t0": 1508.0,
+   "t1": 1519.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": false,
+   "template_frames": 2,
+   "template_area": NaN,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 0,
+   "on_back_off": 1,
+   "on_back_on": 1,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00005",
+   "src": "d1",
+   "t0": 360.0,
+   "t1": 372.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 28,
+   "template_area": 0.0931,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00006",
+   "src": "d1",
+   "t0": 1401.0,
+   "t1": 1413.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 30,
+   "template_area": 0.0983,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 1,
+   "numbers_on": 1,
+   "on_back_off": 0,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 0
+  },
+  {
+   "piece": "00010",
+   "src": "d1",
+   "t0": 1515.0,
+   "t1": 1530.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 26,
+   "template_area": 0.1064,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 1,
+   "on_back_off": 1,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 1
+  },
+  {
+   "piece": "00005",
+   "src": "d1",
+   "t0": 1534.0,
+   "t1": 1558.0,
+   "kind": "candidate",
+   "unclear": false,
+   "done": true,
+   "template": true,
+   "template_frames": 26,
+   "template_area": 0.0953,
+   "off_from": "same starts: the flag-on run cleaned without the template",
+   "numbers_off": 0,
+   "numbers_on": 1,
+   "on_back_off": 1,
+   "on_back_on": 0,
+   "new_numbers_ge3s": 1
+  }
+ ],
+ "numbers": {
+  "00005 607.0-627.0": {
+   "off": [],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 607.24,
+     "last_s": 626.96,
+     "lasts_s": 19.75,
+     "in_back_obj": 0.998,
+     "in_own_back": 0.347
+    },
+    {
+     "number": 2,
+     "objs": [
+      2
+     ],
+     "first_s": 613.75,
+     "last_s": 622.09,
+     "lasts_s": 8.38,
+     "in_back_obj": 0.999,
+     "in_own_back": 0.148
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/0607.00-0627.00_online",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/0607.00-0627.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 2,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 30,
+    "area_share": 0.0889
+   }
+  },
+  "00011 1053.0-1056.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1054.24,
+     "last_s": 1055.97,
+     "lasts_s": 1.77,
+     "in_back_obj": 0.028,
+     "in_own_back": 0.028
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1054.24,
+     "last_s": 1055.97,
+     "lasts_s": 1.77,
+     "in_back_obj": 0.028,
+     "in_own_back": 0.028
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-134322-000-00011/1053.00-1056.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-134322-000-00011/1053.00-1056.00_online_ownback",
+   "refused_on": [
+    {
+     "i": 0,
+     "frame": 31584,
+     "t": 1053.7358222222222,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      562.7,
+      732.3,
+      865.1,
+      1053.6
+     ]
+    }
+   ],
+   "own_back": {
+    "block": 3,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 27,
+    "area_share": 0.1064
+   }
+  },
+  "00012 1553.0-1558.0": {
+   "off": [],
+   "on": [],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-141328-000-00012/1553.00-1558.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-141328-000-00012/1553.00-1558.00_online_ownback",
+   "refused_on": [
+    {
+     "i": 0,
+     "frame": 46571,
+     "t": 1553.746922222222,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      331.9,
+      507.4,
+      1155.0,
+      1080.0
+     ]
+    },
+    {
+     "i": 15,
+     "frame": 46586,
+     "t": 1554.2473666666667,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      745.3,
+      785.6,
+      1350.9,
+      1077.2
+     ]
+    },
+    {
+     "i": 30,
+     "frame": 46601,
+     "t": 1554.7474222222222,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1037.6,
+      902.6,
+      1503.0,
+      1079.3
+     ]
+    },
+    {
+     "i": 45,
+     "frame": 46616,
+     "t": 1555.2478666666666,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1382.2,
+      624.4,
+      1754.6,
+      1080.0
+     ]
+    },
+    {
+     "i": 75,
+     "frame": 46646,
+     "t": 1556.2487666666666,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1501.7,
+      640.2,
+      1687.7,
+      1080.0
+     ]
+    },
+    {
+     "i": 90,
+     "frame": 46661,
+     "t": 1556.7492,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1490.1,
+      774.8,
+      1725.5,
+      1080.0
+     ]
+    },
+    {
+     "i": 105,
+     "frame": 46676,
+     "t": 1557.2496444444444,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1614.1,
+      736.5,
+      1905.2,
+      1070.0
+     ]
+    }
+   ],
+   "own_back": {
+    "block": 5,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 2,
+    "why_none": "fewer than 5 frames in the block"
+   }
+  },
+  "00007 262.0-265.0": {
+   "off": [],
+   "on": [],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-114256-000-00007/0262.00-0265.00_online_ownback_off",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-114256-000-00007/0262.00-0265.00_online_ownback",
+   "refused_on": [
+    {
+     "i": 0,
+     "frame": 7861,
+     "t": 262.2666222222222,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1291.3,
+      887.1,
+      1720.0,
+      1047.9
+     ]
+    },
+    {
+     "i": 14,
+     "frame": 7875,
+     "t": 262.7333222222222,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1313.9,
+      901.3,
+      1637.3,
+      1041.2
+     ]
+    },
+    {
+     "i": 29,
+     "frame": 7890,
+     "t": 263.23376666666667,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1315.7,
+      790.0,
+      1628.1,
+      1002.5
+     ]
+    },
+    {
+     "i": 44,
+     "frame": 7905,
+     "t": 263.7342111111111,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1336.8,
+      750.9,
+      1728.9,
+      954.4
+     ]
+    },
+    {
+     "i": 59,
+     "frame": 7920,
+     "t": 264.23504444444444,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      1360.7,
+      803.4,
+      1791.2,
+      1036.9
+     ]
+    }
+   ],
+   "own_back": {
+    "block": 0,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 30,
+    "area_share": 0.1217
+   }
+  },
+  "00023 1017.0-1020.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1017.23,
+     "last_s": 1019.97,
+     "lasts_s": 2.77,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1017.23,
+     "last_s": 1019.97,
+     "lasts_s": 2.77,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/TestSubset 2025-1-2 CATS -85/CC-09-85-HRA-20250102-154322-000-00023/1017.00-1020.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/TestSubset 2025-1-2 CATS -85/CC-09-85-HRA-20250102-154322-000-00023/1017.00-1020.00_online_ownback",
+   "refused_on": [
+    {
+     "i": 0,
+     "frame": 30517,
+     "t": 1017.2333333333333,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      0.0,
+      32.5,
+      560.9,
+      370.9
+     ]
+    }
+   ],
+   "own_back": {
+    "block": 3,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 27,
+    "area_share": 0.3186
+   }
+  },
+  "00005 589.0-594.0": {
+   "off": [],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 589.76,
+     "last_s": 593.96,
+     "lasts_s": 4.24,
+     "in_back_obj": 0.999,
+     "in_own_back": 0.368
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/0589.00-0594.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/0589.00-0594.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 1,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 28,
+    "area_share": 0.0931
+   }
+  },
+  "00005 1682.0-1687.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1682.26,
+     "last_s": 1686.97,
+     "lasts_s": 4.74,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1682.26,
+     "last_s": 1686.97,
+     "lasts_s": 4.74,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/1682.00-1687.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/1682.00-1687.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 5,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 26,
+    "area_share": 0.0953
+   }
+  },
+  "00006 1449.0-1454.0": {
+   "off": [],
+   "on": [],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-111250-000-00006/1449.00-1454.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-111250-000-00006/1449.00-1454.00_online_ownback",
+   "refused_on": [
+    {
+     "i": 0,
+     "frame": 43439,
+     "t": 1449.2537444444445,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      320.6,
+      763.5,
+      1908.8,
+      1075.0
+     ]
+    },
+    {
+     "i": 0,
+     "frame": 43439,
+     "t": 1449.2537444444445,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      415.5,
+      755.9,
+      972.9,
+      1035.7
+     ]
+    },
+    {
+     "i": 15,
+     "frame": 43454,
+     "t": 1449.7543666666666,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      584.1,
+      723.0,
+      911.2,
+      999.1
+     ]
+    },
+    {
+     "i": 30,
+     "frame": 43469,
+     "t": 1450.2546333333332,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      480.7,
+      711.1,
+      863.7,
+      1024.2
+     ]
+    },
+    {
+     "i": 45,
+     "frame": 43484,
+     "t": 1450.7550777777778,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      397.1,
+      725.3,
+      771.9,
+      1045.7
+     ]
+    },
+    {
+     "i": 60,
+     "frame": 43499,
+     "t": 1451.2555222222222,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      320.4,
+      746.4,
+      679.9,
+      1044.3
+     ]
+    },
+    {
+     "i": 75,
+     "frame": 43514,
+     "t": 1451.7559666666666,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      255.5,
+      791.8,
+      683.4,
+      1051.3
+     ]
+    },
+    {
+     "i": 105,
+     "frame": 43544,
+     "t": 1452.7568555555556,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      222.0,
+      855.4,
+      674.3,
+      1055.3
+     ]
+    },
+    {
+     "i": 120,
+     "frame": 43559,
+     "t": 1453.2573,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      205.3,
+      894.3,
+      529.2,
+      1053.9
+     ]
+    }
+   ],
+   "own_back": {
+    "block": 4,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 30,
+    "area_share": 0.0983
+   }
+  },
+  "00008 965.0-971.0": {
+   "off": [],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 965.76,
+     "last_s": 970.96,
+     "lasts_s": 5.24,
+     "in_back_obj": 0.986,
+     "in_own_back": 0.289
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-121302-000-00008/0965.00-0971.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-121302-000-00008/0965.00-0971.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 3,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 30,
+    "area_share": 0.0792
+   }
+  },
+  "00005 1520.0-1528.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1520.25,
+     "last_s": 1527.96,
+     "lasts_s": 7.74,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1520.25,
+     "last_s": 1527.96,
+     "lasts_s": 7.74,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/1520.00-1528.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/1520.00-1528.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 5,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 26,
+    "area_share": 0.0953
+   }
+  },
+  "00007 1335.0-1344.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1335.25,
+     "last_s": 1343.96,
+     "lasts_s": 8.74,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1335.25,
+     "last_s": 1343.96,
+     "lasts_s": 8.74,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-114256-000-00007/1335.00-1344.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-114256-000-00007/1335.00-1344.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 4,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 28,
+    "area_share": 0.0903
+   }
+  },
+  "00008 5.0-16.0": {
+   "off": [],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 5.74,
+     "last_s": 6.01,
+     "lasts_s": 0.3,
+     "in_back_obj": 0.966,
+     "in_own_back": 0.501
+    },
+    {
+     "number": 2,
+     "objs": [
+      2
+     ],
+     "first_s": 6.24,
+     "last_s": 8.51,
+     "lasts_s": 2.3,
+     "in_back_obj": 0.999,
+     "in_own_back": 0.068
+    },
+    {
+     "number": 3,
+     "objs": [
+      3
+     ],
+     "first_s": 9.24,
+     "last_s": 15.98,
+     "lasts_s": 6.77,
+     "in_back_obj": 0.998,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-121302-000-00008/0005.00-0016.00_online_ownback_off",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-121302-000-00008/0005.00-0016.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 0,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 30,
+    "area_share": 0.0994
+   }
+  },
+  "00012 1508.0-1519.0": {
+   "off": [],
+   "on": [],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-141328-000-00012/1508.00-1519.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-141328-000-00012/1508.00-1519.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 5,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 2,
+    "why_none": "fewer than 5 frames in the block"
+   }
+  },
+  "00005 360.0-372.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 360.25,
+     "last_s": 371.4,
+     "lasts_s": 11.18,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 360.25,
+     "last_s": 371.4,
+     "lasts_s": 11.18,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/0360.00-0372.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/0360.00-0372.00_online_ownback",
+   "refused_on": [
+    {
+     "i": 315,
+     "frame": 11113,
+     "t": 370.7626,
+     "reason": "start on bubbles / surface / air",
+     "box": [
+      739.2,
+      379.9,
+      1756.4,
+      642.9
+     ]
+    }
+   ],
+   "own_back": {
+    "block": 1,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 28,
+    "area_share": 0.0931
+   }
+  },
+  "00006 1401.0-1413.0": {
+   "off": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1401.24,
+     "last_s": 1412.96,
+     "lasts_s": 11.75,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1401.24,
+     "last_s": 1412.96,
+     "lasts_s": 11.75,
+     "in_back_obj": 0.0,
+     "in_own_back": 0.0
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-111250-000-00006/1401.00-1413.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-111250-000-00006/1401.00-1413.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 4,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 30,
+    "area_share": 0.0983
+   }
+  },
+  "00010 1515.0-1530.0": {
+   "off": [],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1515.25,
+     "last_s": 1529.96,
+     "lasts_s": 14.75,
+     "in_back_obj": 0.997,
+     "in_own_back": 0.572
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-131316-000-00010/1515.00-1530.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-131316-000-00010/1515.00-1530.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 5,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 26,
+    "area_share": 0.1064
+   }
+  },
+  "00005 1534.0-1558.0": {
+   "off": [],
+   "on": [
+    {
+     "number": 1,
+     "objs": [
+      1
+     ],
+     "first_s": 1534.76,
+     "last_s": 1557.95,
+     "lasts_s": 23.22,
+     "in_back_obj": 0.988,
+     "in_own_back": 0.121
+    }
+   ],
+   "off_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/1534.00-1558.00_online_ownback",
+   "on_dir": "/home/sat3737/NOAA_whales/underwater_cache/tracks/2025-2-3 Mini-mother 11-96/CC-11-96-20250203-104242-000-00005/1534.00-1558.00_online_ownback",
+   "refused_on": [],
+   "own_back": {
+    "block": 5,
+    "block_s": 300.0,
+    "tau": 0.5,
+    "dilate": 1,
+    "step": 10,
+    "frames": 26,
+    "area_share": 0.0953
+   }
+  }
+ },
+ "store_check": {
+  "stretch": "00011 1053.0-1056.0",
+  "objects_same": true,
+  "mask_frames_differ": 0,
+  "frames": 68,
+  "table_equal": true,
+  "numbers": [
+   1,
+   1
+  ],
+  "endings_equal": true,
+  "refused_equal": true,
+  "frames_from": [
+   "decoded",
+   "store"
+  ],
+  "seconds": [
+   16.1,
+   15.7
+  ]
+ },
+ "lock": {
+  "tracking_s": 1477.441445350647,
+  "runs": [
+   [
+    "00005 607.0-627.0_ownback",
+    182.6
+   ],
+   [
+    "00011 1053.0-1056.0_ownback",
+    21.0
+   ],
+   [
+    "00012 1553.0-1558.0_ownback",
+    34.9
+   ],
+   [
+    "00007 262.0-265.0_ownback",
+    19.9
+   ],
+   [
+    "00023 1017.0-1020.0_ownback",
+    29.8
+   ],
+   [
+    "00005 589.0-594.0_ownback",
+    39.2
+   ],
+   [
+    "00005 1682.0-1687.0_ownback",
+    40.2
+   ],
+   [
+    "00006 1449.0-1454.0_ownback",
+    36.9
+   ],
+   [
+    "00008 965.0-971.0_ownback",
+    50.4
+   ],
+   [
+    "00005 1520.0-1528.0_ownback",
+    81.8
+   ],
+   [
+    "00007 1335.0-1344.0_ownback",
+    81.5
+   ],
+   [
+    "00008 5.0-16.0_ownback",
+    92.0
+   ],
+   [
+    "00012 1508.0-1519.0_ownback",
+    96.0
+   ],
+   [
+    "00005 360.0-372.0_ownback",
+    99.5
+   ],
+   [
+    "00006 1401.0-1413.0_ownback",
+    100.7
+   ],
+   [
+    "00010 1515.0-1530.0_ownback",
+    129.0
+   ],
+   [
+    "00005 1534.0-1558.0_ownback",
+    205.7
+   ],
+   [
+    "00011 1053.0-1056.0_ownback_store",
+    18.3
+   ],
+   [
+    "00007 262.0-265.0_ownback_off",
+    29.6
+   ],
+   [
+    "00008 5.0-16.0_ownback_off",
+    88.5
+   ]
+  ]
+ }
+}

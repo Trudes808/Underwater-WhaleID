@@ -1,0 +1,430 @@
+{
+ "pixels": {
+  "E1": {
+   "frames": 4,
+   "seafloor_px": 465144,
+   "seafloor_found": {
+    "n": 465144,
+    "k": 400347,
+    "share": 0.8606947525927455
+   },
+   "seafloor_iou": 0.8581267040485622,
+   "seafloor_iou_band12": 0.8659231353184486,
+   "seafloor_called_back": {
+    "n": 465144,
+    "k": 0,
+    "share": 0.0
+   },
+   "seafloor_called_water": {
+    "n": 465144,
+    "k": 64797,
+    "share": 0.13930524740725453
+   },
+   "back_called_seafloor": {
+    "n": 3868528,
+    "k": 1392,
+    "share": 0.0003598267868295124
+   },
+   "water_called_seafloor": {
+    "n": 3304720,
+    "k": 0,
+    "share": 0.0
+   },
+   "back_iou": 0.982466210541582,
+   "combined": {
+    "bg_px": 4333672,
+    "bg_found": {
+     "n": 4333672,
+     "k": 4256287,
+     "share": 0.9821433186452505
+    },
+    "bg_iou": 0.9698766065631336,
+    "bg_iou_band12": 0.9856785611281348,
+    "bg_called_water": {
+     "n": 4333672,
+     "k": 77254,
+     "share": 0.01782645294798499
+    },
+    "water_called_bg": {
+     "n": 3304720,
+     "k": 54811,
+     "share": 0.01658567140332615
+    },
+    "bg_called_whale": {
+     "n": 4333672,
+     "k": 0,
+     "share": 0.0
+    },
+    "whale_called_bg": {
+     "n": 0,
+     "k": 0,
+     "share": 0.0
+    }
+   }
+  },
+  "E2": {
+   "frames": 5,
+   "seafloor_px": 1390088,
+   "seafloor_found": {
+    "n": 1390088,
+    "k": 1295809,
+    "share": 0.9321776750824409
+   },
+   "seafloor_iou": 0.9068773974381137,
+   "seafloor_iou_band12": 0.9213992840727318,
+   "seafloor_called_back": {
+    "n": 1390088,
+    "k": 0,
+    "share": 0.0
+   },
+   "seafloor_called_water": {
+    "n": 1390088,
+    "k": 86041,
+    "share": 0.061896081399163215
+   },
+   "back_called_seafloor": {
+    "n": 4489441,
+    "k": 93,
+    "share": 2.0715273906038635e-05
+   },
+   "water_called_seafloor": {
+    "n": 2980575,
+    "k": 38688,
+    "share": 0.012980045796532549
+   },
+   "back_iou": 0.9810539884703865,
+   "combined": {
+    "bg_px": 5879529,
+    "bg_found": {
+     "n": 5879529,
+     "k": 5777078,
+     "share": 0.982574964763334
+    },
+    "bg_iou": 0.9634096068167856,
+    "bg_iou_band12": 0.97781768936465,
+    "bg_called_water": {
+     "n": 5879529,
+     "k": 92257,
+     "share": 0.01569122288537058
+    },
+    "water_called_bg": {
+     "n": 2980575,
+     "k": 116963,
+     "share": 0.03924175704352348
+    },
+    "bg_called_whale": {
+     "n": 5879529,
+     "k": 7868,
+     "share": 0.001338202430840974
+    },
+    "whale_called_bg": {
+     "n": 0,
+     "k": 0,
+     "share": 0.0
+    }
+   }
+  },
+  "E3": {
+   "frames": 6,
+   "seafloor_px": 1997572,
+   "seafloor_found": {
+    "n": 1997572,
+    "k": 1996755,
+    "share": 0.9995910034782226
+   },
+   "seafloor_iou": 0.9350791847469263,
+   "seafloor_iou_band12": 0.9459437581476193,
+   "seafloor_called_back": {
+    "n": 1997572,
+    "k": 547,
+    "share": 0.0002738324325731438
+   },
+   "seafloor_called_water": {
+    "n": 1997572,
+    "k": 31,
+    "share": 1.5518839871604127e-05
+   },
+   "back_called_seafloor": {
+    "n": 4609482,
+    "k": 6595,
+    "share": 0.0014307464482993968
+   },
+   "water_called_seafloor": {
+    "n": 4647001,
+    "k": 131219,
+    "share": 0.028237351358435258
+   },
+   "back_iou": 0.9821140823504608,
+   "combined": {
+    "bg_px": 6607054,
+    "bg_found": {
+     "n": 6607054,
+     "k": 6582944,
+     "share": 0.9963508698430495
+    },
+    "bg_iou": 0.9694082318376517,
+    "bg_iou_band12": 0.9824383866296335,
+    "bg_called_water": {
+     "n": 6607054,
+     "k": 22647,
+     "share": 0.003427700151989071
+    },
+    "water_called_bg": {
+     "n": 4647001,
+     "k": 183629,
+     "share": 0.03951559295984658
+    },
+    "bg_called_whale": {
+     "n": 6607054,
+     "k": 85,
+     "share": 1.2865037882239195e-05
+    },
+    "whale_called_bg": {
+     "n": 0,
+     "k": 0,
+     "share": 0.0
+    }
+   }
+  },
+  "E4": {
+   "frames": 7,
+   "seafloor_px": 1554240,
+   "seafloor_found": {
+    "n": 1554240,
+    "k": 1534115,
+    "share": 0.9870515493102738
+   },
+   "seafloor_iou": 0.8401377196844736,
+   "seafloor_iou_band12": 0.8666557103455972,
+   "seafloor_called_back": {
+    "n": 1554240,
+    "k": 0,
+    "share": 0.0
+   },
+   "seafloor_called_water": {
+    "n": 1554240,
+    "k": 18973,
+    "share": 0.0122072524191888
+   },
+   "back_called_seafloor": {
+    "n": 5684287,
+    "k": 15649,
+    "share": 0.0027530277763948233
+   },
+   "water_called_seafloor": {
+    "n": 4817443,
+    "k": 256139,
+    "share": 0.05316907745457497
+   },
+   "back_iou": 0.9810849983716389,
+   "combined": {
+    "bg_px": 7238527,
+    "bg_found": {
+     "n": 7238527,
+     "k": 7207224,
+     "share": 0.9956755013830852
+    },
+    "bg_iou": 0.9512084934854076,
+    "bg_iou_band12": 0.9678318152223494,
+    "bg_called_water": {
+     "n": 7238527,
+     "k": 29484,
+     "share": 0.004073204396419327
+    },
+    "water_called_bg": {
+     "n": 4817443,
+     "k": 338386,
+     "share": 0.07024182745908981
+    },
+    "bg_called_whale": {
+     "n": 7238527,
+     "k": 0,
+     "share": 0.0
+    },
+    "whale_called_bg": {
+     "n": 0,
+     "k": 0,
+     "share": 0.0
+    }
+   }
+  },
+  "all held-out": {
+   "frames": 22,
+   "seafloor_px": 5407044,
+   "seafloor_found": {
+    "n": 5407044,
+    "k": 5227026,
+    "share": 0.9667067625120122
+   },
+   "seafloor_iou": 0.892468420144109,
+   "seafloor_iou_band12": 0.9095652205918212,
+   "seafloor_called_back": {
+    "n": 5407044,
+    "k": 547,
+    "share": 0.00010116433304408101
+   },
+   "seafloor_called_water": {
+    "n": 5407044,
+    "k": 169842,
+    "share": 0.03141124799428301
+   },
+   "back_called_seafloor": {
+    "n": 18651738,
+    "k": 23729,
+    "share": 0.0012722138816232567
+   },
+   "water_called_seafloor": {
+    "n": 15749739,
+    "k": 426046,
+    "share": 0.027050987956054384
+   },
+   "back_iou": 0.9816175219191008,
+   "combined": {
+    "bg_px": 24058782,
+    "bg_found": {
+     "n": 24058782,
+     "k": 23823533,
+     "share": 0.9902219073268131
+    },
+    "bg_iou": 0.9624670099926186,
+    "bg_iou_band12": 0.9774607537672076,
+    "bg_called_water": {
+     "n": 24058782,
+     "k": 221642,
+     "share": 0.009212519569777058
+    },
+    "water_called_bg": {
+     "n": 15749739,
+     "k": 693789,
+     "share": 0.04405082522319894
+    },
+    "bg_called_whale": {
+     "n": 24058782,
+     "k": 7953,
+     "share": 0.00033056536278519837
+    },
+    "whale_called_bg": {
+     "n": 0,
+     "k": 0,
+     "share": 0.0
+    }
+   }
+  }
+ },
+ "whale_safety": {
+  "2025-02-03 (heads not fitted on it)": {
+   "v2_test_d1": {
+    "whale_px": 1052352,
+    "whale_called_seafloor": {
+     "n": 1052352,
+     "k": 0,
+     "share": 0.0
+    },
+    "whale_called_back": {
+     "n": 1052352,
+     "k": 2254,
+     "share": 0.0021418688803746277
+    },
+    "whale_found": {
+     "n": 1052352,
+     "k": 901163,
+     "share": 0.8563322918567171
+    }
+   },
+   "old_test_d1": {
+    "whale_px": 1052352,
+    "whale_called_seafloor": {
+     "n": 1052352,
+     "k": 0,
+     "share": 0.0
+    },
+    "whale_called_back": {
+     "n": 1052352,
+     "k": 3572,
+     "share": 0.0033943015264854344
+    },
+    "whale_found": {
+     "n": 1052352,
+     "k": 908411,
+     "share": 0.8632197211579395
+    }
+   }
+  },
+  "dev clip (heads not fitted on it)": {
+   "v2_test_dev": {
+    "whale_px": 4987442,
+    "whale_called_seafloor": {
+     "n": 4987442,
+     "k": 144322,
+     "share": 0.028937078366024105
+    },
+    "whale_called_back": {
+     "n": 4987442,
+     "k": 21521,
+     "share": 0.0043150376485581185
+    },
+    "whale_found": {
+     "n": 4987442,
+     "k": 3305510,
+     "share": 0.6627666046041237
+    }
+   },
+   "old_test_dev": {
+    "whale_px": 4987442,
+    "whale_called_seafloor": {
+     "n": 4987442,
+     "k": 19962,
+     "share": 0.004002452559849317
+    },
+    "whale_called_back": {
+     "n": 4987442,
+     "k": 39113,
+     "share": 0.007842296712422921
+    },
+    "whale_found": {
+     "n": 4987442,
+     "k": 3672060,
+     "share": 0.7362611936138806
+    }
+   }
+  },
+  "2025-01-02 (IN-SAMPLE: both heads saw these masks)": {
+   "v2_all": {
+    "whale_px": 3806963,
+    "whale_called_seafloor": {
+     "n": 3806963,
+     "k": 14,
+     "share": 3.677472042675487e-06
+    },
+    "whale_called_back": {
+     "n": 3806963,
+     "k": 902,
+     "share": 0.0002369342701780921
+    },
+    "whale_found": {
+     "n": 3806963,
+     "k": 3690849,
+     "share": 0.9694995722311984
+    }
+   },
+   "old_all": {
+    "whale_px": 3806963,
+    "whale_called_seafloor": {
+     "n": 3806963,
+     "k": 12901,
+     "share": 0.0033887904873254613
+    },
+    "whale_called_back": {
+     "n": 3806963,
+     "k": 1103,
+     "share": 0.000289732261647933
+    },
+    "whale_found": {
+     "n": 3806963,
+     "k": 3689938,
+     "share": 0.9692602738718501
+    }
+   }
+  }
+ }
+}

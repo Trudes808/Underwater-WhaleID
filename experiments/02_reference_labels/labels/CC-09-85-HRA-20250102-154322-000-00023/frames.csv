@@ -1,0 +1,61 @@
+frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note,silhouette
+584,19.467,underwater,clear,0,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale resting at about 42 m (sensor); no other animal,,,,,,
+1264,42.133,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),"another whale passing above the back: body and white pectoral fin, hazy blue",0.8,0.15,yes,ok,"large, white fin sharp, body hazy and dim from below; near hq",no
+1944,64.800,underwater,clear,0,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale resting at about 42 m (sensor); no other animal,,,,,,
+2624,87.467,underwater,clear,0,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale resting at about 42 m (sensor); no other animal,,,,,,
+3305,110.167,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),hazy whale upper left,0.4,0.05,no,ok,hazy silhouette; close call low,no
+3985,132.833,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale with flipper cut by the top left edge,0.4,0.05,yes,ok,"dim, cut at the top",no
+4665,155.500,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale flipper and body in the top left corner,0.2,0.05,yes,low,mostly out of frame,no
+5345,178.167,underwater,clear,0,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale resting at about 42 m (sensor); no other animal,,,,,,
+6026,200.867,underwater,clear,0,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale resting at about 42 m (sensor); no other animal,,,,,,
+6706,223.533,underwater,clear,0,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale resting at about 42 m (sensor); no other animal,,,,,,
+7386,246.200,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),"whale head at the left edge low, close to the bottom",0.1,0.05,yes,low,"head only, hazy; whale near the bottom",no
+8066,268.867,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),"very near pectoral fin with white pigment and knobbed edge sweeping over the camera, body top left",0.5,0.15,yes,hq,"very near, sharp, white pattern visible; only the fin and part of the body",no
+8747,291.567,underwater,clear,1,0,back,visible,none,seafloor: bottom fading into haze (darker speckled band left of the back),whale passing just above the back: whole body and white pectoral fin,1.0,0.20,yes,hq,"large, outline sharp, fin pattern visible; body blue-grey from below; close call",no
+9427,314.233,underwater,clear,1,0,back,unsure,none,seafloor: unsure (band fading as the whale rises),whale low beside the back (head and white flipper) lower left; sun glow top left,0.6,0.10,yes,ok,"large but dark against the light, partly hidden by the back; near hq",yes
+10107,336.900,underwater,clear,0,0,back,none,none,,"rising, open water",,,,,,
+10787,359.567,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+11468,382.267,underwater,clear,0,0,back,none,none,,"just under the surface, surface underside across the top half",,,,,,
+12148,404.933,underwater,clear,0,0,back,none,none,,,,,,,,
+12828,427.600,underwater,clear,0,0,back,none,none,,,,,,,,
+13508,450.267,underwater,clear,0,0,back,none,none,,,,,,,,
+14189,472.967,underwater,clear,0,0,back,none,none,,"at the surface, the back's skin lit by ripples fills the lower half; surface above",,,,,,
+14869,495.633,underwater,clear,1,0,back,none,none,,another whale near the surface upper left: white pectoral fin and pale body in bubbles,0.3,0.05,yes,ok,pale and blurred in bubbles; close call low,no
+15549,518.300,underwater,clear,0,0,back,none,none,,,,,,,,
+16229,540.967,underwater,clear,0,0,back,none,few,,"2 large jacks (forked tail, eye, stripes) at the left, about 500 px each, very near",,,,,,
+16910,563.667,underwater,clear,0,0,back,none,none,,,,,,,,
+17590,586.333,underwater,clear,0,0,back,none,none,,,,,,,,
+18270,609.000,underwater,clear,0,0,back,none,few,,"1 jack (eye, fins, forked tail) lower left, about 360 px",,,,,,
+18950,631.667,underwater,clear,0,0,back,none,none,,,,,,,,
+19631,654.367,underwater,glare,0,0,back,none,none,,"camera rolled toward the sun: bright glare over the left half, back dark; borderline glare / clear",,,,,,
+20311,677.033,underwater,clear,0,0,back,none,few,,"1 small jack (forked tail, eye) ~120 px upper centre-right",,,,,,
+20991,699.700,underwater,clear,0,0,back,none,none,,,,,,,,
+21671,722.367,underwater,clear,0,0,back,none,none,,,,,,,,
+22352,745.067,underwater,clear,0,0,back,none,none,"unsure: 1 hazy fish-shaped spindle ~50 px at the right (x1680 y260), no tail seen",,,,,,,
+23032,767.733,underwater,clear,0,0,back,none,none,unsure: 1 dark speck ~15 px centre right,,,,,,,
+23712,790.400,underwater,clear,0,0,back,none,none,,,,,,,,
+24392,813.067,underwater,clear,0,0,back,none,none,,,,,,,,
+25073,835.767,underwater,bubbles,0,0,back,none,none,,exhalation bubbles over the upper left half; borderline bubbles / clear,,,,,,
+25753,858.433,underwater,clear,0,0,back,none,none,,,,,,,,
+26433,881.100,underwater,clear,0,0,back,none,none,,,,,,,,
+27113,903.767,underwater,clear,0,0,back,none,none,,,,,,,,
+27794,926.467,underwater,clear,0,0,back,none,none,,,,,,,,
+28474,949.133,underwater,clear,0,0,back,none,none,,,,,,,,
+29154,971.800,underwater,clear,0,0,back,none,none,,"camera rolled, light from the left",,,,,,
+29834,994.467,underwater,clear,1,0,back,none,few,"unsure: 1 small fish ~60 px (x320 y720), tail unclear","another whale low at the left (head / front body with pale spots, knobbed fin) beyond the back; 1 jack ~170 px with forked tail centre-left",0.3,0.05,yes,ok,"fairly sharp but only the front part, cut at the left",no
+30515,1017.167,underwater,clear,1,1,back,none,few,,1 large jack ~300 px with forked tail upper left; whale head cut at the lower left edge; pale shape upper right (whale fin or dolphin?): faint,0.2,0.05,yes,low,head only at the edge,no
+31195,1039.833,underwater,clear,0,0,back,none,none,,,,,,,,
+31875,1062.500,underwater,clear,0,1,back,none,none,,hazy dark shape low at the left beyond the back: faint,,,,,,
+32555,1085.167,underwater,clear,1,0,back,none,none,,"large whale beside / behind the back, left half, with white flipper; hazy",0.6,0.20,no,ok,"large but hazy, lower part hidden by the back; near hq",no
+33236,1107.867,underwater,bubbles,0,0,back,none,none,,entry froth / bubble streaks over the upper two thirds,,,,,,
+33916,1130.533,underwater,bubbles,0,0,back,none,none,,froth just under the surface after an entry; looks like gravel (hard negative for seafloor),,,,,,
+34596,1153.200,underwater,clear,0,0,back,none,none,,,,,,,,
+35276,1175.867,underwater,clear,0,0,back,none,none,,,,,,,,
+35957,1198.567,underwater,clear,0,0,back,none,none,,,,,,,,
+36637,1221.233,underwater,clear,0,0,back,none,none,unsure: 1 dark speck ~20 px centre,,,,,,,
+37317,1243.900,underwater,clear,0,0,back,none,none,,,,,,,,
+37997,1266.567,underwater,clear,0,0,back,none,none,,,,,,,,
+38678,1289.267,underwater,clear,0,0,back,none,none,,,,,,,,
+39358,1311.933,underwater,clear,1,0,back,none,none,,"another whale's head and front body at the left beside the back, dark, white fin tip",0.4,0.10,yes,ok,"dark from below, cut at the left",yes
+40038,1334.600,underwater,clear,0,0,back,none,none,,,,,,,,
+40718,1357.267,underwater,clear,0,0,back,none,none,,"just under the surface, bubbles upper right",,,,,,

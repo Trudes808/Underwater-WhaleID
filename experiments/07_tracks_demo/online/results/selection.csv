@@ -1,0 +1,11 @@
+set,deployment,recording,source,t0,t1,hq,depth_med
+held-out,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-101236-000-00004.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-101236-000-00004.mov,497.0,524.0,497-524,20.6
+held-out,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-121302-000-00008.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-121302-000-00008.mov,56.0,76.0,56-76,41.1
+held-out,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-104242-000-00005.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-104242-000-00005.mov,332.0,348.0,332-348,14.6
+held-out,2025-2-3 Mini-mother 11-96,CC-11-96-20250203-134322-000-00011.mov,/home/sat3737/NOAA_whales/underwater_video/2025-2-3 Mini-mother 11-96/Video/CC-11-96-20250203-134322-000-00011.mov,1062.0,1078.0,1062-1078,12.3
+held-out,TestSubset 2025-1-2 CATS -85,CC-09-85-HRA-20250102-154322-000-00023.mov,/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov,284.0,304.0,284-304,41.8
+held-out,TestSubset 2025-1-2 CATS -85,CC-09-85-HRA-20250102-154322-000-00023.mov,/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov,252.0,271.0,252-271,41.8
+held-out,TestSubset 2025-1-2 CATS -85,CC-09-85-HRA-20250102-160604-000-00024.mov,/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov,83.0,101.0,83-101,0.3
+held-out,TestSubset 2025-1-2 CATS -85,CC-09-85-HRA-20250102-124244-000-00011.mov,/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov,499.0,506.0,501-504,0.5
+breath,TestSubset 2025-1-2 CATS -85,CC-09-85-HRA-20250102-160604-000-00024.mov,/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov,108.0,118.0,108-118,0.2
+breath,TestSubset 2025-1-2 CATS -85,CC-09-85-HRA-20250102-141304-000-00017.mov,/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov,176.0,186.0,182-184,0.2

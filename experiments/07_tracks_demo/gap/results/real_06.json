@@ -7,5 +7,76 @@
    1469.77
   ]
  ],
- "variants": {}
+ "variants": {
+  "a": {
+   "whale_ids": 3,
+   "gaps": [
+    {
+     "gap_s": 4.24,
+     "blocked_s": 4.24,
+     "ids_before": [
+      1
+     ],
+     "ids_after": [
+      2,
+      3
+     ],
+     "same_number": [],
+     "new_after": [
+      2,
+      3
+     ],
+     "gone": [
+      1
+     ]
+    }
+   ],
+   "blocked_frames_with_outline": "17/127",
+   "gpu_s_per_video_s": 7.74
+  },
+  "b": {
+   "whale_ids": 1,
+   "gaps": [
+    {
+     "gap_s": 4.24,
+     "blocked_s": 4.24,
+     "ids_before": [
+      1
+     ],
+     "ids_after": [
+      1
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [],
+     "gone": []
+    }
+   ],
+   "blocked_frames_with_outline": "0/127",
+   "gpu_s_per_video_s": 7.41
+  },
+  "c": {
+   "whale_ids": 1,
+   "gaps": [
+    {
+     "gap_s": 4.24,
+     "blocked_s": 4.24,
+     "ids_before": [
+      1
+     ],
+     "ids_after": [
+      1
+     ],
+     "same_number": [
+      1
+     ],
+     "new_after": [],
+     "gone": []
+    }
+   ],
+   "blocked_frames_with_outline": "27/127",
+   "gpu_s_per_video_s": 8.3
+  }
+ }
 }

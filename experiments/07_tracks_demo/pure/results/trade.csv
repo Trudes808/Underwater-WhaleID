@@ -1,0 +1,15 @@
+policy,gap_moved,gap_moved_whale_numbers,gap_tracks,gap_tracks_per_whale,gap_coverage,events_fixed,stretch_numbers,stretch_not_whale_like,stretch_whale_like_frames
+old,18,12,131,1.11,0.742,1/9,108,30,6180
+full loose,10,7,181,1.4,0.735,6/9,134,43,5453
+full medium,6,4,212,1.64,0.722,6/9,160,52,5329
+full strict,0,0,247,1.95,0.685,7/9,209,81,5395
+full medium + settle,6,4,213,1.65,0.722,6/9,160,53,5327
+only noblock,18,12,131,1.11,0.742,1/9,104,25,6079
+only block,15,9,169,1.36,0.742,5/9,128,28,5941
+only absent,15,12,136,1.13,0.741,4/9,118,37,5996
+only jump,12,8,140,1.16,0.734,3/9,161,72,5777
+only swallow,18,12,139,1.15,0.741,4/9,133,36,5731
+only drift,9,7,186,1.46,0.739,6/9,191,90,5648
+only grow,17,11,136,1.14,0.742,1/9,107,34,6144
+only start,18,12,131,1.11,0.742,1/9,99,22,6163
+only fish,19,8,131,1.12,0.742,1/9,104,30,6180

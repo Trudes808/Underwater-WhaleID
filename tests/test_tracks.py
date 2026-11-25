@@ -78,3 +78,48 @@ def test_clean_summary_and_render(tmp_path):
         assert sum(1 for _ in c.decode(v)) == 30
     assert (tmp_path / "out.jpg").exists()
     assert json.loads((run / "meta.json").read_text())["done"]
+
+
+def _two_fragments(tmp, with_other: bool):
+    n = 40
+    meta = dict(video="x", t0=0.0, t1=n / 30, method="online_sam3", label="t", frames=[0, n], n_frames=n, fps=30.0,
+                store_size=[128, 72], done=True)
+    wr = tracks._Writer(n, size=(128, 72))
+    for i in range(n):
+        m = np.zeros((72, 128), bool)
+        if i < 10:
+            m[10:40, 10:50] = True
+        wr.add(i, i, i / 30, 1, m, 3.0)
+        m2 = np.zeros((72, 128), bool)
+        if i >= 25:
+            m2[10:40, 14:54] = True
+        wr.add(i, i, i / 30, 2, m2, 3.0)
+        if with_other:
+            m3 = np.zeros((72, 128), bool)
+            m3[10:40, 80:125] = True
+            wr.add(i, i, i / 30, 3, m3, 3.0)
+    d = tmp / ("other" if with_other else "lone")
+    wr.save(d, meta)
+    return tracks.load_tracks(d)
+
+
+def test_lone_link(tmp_path):
+    tr = tracks.link_lone(_two_fragments(tmp_path, False))
+    assert tr.number[1] == tr.number[2]                 # one animal across a 0.5 s break
+    assert any(L["why"] == "linked" for L in tr.links)
+    tr = tracks.link_lone(_two_fragments(tmp_path, True))
+    assert tr.number[1] != tr.number[2]                 # a second whale in view: no link
+    assert all(L["why"] != "linked" for L in tr.links)
+
+
+def test_lone_link_ignores_detector_on_blocked_frames(tmp_path):
+    # WP11a follow-up B: a detector box on frames the tracker was blocked on has no outline to explain it; it must
+    # not count as a second animal (it did in the stitched 00024 encounter, where the 2 s window ran into the breath)
+    import pandas as pd
+    det = pd.DataFrame([dict(frame=i, x0=1250.0, y0=150.0, x1=1850.0, y1=560.0) for i in range(30, 40)])
+    tr = tracks.link_lone(_two_fragments(tmp_path, False), det)
+    assert tr.number[1] != tr.number[2] and tr.links[0]["detector"]["after"] >= 2
+    tr = _two_fragments(tmp_path, False)
+    tr.meta["blocked"] = [[30, 40]]
+    tr = tracks.link_lone(tr, det)
+    assert tr.number[1] == tr.number[2] and tr.links[0]["detector"]["after"] == 0

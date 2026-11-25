@@ -1,0 +1,467 @@
+{
+ "model": "TripoSG (VAST-AI, MIT licence), fp16",
+ "per_mesh": [
+  {
+   "id": "01_side",
+   "animal": "00024_0108.00-0_n1",
+   "deployment": "CC-09-85",
+   "kind": "side view (flank), near whale",
+   "seconds": 31.53,
+   "torch_peak_gb": 5.205,
+   "torch_reserved_gb": 5.271,
+   "smi_peak_mib": 5602,
+   "faces": 618212,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.918,
+   "length_to_depth": 2.912,
+   "span_to_length": 0.401,
+   "depth_to_length": 0.343,
+   "flipper_est_to_length": 0.029,
+   "axis_ratio_2_1": 0.395,
+   "axis_ratio_3_1": 0.332
+  },
+  {
+   "id": "02_below",
+   "animal": "00005_1551.80-1_n1",
+   "deployment": "2025-02-03",
+   "kind": "from below, flippers out, sun glare",
+   "seconds": 32.65,
+   "torch_peak_gb": 5.222,
+   "torch_reserved_gb": 5.291,
+   "smi_peak_mib": 5622,
+   "faces": 883460,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.877,
+   "length_to_depth": 3.944,
+   "span_to_length": 0.718,
+   "depth_to_length": 0.254,
+   "flipper_est_to_length": 0.232,
+   "axis_ratio_2_1": 0.727,
+   "axis_ratio_3_1": 0.26
+  },
+  {
+   "id": "03_behind_a",
+   "animal": "00006_0899.00-0_n1",
+   "deployment": "2025-02-03",
+   "kind": "from behind and below, fluke toward camera",
+   "seconds": 36.77,
+   "torch_peak_gb": 5.191,
+   "torch_reserved_gb": 5.252,
+   "smi_peak_mib": 5582,
+   "faces": 483884,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.929,
+   "length_to_depth": 2.525,
+   "span_to_length": 0.599,
+   "depth_to_length": 0.396,
+   "flipper_est_to_length": 0.102,
+   "axis_ratio_2_1": 0.585,
+   "axis_ratio_3_1": 0.448
+  },
+  {
+   "id": "04_behind_b",
+   "animal": "00006_0899.00-0_n1",
+   "deployment": "2025-02-03",
+   "kind": "from behind and below (+1.3 s)",
+   "seconds": 31.52,
+   "torch_peak_gb": 5.213,
+   "torch_reserved_gb": 5.271,
+   "smi_peak_mib": 5602,
+   "faces": 742420,
+   "largest_piece_share": 0.998,
+   "silhouette_iou": 0.607,
+   "length_to_depth": 3.409,
+   "span_to_length": 0.963,
+   "depth_to_length": 0.293,
+   "flipper_est_to_length": 0.335,
+   "axis_ratio_2_1": 0.972,
+   "axis_ratio_3_1": 0.309
+  },
+  {
+   "id": "05_behind_c",
+   "animal": "00006_0899.00-0_n1",
+   "deployment": "2025-02-03",
+   "kind": "from behind and below (+2.8 s)",
+   "seconds": 32.17,
+   "torch_peak_gb": 5.205,
+   "torch_reserved_gb": 5.271,
+   "smi_peak_mib": 5602,
+   "faces": 668852,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.85,
+   "length_to_depth": 1.532,
+   "span_to_length": 0.483,
+   "depth_to_length": 0.653,
+   "flipper_est_to_length": 0.0,
+   "axis_ratio_2_1": 0.798,
+   "axis_ratio_3_1": 0.643
+  },
+  {
+   "id": "06_compgroup",
+   "animal": "20 CG_0024.00-0_n2",
+   "deployment": "2025-12-20",
+   "kind": "comp group, flank / belly, flipper raised",
+   "seconds": 39.44,
+   "torch_peak_gb": 5.189,
+   "torch_reserved_gb": 5.252,
+   "smi_peak_mib": 5582,
+   "faces": 525008,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.525,
+   "length_to_depth": 3.404,
+   "span_to_length": 0.635,
+   "depth_to_length": 0.294,
+   "flipper_est_to_length": 0.17,
+   "axis_ratio_2_1": 0.6,
+   "axis_ratio_3_1": 0.28
+  },
+  {
+   "id": "07_dev_below_a",
+   "animal": "20 CG_0024.00-0_n3",
+   "deployment": "2025-12-20",
+   "kind": "from below, flippers spread",
+   "seconds": 30.92,
+   "torch_peak_gb": 5.19,
+   "torch_reserved_gb": 5.252,
+   "smi_peak_mib": 5582,
+   "faces": 481908,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.842,
+   "length_to_depth": 3.23,
+   "span_to_length": 0.928,
+   "depth_to_length": 0.31,
+   "flipper_est_to_length": 0.309,
+   "axis_ratio_2_1": 0.929,
+   "axis_ratio_3_1": 0.314
+  },
+  {
+   "id": "08_dev_below_b",
+   "animal": "20 CG_0024.00-0_n3",
+   "deployment": "2025-12-20",
+   "kind": "from below (+1.3 s)",
+   "seconds": 29.99,
+   "torch_peak_gb": 5.18,
+   "torch_reserved_gb": 5.252,
+   "smi_peak_mib": 5582,
+   "faces": 386220,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.851,
+   "length_to_depth": 5.344,
+   "span_to_length": 0.605,
+   "depth_to_length": 0.187,
+   "flipper_est_to_length": 0.209,
+   "axis_ratio_2_1": 0.773,
+   "axis_ratio_3_1": 0.22
+  },
+  {
+   "id": "09_dev_below_c",
+   "animal": "20 CG_0024.00-0_n3",
+   "deployment": "2025-12-20",
+   "kind": "from below (+2.5 s)",
+   "seconds": 35.15,
+   "torch_peak_gb": 5.196,
+   "torch_reserved_gb": 5.271,
+   "smi_peak_mib": 5602,
+   "faces": 578630,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.869,
+   "length_to_depth": 2.945,
+   "span_to_length": 0.678,
+   "depth_to_length": 0.34,
+   "flipper_est_to_length": 0.169,
+   "axis_ratio_2_1": 0.786,
+   "axis_ratio_3_1": 0.369
+  },
+  {
+   "id": "10_calf",
+   "animal": "00006_0456.00-0_n6",
+   "deployment": "2025-02-03",
+   "kind": "calf (WP8 clip 05), rule exception: outline box reaches below the fixed back box; back outline not touched",
+   "seconds": 30.3,
+   "torch_peak_gb": 5.19,
+   "torch_reserved_gb": 5.252,
+   "smi_peak_mib": 5582,
+   "faces": 545788,
+   "largest_piece_share": 1.0,
+   "silhouette_iou": 0.917,
+   "length_to_depth": 3.237,
+   "span_to_length": 1.03,
+   "depth_to_length": 0.309,
+   "flipper_est_to_length": 0.361,
+   "axis_ratio_2_1": 0.997,
+   "axis_ratio_3_1": 0.297
+  }
+ ],
+ "pairs": [
+  {
+   "a": "01_side",
+   "b": "02_below",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2192
+  },
+  {
+   "a": "01_side",
+   "b": "03_behind_a",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2582
+  },
+  {
+   "a": "01_side",
+   "b": "04_behind_b",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2386
+  },
+  {
+   "a": "01_side",
+   "b": "05_behind_c",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.231
+  },
+  {
+   "a": "01_side",
+   "b": "06_compgroup",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2257
+  },
+  {
+   "a": "01_side",
+   "b": "07_dev_below_a",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.217
+  },
+  {
+   "a": "01_side",
+   "b": "08_dev_below_b",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2778
+  },
+  {
+   "a": "01_side",
+   "b": "09_dev_below_c",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2437
+  },
+  {
+   "a": "01_side",
+   "b": "10_calf",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2851
+  },
+  {
+   "a": "02_below",
+   "b": "03_behind_a",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1122
+  },
+  {
+   "a": "02_below",
+   "b": "04_behind_b",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.084
+  },
+  {
+   "a": "02_below",
+   "b": "05_behind_c",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1055
+  },
+  {
+   "a": "02_below",
+   "b": "06_compgroup",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1044
+  },
+  {
+   "a": "02_below",
+   "b": "07_dev_below_a",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.0843
+  },
+  {
+   "a": "02_below",
+   "b": "08_dev_below_b",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1326
+  },
+  {
+   "a": "02_below",
+   "b": "09_dev_below_c",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.0874
+  },
+  {
+   "a": "02_below",
+   "b": "10_calf",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1375
+  },
+  {
+   "a": "03_behind_a",
+   "b": "04_behind_b",
+   "kind": "same number",
+   "chamfer_rms": 0.117
+  },
+  {
+   "a": "03_behind_a",
+   "b": "05_behind_c",
+   "kind": "same number",
+   "chamfer_rms": 0.103
+  },
+  {
+   "a": "03_behind_a",
+   "b": "06_compgroup",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1223
+  },
+  {
+   "a": "03_behind_a",
+   "b": "07_dev_below_a",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1533
+  },
+  {
+   "a": "03_behind_a",
+   "b": "08_dev_below_b",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1128
+  },
+  {
+   "a": "03_behind_a",
+   "b": "09_dev_below_c",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1305
+  },
+  {
+   "a": "03_behind_a",
+   "b": "10_calf",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1953
+  },
+  {
+   "a": "04_behind_b",
+   "b": "05_behind_c",
+   "kind": "same number",
+   "chamfer_rms": 0.096
+  },
+  {
+   "a": "04_behind_b",
+   "b": "06_compgroup",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.0999
+  },
+  {
+   "a": "04_behind_b",
+   "b": "07_dev_below_a",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1024
+  },
+  {
+   "a": "04_behind_b",
+   "b": "08_dev_below_b",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1285
+  },
+  {
+   "a": "04_behind_b",
+   "b": "09_dev_below_c",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1027
+  },
+  {
+   "a": "04_behind_b",
+   "b": "10_calf",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1369
+  },
+  {
+   "a": "05_behind_c",
+   "b": "06_compgroup",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1307
+  },
+  {
+   "a": "05_behind_c",
+   "b": "07_dev_below_a",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1364
+  },
+  {
+   "a": "05_behind_c",
+   "b": "08_dev_below_b",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1503
+  },
+  {
+   "a": "05_behind_c",
+   "b": "09_dev_below_c",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1319
+  },
+  {
+   "a": "05_behind_c",
+   "b": "10_calf",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1541
+  },
+  {
+   "a": "06_compgroup",
+   "b": "07_dev_below_a",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1117
+  },
+  {
+   "a": "06_compgroup",
+   "b": "08_dev_below_b",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.0952
+  },
+  {
+   "a": "06_compgroup",
+   "b": "09_dev_below_c",
+   "kind": "other number, same deployment",
+   "chamfer_rms": 0.1099
+  },
+  {
+   "a": "06_compgroup",
+   "b": "10_calf",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2036
+  },
+  {
+   "a": "07_dev_below_a",
+   "b": "08_dev_below_b",
+   "kind": "same number",
+   "chamfer_rms": 0.1074
+  },
+  {
+   "a": "07_dev_below_a",
+   "b": "09_dev_below_c",
+   "kind": "same number",
+   "chamfer_rms": 0.0874
+  },
+  {
+   "a": "07_dev_below_a",
+   "b": "10_calf",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1956
+  },
+  {
+   "a": "08_dev_below_b",
+   "b": "09_dev_below_c",
+   "kind": "same number",
+   "chamfer_rms": 0.1153
+  },
+  {
+   "a": "08_dev_below_b",
+   "b": "10_calf",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.1772
+  },
+  {
+   "a": "09_dev_below_c",
+   "b": "10_calf",
+   "kind": "different animal (other deployment)",
+   "chamfer_rms": 0.2065
+  }
+ ]
+}

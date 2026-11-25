@@ -1,0 +1,447 @@
+{
+ "middle": [
+  {
+   "piece": "00010",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-122956-000-00010.mov",
+   "j": 0,
+   "start": 246.0,
+   "end": 252.0,
+   "tier": "hq",
+   "description": "12:34:01 to 12:34:06, 6 s, depth -0 to 1 m. Two whale boxes at once at most in view, largest 0.82 of the frame width (high quality 2 s). Tagged whale surfaces at 12:34:05."
+  },
+  {
+   "piece": "00010",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-122956-000-00010.mov",
+   "j": 1,
+   "start": 365.0,
+   "end": 370.0,
+   "tier": "small",
+   "description": "12:36:00 to 12:36:04, 5 s, depth -0 to 1 m. Small or far whale-like shapes (fish-sized) for 1 s. Tagged whale surfaces at 12:36:03."
+  },
+  {
+   "piece": "00010",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-122956-000-00010.mov",
+   "j": 2,
+   "start": 387.0,
+   "end": 411.0,
+   "tier": "hq",
+   "description": "12:36:22 to 12:36:45, 24 s, depth -0 to 4 m. Two whale boxes at once at most in view, largest 0.57 of the frame width (high quality 2 s, ok 5 s, low 1 s). Small or far whale-like shapes (fish-sized) for 1 s. Tagged whale surfaces at 12:36:41."
+  },
+  {
+   "piece": "00010",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-122956-000-00010.mov",
+   "j": 3,
+   "start": 697.0,
+   "end": 703.0,
+   "tier": "hq",
+   "description": "12:41:32 to 12:41:37, 6 s, depth -0 to 3 m. One whale in view, largest 0.49 of the frame width (high quality 1 s, ok 1 s). Tagged whale surfaces at 12:41:37."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 0,
+   "start": 168.0,
+   "end": 174.0,
+   "tier": "ok",
+   "description": "12:45:31 to 12:45:36, 6 s, depth 47 m. One whale in view, largest 0.22 of the frame width (ok 1 s). Small or far whale-like shapes (fish-sized) for 1 s."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 1,
+   "start": 399.0,
+   "end": 408.0,
+   "tier": "small",
+   "description": "12:49:22 to 12:49:30, 9 s, depth 2 to 5 m. Small or far whale-like shapes (fish-sized) for 1 s. Fish: a few (up to 1 boxes in a frame, 1 s)."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 2,
+   "start": 443.0,
+   "end": 458.0,
+   "tier": "hq",
+   "description": "12:50:06 to 12:50:20, 15 s, depth -0 to 1 m. One whale in view, largest 0.73 of the frame width (high quality 1 s, ok 6 s). Tagged whale surfaces at 12:50:19."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 3,
+   "start": 499.0,
+   "end": 506.0,
+   "tier": "hq",
+   "description": "12:51:02 to 12:51:08, 7 s, depth 0 m. One whale in view, largest 0.80 of the frame width (high quality 3 s). Tagged whale surfaces at 12:51:07."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 4,
+   "start": 841.0,
+   "end": 847.0,
+   "tier": "ok",
+   "description": "12:56:44 to 12:56:49, 6 s, depth 10 m. One whale in view, largest 0.22 of the frame width (ok 2 s)."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 5,
+   "start": 923.0,
+   "end": 930.0,
+   "tier": "hq",
+   "description": "12:58:06 to 12:58:12, 7 s, depth -0 to 3 m. One whale in view, largest 0.51 of the frame width (high quality 1 s, ok 1 s). Fish: a few (up to 1 boxes in a frame, 1 s). Tagged whale surfaces at 12:58:12."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 6,
+   "start": 996.0,
+   "end": 1002.0,
+   "tier": "hq",
+   "description": "12:59:19 to 12:59:24, 6 s, depth 0 m. One whale in view, largest 0.85 of the frame width (high quality 2 s). Tagged whale surfaces at 12:59:23."
+  },
+  {
+   "piece": "00011",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-124244-000-00011.mov",
+   "j": 7,
+   "start": 1054.0,
+   "end": 1060.0,
+   "tier": "hq",
+   "description": "13:00:17 to 13:00:22, 6 s, depth 0 m. One whale in view, largest 0.77 of the frame width (high quality 2 s). Tagged whale surfaces at 13:00:21."
+  },
+  {
+   "piece": "00012",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-130824-000-00012.mov",
+   "j": 0,
+   "start": 74.0,
+   "end": 80.0,
+   "tier": "ok",
+   "description": "13:09:38 to 13:09:43, 6 s, depth 1 m. One whale in view, largest 0.37 of the frame width (ok 2 s). Tagged whale surfaces at 13:09:43."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 0,
+   "start": 35.0,
+   "end": 41.0,
+   "tier": "hq",
+   "description": "14:13:38 to 14:13:43, 6 s, depth 28 to 33 m. One whale in view, largest 0.65 of the frame width (high quality 2 s). Large whale in silhouette against the light for 2 s."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 1,
+   "start": 126.0,
+   "end": 146.0,
+   "tier": "hq",
+   "description": "14:15:09 to 14:15:28, 20 s, depth -0 to 8 m. One whale in view, largest 0.60 of the frame width (high quality 2 s, ok 4 s, low 2 s). Small or far whale-like shapes (fish-sized) for 1 s. Tagged whale surfaces at 14:15:27."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 2,
+   "start": 176.0,
+   "end": 186.0,
+   "tier": "hq",
+   "description": "14:15:59 to 14:16:08, 10 s, depth -0 to 1 m. Two whale boxes at once at most in view, largest 0.71 of the frame width (high quality 2 s, ok 3 s, low 1 s). Tagged whale surfaces at 14:16:06."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 3,
+   "start": 223.0,
+   "end": 230.0,
+   "tier": "hq",
+   "description": "14:16:46 to 14:16:52, 7 s, depth 0 m. One whale in view, largest 0.80 of the frame width (high quality 3 s). Large whale in silhouette against the light for 1 s. Tagged whale surfaces at 14:16:51."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 4,
+   "start": 286.0,
+   "end": 298.0,
+   "tier": "hq",
+   "description": "14:17:49 to 14:18:00, 12 s, depth 47 to 48 m. Two whale boxes at once at most in view, largest 0.56 of the frame width (high quality 3 s, ok 5 s). Large whale in silhouette against the light for 3 s."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 5,
+   "start": 407.0,
+   "end": 413.0,
+   "tier": "small",
+   "description": "14:19:50 to 14:19:55, 6 s, depth 50 m. Small or far whale-like shapes (fish-sized) for 2 s. Fish: a few (up to 2 boxes in a frame, 1 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 6,
+   "start": 433.0,
+   "end": 442.0,
+   "tier": "hq",
+   "description": "14:20:16 to 14:20:24, 9 s, depth 48 m. One whale in view, largest 0.99 of the frame width (high quality 1 s). Large whale in silhouette against the light for 1 s. Small or far whale-like shapes (fish-sized) for 2 s. Fish: a few (up to 2 boxes in a frame, 2 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 7,
+   "start": 449.0,
+   "end": 464.0,
+   "tier": "ok",
+   "description": "14:20:32 to 14:20:46, 15 s, depth 48 m. One whale in view, largest 0.41 of the frame width (ok 1 s, low 3 s). Small or far whale-like shapes (fish-sized) for 2 s. Fish: a few (up to 1 boxes in a frame, 2 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 8,
+   "start": 478.0,
+   "end": 488.0,
+   "tier": "small",
+   "description": "14:21:01 to 14:21:10, 10 s, depth 49 to 50 m. Small or far whale-like shapes (fish-sized) for 4 s. Fish: a few (up to 1 boxes in a frame, 1 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 9,
+   "start": 508.0,
+   "end": 513.0,
+   "tier": "ok",
+   "description": "14:21:31 to 14:21:35, 5 s, depth 50 m. One whale in view, largest 0.26 of the frame width (ok 1 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 10,
+   "start": 846.0,
+   "end": 851.0,
+   "tier": "small",
+   "description": "14:27:09 to 14:27:13, 5 s, depth 47 m. Small or far whale-like shapes (fish-sized) for 1 s. Fish: a few (up to 1 boxes in a frame, 1 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 11,
+   "start": 876.0,
+   "end": 893.0,
+   "tier": "ok",
+   "description": "14:27:39 to 14:27:55, 17 s, depth 48 m. One whale in view, largest 0.50 of the frame width (ok 12 s, low 1 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 12,
+   "start": 1273.0,
+   "end": 1293.0,
+   "tier": "ok",
+   "description": "14:34:16 to 14:34:35, 20 s, depth 48 m. Two whale boxes at once at most in view, largest 0.61 of the frame width (ok 14 s, low 1 s). Small or far whale-like shapes (fish-sized) for 1 s."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 13,
+   "start": 1321.0,
+   "end": 1326.0,
+   "tier": "ok",
+   "description": "14:35:04 to 14:35:08, 5 s, depth 47 m. One whale in view, largest 0.27 of the frame width (ok 1 s)."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 14,
+   "start": 1355.0,
+   "end": 1360.0,
+   "tier": "small",
+   "description": "14:35:38 to 14:35:42, 5 s, depth 48 m. Small or far whale-like shapes (fish-sized) for 1 s."
+  },
+  {
+   "piece": "00017",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-141304-000-00017.mov",
+   "j": 15,
+   "start": 1375.0,
+   "end": 1390.0,
+   "tier": "low",
+   "description": "14:35:58 to 14:36:12, 15 s, depth 48 m. One whale in view, largest 0.17 of the frame width (low 1 s). Small or far whale-like shapes (fish-sized) for 5 s. Fish: a few (up to 1 boxes in a frame, 2 s)."
+  }
+ ],
+ "late": [
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 0,
+   "start": 36.0,
+   "end": 53.0,
+   "tier": "hq",
+   "description": "15:43:58 to 15:44:14, 17 s, depth 42 m. Two whale boxes at once at most in view, largest 0.99 of the frame width (high quality 7 s, ok 5 s). Small or far whale-like shapes (fish-sized) for 1 s."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 2,
+   "start": 247.0,
+   "end": 274.0,
+   "tier": "hq",
+   "description": "15:47:29 to 15:47:55, 27 s, depth 42 m. Two whale boxes at once at most in view, largest 0.81 of the frame width (high quality 18 s, ok 5 s). Large whale in silhouette against the light for 18 s."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 6,
+   "start": 429.0,
+   "end": 444.0,
+   "tier": "hq",
+   "description": "15:50:31 to 15:50:45, 15 s, depth -0 to 1 m. Two whale boxes at once at most in view, largest 0.65 of the frame width (high quality 3 s, low 1 s). Tagged whale surfaces at 15:50:44."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 9,
+   "start": 507.0,
+   "end": 513.0,
+   "tier": "hq",
+   "description": "15:51:49 to 15:51:54, 6 s, depth -0 to 1 m. One whale in view, largest 0.58 of the frame width (high quality 1 s). Small or far whale-like shapes (fish-sized) for 1 s. Tagged whale surfaces at 15:51:53."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 10,
+   "start": 537.0,
+   "end": 562.0,
+   "tier": "ok",
+   "description": "15:52:19 to 15:52:43, 25 s, depth 14 to 15 m. Two whale boxes at once at most in view, largest 0.44 of the frame width (ok 6 s). Small or far whale-like shapes (fish-sized) for 7 s. Fish: a few (up to 2 boxes in a frame, 11 s)."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 11,
+   "start": 571.0,
+   "end": 579.0,
+   "tier": "hq",
+   "description": "15:52:53 to 15:53:00, 8 s, depth 15 m. One whale in view, largest 0.32 of the frame width (high quality 1 s). Small or far whale-like shapes (fish-sized) for 3 s. Fish: a few (up to 1 boxes in a frame, 3 s)."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 13,
+   "start": 606.0,
+   "end": 614.0,
+   "tier": "ok",
+   "description": "15:53:28 to 15:53:35, 8 s, depth 16 m. One whale in view, largest 0.26 of the frame width (ok 2 s, low 1 s). Small or far whale-like shapes (fish-sized) for 1 s. Fish: a few (up to 1 boxes in a frame, 3 s)."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 14,
+   "start": 656.0,
+   "end": 680.0,
+   "tier": "small",
+   "description": "15:54:18 to 15:54:41, 24 s, depth 16 to 18 m. Small or far whale-like shapes (fish-sized) for 8 s. Fish: a few (up to 1 boxes in a frame, 6 s)."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 17,
+   "start": 859.0,
+   "end": 864.0,
+   "tier": "hq",
+   "description": "15:57:41 to 15:57:45, 5 s, depth 0 m. One whale in view, largest 0.60 of the frame width (high quality 1 s). Tagged whale surfaces at 15:57:44."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 19,
+   "start": 984.0,
+   "end": 1022.0,
+   "tier": "hq",
+   "description": "15:59:46 to 16:00:23, 38 s, depth -0 to 12 m. Two whale boxes at once at most in view, largest 0.43 of the frame width (high quality 1 s, ok 8 s, low 5 s). Large whale in silhouette against the light for 1 s. Small or far whale-like shapes (fish-sized) for 11 s. Fish: a few (up to 3 boxes in a frame, 12 s). Tagged whale surfaces at 16:00:12."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 20,
+   "start": 1027.0,
+   "end": 1048.0,
+   "tier": "hq",
+   "description": "16:00:29 to 16:00:49, 21 s, depth 0 m. One whale in view, largest 0.86 of the frame width (high quality 1 s, ok 3 s). Tagged whale surfaces at 16:00:48."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 21,
+   "start": 1071.0,
+   "end": 1100.0,
+   "tier": "hq",
+   "description": "16:01:13 to 16:01:41, 29 s, depth 0 m. Two whale boxes at once at most in view, largest 0.76 of the frame width (high quality 15 s, ok 2 s). Large whale in silhouette against the light for 12 s. Fish: a few (up to 1 boxes in a frame, 2 s)."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 23,
+   "start": 1212.0,
+   "end": 1232.0,
+   "tier": "ok",
+   "description": "16:03:34 to 16:03:53, 20 s, depth 38 to 39 m. One whale in view, largest 0.29 of the frame width (ok 1 s, low 1 s). Small or far whale-like shapes (fish-sized) for 7 s. Fish: a few (up to 1 boxes in a frame, 3 s)."
+  },
+  {
+   "piece": "00023",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-154322-000-00023.mov",
+   "j": 24,
+   "start": 1289.0,
+   "end": 1313.0,
+   "tier": "hq",
+   "description": "16:04:51 to 16:05:14, 24 s, depth 1 to 9 m. Two whale boxes at once at most in view, largest 0.94 of the frame width (high quality 14 s, ok 2 s). Large whale in silhouette against the light for 9 s. Small or far whale-like shapes (fish-sized) for 2 s."
+  },
+  {
+   "piece": "00024",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov",
+   "j": 0,
+   "start": 21.0,
+   "end": 64.0,
+   "tier": "ok",
+   "description": "16:06:25 to 16:07:07, 43 s, depth 0 m. Two whale boxes at once at most in view, largest 0.32 of the frame width (ok 8 s). Large whale in silhouette against the light for 4 s. Small or far whale-like shapes (fish-sized) for 17 s."
+  },
+  {
+   "piece": "00024",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov",
+   "j": 1,
+   "start": 75.0,
+   "end": 164.0,
+   "tier": "hq",
+   "description": "16:07:19 to 16:08:47, 89 s, depth 0 m. Two whale boxes at once at most in view, largest 0.56 of the frame width (high quality 27 s, ok 12 s, low 2 s). Large whale in silhouette against the light for 25 s. Small or far whale-like shapes (fish-sized) for 5 s. Fish: a few (up to 1 boxes in a frame, 8 s). Tagged whale surfaces at 16:07:53."
+  },
+  {
+   "piece": "00024",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov",
+   "j": 2,
+   "start": 174.0,
+   "end": 186.0,
+   "tier": "ok",
+   "description": "16:08:58 to 16:09:09, 12 s, depth 0 m. One whale in view, largest 0.37 of the frame width (ok 1 s, low 2 s)."
+  },
+  {
+   "piece": "00024",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov",
+   "j": 3,
+   "start": 199.0,
+   "end": 221.0,
+   "tier": "hq",
+   "description": "16:09:23 to 16:09:44, 22 s, depth 0 m. One whale in view, largest 0.59 of the frame width (high quality 1 s, ok 4 s)."
+  },
+  {
+   "piece": "00024",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov",
+   "j": 4,
+   "start": 230.0,
+   "end": 246.0,
+   "tier": "hq",
+   "description": "16:09:54 to 16:10:09, 16 s, depth 0 m. Two whale boxes at once at most in view, largest 0.93 of the frame width (high quality 2 s, ok 1 s, low 1 s). Small or far whale-like shapes (fish-sized) for 2 s. Fish: a few (up to 1 boxes in a frame, 3 s). Tagged whale surfaces at 16:10:07."
+  },
+  {
+   "piece": "00024",
+   "src": "/home/sat3737/NOAA_whales/underwater_video/TestSubset 2025-1-2 CATS -85/Video/CC-09-85-HRA-20250102-160604-000-00024.mov",
+   "j": 5,
+   "start": 313.0,
+   "end": 326.0,
+   "tier": "small",
+   "description": "16:11:17 to 16:11:29, 13 s, depth 3 to 9 m. Small or far whale-like shapes (fish-sized) for 1 s. Fish: a few (up to 1 boxes in a frame, 2 s). Tag floating (off the whale) for 13 s."
+  }
+ ]
+}

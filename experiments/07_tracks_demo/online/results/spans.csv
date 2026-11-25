@@ -1,0 +1,13 @@
+idx,rec,dep,t0,t1,start,numbers_purity,numbers_linked,links,lone_unlinked,not_lone,endings,refused,blocked,outlined,frames,gpu_s_per_s,peak_gb
+0,00004,2025-2-3 M,497.0,524.0,scan,2,2,0,0,0,"{""appearance drift"": 1}","{""box classifier"": 2, ""start"": 1}",0,787,802,7.49,1.88
+1,00008,2025-2-3 M,56.0,76.0,scan,2,1,1,0,0,"{""appearance drift"": 1}",{},0,586,592,9.11,1.88
+2,00005,2025-2-3 M,332.0,348.0,scan,2,1,1,0,0,"{""appearance drift"": 1}",{},0,470,472,11.02,1.88
+3,00011,2025-2-3 M,1062.0,1078.0,scan,1,1,0,0,0,{},{},0,472,472,12.87,1.88
+4,00023,TestSubset,284.0,304.0,scan,1,1,0,0,0,{},{},0,578,578,10.72,1.88
+5,00023,TestSubset,252.0,271.0,scan,1,1,0,0,0,"{""area jump"": 1}",{},0,557,563,9.35,1.88
+6,00024,TestSubset,83.0,101.0,scan,1,1,0,0,0,{},"{""start"": 1}",0,533,533,9.01,1.88
+7,00011,TestSubset,499.0,506.0,scan,0,0,0,0,0,{},"{""start"": 5}",64,0,143,4.95,1.62
+8,00024,TestSubset,108.0,118.0,scan,2,1,1,0,0,"{""shape jump"": 1}",{},57,226,293,7.4,1.88
+9,00017,TestSubset,176.0,186.0,scan,0,0,0,0,0,{},"{""start"": 8}",70,0,218,5.82,1.79
+10,20 CG,2025-12-20,24.0,36.0,wp5a,5,5,0,0,0,"{""re-found after"": 1, ""appearance drift"": 1}","{""start"": 2}",0,359,359,11.69,2.25
+11,00006,2025-2-3 M,456.0,476.0,wp5a,6,4,2,0,3,"{""shape jump"": 10, ""appearance drift"": 4, ""swallowed another"": 1, ""re-found after"": 1, ""area jump"": 1}","{""start"": 1}",0,568,587,8.42,2.04

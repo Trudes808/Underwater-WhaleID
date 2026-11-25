@@ -1,0 +1,738 @@
+run,obj,i,t,reason
+0024.00-0036.00_owl_sam3,4,49,25.63,re-found after 1.3 s
+0024.00-0036.00_owl_sam3,4,191,30.37,re-found after 4.5 s
+0024.00-0036.00_owl_sam3,4,249,32.31,re-found after 1.7 s
+0061.00-0076.00_owl_sam3,1,79,63.64,area jump
+0061.00-0076.00_owl_sam3,1,119,64.97,shape jump
+0061.00-0076.00_owl_sam3,1,121,65.04,area jump
+0061.00-0076.00_owl_sam3,1,129,65.3,shape jump
+0061.00-0076.00_owl_sam3,1,130,65.34,area jump
+0061.00-0076.00_owl_sam3,1,133,65.44,area jump
+0061.00-0076.00_owl_sam3,1,134,65.47,shape jump
+0061.00-0076.00_owl_sam3,2,81,63.7,area jump
+0061.00-0076.00_owl_sam3,2,110,64.67,shape jump
+0061.00-0076.00_owl_sam3,2,114,64.8,area jump
+0061.00-0076.00_owl_sam3,2,115,64.84,area jump
+0061.00-0076.00_owl_sam3,2,126,65.2,swallowed another track
+0061.00-0076.00_owl_sam3,2,127,65.24,area jump
+0061.00-0076.00_owl_sam3,2,134,65.47,swallowed another track
+0061.00-0076.00_owl_sam3,2,262,69.74,re-found after 4.3 s
+0061.00-0076.00_owl_sam3,2,333,72.11,swallowed another track
+0061.00-0076.00_owl_sam3,3,138,65.6,area jump
+0061.00-0076.00_owl_sam3,3,224,68.47,re-found after 2.3 s
+0061.00-0076.00_owl_sam3,3,242,69.07,swallowed another track
+0061.00-0076.00_owl_sam3,3,265,69.84,shape jump
+0061.00-0076.00_owl_sam3,3,348,72.61,re-found after 2.5 s
+0061.00-0076.00_owl_sam3,3,349,72.64,swallowed another track
+0061.00-0076.00_owl_sam3,3,352,72.74,area jump
+0061.00-0076.00_owl_sam3,3,355,72.84,swallowed another track
+0061.00-0076.00_owl_sam3,3,356,72.88,area jump
+0061.00-0076.00_owl_sam3,3,358,72.94,swallowed another track
+0061.00-0076.00_owl_sam3,4,91,64.04,area jump
+0061.00-0076.00_owl_sam3,4,92,64.07,shape jump
+0061.00-0076.00_owl_sam3,4,343,72.44,re-found after 8.2 s
+0061.00-0076.00_owl_sam3,5,91,64.04,shape jump
+0061.00-0076.00_owl_sam3,5,95,64.17,area jump
+0061.00-0076.00_owl_sam3,5,96,64.2,area jump
+0061.00-0076.00_owl_sam3,5,139,65.64,swallowed another track
+0061.00-0076.00_owl_sam3,5,201,67.71,re-found after 1.1 s
+0061.00-0076.00_owl_sam3,5,235,68.84,re-found after 1.1 s
+0061.00-0076.00_owl_sam3,5,336,72.21,re-found after 2.4 s
+0061.00-0076.00_owl_sam3,5,343,72.44,area jump
+0061.00-0076.00_owl_sam3,5,344,72.48,swallowed another track
+0061.00-0076.00_owl_sam3,5,345,72.51,swallowed another track
+0061.00-0076.00_owl_sam3,6,91,64.04,shape jump
+0061.00-0076.00_owl_sam3,7,91,64.04,area jump
+0061.00-0076.00_owl_sam3,7,92,64.07,area jump
+0061.00-0076.00_owl_sam3,9,320,71.68,area jump
+0061.00-0076.00_owl_sam3,11,299,70.98,swallowed another track
+0061.00-0076.00_owl_sam3,11,344,72.48,shape jump
+0061.00-0076.00_owl_sam3,11,345,72.51,swallowed another track
+0061.00-0076.00_owl_sam3,11,351,72.71,shape jump
+0061.00-0076.00_owl_sam3,11,356,72.88,area jump
+0061.00-0076.00_owl_sam3,11,358,72.94,swallowed another track
+0061.00-0076.00_owl_sam3,13,344,72.48,swallowed another track
+0456.00-0476.00_owl_sam3,1,173,461.77,swallowed another track
+0456.00-0476.00_owl_sam3,1,335,467.18,swallowed another track
+0456.00-0476.00_owl_sam3,1,365,468.18,swallowed another track
+0456.00-0476.00_owl_sam3,1,506,472.88,swallowed another track
+0456.00-0476.00_owl_sam3,2,205,462.84,re-found after 3.0 s
+0456.00-0476.00_owl_sam3,2,386,468.88,re-found after 2.9 s
+0456.00-0476.00_owl_sam3,2,389,468.98,area jump
+0456.00-0476.00_owl_sam3,3,169,461.64,re-found after 1.3 s
+0456.00-0476.00_owl_sam3,3,171,461.71,area jump
+0456.00-0476.00_owl_sam3,3,193,462.44,swallowed another track
+0456.00-0476.00_owl_sam3,3,335,467.18,swallowed another track
+0456.00-0476.00_owl_sam3,3,359,467.98,swallowed another track
+0456.00-0476.00_owl_sam3,4,259,464.64,shape jump
+0456.00-0476.00_owl_sam3,4,264,464.81,shape jump
+0456.00-0476.00_owl_sam3,4,265,464.84,shape jump
+0456.00-0476.00_owl_sam3,4,286,465.54,shape jump
+0456.00-0476.00_owl_sam3,4,287,465.58,shape jump
+0456.00-0476.00_owl_sam3,4,288,465.61,shape jump
+0456.00-0476.00_owl_sam3,4,290,465.68,shape jump
+0456.00-0476.00_owl_sam3,4,291,465.71,shape jump
+0456.00-0476.00_owl_sam3,4,292,465.74,shape jump
+0456.00-0476.00_owl_sam3,4,470,471.68,grew from fish-sized
+0456.00-0476.00_owl_sam3,4,471,471.72,area jump
+0456.00-0476.00_owl_sam3,5,244,464.14,shape jump
+0456.00-0476.00_owl_sam3,5,245,464.17,shape jump
+0456.00-0476.00_owl_sam3,5,246,464.21,shape jump
+0456.00-0476.00_owl_sam3,5,247,464.24,shape jump
+0456.00-0476.00_owl_sam3,5,248,464.27,shape jump
+0456.00-0476.00_owl_sam3,5,249,464.31,shape jump
+0456.00-0476.00_owl_sam3,5,380,468.68,re-found after 1.6 s
+0456.00-0476.00_owl_sam3,5,431,470.38,area jump
+0456.00-0476.00_owl_sam3,5,432,470.41,shape jump
+0456.00-0476.00_owl_sam3,5,433,470.45,shape jump
+0456.00-0476.00_owl_sam3,5,434,470.48,shape jump
+0456.00-0476.00_owl_sam3,5,435,470.51,shape jump
+0456.00-0476.00_owl_sam3,5,436,470.55,shape jump
+0456.00-0476.00_owl_sam3,5,437,470.58,shape jump
+0456.00-0476.00_owl_sam3,5,438,470.61,shape jump
+0456.00-0476.00_owl_sam3,6,407,469.58,re-found after 2.7 s
+0456.00-0476.00_owl_sam3,6,408,469.61,area jump
+0456.00-0476.00_owl_sam3,6,409,469.65,shape jump
+0456.00-0476.00_owl_sam3,6,411,469.71,area jump
+0456.00-0476.00_owl_sam3,6,412,469.75,shape jump
+0456.00-0476.00_owl_sam3,6,413,469.78,shape jump
+0456.00-0476.00_owl_sam3,6,414,469.81,shape jump
+0456.00-0476.00_owl_sam3,6,415,469.85,area jump
+0456.00-0476.00_owl_sam3,6,416,469.88,area jump
+0456.00-0476.00_owl_sam3,6,434,470.48,shape jump
+0456.00-0476.00_owl_sam3,6,435,470.51,shape jump
+0456.00-0476.00_owl_sam3,6,436,470.55,shape jump
+0456.00-0476.00_owl_sam3,6,439,470.65,shape jump
+0456.00-0476.00_owl_sam3,8,289,465.64,shape jump
+0456.00-0476.00_owl_sam3,8,290,465.68,shape jump
+0456.00-0476.00_owl_sam3,8,291,465.71,shape jump
+0456.00-0476.00_owl_sam3,8,292,465.74,shape jump
+0456.00-0476.00_owl_sam3,8,293,465.78,shape jump
+0456.00-0476.00_owl_sam3,8,294,465.81,shape jump
+0456.00-0476.00_owl_sam3,8,295,465.84,shape jump
+0456.00-0476.00_owl_sam3,8,296,465.88,shape jump
+0456.00-0476.00_owl_sam3,8,297,465.91,shape jump
+0456.00-0476.00_owl_sam3,8,301,466.04,shape jump
+0456.00-0476.00_owl_sam3,8,302,466.08,shape jump
+0456.00-0476.00_owl_sam3,8,304,466.14,shape jump
+0456.00-0476.00_owl_sam3,8,305,466.18,shape jump
+0456.00-0476.00_owl_sam3,8,329,466.98,shape jump
+0456.00-0476.00_owl_sam3,8,331,467.04,shape jump
+0456.00-0476.00_owl_sam3,8,332,467.08,shape jump
+0456.00-0476.00_owl_sam3,8,333,467.11,shape jump
+0456.00-0476.00_owl_sam3,8,334,467.14,shape jump
+0456.00-0476.00_owl_sam3,8,335,467.18,shape jump
+0456.00-0476.00_owl_sam3,8,336,467.21,shape jump
+0456.00-0476.00_owl_sam3,8,337,467.24,shape jump
+0456.00-0476.00_owl_sam3,8,338,467.28,shape jump
+0456.00-0476.00_owl_sam3,8,381,468.71,re-found after 1.4 s
+0456.00-0476.00_owl_sam3,8,402,469.41,shape jump
+0456.00-0476.00_owl_sam3,8,403,469.45,shape jump
+0456.00-0476.00_owl_sam3,8,407,469.58,shape jump
+0456.00-0476.00_owl_sam3,8,408,469.61,shape jump
+0456.00-0476.00_owl_sam3,8,409,469.65,shape jump
+0456.00-0476.00_owl_sam3,8,411,469.71,shape jump
+0456.00-0476.00_owl_sam3,8,412,469.75,shape jump
+0456.00-0476.00_owl_sam3,8,413,469.78,shape jump
+0456.00-0476.00_owl_sam3,8,414,469.81,shape jump
+0456.00-0476.00_owl_sam3,8,424,470.15,shape jump
+0456.00-0476.00_owl_sam3,8,425,470.18,shape jump
+0456.00-0476.00_owl_sam3,8,427,470.25,shape jump
+0456.00-0476.00_owl_sam3,8,428,470.28,shape jump
+0456.00-0476.00_owl_sam3,8,429,470.31,shape jump
+0456.00-0476.00_owl_sam3,8,430,470.35,shape jump
+0456.00-0476.00_owl_sam3,8,431,470.38,shape jump
+0456.00-0476.00_owl_sam3,8,432,470.41,shape jump
+0456.00-0476.00_owl_sam3,8,433,470.45,shape jump
+0456.00-0476.00_owl_sam3,8,434,470.48,shape jump
+0456.00-0476.00_owl_sam3,8,435,470.51,shape jump
+0456.00-0476.00_owl_sam3,8,436,470.55,shape jump
+0456.00-0476.00_owl_sam3,8,437,470.58,shape jump
+0456.00-0476.00_owl_sam3,8,438,470.61,shape jump
+0456.00-0476.00_owl_sam3,8,450,471.01,shape jump
+0456.00-0476.00_owl_sam3,8,460,471.35,shape jump
+0456.00-0476.00_owl_sam3,8,461,471.38,shape jump
+0456.00-0476.00_owl_sam3,8,462,471.42,shape jump
+0456.00-0476.00_owl_sam3,8,463,471.45,shape jump
+0456.00-0476.00_owl_sam3,8,464,471.48,shape jump
+0456.00-0476.00_owl_sam3,8,465,471.52,shape jump
+0456.00-0476.00_owl_sam3,8,466,471.55,shape jump
+0456.00-0476.00_owl_sam3,8,467,471.58,shape jump
+0456.00-0476.00_owl_sam3,8,468,471.62,shape jump
+0456.00-0476.00_owl_sam3,8,469,471.65,shape jump
+0456.00-0476.00_owl_sam3,8,470,471.68,shape jump
+0456.00-0476.00_owl_sam3,8,471,471.72,shape jump
+0456.00-0476.00_owl_sam3,9,363,468.11,shape jump
+0456.00-0476.00_owl_sam3,9,365,468.18,shape jump
+0456.00-0476.00_owl_sam3,9,366,468.21,shape jump
+0456.00-0476.00_owl_sam3,9,404,469.48,re-found after 1.2 s
+0456.00-0476.00_owl_sam3,9,405,469.51,shape jump
+0456.00-0476.00_owl_sam3,9,406,469.55,shape jump
+0456.00-0476.00_owl_sam3,9,407,469.58,shape jump
+0456.00-0476.00_owl_sam3,9,408,469.61,shape jump
+0456.00-0476.00_owl_sam3,9,409,469.65,shape jump
+0456.00-0476.00_owl_sam3,9,410,469.68,shape jump
+0456.00-0476.00_owl_sam3,9,411,469.71,shape jump
+0456.00-0476.00_owl_sam3,9,412,469.75,shape jump
+0456.00-0476.00_owl_sam3,9,413,469.78,shape jump
+0456.00-0476.00_owl_sam3,9,414,469.81,shape jump
+0456.00-0476.00_owl_sam3,9,433,470.45,area jump
+0456.00-0476.00_owl_sam3,9,436,470.55,shape jump
+0456.00-0476.00_owl_sam3,9,438,470.61,shape jump
+0456.00-0476.00_owl_sam3,9,439,470.65,shape jump
+0456.00-0476.00_owl_sam3,9,441,470.71,shape jump
+0456.00-0476.00_owl_sam3,9,545,474.18,shape jump
+0456.00-0476.00_owl_sam3,9,546,474.22,shape jump
+0456.00-0476.00_owl_sam3,9,553,474.45,shape jump
+0822.00-0840.00_owl_sam3,1,438,836.61,area jump
+0822.00-0840.00_owl_sam3,1,440,836.68,area jump
+real_01_cut,1,79,63.64,area jump
+real_01_cut,1,119,64.97,shape jump
+real_01_cut,1,120,65.0,shape jump
+real_01_cut,1,130,65.34,swallowed another track
+real_01_cut,2,81,63.7,area jump
+real_01_cut,2,119,64.97,shape jump
+real_01_cut,2,121,65.04,swallowed another track
+real_01_cut,2,129,65.3,shape jump
+real_01_cut,2,262,69.74,re-found after 1.4 s
+real_01_cut,2,333,72.11,swallowed another track
+real_01_cut,3,222,68.41,blocked view 3.0 s
+real_01_cut,3,255,69.51,area jump
+real_01_cut,3,256,69.54,shape jump
+real_01_cut,3,348,72.61,re-found after 2.8 s
+real_01_cut,3,349,72.64,swallowed another track
+real_01_cut,3,352,72.74,area jump
+real_01_cut,3,354,72.81,area jump
+real_01_cut,3,356,72.88,area jump
+real_01_cut,3,357,72.91,area jump
+real_01_cut,4,121,65.04,grew from fish-sized
+real_01_cut,4,129,65.3,shape jump
+real_01_cut,4,228,68.61,blocked view 3.0 s
+real_01_cut,4,229,68.64,shape jump
+real_01_cut,4,241,69.04,area jump
+real_01_cut,6,340,72.34,re-found after 2.2 s
+real_01_cut,6,342,72.41,area jump
+real_01_cut,6,343,72.44,area jump
+real_01_cut,7,344,72.48,shape jump
+real_01_cut,7,345,72.51,swallowed another track
+real_01_cut,7,351,72.71,shape jump
+real_01_cut,7,356,72.88,area jump
+real_01_cut,7,358,72.94,swallowed another track
+real_01_gate,1,79,63.64,area jump
+real_01_gate,1,110,64.67,area jump
+real_01_gate,1,111,64.7,shape jump
+real_01_gate,1,119,64.97,shape jump
+real_01_gate,1,121,65.04,area jump
+real_01_gate,1,130,65.34,area jump
+real_01_gate,1,132,65.4,area jump
+real_01_gate,1,133,65.44,area jump
+real_01_gate,1,134,65.47,shape jump
+real_01_gate,1,162,66.4,shape jump
+real_01_gate,1,222,68.41,re-found after 1.8 s
+real_01_gate,2,81,63.7,area jump
+real_01_gate,2,102,64.4,shape jump
+real_01_gate,2,103,64.44,shape jump
+real_01_gate,2,109,64.64,area jump
+real_01_gate,2,110,64.67,area jump
+real_01_gate,2,123,65.1,swallowed another track
+real_01_gate,2,128,65.27,shape jump
+real_01_gate,2,129,65.3,shape jump
+real_01_gate,2,130,65.34,shape jump
+real_01_gate,2,131,65.37,shape jump
+real_01_gate,2,133,65.44,area jump
+real_01_gate,2,134,65.47,shape jump
+real_01_gate,2,262,69.74,re-found after 3.3 s
+real_01_gate,2,333,72.11,swallowed another track
+real_01_gate,3,90,64.0,area jump
+real_01_gate,3,91,64.04,area jump
+real_01_gate,3,92,64.07,area jump
+real_01_gate,3,93,64.1,shape jump
+real_01_gate,3,96,64.2,area jump
+real_01_gate,3,164,66.47,area jump
+real_01_gate,3,197,67.57,area jump
+real_01_gate,3,202,67.74,area jump
+real_01_gate,3,242,69.07,swallowed another track
+real_01_gate,3,348,72.61,re-found after 2.5 s
+real_01_gate,3,349,72.64,swallowed another track
+real_01_gate,3,352,72.74,area jump
+real_01_gate,3,355,72.84,swallowed another track
+real_01_gate,3,356,72.88,area jump
+real_01_gate,3,358,72.94,swallowed another track
+real_01_gate,4,161,66.37,re-found after 1.8 s
+real_01_gate,4,219,68.31,re-found after 1.3 s
+real_01_gate,4,343,72.44,re-found after 4.1 s
+real_01_gate,5,256,69.54,shape jump
+real_01_gate,5,337,72.24,re-found after 2.4 s
+real_01_gate,5,338,72.28,area jump
+real_01_gate,5,344,72.48,swallowed another track
+real_01_gate,7,320,71.68,area jump
+real_01_gate,9,299,70.98,swallowed another track
+real_01_gate,9,344,72.48,shape jump
+real_01_gate,9,345,72.51,swallowed another track
+real_01_gate,9,351,72.71,shape jump
+real_01_gate,9,356,72.88,area jump
+real_01_gate,9,358,72.94,swallowed another track
+real_01_gate,11,344,72.48,swallowed another track
+0005.00-0022.00_owl_sam3,1,195,11.51,area jump
+0005.00-0022.00_owl_sam3,1,207,11.91,area jump
+0005.00-0022.00_owl_sam3,1,208,11.94,area jump
+0005.00-0022.00_owl_sam3,1,314,15.48,re-found after 3.5 s
+0005.00-0022.00_owl_sam3,1,378,17.61,re-found after 2.1 s
+0005.00-0022.00_owl_sam3,1,419,18.98,swallowed another track
+0005.00-0022.00_owl_sam3,1,442,19.75,area jump
+0005.00-0022.00_owl_sam3,1,457,20.25,swallowed another track
+0005.00-0022.00_owl_sam3,1,458,20.28,swallowed another track
+0005.00-0022.00_owl_sam3,2,430,19.35,re-found after 12.7 s
+0005.00-0022.00_owl_sam3,2,463,20.45,re-found after 1.1 s
+0005.00-0022.00_owl_sam3,2,469,20.65,area jump
+0005.00-0022.00_owl_sam3,2,470,20.68,area jump
+0005.00-0022.00_owl_sam3,2,471,20.71,area jump
+0005.00-0022.00_owl_sam3,3,214,12.14,area jump
+0005.00-0022.00_owl_sam3,3,215,12.17,shape jump
+0005.00-0022.00_owl_sam3,3,218,12.27,area jump
+0005.00-0022.00_owl_sam3,3,219,12.31,area jump
+0005.00-0022.00_owl_sam3,3,220,12.34,shape jump
+0005.00-0022.00_owl_sam3,3,221,12.37,shape jump
+0005.00-0022.00_owl_sam3,3,225,12.51,area jump
+0005.00-0022.00_owl_sam3,3,226,12.54,shape jump
+0005.00-0022.00_owl_sam3,3,227,12.57,shape jump
+0005.00-0022.00_owl_sam3,3,230,12.67,shape jump
+0005.00-0022.00_owl_sam3,3,231,12.71,shape jump
+0005.00-0022.00_owl_sam3,3,232,12.74,shape jump
+0005.00-0022.00_owl_sam3,3,233,12.77,shape jump
+0005.00-0022.00_owl_sam3,3,234,12.81,shape jump
+0005.00-0022.00_owl_sam3,3,237,12.91,shape jump
+0005.00-0022.00_owl_sam3,3,238,12.94,shape jump
+0005.00-0022.00_owl_sam3,3,239,12.97,swallowed another track
+0005.00-0022.00_owl_sam3,3,240,13.01,area jump
+0005.00-0022.00_owl_sam3,3,241,13.04,shape jump
+0005.00-0022.00_owl_sam3,3,242,13.07,area jump
+0005.00-0022.00_owl_sam3,3,244,13.14,area jump
+0005.00-0022.00_owl_sam3,3,245,13.17,swallowed another track
+0005.00-0022.00_owl_sam3,3,246,13.21,area jump
+0005.00-0022.00_owl_sam3,3,247,13.24,swallowed another track
+0005.00-0022.00_owl_sam3,3,248,13.27,area jump
+0005.00-0022.00_owl_sam3,3,249,13.31,swallowed another track
+0005.00-0022.00_owl_sam3,3,250,13.34,area jump
+0005.00-0022.00_owl_sam3,3,251,13.37,shape jump
+0005.00-0022.00_owl_sam3,3,252,13.41,shape jump
+0005.00-0022.00_owl_sam3,3,253,13.44,swallowed another track
+0005.00-0022.00_owl_sam3,3,256,13.54,swallowed another track
+0005.00-0022.00_owl_sam3,3,259,13.64,swallowed another track
+0005.00-0022.00_owl_sam3,3,261,13.71,swallowed another track
+0005.00-0022.00_owl_sam3,3,262,13.74,swallowed another track
+0005.00-0022.00_owl_sam3,3,263,13.77,swallowed another track
+0005.00-0022.00_owl_sam3,3,264,13.81,swallowed another track
+0005.00-0022.00_owl_sam3,3,267,13.91,shape jump
+0005.00-0022.00_owl_sam3,3,270,14.01,area jump
+0005.00-0022.00_owl_sam3,3,271,14.04,area jump
+0005.00-0022.00_owl_sam3,3,272,14.07,area jump
+0005.00-0022.00_owl_sam3,3,273,14.11,shape jump
+0005.00-0022.00_owl_sam3,3,274,14.14,shape jump
+0005.00-0022.00_owl_sam3,3,367,17.24,re-found after 3.1 s
+0005.00-0022.00_owl_sam3,3,372,17.41,area jump
+0005.00-0022.00_owl_sam3,3,373,17.44,area jump
+0005.00-0022.00_owl_sam3,3,375,17.51,area jump
+0005.00-0022.00_owl_sam3,3,377,17.58,shape jump
+0005.00-0022.00_owl_sam3,3,378,17.61,shape jump
+0005.00-0022.00_owl_sam3,3,379,17.64,area jump
+0005.00-0022.00_owl_sam3,3,380,17.68,shape jump
+0005.00-0022.00_owl_sam3,3,440,19.68,area jump
+0005.00-0022.00_owl_sam3,3,443,19.78,area jump
+0005.00-0022.00_owl_sam3,3,444,19.81,area jump
+0005.00-0022.00_owl_sam3,4,193,11.44,swallowed another track
+0005.00-0022.00_owl_sam3,4,209,11.97,shape jump
+0005.00-0022.00_owl_sam3,4,213,12.11,area jump
+0005.00-0022.00_owl_sam3,4,214,12.14,shape jump
+0005.00-0022.00_owl_sam3,4,218,12.27,shape jump
+0005.00-0022.00_owl_sam3,4,219,12.31,shape jump
+0005.00-0022.00_owl_sam3,4,220,12.34,shape jump
+0005.00-0022.00_owl_sam3,4,221,12.37,shape jump
+0005.00-0022.00_owl_sam3,4,226,12.54,shape jump
+0005.00-0022.00_owl_sam3,4,227,12.57,shape jump
+0005.00-0022.00_owl_sam3,4,228,12.61,shape jump
+0005.00-0022.00_owl_sam3,4,229,12.64,area jump
+0005.00-0022.00_owl_sam3,4,230,12.67,area jump
+0005.00-0022.00_owl_sam3,4,231,12.71,shape jump
+0005.00-0022.00_owl_sam3,4,232,12.74,shape jump
+0005.00-0022.00_owl_sam3,4,233,12.77,shape jump
+0005.00-0022.00_owl_sam3,4,234,12.81,shape jump
+0005.00-0022.00_owl_sam3,4,237,12.91,shape jump
+0005.00-0022.00_owl_sam3,4,238,12.94,shape jump
+0005.00-0022.00_owl_sam3,4,239,12.97,swallowed another track
+0005.00-0022.00_owl_sam3,4,240,13.01,area jump
+0005.00-0022.00_owl_sam3,4,241,13.04,shape jump
+0005.00-0022.00_owl_sam3,4,242,13.07,area jump
+0005.00-0022.00_owl_sam3,4,247,13.24,area jump
+0005.00-0022.00_owl_sam3,4,248,13.27,area jump
+0005.00-0022.00_owl_sam3,4,252,13.41,swallowed another track
+0005.00-0022.00_owl_sam3,4,256,13.54,swallowed another track
+0005.00-0022.00_owl_sam3,4,259,13.64,swallowed another track
+0005.00-0022.00_owl_sam3,4,261,13.71,swallowed another track
+0005.00-0022.00_owl_sam3,4,262,13.74,swallowed another track
+0005.00-0022.00_owl_sam3,4,263,13.77,swallowed another track
+0005.00-0022.00_owl_sam3,4,264,13.81,swallowed another track
+0005.00-0022.00_owl_sam3,4,265,13.84,shape jump
+0005.00-0022.00_owl_sam3,4,267,13.91,shape jump
+0005.00-0022.00_owl_sam3,4,270,14.01,area jump
+0005.00-0022.00_owl_sam3,4,271,14.04,area jump
+0005.00-0022.00_owl_sam3,4,272,14.07,area jump
+0005.00-0022.00_owl_sam3,4,273,14.11,shape jump
+0005.00-0022.00_owl_sam3,4,274,14.14,shape jump
+0005.00-0022.00_owl_sam3,4,455,20.18,re-found after 6.0 s
+0005.00-0022.00_owl_sam3,4,459,20.31,shape jump
+0005.00-0022.00_owl_sam3,4,460,20.35,swallowed another track
+0005.00-0022.00_owl_sam3,4,461,20.38,area jump
+0005.00-0022.00_owl_sam3,4,462,20.41,swallowed another track
+0005.00-0022.00_owl_sam3,4,465,20.51,swallowed another track
+0005.00-0022.00_owl_sam3,5,314,15.48,re-found after 5.8 s
+0005.00-0022.00_owl_sam3,5,434,19.48,re-found after 3.9 s
+0005.00-0022.00_owl_sam3,5,435,19.51,swallowed another track
+0005.00-0022.00_owl_sam3,5,460,20.35,swallowed another track
+0005.00-0022.00_owl_sam3,5,461,20.38,shape jump
+0005.00-0022.00_owl_sam3,5,462,20.41,swallowed another track
+0005.00-0022.00_owl_sam3,5,463,20.45,area jump
+0005.00-0022.00_owl_sam3,5,464,20.48,shape jump
+0005.00-0022.00_owl_sam3,6,212,12.07,shape jump
+0005.00-0022.00_owl_sam3,6,217,12.24,area jump
+0005.00-0022.00_owl_sam3,6,218,12.27,shape jump
+0005.00-0022.00_owl_sam3,6,219,12.31,shape jump
+0005.00-0022.00_owl_sam3,6,220,12.34,shape jump
+0005.00-0022.00_owl_sam3,6,221,12.37,shape jump
+0005.00-0022.00_owl_sam3,6,222,12.41,swallowed another track
+0005.00-0022.00_owl_sam3,6,223,12.44,shape jump
+0005.00-0022.00_owl_sam3,6,224,12.47,area jump
+0005.00-0022.00_owl_sam3,6,226,12.54,shape jump
+0005.00-0022.00_owl_sam3,6,227,12.57,area jump
+0005.00-0022.00_owl_sam3,6,228,12.61,shape jump
+0005.00-0022.00_owl_sam3,6,229,12.64,shape jump
+0005.00-0022.00_owl_sam3,6,230,12.67,shape jump
+0005.00-0022.00_owl_sam3,6,231,12.71,shape jump
+0005.00-0022.00_owl_sam3,6,232,12.74,shape jump
+0005.00-0022.00_owl_sam3,6,233,12.77,shape jump
+0005.00-0022.00_owl_sam3,6,234,12.81,shape jump
+0005.00-0022.00_owl_sam3,6,237,12.91,shape jump
+0005.00-0022.00_owl_sam3,6,242,13.07,area jump
+0005.00-0022.00_owl_sam3,6,246,13.21,area jump
+0005.00-0022.00_owl_sam3,6,247,13.24,swallowed another track
+0005.00-0022.00_owl_sam3,6,249,13.31,swallowed another track
+0005.00-0022.00_owl_sam3,6,253,13.44,swallowed another track
+0005.00-0022.00_owl_sam3,6,256,13.54,swallowed another track
+0005.00-0022.00_owl_sam3,6,258,13.61,swallowed another track
+0005.00-0022.00_owl_sam3,6,259,13.64,swallowed another track
+0005.00-0022.00_owl_sam3,6,261,13.71,swallowed another track
+0005.00-0022.00_owl_sam3,6,262,13.74,swallowed another track
+0005.00-0022.00_owl_sam3,6,263,13.77,swallowed another track
+0005.00-0022.00_owl_sam3,6,264,13.81,swallowed another track
+0005.00-0022.00_owl_sam3,6,265,13.84,swallowed another track
+0005.00-0022.00_owl_sam3,6,266,13.87,swallowed another track
+0005.00-0022.00_owl_sam3,6,332,16.08,re-found after 1.9 s
+0005.00-0022.00_owl_sam3,6,419,18.98,re-found after 2.9 s
+0005.00-0022.00_owl_sam3,7,211,12.04,shape jump
+0005.00-0022.00_owl_sam3,7,212,12.07,shape jump
+0005.00-0022.00_owl_sam3,7,213,12.11,shape jump
+0005.00-0022.00_owl_sam3,7,214,12.14,area jump
+0005.00-0022.00_owl_sam3,7,215,12.17,shape jump
+0005.00-0022.00_owl_sam3,7,216,12.21,area jump
+0005.00-0022.00_owl_sam3,7,217,12.24,area jump
+0005.00-0022.00_owl_sam3,7,220,12.34,shape jump
+0005.00-0022.00_owl_sam3,7,221,12.37,shape jump
+0005.00-0022.00_owl_sam3,7,222,12.41,shape jump
+0005.00-0022.00_owl_sam3,7,223,12.44,shape jump
+0005.00-0022.00_owl_sam3,7,224,12.47,area jump
+0005.00-0022.00_owl_sam3,7,225,12.51,area jump
+0005.00-0022.00_owl_sam3,7,227,12.57,area jump
+0005.00-0022.00_owl_sam3,7,228,12.61,area jump
+0005.00-0022.00_owl_sam3,7,230,12.67,area jump
+0005.00-0022.00_owl_sam3,7,231,12.71,area jump
+0005.00-0022.00_owl_sam3,7,232,12.74,shape jump
+0005.00-0022.00_owl_sam3,7,234,12.81,shape jump
+0005.00-0022.00_owl_sam3,7,238,12.94,area jump
+0005.00-0022.00_owl_sam3,7,239,12.97,area jump
+0005.00-0022.00_owl_sam3,7,243,13.11,shape jump
+0005.00-0022.00_owl_sam3,7,244,13.14,area jump
+0005.00-0022.00_owl_sam3,7,245,13.17,area jump
+0005.00-0022.00_owl_sam3,7,246,13.21,shape jump
+0005.00-0022.00_owl_sam3,7,247,13.24,shape jump
+0005.00-0022.00_owl_sam3,7,248,13.27,area jump
+0005.00-0022.00_owl_sam3,7,249,13.31,shape jump
+0005.00-0022.00_owl_sam3,7,250,13.34,shape jump
+0005.00-0022.00_owl_sam3,7,252,13.41,area jump
+0005.00-0022.00_owl_sam3,7,253,13.44,area jump
+0005.00-0022.00_owl_sam3,7,254,13.47,shape jump
+0005.00-0022.00_owl_sam3,7,255,13.51,area jump
+0005.00-0022.00_owl_sam3,7,256,13.54,area jump
+0005.00-0022.00_owl_sam3,7,257,13.57,shape jump
+0005.00-0022.00_owl_sam3,7,258,13.61,shape jump
+0005.00-0022.00_owl_sam3,7,259,13.64,area jump
+0005.00-0022.00_owl_sam3,7,260,13.67,area jump
+0005.00-0022.00_owl_sam3,7,261,13.71,shape jump
+0005.00-0022.00_owl_sam3,7,262,13.74,shape jump
+0005.00-0022.00_owl_sam3,7,263,13.77,shape jump
+0005.00-0022.00_owl_sam3,7,264,13.81,shape jump
+0005.00-0022.00_owl_sam3,7,265,13.84,shape jump
+0005.00-0022.00_owl_sam3,7,327,15.91,re-found after 2.1 s
+0005.00-0022.00_owl_sam3,7,328,15.94,area jump
+0005.00-0022.00_owl_sam3,7,416,18.88,re-found after 2.6 s
+0005.00-0022.00_owl_sam3,7,417,18.91,shape jump
+0005.00-0022.00_owl_sam3,7,418,18.95,shape jump
+0005.00-0022.00_owl_sam3,7,419,18.98,shape jump
+0005.00-0022.00_owl_sam3,7,420,19.01,shape jump
+0005.00-0022.00_owl_sam3,7,421,19.05,shape jump
+0005.00-0022.00_owl_sam3,7,422,19.08,shape jump
+0005.00-0022.00_owl_sam3,7,423,19.11,swallowed another track
+0005.00-0022.00_owl_sam3,7,424,19.15,area jump
+0005.00-0022.00_owl_sam3,7,425,19.18,swallowed another track
+0005.00-0022.00_owl_sam3,7,430,19.35,area jump
+0005.00-0022.00_owl_sam3,7,431,19.38,swallowed another track
+0005.00-0022.00_owl_sam3,7,435,19.51,swallowed another track
+0005.00-0022.00_owl_sam3,7,465,20.51,swallowed another track
+0005.00-0022.00_owl_sam3,7,506,21.88,area jump
+0005.00-0022.00_owl_sam3,8,262,13.74,shape jump
+0005.00-0022.00_owl_sam3,9,434,19.48,swallowed another track
+0005.00-0022.00_owl_sam3,9,438,19.61,swallowed another track
+0005.00-0022.00_owl_sam3,9,446,19.88,area jump
+0005.00-0022.00_owl_sam3,9,447,19.91,area jump
+real_02_cut,1,195,11.51,area jump
+real_02_cut,1,388,17.94,blocked view 6.2 s
+real_02_cut,2,388,17.94,re-found after 5.1 s
+real_02_cut,3,388,17.94,blocked view 6.2 s
+real_02_cut,4,193,11.44,swallowed another track
+real_02_cut,4,388,17.94,blocked view 6.2 s
+real_02_cut,4,414,18.81,swallowed another track
+real_02_cut,4,418,18.95,area jump
+real_02_cut,4,419,18.98,swallowed another track
+real_02_cut,5,388,17.94,re-found after 2.1 s
+real_02_cut,6,388,17.94,blocked view 6.2 s
+real_02_cut,6,481,21.05,swallowed another track
+real_02_cut,7,464,20.48,shape jump
+real_02_gate,1,195,11.51,area jump
+real_02_gate,1,206,11.87,area jump
+real_02_gate,1,207,11.91,shape jump
+real_02_gate,1,208,11.94,area jump
+real_02_gate,1,214,12.14,area jump
+real_02_gate,1,215,12.17,shape jump
+real_02_gate,1,216,12.21,area jump
+real_02_gate,1,217,12.24,shape jump
+real_02_gate,1,220,12.34,shape jump
+real_02_gate,1,228,12.61,shape jump
+real_02_gate,1,229,12.64,shape jump
+real_02_gate,1,230,12.67,area jump
+real_02_gate,1,378,17.61,re-found after 1.7 s
+real_02_gate,1,384,17.81,swallowed another track
+real_02_gate,1,387,17.91,swallowed another track
+real_02_gate,1,434,19.48,area jump
+real_02_gate,1,443,19.78,shape jump
+real_02_gate,1,447,19.91,shape jump
+real_02_gate,1,451,20.05,shape jump
+real_02_gate,1,457,20.25,swallowed another track
+real_02_gate,2,220,12.34,re-found after 5.7 s
+real_02_gate,2,239,12.97,shape jump
+real_02_gate,2,290,14.67,re-found after 1.7 s
+real_02_gate,2,303,15.11,area jump
+real_02_gate,2,318,15.61,area jump
+real_02_gate,2,319,15.64,area jump
+real_02_gate,2,326,15.88,shape jump
+real_02_gate,2,327,15.91,area jump
+real_02_gate,2,329,15.98,area jump
+real_02_gate,2,330,16.01,area jump
+real_02_gate,2,331,16.04,swallowed another track
+real_02_gate,2,332,16.08,area jump
+real_02_gate,2,335,16.18,area jump
+real_02_gate,2,336,16.21,area jump
+real_02_gate,2,382,17.74,re-found after 1.4 s
+real_02_gate,2,434,19.48,area jump
+real_02_gate,2,435,19.51,shape jump
+real_02_gate,2,461,20.38,area jump
+real_02_gate,2,462,20.41,area jump
+real_02_gate,2,471,20.71,area jump
+real_02_gate,2,472,20.75,area jump
+real_02_gate,3,221,12.37,area jump
+real_02_gate,3,223,12.44,shape jump
+real_02_gate,3,224,12.47,area jump
+real_02_gate,3,225,12.51,area jump
+real_02_gate,3,226,12.54,area jump
+real_02_gate,3,227,12.57,area jump
+real_02_gate,3,247,13.24,shape jump
+real_02_gate,3,248,13.27,shape jump
+real_02_gate,3,249,13.31,area jump
+real_02_gate,3,250,13.34,area jump
+real_02_gate,3,251,13.37,shape jump
+real_02_gate,3,252,13.41,area jump
+real_02_gate,3,253,13.44,shape jump
+real_02_gate,3,260,13.67,shape jump
+real_02_gate,3,261,13.71,shape jump
+real_02_gate,3,262,13.74,area jump
+real_02_gate,3,330,16.01,re-found after 1.3 s
+real_02_gate,3,366,17.21,re-found after 1.2 s
+real_02_gate,3,375,17.51,area jump
+real_02_gate,3,436,19.55,area jump
+real_02_gate,3,448,19.95,area jump
+real_02_gate,4,193,11.44,swallowed another track
+real_02_gate,4,220,12.34,shape jump
+real_02_gate,4,221,12.37,shape jump
+real_02_gate,4,230,12.67,swallowed another track
+real_02_gate,4,231,12.71,area jump
+real_02_gate,4,232,12.74,shape jump
+real_02_gate,4,240,13.01,area jump
+real_02_gate,4,241,13.04,shape jump
+real_02_gate,4,244,13.14,shape jump
+real_02_gate,4,245,13.17,shape jump
+real_02_gate,4,246,13.21,shape jump
+real_02_gate,4,247,13.24,shape jump
+real_02_gate,4,248,13.27,shape jump
+real_02_gate,4,249,13.31,shape jump
+real_02_gate,4,250,13.34,shape jump
+real_02_gate,4,251,13.37,shape jump
+real_02_gate,4,252,13.41,area jump
+real_02_gate,4,253,13.44,area jump
+real_02_gate,4,254,13.47,area jump
+real_02_gate,4,255,13.51,shape jump
+real_02_gate,4,256,13.54,shape jump
+real_02_gate,4,257,13.57,shape jump
+real_02_gate,4,258,13.61,shape jump
+real_02_gate,4,259,13.64,shape jump
+real_02_gate,4,261,13.71,area jump
+real_02_gate,4,264,13.81,area jump
+real_02_gate,4,330,16.01,re-found after 2.2 s
+real_02_gate,4,378,17.61,re-found after 1.5 s
+real_02_gate,4,379,17.64,shape jump
+real_02_gate,4,384,17.81,swallowed another track
+real_02_gate,4,386,17.88,area jump
+real_02_gate,4,387,17.91,swallowed another track
+real_02_gate,4,456,20.21,shape jump
+real_02_gate,4,457,20.25,shape jump
+real_02_gate,4,458,20.28,shape jump
+real_02_gate,4,460,20.35,swallowed another track
+real_02_gate,5,213,12.11,re-found after 2.4 s
+real_02_gate,5,313,15.44,re-found after 2.5 s
+real_02_gate,5,382,17.74,re-found after 2.3 s
+real_02_gate,5,387,17.91,swallowed another track
+real_02_gate,5,434,19.48,area jump
+real_02_gate,5,435,19.51,area jump
+real_02_gate,5,459,20.31,area jump
+real_02_gate,5,460,20.35,swallowed another track
+real_02_gate,5,462,20.41,shape jump
+real_02_gate,5,465,20.51,area jump
+real_02_gate,6,209,11.97,swallowed another track
+real_02_gate,6,213,12.11,area jump
+real_02_gate,6,216,12.21,shape jump
+real_02_gate,6,217,12.24,shape jump
+real_02_gate,6,218,12.27,area jump
+real_02_gate,6,221,12.37,area jump
+real_02_gate,6,223,12.44,swallowed another track
+real_02_gate,6,225,12.51,area jump
+real_02_gate,6,227,12.57,area jump
+real_02_gate,6,230,12.67,swallowed another track
+real_02_gate,6,232,12.74,area jump
+real_02_gate,6,236,12.87,area jump
+real_02_gate,6,244,13.14,swallowed another track
+real_02_gate,6,245,13.17,area jump
+real_02_gate,6,246,13.21,shape jump
+real_02_gate,6,247,13.24,shape jump
+real_02_gate,6,249,13.31,shape jump
+real_02_gate,6,250,13.34,area jump
+real_02_gate,6,251,13.37,area jump
+real_02_gate,6,254,13.47,area jump
+real_02_gate,6,255,13.51,area jump
+real_02_gate,6,307,15.24,re-found after 1.6 s
+real_02_gate,6,320,15.68,area jump
+real_02_gate,6,321,15.71,area jump
+real_02_gate,6,328,15.94,swallowed another track
+real_02_gate,6,329,15.98,area jump
+real_02_gate,6,330,16.01,area jump
+real_02_gate,6,331,16.04,swallowed another track
+real_02_gate,6,434,19.48,area jump
+real_02_gate,6,436,19.55,swallowed another track
+real_02_gate,6,460,20.35,area jump
+0575.50-0590.00_owl_sam3,1,263,584.28,blocked view 2.8 s
+0575.50-0590.00_owl_sam3,1,363,587.61,swallowed another track
+0575.50-0590.00_owl_sam3,1,365,587.68,swallowed another track
+0575.50-0590.00_owl_sam3,1,370,587.85,swallowed another track
+0575.50-0590.00_owl_sam3,2,151,580.54,shape jump
+0575.50-0590.00_owl_sam3,2,152,580.57,shape jump
+0575.50-0590.00_owl_sam3,2,153,580.61,shape jump
+0575.50-0590.00_owl_sam3,2,154,580.64,shape jump
+0575.50-0590.00_owl_sam3,2,155,580.67,shape jump
+0575.50-0590.00_owl_sam3,2,156,580.71,shape jump
+0575.50-0590.00_owl_sam3,2,159,580.81,shape jump
+0575.50-0590.00_owl_sam3,2,176,581.37,shape jump
+0575.50-0590.00_owl_sam3,2,177,581.41,shape jump
+0575.50-0590.00_owl_sam3,2,263,584.28,blocked view 2.8 s
+0575.50-0590.00_owl_sam3,2,275,584.68,area jump
+0575.50-0590.00_owl_sam3,2,277,584.74,area jump
+0575.50-0590.00_owl_sam3,2,278,584.78,area jump
+0575.50-0590.00_owl_sam3,2,286,585.04,area jump
+0575.50-0590.00_owl_sam3,2,287,585.08,area jump
+0575.50-0590.00_owl_sam3,2,290,585.18,area jump
+0575.50-0590.00_owl_sam3,2,315,586.01,area jump
+0575.50-0590.00_owl_sam3,2,318,586.11,area jump
+0575.50-0590.00_owl_sam3,2,319,586.14,area jump
+0575.50-0590.00_owl_sam3,2,377,588.08,swallowed another track
+real_04_cut,1,274,584.64,blocked view 3.2 s
+real_04_cut,1,354,587.31,swallowed another track
+real_04_cut,1,356,587.38,swallowed another track
+real_04_cut,1,363,587.61,swallowed another track
+real_04_cut,1,365,587.68,swallowed another track
+real_04_cut,1,370,587.85,swallowed another track
+real_04_cut,2,151,580.54,shape jump
+real_04_cut,2,152,580.57,shape jump
+real_04_cut,2,153,580.61,shape jump
+real_04_cut,2,154,580.64,shape jump
+real_04_cut,2,155,580.67,shape jump
+real_04_cut,2,156,580.71,shape jump
+real_04_cut,2,159,580.81,shape jump
+real_04_cut,2,176,581.37,shape jump
+real_04_cut,2,177,581.41,shape jump
+real_04_cut,4,334,586.64,area jump
+real_04_cut,4,377,588.08,swallowed another track
+real_04_cut,4,378,588.11,area jump
+real_04_cut,4,381,588.21,swallowed another track
+real_04_gate,1,263,584.28,blocked view 2.8 s
+real_04_gate,1,363,587.61,swallowed another track
+real_04_gate,1,365,587.68,swallowed another track
+real_04_gate,1,370,587.85,swallowed another track
+real_04_gate,2,151,580.54,shape jump
+real_04_gate,2,152,580.57,shape jump
+real_04_gate,2,153,580.61,shape jump
+real_04_gate,2,154,580.64,shape jump
+real_04_gate,2,155,580.67,shape jump
+real_04_gate,2,156,580.71,shape jump
+real_04_gate,2,159,580.81,shape jump
+real_04_gate,2,176,581.37,shape jump
+real_04_gate,2,177,581.41,shape jump
+real_04_gate,2,264,584.31,blocked view 2.8 s
+real_04_gate,2,265,584.34,area jump
+real_04_gate,2,266,584.38,area jump
+real_04_gate,3,263,584.28,blocked view 2.8 s
+real_04_gate,3,264,584.31,shape jump
+real_04_gate,4,334,586.64,area jump
+real_04_gate,4,377,588.08,swallowed another track
+real_04_gate,4,378,588.11,area jump
+real_04_gate,4,381,588.21,swallowed another track
+real_05_gate,1,266,1522.88,area jump
+real_05_gate,1,267,1522.91,area jump
+1459.50-1474.50_owl_sam3,1,170,1465.17,area jump
+real_06_cut,1,170,1465.17,area jump
+real_06_gate,1,170,1465.17,area jump
+0024.00-0048.00_owl_sam3,2,622,44.75,re-found after 9.6 s
+0024.00-0048.00_owl_sam3,3,397,37.24,swallowed another track
+0024.00-0048.00_owl_sam3,3,553,42.45,shape jump
+0024.00-0048.00_owl_sam3,3,554,42.48,swallowed another track
+0024.00-0048.00_owl_sam3,3,555,42.52,shape jump
+0024.00-0048.00_owl_sam3,3,557,42.58,swallowed another track
+0024.00-0048.00_owl_sam3,3,598,43.95,swallowed another track
+0024.00-0048.00_owl_sam3,3,599,43.98,swallowed another track
+0024.00-0048.00_owl_sam3,3,606,44.22,swallowed another track
+0024.00-0048.00_owl_sam3,3,613,44.45,swallowed another track
+0024.00-0048.00_owl_sam3,3,649,45.65,swallowed another track
+0024.00-0048.00_owl_sam3,3,653,45.79,swallowed another track
+0024.00-0048.00_owl_sam3,3,695,47.19,swallowed another track
+0024.00-0048.00_owl_sam3,3,698,47.29,swallowed another track
+0024.00-0048.00_owl_sam3,4,49,25.63,re-found after 1.3 s
+0024.00-0048.00_owl_sam3,4,191,30.37,re-found after 4.5 s
+0024.00-0048.00_owl_sam3,4,249,32.31,re-found after 1.7 s
+0024.00-0048.00_owl_sam3,4,376,36.54,re-found after 1.4 s
+0024.00-0048.00_owl_sam3,4,623,44.78,re-found after 1.1 s
+0024.00-0048.00_owl_sam3,6,407,37.58,area jump
+0024.00-0048.00_owl_sam3,6,550,42.35,re-found after 4.8 s

@@ -1,0 +1,121 @@
+{
+ "thresholds": {
+  "test17": 0.15,
+  "test23": 0.075,
+  "test_d1": 0.15,
+  "test_dev": 0.15,
+  "all": 0.15
+ },
+ "00017|test17|chosen": {
+  "threshold": 0.15,
+  "visible_windows": 548,
+  "found": 541,
+  "none_windows": 282,
+  "false": 0,
+  "unsure_windows_called": 49,
+  "unsure_windows": 546
+ },
+ "00017|test17|fixed": {
+  "threshold": 0.05,
+  "visible_windows": 548,
+  "found": 547,
+  "none_windows": 282,
+  "false": 43,
+  "unsure_windows_called": 127,
+  "unsure_windows": 546
+ },
+ "00023|test23|chosen": {
+  "threshold": 0.075,
+  "visible_windows": 306,
+  "found": 305,
+  "none_windows": 981,
+  "false": 25,
+  "unsure_windows_called": 0,
+  "unsure_windows": 10
+ },
+ "00023|test23|fixed": {
+  "threshold": 0.05,
+  "visible_windows": 306,
+  "found": 306,
+  "none_windows": 981,
+  "false": 34,
+  "unsure_windows_called": 0,
+  "unsure_windows": 10
+ },
+ "00010|test17": {
+  "windows": 616,
+  "called": 0,
+  "called_fixed": 61
+ },
+ "00010|test23": {
+  "windows": 616,
+  "called": 1,
+  "called_fixed": 1
+ },
+ "00011|test17": {
+  "windows": 1499,
+  "called": 3,
+  "called_fixed": 62
+ },
+ "00011|test23": {
+  "windows": 1499,
+  "called": 4,
+  "called_fixed": 7
+ },
+ "00012|test17": {
+  "windows": 220,
+  "called": 0,
+  "called_fixed": 0
+ },
+ "00012|test23": {
+  "windows": 220,
+  "called": 0,
+  "called_fixed": 0
+ },
+ "00024|test17": {
+  "windows": 386,
+  "called": 0,
+  "called_fixed": 4
+ },
+ "00024|test23": {
+  "windows": 386,
+  "called": 4,
+  "called_fixed": 4
+ },
+ "d1 00006 dense|test_d1|chosen": {
+  "threshold": 0.15,
+  "windows": 1736,
+  "called": 22,
+  "called_low_half": 22
+ },
+ "d1 00006 dense|test_d1|fixed": {
+  "threshold": 0.05,
+  "windows": 1736,
+  "called": 68,
+  "called_low_half": 68
+ },
+ "d1 labelled|test_d1|chosen": {
+  "threshold": 0.15,
+  "windows": 821,
+  "called": 6,
+  "called_low_half": 6
+ },
+ "d1 labelled|test_d1|fixed": {
+  "threshold": 0.05,
+  "windows": 821,
+  "called": 249,
+  "called_low_half": 249
+ },
+ "dev labelled|test_dev|chosen": {
+  "threshold": 0.15,
+  "windows": 91,
+  "called": 1,
+  "called_low_half": 1
+ },
+ "dev labelled|test_dev|fixed": {
+  "threshold": 0.05,
+  "windows": 91,
+  "called": 4,
+  "called_low_half": 4
+ }
+}

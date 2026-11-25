@@ -1,0 +1,106 @@
+base,g,ga,name,whale,size,large,in_view,outcome
+B1,0.5,952,gap_B1_g0.5_f952,1,0.245,False,5,kept
+B1,0.5,952,gap_B1_g0.5_f952,2,0.309,True,5,kept
+B1,0.5,952,gap_B1_g0.5_f952,3,0.232,False,5,kept
+B1,0.5,952,gap_B1_g0.5_f952,5,0.12,False,5,kept
+B1,0.5,952,gap_B1_g0.5_f952,6,0.14,False,5,kept
+B1,0.5,1192,gap_B1_g0.5_f1192,1,0.165,False,4,kept
+B1,0.5,1192,gap_B1_g0.5_f1192,3,0.354,True,4,kept
+B1,0.5,1192,gap_B1_g0.5_f1192,4,0.105,False,4,kept
+B1,1.0,945,gap_B1_g1_f945,1,0.251,False,5,kept
+B1,1.0,945,gap_B1_g1_f945,2,0.299,False,5,kept
+B1,1.0,945,gap_B1_g1_f945,3,0.234,False,5,kept
+B1,1.0,945,gap_B1_g1_f945,5,0.13,False,5,kept
+B1,1.0,945,gap_B1_g1_f945,6,0.134,False,5,kept
+B1,1.0,1184,gap_B1_g1_f1184,1,0.174,False,4,kept
+B1,1.0,1184,gap_B1_g1_f1184,3,0.346,True,4,kept
+B1,1.0,1184,gap_B1_g1_f1184,4,0.116,False,4,kept
+B1,2.0,930,gap_B1_g2_f930,1,0.256,False,5,kept
+B1,2.0,930,gap_B1_g2_f930,2,0.303,True,5,kept
+B1,2.0,930,gap_B1_g2_f930,3,0.248,False,5,kept
+B1,2.0,930,gap_B1_g2_f930,5,0.144,False,5,kept
+B1,2.0,930,gap_B1_g2_f930,6,0.115,False,5,new number
+B1,2.0,1169,gap_B1_g2_f1169,1,0.187,False,4,kept
+B1,2.0,1169,gap_B1_g2_f1169,3,0.313,True,4,new number
+B1,2.0,1169,gap_B1_g2_f1169,4,0.155,False,4,kept
+B1,4.0,900,gap_B1_g4_f900,1,0.223,False,5,kept
+B1,4.0,900,gap_B1_g4_f900,3,0.295,False,5,kept
+B1,4.0,900,gap_B1_g4_f900,5,0.138,False,5,not tracked before
+B1,4.0,900,gap_B1_g4_f900,6,0.16,False,5,kept
+B1,4.0,1139,gap_B1_g4_f1139,1,0.179,False,4,kept
+B1,4.0,1139,gap_B1_g4_f1139,3,0.38,True,4,swapped
+B1,4.0,1139,gap_B1_g4_f1139,4,0.138,False,4,kept
+B1,8.0,840,gap_B1_g8_f840,1,0.177,False,5,kept
+B1,8.0,840,gap_B1_g8_f840,3,0.25,False,5,swapped
+B1,8.0,840,gap_B1_g8_f840,5,0.12,False,5,new number
+B1,8.0,840,gap_B1_g8_f840,6,0.163,False,5,kept
+B1,8.0,1079,gap_B1_g8_f1079,1,0.211,False,4,kept
+B1,8.0,1079,gap_B1_g8_f1079,3,0.341,True,4,kept
+B1,8.0,1079,gap_B1_g8_f1079,6,0.143,False,4,kept
+B3,0.5,36512,gap_B3_g0.5_f36512,1,0.444,True,1,kept
+B3,0.5,36686,gap_B3_g0.5_f36686,1,0.402,True,1,kept
+B3,1.0,36504,gap_B3_g1_f36504,1,0.419,True,1,kept
+B3,1.0,36678,gap_B3_g1_f36678,1,0.401,True,1,kept
+B3,2.0,36489,gap_B3_g2_f36489,1,0.368,True,1,kept
+B3,2.0,36663,gap_B3_g2_f36663,1,0.395,True,1,kept
+B3,4.0,36459,gap_B3_g4_f36459,1,0.269,False,1,kept
+B3,4.0,36633,gap_B3_g4_f36633,1,0.434,True,1,kept
+B3,8.0,36405,gap_B3_g8_f36405,1,0.14,False,1,kept
+B3,8.0,36552,gap_B3_g8_f36552,1,0.52,True,1,kept
+B4,0.5,19656,gap_B4_g0.5_f19656,1,0.518,True,1,kept
+B4,0.5,19836,gap_B4_g0.5_f19836,1,0.53,True,1,kept
+B4,1.0,19649,gap_B4_g1_f19649,1,0.517,True,1,kept
+B4,1.0,19828,gap_B4_g1_f19828,1,0.53,True,1,kept
+B4,2.0,19634,gap_B4_g2_f19634,1,0.516,True,1,kept
+B4,2.0,19813,gap_B4_g2_f19813,1,0.531,True,1,kept
+B4,4.0,19604,gap_B4_g4_f19604,1,0.51,True,1,kept
+B4,4.0,19783,gap_B4_g4_f19783,1,0.534,True,1,kept
+B4,8.0,19545,gap_B4_g8_f19545,1,0.456,True,1,kept
+B4,8.0,19707,gap_B4_g8_f19707,1,0.529,True,1,kept
+B5,0.5,13868,gap_B5_g0.5_f13868,1,0.333,True,3,kept
+B5,0.5,13868,gap_B5_g0.5_f13868,3,0.184,False,3,not tracked before
+B5,0.5,13868,gap_B5_g0.5_f13868,4,0.066,False,3,kept
+B5,0.5,14064,gap_B5_g0.5_f14064,1,0.479,True,5,kept
+B5,0.5,14064,gap_B5_g0.5_f14064,3,0.356,True,5,kept
+B5,0.5,14064,gap_B5_g0.5_f14064,4,0.048,False,5,not tracked before
+B5,0.5,14064,gap_B5_g0.5_f14064,7,0.013,False,5,not tracked before
+B5,1.0,13861,gap_B5_g1_f13861,1,0.287,False,3,kept
+B5,1.0,13861,gap_B5_g1_f13861,3,0.13,False,3,not tracked before
+B5,1.0,13861,gap_B5_g1_f13861,4,0.076,False,3,lost
+B5,1.0,14056,gap_B5_g1_f14056,1,0.476,True,4,kept
+B5,1.0,14056,gap_B5_g1_f14056,3,0.339,True,4,kept
+B5,1.0,14056,gap_B5_g1_f14056,4,0.048,False,4,not tracked before
+B5,1.0,14056,gap_B5_g1_f14056,7,0.032,False,4,not tracked before
+B5,1.0,14056,gap_B5_g1_f14056,9,0.109,False,4,lost
+B5,2.0,13846,gap_B5_g2_f13846,1,0.248,False,2,kept
+B5,2.0,13846,gap_B5_g2_f13846,4,0.092,False,2,lost
+B5,2.0,14041,gap_B5_g2_f14041,1,0.463,True,5,kept
+B5,2.0,14041,gap_B5_g2_f14041,3,0.359,True,5,kept
+B5,2.0,14041,gap_B5_g2_f14041,4,0.041,False,5,not tracked before
+B5,2.0,14041,gap_B5_g2_f14041,7,0.019,False,5,not tracked before
+B5,4.0,13816,gap_B5_g4_f13816,1,0.354,True,1,kept
+B5,4.0,13816,gap_B5_g4_f13816,3,0.059,False,1,swapped
+B5,4.0,14011,gap_B5_g4_f14011,1,0.548,True,5,kept
+B5,4.0,14011,gap_B5_g4_f14011,3,0.548,True,5,kept
+B5,4.0,14011,gap_B5_g4_f14011,4,0.037,False,5,lost
+B5,4.0,14011,gap_B5_g4_f14011,5,0.027,False,5,not tracked before
+B5,4.0,14011,gap_B5_g4_f14011,6,0.041,False,5,swapped
+B5,4.0,14011,gap_B5_g4_f14011,7,0.021,False,5,kept
+B5,4.0,14011,gap_B5_g4_f14011,8,0.114,False,5,lost
+B5,8.0,13756,gap_B5_g8_f13756,1,0.362,True,3,kept
+B5,8.0,13756,gap_B5_g8_f13756,3,0.191,False,3,swapped
+B5,8.0,13951,gap_B5_g8_f13951,1,0.508,True,7,kept
+B5,8.0,13951,gap_B5_g8_f13951,2,0.03,False,7,not tracked before
+B5,8.0,13951,gap_B5_g8_f13951,3,0.508,True,7,lost
+B5,8.0,13951,gap_B5_g8_f13951,4,0.092,False,7,not tracked before
+B5,8.0,13951,gap_B5_g8_f13951,5,0.077,False,7,lost
+B6,0.5,22236,gap_B6_g0.5_f22236,1,0.152,False,1,kept
+B6,0.5,22414,gap_B6_g0.5_f22414,1,0.314,True,1,kept
+B6,1.0,22228,gap_B6_g1_f22228,1,0.154,False,1,kept
+B6,1.0,22407,gap_B6_g1_f22407,1,0.303,True,1,kept
+B6,2.0,22213,gap_B6_g2_f22213,1,0.154,False,1,kept
+B6,2.0,22392,gap_B6_g2_f22392,1,0.277,False,1,kept
+B6,4.0,22183,gap_B6_g4_f22183,1,0.143,False,1,kept
+B6,4.0,22362,gap_B6_g4_f22362,1,0.225,False,1,kept
+B6,8.0,22125,gap_B6_g8_f22125,1,0.128,False,1,kept
+B6,8.0,22285,gap_B6_g8_f22285,1,0.146,False,1,kept

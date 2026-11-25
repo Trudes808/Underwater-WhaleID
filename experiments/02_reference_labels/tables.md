@@ -86,3 +86,40 @@ user's measure) and 54 (24 %) at >= 0.4; 11 frames (5 % of the whale frames, 1.3
 `hq`.
 
 Size check against the reference masks (31 frames with both): mean |eye - mask| 0.046, 26/31 within 0.1, bias -0.015.
+
+## Second deployment 2025-01-02 (CC-09-85): frame labels (AI by-eye, WP3b part B, scoring only)
+
+| piece | frames | state | view | other_whales 0 / 1 (faint > 0) | back none | seafloor none / unsure / visible | fish few | quality hq / ok / low |
+|---|---|---|---|---|---|---|---|---|
+| 00005 boat | 20 | air 20 | clear 19, glare 1 | 20 / 0 (0) | 20 | 20 / 0 / 0 | 0 | |
+| 00006 boat | 20 | air 20 | clear 20 | 20 / 0 (0) | 20 | 20 / 0 / 0 | 0 | |
+| 00009 boat | 20 | air 20 | clear 20 | 20 / 0 (0) | 20 | 20 / 0 / 0 | 0 | |
+| 00010 | 60 | air 9 (7 drone), underwater 51 | clear 59, bubbles 1 | 58 / 2 (7) | 7 | 60 / 0 / 0 | 0 | 0 / 0 / 2 |
+| 00011 | 60 | underwater 60 | clear 60 | 60 / 0 (4) | 0 | 60 / 0 / 0 | 0 | |
+| 00012 | 60 | air 1, underwater 59 | clear 60 | 60 / 0 (0) | 0 | 60 / 0 / 0 | 0 | |
+| 00017 | 60 | air 1, crossing 1, underwater 49, unusable 9 | clear 39, dark 11, sand 10 | 59 / 1 (2) | 16 | 14 / 24 / 22 | 0 | 0 / 1 / 0 |
+| 00023 | 60 | underwater 60 | clear 56, bubbles 3, glare 1 | 47 / 13 (2) | 0 | 46 / 1 / 13 | 5 | 2 / 8 / 3 |
+| 00024 | 60 | crossing 1, underwater 59 | clear 60 | 45 / 15 (2) | 16 | 60 / 0 / 0 | 2 | 0 / 9 / 6 |
+| all | 420 | air 52, crossing 2, underwater 357, unusable 9 | sand 10, dark 11, bubbles 4, glare 2 | 389 / 31 (17) | 99 | 380 / 25 / 35 | 7 | 2 / 18 / 11 |
+
+Whale size on the 31 whale frames: 0.1: 1, 0.2: 7, 0.3: 5, 0.4: 9, 0.5: 5, 0.6: 2, 0.8: 1, 1.0: 1. `back` none on
+00024 = tag floating after release (12 frames) and 4 frames near the surface edge cases.
+
+Seafloor spans (`seafloor_spans.csv`): visible 00017 842-1390 s (548 s, sand plane fading into haze), 00023 0-306 s
+(306 s, bottom fading into haze); unsure 00017 296-842 s (546 s, bottom contact, sediment, black), 00023 306-316 s;
+none in 00010, 00011, 00012, 00024 and the rest of 00017 / 00023.
+
+Blocked spans (`blocked_spans.csv`, 44 rows): air 27 (26 breaths of 5-11 s and the 92 s drone flight of 00010);
+sand 10 spans, 203 s, and dark 7 spans, 215 s, all in 00017 332-840 s. Another whale within 10 s: before and after
+2 spans (00024 66-74 s and 120-125 s, probably the same animal both times), after only 1 (00023 1010-1015 s),
+unsure 1 (00010 367-374 s); none around the 00017 sediment stretch.
+
+Events, 00023 400-580 s (0.2 s steps): exits / entries 416.8 / 419.8, 443.8 / 445.0, 447.2 / 448.4, 475.0 / 477.6,
+512.2 / 516.6 s. The 1 s depth table (scan) marks 416-420, 442-449, 473-478, 512-516 s as surfaced: every end within
+about 1 s; the double breath at 445-447 s (2 s just under the surface) is one surfacing for the sensor.
+
+Masks: 29 frames (00017 9, 00023 16, 00024 4): seafloor painted in 14, seafloor-related `unsure` only in 5 (sediment,
+bottom fading as the whale rises), froth hard negatives 2; whale instances 14 in 14 frames (clear 4, hazy 10; one
+faint whale of 00017 painted unsure); fish instances 7 (jacks).
+Fish calls: 7 frames, 8 jacks (00023 5 frames / 6 fish, 00024 2 / 2), all with body, eye and forked tail at
+120-560 px.

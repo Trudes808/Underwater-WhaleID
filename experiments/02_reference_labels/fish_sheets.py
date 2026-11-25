@@ -47,10 +47,10 @@ def panel(stem, call):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--per", type=int, default=3)
+    ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--per", type=int, default=3); ap.add_argument("--only", default="", help="only label folders whose name starts with this (e.g. CC-09-85)")
     a = ap.parse_args()
     rows = []
-    for f in sorted(HERE.glob("labels/*/fish_calls.json")):
+    for f in sorted(HERE.glob(f"labels/{a.only}*/fish_calls.json")):
         for call in json.loads(f.read_text()):
             rows.append(panel(f.parent.name, call))
     for k in range(0, len(rows), a.per):

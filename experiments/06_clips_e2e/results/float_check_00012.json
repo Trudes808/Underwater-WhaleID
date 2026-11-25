@@ -1,0 +1,28 @@
+{
+ "sensitive+nofloat": {
+  "kept_s": 243.0,
+  "hq_windows": 28,
+  "hq_stretch_s": 60.0,
+  "dropped_s": {
+   "tag in air": 6.0,
+   "drone flight": 0.0,
+   "tag floating": 257.11514444444447,
+   "surfaced": 8.0,
+   "nothing detected": 1267.0,
+   "unreadable": 0.0
+  }
+ },
+ "sensitive": {
+  "kept_s": 282.0,
+  "hq_windows": 36,
+  "hq_stretch_s": 81.0,
+  "dropped_s": {
+   "tag in air": 4.0,
+   "drone flight": 0.0,
+   "tag floating": 220.11514444444447,
+   "surfaced": 8.0,
+   "nothing detected": 1267.0,
+   "unreadable": 0.0
+  }
+ }
+}

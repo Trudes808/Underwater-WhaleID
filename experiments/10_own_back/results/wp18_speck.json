@@ -1,0 +1,42 @@
+{
+ "2025-12-20 CG (dev)": {
+  "object_frames": 7942,
+  "with_2plus_pieces": 2526,
+  "changed": 1214,
+  "multi_all_kept": 1312,
+  "dropped_share_median": 0.0074,
+  "dropped_share_max": 0.2679,
+  "numbers": 33,
+  "numbers_touched": 26
+ },
+ "2025-2-3 Mini-mother 11-96": {
+  "object_frames": 22964,
+  "with_2plus_pieces": 2596,
+  "changed": 788,
+  "multi_all_kept": 1808,
+  "dropped_share_median": 0.0041,
+  "dropped_share_max": 0.0728,
+  "numbers": 153,
+  "numbers_touched": 66
+ },
+ "TestSubset 2025-1-2 CATS -85": {
+  "object_frames": 4367,
+  "with_2plus_pieces": 1020,
+  "changed": 49,
+  "multi_all_kept": 971,
+  "dropped_share_median": 0.0005,
+  "dropped_share_max": 0.0473,
+  "numbers": 20,
+  "numbers_touched": 11
+ },
+ "all test (hq spans + stretches)": {
+  "object_frames": 27331,
+  "with_2plus_pieces": 3616,
+  "changed": 837,
+  "multi_all_kept": 2779,
+  "dropped_share_median": 0.0039,
+  "dropped_share_max": 0.0728,
+  "numbers": 173,
+  "numbers_touched": 77
+ }
+}

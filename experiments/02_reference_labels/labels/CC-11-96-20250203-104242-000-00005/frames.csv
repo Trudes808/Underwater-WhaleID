@@ -1,121 +1,121 @@
-frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note
-193,6.478,underwater,clear,1,0,back,none,none,,"whale (probably the calf) rising vertically from the back's horizon, lower centre, flipper at its left; moves up and away from the horizon over f120-f300 (checked); back = faint band at the bottom",0.2,0.05,no,low,dark whale rising at the back's horizon
-637,21.303,underwater,clear,1,0,back,none,none,unsure: 1 dark spindle ~30 px lower left (x350 y890),"whale body + fluke, hazy, right of centre (tail down, seen from below); back faint band",0.2,0.05,no,low,hazy
-1082,36.161,underwater,clear,0,0,back,none,none,,"empty blue water, sun glow at the top; back faint band at the bottom",,,,,
-1527,51.020,underwater,clear,0,0,back,none,none,,empty; tiny pale speck centre (particle),,,,,
-1971,65.845,underwater,clear,0,0,back,none,none,,empty,,,,,
-2416,80.704,underwater,clear,0,0,back,none,none,,empty,,,,,
-2860,95.529,underwater,clear,1,0,back,none,none,,"whale from below heading up toward the sun, cut by the top edge, upper left, flipper visible",0.4,0.05,yes,ok,silhouette from below toward the sun
-3305,110.387,underwater,clear,0,0,back,none,none,,empty,,,,,
-3750,125.246,underwater,clear,0,0,back,none,none,,empty,,,,,
-4194,140.071,underwater,clear,0,0,back,none,none,,empty (window 1),,,,,
-4639,154.930,underwater,clear,0,0,back,none,none,,empty (window 1),,,,,
-5083,169.755,underwater,clear,0,0,back,none,none,,empty; 1 dark speck near the sun glow (x590 y50),,,,,
-5528,184.613,underwater,clear,0,0,back,none,none,,empty; 2 pale specks low (particles),,,,,
-5973,199.472,underwater,clear,0,0,back,none,none,,empty,,,,,
-6417,214.297,underwater,clear,0,0,back,none,none,,empty,,,,,
-6862,229.156,underwater,clear,0,0,back,none,none,,empty,,,,,
-7306,243.981,underwater,clear,0,0,back,none,none,,empty,,,,,
-7751,258.839,underwater,clear,0,0,back,none,none,,empty,,,,,
-8196,273.698,underwater,clear,0,0,back,none,none,,empty,,,,,
-8640,288.523,underwater,clear,0,0,back,none,none,,empty,,,,,
-9085,303.382,underwater,clear,0,0,back,none,none,,empty,,,,,
-9529,318.207,underwater,clear,1,0,back,none,none,,"whale head (rostrum with knobs) rising above the back's horizon, lower centre; grows and rises over f9440-f9620 (checked)",0.1,0.05,no,low,"head only at the back's horizon, dark"
-9974,333.065,underwater,clear,1,0,back,none,none,,"whale (calf) side view with dorsal fin lying along the back's horizon, lower left; sun disc with sparkle upper left (well under half the frame)",0.5,0.10,yes,ok,large side view but a silhouette against the sun
-10419,347.924,underwater,clear,1,0,back,none,none,,"very near whale: fluke spread across the right half, tail stock down to the lower right with a pale flipper-like shape at the bottom; sun disc upper left",0.6,0.15,no,ok,very near fluke and tail but a silhouette against the sun; near hq
-10863,362.749,underwater,clear,1,0,back,none,none,pale blotches upper left (foam / bubbles under the surface),"just under the surface (surface underside across the top); whale head-on with both flippers at the back's horizon, bottom centre",0.2,0.05,no,low,"head-on at the back's horizon, small"
-11308,377.608,underwater,clear,1,0,back,none,none,,just under the surface; very near whale (calf) side view with dorsal fin filling the left half; back textured at the bottom,0.5,0.20,yes,hq,"very near side view with dorsal fin, skin texture lit"
-11752,392.433,air,clear,0,0,back,none,none,water drops and a film streak on the lens,"in air (surfacing near 392-407 s, outside the windows): sky, clouds, tilted sea horizon, splash lower left; dark band at the bottom probably the back (unsure)",,,,,
-12197,407.291,air,clear,0,1,back,none,none,water drops and film on the lens,"in air; dark blurred mass above the horizon centre-left with splash beside it: most likely a water film on the lens (same blur f12140-f12200), possibly a whale's back surfacing: counted faint",,,,,
-12642,422.150,underwater,clear,0,0,back,none,none,,just under the surface; empty,,,,,
-13086,436.975,underwater,clear,0,0,back,none,none,"pale streaks (rising bubbles / particles, motion blurred)",empty,,,,,
-13531,451.833,underwater,clear,0,0,back,none,none,,empty; back textured band at the bottom,,,,,
-13975,466.659,underwater,clear,1,0,back,none,none,2 pale streaks (particles),"whale (calf) at the right: fluke at the top right, tail stock and pale-marked underside running down to the bottom right",0.5,0.10,yes,ok,near but mostly out of frame at right; pale underside marks visible; close call
-14420,481.517,underwater,clear,1,1,back,none,none,pale specks (particles),"very near whale body along the right edge; faint translucent arched shape at the back's horizon bottom centre (x1170 y940): could be a whale's head far beyond the back, counted faint",0.5,0.05,yes,low,very near body but only a sliver at the right edge; close call ok
-14865,496.376,underwater,clear,1,0,back,none,none,,"whale (calf) head/body with pale marks and flipper at the back's horizon, lower right",0.3,0.05,no,ok,head and body with pale marks at the back's horizon
-15309,511.201,underwater,clear,0,0,back,none,none,,empty,,,,,
-15754,526.059,underwater,clear,0,0,back,none,none,,empty,,,,,
-16198,540.885,underwater,clear,0,0,back,none,none,"unsure: 1 faint dark spindle ~50 px right (x1630 y470), no tail seen",empty,,,,,
-16643,555.743,underwater,clear,0,0,back,none,none,,empty,,,,,
-17088,570.602,underwater,clear,0,0,back,none,few,unsure: 1 faint blurred shape upper right (x1710 y90),4 jack-like fish 60-100 px with tails near the top (1 cut by the top edge),,,,,
-17532,585.427,underwater,clear,1,0,back,none,none,,"whale head (tubercles) rising at the back's horizon, lower centre-right",0.1,0.05,no,low,"head only at the back's horizon, small"
-17977,600.285,underwater,clear,1,0,back,none,none,,"whale (calf) side view lying on the back's horizon, lower left, hazy",0.4,0.05,no,ok,"side view on the back's horizon, hazy"
-18421,615.111,underwater,clear,1,1,back,none,none,,"whale head/body with pale patches at the back's horizon, bottom centre; long dark flipper standing up at the lower left (grows over f18330-f18510): counted faint, may be the same calf's flipper or the tagged mother's own raised pectoral fin",0.2,0.05,no,low,"head and body at the back's horizon, small"
-18866,629.969,underwater,clear,1,0,back,none,none,unsure: 2 tiny dark specks,whale (calf) diagonal at the lower left with pale ventral marks,0.3,0.05,no,ok,pale ventral marks but small; close call low
-19311,644.828,underwater,clear,1,0,back,none,few,"unsure: 2-3 more faint spindles 30-50 px near the top, no tail seen","whale head rising at the back's horizon, lower centre; 4 fish 55-80 px upper right (2 overlapping)",0.3,0.05,no,low,dark head rising at the back's horizon
-19755,659.653,underwater,clear,1,0,back,none,none,"unsure: 3 dark spindles 30-50 px near the top, no tail seen","whole whale (calf) from below, head up, fluke down, centre",0.4,0.05,no,ok,"whole whale from below, hazy silhouette"
-20200,674.511,underwater,clear,0,0,back,none,few,unsure: 2 dark spindles 30-40 px upper centre,"1 large hazy fish ~200 px at the right (x1660-1860 y350-510): body with pale stripe and eye, tail faint: borderline",,,,,
-20644,689.337,underwater,clear,0,0,back,none,none,,empty,,,,,
-21089,704.195,underwater,clear,0,0,back,none,none,,empty; 1 speck,,,,,
-21534,719.054,underwater,clear,0,0,back,none,none,"unsure: 5 dark spindles 25-45 px lower right (x1360-1690 y730-1000), no tails seen",empty otherwise,,,,,
-21978,733.879,underwater,clear,0,1,back,none,none,,hazy dark tapered shape hanging from the top edge (x1100-1180 y0-85): whale part (fluke / flipper tip?) not confirmed,,,,,
-22423,748.737,underwater,clear,1,0,back,none,none,,"whale (calf), hazy, diving head down past centre-left",0.3,0.05,no,ok,"whole whale diving, hazy; close call low"
-22867,763.563,underwater,clear,0,0,back,none,none,,empty,,,,,
-23312,778.421,underwater,clear,0,0,back,none,none,,empty,,,,,
-23757,793.280,underwater,clear,0,0,back,none,none,,empty,,,,,
-24201,808.105,underwater,clear,0,0,back,none,none,,empty,,,,,
-24646,822.963,underwater,clear,0,0,back,none,none,,empty,,,,,
-25090,837.788,underwater,clear,0,0,back,none,none,,empty,,,,,
-25535,852.647,underwater,clear,0,0,back,none,none,,empty,,,,,
-25980,867.506,underwater,clear,0,0,back,none,none,,empty,,,,,
-26424,882.331,underwater,clear,0,0,back,none,none,,empty,,,,,
-26869,897.189,underwater,clear,0,0,back,none,none,,empty,,,,,
-27313,912.014,underwater,clear,0,0,back,none,none,,empty,,,,,
-27758,926.873,underwater,clear,0,0,back,none,none,,empty,,,,,
-28203,941.732,underwater,clear,0,0,back,none,none,,empty,,,,,
-28647,956.557,underwater,clear,0,0,back,none,none,,empty; specks near the sun glow,,,,,
-29092,971.415,underwater,clear,0,0,back,none,none,,empty,,,,,
-29536,986.240,underwater,clear,0,0,back,none,none,,empty,,,,,
-29981,1001.099,underwater,clear,0,0,back,none,none,,empty; sun disc at the top,,,,,
-30426,1015.958,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-30870,1030.783,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-31315,1045.641,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-31759,1060.466,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-32204,1075.325,underwater,clear,1,0,back,none,none,,"whale fluke + tail stock rising above the back's horizon, lower left; it shrinks and sinks below the horizon over f32100-f32320 (moves independently: another whale)",0.2,0.05,no,low,dark fluke and tail stock low
-32649,1090.183,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-33093,1105.009,underwater,clear,0,0,back,none,few,,"1 fish ~50 px upper left (x300-356 y104-126), deep body with a tail notch: borderline; sun disc",,,,,
-33538,1119.867,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-33982,1134.692,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-34427,1149.551,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-34872,1164.409,underwater,clear,0,0,back,none,none,,empty; large sun disc (under half),,,,,
-35316,1179.235,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-35761,1194.093,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-36205,1208.918,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-36650,1223.777,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-37095,1238.635,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-37539,1253.461,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-37984,1268.319,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-38428,1283.144,underwater,clear,1,0,back,none,none,,"whale (calf) from below against the sun: tail stock and fluke centre-left, flipper at the top",0.4,0.05,yes,ok,"tail stock and fluke from below, silhouette against the sun"
-38873,1298.003,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-39318,1312.861,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-39762,1327.687,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-40207,1342.545,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-40651,1357.370,underwater,clear,1,0,back,none,none,,"whale from below, head down, flipper extended (knobbed edge), against the sun, upper right",0.5,0.10,yes,ok,"large, knobbed flipper edge visible, but silhouette against the sun; near hq"
-41096,1372.229,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,
-41541,1387.087,underwater,clear,0,0,back,none,none,,empty,,,,,
-41985,1401.913,underwater,clear,0,1,back,none,none,,"dark elongated shape ~110 px on the back's horizon, lower left (x330-450 y1000-1030): far whale or a fold of the back, unsure",,,,,
-42430,1416.771,underwater,clear,0,0,back,none,none,"dark spot on the dome upper left (~x240 y160), fixed",empty,,,,,
-42874,1431.596,underwater,clear,0,0,back,none,none,"dark spot on the dome (~x240 y100), fixed",empty,,,,,
-43319,1446.455,underwater,clear,0,1,back,none,none,"dark spot on the dome (~x240 y110), fixed; 1 speck near the sun","pale lumpy blob ~80 px lower centre-left (x560-660 y880-940): far whale head / flipper or a bubble cloud, unsure",,,,,
-43764,1461.313,underwater,clear,0,0,back,none,none,"dark spot on the dome, fixed",empty,,,,,
-44208,1476.139,underwater,clear,0,0,back,none,none,"dark spot on the dome, fixed",empty,,,,,
-44653,1490.997,underwater,clear,0,0,back,none,none,"dark spot on the dome, fixed",empty (window 2),,,,,
-45097,1505.822,underwater,clear,0,1,back,none,none,"dark spot on the dome, fixed",small dark shape at the back's horizon lower right (x~1280 y1000); in window 2 it grows into the calf's head rising (f45231-f45550),,,,,
-45542,1520.681,underwater,clear,1,0,back,none,none,,"whale head (calf) rising above the back's horizon, lower centre-right; moves up in window 2",0.2,0.05,no,low,dark head rising at the back's horizon
-45987,1535.539,underwater,clear,1,0,back,none,none,,whale head lower right on the back's horizon; sun disc,0.2,0.05,no,low,dark head at the back's horizon
-46431,1550.364,underwater,clear,1,0,back,none,none,,"whale fluke and tail stock from below, near, centre-left; large sun disc (under half)",0.4,0.10,no,ok,near fluke and tail stock but a silhouette against the sun
-46876,1565.223,underwater,bubbles,0,0,none,none,none,,"entry froth 1 frame after entry 1 (event f46875): beige bubbles over most of the frame, dark water lower left; borderline crossing",,,,,
-47320,1580.048,underwater,clear,1,0,back,none,none,,"just under the surface; near whale (calf) body cut by the right edge, lower right (moves over f47220-f47340)",0.2,0.05,yes,low,near body but only a sliver at the right edge
-47765,1594.907,underwater,clear,0,0,back,none,none,,just under the surface; empty,,,,,
-48210,1609.765,air,clear,0,0,back,none,none,water drops on the lens,"in air (exit f48186, entry f48262): sky, sea, splash lower left; dark band at the bottom probably the back (unsure)",,,,,
-48654,1624.590,air,clear,0,0,back,none,none,water drops and a film streak on the lens,"in air (exit f48588, entry f48686): sky, sea; whitewater over a dark surface at the bottom (back, unsure)",,,,,
-49099,1639.449,underwater,clear,0,0,back,none,none,,just under the surface (between surfacings 5 and 6); back textured with light ripples at the bottom,,,,,
-49543,1654.274,underwater,clear,0,0,back,none,none,,empty,,,,,
-49988,1669.133,underwater,clear,1,0,back,none,none,unsure: 1 pale spindle ~30 px centre-left (x870 y750),near whale (calf) head cut by the right edge,0.1,0.05,yes,low,head cut at the right edge
-50433,1683.991,underwater,clear,1,0,back,none,none,,"whale (calf) with pale scars at the bottom right, near",0.3,0.05,yes,ok,"pale scars visible, cut at the right"
-50877,1698.816,underwater,clear,0,1,back,none,none,,"pale curved arc ~30 px on the back's horizon (x590 y1000): possibly a flipper tip beyond the back, unsure",,,,,
-51322,1713.675,underwater,clear,0,0,back,none,none,,empty,,,,,
-51766,1728.500,underwater,clear,0,0,back,none,none,,empty; 2 specks,,,,,
-52211,1743.359,underwater,clear,0,0,back,none,none,,empty,,,,,
-52656,1758.217,underwater,clear,0,0,back,none,none,,empty,,,,,
-53100,1773.042,underwater,clear,0,0,back,none,none,,empty,,,,,
+frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note,silhouette
+193,6.478,underwater,clear,1,0,back,none,none,,"whale (probably the calf) rising vertically from the back's horizon, lower centre, flipper at its left; moves up and away from the horizon over f120-f300 (checked); back = faint band at the bottom",0.2,0.05,no,low,dark whale rising at the back's horizon,no
+637,21.303,underwater,clear,1,0,back,none,none,unsure: 1 dark spindle ~30 px lower left (x350 y890),"whale body + fluke, hazy, right of centre (tail down, seen from below); back faint band",0.2,0.05,no,low,hazy,no
+1082,36.161,underwater,clear,0,0,back,none,none,,"empty blue water, sun glow at the top; back faint band at the bottom",,,,,,
+1527,51.020,underwater,clear,0,0,back,none,none,,empty; tiny pale speck centre (particle),,,,,,
+1971,65.845,underwater,clear,0,0,back,none,none,,empty,,,,,,
+2416,80.704,underwater,clear,0,0,back,none,none,,empty,,,,,,
+2860,95.529,underwater,clear,1,0,back,none,none,,"whale from below heading up toward the sun, cut by the top edge, upper left, flipper visible",0.4,0.05,yes,ok,silhouette from below toward the sun,yes
+3305,110.387,underwater,clear,0,0,back,none,none,,empty,,,,,,
+3750,125.246,underwater,clear,0,0,back,none,none,,empty,,,,,,
+4194,140.071,underwater,clear,0,0,back,none,none,,empty (window 1),,,,,,
+4639,154.930,underwater,clear,0,0,back,none,none,,empty (window 1),,,,,,
+5083,169.755,underwater,clear,0,0,back,none,none,,empty; 1 dark speck near the sun glow (x590 y50),,,,,,
+5528,184.613,underwater,clear,0,0,back,none,none,,empty; 2 pale specks low (particles),,,,,,
+5973,199.472,underwater,clear,0,0,back,none,none,,empty,,,,,,
+6417,214.297,underwater,clear,0,0,back,none,none,,empty,,,,,,
+6862,229.156,underwater,clear,0,0,back,none,none,,empty,,,,,,
+7306,243.981,underwater,clear,0,0,back,none,none,,empty,,,,,,
+7751,258.839,underwater,clear,0,0,back,none,none,,empty,,,,,,
+8196,273.698,underwater,clear,0,0,back,none,none,,empty,,,,,,
+8640,288.523,underwater,clear,0,0,back,none,none,,empty,,,,,,
+9085,303.382,underwater,clear,0,0,back,none,none,,empty,,,,,,
+9529,318.207,underwater,clear,1,0,back,none,none,,"whale head (rostrum with knobs) rising above the back's horizon, lower centre; grows and rises over f9440-f9620 (checked)",0.1,0.05,no,low,"head only at the back's horizon, dark",no
+9974,333.065,underwater,clear,1,0,back,none,none,,"whale (calf) side view with dorsal fin lying along the back's horizon, lower left; sun disc with sparkle upper left (well under half the frame)",0.5,0.10,yes,ok,large side view but a silhouette against the sun,yes
+10419,347.924,underwater,clear,1,0,back,none,none,,"very near whale: fluke spread across the right half, tail stock down to the lower right with a pale flipper-like shape at the bottom; sun disc upper left",0.6,0.15,no,ok,very near fluke and tail but a silhouette against the sun; near hq,yes
+10863,362.749,underwater,clear,1,0,back,none,none,pale blotches upper left (foam / bubbles under the surface),"just under the surface (surface underside across the top); whale head-on with both flippers at the back's horizon, bottom centre",0.2,0.05,no,low,"head-on at the back's horizon, small",no
+11308,377.608,underwater,clear,1,0,back,none,none,,just under the surface; very near whale (calf) side view with dorsal fin filling the left half; back textured at the bottom,0.5,0.20,yes,hq,"very near side view with dorsal fin, skin texture lit",no
+11752,392.433,air,clear,0,0,back,none,none,water drops and a film streak on the lens,"in air (surfacing near 392-407 s, outside the windows): sky, clouds, tilted sea horizon, splash lower left; dark band at the bottom probably the back (unsure)",,,,,,
+12197,407.291,air,clear,0,1,back,none,none,water drops and film on the lens,"in air; dark blurred mass above the horizon centre-left with splash beside it: most likely a water film on the lens (same blur f12140-f12200), possibly a whale's back surfacing: counted faint",,,,,,
+12642,422.150,underwater,clear,0,0,back,none,none,,just under the surface; empty,,,,,,
+13086,436.975,underwater,clear,0,0,back,none,none,"pale streaks (rising bubbles / particles, motion blurred)",empty,,,,,,
+13531,451.833,underwater,clear,0,0,back,none,none,,empty; back textured band at the bottom,,,,,,
+13975,466.659,underwater,clear,1,0,back,none,none,2 pale streaks (particles),"whale (calf) at the right: fluke at the top right, tail stock and pale-marked underside running down to the bottom right",0.5,0.10,yes,ok,near but mostly out of frame at right; pale underside marks visible; close call,no
+14420,481.517,underwater,clear,1,1,back,none,none,pale specks (particles),"very near whale body along the right edge; faint translucent arched shape at the back's horizon bottom centre (x1170 y940): could be a whale's head far beyond the back, counted faint",0.5,0.05,yes,low,very near body but only a sliver at the right edge; close call ok,no
+14865,496.376,underwater,clear,1,0,back,none,none,,"whale (calf) head/body with pale marks and flipper at the back's horizon, lower right",0.3,0.05,no,ok,head and body with pale marks at the back's horizon,no
+15309,511.201,underwater,clear,0,0,back,none,none,,empty,,,,,,
+15754,526.059,underwater,clear,0,0,back,none,none,,empty,,,,,,
+16198,540.885,underwater,clear,0,0,back,none,none,"unsure: 1 faint dark spindle ~50 px right (x1630 y470), no tail seen",empty,,,,,,
+16643,555.743,underwater,clear,0,0,back,none,none,,empty,,,,,,
+17088,570.602,underwater,clear,0,0,back,none,few,unsure: 1 faint blurred shape upper right (x1710 y90),4 jack-like fish 60-100 px with tails near the top (1 cut by the top edge),,,,,,
+17532,585.427,underwater,clear,1,0,back,none,none,,"whale head (tubercles) rising at the back's horizon, lower centre-right",0.1,0.05,no,low,"head only at the back's horizon, small",no
+17977,600.285,underwater,clear,1,0,back,none,none,,"whale (calf) side view lying on the back's horizon, lower left, hazy",0.4,0.05,no,ok,"side view on the back's horizon, hazy",no
+18421,615.111,underwater,clear,1,1,back,none,none,,"whale head/body with pale patches at the back's horizon, bottom centre; long dark flipper standing up at the lower left (grows over f18330-f18510): counted faint, may be the same calf's flipper or the tagged mother's own raised pectoral fin",0.2,0.05,no,low,"head and body at the back's horizon, small",no
+18866,629.969,underwater,clear,1,0,back,none,none,unsure: 2 tiny dark specks,whale (calf) diagonal at the lower left with pale ventral marks,0.3,0.05,no,ok,pale ventral marks but small; close call low,no
+19311,644.828,underwater,clear,1,0,back,none,few,"unsure: 2-3 more faint spindles 30-50 px near the top, no tail seen","whale head rising at the back's horizon, lower centre; 4 fish 55-80 px upper right (2 overlapping)",0.3,0.05,no,low,dark head rising at the back's horizon,no
+19755,659.653,underwater,clear,1,0,back,none,none,"unsure: 3 dark spindles 30-50 px near the top, no tail seen","whole whale (calf) from below, head up, fluke down, centre",0.4,0.05,no,ok,"whole whale from below, hazy silhouette",no
+20200,674.511,underwater,clear,0,0,back,none,few,unsure: 2 dark spindles 30-40 px upper centre,"1 large hazy fish ~200 px at the right (x1660-1860 y350-510): body with pale stripe and eye, tail faint: borderline",,,,,,
+20644,689.337,underwater,clear,0,0,back,none,none,,empty,,,,,,
+21089,704.195,underwater,clear,0,0,back,none,none,,empty; 1 speck,,,,,,
+21534,719.054,underwater,clear,0,0,back,none,none,"unsure: 5 dark spindles 25-45 px lower right (x1360-1690 y730-1000), no tails seen",empty otherwise,,,,,,
+21978,733.879,underwater,clear,0,1,back,none,none,,hazy dark tapered shape hanging from the top edge (x1100-1180 y0-85): whale part (fluke / flipper tip?) not confirmed,,,,,,
+22423,748.737,underwater,clear,1,0,back,none,none,,"whale (calf), hazy, diving head down past centre-left",0.3,0.05,no,ok,"whole whale diving, hazy; close call low",no
+22867,763.563,underwater,clear,0,0,back,none,none,,empty,,,,,,
+23312,778.421,underwater,clear,0,0,back,none,none,,empty,,,,,,
+23757,793.280,underwater,clear,0,0,back,none,none,,empty,,,,,,
+24201,808.105,underwater,clear,0,0,back,none,none,,empty,,,,,,
+24646,822.963,underwater,clear,0,0,back,none,none,,empty,,,,,,
+25090,837.788,underwater,clear,0,0,back,none,none,,empty,,,,,,
+25535,852.647,underwater,clear,0,0,back,none,none,,empty,,,,,,
+25980,867.506,underwater,clear,0,0,back,none,none,,empty,,,,,,
+26424,882.331,underwater,clear,0,0,back,none,none,,empty,,,,,,
+26869,897.189,underwater,clear,0,0,back,none,none,,empty,,,,,,
+27313,912.014,underwater,clear,0,0,back,none,none,,empty,,,,,,
+27758,926.873,underwater,clear,0,0,back,none,none,,empty,,,,,,
+28203,941.732,underwater,clear,0,0,back,none,none,,empty,,,,,,
+28647,956.557,underwater,clear,0,0,back,none,none,,empty; specks near the sun glow,,,,,,
+29092,971.415,underwater,clear,0,0,back,none,none,,empty,,,,,,
+29536,986.240,underwater,clear,0,0,back,none,none,,empty,,,,,,
+29981,1001.099,underwater,clear,0,0,back,none,none,,empty; sun disc at the top,,,,,,
+30426,1015.958,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+30870,1030.783,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+31315,1045.641,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+31759,1060.466,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+32204,1075.325,underwater,clear,1,0,back,none,none,,"whale fluke + tail stock rising above the back's horizon, lower left; it shrinks and sinks below the horizon over f32100-f32320 (moves independently: another whale)",0.2,0.05,no,low,dark fluke and tail stock low,no
+32649,1090.183,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+33093,1105.009,underwater,clear,0,0,back,none,few,,"1 fish ~50 px upper left (x300-356 y104-126), deep body with a tail notch: borderline; sun disc",,,,,,
+33538,1119.867,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+33982,1134.692,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+34427,1149.551,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+34872,1164.409,underwater,clear,0,0,back,none,none,,empty; large sun disc (under half),,,,,,
+35316,1179.235,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+35761,1194.093,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+36205,1208.918,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+36650,1223.777,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+37095,1238.635,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+37539,1253.461,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+37984,1268.319,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+38428,1283.144,underwater,clear,1,0,back,none,none,,"whale (calf) from below against the sun: tail stock and fluke centre-left, flipper at the top",0.4,0.05,yes,ok,"tail stock and fluke from below, silhouette against the sun",yes
+38873,1298.003,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+39318,1312.861,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+39762,1327.687,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+40207,1342.545,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+40651,1357.370,underwater,clear,1,0,back,none,none,,"whale from below, head down, flipper extended (knobbed edge), against the sun, upper right",0.5,0.10,yes,ok,"large, knobbed flipper edge visible, but silhouette against the sun; near hq",yes
+41096,1372.229,underwater,clear,0,0,back,none,none,,empty; sun disc,,,,,,
+41541,1387.087,underwater,clear,0,0,back,none,none,,empty,,,,,,
+41985,1401.913,underwater,clear,0,1,back,none,none,,"dark elongated shape ~110 px on the back's horizon, lower left (x330-450 y1000-1030): far whale or a fold of the back, unsure",,,,,,
+42430,1416.771,underwater,clear,0,0,back,none,none,"dark spot on the dome upper left (~x240 y160), fixed",empty,,,,,,
+42874,1431.596,underwater,clear,0,0,back,none,none,"dark spot on the dome (~x240 y100), fixed",empty,,,,,,
+43319,1446.455,underwater,clear,0,1,back,none,none,"dark spot on the dome (~x240 y110), fixed; 1 speck near the sun","pale lumpy blob ~80 px lower centre-left (x560-660 y880-940): far whale head / flipper or a bubble cloud, unsure",,,,,,
+43764,1461.313,underwater,clear,0,0,back,none,none,"dark spot on the dome, fixed",empty,,,,,,
+44208,1476.139,underwater,clear,0,0,back,none,none,"dark spot on the dome, fixed",empty,,,,,,
+44653,1490.997,underwater,clear,0,0,back,none,none,"dark spot on the dome, fixed",empty (window 2),,,,,,
+45097,1505.822,underwater,clear,0,1,back,none,none,"dark spot on the dome, fixed",small dark shape at the back's horizon lower right (x~1280 y1000); in window 2 it grows into the calf's head rising (f45231-f45550),,,,,,
+45542,1520.681,underwater,clear,1,0,back,none,none,,"whale head (calf) rising above the back's horizon, lower centre-right; moves up in window 2",0.2,0.05,no,low,dark head rising at the back's horizon,no
+45987,1535.539,underwater,clear,1,0,back,none,none,,whale head lower right on the back's horizon; sun disc,0.2,0.05,no,low,dark head at the back's horizon,no
+46431,1550.364,underwater,clear,1,0,back,none,none,,"whale fluke and tail stock from below, near, centre-left; large sun disc (under half)",0.4,0.10,no,ok,near fluke and tail stock but a silhouette against the sun,yes
+46876,1565.223,underwater,bubbles,0,0,none,none,none,,"entry froth 1 frame after entry 1 (event f46875): beige bubbles over most of the frame, dark water lower left; borderline crossing",,,,,,
+47320,1580.048,underwater,clear,1,0,back,none,none,,"just under the surface; near whale (calf) body cut by the right edge, lower right (moves over f47220-f47340)",0.2,0.05,yes,low,near body but only a sliver at the right edge,no
+47765,1594.907,underwater,clear,0,0,back,none,none,,just under the surface; empty,,,,,,
+48210,1609.765,air,clear,0,0,back,none,none,water drops on the lens,"in air (exit f48186, entry f48262): sky, sea, splash lower left; dark band at the bottom probably the back (unsure)",,,,,,
+48654,1624.590,air,clear,0,0,back,none,none,water drops and a film streak on the lens,"in air (exit f48588, entry f48686): sky, sea; whitewater over a dark surface at the bottom (back, unsure)",,,,,,
+49099,1639.449,underwater,clear,0,0,back,none,none,,just under the surface (between surfacings 5 and 6); back textured with light ripples at the bottom,,,,,,
+49543,1654.274,underwater,clear,0,0,back,none,none,,empty,,,,,,
+49988,1669.133,underwater,clear,1,0,back,none,none,unsure: 1 pale spindle ~30 px centre-left (x870 y750),near whale (calf) head cut by the right edge,0.1,0.05,yes,low,head cut at the right edge,no
+50433,1683.991,underwater,clear,1,0,back,none,none,,"whale (calf) with pale scars at the bottom right, near",0.3,0.05,yes,ok,"pale scars visible, cut at the right",no
+50877,1698.816,underwater,clear,0,1,back,none,none,,"pale curved arc ~30 px on the back's horizon (x590 y1000): possibly a flipper tip beyond the back, unsure",,,,,,
+51322,1713.675,underwater,clear,0,0,back,none,none,,empty,,,,,,
+51766,1728.500,underwater,clear,0,0,back,none,none,,empty; 2 specks,,,,,,
+52211,1743.359,underwater,clear,0,0,back,none,none,,empty,,,,,,
+52656,1758.217,underwater,clear,0,0,back,none,none,,empty,,,,,,
+53100,1773.042,underwater,clear,0,0,back,none,none,,empty,,,,,,

@@ -1,0 +1,9 @@
+idx,a,b,t_end,gap_s,breath,limit_s,others,detector,lone,size_ratio,app_dist,checks_ok,made,why
+1,1,2,58.02,0.23,False,8.0,[],"{""before"": 0, ""during"": 0, ""after"": 0}",True,1.13,0.11,True,True,linked
+2,1,2,343.14,0.1,False,8.0,[],"{""before"": 0, ""during"": 0, ""after"": 0}",True,1.1,0.139,True,True,linked
+8,1,2,115.27,0.97,True,12.0,[],"{""before"": 0, ""during"": 0, ""after"": 1}",True,1.16,0.075,True,True,linked
+11,1,4,458.51,0.4,False,8.0,[3],"{""before"": 0, ""during"": 0, ""after"": 0}",False,1.61,0.024,False,False,not lone
+11,3,6,461.28,1.13,False,8.0,[4],"{""before"": 0, ""during"": 0, ""after"": 0}",False,1.63,0.189,True,False,not lone
+11,6,13,462.85,4.57,False,8.0,[4],"{""before"": 0, ""during"": 0, ""after"": 0}",False,2.99,0.409,False,False,not lone
+11,4,13,467.05,0.37,False,8.0,[],"{""before"": 0, ""during"": 0, ""after"": 0}",True,1.15,0.275,True,True,linked
+11,13,15,467.58,0.33,False,8.0,[],"{""before"": 0, ""during"": 0, ""after"": 0}",True,1.05,0.252,True,True,linked

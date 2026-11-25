@@ -1,0 +1,1360 @@
+{
+ "d1": {
+  "sensitive+noclf+guard9": {
+   "kept_min": 86.5,
+   "n_clips": 161,
+   "median_clip_s": 19.0,
+   "longest_clip_s": 258.0,
+   "clips_under_10s": 48,
+   "quiet_s_in_clips": 1123,
+   "clips_by_tier": {
+    "hq": 89,
+    "ok": 37,
+    "small": 23,
+    "low": 10,
+    "fish": 2
+   },
+   "advanced_ok_clips": 89,
+   "hq_span_s": 758.3,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 11963,
+    "ok": 1545,
+    "small": 1003,
+    "low": 734,
+    "hq": 723,
+    "fish": 67
+   },
+   "whale_windows": 3002,
+   "hq_windows": 723,
+   "hq_windows_under_1m": 53,
+   "active_windows": 4072,
+   "vetoed_other_only_windows": 0,
+   "veto_fish_windows": 0,
+   "veto_other_windows": 0,
+   "dark_windows": 0,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 3,
+   "sand_windows_kept": 0,
+   "sand_windows_hq": 0,
+   "breath_other_boxes_window_tier": {
+    "hq": 24,
+    "ok": 2
+   },
+   "timings": {
+    "sensors_s": 0.7213377952575684,
+    "water_picture_wall_s": 0.03174614906311035
+   }
+  },
+  "sensitive+guard9": {
+   "kept_min": 84.1,
+   "n_clips": 155,
+   "median_clip_s": 20.0,
+   "longest_clip_s": 258.0,
+   "clips_under_10s": 44,
+   "quiet_s_in_clips": 1038,
+   "clips_by_tier": {
+    "hq": 68,
+    "small": 39,
+    "ok": 37,
+    "low": 6,
+    "fish": 5
+   },
+   "advanced_ok_clips": 68,
+   "hq_span_s": 675.3,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 12022,
+    "ok": 1538,
+    "small": 1031,
+    "low": 712,
+    "hq": 647,
+    "fish": 85
+   },
+   "whale_windows": 2897,
+   "hq_windows": 647,
+   "hq_windows_under_1m": 27,
+   "active_windows": 4013,
+   "vetoed_other_only_windows": 78,
+   "veto_fish_windows": 43,
+   "veto_other_windows": 160,
+   "dark_windows": 0,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 3,
+   "sand_windows_kept": 0,
+   "sand_windows_hq": 0,
+   "breath_other_boxes_window_tier": {
+    "none": 21,
+    "small": 3,
+    "hq": 1,
+    "fish": 1
+   },
+   "timings": {
+    "sensors_s": 0.7471187114715576,
+    "water_picture_wall_s": 0.026021718978881836
+   }
+  },
+  "sensitive+noclf": {
+   "kept_min": 99.7,
+   "n_clips": 94,
+   "median_clip_s": 24.5,
+   "longest_clip_s": 607.0,
+   "clips_under_10s": 18,
+   "quiet_s_in_clips": 1911,
+   "clips_by_tier": {
+    "hq": 54,
+    "ok": 24,
+    "small": 12,
+    "low": 3,
+    "fish": 1
+   },
+   "advanced_ok_clips": 54,
+   "hq_span_s": 758.3,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 11963,
+    "ok": 1545,
+    "small": 1003,
+    "low": 734,
+    "hq": 723,
+    "fish": 67
+   },
+   "whale_windows": 3002,
+   "hq_windows": 723,
+   "hq_windows_under_1m": 53,
+   "active_windows": 4072,
+   "vetoed_other_only_windows": 0,
+   "veto_fish_windows": 0,
+   "veto_other_windows": 0,
+   "dark_windows": 0,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 3,
+   "sand_windows_kept": 0,
+   "sand_windows_hq": 0,
+   "breath_other_boxes_window_tier": {
+    "hq": 24,
+    "ok": 2
+   },
+   "timings": {
+    "sensors_s": 0.788752555847168,
+    "water_picture_wall_s": 0.029191255569458008
+   }
+  },
+  "sensitive": {
+   "kept_min": 94.3,
+   "n_clips": 100,
+   "median_clip_s": 23.0,
+   "longest_clip_s": 607.0,
+   "clips_under_10s": 19,
+   "quiet_s_in_clips": 1646,
+   "clips_by_tier": {
+    "hq": 52,
+    "ok": 26,
+    "small": 17,
+    "fish": 3,
+    "low": 2
+   },
+   "advanced_ok_clips": 52,
+   "hq_span_s": 675.3,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 12022,
+    "ok": 1538,
+    "small": 1031,
+    "low": 712,
+    "hq": 647,
+    "fish": 85
+   },
+   "whale_windows": 2897,
+   "hq_windows": 647,
+   "hq_windows_under_1m": 27,
+   "active_windows": 4013,
+   "vetoed_other_only_windows": 78,
+   "veto_fish_windows": 43,
+   "veto_other_windows": 160,
+   "dark_windows": 0,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 3,
+   "sand_windows_kept": 0,
+   "sand_windows_hq": 0,
+   "breath_other_boxes_window_tier": {
+    "none": 21,
+    "small": 3,
+    "hq": 1,
+    "fish": 1
+   },
+   "timings": {
+    "sensors_s": 0.6006209850311279,
+    "water_picture_wall_s": 0.0199124813079834
+   }
+  },
+  "strict": {
+   "kept_min": 83.2,
+   "n_clips": 93,
+   "median_clip_s": 26.0,
+   "longest_clip_s": 286.0,
+   "clips_under_10s": 11,
+   "quiet_s_in_clips": 1371,
+   "clips_by_tier": {
+    "hq": 57,
+    "ok": 26,
+    "small": 8,
+    "fish": 1,
+    "low": 1
+   },
+   "advanced_ok_clips": 57,
+   "hq_span_s": 664.3,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 12114,
+    "ok": 1466,
+    "small": 1207,
+    "hq": 635,
+    "low": 520,
+    "fish": 93
+   },
+   "whale_windows": 2621,
+   "hq_windows": 635,
+   "hq_windows_under_1m": 18,
+   "active_windows": 3623,
+   "vetoed_other_only_windows": 112,
+   "veto_fish_windows": 43,
+   "veto_other_windows": 160,
+   "dark_windows": 0,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 3,
+   "sand_windows_kept": 0,
+   "sand_windows_hq": 0,
+   "breath_other_boxes_window_tier": {
+    "none": 21,
+    "small": 3,
+    "hq": 1,
+    "fish": 1
+   },
+   "timings": {
+    "sensors_s": 0.553117036819458,
+    "water_picture_wall_s": 0.017840862274169922
+   }
+  },
+  "veto_effect_default": {
+   "made_inactive_windows": 59,
+   "still_inside_a_clip": 42,
+   "no_longer_kept": 17,
+   "flag_vetoed_other_only": 78,
+   "no_longer_kept_list": [
+    {
+     "key": "CC-11-96-20250203-104242-000-00005.mov",
+     "k": 1589,
+     "clock": "11:09:13.1"
+    },
+    {
+     "key": "CC-11-96-20250203-104242-000-00005.mov",
+     "k": 1612,
+     "clock": "11:09:36.1"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1732,
+     "clock": "12:11:50.2"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1736,
+     "clock": "12:11:54.2"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 150,
+     "clock": "12:15:34.1"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 1239,
+     "clock": "12:33:43.1"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 1289,
+     "clock": "12:34:33.1"
+    },
+    {
+     "key": "CC-11-96-20250203-124310-000-00009.mov",
+     "k": 140,
+     "clock": "12:45:31.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 329,
+     "clock": "13:18:46.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 356,
+     "clock": "13:19:13.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 357,
+     "clock": "13:19:14.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 376,
+     "clock": "13:19:33.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 1566,
+     "clock": "13:39:23.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 1625,
+     "clock": "13:40:22.1"
+    },
+    {
+     "key": "CC-11-96-20250203-134322-000-00011.mov",
+     "k": 1123,
+     "clock": "14:02:07.2"
+    },
+    {
+     "key": "CC-11-96-20250203-134322-000-00011.mov",
+     "k": 1702,
+     "clock": "14:11:46.2"
+    },
+    {
+     "key": "CC-11-96-20250203-141328-000-00012.mov",
+     "k": 598,
+     "clock": "14:23:28.2"
+    }
+   ]
+  },
+  "veto_effect_guard9": {
+   "made_inactive_windows": 59,
+   "still_inside_a_clip": 35,
+   "no_longer_kept": 24,
+   "flag_vetoed_other_only": 78,
+   "no_longer_kept_list": [
+    {
+     "key": "CC-11-96-20250203-104242-000-00005.mov",
+     "k": 1589,
+     "clock": "11:09:13.1"
+    },
+    {
+     "key": "CC-11-96-20250203-104242-000-00005.mov",
+     "k": 1612,
+     "clock": "11:09:36.1"
+    },
+    {
+     "key": "CC-11-96-20250203-111250-000-00006.mov",
+     "k": 297,
+     "clock": "11:17:48.1"
+    },
+    {
+     "key": "CC-11-96-20250203-111250-000-00006.mov",
+     "k": 1528,
+     "clock": "11:38:19.1"
+    },
+    {
+     "key": "CC-11-96-20250203-111250-000-00006.mov",
+     "k": 1531,
+     "clock": "11:38:22.1"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1424,
+     "clock": "12:06:42.2"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1479,
+     "clock": "12:07:37.2"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1702,
+     "clock": "12:11:20.2"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1732,
+     "clock": "12:11:50.2"
+    },
+    {
+     "key": "CC-11-96-20250203-114256-000-00007.mov",
+     "k": 1736,
+     "clock": "12:11:54.2"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 150,
+     "clock": "12:15:34.1"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 1239,
+     "clock": "12:33:43.1"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 1289,
+     "clock": "12:34:33.1"
+    },
+    {
+     "key": "CC-11-96-20250203-121302-000-00008.mov",
+     "k": 1546,
+     "clock": "12:38:50.1"
+    },
+    {
+     "key": "CC-11-96-20250203-124310-000-00009.mov",
+     "k": 140,
+     "clock": "12:45:31.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 329,
+     "clock": "13:18:46.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 356,
+     "clock": "13:19:13.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 357,
+     "clock": "13:19:14.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 376,
+     "clock": "13:19:33.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 1566,
+     "clock": "13:39:23.1"
+    },
+    {
+     "key": "CC-11-96-20250203-131316-000-00010.mov",
+     "k": 1625,
+     "clock": "13:40:22.1"
+    },
+    {
+     "key": "CC-11-96-20250203-134322-000-00011.mov",
+     "k": 1123,
+     "clock": "14:02:07.2"
+    },
+    {
+     "key": "CC-11-96-20250203-134322-000-00011.mov",
+     "k": 1702,
+     "clock": "14:11:46.2"
+    },
+    {
+     "key": "CC-11-96-20250203-141328-000-00012.mov",
+     "k": 598,
+     "clock": "14:23:28.2"
+    }
+   ]
+  }
+ },
+ "d2": {
+  "sensitive+noclf+guard9": {
+   "kept_min": 16.6,
+   "n_clips": 61,
+   "median_clip_s": 10.0,
+   "longest_clip_s": 89.0,
+   "clips_under_10s": 29,
+   "quiet_s_in_clips": 479,
+   "clips_by_tier": {
+    "hq": 33,
+    "ok": 15,
+    "small": 11,
+    "low": 2
+   },
+   "advanced_ok_clips": 32,
+   "hq_span_s": 188.0,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 7935,
+    "hq": 174,
+    "ok": 170,
+    "small": 125,
+    "low": 45,
+    "fish": 5
+   },
+   "whale_windows": 389,
+   "hq_windows": 174,
+   "hq_windows_under_1m": 71,
+   "active_windows": 519,
+   "vetoed_other_only_windows": 0,
+   "veto_fish_windows": 0,
+   "veto_other_windows": 0,
+   "dark_windows": 208,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 242,
+   "sand_windows_kept": 17,
+   "sand_windows_hq": 1,
+   "extra_fish_boxes_window_tier": {
+    "low": 12,
+    "ok": 9,
+    "hq": 3
+   },
+   "breath_other_boxes_window_tier": {
+    "hq": 22,
+    "ok": 21
+   },
+   "timings": {
+    "sensors_s": 0.7154600620269775,
+    "water_picture_wall_s": 0.023436307907104492
+   }
+  },
+  "sensitive+guard9": {
+   "kept_min": 13.0,
+   "n_clips": 46,
+   "median_clip_s": 10.5,
+   "longest_clip_s": 75.0,
+   "clips_under_10s": 21,
+   "quiet_s_in_clips": 332,
+   "clips_by_tier": {
+    "small": 25,
+    "ok": 10,
+    "hq": 10,
+    "fish": 1
+   },
+   "advanced_ok_clips": 10,
+   "hq_span_s": 147.0,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 8006,
+    "small": 159,
+    "hq": 132,
+    "ok": 100,
+    "fish": 41,
+    "low": 16
+   },
+   "whale_windows": 248,
+   "hq_windows": 132,
+   "hq_windows_under_1m": 41,
+   "active_windows": 448,
+   "vetoed_other_only_windows": 71,
+   "veto_fish_windows": 65,
+   "veto_other_windows": 90,
+   "dark_windows": 208,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 242,
+   "sand_windows_kept": 11,
+   "sand_windows_hq": 0,
+   "extra_fish_boxes_window_tier": {
+    "fish": 18,
+    "small": 6
+   },
+   "breath_other_boxes_window_tier": {
+    "none": 42,
+    "small": 1
+   },
+   "timings": {
+    "sensors_s": 0.7417926788330078,
+    "water_picture_wall_s": 0.018877506256103516
+   }
+  },
+  "sensitive+noclf": {
+   "kept_min": 23.1,
+   "n_clips": 35,
+   "median_clip_s": 12.0,
+   "longest_clip_s": 225.0,
+   "clips_under_10s": 16,
+   "quiet_s_in_clips": 867,
+   "clips_by_tier": {
+    "hq": 23,
+    "ok": 8,
+    "small": 3,
+    "low": 1
+   },
+   "advanced_ok_clips": 22,
+   "hq_span_s": 188.0,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 7935,
+    "hq": 174,
+    "ok": 170,
+    "small": 125,
+    "low": 45,
+    "fish": 5
+   },
+   "whale_windows": 389,
+   "hq_windows": 174,
+   "hq_windows_under_1m": 71,
+   "active_windows": 519,
+   "vetoed_other_only_windows": 0,
+   "veto_fish_windows": 0,
+   "veto_other_windows": 0,
+   "dark_windows": 208,
+   "dark_windows_kept": 12,
+   "dark_windows_hq": 0,
+   "sand_windows": 242,
+   "sand_windows_kept": 45,
+   "sand_windows_hq": 1,
+   "extra_fish_boxes_window_tier": {
+    "low": 12,
+    "ok": 9,
+    "hq": 3
+   },
+   "breath_other_boxes_window_tier": {
+    "hq": 22,
+    "ok": 21
+   },
+   "timings": {
+    "sensors_s": 0.6507010459899902,
+    "water_picture_wall_s": 0.023122549057006836
+   }
+  },
+  "sensitive": {
+   "kept_min": 17.6,
+   "n_clips": 27,
+   "median_clip_s": 20.0,
+   "longest_clip_s": 149.0,
+   "clips_under_10s": 8,
+   "quiet_s_in_clips": 609,
+   "clips_by_tier": {
+    "small": 10,
+    "ok": 9,
+    "hq": 8
+   },
+   "advanced_ok_clips": 8,
+   "hq_span_s": 147.0,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 8006,
+    "small": 159,
+    "hq": 132,
+    "ok": 100,
+    "fish": 41,
+    "low": 16
+   },
+   "whale_windows": 248,
+   "hq_windows": 132,
+   "hq_windows_under_1m": 41,
+   "active_windows": 448,
+   "vetoed_other_only_windows": 71,
+   "veto_fish_windows": 65,
+   "veto_other_windows": 90,
+   "dark_windows": 208,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 242,
+   "sand_windows_kept": 31,
+   "sand_windows_hq": 0,
+   "extra_fish_boxes_window_tier": {
+    "fish": 18,
+    "small": 6
+   },
+   "breath_other_boxes_window_tier": {
+    "none": 42,
+    "small": 1
+   },
+   "timings": {
+    "sensors_s": 0.5953292846679688,
+    "water_picture_wall_s": 0.01422572135925293
+   }
+  },
+  "strict": {
+   "kept_min": 11.5,
+   "n_clips": 22,
+   "median_clip_s": 15.5,
+   "longest_clip_s": 118.0,
+   "clips_under_10s": 8,
+   "quiet_s_in_clips": 375,
+   "clips_by_tier": {
+    "hq": 8,
+    "small": 7,
+    "ok": 6,
+    "fish": 1
+   },
+   "advanced_ok_clips": 8,
+   "hq_span_s": 130.0,
+   "continuing_marks": 0,
+   "window_tiers": {
+    "none": 8049,
+    "small": 165,
+    "hq": 114,
+    "ok": 73,
+    "fish": 41,
+    "low": 12
+   },
+   "whale_windows": 199,
+   "hq_windows": 114,
+   "hq_windows_under_1m": 28,
+   "active_windows": 316,
+   "vetoed_other_only_windows": 81,
+   "veto_fish_windows": 65,
+   "veto_other_windows": 90,
+   "dark_windows": 208,
+   "dark_windows_kept": 0,
+   "dark_windows_hq": 0,
+   "sand_windows": 242,
+   "sand_windows_kept": 0,
+   "sand_windows_hq": 0,
+   "extra_fish_boxes_window_tier": {
+    "fish": 18,
+    "small": 6
+   },
+   "breath_other_boxes_window_tier": {
+    "none": 42,
+    "small": 1
+   },
+   "timings": {
+    "sensors_s": 0.5502862930297852,
+    "water_picture_wall_s": 0.01606154441833496
+   }
+  },
+  "veto_effect_default": {
+   "made_inactive_windows": 71,
+   "still_inside_a_clip": 10,
+   "no_longer_kept": 61,
+   "flag_vetoed_other_only": 71,
+   "no_longer_kept_list": [
+    {
+     "key": "CC-09-85-HRA-20250102-122956-000-00010.mov",
+     "k": 248,
+     "clock": "12:34:03.7"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-122956-000-00010.mov",
+     "k": 249,
+     "clock": "12:34:04.7"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 454,
+     "clock": "12:50:17.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 455,
+     "clock": "12:50:18.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 501,
+     "clock": "12:51:04.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 502,
+     "clock": "12:51:05.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 503,
+     "clock": "12:51:06.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 998,
+     "clock": "12:59:21.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 999,
+     "clock": "12:59:22.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 1056,
+     "clock": "13:00:19.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 1057,
+     "clock": "13:00:20.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-130824-000-00012.mov",
+     "k": 76,
+     "clock": "13:09:40.2"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-130824-000-00012.mov",
+     "k": 77,
+     "clock": "13:09:41.2"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 37,
+     "clock": "14:13:40.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 38,
+     "clock": "14:13:41.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 141,
+     "clock": "14:15:24.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 142,
+     "clock": "14:15:25.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 143,
+     "clock": "14:15:26.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 178,
+     "clock": "14:16:01.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 179,
+     "clock": "14:16:02.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 180,
+     "clock": "14:16:03.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 181,
+     "clock": "14:16:04.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 182,
+     "clock": "14:16:05.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 183,
+     "clock": "14:16:06.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 225,
+     "clock": "14:16:48.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 226,
+     "clock": "14:16:49.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 227,
+     "clock": "14:16:50.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 510,
+     "clock": "14:21:33.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 1323,
+     "clock": "14:35:06.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 431,
+     "clock": "15:50:33.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 437,
+     "clock": "15:50:39.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 440,
+     "clock": "15:50:42.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 441,
+     "clock": "15:50:43.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 861,
+     "clock": "15:57:43.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1029,
+     "clock": "16:00:31.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1038,
+     "clock": "16:00:40.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1041,
+     "clock": "16:00:43.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1045,
+     "clock": "16:00:47.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1097,
+     "clock": "16:01:39.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1127,
+     "clock": "16:02:09.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1128,
+     "clock": "16:02:10.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 138,
+     "clock": "16:08:22.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 143,
+     "clock": "16:08:27.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 144,
+     "clock": "16:08:28.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 145,
+     "clock": "16:08:29.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 147,
+     "clock": "16:08:31.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 148,
+     "clock": "16:08:32.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 155,
+     "clock": "16:08:39.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 156,
+     "clock": "16:08:40.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 161,
+     "clock": "16:08:45.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 176,
+     "clock": "16:09:00.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 181,
+     "clock": "16:09:05.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 183,
+     "clock": "16:09:07.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 201,
+     "clock": "16:09:25.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 204,
+     "clock": "16:09:28.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 206,
+     "clock": "16:09:30.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 214,
+     "clock": "16:09:38.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 218,
+     "clock": "16:09:42.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 232,
+     "clock": "16:09:56.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 237,
+     "clock": "16:10:01.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 238,
+     "clock": "16:10:02.6"
+    }
+   ]
+  },
+  "veto_effect_guard9": {
+   "made_inactive_windows": 71,
+   "still_inside_a_clip": 7,
+   "no_longer_kept": 64,
+   "flag_vetoed_other_only": 71,
+   "no_longer_kept_list": [
+    {
+     "key": "CC-09-85-HRA-20250102-122956-000-00010.mov",
+     "k": 248,
+     "clock": "12:34:03.7"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-122956-000-00010.mov",
+     "k": 249,
+     "clock": "12:34:04.7"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-122956-000-00010.mov",
+     "k": 404,
+     "clock": "12:36:39.7"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-122956-000-00010.mov",
+     "k": 405,
+     "clock": "12:36:40.7"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 454,
+     "clock": "12:50:17.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 455,
+     "clock": "12:50:18.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 501,
+     "clock": "12:51:04.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 502,
+     "clock": "12:51:05.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 503,
+     "clock": "12:51:06.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 998,
+     "clock": "12:59:21.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 999,
+     "clock": "12:59:22.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 1056,
+     "clock": "13:00:19.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-124244-000-00011.mov",
+     "k": 1057,
+     "clock": "13:00:20.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-130824-000-00012.mov",
+     "k": 76,
+     "clock": "13:09:40.2"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-130824-000-00012.mov",
+     "k": 77,
+     "clock": "13:09:41.2"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 37,
+     "clock": "14:13:40.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 38,
+     "clock": "14:13:41.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 141,
+     "clock": "14:15:24.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 142,
+     "clock": "14:15:25.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 143,
+     "clock": "14:15:26.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 178,
+     "clock": "14:16:01.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 179,
+     "clock": "14:16:02.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 180,
+     "clock": "14:16:03.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 181,
+     "clock": "14:16:04.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 182,
+     "clock": "14:16:05.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 183,
+     "clock": "14:16:06.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 225,
+     "clock": "14:16:48.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 226,
+     "clock": "14:16:49.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 227,
+     "clock": "14:16:50.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 510,
+     "clock": "14:21:33.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-141304-000-00017.mov",
+     "k": 1323,
+     "clock": "14:35:06.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 431,
+     "clock": "15:50:33.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 437,
+     "clock": "15:50:39.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 440,
+     "clock": "15:50:42.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 441,
+     "clock": "15:50:43.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 473,
+     "clock": "15:51:15.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 861,
+     "clock": "15:57:43.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1029,
+     "clock": "16:00:31.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1038,
+     "clock": "16:00:40.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1041,
+     "clock": "16:00:43.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1045,
+     "clock": "16:00:47.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1097,
+     "clock": "16:01:39.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1127,
+     "clock": "16:02:09.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-154322-000-00023.mov",
+     "k": 1128,
+     "clock": "16:02:10.5"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 138,
+     "clock": "16:08:22.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 143,
+     "clock": "16:08:27.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 144,
+     "clock": "16:08:28.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 145,
+     "clock": "16:08:29.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 147,
+     "clock": "16:08:31.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 148,
+     "clock": "16:08:32.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 155,
+     "clock": "16:08:39.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 156,
+     "clock": "16:08:40.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 161,
+     "clock": "16:08:45.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 176,
+     "clock": "16:09:00.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 181,
+     "clock": "16:09:05.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 183,
+     "clock": "16:09:07.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 201,
+     "clock": "16:09:25.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 204,
+     "clock": "16:09:28.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 206,
+     "clock": "16:09:30.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 214,
+     "clock": "16:09:38.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 218,
+     "clock": "16:09:42.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 232,
+     "clock": "16:09:56.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 237,
+     "clock": "16:10:01.6"
+    },
+    {
+     "key": "CC-09-85-HRA-20250102-160604-000-00024.mov",
+     "k": 238,
+     "clock": "16:10:02.6"
+    }
+   ]
+  }
+ }
+}

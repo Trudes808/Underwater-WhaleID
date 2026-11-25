@@ -152,7 +152,7 @@ class LabelFolder:
         if p.is_dir():
             out = {}
             for f in frames:
-                for sub in ("", "sample", "frames"):
+                for sub in ("", "sample", "frames", "maskframes"):
                     jp = p / sub / f"{f:06d}.jpg"
                     if jp.exists():
                         out[f] = cv2.cvtColor(cv2.imread(str(jp)), cv2.COLOR_BGR2RGB); break
@@ -411,3 +411,196 @@ def whale_presence_scores(frame_probs: torch.Tensor, center: int | None = None, 
 
 def colorize(labels: np.ndarray) -> np.ndarray:
     return COLORS[np.clip(labels, 0, len(COLORS) - 1)]
+
+
+# ------------------------------------------------------------------------------------------------------------------
+# seafloor, sand and dark per 1 s window (WP10, experiments/09_seafloor_sand)
+# ------------------------------------------------------------------------------------------------------------------
+
+SEAFLOOR_DIR = CACHE.parent / "seafloor"
+SEAFLOOR_CLF = SEAFLOOR_DIR / "heads" / "head_all.pt"     # patch classifier with a seafloor class (all sources)
+SAND_CLF = SEAFLOOR_DIR / "sand_all.npz"                  # frame-level sand model (2025-01-02 00017 only)
+# Window rules; the values are written by experiments/09_seafloor_sand (see its tables.md for what they rest on).
+WINDOW_RULES = {"seafloor_share": 0.15, "dark_grey": 20.0, "sand_p": 0.5}
+
+
+def brightness_stats(image: np.ndarray) -> dict:
+    """Mean, 95th percentile and spread of the grey level (0-255) on a 320 px wide copy."""
+    import cv2
+    h, w = image.shape[:2]
+    g = cv2.cvtColor(cv2.resize(image, (320, max(1, int(round(h * 320 / w)))), interpolation=cv2.INTER_AREA),
+                     cv2.COLOR_RGB2GRAY).astype(np.float32)
+    return {"grey_mean": float(g.mean()), "grey_p95": float(np.percentile(g, 95)), "grey_std": float(g.std())}
+
+
+def frame_embedding(feats: torch.Tensor) -> np.ndarray:
+    """(h, w, C) patch features -> (5 C,): mean over the frame and over its four quarters."""
+    f = feats.float()
+    h, w = f.shape[:2]
+    parts = [f.mean((0, 1))] + [f[a:b, c:d].mean((0, 1)) for a, b in ((0, h // 2), (h // 2, h))
+                                for c, d in ((0, w // 2), (w // 2, w))]
+    return torch.cat(parts).cpu().numpy()
+
+
+@torch.no_grad()
+def frame_classes(model, images: list[np.ndarray], heads: dict[str, PatchClassifier], width: int = 1280) -> list[dict]:
+    """Per frame: ``maps[name]`` = argmax class per patch (h, w) uint8 for each head, ``probs[name]`` = mean class
+    probabilities over the frame (K,), ``emb`` = :func:`frame_embedding`, and :func:`brightness_stats`."""
+    feats = extract(model, images, width)
+    out = []
+    for i, im in enumerate(images):
+        d = {"maps": {}, "probs": {}, "emb": frame_embedding(feats[i]), **brightness_stats(im)}
+        for name, clf in heads.items():
+            p = predict_probs(clf, feats[i])
+            d["maps"][name] = p.argmax(-1).to(torch.uint8).cpu().numpy()
+            d["probs"][name] = p.mean((0, 1)).cpu().numpy()
+        out.append(d)
+    return out
+
+
+@dataclass
+class SandModel:
+    """Logistic model on :func:`frame_embedding`: p(sand) = sigmoid(((x - mu) / sd) . w + b)."""
+    mu: np.ndarray
+    sd: np.ndarray
+    w: np.ndarray
+    b: float
+    meta: dict = field(default_factory=dict)
+
+    def proba(self, X: np.ndarray) -> np.ndarray:
+        z = ((np.asarray(X, np.float64) - self.mu) / self.sd) @ self.w + self.b
+        return 1.0 / (1.0 + np.exp(-z))
+
+    def save(self, path: Path) -> None:
+        import json
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        np.savez(path, mu=self.mu, sd=self.sd, w=self.w, b=np.float64(self.b), meta=json.dumps(self.meta))
+
+    @classmethod
+    def load(cls, path: Path) -> "SandModel":
+        import json
+        d = np.load(path, allow_pickle=False)
+        return cls(d["mu"], d["sd"], d["w"], float(d["b"]), json.loads(str(d["meta"])))
+
+
+def window_decisions(frames: list[dict], head: str, sand: SandModel | None = None, rules: dict | None = None) -> dict:
+    """One window from its frames' :func:`frame_classes` output: seafloor share (mean over the frames of the share of
+    patches called seafloor), dark (every frame's mean grey below ``dark_grey``), sand (mean p(sand) >= ``sand_p``,
+    not dark), seafloor (share >= ``seafloor_share``, not dark), and the mean share of every class."""
+    r = {**WINDOW_RULES, **(rules or {})}
+    shares = np.stack([np.bincount(f["maps"][head].ravel(), minlength=len(CLASSES)) / f["maps"][head].size
+                       for f in frames]).mean(0)
+    dark = bool(max(f["grey_mean"] for f in frames) < r["dark_grey"])
+    out = {f"share_{c}": float(shares[k]) for k, c in enumerate(CLASSES)}
+    out["grey_mean"] = float(np.mean([f["grey_mean"] for f in frames]))
+    out["dark"] = dark
+    out["seafloor"] = bool(shares[SEAFLOOR] >= r["seafloor_share"] and not dark)
+    if sand is not None:
+        p = float(sand.proba(np.stack([f["emb"] for f in frames])).mean())
+        out["sand_p"] = p
+        out["sand"] = bool(p >= r["sand_p"] and not dark)
+    return out
+
+
+def _iter_decoded(video_path, indices, size, stall_s: float = 120.0, log=print):
+    """Frames ``indices`` decoded in a spawned child (``uwid.video._decode_child``, all threads, no torch), like
+    ``uwid.video.iter_frames_isolated`` but the parent never waits for ever: it reads with a timeout, checks the
+    child is alive, and raises when the child died without finishing or sent nothing for ``stall_s`` seconds (2026-11-23:
+    a child that failed at start-up left the parent asleep on the pipe while it held the GPU lock)."""
+    import multiprocessing as mp
+    import queue as _queue
+    from . import video as _video
+    ctx = mp.get_context("spawn")
+    q = ctx.Queue(maxsize=8)
+    p = ctx.Process(target=_video._decode_child, args=(q, "at", str(video_path), [int(i) for i in indices], "rgb24", size),
+                    daemon=True)
+    p.start()
+    log(f"window_classes: decoding {len(indices)} frames of {video_path} in child pid {p.pid}")
+    waited = 0.0
+    try:
+        while True:
+            try:
+                item = q.get(timeout=5.0)
+            except _queue.Empty:
+                waited += 5.0
+                if not p.is_alive():
+                    raise RuntimeError(f"decoder child for {video_path} exited (code {p.exitcode}) without finishing")
+                if waited >= stall_s:
+                    raise RuntimeError(f"decoder child for {video_path} sent nothing for {stall_s:.0f} s")
+                continue
+            waited = 0.0
+            if item is None:
+                break
+            if item[0] == "error":
+                raise RuntimeError(f"decoding {video_path} failed: {item[1]}")
+            yield _video.Frame(int(item[0]), float(item[1]), item[2], bool(item[3]))
+    finally:
+        if p.is_alive():
+            p.terminate()
+        p.join(timeout=5)
+
+
+def window_classes(video_path, model=None, seafloor_clf: Path | str = SEAFLOOR_CLF, sand_clf: Path | str | None = SAND_CLF,
+                   rules: dict | None = None, windows: list[float] | np.ndarray | None = None,
+                   offsets: tuple = (0.25, 0.75), width: int = 1280, batch: int = 8, log=print) -> "pd.DataFrame":
+    """``seafloor``, ``sand`` and ``dark`` per 1 s window of a recording, for the scan's columns.
+
+    ``windows``: window start times in seconds (default: every second of the recording); two frames per window at
+    ``offsets`` (as the scan's detector). Frames are decoded in a child process (:func:`_iter_decoded`, which fails
+    instead of hanging when the child dies)
+    at 1280 x 720. Returns one row per window: t0, t1, n_frames, seafloor, sand, dark, seafloor_share, sand_p,
+    grey_mean and share_<class>; ``df.attrs`` holds the GPU model seconds and the wall seconds.
+    The decoder runs in a spawned process: a calling script needs an ``if __name__ == "__main__":`` guard.
+    A caller that already has the window frames decoded (the scan does, for the detector) can skip the decode and
+    call :func:`frame_classes` + :func:`window_decisions` directly (resize the frames to 1280 px wide first)."""
+    import time
+    import pandas as pd
+    from . import video as _video
+    dev = "cuda" if torch.cuda.is_available() else "cpu"
+    log(f"window_classes: {video_path}: loading models")
+    model = model or load_backbone(dev, torch.float16 if dev == "cuda" else torch.float32)
+    head, _ = load_classifier(Path(seafloor_clf), dev)
+    sand = SandModel.load(Path(sand_clf)) if sand_clf and Path(sand_clf).exists() else None
+    tab = _video.frame_table(video_path)
+    if windows is None:
+        windows = np.arange(0.0, np.floor(tab.duration))
+    windows = np.asarray(windows, float)
+    want = {}
+    for k, t0 in enumerate(windows):
+        for o in offsets:
+            if t0 + o <= tab.duration:
+                want.setdefault(int(tab.index_at(t0 + o)), []).append(k)
+    per_win: dict[int, list] = {k: [] for k in range(len(windows))}
+    t_wall = time.time(); gpu_s = 0.0
+    buf_i, buf_im = [], []
+
+    def flush():
+        nonlocal gpu_s, buf_i, buf_im
+        if not buf_im:
+            return
+        tg = time.time()
+        res = frame_classes(model, buf_im, {"h": head}, width)
+        if dev == "cuda":
+            torch.cuda.synchronize()
+        gpu_s += time.time() - tg
+        for i, r in zip(buf_i, res):
+            for k in want[i]:
+                per_win[k].append(r)
+        buf_i, buf_im = [], []
+
+    for fr in _iter_decoded(video_path, sorted(want), (width, int(round(width * 9 / 16))), log=log):
+        buf_i.append(fr.index); buf_im.append(fr.image)
+        if len(buf_im) >= batch:
+            flush()
+    flush()
+    log(f"window_classes: {sum(len(v) > 0 for v in per_win.values())} windows classified, model {gpu_s:.0f} s")
+    rows = []
+    for k, t0 in enumerate(windows):
+        fr = per_win[k]
+        row = {"t0": float(t0), "t1": float(t0 + 1), "n_frames": len(fr)}
+        if fr:
+            row.update(window_decisions(fr, "h", sand, rules))
+        rows.append(row)
+    df = pd.DataFrame(rows)
+    df.attrs.update(gpu_model_s=gpu_s, wall_s=time.time() - t_wall, video_s=float(tab.duration))
+    return df

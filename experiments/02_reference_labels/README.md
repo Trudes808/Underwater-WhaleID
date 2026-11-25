@@ -249,6 +249,72 @@ Borderline cases met (all marked in `quality_note`):
 - Sizes on the 0.25 line were rounded by eye; about 10 frames could be 0.2 or 0.3 (and so `low` or `ok`), marked
   close call.
 
+`silhouette` (yes / no, empty without another whale; added 2026-11-22 after the user's answer): yes when the largest other
+whale is a dark shape against the light with a clear outline and little or no surface detail, at size 0.3 or more. It is a mark
+separate from the grade: silhouettes keep the grade they had (the user: keep them marked, do not move them to hq). Set from my
+notes (silhouette / backlit / against the sun / dark from below, hazy outlines excluded) and, for the large `ok` frames, by
+rereading each note. Counts: dev 29 (all `ok`), 2025-02-03 34 (all `ok`), 2025-01-02 2 (`ok`); 18 of the 27 large `ok` frames.
+
 Sheets for the user (39 frames, 12-14 per grade with the close calls):
 `/home/sat3737/NOAA_whales/review_sheets/underwater/reference_quality_examples_01..10.jpg` (sheets 01-03 `hq`,
 04-07 `ok`, 07-10 `low`).
+
+## Part B: second deployment 2025-01-02, tag CC-09-85 (WP3b, 2026-11-22, reduced plan)
+
+Test deployment: labels for scoring only, nothing fitted on it. Nine 4K `.mov` recordings (3840 x 2160, 30 frames/s;
+no `.m4v`). All labels by me (Claude), no helper agents. Frames were read with `sample_mov.py` (PyAV through
+`uwid.video`; frame index = shown frame, time = index / 30 from the first frame) and saved at 1920 x 1080, so every
+pixel coordinate (masks, fish boxes) is in 1920 x 1080 space; multiply by 2 for the source. The burned-in clock of
+this tag was not used.
+
+| what | where |
+|---|---|
+| frame labels, 60 per on-whale recording (00010, 00011, 00012, 00017, 00023, 00024), 20 per boat recording (00005, 00006, 00009); seeds `20250102 + piece`, `index.json` in the cache | `labels/<stem>/frames.csv` (all columns incl. size / quality) |
+| seafloor time spans | `labels/<stem>/seafloor_spans.csv` (on-whale recordings) |
+| blocked-view time spans with whale before / after | `labels/<stem>/blocked_spans.csv` (on-whale recordings) |
+| events, one 180 s window (00023, 400-580 s) as a depth-sensor check | `labels/CC-09-85-...-00023/events.json` |
+| mask prompts (29 frames) | `labels/<stem>/prompts.json` (00017, 00023, 00024); frames in `<cache>/<stem>/maskframes/` |
+| fish calls (7 frames, 8 fish) | `labels/<stem>/fish_calls.json` (00023, 00024) |
+| sheets | `review_sheets/underwater/reference_d2_<piece>_frames_NN.jpg`, `_masks_NN.jpg`, `_blocked_NN.jpg`, `reference_fish_candidates_d2_NN.jpg` |
+
+New values: `view` = `sand` (stirred-up sediment or murk hides most of the view above the back; user request
+2026-11-22). `other` on boat frames describes what is in view (deck, rail, cabin window, sea, land, sky, a person's
+leg or shoe, people (count only)); no names or identifying details.
+
+**Seafloor.** Found only where the sensor puts the tagged whale at the bottom: 00017 (about 49 m from 296 s) and
+00023 (resting at 41.7 m for the first 5 minutes). Not in 00010, 00011 (dives to about 50 m but the camera sees
+only open water above the back), 00012, 00024. Kinds:
+- `sand plane fading into haze` (00017, 842-1390 s): a pale flat plane with faint mottling beyond the back on the
+  left, fading into blue above about y 0.45; faint, best seen with contrast stretching.
+- `bottom fading into haze` (00023, 0-306 s): a darker speckled band beyond the back fading into haze.
+- `unsure` while the whale is on the bottom (00017, 296-842 s): sediment plumes, green-turbid water and long black
+  stretches (lens covered); the bottom is never recognisable as a surface; on two frames a textured surface very
+  close to the lens may be the bottom seen sideways.
+No reef or rock was recognisable anywhere; all seafloor is sand / sediment. Hard negatives that look like sand:
+exhalation and entry froth at the lens (00024 190 s, 00023 1110 s, 1130 s) and brown water sheets during surfacings
+(00023 418.8, 448.0, 515.0 s). Masks: the seafloor is a coarse band (seafloor below the haze line, `unsure` 70-100
+px above it, back painted over by SAM 2.1); 21 of the 29 mask frames are about seafloor (seafloor painted on 14, only
+`unsure` sediment / fading bottom on 5, 2 froth frames as hard negatives); 14 frames carry another whale (4 clear,
+10 hazy instances, several over the bottom) and 6 carry fish (7 jacks).
+
+**Blocked views** (`blocked_spans.csv`): found by stepping at 10 s, then 1 s (and 2 s at the ends of the long
+stretch) around every candidate; candidates for breaths came from the scan table's `surfaced` intervals (sensor used
+to plan, every span checked and its ends set by eye). Kinds: `air` (a breath: blow bubbles, water sheet, air, entry
+froth, one row per breath), `sand`, `dark`, and the drone flight. Short exhalation-bubble blocks underwater between
+the 10 s samples are not listed. In 00017 the bottom stretch 332-840 s is split into sand and dark pieces at about
+5 s (10 s steps, black frames found by mean brightness below 20 and checked on the sheets). `whale_before` /
+`whale_after` = another whale clearly visible within about 10 s before / after; `same_animal` filled only when both
+are yes.
+
+**What this deployment shows that the first did not**: 4K source; long boat time (00005, 00006, 00009: deck, rail,
+sea, land, legs and shoes of people, drone held over the sea); the drone flight with whales seen from the air
+(00010, 0-91 s); the tagged whale resting on the bottom with seafloor in view and long stretches blocked by
+stirred-up sediment or a covered lens (00017); breaths every few minutes with the camera looking forward along the
+back towards the blowholes (the back fills the lower half: a much larger `back` region than on the first tag);
+other whales passing low over the resting whale and over the bottom (00023), a whale with white pectoral fins
+beside the tagged whale near the surface (00024); large jacks very near the lens (00023, 00024); the tag sliding off
+and floating in open water after release (00024 from about 297 s).
+
+Uncertain: whether the sediment / black stretch of 00017 hides another whale (no whale seen within 10 s of any
+blocked piece there); seafloor visibility is faint everywhere and depends on contrast; 00010's whales seen from the
+drone are counted faint; `same_animal` = yes in 00024 is by place and look (white flippers), not by marks.

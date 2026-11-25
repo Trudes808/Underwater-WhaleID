@@ -1,0 +1,111 @@
+run,scene,t_end,gap_s,breath,others,detector,lone,size_ratio,app_dist,made,why
+demo05,lone,458.1,0.1,False,[3000],"{'before': 0, 'during': 0, 'after': 0}",False,1.01,0.01,False,not lone
+demo05,lone,460.3,1.4,False,[1001],"{'before': 0, 'during': 0, 'after': 0}",False,2.27,0.187,False,not lone
+demo05,lone,461.74,0.4,False,[3002],"{'before': 0, 'during': 0, 'after': 0}",False,1.5,0.096,False,not lone
+demo05,lone,462.11,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,2.38,0.119,False,checks contradict
+demo05,lone,467.28,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.09,0.164,True,linked
+demo05,lone,468.05,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.33,0.077,True,linked
+demo05,lone,471.01,0.7,False,"[1005, 3012]","{'before': 0, 'during': 0, 'after': 0}",False,1.66,0.263,False,not lone
+demo05,lone,472.98,0.03,False,[9024],"{'before': 0, 'during': 0, 'after': 0}",False,4.17,0.118,False,not lone
+demo07,lone,834.78,0.13,False,[],"{'before': 4, 'during': 0, 'after': 0}",False,1.21,0.214,False,not lone
+demo07,lone,835.38,0.03,False,[],"{'before': 3, 'during': 0, 'after': 0}",False,1.66,0.152,False,not lone
+R04a,lone,580.17,0.03,False,[],"{'before': 0, 'during': 0, 'after': 2}",False,1.03,0.106,False,not lone
+R04a,lone,580.27,0.03,False,[],"{'before': 0, 'during': 0, 'after': 2}",False,1.02,0.109,False,not lone
+R04a,lone,580.77,0.03,False,[],"{'before': 1, 'during': 0, 'after': 1}",True,1.03,0.151,True,linked
+R04a,lone,580.97,0.03,False,[],"{'before': 1, 'during': 0, 'after': 1}",True,1.01,0.087,True,linked
+R04a,lone,581.37,3.14,True,[],"{'before': 2, 'during': 0, 'after': 2}",False,1.18,0.203,False,not lone
+R04b,lone,580.17,0.03,False,[],"{'before': 0, 'during': 0, 'after': 2}",False,1.03,0.106,False,not lone
+R04b,lone,580.27,0.03,False,[],"{'before': 0, 'during': 0, 'after': 2}",False,1.02,0.109,False,not lone
+R04b,lone,580.77,0.03,False,[],"{'before': 1, 'during': 0, 'after': 1}",True,1.03,0.151,True,linked
+R04b,lone,580.97,0.03,False,[],"{'before': 1, 'during': 0, 'after': 1}",True,1.01,0.087,True,linked
+R04b,lone,581.37,3.34,True,[],"{'before': 2, 'during': 0, 'after': 2}",False,1.18,0.22,False,not lone
+R05a,lone,1519.27,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.11,0.087,True,linked
+R05a,lone,1522.98,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.0,,True,linked
+R05a,lone,1523.08,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.02,0.1,True,linked
+R05a,lone,1523.48,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.12,0.099,True,linked
+R05a,lone,1524.98,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.03,0.081,True,linked
+R05b,lone,1519.27,0.03,False,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.11,0.087,True,linked
+R05b,lone,1519.57,3.54,True,[],"{'before': 0, 'during': 0, 'after': 0}",True,1.5,0.217,True,linked
+R05b,lone,1523.48,0.03,False,[],"{'before': 1, 'during': 0, 'after': 0}",True,1.13,0.099,True,linked
+R05b,lone,1524.98,0.03,False,[],"{'before': 1, 'during': 0, 'after': 0}",True,1.03,0.081,True,linked
+R06a,lone,1465.14,4.37,True,[],"{'before': 0, 'during': 0, 'after': 0}",True,2.15,0.151,True,linked
+R06b,lone,1465.14,4.37,True,[],"{'before': 0, 'during': 0, 'after': 0}",True,2.14,0.151,True,linked
+demo01,multi,32.07,0.03,False,"[3000, 6000]","{'before': 1, 'during': 0, 'after': 3}",False,1.01,0.139,False,not lone
+demo02,multi,63.07,1.93,False,"[1000, 2000, 2002, 3000]","{'before': 1, 'during': 0, 'after': 1}",False,4.33,0.442,False,not lone
+demo02,multi,63.57,1.43,False,"[2000, 2002, 3000]","{'before': 1, 'during': 0, 'after': 1}",False,2.11,0.413,False,not lone
+demo02,multi,63.64,1.37,False,"[1000, 2002, 3000]","{'before': 1, 'during': 0, 'after': 1}",False,1.56,0.418,False,not lone
+demo02,multi,63.64,1.37,False,"[1000, 2000, 2002]","{'before': 1, 'during': 0, 'after': 1}",False,1.01,0.122,False,not lone
+demo02,multi,65.17,4.14,False,"[3001, 9000, 10000, 12000]","{'before': 1, 'during': 0, 'after': 0}",False,2.25,0.338,False,not lone
+demo02,multi,65.34,3.97,False,"[2002, 9000, 10000, 12000]","{'before': 1, 'during': 0, 'after': 0}",False,2.34,0.436,False,not lone
+demo02,multi,69.67,0.33,False,"[9000, 9001, 10000, 11001, 12000]","{'before': 2, 'during': 0, 'after': 0}",False,2.51,0.4,False,not lone
+demo02,multi,71.64,0.03,False,"[2008, 5003, 9001, 10000, 12000, 13000]","{'before': 0, 'during': 0, 'after': 1}",False,1.31,0.075,False,not lone
+demo02,multi,71.84,0.03,False,"[5003, 5006, 5007, 9000, 9001, 9003, 9004, 11001, 13000, 13001]","{'before': 0, 'during': 0, 'after': 1}",False,1.72,0.052,False,not lone
+demo02,multi,72.38,0.13,False,"[2008, 5003, 9001, 12000, 13000]","{'before': 1, 'during': 0, 'after': 0}",False,2.17,0.458,False,not lone
+demo02,multi,72.41,0.1,False,"[2008, 9001, 11001, 12000, 13000]","{'before': 1, 'during': 0, 'after': 0}",False,1.04,0.132,False,not lone
+demo02,multi,72.44,0.07,False,"[2008, 9000, 9001, 10000, 11001, 12000]","{'before': 1, 'during': 0, 'after': 0}",False,1.15,0.215,False,not lone
+demo02,multi,72.48,0.03,False,"[2008, 5003, 10000, 11001, 12000, 13000]","{'before': 1, 'during': 0, 'after': 0}",False,2.84,0.33,False,not lone
+demo02,multi,72.71,0.1,False,"[2008, 9004, 12000, 13001]","{'before': 1, 'during': 0, 'after': 0}",False,1.14,0.078,False,not lone
+demo02,multi,73.18,0.03,False,"[2008, 2009, 3013, 5007, 12000, 13001, 14000, 15000]","{'before': 1, 'during': 0, 'after': 1}",False,1.03,0.073,False,not lone
+demo02,multi,73.38,0.03,False,"[3013, 5007, 9003, 9004, 12000, 13001, 14000, 15000]","{'before': 1, 'during': 0, 'after': 1}",False,2.4,0.04,False,not lone
+demo02,multi,73.38,0.03,False,"[2008, 3013, 9004, 12000, 13001, 14000, 15000]","{'before': 1, 'during': 0, 'after': 1}",False,3.18,0.536,False,not lone
+demo02,multi,74.98,0.03,False,"[2008, 2009, 5007, 9003, 9004, 12000, 14000, 15000]","{'before': 0, 'during': 0, 'after': 2}",False,1.15,0.161,False,not lone
+R01a,multi,63.07,1.93,False,"[1000, 2000, 2002, 3000]","{'before': 1, 'during': 0, 'after': 1}",False,4.33,0.442,False,not lone
+R01a,multi,63.57,1.43,False,"[2000, 2002, 3000]","{'before': 1, 'during': 0, 'after': 1}",False,2.11,0.413,False,not lone
+R01a,multi,63.64,1.37,False,"[1000, 2002, 3000]","{'before': 1, 'during': 0, 'after': 1}",False,1.56,0.418,False,not lone
+R01a,multi,63.64,1.37,False,"[1000, 2000, 2002]","{'before': 1, 'during': 0, 'after': 1}",False,1.01,0.122,False,not lone
+R01a,multi,65.17,4.14,False,"[3001, 9000, 10000, 12000]","{'before': 1, 'during': 0, 'after': 0}",False,2.25,0.338,False,not lone
+R01a,multi,65.34,3.97,False,"[2002, 9000, 10000, 12000]","{'before': 1, 'during': 0, 'after': 0}",False,2.34,0.436,False,not lone
+R01a,multi,69.67,0.33,False,"[9000, 9001, 10000, 11001, 12000]","{'before': 2, 'during': 0, 'after': 0}",False,2.51,0.4,False,not lone
+R01a,multi,71.64,0.03,False,"[2008, 5003, 9001, 10000, 12000, 13000]","{'before': 0, 'during': 0, 'after': 1}",False,1.31,0.075,False,not lone
+R01a,multi,71.84,0.03,False,"[5003, 5006, 5007, 9000, 9001, 9003, 9004, 11001, 13000, 13001]","{'before': 0, 'during': 0, 'after': 1}",False,1.72,0.052,False,not lone
+R01a,multi,72.38,0.13,False,"[2008, 5003, 9001, 12000, 13000]","{'before': 1, 'during': 0, 'after': 0}",False,2.17,0.458,False,not lone
+R01a,multi,72.41,0.1,False,"[2008, 9001, 11001, 12000, 13000]","{'before': 1, 'during': 0, 'after': 0}",False,1.04,0.132,False,not lone
+R01a,multi,72.44,0.07,False,"[2008, 9000, 9001, 10000, 11001, 12000]","{'before': 1, 'during': 0, 'after': 0}",False,1.15,0.215,False,not lone
+R01a,multi,72.48,0.03,False,"[2008, 5003, 10000, 11001, 12000, 13000]","{'before': 1, 'during': 0, 'after': 0}",False,2.84,0.33,False,not lone
+R01a,multi,72.71,0.1,False,"[2008, 9004, 12000, 13001]","{'before': 1, 'during': 0, 'after': 0}",False,1.14,0.078,False,not lone
+R01a,multi,73.18,0.03,False,"[2008, 2009, 3013, 5007, 12000, 13001, 14000, 15000]","{'before': 1, 'during': 0, 'after': 1}",False,1.03,0.073,False,not lone
+R01a,multi,73.38,0.03,False,"[3013, 5007, 9003, 9004, 12000, 13001, 14000, 15000]","{'before': 1, 'during': 0, 'after': 1}",False,2.4,0.04,False,not lone
+R01a,multi,73.38,0.03,False,"[2008, 3013, 9004, 12000, 13001, 14000, 15000]","{'before': 1, 'during': 0, 'after': 1}",False,3.18,0.536,False,not lone
+R01a,multi,74.98,0.03,False,"[2008, 2009, 5007, 9003, 9004, 12000, 14000, 15000]","{'before': 0, 'during': 0, 'after': 2}",False,1.15,0.161,False,not lone
+R01b,multi,63.07,1.83,False,"[1000, 1006, 2000, 3000, 4003]","{'before': 1, 'during': 0, 'after': 1}",False,4.29,0.446,False,not lone
+R01b,multi,63.57,1.33,False,"[1006, 2000, 3000, 4003]","{'before': 1, 'during': 0, 'after': 1}",False,2.09,0.415,False,not lone
+R01b,multi,63.67,1.23,False,"[1000, 1006, 3000, 4003]","{'before': 1, 'during': 0, 'after': 1}",False,1.56,0.428,False,not lone
+R01b,multi,63.7,1.2,False,"[1000, 1006, 2000, 4003]","{'before': 1, 'during': 0, 'after': 1}",False,1.06,0.127,False,not lone
+R01b,multi,65.14,0.07,False,[3001],"{'before': 1, 'during': 0, 'after': 1}",False,1.09,,False,not lone
+R01b,multi,65.27,3.54,False,"[3001, 4010]","{'before': 1, 'during': 0, 'after': 1}",False,2.61,0.436,False,not lone
+R01b,multi,65.37,3.44,False,"[1006, 4003, 4010]","{'before': 1, 'during': 0, 'after': 1}",False,1.48,0.213,False,not lone
+R01b,multi,69.01,0.3,False,"[3002, 5000, 8000]","{'before': 1, 'during': 0, 'after': 1}",False,1.61,0.223,False,not lone
+R01b,multi,69.37,0.13,False,"[4010, 4012, 7001, 9000]","{'before': 1, 'during': 0, 'after': 1}",False,2.02,0.513,False,not lone
+R01b,multi,69.84,0.17,False,"[3002, 5000, 7001, 8000]","{'before': 1, 'during': 0, 'after': 1}",False,2.33,0.394,False,not lone
+R01b,multi,71.84,0.03,False,"[4016, 4017, 4018, 7001, 9000]","{'before': 1, 'during': 0, 'after': 1}",False,1.72,0.052,False,not lone
+R01b,multi,72.38,0.43,False,"[2010, 5000, 8000, 9000]","{'before': 1, 'during': 0, 'after': 0}",False,1.49,0.171,False,not lone
+R01b,multi,72.88,0.03,False,"[2010, 8000, 9000]","{'before': 1, 'during': 0, 'after': 0}",False,1.02,0.115,False,not lone
+R01b,multi,73.18,0.03,False,"[2010, 2011, 3013, 8000, 9000, 11000, 12000]","{'before': 1, 'during': 0, 'after': 1}",False,1.04,0.074,False,not lone
+R01b,multi,73.38,0.03,False,"[3013, 4017, 4018, 8000, 9000, 11000, 12000]","{'before': 1, 'during': 0, 'after': 1}",False,2.4,0.04,False,not lone
+R01b,multi,74.98,0.03,False,"[2010, 2011, 4017, 4018, 8000, 11000, 12000]","{'before': 0, 'during': 0, 'after': 2}",False,1.15,0.162,False,not lone
+R02a,multi,8.24,0.07,False,"[4000, 5000]","{'before': 1, 'during': 0, 'after': 2}",False,1.25,0.151,False,not lone
+R02a,multi,8.27,0.03,False,"[4000, 5000]","{'before': 1, 'during': 0, 'after': 2}",False,1.26,0.025,False,not lone
+R02a,multi,9.7,2.0,False,"[3000, 3003, 4000, 6001]","{'before': 1, 'during': 0, 'after': 2}",False,3.11,0.502,False,not lone
+R02a,multi,11.27,0.43,False,"[3003, 4000, 6001]","{'before': 1, 'during': 0, 'after': 2}",False,5.27,0.476,False,not lone
+R02a,multi,11.41,0.3,False,"[3003, 6001]","{'before': 1, 'during': 0, 'after': 2}",False,1.53,0.449,False,not lone
+R02a,multi,11.67,0.03,False,[4000],"{'before': 1, 'during': 0, 'after': 2}",False,1.35,0.119,False,not lone
+R02a,multi,11.77,6.14,False,"[3005, 4000, 6002, 9000]","{'before': 1, 'during': 0, 'after': 1}",False,1.72,0.456,False,not lone
+R02a,multi,11.84,6.07,False,"[3005, 9000]","{'before': 1, 'during': 0, 'after': 1}",False,1.57,0.397,False,not lone
+R02a,multi,18.95,0.07,False,"[3005, 9000]","{'before': 0, 'during': 0, 'after': 2}",False,1.05,0.043,False,not lone
+R02a,multi,20.18,0.03,False,"[2002, 3005, 4008, 9000, 11000]","{'before': 2, 'during': 0, 'after': 2}",False,1.0,0.193,False,not lone
+R02a,multi,20.18,0.03,False,"[1005, 1006, 2002, 4008, 9000, 11000]","{'before': 2, 'during': 0, 'after': 2}",False,2.08,0.465,False,not lone
+R02a,multi,20.18,0.03,False,"[1005, 1006, 2002, 3005, 4008, 11000]","{'before': 2, 'during': 0, 'after': 2}",False,3.85,0.284,False,not lone
+R02a,multi,20.61,0.1,False,"[1007, 2005, 4008, 6005, 11000]","{'before': 2, 'during': 0, 'after': 2}",False,2.18,0.372,False,not lone
+R02a,multi,20.68,0.03,False,"[2002, 2005, 4008, 6005, 11000]","{'before': 2, 'during': 0, 'after': 2}",False,1.02,0.127,False,not lone
+R02b,multi,8.24,0.07,False,"[4000, 5000]","{'before': 1, 'during': 0, 'after': 2}",False,1.25,0.151,False,not lone
+R02b,multi,8.27,0.03,False,"[4000, 5000]","{'before': 1, 'during': 0, 'after': 2}",False,1.26,0.025,False,not lone
+R02b,multi,9.7,8.31,False,"[3000, 3003, 3004, 4000, 6001, 7000]","{'before': 1, 'during': 0, 'after': 1}",False,4.9,0.42,False,not lone
+R02b,multi,11.27,6.74,False,"[3003, 3004, 4000, 6001, 7000]","{'before': 1, 'during': 0, 'after': 1}",False,8.31,0.429,False,not lone
+R02b,multi,11.41,6.61,False,"[3003, 3004, 6001, 7000]","{'before': 1, 'during': 0, 'after': 1}",False,1.03,0.448,False,not lone
+R02b,multi,11.67,6.34,False,"[3003, 3004, 4000, 7000]","{'before': 1, 'during': 0, 'after': 1}",False,1.17,0.284,False,not lone
+R02b,multi,11.74,6.27,False,"[3004, 4000, 7000]","{'before': 1, 'during': 0, 'after': 1}",False,1.73,0.441,False,not lone
+R02b,multi,19.25,1.27,False,"[3004, 7000, 7002, 8000]","{'before': 0, 'during': 0, 'after': 1}",False,1.06,0.2,False,not lone
+R02b,multi,19.25,1.27,False,"[1004, 7000, 7002, 8000]","{'before': 0, 'during': 0, 'after': 1}",False,2.11,0.501,False,not lone
+R02b,multi,19.25,1.27,False,"[1004, 3004, 7002, 8000]","{'before': 0, 'during': 0, 'after': 1}",False,1.48,0.306,False,not lone
+R02b,multi,20.68,0.03,False,"[7002, 7003, 8000, 9000]","{'before': 2, 'during': 0, 'after': 1}",False,1.02,0.114,False,not lone
+R02b,multi,20.78,0.03,False,"[1005, 1006, 8000, 9000]","{'before': 2, 'during': 0, 'after': 1}",False,1.06,0.143,False,not lone

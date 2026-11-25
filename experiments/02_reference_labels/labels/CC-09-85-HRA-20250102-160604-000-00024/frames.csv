@@ -1,0 +1,61 @@
+frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note,silhouette
+178,5.933,underwater,clear,0,0,back,none,none,,"just under the surface, back lit",,,,,,
+381,12.700,underwater,clear,0,1,back,none,none,unsure: 1 pale streak ~40 px upper left,dark hazy shape low left beyond the back: faint,,,,,,
+583,19.433,underwater,clear,1,0,back,none,none,,"another whale at the left edge, white flipper visible, hazy",0.2,0.05,yes,low,"hazy, cut at the left",no
+786,26.200,underwater,clear,1,0,back,none,none,,"whale at the left edge with white flipper, hazy",0.2,0.05,yes,low,"hazy, cut at the left",no
+988,32.933,underwater,clear,1,0,back,none,none,,"whale body mid-left with white flipper tip, hazy",0.3,0.05,yes,low,hazy; close call ok,no
+1191,39.700,underwater,clear,1,0,back,none,none,,whale body upper left near the surface with white flipper,0.3,0.05,no,low,"hazy body, white flipper clear; close call ok",no
+1393,46.433,underwater,clear,1,0,back,none,none,,"whale body left with white flipper, near the surface",0.4,0.05,yes,ok,hazy,no
+1596,53.200,underwater,clear,1,0,back,none,none,,"whale body with white flipper, left half",0.5,0.10,yes,ok,large but hazy blue; near hq,no
+1798,59.933,underwater,clear,1,0,back,none,none,,whale low left beyond the back with white flipper,0.3,0.05,yes,ok,"fairly clear, lower part hidden by the back",no
+2001,66.700,crossing,clear,0,0,back,none,none,,"surfacing: water sheet and the back blurred across the lens, neither side recognisable at the centre",,,,,,
+2203,73.433,underwater,clear,1,0,back,none,none,,"whale with white flipper left, hazy",0.2,0.05,no,low,hazy,no
+2406,80.200,underwater,clear,1,0,back,none,none,,whale with white flipper left beyond the back,0.4,0.05,yes,ok,hazy,no
+2608,86.933,underwater,clear,1,0,back,none,none,,whale low left with white flipper beyond the back,0.4,0.05,yes,ok,hazy,no
+2811,93.700,underwater,clear,1,0,back,none,none,,"whale body with white flipper near the back, left half",0.5,0.10,yes,ok,"fairly near and clear in outline, dim; near hq",no
+3013,100.433,underwater,clear,1,0,back,none,none,,whale body diagonal low left beyond the back,0.5,0.10,yes,ok,"dark, partly hidden by the back",no
+3216,107.200,underwater,clear,1,0,back,none,none,,whale body diagonal low left beyond the back,0.4,0.05,yes,ok,"dark, partly hidden",no
+3418,113.933,underwater,clear,1,0,back,none,none,,"whale near the surface left with both white flippers and fluke, close beside the back",0.5,0.15,yes,ok,"fairly near, white flippers visible, body dark blue from below; near hq",no
+3621,120.700,underwater,clear,1,0,back,none,none,,"whale's dark back / head just beyond the tagged back, under the surface sheen",0.4,0.10,yes,low,mostly hidden under the surface glare; close call ok,no
+3823,127.433,underwater,clear,0,1,back,none,none,,pale blurred shape upper left near the surface (whale flank in bubbles?): faint,,,,,,
+4026,134.200,underwater,clear,0,0,back,none,few,,1 jack ~220 px with forked tail upper left,,,,,,
+4228,140.933,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+4431,147.700,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+4633,154.433,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+4836,161.200,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+5038,167.933,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+5241,174.700,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+5443,181.433,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+5646,188.200,underwater,clear,0,0,back,none,none,,surface underside with sparkle upper right,,,,,,
+5848,194.933,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+6051,201.700,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+6253,208.433,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+6456,215.200,underwater,clear,0,0,back,none,none,,just under the surface,,,,,,
+6658,221.933,underwater,clear,0,0,back,none,none,,,,,,,,
+6861,228.700,underwater,clear,0,0,back,none,none,,,,,,,,
+7063,235.433,underwater,clear,0,0,back,none,none,,,,,,,,
+7266,242.200,underwater,clear,0,0,back,none,few,,1 jack ~200 px with forked tail upper left; surface underside above,,,,,,
+7468,248.933,underwater,clear,0,0,back,none,none,,,,,,,,
+7671,255.700,underwater,clear,0,0,back,none,none,,,,,,,,
+7873,262.433,underwater,clear,0,0,back,none,none,,,,,,,,
+8076,269.200,underwater,clear,0,0,back,none,none,,,,,,,,
+8278,275.933,underwater,clear,0,0,back,none,none,,,,,,,,
+8481,282.700,underwater,clear,0,0,back,none,none,,,,,,,,
+8683,289.433,underwater,clear,0,0,back,none,none,,,,,,,,
+8886,296.200,underwater,clear,0,0,back,none,none,,back only at the lower right corner: tag sliding off / released,,,,,,
+9088,302.933,underwater,clear,0,0,none,none,none,tag floating (released),"light rays, no back: tag floating after release",,,,,,
+9291,309.700,underwater,clear,0,0,none,none,none,tag floating (released),empty blue,,,,,,
+9493,316.433,underwater,clear,0,0,none,none,none,tag floating (released),empty blue,,,,,,
+9696,323.200,underwater,clear,0,0,none,none,none,"tag floating (released); unsure: 1 pale streak ~60 px centre-right, no tail seen",empty blue,,,,,,
+9898,329.933,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+10101,336.700,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+10303,343.433,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+10506,350.200,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+10708,356.933,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+10911,363.700,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+11113,370.433,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+11316,377.200,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+11518,383.933,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+11721,390.700,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+11923,397.433,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,
+12126,404.200,underwater,clear,0,0,none,none,none,tag floating (released),empty blue with drifting particles; lens in the water (sensor: tag floating),,,,,,

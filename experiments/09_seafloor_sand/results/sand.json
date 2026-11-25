@@ -1,0 +1,46 @@
+{
+ "windows": 1146,
+ "sand_windows": 190,
+ "found": 164,
+ "false": 35,
+ "blocks_with_sand": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "false|d2 00010 (left out)": {
+  "windows": 616,
+  "called": 0
+ },
+ "false|d2 00011 (left out)": {
+  "windows": 1499,
+  "called": 0
+ },
+ "false|d2 00012 (left out)": {
+  "windows": 220,
+  "called": 0
+ },
+ "false|d2 00023 (left out)": {
+  "windows": 1297,
+  "called": 3
+ },
+ "false|d2 00024 (left out)": {
+  "windows": 386,
+  "called": 103
+ },
+ "false|d1 00006 dense (fitted on 2025-01-02 only)": {
+  "windows": 1736,
+  "called": 728
+ },
+ "false|dev labelled (fitted on 2025-01-02 only)": {
+  "windows": 91,
+  "called": 3
+ },
+ "false|d1 labelled (fitted on 2025-01-02 only)": {
+  "windows": 821,
+  "called": 581
+ }
+}

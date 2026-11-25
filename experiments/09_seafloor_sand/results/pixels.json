@@ -1,0 +1,88 @@
+{
+ "test17|00017": {
+  "frames": 9,
+  "seafloor_px": 3042777,
+  "back_px": 4987694,
+  "seafloor_recall": 0.96884424984151,
+  "seafloor_iou": 0.8656776682196912,
+  "seafloor_iou_band": 0.8990790289152933,
+  "back_iou": 0.9429480874465415,
+  "back_called_seafloor": 0.004101294105051352,
+  "seafloor_called_back": 0.021838603354764414,
+  "seafloor_called_water": 0.00855994376189908,
+  "water_called_seafloor": 0.0553134379654212,
+  "bubbles_called_seafloor": 0.0,
+  "whale_called_seafloor": 0.0,
+  "pred_seafloor_px": 3310598,
+  "pred_seafloor_on": {
+   "water": 342165,
+   "back": 20456,
+   "seafloor": 2947977
+  }
+ },
+ "test23|00023": {
+  "frames": 16,
+  "seafloor_px": 4175950,
+  "back_px": 9878209,
+  "seafloor_recall": 0.7950736958057448,
+  "seafloor_iou": 0.7816792297222818,
+  "seafloor_iou_band": 0.8265350268415964,
+  "back_iou": 0.9126247112800259,
+  "back_called_seafloor": 0.0038574806424929863,
+  "seafloor_called_back": 0.017175253535123745,
+  "seafloor_called_water": 0.17509452938852238,
+  "water_called_seafloor": 0.0009893392125959939,
+  "bubbles_called_seafloor": 0.0,
+  "whale_called_seafloor": 0.0060564441464921225,
+  "pred_seafloor_px": 3391745,
+  "pred_seafloor_on": {
+   "water": 12303,
+   "whale": 21149,
+   "back": 38105,
+   "seafloor": 3320188
+  }
+ },
+ "test_d1|d1": {
+  "frames": 14,
+  "seafloor_px": 0,
+  "back_px": 815627,
+  "seafloor_recall": 0.0,
+  "seafloor_iou": 0.0,
+  "seafloor_iou_band": 0.0,
+  "back_iou": 0.2978264107750443,
+  "back_called_seafloor": 0.0021075810388817436,
+  "seafloor_called_back": 0.0,
+  "seafloor_called_water": 0.0,
+  "water_called_seafloor": 0.02133630475151993,
+  "bubbles_called_seafloor": 0.0,
+  "whale_called_seafloor": 0.0,
+  "pred_seafloor_px": 444672,
+  "pred_seafloor_on": {
+   "water": 442377,
+   "back": 1719,
+   "gear": 576
+  }
+ },
+ "test_dev|dev": {
+  "frames": 31,
+  "seafloor_px": 0,
+  "back_px": 3416147,
+  "seafloor_recall": 0.0,
+  "seafloor_iou": 0.0,
+  "seafloor_iou_band": 0.0,
+  "back_iou": 0.7304013364990023,
+  "back_called_seafloor": 0.00027106561866336546,
+  "seafloor_called_back": 0.0,
+  "seafloor_called_water": 0.0,
+  "water_called_seafloor": 0.01754922405782678,
+  "bubbles_called_seafloor": 0.01831753256745143,
+  "whale_called_seafloor": 0.004002452559849317,
+  "pred_seafloor_px": 843840,
+  "pred_seafloor_on": {
+   "water": 604868,
+   "whale": 19962,
+   "back": 926,
+   "bubbles": 218084
+  }
+ }
+}

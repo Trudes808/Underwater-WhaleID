@@ -1,0 +1,150 @@
+{
+ "meta": {
+  "what": "WP3b part B masks, CC-09-85 piece 00024 (other whale near the surface, jacks, exhalation froth that looks like gravel)"
+ },
+ "003418": [
+  {
+   "c": "back",
+   "box": [
+    0,
+    480,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     1000
+    ],
+    [
+     1700,
+     650
+    ]
+   ],
+   "n": [
+    [
+     300,
+     500
+    ]
+   ]
+  },
+  {
+   "c": "whale",
+   "id": 1,
+   "grade": "hazy",
+   "box": [
+    0,
+    220,
+    1010,
+    830
+   ],
+   "note": "whale near the surface, white flippers",
+   "n": [
+    [
+     1300,
+     800
+    ]
+   ]
+  }
+ ],
+ "004026": [
+  {
+   "c": "back",
+   "box": [
+    0,
+    480,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     1000
+    ],
+    [
+     1700,
+     650
+    ]
+   ],
+   "n": [
+    [
+     300,
+     500
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    100,
+    330,
+    530,
+    530
+   ],
+   "note": "jack"
+  }
+ ],
+ "007266": [
+  {
+   "c": "back",
+   "box": [
+    0,
+    480,
+    1920,
+    1080
+   ],
+   "p": [
+    [
+     1300,
+     850
+    ],
+    [
+     600,
+     1000
+    ],
+    [
+     1700,
+     650
+    ]
+   ],
+   "n": [
+    [
+     300,
+     500
+    ]
+   ]
+  },
+  {
+   "c": "fish",
+   "id": 11,
+   "box": [
+    190,
+    420,
+    470,
+    520
+   ],
+   "note": "jack"
+  }
+ ],
+ "005700": [
+  {
+   "c": "bubbles",
+   "rect": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "note": "exhalation froth at the lens: looks like gravel / sand, hard negative for seafloor"
+  }
+ ]
+}

@@ -1,121 +1,121 @@
-frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note
-103,3.471,underwater,clear,0,0,back,none,none,,recording starts under water (no drone drop); empty blue; back = dark band with low hump and two small white scars at the bottom edge,,,,,
-548,18.323,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,
-992,33.141,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,
-1437,47.993,underwater,clear,0,0,back,none,none,,"empty blue; back band at the bottom (checked at full size, no specks)",,,,,
-1882,62.845,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-2326,77.664,underwater,clear,0,0,back,none,none,,empty blue; light from top right; faint band at the bottom,,,,,
-2771,92.515,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-3215,107.334,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,
-3660,122.186,underwater,clear,0,0,back,none,none,,empty blue; back band with low hump at the bottom,,,,,
-4104,137.004,underwater,clear,1,0,back,none,none,,"whale (probably the calf) directly above, belly and throat seen from below with both pectoral fins spread, sharp silhouette; back band at the bottom",0.7,0.30,yes,hq,"directly above with both flippers spread, sharp outline; belly darkish; close call"
-4549,151.856,underwater,clear,0,0,back,none,none,"unsure: ~15-20 dark spindles, upper centre-right near the sun glow, 10-17 px (no tails visible at full size; they move as a group over f4519-f4579 but no visible turning)","back not visible (bottom edge dark, no band; labelled back by continuity, unsure); fish call withdrawn under the 2026-11-20 rule (no body and tail visible)",,,,,
-4993,166.675,underwater,clear,0,0,back,none,none,"unsure: ~15-20 dark spindles, upper right, 10-17 px (no tails visible)",faint band at the bottom; fish call withdrawn under the 2026-11-20 rule (no body and tail visible),,,,,
-5438,181.527,underwater,clear,0,0,back,none,none,"unsure: ~10 dark spindles, top centre, 10-15 px (no tails visible)","bottom edge dark, back band barely visible; fish call withdrawn under the 2026-11-20 rule (no body and tail visible)",,,,,
-5882,196.345,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-6327,211.197,underwater,clear,0,0,back,none,none,"unsure: 1-2 dark specks, top right, 5-10 px",empty blue; faint band at the bottom,,,,,
-6772,226.049,underwater,clear,1,1,back,none,none,,"near whale head (jaw / throat seen from below-side) cut by the right edge; dark elongated shape at the left edge (flipper or second whale, unconfirmed: faint); back band at the bottom",0.3,0.05,yes,ok,"near head cut at the right edge, jaw visible"
-7216,240.867,underwater,clear,1,0,back,none,none,,"whale (probably the calf) centre-right, body vertical with fluke up, sharp silhouette; back band with hump at the bottom",0.2,0.05,no,low,"small sharp silhouette, fluke up"
-7661,255.719,underwater,clear,1,0,back,none,none,,"whale swimming lower right, side silhouette; back band at the bottom",0.2,0.05,no,low,small side silhouette; close call ok
-8105,270.538,underwater,clear,1,0,back,none,none,,"whale (calf?) side silhouette with fluke raised, lower right just above the back's horizon; sun disc upper left (small); back band at the bottom",0.3,0.05,no,ok,side silhouette with raised fluke
-8550,285.390,underwater,clear,1,0,back,none,none,,"whale above, head and pectoral fin silhouetted against the sun glow upper centre; back band at the bottom",0.3,0.05,yes,ok,"head and fin silhouette against the sun glow, cut at top"
-8994,300.208,underwater,clear,0,0,back,none,none,,empty green-blue; sun glow top; faint band at the bottom,,,,,
-9439,315.060,underwater,clear,0,0,back,none,none,,empty green-blue; back band at the bottom,,,,,
-9883,329.878,underwater,clear,0,0,back,none,none,,rising: underside of the surface across the top half; back band with texture at the bottom,,,,,
-10328,344.730,underwater,clear,0,0,none,none,none,,"0.6 s after an entry (surfacing ~f10230-f10310, outside the windows): dark water, surface just above, entry froth patches lower right and top (about a quarter to a third of the frame: clear, borderline); back not identifiable",,,,,
-10773,359.582,underwater,clear,0,0,back,none,none,,"empty; a few tiny pale specks rising lower centre (small bubbles, not fish); back band with hump at the bottom",,,,,
-11217,374.401,underwater,clear,0,0,back,none,none,,empty blue; back band with hump at the bottom,,,,,
-11662,389.253,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,
-12106,404.071,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),"empty; small pale streak at the lower right edge, fixed in place over f12106-f12995 (scar on the back or tag part, not a fish); faint band at the bottom",,,,,
-12551,418.923,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty; same pale mark at the lower right; faint band at the bottom,,,,,
-12995,433.741,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty; same pale mark at the lower right; faint band at the bottom,,,,,
-13440,448.593,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-13884,463.412,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-14329,478.264,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-14773,493.082,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-15218,507.934,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-15663,522.786,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-16107,537.605,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-16552,552.456,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-16996,567.275,underwater,clear,0,0,back,none,none,,"empty; one tiny dark speck centre (~4 px, not counted); faint band at the bottom",,,,,
-17441,582.127,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-17885,596.945,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-18330,611.797,underwater,clear,1,0,back,none,none,,"hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",0.1,0.05,yes,low,hazy head cut at the top edge
-18774,626.616,underwater,clear,1,0,back,none,none,,"hazy whale tail stock and fluke lower left, rising behind the back's horizon (checked at full size); faint band at the bottom",0.1,0.05,no,low,hazy tail and fluke behind the back's horizon
-19219,641.467,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-19664,656.319,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-20108,671.138,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-20553,685.990,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-20997,700.808,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-21442,715.660,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-21886,730.479,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-22331,745.330,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-22775,760.149,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-23220,775.001,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-23664,789.819,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-24109,804.671,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-24554,819.523,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-24998,834.342,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-25443,849.193,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-25887,864.012,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-26332,878.864,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-26776,893.682,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-27221,908.534,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-27665,923.353,underwater,clear,1,0,back,none,none,,"whale left of centre, body vertical from the bottom edge up to the fluke, long pectoral fin with knobbly leading edge, dorsal fin visible (clear, near; probably the calf); faint band at the bottom",0.5,0.10,yes,hq,"whole body vertical with knobbed fin and dorsal fin, clear; some haze; close call"
-28110,938.205,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-28555,953.056,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-28999,967.875,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-29444,982.727,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-29888,997.545,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-30333,1012.397,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-30777,1027.216,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-31222,1042.068,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-31666,1056.886,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,
-32111,1071.738,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-32555,1086.556,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-33000,1101.408,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-33445,1116.260,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-33889,1131.079,underwater,clear,1,0,back,none,none,,"whale head (rostrum with tubercles, throat grooves) rising above the back's horizon, lower left, hazy but recognisable; faint band at the bottom",0.1,0.05,no,low,"head only at the back's horizon, hazy"
-34334,1145.931,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-34778,1160.749,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-35223,1175.601,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-35667,1190.419,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-36112,1205.271,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-36556,1220.090,underwater,clear,1,0,back,none,none,,"near whale (probably the calf) centre, body diagonal from the bottom edge up to the tail, raised pectoral fin with knobbly edge, dorsal fin; clear outline; faint band at the bottom",0.6,0.10,yes,hq,"near body diagonal with knobbed fin and dorsal fin, clear outline"
-37001,1234.942,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-37446,1249.794,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-37890,1264.612,underwater,clear,1,0,back,none,none,,"whale head-on, lower centre-left, rostrum and both pectoral fins, hazy; faint band at the bottom",0.2,0.05,no,low,hazy head-on
-38335,1279.464,underwater,clear,1,0,back,none,none,,"whale passing just above: tail and fluke upper left, long pectoral fin hanging from the top right edge (counted as one whale whose body runs along the top edge; could be two, unsure); back band with hump at the bottom",0.9,0.25,yes,hq,"passing just above: sharp fluke underside, body and long fin; may be two whales (then 0.6); close call"
-38779,1294.283,underwater,clear,0,1,back,none,none,,"whale head (rostrum with tubercles) at the back's horizon, lower left; stays almost fixed relative to the back over f38734-f38824 (could be the tagged whale's own head / fin): faint under the horizon rule; small pale blob right (bubble?); faint band at the bottom",,,,,
-39224,1309.134,underwater,clear,1,0,back,none,none,,"whale above left, head / pectoral fin silhouette next to the sun disc; sun glare disc centre (well under half the frame); back band at the bottom",0.4,0.10,yes,ok,head and fin silhouette next to the sun
-39668,1323.953,underwater,clear,1,0,back,none,none,,whale tail and fluke cut by the right edge; sun disc centre (under a quarter of the frame); back band with hump at the bottom,0.2,0.05,yes,low,tail and fluke silhouette cut at the right
-40113,1338.805,underwater,clear,1,0,back,none,none,,"just under the surface (surface underside top); whale (calf?) centre swimming with fluke spread, hazy-clear; bubble trail right of it near the surface; back textured with hump at the bottom",0.2,0.05,no,low,"whale under the surface, small; close call ok"
-40557,1353.623,underwater,clear,1,0,back,none,none,,"whale at the right edge near the surface, body with pectoral fin hanging down, bubbles / foam around its back; surface top; back band at the bottom",0.3,0.05,yes,ok,"body and fin at the right edge near the surface, foam on its back"
-41002,1368.475,underwater,clear,1,0,back,none,none,,"dark pectoral fin (knobbly edge) cut by the right edge, counted as one whale; surface top right; back band with hump at the bottom",0.1,0.05,yes,low,fin cut at the right edge
-41446,1383.294,underwater,clear,1,0,back,none,none,,very near pectoral fin with knobbly leading edge along the left edge (counted as one whale; owner out of frame); surface with sun rays top; back textured at the bottom,0.4,0.10,yes,ok,"very near knobbed fin only, owner out of frame"
-41891,1398.145,underwater,clear,0,1,back,none,none,,pale hazy shape lower right at the edge (whale flank or flipper? not confirmable); surface top; back band at the bottom,,,,,
-42336,1412.997,underwater,clear,0,0,back,none,none,,"just under the surface, sky window top right; empty; back textured at the bottom",,,,,
-42780,1427.816,underwater,clear,0,1,back,none,none,,"surface underside top; pale hazy shape lower right just above the back's horizon (whale? not confirmable); surface dapples checked at full size, no fish; back band at the bottom",,,,,
-43225,1442.668,underwater,clear,2,0,back,none,none,,"whale near the surface cut by the top right edge (dark head / body); second whale hazy lower right just above the back's horizon (pale pectoral fin edges, checked at full size); back band at the bottom",0.2,0.05,yes,low,head cut at the top right; second whale hazy
-43669,1457.486,underwater,clear,2,0,back,none,none,,"dark pointed whale part hanging from the top edge (rostrum / body of a whale at the surface) and a whale at the right edge with a long pale pectoral fin reaching down to the back's horizon (followed f43639-f43684); counted as two, could be one whale seen in two parts (unsure); back band at the bottom",0.4,0.05,yes,low,only a long fin at the right edge and a dark part at the top; close call ok
-44114,1472.338,underwater,clear,1,0,back,none,none,,"whale at the surface upper left (dark body with knobbly pectoral edge); small white specks mid frame are bubbles / particles 3.5 s after an entry (followed f44099-f44144: appear and vanish, not fish); back textured at the bottom",0.2,0.05,yes,low,whale at the surface cut at top left
-44558,1487.157,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-45003,1502.008,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,
-45447,1516.827,underwater,clear,1,0,back,none,none,,"whale throat / pectoral fin edge (knobbly) cut by the top left edge, very near above; faint band at the bottom",0.2,0.05,yes,low,throat and fin edge cut at top left
-45892,1531.679,underwater,clear,1,0,back,none,none,,"whale head / throat cut by the top right edge, near above; faint band with pale scar at the bottom",0.2,0.05,yes,low,head cut at the top right
-46337,1546.531,underwater,clear,1,0,back,none,none,,"whale head cut by the right edge, upper right; faint band at the bottom",0.1,0.05,yes,low,head cut at the right edge
-46781,1561.349,underwater,clear,1,0,back,none,none,,"whale (calf?) above, belly view with both pectoral fins and fluke, upper right, sharp silhouette; bottom edge dark (back barely visible)",0.2,0.05,no,low,small sharp silhouette with fins and fluke
-47226,1576.201,underwater,clear,1,0,back,none,none,,"whale (calf?) diving / turning centre-right, fluke at top, both pectoral fins, sharp silhouette; bottom edge dark (back barely visible)",0.3,0.05,no,ok,"diving whale, sharp silhouette"
-47670,1591.020,underwater,clear,1,0,back,none,none,,"whale lower right, full body with fluke and pectoral fins, sharp silhouette; sun glow top; faint band at the bottom",0.3,0.05,no,ok,"whole body with fluke and fins, sharp silhouette"
-48115,1605.871,underwater,clear,0,0,back,none,none,,empty; sun glow top; faint band at the bottom,,,,,
-48559,1620.690,underwater,clear,1,0,back,none,none,,"whale above near the sun glow, upper right, body seen end-on with pectoral fin, sharp silhouette; faint band at the bottom",0.2,0.05,yes,low,"end-on near the sun glow, small"
-49004,1635.542,underwater,clear,1,0,back,none,none,"unsure: 6-8 dark specks next to the sun disc, upper left, 5-10 px, this frame only","whale centre-right, tail stock and large fluke spread, near; sun disc top left; faint band at the bottom",0.5,0.10,no,ok,"near tail stock and large fluke, silhouette against the sun; near hq"
-49448,1650.360,underwater,clear,1,0,back,none,none,,"whale lower right with fluke, hazy-sharp silhouette; sun top; faint band at the bottom",0.3,0.05,no,ok,"whale with fluke, hazy-sharp silhouette"
-49893,1665.212,underwater,clear,1,0,back,none,none,,"whale centre with fluke raised, hazy; faint band at the bottom",0.2,0.05,no,low,hazy whale with fluke raised
-50337,1680.031,underwater,clear,1,0,back,none,none,,"hazy whale upper right near the surface with fluke, bubbles around it; faint band at the bottom",0.2,0.05,no,low,hazy whale near the surface in bubbles
-50782,1694.883,underwater,clear,1,0,back,none,none,,"whale (calf?) hanging below the surface upper left, body vertical, head / tail at the top against the sun, pectoral fin; surface underside top; back textured at the bottom",0.5,0.10,yes,ok,"large, hanging below the surface, silhouette against the sun; near hq"
-51227,1709.735,underwater,clear,0,0,back,none,none,,surface underside top; empty; back textured at the bottom,,,,,
-51671,1724.553,underwater,clear,1,0,back,none,none,,"whale part (rounded rostrum / pectoral tip) cut by the top left edge at the surface; surface top (dapples checked at full size, no fish); back textured at the bottom",0.1,0.05,yes,low,part cut at the top left edge
-52116,1739.405,underwater,clear,0,0,back,none,none,,empty; back band at the bottom,,,,,
-52560,1754.223,underwater,clear,0,0,back,none,none,,empty; faint band at the bottom,,,,,
-53005,1769.075,underwater,clear,1,0,back,none,none,,"very near large whale along the right edge, body curving down from the top right with pale scars, dorsal fin and pectoral fin lower right (likely a second adult, not the calf; unsure whose); faint band at the bottom",0.7,0.20,yes,hq,"very near whale with pale scars, dorsal fin and flipper"
+frame,time_s,state,view,other_whales,faint_whales,back,seafloor,fish,other,note,whale_size,whale_frame_share,whale_cut,quality,quality_note,silhouette
+103,3.471,underwater,clear,0,0,back,none,none,,recording starts under water (no drone drop); empty blue; back = dark band with low hump and two small white scars at the bottom edge,,,,,,
+548,18.323,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,,
+992,33.141,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,,
+1437,47.993,underwater,clear,0,0,back,none,none,,"empty blue; back band at the bottom (checked at full size, no specks)",,,,,,
+1882,62.845,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+2326,77.664,underwater,clear,0,0,back,none,none,,empty blue; light from top right; faint band at the bottom,,,,,,
+2771,92.515,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+3215,107.334,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,,
+3660,122.186,underwater,clear,0,0,back,none,none,,empty blue; back band with low hump at the bottom,,,,,,
+4104,137.004,underwater,clear,1,0,back,none,none,,"whale (probably the calf) directly above, belly and throat seen from below with both pectoral fins spread, sharp silhouette; back band at the bottom",0.7,0.30,yes,hq,"directly above with both flippers spread, sharp outline; belly darkish; close call",no
+4549,151.856,underwater,clear,0,0,back,none,none,"unsure: ~15-20 dark spindles, upper centre-right near the sun glow, 10-17 px (no tails visible at full size; they move as a group over f4519-f4579 but no visible turning)","back not visible (bottom edge dark, no band; labelled back by continuity, unsure); fish call withdrawn under the 2026-11-20 rule (no body and tail visible)",,,,,,
+4993,166.675,underwater,clear,0,0,back,none,none,"unsure: ~15-20 dark spindles, upper right, 10-17 px (no tails visible)",faint band at the bottom; fish call withdrawn under the 2026-11-20 rule (no body and tail visible),,,,,,
+5438,181.527,underwater,clear,0,0,back,none,none,"unsure: ~10 dark spindles, top centre, 10-15 px (no tails visible)","bottom edge dark, back band barely visible; fish call withdrawn under the 2026-11-20 rule (no body and tail visible)",,,,,,
+5882,196.345,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+6327,211.197,underwater,clear,0,0,back,none,none,"unsure: 1-2 dark specks, top right, 5-10 px",empty blue; faint band at the bottom,,,,,,
+6772,226.049,underwater,clear,1,1,back,none,none,,"near whale head (jaw / throat seen from below-side) cut by the right edge; dark elongated shape at the left edge (flipper or second whale, unconfirmed: faint); back band at the bottom",0.3,0.05,yes,ok,"near head cut at the right edge, jaw visible",no
+7216,240.867,underwater,clear,1,0,back,none,none,,"whale (probably the calf) centre-right, body vertical with fluke up, sharp silhouette; back band with hump at the bottom",0.2,0.05,no,low,"small sharp silhouette, fluke up",no
+7661,255.719,underwater,clear,1,0,back,none,none,,"whale swimming lower right, side silhouette; back band at the bottom",0.2,0.05,no,low,small side silhouette; close call ok,no
+8105,270.538,underwater,clear,1,0,back,none,none,,"whale (calf?) side silhouette with fluke raised, lower right just above the back's horizon; sun disc upper left (small); back band at the bottom",0.3,0.05,no,ok,side silhouette with raised fluke,yes
+8550,285.390,underwater,clear,1,0,back,none,none,,"whale above, head and pectoral fin silhouetted against the sun glow upper centre; back band at the bottom",0.3,0.05,yes,ok,"head and fin silhouette against the sun glow, cut at top",yes
+8994,300.208,underwater,clear,0,0,back,none,none,,empty green-blue; sun glow top; faint band at the bottom,,,,,,
+9439,315.060,underwater,clear,0,0,back,none,none,,empty green-blue; back band at the bottom,,,,,,
+9883,329.878,underwater,clear,0,0,back,none,none,,rising: underside of the surface across the top half; back band with texture at the bottom,,,,,,
+10328,344.730,underwater,clear,0,0,none,none,none,,"0.6 s after an entry (surfacing ~f10230-f10310, outside the windows): dark water, surface just above, entry froth patches lower right and top (about a quarter to a third of the frame: clear, borderline); back not identifiable",,,,,,
+10773,359.582,underwater,clear,0,0,back,none,none,,"empty; a few tiny pale specks rising lower centre (small bubbles, not fish); back band with hump at the bottom",,,,,,
+11217,374.401,underwater,clear,0,0,back,none,none,,empty blue; back band with hump at the bottom,,,,,,
+11662,389.253,underwater,clear,0,0,back,none,none,,empty blue; back band at the bottom,,,,,,
+12106,404.071,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),"empty; small pale streak at the lower right edge, fixed in place over f12106-f12995 (scar on the back or tag part, not a fish); faint band at the bottom",,,,,,
+12551,418.923,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty; same pale mark at the lower right; faint band at the bottom,,,,,,
+12995,433.741,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty; same pale mark at the lower right; faint band at the bottom,,,,,,
+13440,448.593,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+13884,463.412,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+14329,478.264,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+14773,493.082,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+15218,507.934,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+15663,522.786,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+16107,537.605,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+16552,552.456,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+16996,567.275,underwater,clear,0,0,back,none,none,,"empty; one tiny dark speck centre (~4 px, not counted); faint band at the bottom",,,,,,
+17441,582.127,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+17885,596.945,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+18330,611.797,underwater,clear,1,0,back,none,none,,"hazy whale (head / front body, seen end-on from below) cut by the top edge, upper centre-right; faint band at the bottom",0.1,0.05,yes,low,hazy head cut at the top edge,no
+18774,626.616,underwater,clear,1,0,back,none,none,,"hazy whale tail stock and fluke lower left, rising behind the back's horizon (checked at full size); faint band at the bottom",0.1,0.05,no,low,hazy tail and fluke behind the back's horizon,no
+19219,641.467,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+19664,656.319,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+20108,671.138,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+20553,685.990,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+20997,700.808,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+21442,715.660,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+21886,730.479,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+22331,745.330,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+22775,760.149,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+23220,775.001,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+23664,789.819,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+24109,804.671,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+24554,819.523,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+24998,834.342,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+25443,849.193,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+25887,864.012,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+26332,878.864,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+26776,893.682,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+27221,908.534,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+27665,923.353,underwater,clear,1,0,back,none,none,,"whale left of centre, body vertical from the bottom edge up to the fluke, long pectoral fin with knobbly leading edge, dorsal fin visible (clear, near; probably the calf); faint band at the bottom",0.5,0.10,yes,hq,"whole body vertical with knobbed fin and dorsal fin, clear; some haze; close call",no
+28110,938.205,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+28555,953.056,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+28999,967.875,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+29444,982.727,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+29888,997.545,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+30333,1012.397,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+30777,1027.216,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+31222,1042.068,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+31666,1056.886,underwater,clear,0,0,back,none,none,fixed pale mark on the back at the lower right edge (scar or tag part),empty blue; fixed pale mark lower right; faint band at the bottom,,,,,,
+32111,1071.738,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+32555,1086.556,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+33000,1101.408,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+33445,1116.260,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+33889,1131.079,underwater,clear,1,0,back,none,none,,"whale head (rostrum with tubercles, throat grooves) rising above the back's horizon, lower left, hazy but recognisable; faint band at the bottom",0.1,0.05,no,low,"head only at the back's horizon, hazy",no
+34334,1145.931,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+34778,1160.749,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+35223,1175.601,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+35667,1190.419,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+36112,1205.271,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+36556,1220.090,underwater,clear,1,0,back,none,none,,"near whale (probably the calf) centre, body diagonal from the bottom edge up to the tail, raised pectoral fin with knobbly edge, dorsal fin; clear outline; faint band at the bottom",0.6,0.10,yes,hq,"near body diagonal with knobbed fin and dorsal fin, clear outline",no
+37001,1234.942,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+37446,1249.794,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+37890,1264.612,underwater,clear,1,0,back,none,none,,"whale head-on, lower centre-left, rostrum and both pectoral fins, hazy; faint band at the bottom",0.2,0.05,no,low,hazy head-on,no
+38335,1279.464,underwater,clear,1,0,back,none,none,,"whale passing just above: tail and fluke upper left, long pectoral fin hanging from the top right edge (counted as one whale whose body runs along the top edge; could be two, unsure); back band with hump at the bottom",0.9,0.25,yes,hq,"passing just above: sharp fluke underside, body and long fin; may be two whales (then 0.6); close call",no
+38779,1294.283,underwater,clear,0,1,back,none,none,,"whale head (rostrum with tubercles) at the back's horizon, lower left; stays almost fixed relative to the back over f38734-f38824 (could be the tagged whale's own head / fin): faint under the horizon rule; small pale blob right (bubble?); faint band at the bottom",,,,,,
+39224,1309.134,underwater,clear,1,0,back,none,none,,"whale above left, head / pectoral fin silhouette next to the sun disc; sun glare disc centre (well under half the frame); back band at the bottom",0.4,0.10,yes,ok,head and fin silhouette next to the sun,yes
+39668,1323.953,underwater,clear,1,0,back,none,none,,whale tail and fluke cut by the right edge; sun disc centre (under a quarter of the frame); back band with hump at the bottom,0.2,0.05,yes,low,tail and fluke silhouette cut at the right,no
+40113,1338.805,underwater,clear,1,0,back,none,none,,"just under the surface (surface underside top); whale (calf?) centre swimming with fluke spread, hazy-clear; bubble trail right of it near the surface; back textured with hump at the bottom",0.2,0.05,no,low,"whale under the surface, small; close call ok",no
+40557,1353.623,underwater,clear,1,0,back,none,none,,"whale at the right edge near the surface, body with pectoral fin hanging down, bubbles / foam around its back; surface top; back band at the bottom",0.3,0.05,yes,ok,"body and fin at the right edge near the surface, foam on its back",no
+41002,1368.475,underwater,clear,1,0,back,none,none,,"dark pectoral fin (knobbly edge) cut by the right edge, counted as one whale; surface top right; back band with hump at the bottom",0.1,0.05,yes,low,fin cut at the right edge,no
+41446,1383.294,underwater,clear,1,0,back,none,none,,very near pectoral fin with knobbly leading edge along the left edge (counted as one whale; owner out of frame); surface with sun rays top; back textured at the bottom,0.4,0.10,yes,ok,"very near knobbed fin only, owner out of frame",no
+41891,1398.145,underwater,clear,0,1,back,none,none,,pale hazy shape lower right at the edge (whale flank or flipper? not confirmable); surface top; back band at the bottom,,,,,,
+42336,1412.997,underwater,clear,0,0,back,none,none,,"just under the surface, sky window top right; empty; back textured at the bottom",,,,,,
+42780,1427.816,underwater,clear,0,1,back,none,none,,"surface underside top; pale hazy shape lower right just above the back's horizon (whale? not confirmable); surface dapples checked at full size, no fish; back band at the bottom",,,,,,
+43225,1442.668,underwater,clear,2,0,back,none,none,,"whale near the surface cut by the top right edge (dark head / body); second whale hazy lower right just above the back's horizon (pale pectoral fin edges, checked at full size); back band at the bottom",0.2,0.05,yes,low,head cut at the top right; second whale hazy,no
+43669,1457.486,underwater,clear,2,0,back,none,none,,"dark pointed whale part hanging from the top edge (rostrum / body of a whale at the surface) and a whale at the right edge with a long pale pectoral fin reaching down to the back's horizon (followed f43639-f43684); counted as two, could be one whale seen in two parts (unsure); back band at the bottom",0.4,0.05,yes,low,only a long fin at the right edge and a dark part at the top; close call ok,no
+44114,1472.338,underwater,clear,1,0,back,none,none,,"whale at the surface upper left (dark body with knobbly pectoral edge); small white specks mid frame are bubbles / particles 3.5 s after an entry (followed f44099-f44144: appear and vanish, not fish); back textured at the bottom",0.2,0.05,yes,low,whale at the surface cut at top left,no
+44558,1487.157,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+45003,1502.008,underwater,clear,0,0,back,none,none,,empty blue; faint band at the bottom,,,,,,
+45447,1516.827,underwater,clear,1,0,back,none,none,,"whale throat / pectoral fin edge (knobbly) cut by the top left edge, very near above; faint band at the bottom",0.2,0.05,yes,low,throat and fin edge cut at top left,no
+45892,1531.679,underwater,clear,1,0,back,none,none,,"whale head / throat cut by the top right edge, near above; faint band with pale scar at the bottom",0.2,0.05,yes,low,head cut at the top right,no
+46337,1546.531,underwater,clear,1,0,back,none,none,,"whale head cut by the right edge, upper right; faint band at the bottom",0.1,0.05,yes,low,head cut at the right edge,no
+46781,1561.349,underwater,clear,1,0,back,none,none,,"whale (calf?) above, belly view with both pectoral fins and fluke, upper right, sharp silhouette; bottom edge dark (back barely visible)",0.2,0.05,no,low,small sharp silhouette with fins and fluke,no
+47226,1576.201,underwater,clear,1,0,back,none,none,,"whale (calf?) diving / turning centre-right, fluke at top, both pectoral fins, sharp silhouette; bottom edge dark (back barely visible)",0.3,0.05,no,ok,"diving whale, sharp silhouette",yes
+47670,1591.020,underwater,clear,1,0,back,none,none,,"whale lower right, full body with fluke and pectoral fins, sharp silhouette; sun glow top; faint band at the bottom",0.3,0.05,no,ok,"whole body with fluke and fins, sharp silhouette",yes
+48115,1605.871,underwater,clear,0,0,back,none,none,,empty; sun glow top; faint band at the bottom,,,,,,
+48559,1620.690,underwater,clear,1,0,back,none,none,,"whale above near the sun glow, upper right, body seen end-on with pectoral fin, sharp silhouette; faint band at the bottom",0.2,0.05,yes,low,"end-on near the sun glow, small",no
+49004,1635.542,underwater,clear,1,0,back,none,none,"unsure: 6-8 dark specks next to the sun disc, upper left, 5-10 px, this frame only","whale centre-right, tail stock and large fluke spread, near; sun disc top left; faint band at the bottom",0.5,0.10,no,ok,"near tail stock and large fluke, silhouette against the sun; near hq",yes
+49448,1650.360,underwater,clear,1,0,back,none,none,,"whale lower right with fluke, hazy-sharp silhouette; sun top; faint band at the bottom",0.3,0.05,no,ok,"whale with fluke, hazy-sharp silhouette",yes
+49893,1665.212,underwater,clear,1,0,back,none,none,,"whale centre with fluke raised, hazy; faint band at the bottom",0.2,0.05,no,low,hazy whale with fluke raised,no
+50337,1680.031,underwater,clear,1,0,back,none,none,,"hazy whale upper right near the surface with fluke, bubbles around it; faint band at the bottom",0.2,0.05,no,low,hazy whale near the surface in bubbles,no
+50782,1694.883,underwater,clear,1,0,back,none,none,,"whale (calf?) hanging below the surface upper left, body vertical, head / tail at the top against the sun, pectoral fin; surface underside top; back textured at the bottom",0.5,0.10,yes,ok,"large, hanging below the surface, silhouette against the sun; near hq",yes
+51227,1709.735,underwater,clear,0,0,back,none,none,,surface underside top; empty; back textured at the bottom,,,,,,
+51671,1724.553,underwater,clear,1,0,back,none,none,,"whale part (rounded rostrum / pectoral tip) cut by the top left edge at the surface; surface top (dapples checked at full size, no fish); back textured at the bottom",0.1,0.05,yes,low,part cut at the top left edge,no
+52116,1739.405,underwater,clear,0,0,back,none,none,,empty; back band at the bottom,,,,,,
+52560,1754.223,underwater,clear,0,0,back,none,none,,empty; faint band at the bottom,,,,,,
+53005,1769.075,underwater,clear,1,0,back,none,none,,"very near large whale along the right edge, body curving down from the top right with pale scars, dorsal fin and pectoral fin lower right (likely a second adult, not the calf; unsure whose); faint band at the bottom",0.7,0.20,yes,hq,"very near whale with pale scars, dorsal fin and flipper",no

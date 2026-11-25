@@ -1,0 +1,3 @@
+deployment,spans,spans_done,video_s,numbers,numbers_before_links,numbers_ge3s,track_s,blocked_frames,links_made,links_not_made,refused_starts,small,gpu_min,gpu_min_per_span_min,bubble_suspects,calf_suspects
+CC-09-85,17,17,142.1,18,19,11,142.8,0,1,{},"{""start on bubbles / surface / air"": 1}",0,22.4,9.45,0,0
+2025-02-03,118,118,643.7,131,138,68,635.4,32,7,"{""not lone"": 11, ""checks contradict"": 3}","{""box classifier: other"": 2, ""box classifier: fish"": 11, ""start on bubbles / surface / air"": 47}",0,83.2,7.75,9,0

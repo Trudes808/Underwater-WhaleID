@@ -1,0 +1,142 @@
+       run  scene  whale_numbers_without  whale_numbers_with  links
+0   demo05   lone                      9                   8      2
+1   demo07   lone                      2                   3      0
+2     R04a   lone                      6                   4      2
+3     R04b   lone                      6                   4      2
+4     R05a   lone                      4                   1      5
+5     R05b   lone                      3                   1      4
+6     R06a   lone                      2                   1      1
+7     R06b   lone                      2                   1      1
+8   demo01  multi                      6                   6      0
+9   demo02  multi                     23                  24      0
+10    R01a  multi                     23                  24      0
+11    R01b  multi                     21                  22      0
+12    R02a  multi                     19                  19      0
+13    R02b  multi                     16                  16      0
+        run  scene    t_end  gap_s  breath                                                           others                                detector   lone  size_ratio  app_dist   made                why
+0    demo05   lone   458.10   0.10   False                                                           [3000]  {'before': 0, 'during': 0, 'after': 0}  False        1.01     0.010  False           not lone
+1    demo05   lone   460.30   1.40   False                                                           [1001]  {'before': 0, 'during': 0, 'after': 0}  False        2.27     0.187  False           not lone
+2    demo05   lone   461.74   0.40   False                                                           [3002]  {'before': 0, 'during': 0, 'after': 0}  False        1.50     0.096  False           not lone
+3    demo05   lone   462.11   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        2.38     0.119  False  checks contradict
+4    demo05   lone   467.28   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.09     0.164   True             linked
+5    demo05   lone   468.05   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.33     0.077   True             linked
+6    demo05   lone   471.01   0.70   False                                                     [1005, 3012]  {'before': 0, 'during': 0, 'after': 0}  False        1.66     0.263  False           not lone
+7    demo05   lone   472.98   0.03   False                                                           [9024]  {'before': 0, 'during': 0, 'after': 0}  False        4.17     0.118  False           not lone
+8    demo07   lone   834.78   0.13   False                                                               []  {'before': 4, 'during': 0, 'after': 0}  False        1.21     0.214  False           not lone
+9    demo07   lone   835.38   0.03   False                                                               []  {'before': 3, 'during': 0, 'after': 0}  False        1.66     0.152  False           not lone
+10     R04a   lone   580.17   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 2}  False        1.03     0.106  False           not lone
+11     R04a   lone   580.27   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 2}  False        1.02     0.109  False           not lone
+12     R04a   lone   580.77   0.03   False                                                               []  {'before': 1, 'during': 0, 'after': 1}   True        1.03     0.151   True             linked
+13     R04a   lone   580.97   0.03   False                                                               []  {'before': 1, 'during': 0, 'after': 1}   True        1.01     0.087   True             linked
+14     R04a   lone   581.37   3.14    True                                                               []  {'before': 2, 'during': 0, 'after': 2}  False        1.18     0.203  False           not lone
+15     R04b   lone   580.17   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 2}  False        1.03     0.106  False           not lone
+16     R04b   lone   580.27   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 2}  False        1.02     0.109  False           not lone
+17     R04b   lone   580.77   0.03   False                                                               []  {'before': 1, 'during': 0, 'after': 1}   True        1.03     0.151   True             linked
+18     R04b   lone   580.97   0.03   False                                                               []  {'before': 1, 'during': 0, 'after': 1}   True        1.01     0.087   True             linked
+19     R04b   lone   581.37   3.34    True                                                               []  {'before': 2, 'during': 0, 'after': 2}  False        1.18     0.220  False           not lone
+20     R05a   lone  1519.27   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.11     0.087   True             linked
+21     R05a   lone  1522.98   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.00       NaN   True             linked
+22     R05a   lone  1523.08   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.02     0.100   True             linked
+23     R05a   lone  1523.48   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.12     0.099   True             linked
+24     R05a   lone  1524.98   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.03     0.081   True             linked
+25     R05b   lone  1519.27   0.03   False                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.11     0.087   True             linked
+26     R05b   lone  1519.57   3.54    True                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        1.50     0.217   True             linked
+27     R05b   lone  1523.48   0.03   False                                                               []  {'before': 1, 'during': 0, 'after': 0}   True        1.13     0.099   True             linked
+28     R05b   lone  1524.98   0.03   False                                                               []  {'before': 1, 'during': 0, 'after': 0}   True        1.03     0.081   True             linked
+29     R06a   lone  1465.14   4.37    True                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        2.15     0.151   True             linked
+30     R06b   lone  1465.14   4.37    True                                                               []  {'before': 0, 'during': 0, 'after': 0}   True        2.14     0.151   True             linked
+31   demo01  multi    32.07   0.03   False                                                     [3000, 6000]  {'before': 1, 'during': 0, 'after': 3}  False        1.01     0.139  False           not lone
+32   demo02  multi    63.07   1.93   False                                         [1000, 2000, 2002, 3000]  {'before': 1, 'during': 0, 'after': 1}  False        4.33     0.442  False           not lone
+33   demo02  multi    63.57   1.43   False                                               [2000, 2002, 3000]  {'before': 1, 'during': 0, 'after': 1}  False        2.11     0.413  False           not lone
+34   demo02  multi    63.64   1.37   False                                               [1000, 2002, 3000]  {'before': 1, 'during': 0, 'after': 1}  False        1.56     0.418  False           not lone
+35   demo02  multi    63.64   1.37   False                                               [1000, 2000, 2002]  {'before': 1, 'during': 0, 'after': 1}  False        1.01     0.122  False           not lone
+36   demo02  multi    65.17   4.14   False                                       [3001, 9000, 10000, 12000]  {'before': 1, 'during': 0, 'after': 0}  False        2.25     0.338  False           not lone
+37   demo02  multi    65.34   3.97   False                                       [2002, 9000, 10000, 12000]  {'before': 1, 'during': 0, 'after': 0}  False        2.34     0.436  False           not lone
+38   demo02  multi    69.67   0.33   False                                [9000, 9001, 10000, 11001, 12000]  {'before': 2, 'during': 0, 'after': 0}  False        2.51     0.400  False           not lone
+39   demo02  multi    71.64   0.03   False                          [2008, 5003, 9001, 10000, 12000, 13000]  {'before': 0, 'during': 0, 'after': 1}  False        1.31     0.075  False           not lone
+40   demo02  multi    71.84   0.03   False  [5003, 5006, 5007, 9000, 9001, 9003, 9004, 11001, 13000, 13001]  {'before': 0, 'during': 0, 'after': 1}  False        1.72     0.052  False           not lone
+41   demo02  multi    72.38   0.13   False                                 [2008, 5003, 9001, 12000, 13000]  {'before': 1, 'during': 0, 'after': 0}  False        2.17     0.458  False           not lone
+42   demo02  multi    72.41   0.10   False                                [2008, 9001, 11001, 12000, 13000]  {'before': 1, 'during': 0, 'after': 0}  False        1.04     0.132  False           not lone
+43   demo02  multi    72.44   0.07   False                          [2008, 9000, 9001, 10000, 11001, 12000]  {'before': 1, 'during': 0, 'after': 0}  False        1.15     0.215  False           not lone
+44   demo02  multi    72.48   0.03   False                         [2008, 5003, 10000, 11001, 12000, 13000]  {'before': 1, 'during': 0, 'after': 0}  False        2.84     0.330  False           not lone
+45   demo02  multi    72.71   0.10   False                                       [2008, 9004, 12000, 13001]  {'before': 1, 'during': 0, 'after': 0}  False        1.14     0.078  False           not lone
+46   demo02  multi    73.18   0.03   False             [2008, 2009, 3013, 5007, 12000, 13001, 14000, 15000]  {'before': 1, 'during': 0, 'after': 1}  False        1.03     0.073  False           not lone
+47   demo02  multi    73.38   0.03   False             [3013, 5007, 9003, 9004, 12000, 13001, 14000, 15000]  {'before': 1, 'during': 0, 'after': 1}  False        2.40     0.040  False           not lone
+48   demo02  multi    73.38   0.03   False                   [2008, 3013, 9004, 12000, 13001, 14000, 15000]  {'before': 1, 'during': 0, 'after': 1}  False        3.18     0.536  False           not lone
+49   demo02  multi    74.98   0.03   False              [2008, 2009, 5007, 9003, 9004, 12000, 14000, 15000]  {'before': 0, 'during': 0, 'after': 2}  False        1.15     0.161  False           not lone
+50     R01a  multi    63.07   1.93   False                                         [1000, 2000, 2002, 3000]  {'before': 1, 'during': 0, 'after': 1}  False        4.33     0.442  False           not lone
+51     R01a  multi    63.57   1.43   False                                               [2000, 2002, 3000]  {'before': 1, 'during': 0, 'after': 1}  False        2.11     0.413  False           not lone
+52     R01a  multi    63.64   1.37   False                                               [1000, 2002, 3000]  {'before': 1, 'during': 0, 'after': 1}  False        1.56     0.418  False           not lone
+53     R01a  multi    63.64   1.37   False                                               [1000, 2000, 2002]  {'before': 1, 'during': 0, 'after': 1}  False        1.01     0.122  False           not lone
+54     R01a  multi    65.17   4.14   False                                       [3001, 9000, 10000, 12000]  {'before': 1, 'during': 0, 'after': 0}  False        2.25     0.338  False           not lone
+55     R01a  multi    65.34   3.97   False                                       [2002, 9000, 10000, 12000]  {'before': 1, 'during': 0, 'after': 0}  False        2.34     0.436  False           not lone
+56     R01a  multi    69.67   0.33   False                                [9000, 9001, 10000, 11001, 12000]  {'before': 2, 'during': 0, 'after': 0}  False        2.51     0.400  False           not lone
+57     R01a  multi    71.64   0.03   False                          [2008, 5003, 9001, 10000, 12000, 13000]  {'before': 0, 'during': 0, 'after': 1}  False        1.31     0.075  False           not lone
+58     R01a  multi    71.84   0.03   False  [5003, 5006, 5007, 9000, 9001, 9003, 9004, 11001, 13000, 13001]  {'before': 0, 'during': 0, 'after': 1}  False        1.72     0.052  False           not lone
+59     R01a  multi    72.38   0.13   False                                 [2008, 5003, 9001, 12000, 13000]  {'before': 1, 'during': 0, 'after': 0}  False        2.17     0.458  False           not lone
+60     R01a  multi    72.41   0.10   False                                [2008, 9001, 11001, 12000, 13000]  {'before': 1, 'during': 0, 'after': 0}  False        1.04     0.132  False           not lone
+61     R01a  multi    72.44   0.07   False                          [2008, 9000, 9001, 10000, 11001, 12000]  {'before': 1, 'during': 0, 'after': 0}  False        1.15     0.215  False           not lone
+62     R01a  multi    72.48   0.03   False                         [2008, 5003, 10000, 11001, 12000, 13000]  {'before': 1, 'during': 0, 'after': 0}  False        2.84     0.330  False           not lone
+63     R01a  multi    72.71   0.10   False                                       [2008, 9004, 12000, 13001]  {'before': 1, 'during': 0, 'after': 0}  False        1.14     0.078  False           not lone
+64     R01a  multi    73.18   0.03   False             [2008, 2009, 3013, 5007, 12000, 13001, 14000, 15000]  {'before': 1, 'during': 0, 'after': 1}  False        1.03     0.073  False           not lone
+65     R01a  multi    73.38   0.03   False             [3013, 5007, 9003, 9004, 12000, 13001, 14000, 15000]  {'before': 1, 'during': 0, 'after': 1}  False        2.40     0.040  False           not lone
+66     R01a  multi    73.38   0.03   False                   [2008, 3013, 9004, 12000, 13001, 14000, 15000]  {'before': 1, 'during': 0, 'after': 1}  False        3.18     0.536  False           not lone
+67     R01a  multi    74.98   0.03   False              [2008, 2009, 5007, 9003, 9004, 12000, 14000, 15000]  {'before': 0, 'during': 0, 'after': 2}  False        1.15     0.161  False           not lone
+68     R01b  multi    63.07   1.83   False                                   [1000, 1006, 2000, 3000, 4003]  {'before': 1, 'during': 0, 'after': 1}  False        4.29     0.446  False           not lone
+69     R01b  multi    63.57   1.33   False                                         [1006, 2000, 3000, 4003]  {'before': 1, 'during': 0, 'after': 1}  False        2.09     0.415  False           not lone
+70     R01b  multi    63.67   1.23   False                                         [1000, 1006, 3000, 4003]  {'before': 1, 'during': 0, 'after': 1}  False        1.56     0.428  False           not lone
+71     R01b  multi    63.70   1.20   False                                         [1000, 1006, 2000, 4003]  {'before': 1, 'during': 0, 'after': 1}  False        1.06     0.127  False           not lone
+72     R01b  multi    65.14   0.07   False                                                           [3001]  {'before': 1, 'during': 0, 'after': 1}  False        1.09       NaN  False           not lone
+73     R01b  multi    65.27   3.54   False                                                     [3001, 4010]  {'before': 1, 'during': 0, 'after': 1}  False        2.61     0.436  False           not lone
+74     R01b  multi    65.37   3.44   False                                               [1006, 4003, 4010]  {'before': 1, 'during': 0, 'after': 1}  False        1.48     0.213  False           not lone
+75     R01b  multi    69.01   0.30   False                                               [3002, 5000, 8000]  {'before': 1, 'during': 0, 'after': 1}  False        1.61     0.223  False           not lone
+76     R01b  multi    69.37   0.13   False                                         [4010, 4012, 7001, 9000]  {'before': 1, 'during': 0, 'after': 1}  False        2.02     0.513  False           not lone
+77     R01b  multi    69.84   0.17   False                                         [3002, 5000, 7001, 8000]  {'before': 1, 'during': 0, 'after': 1}  False        2.33     0.394  False           not lone
+78     R01b  multi    71.84   0.03   False                                   [4016, 4017, 4018, 7001, 9000]  {'before': 1, 'during': 0, 'after': 1}  False        1.72     0.052  False           not lone
+79     R01b  multi    72.38   0.43   False                                         [2010, 5000, 8000, 9000]  {'before': 1, 'during': 0, 'after': 0}  False        1.49     0.171  False           not lone
+80     R01b  multi    72.88   0.03   False                                               [2010, 8000, 9000]  {'before': 1, 'during': 0, 'after': 0}  False        1.02     0.115  False           not lone
+81     R01b  multi    73.18   0.03   False                     [2010, 2011, 3013, 8000, 9000, 11000, 12000]  {'before': 1, 'during': 0, 'after': 1}  False        1.04     0.074  False           not lone
+82     R01b  multi    73.38   0.03   False                     [3013, 4017, 4018, 8000, 9000, 11000, 12000]  {'before': 1, 'during': 0, 'after': 1}  False        2.40     0.040  False           not lone
+83     R01b  multi    74.98   0.03   False                     [2010, 2011, 4017, 4018, 8000, 11000, 12000]  {'before': 0, 'during': 0, 'after': 2}  False        1.15     0.162  False           not lone
+84     R02a  multi     8.24   0.07   False                                                     [4000, 5000]  {'before': 1, 'during': 0, 'after': 2}  False        1.25     0.151  False           not lone
+85     R02a  multi     8.27   0.03   False                                                     [4000, 5000]  {'before': 1, 'during': 0, 'after': 2}  False        1.26     0.025  False           not lone
+86     R02a  multi     9.70   2.00   False                                         [3000, 3003, 4000, 6001]  {'before': 1, 'during': 0, 'after': 2}  False        3.11     0.502  False           not lone
+87     R02a  multi    11.27   0.43   False                                               [3003, 4000, 6001]  {'before': 1, 'during': 0, 'after': 2}  False        5.27     0.476  False           not lone
+88     R02a  multi    11.41   0.30   False                                                     [3003, 6001]  {'before': 1, 'during': 0, 'after': 2}  False        1.53     0.449  False           not lone
+89     R02a  multi    11.67   0.03   False                                                           [4000]  {'before': 1, 'during': 0, 'after': 2}  False        1.35     0.119  False           not lone
+90     R02a  multi    11.77   6.14   False                                         [3005, 4000, 6002, 9000]  {'before': 1, 'during': 0, 'after': 1}  False        1.72     0.456  False           not lone
+91     R02a  multi    11.84   6.07   False                                                     [3005, 9000]  {'before': 1, 'during': 0, 'after': 1}  False        1.57     0.397  False           not lone
+92     R02a  multi    18.95   0.07   False                                                     [3005, 9000]  {'before': 0, 'during': 0, 'after': 2}  False        1.05     0.043  False           not lone
+93     R02a  multi    20.18   0.03   False                                  [2002, 3005, 4008, 9000, 11000]  {'before': 2, 'during': 0, 'after': 2}  False        1.00     0.193  False           not lone
+94     R02a  multi    20.18   0.03   False                            [1005, 1006, 2002, 4008, 9000, 11000]  {'before': 2, 'during': 0, 'after': 2}  False        2.08     0.465  False           not lone
+95     R02a  multi    20.18   0.03   False                            [1005, 1006, 2002, 3005, 4008, 11000]  {'before': 2, 'during': 0, 'after': 2}  False        3.85     0.284  False           not lone
+96     R02a  multi    20.61   0.10   False                                  [1007, 2005, 4008, 6005, 11000]  {'before': 2, 'during': 0, 'after': 2}  False        2.18     0.372  False           not lone
+97     R02a  multi    20.68   0.03   False                                  [2002, 2005, 4008, 6005, 11000]  {'before': 2, 'during': 0, 'after': 2}  False        1.02     0.127  False           not lone
+98     R02b  multi     8.24   0.07   False                                                     [4000, 5000]  {'before': 1, 'during': 0, 'after': 2}  False        1.25     0.151  False           not lone
+99     R02b  multi     8.27   0.03   False                                                     [4000, 5000]  {'before': 1, 'during': 0, 'after': 2}  False        1.26     0.025  False           not lone
+100    R02b  multi     9.70   8.31   False                             [3000, 3003, 3004, 4000, 6001, 7000]  {'before': 1, 'during': 0, 'after': 1}  False        4.90     0.420  False           not lone
+101    R02b  multi    11.27   6.74   False                                   [3003, 3004, 4000, 6001, 7000]  {'before': 1, 'during': 0, 'after': 1}  False        8.31     0.429  False           not lone
+102    R02b  multi    11.41   6.61   False                                         [3003, 3004, 6001, 7000]  {'before': 1, 'during': 0, 'after': 1}  False        1.03     0.448  False           not lone
+103    R02b  multi    11.67   6.34   False                                         [3003, 3004, 4000, 7000]  {'before': 1, 'during': 0, 'after': 1}  False        1.17     0.284  False           not lone
+104    R02b  multi    11.74   6.27   False                                               [3004, 4000, 7000]  {'before': 1, 'during': 0, 'after': 1}  False        1.73     0.441  False           not lone
+105    R02b  multi    19.25   1.27   False                                         [3004, 7000, 7002, 8000]  {'before': 0, 'during': 0, 'after': 1}  False        1.06     0.200  False           not lone
+106    R02b  multi    19.25   1.27   False                                         [1004, 7000, 7002, 8000]  {'before': 0, 'during': 0, 'after': 1}  False        2.11     0.501  False           not lone
+107    R02b  multi    19.25   1.27   False                                         [1004, 3004, 7002, 8000]  {'before': 0, 'during': 0, 'after': 1}  False        1.48     0.306  False           not lone
+108    R02b  multi    20.68   0.03   False                                         [7002, 7003, 8000, 9000]  {'before': 2, 'during': 0, 'after': 1}  False        1.02     0.114  False           not lone
+109    R02b  multi    20.78   0.03   False                                         [1005, 1006, 8000, 9000]  {'before': 2, 'during': 0, 'after': 1}  False        1.06     0.143  False           not lone
+scene        made   same_uncut
+calf + fish  False  False          1
+                    True           6
+             True   True           5
+lone         False  False          1
+                    True           9
+             True   True          12
+multi        False  False         39
+                    True          16
+dtype: int64
+             frag  chains  whales  frag_per_whale  chains_per_whale
+scene                                                              
+calf + fish  22.0    17.0    11.0            2.00              1.55
+lone         51.0    39.0    30.0            1.70              1.30
+multi        92.0    92.0    52.0            1.77              1.77
+FINISHED

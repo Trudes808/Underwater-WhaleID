@@ -1,4 +1,4 @@
-"""Command line: ``uwid probe | inventory | timecode | sheet | clips | scan``."""
+"""Command line: ``uwid probe | inventory | timecode | sheet | clips | scan | tracks``."""
 
 from __future__ import annotations
 
@@ -105,25 +105,34 @@ def cmd_clips(a) -> int:
 
 def cmd_scan(a) -> int:
     from . import pipeline
-    off = a.clock_offset if a.clock_offset == "auto" else float(a.clock_offset)
+    off = a.clock_offset if a.clock_offset in ("auto", "tag") else float(a.clock_offset)
     cfg = pipeline.ScanConfig(preset=a.preset, pad_s=a.pad, merge_gap_s=a.merge_gap, clock_offset_s=off,
                               near_whale_score=None if a.no_near_whale else a.near_whale_score,
                               min_whale_px=a.min_whale_px, hq_threshold=a.hq_threshold,
                               fish_veto=a.fish_veto, scan_all=a.scan_all,
                               min_age_s=a.min_age, gpu_lock=None if a.no_gpu_lock else a.gpu_lock,
-                              lock_budget_s=a.lock_minutes * 60, picture_check=not a.no_picture_check)
+                              lock_budget_s=a.lock_minutes * 60, picture_check=not a.no_picture_check,
+                              ok_min_px=a.ok_min_px, min_tier=a.min_tier, scan_floating=not a.no_floating,
+                              keep_activity=not a.whale_only, fish_threshold=a.fish_threshold,
+                              guard_s=a.guard, boxclf=not a.no_boxclf, boxclf_weights=a.boxclf_weights,
+                              window_classes=not a.no_window_classes,
+                              run_budget_s=a.gpu_budget_min * 60 if a.gpu_budget_min else None)
     sums = pipeline.scan(a.dir, cfg, cut=a.cut, mode=a.mode, log=lambda *m: print(*m, flush=True),
                          out_root=Path(a.out) if a.out else None, clip_root=Path(a.clips_out) if a.clips_out else None)
     for s in sums:
         print(f"\n{s['deployment']} [{s['label']}]: kept {s['kept_s'] / 60:.1f} of {s['seconds'] / 60:.1f} min, "
               f"hq_whale windows {s['hq_windows'] / 60:.1f} min")
+        if s.get("clip_s_by_tier"):
+            print("  kept stretches by best tier: " + ", ".join(
+                f"{t} {s['n_clips_by_tier'][t]} clips {v / 60:.1f} min" for t, v in s["clip_s_by_tier"].items()))
         for k, v in s["dropped_s"].items():
             if v > 0:
                 print(f"  dropped {v / 60:7.1f} min  {k}")
         if s.get("offset_check"):
             oc = s["offset_check"]
             print(f"  clock offset check: {oc.get('verdict')} (picture minus depth "
-                  f"{oc.get('median_picture_minus_depth_s', float('nan')):+.2f} s, {oc.get('n_pairs')} events)")
+                  f"midpoint {oc.get('midpoint_s', float('nan')):+.2f} s, {oc.get('n_pairs')} events; offset used "
+                  f"{oc.get('offset_used_s')} s, {oc.get('offset_mode')})")
         if s.get("clips"):
             print(f"  {s['clips']['n']} clips, {s['clips']['bytes'] / 1e9:.2f} GB -> {s['clips']['out_dir']}")
         print(f"  tables: {s['outputs']['windows']}, {s['outputs']['intervals']}")
@@ -196,16 +205,35 @@ def build_parser() -> argparse.ArgumentParser:
                    help="sensitive: either of the 2 frames of a 1 s window has a whale; strict: both")
     s.add_argument("--cut", action="store_true", help="also cut the kept stretches into clips")
     s.add_argument("--mode", choices=["copy", "reencode", "auto"], default="copy", help="clip cutting mode")
-    s.add_argument("--pad", type=float, default=2.0, help="seconds added before and after each whale stretch")
-    s.add_argument("--merge-gap", type=float, default=5.0, help="merge kept stretches closer than this (s, after padding)")
-    s.add_argument("--clock-offset", default="2.03",
-                   help="burned-in clock minus sensor time (s), or 'auto' to take the offset check's measurement")
+    s.add_argument("--pad", type=float, default=2.0, help="buffer added before and after each clip (s)")
+    s.add_argument("--merge-gap", type=float, default=5.0, help="hq spans closer than this are joined (s)")
+    s.add_argument("--guard", type=float, default=30.0,
+                   help="a clip ends only after this many seconds without any detection (s)")
+    s.add_argument("--no-boxclf", action="store_true", help="no box classifier veto (the size rule alone)")
+    s.add_argument("--boxclf-weights", default=None, help="box classifier weights (default uwid.boxclf's)")
+    s.add_argument("--no-window-classes", action="store_true", help="do not label sand / dark (seafloor: withdrawn 2026-11-23)")
+    s.add_argument("--gpu-budget-min", type=float, default=None,
+                   help="stop the GPU stages after this many minutes (re-run to continue; caches are kept)")
+    s.add_argument("--clock-offset", default="tag",
+                   help="burned-in clock minus sensor time (s); 'tag' (default): the measured value of a known tag, "
+                        "else estimated from the picture's exits / entries against the depth's ('auto'), which "
+                        "stops with an error when fewer than 10 events match")
     s.add_argument("--near-whale-score", type=float, default=0.6,
                    help="boxes covering more than 60 %% of the frame are kept when their score is at least this")
     s.add_argument("--no-near-whale", action="store_true", help="drop every box covering most of the frame (WP5a)")
     s.add_argument("--min-whale-px", type=float, default=300.0,
                    help="whale boxes shorter than this (longest side, 1920 px frame) are small: fish or far whale")
     s.add_argument("--hq-threshold", type=float, default=0.6, help="quality score for the hq_whale tier")
+    s.add_argument("--ok-min-px", type=float, default=400.0,
+                   help="tier ok: whale box at least this long (1920 px frame); shorter whale windows are low")
+    s.add_argument("--min-tier", choices=["hq", "ok", "low", "small", "fish"], default=None,
+                   help="with --cut: cut only clips whose best tier is at least this (default: cut every kept "
+                        "stretch; the others stay listed in the intervals file)")
+    s.add_argument("--whale-only", action="store_true",
+                   help="keep only windows with a large whale box (before 2026-11-22); default: anything detected")
+    s.add_argument("--fish-threshold", type=float, default=0.5, help="a fish box at least this good is activity")
+    s.add_argument("--no-floating", action="store_true",
+                   help="do not run the detector on 'tag floating' time (before WP9: floating time was dropped)")
     s.add_argument("--fish-veto", action="store_true", help="option: a whale box must beat its own fish score")
     s.add_argument("--scan-all", action="store_true", help="run the detector on every window (cost comparison)")
     s.add_argument("--no-picture-check", action="store_true",
@@ -217,7 +245,45 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--out", default=None, help="results folder (default: <cache>/scan)")
     s.add_argument("--clips-out", default=None, help="clips folder (default: <cache>/clips)")
     s.set_defaults(func=cmd_scan)
+
+    # WP11a: tracking stage on the scan's hq spans (src/uwid/trackstage.py)
+    s = sub.add_parser("tracks", help="masks and track numbers on the scan's hq spans, purity guards online (WP11a)")
+    s.add_argument("deployment", help="deployment folder (or its name under the scan output)")
+    s.add_argument("--preset", default="sensitive", help="scan preset whose intervals.json is read")
+    s.add_argument("--only", nargs="*", default=(), help="<recording>:<t0>-<t1> spans instead of all hq spans")
+    s.add_argument("--max-seconds", type=float, default=30.0, help="cap each hq span at this many seconds")
+    s.add_argument("--render", action="store_true", help="also write an outline video + sheet per span")
+    s.add_argument("--lock-minutes", type=float, default=12.0, help="start new spans only within this many minutes")
+    s.add_argument("--no-own-back-template", action="store_true",
+                   help="own back = the tracker's whole back object (the behaviour before WP18); default: the back "
+                        "object inside the recording's 300 s back template")
+    s.set_defaults(func=cmd_tracks)
+
+    s = sub.add_parser("export", help="scan + tracks as plain files for a web page (WP19; docs/EXPORT_FORMAT.md)")
+    s.add_argument("deployments", nargs="*", help="deployment names (default: every deployment with a scan)")
+    s.add_argument("--out", default=None, help="bundle folder (default: <cache>/export/web_v1)")
+    s.add_argument("--force", action="store_true", help="also re-make existing clips and posters")
+    s.add_argument("--no-clips", action="store_true", help="JSON / CSV only")
+    s.set_defaults(func=cmd_export)
     return p
+
+
+def cmd_export(a) -> int:
+    from . import export
+    root = export.export([Path(d).name for d in a.deployments] or None, root=a.out, force=a.force,
+                         clips=not a.no_clips)
+    print(f"bundle {root}")
+    return 0
+
+
+def cmd_tracks(a) -> int:
+    from . import trackstage
+    dep = Path(a.deployment).name
+    outs = trackstage.run_deployment(dep, a.preset, only=a.only, max_seconds=a.max_seconds, render=a.render,
+                                     budget_s=a.lock_minutes * 60,
+                                     own_back_template=not getattr(a, "no_own_back_template", False))
+    print(f"{len(outs)} spans; index {trackstage.write_index(dep)}")
+    return 0
 
 
 def main(argv: list[str] | None = None) -> int:

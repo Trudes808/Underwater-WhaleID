@@ -44,7 +44,8 @@ from . import paths, video
 
 INTERVALS_FORMAT = "uwid-intervals/1"
 INDEX_FIELDS = ["source", "clip_file", "mode", "start_s", "end_s", "start_frame", "end_frame", "n_frames",
-                "wanted_start_s", "wanted_end_s", "lead_s", "clock_start", "clock_end", "reason", "tier", "extra",
+                "wanted_start_s", "wanted_end_s", "lead_s", "clock_start", "clock_end", "reason", "tier", "advanced_ok", "silhouette",
+                "hq_spans", "description", "extra",
                 "verified_frames", "verified_duration_s", "status", "created"]
 DROP_FIELDS = ["source", "start_s", "end_s", "reason", "extra", "created"]
 
@@ -236,7 +237,10 @@ def _row(plan: ClipPlan, status: str = "planned") -> dict:
             "n_frames": plan.end_frame - plan.start_frame,
             "wanted_start_s": round(plan.wanted.start, 4), "wanted_end_s": round(plan.wanted.end, 4),
             "lead_s": round(plan.lead_s, 4), "clock_start": "", "clock_end": "", "reason": plan.wanted.reason,
-            "tier": plan.wanted.extra.get("tier", ""),
+            "tier": plan.wanted.extra.get("tier", ""), "advanced_ok": plan.wanted.extra.get("advanced_ok", ""),
+            "silhouette": plan.wanted.extra.get("silhouette", ""),
+            "hq_spans": json.dumps(plan.wanted.extra["hq_spans"]) if "hq_spans" in plan.wanted.extra else "",
+            "description": plan.wanted.extra.get("description", ""),
             "extra": json.dumps(plan.wanted.extra) if plan.wanted.extra else "", "verified_frames": "",
             "verified_duration_s": "", "status": status,
             "created": _dt.datetime.now().isoformat(timespec="seconds")}

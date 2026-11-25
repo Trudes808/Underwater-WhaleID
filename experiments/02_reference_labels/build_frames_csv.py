@@ -34,7 +34,7 @@ for ln in open(lines):
 missing = sorted(set(times) - set(rows)); extra = sorted(set(rows) - set(times))
 if missing or extra:
     sys.exit(f"missing {missing} extra {extra}")
-allowed = dict(state={"air", "crossing", "underwater", "unusable"}, view={"clear", "bubbles", "dark", "glare"},
+allowed = dict(state={"air", "crossing", "underwater", "unusable"}, view={"clear", "bubbles", "dark", "glare", "sand"},
                seafloor={"none", "visible", "unsure"}, fish={"none", "few", "school"})
 for r in rows.values():
     for k, ok in allowed.items():
